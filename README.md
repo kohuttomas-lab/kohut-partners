@@ -92,8 +92,10 @@ These are **simulated** in the UI and need real integrations + credentials:
 
 ## Still TODO (content/assets)
 
-- **Legal pages** (Privacy / Terms / Cookies) — footer links to these are
-  currently rendered as plain text (no pages yet).
+- **Legal pages** (Ochrana údajov / Obchodné podmienky / Cookies) exist as
+  structured **working drafts** (bilingual, real firm identity) under
+  `/ochrana-udajov`, `/obchodne-podmienky`, `/cookies` and are linked from the
+  footer — the firm should review and finalize the wording before publishing.
 - **Team photos** for everyone except Tomáš (others show monogram avatars).
 - **Real client logos** for the references strip (placeholders now).
 - `metadataBase` is set to `https://www.tkak.sk` — update to the final domain.
