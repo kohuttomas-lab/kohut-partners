@@ -1,0 +1,74 @@
+/* ============================================================
+   kohút & partners — Typography tokens
+   Display / brand: Poppins · Text / UI: Mulish
+   ============================================================ */
+
+:root {
+  /* ---------- Families ---------- */
+  --font-display: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --font-body:    'Mulish', 'Segoe UI', system-ui, sans-serif;
+  --font-mono:    ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ---------- Weights ---------- */
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-extra:    800;
+
+  /* ---------- Type scale (1.250 major-third-ish, tuned) ---------- */
+  --text-2xs:  0.6875rem; /* 11px — legal fine print */
+  --text-xs:   0.75rem;   /* 12px */
+  --text-sm:   0.875rem;  /* 14px */
+  --text-base: 1rem;      /* 16px — body default */
+  --text-md:   1.125rem;  /* 18px — lead body */
+  --text-lg:   1.25rem;   /* 20px */
+  --text-xl:   1.5rem;    /* 24px */
+  --text-2xl:  1.875rem;  /* 30px */
+  --text-3xl:  2.375rem;  /* 38px */
+  --text-4xl:  3rem;      /* 48px */
+  --text-5xl:  3.75rem;   /* 60px */
+  --text-6xl:  4.75rem;   /* 76px — hero display */
+
+  /* ---------- Line heights ---------- */
+  --leading-none:    1;
+  --leading-tight:   1.12;  /* display headings */
+  --leading-snug:    1.25;  /* sub-heads */
+  --leading-normal:  1.5;   /* body */
+  --leading-relaxed: 1.65;  /* long-form legal copy */
+
+  /* ---------- Letter spacing ---------- */
+  --tracking-tighter: -0.03em; /* large display */
+  --tracking-tight:   -0.015em;/* headings */
+  --tracking-normal:  0;
+  --tracking-wide:    0.04em;
+  --tracking-wider:   0.08em;  /* overlines / eyebrows */
+  --tracking-widest:  0.14em;  /* small caps labels */
+
+  /* ============================================================
+     SEMANTIC TYPE ROLES
+     ============================================================ */
+
+  /* Display & headings use Poppins */
+  --type-display-font:   var(--font-display);
+  --type-display-weight: var(--weight-bold);
+  --type-display-tracking: var(--tracking-tighter);
+  --type-display-leading:  var(--leading-tight);
+
+  --type-heading-font:   var(--font-display);
+  --type-heading-weight: var(--weight-semibold);
+  --type-heading-tracking: var(--tracking-tight);
+  --type-heading-leading:  var(--leading-snug);
+
+  /* Body uses Mulish */
+  --type-body-font:    var(--font-body);
+  --type-body-weight:  var(--weight-regular);
+  --type-body-leading: var(--leading-normal);
+
+  /* Overline / eyebrow label */
+  --type-overline-font:     var(--font-display);
+  --type-overline-weight:   var(--weight-semibold);
+  --type-overline-size:     var(--text-xs);
+  --type-overline-tracking: var(--tracking-wider);
+  --type-overline-transform: uppercase;
+}

@@ -1,0 +1,17 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 6px;
+  transition: color var(--dur-fast) var(--ease-standard);
+}
+.btn:hover {
+  color: var(--brand);
+}

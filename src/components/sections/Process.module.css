@@ -1,0 +1,64 @@
+.section {
+  background: var(--navy-800);
+  padding: 92px 0;
+  position: relative;
+  overflow: hidden;
+}
+.mark {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 300px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+.inner {
+  position: relative;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.step {
+  text-align: center;
+  padding: 0 12px;
+}
+.num {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--navy-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 26px;
+}
+.stepTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.stepDesc {
+  font-size: 15px;
+  color: var(--navy-200);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .section {
+    padding: 60px 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "nav": {
+    "home": "Domov",
+    "services": "Služby",
+    "shop": "E-shop",
+    "about": "O kancelárii",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "cta": "Rezervovať konzultáciu",
+    "ctaShort": "Konzultácia",
+    "servDetailCta": "Zobraziť detail",
+    "servAll": "Všetky služby",
+    "from": "od",
+    "orderBtn": "Objednať",
+    "readMore": "Čítať článok",
+    "readTime": "min čítania",
+    "backToBlog": "Späť na blog",
+    "areaOther": "Iné",
+    "langSwitch": "EN"
+  },
+  "home": {
+    "overline": "Advokátska kancelária · Zvolen",
+    "heroBadge": "SAK · Zvolen",
+    "heroTitle": "Právne istoty pre vaše podnikanie.",
+    "heroLead": "Insolvencie, obchodné a IT právo, nehnuteľnosti aj súdne spory — poradíme zrozumiteľne, konáme rýchlo a s vopred známou cenou.",
+    "heroPrimary": "Rezervovať konzultáciu",
+    "heroSecondary": "Právny e-shop",
+    "heroChips": ["Pevná cena", "Odpoveď do 24 h", "Advokáti zapísaní v SAK"],
+    "trustLabel": "Dôverujú nám podnikatelia, firmy aj investori naprieč Slovenskom",
+    "stats": [
+      { "value": "20", "label": "rokov praxe" },
+      { "value": "2 400+", "label": "vyriešených prípadov" },
+      { "value": "96 %", "label": "úspešnosť sporov" },
+      { "value": "4,9/5", "label": "hodnotenie klientov" }
+    ],
+    "servOverline": "Oblasti práva",
+    "servTitle": "Šesť oblastí, v ktorých vás zastúpime",
+    "servLead": "Špecializujeme sa na právo pre podnikateľov, firmy a investorov. Vyberte oblasť — uvidíte presne, čo riešime, za akú cenu a ako prebieha spolupráca.",
+    "whyOverline": "Ako spolupracujeme",
+    "whyTitle": "Tri kroky k jasnému riešeniu",
+    "why": [
+      { "title": "Rezervujete konzultáciu", "desc": "Online alebo osobne. Vyberiete si termín a opíšete situáciu — prvá odpoveď do 24 hodín." },
+      { "title": "Dohodneme postup a cenu", "desc": "Navrhneme riešenie a pevnú cenu vopred. Žiadne hodinové prekvapenia." },
+      { "title": "Riešime za vás", "desc": "Preberáme vec do svojich rúk a priebežne vás informujeme o každom kroku." }
+    ],
+    "teamOverline": "Náš tím",
+    "teamTitle": "Ľudia, ktorí budú stáť pri vás",
+    "teamLead": "Malý zohraný tím advokátov s reálnou praxou v insolvenciách, korporátnom práve aj sporoch.",
+    "teamCta": "Spoznať celý tím",
+    "blogOverline": "Z našej praxe",
+    "blogTitle": "Právo zrozumiteľne — náš blog",
+    "blogLead": "Praktické články pre podnikateľov. Žiadna teória navyše.",
+    "blogCta": "Všetky články",
+    "ctaBandTitle": "Máte právny problém? Začnime ešte dnes.",
+    "ctaBandLead": "Prvá konzultácia je nezáväzná. Vyberte si termín — online alebo v kancelárii.",
+    "ctaBandBtn": "Rezervovať konzultáciu"
+  },
+  "team": {
+    "note": "Plné mená a profesijné profily členov tímu rádi poskytneme na vyžiadanie.",
+    "photoSlot": "Miesto pre fotografiu"
+  },
+  "services": {
+    "heroTitle": "Naše právne služby",
+    "heroLead": "Od záchrany firmy v kríze po ochranu vašich dát. Všetko s jasným postupom a pevnou cenou.",
+    "whatWeSolve": "Čo pre vás riešime",
+    "packages": "Balíky s pevnou cenou",
+    "packagesLead": "Vybrané služby viete objednať online za vopred známu cenu. Zložitejšie veci riešime po konzultácii.",
+    "faqTitle": "Časté otázky",
+    "bookForThis": "Konzultácia k tejto oblasti"
+  },
+  "about": {
+    "heroOverline": "O kancelárii",
+    "heroTitle": "Advokátska kancelária, ktorá hovorí vašou rečou.",
+    "heroLead": "Vznikli sme s jednoduchým presvedčením: právo má byť pre klienta zrozumiteľné, predvídateľné a férové. Po 20 rokoch praxe to stále platí.",
+    "valuesOverline": "Naše hodnoty",
+    "valuesTitle": "Na čom si zakladáme",
+    "values": [
+      { "title": "Jasnosť", "desc": "Vysvetlíme vám veci tak, aby ste rozumeli každému rozhodnutiu. Žiadne prázdne paragrafy." },
+      { "title": "Predvídateľnosť", "desc": "Cenu aj postup poznáte vopred. Vďaka tomu sa rozhodujete pokojne." },
+      { "title": "Výsledok", "desc": "Sme tu, aby sme vašu vec vyriešili — nie aby sme ju naťahovali." }
+    ],
+    "storyTitle": "Náš príbeh",
+    "story": [
+      "Kanceláriu sme založili v roku 2011 s ambíciou robiť právo inak — bližšie k podnikateľovi a ďalej od zbytočnej komplikovanosti.",
+      "Dnes tvoríme malý zohraný tím, ktorý sprevádza firmy od založenia cez rast až po krízové situácie. Špecializujeme sa na insolvencie, korporátne a IT právo, nehnuteľnosti a súdne spory.",
+      "Veríme, že najlepší právnik je ten, ktorému rozumiete. Preto každú vec vysvetľujeme ľudsky a cenu hovoríme vopred."
+    ]
+  },
+  "contact": {
+    "overline": "Kontakt",
+    "title": "Ozvite sa nám",
+    "lead": "Vyplňte formulár a ozveme sa do jedného pracovného dňa. Alebo rovno rezervujte termín konzultácie.",
+    "fName": "Meno a priezvisko",
+    "fEmail": "E-mail",
+    "fPhone": "Telefón",
+    "fArea": "Oblasť práva",
+    "fMsg": "Ako vám môžeme pomôcť?",
+    "fAreaPlaceholder": "Vyberte oblasť…",
+    "fConsent": "Súhlasím so spracovaním osobných údajov.",
+    "fSubmit": "Odoslať dopyt",
+    "sentTitle": "Ďakujeme!",
+    "sentLead": "Ozveme sa vám do jedného pracovného dňa.",
+    "offices": "Naše kancelárie",
+    "hoursLabel": "Otváracie hodiny",
+    "hours": "Po–Pia 9:00–18:00",
+    "phoneLabel": "Telefón",
+    "emailLabel": "E-mail",
+    "namePlaceholder": "Ján Novák",
+    "emailPlaceholder": "jan@firma.sk",
+    "phonePlaceholder": "+421 …"
+  },
+  "booking": {
+    "title": "Rezervácia konzultácie",
+    "step": "Krok",
+    "type": "Typ konzultácie",
+    "online": "Online (videohovor)",
+    "inPerson": "Osobne v kancelárii",
+    "area": "Oblasť práva",
+    "date": "Vyberte termín",
+    "timeLabel": "Voľné časy",
+    "next": "Pokračovať",
+    "back": "Späť",
+    "contact": "Vaše údaje",
+    "payNote": "Konzultácia (45 min) · 60 € — platba kartou pri potvrdení.",
+    "confirm": "Potvrdiť a zaplatiť",
+    "doneTitle": "Termín je rezervovaný",
+    "doneLead": "Potvrdenie a kalendárovú pozvánku sme poslali na váš e-mail.",
+    "doneClose": "Hotovo",
+    "weekdays": ["Po", "Ut", "St", "Št", "Pi"]
+  },
+  "shop": {
+    "overline": "E-shop právnych služieb",
+    "heroTitle": "Právne služby, ktoré si objednáte online",
+    "heroLead": "Jednorazové právne balíky s pevnou cenou, hotové šablóny na stiahnutie aj mesačné predplatné pre firmy. Bez čakania, bez prekvapení.",
+    "pkgOverline": "Balíky s pevnou cenou",
+    "pkgTitle": "Jednorazové právne balíky",
+    "pkgLead": "Konkrétna služba za vopred známu cenu. Ideálne, keď potrebujete vyriešiť jednu vec.",
+    "addToCart": "Do košíka",
+    "inCart": "V košíku",
+    "tplOverline": "Právne šablóny",
+    "tplTitle": "Hotové dokumenty na stiahnutie",
+    "tplLead": "Profesionálne pripravené vzory, ktoré si upravíte za pár minút. Na stiahnutie hneď po zaplatení.",
+    "tplBuy": "Kúpiť",
+    "tplFormat": "PDF + DOCX · okamžité stiahnutie",
+    "tplTrust": [
+      "Pripravené advokátmi zapísanými v SAK",
+      "Podľa aktuálnych právnych predpisov SR",
+      "Garancia správnosti — žiadne AI generované vzory"
+    ],
+    "subsOverline": "Predplatné právnych služieb",
+    "subsTitle": "Mesačné predplatné pre firmy",
+    "subsLead": "Majte advokáta po ruke za pevnú mesačnú cenu. Vyberte si rozsah hodín — o zvyšok sa postaráme my.",
+    "subsMonth": "/mesiac",
+    "subsChoose": "Vybrať plán",
+    "subsPopular": "Najobľúbenejší",
+    "hoursPerMonth": "hodín mesačne",
+    "refOverline": "Referencie",
+    "refTitle": "Dôverujú nám firmy, ktoré niečo znamenajú",
+    "refSentence": "Pomohli sme vyše 600 firmám, developerom a podnikateľom naprieč Slovenskom udržať pokoj v právnych veciach.",
+    "refNote": "Miesta pre logá klientov — nahradíme reálnymi logami.",
+    "cart": {
+      "title": "Košík",
+      "items": "položiek",
+      "empty": "Váš košík je prázdny.",
+      "subtotal": "Medzisúčet",
+      "vat": "DPH 20 %",
+      "vatIncl": "vrátane",
+      "total": "Spolu",
+      "checkout": "Prejsť k platbe"
+    },
+    "checkout": {
+      "title": "Dokončenie objednávky",
+      "contact": "Fakturačné údaje",
+      "company": "Firma / IČO (nepovinné)",
+      "pay": "Spôsob platby",
+      "payOpts": ["Platobná karta", "Apple Pay", "Bankový prevod"],
+      "confirm": "Záväzne objednať a zaplatiť",
+      "summary": "Súhrn objednávky",
+      "doneTitle": "Ďakujeme za objednávku",
+      "doneLead": "Potvrdenie a faktúru sme poslali na váš e-mail. Šablóny nájdete pripravené na stiahnutie vo svojom konte.",
+      "orderNo": "Číslo objednávky",
+      "close": "Hotovo",
+      "perMonth": "/mes"
+    }
+  },
+  "footer": {
+    "tag": "Advokátska kancelária zapísaná v Slovenskej advokátskej komore.",
+    "cols": [
+      { "head": "Služby", "items": ["Insolvencie", "Obchodné právo", "Nehnuteľnosti", "Súdne spory", "Trestné právo", "IT právo"] },
+      { "head": "Kancelária", "items": ["O nás", "Náš tím", "Blog", "Kariéra"] },
+      { "head": "Právne", "items": ["Ochrana údajov", "Obchodné podmienky", "Cookies"] }
+    ],
+    "fine": "Tento web má informatívny charakter a nenahrádza právne poradenstvo.",
+    "rights": "© kohút & partners s.r.o. · IČO 47 235 888"
+  }
+}

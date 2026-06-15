@@ -1,0 +1,198 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "shop": "Shop",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "common": {
+    "cta": "Book a consultation",
+    "ctaShort": "Consult",
+    "servDetailCta": "View detail",
+    "servAll": "All services",
+    "from": "from",
+    "orderBtn": "Order",
+    "readMore": "Read article",
+    "readTime": "min read",
+    "backToBlog": "Back to blog",
+    "areaOther": "Other",
+    "langSwitch": "SK"
+  },
+  "home": {
+    "overline": "Law firm · Zvolen",
+    "heroBadge": "SAK · Zvolen",
+    "heroTitle": "Legal certainty for your business.",
+    "heroLead": "Insolvency, commercial and IT law, real estate and litigation — clear advice, fast action, and a price you know up front.",
+    "heroPrimary": "Book a consultation",
+    "heroSecondary": "Legal shop",
+    "heroChips": ["Fixed price", "Reply within 24 h", "Bar-registered attorneys"],
+    "trustLabel": "Trusted by entrepreneurs, companies and investors across Slovakia",
+    "stats": [
+      { "value": "20", "label": "years of practice" },
+      { "value": "2,400+", "label": "matters resolved" },
+      { "value": "96%", "label": "litigation success" },
+      { "value": "4.9/5", "label": "client rating" }
+    ],
+    "servOverline": "Practice areas",
+    "servTitle": "Six areas where we represent you",
+    "servLead": "We focus on law for entrepreneurs, companies and investors. Pick an area — see exactly what we handle, at what price, and how we work together.",
+    "whyOverline": "How we work",
+    "whyTitle": "Three steps to a clear solution",
+    "why": [
+      { "title": "Book a consultation", "desc": "Online or in person. Choose a slot and describe your situation — first reply within 24 hours." },
+      { "title": "We agree the plan and price", "desc": "We propose a solution and a fixed price up front. No hourly surprises." },
+      { "title": "We handle it", "desc": "We take the matter off your plate and keep you informed at every step." }
+    ],
+    "teamOverline": "Our team",
+    "teamTitle": "The people who will stand by you",
+    "teamLead": "A small, well-coordinated team of attorneys with real experience in insolvency, corporate law and litigation.",
+    "teamCta": "Meet the full team",
+    "blogOverline": "From our practice",
+    "blogTitle": "Law made clear — our blog",
+    "blogLead": "Practical articles for business owners. No extra theory.",
+    "blogCta": "All articles",
+    "ctaBandTitle": "Got a legal problem? Let’s start today.",
+    "ctaBandLead": "Your first consultation is non-binding. Pick a slot — online or at our office.",
+    "ctaBandBtn": "Book a consultation"
+  },
+  "team": {
+    "note": "Full names and professional profiles of our team are available on request.",
+    "photoSlot": "Photo slot"
+  },
+  "services": {
+    "heroTitle": "Our legal services",
+    "heroLead": "From rescuing a company in crisis to protecting your data. All with a clear process and a fixed price.",
+    "whatWeSolve": "What we handle for you",
+    "packages": "Fixed-price packages",
+    "packagesLead": "Selected services can be ordered online at a known price. More complex matters we handle after a consultation.",
+    "faqTitle": "Frequently asked questions",
+    "bookForThis": "Consultation on this area"
+  },
+  "about": {
+    "heroOverline": "About the firm",
+    "heroTitle": "A law firm that speaks your language.",
+    "heroLead": "We started with a simple belief: law should be understandable, predictable and fair for the client. After 20 years of practice, it still holds.",
+    "valuesOverline": "Our values",
+    "valuesTitle": "What we stand for",
+    "values": [
+      { "title": "Clarity", "desc": "We explain things so you understand every decision. No empty paragraphs." },
+      { "title": "Predictability", "desc": "You know the price and the plan up front, so you decide with a calm mind." },
+      { "title": "Results", "desc": "We’re here to resolve your matter — not to drag it out." }
+    ],
+    "storyTitle": "Our story",
+    "story": [
+      "We founded the firm in 2011 with an ambition to do law differently — closer to the entrepreneur and further from needless complexity.",
+      "Today we’re a small, coordinated team guiding companies from formation through growth to crisis situations. We focus on insolvency, corporate and IT law, real estate and litigation.",
+      "We believe the best lawyer is the one you understand. So we explain every matter in human terms and state the price up front."
+    ]
+  },
+  "contact": {
+    "overline": "Contact",
+    "title": "Get in touch",
+    "lead": "Fill in the form and we’ll reply within one business day. Or book a consultation slot right away.",
+    "fName": "Full name",
+    "fEmail": "E-mail",
+    "fPhone": "Phone",
+    "fArea": "Area of law",
+    "fMsg": "How can we help?",
+    "fAreaPlaceholder": "Choose an area…",
+    "fConsent": "I agree to the processing of my personal data.",
+    "fSubmit": "Send enquiry",
+    "sentTitle": "Thank you!",
+    "sentLead": "We’ll get back to you within one business day.",
+    "offices": "Our offices",
+    "hoursLabel": "Office hours",
+    "hours": "Mon–Fri 9:00–18:00",
+    "phoneLabel": "Phone",
+    "emailLabel": "E-mail",
+    "namePlaceholder": "Ján Novák",
+    "emailPlaceholder": "jan@firma.sk",
+    "phonePlaceholder": "+421 …"
+  },
+  "booking": {
+    "title": "Book a consultation",
+    "step": "Step",
+    "type": "Consultation type",
+    "online": "Online (video call)",
+    "inPerson": "In person at the office",
+    "area": "Area of law",
+    "date": "Choose a date",
+    "timeLabel": "Available times",
+    "next": "Continue",
+    "back": "Back",
+    "contact": "Your details",
+    "payNote": "Consultation (45 min) · €60 — card payment on confirmation.",
+    "confirm": "Confirm & pay",
+    "doneTitle": "Your slot is booked",
+    "doneLead": "We’ve sent a confirmation and a calendar invite to your e-mail.",
+    "doneClose": "Done",
+    "weekdays": ["Mon", "Tue", "Wed", "Thu", "Fri"]
+  },
+  "shop": {
+    "overline": "Legal services shop",
+    "heroTitle": "Legal services you can order online",
+    "heroLead": "One-off fixed-price legal packages, ready-made templates to download, and monthly subscriptions for companies. No waiting, no surprises.",
+    "pkgOverline": "Fixed-price packages",
+    "pkgTitle": "One-off legal packages",
+    "pkgLead": "A specific service at a known price. Ideal when you need to resolve a single matter.",
+    "addToCart": "Add to cart",
+    "inCart": "In cart",
+    "tplOverline": "Legal templates",
+    "tplTitle": "Ready-made documents to download",
+    "tplLead": "Professionally prepared templates you can adapt in minutes. Download instantly after payment.",
+    "tplBuy": "Buy",
+    "tplFormat": "PDF + DOCX · instant download",
+    "tplTrust": [
+      "Prepared by bar-registered attorneys",
+      "In line with current Slovak legislation",
+      "Accuracy guaranteed — no AI-generated templates"
+    ],
+    "subsOverline": "Legal-services subscription",
+    "subsTitle": "Monthly subscription for companies",
+    "subsLead": "Keep an attorney on hand for a fixed monthly price. Pick your hours — we handle the rest.",
+    "subsMonth": "/month",
+    "subsChoose": "Choose plan",
+    "subsPopular": "Most popular",
+    "hoursPerMonth": "hours per month",
+    "refOverline": "References",
+    "refTitle": "Trusted by companies that matter",
+    "refSentence": "We’ve helped over 600 companies, developers and entrepreneurs across Slovakia keep calm in legal matters.",
+    "refNote": "Client logo slots — to be replaced with real logos.",
+    "cart": {
+      "title": "Cart",
+      "items": "items",
+      "empty": "Your cart is empty.",
+      "subtotal": "Subtotal",
+      "vat": "VAT 20%",
+      "vatIncl": "incl.",
+      "total": "Total",
+      "checkout": "Go to checkout"
+    },
+    "checkout": {
+      "title": "Complete your order",
+      "contact": "Billing details",
+      "company": "Company / ID (optional)",
+      "pay": "Payment method",
+      "payOpts": ["Card", "Apple Pay", "Bank transfer"],
+      "confirm": "Place order & pay",
+      "summary": "Order summary",
+      "doneTitle": "Thank you for your order",
+      "doneLead": "We’ve sent a confirmation and invoice to your e-mail. Your templates are ready to download in your account.",
+      "orderNo": "Order number",
+      "close": "Done",
+      "perMonth": "/mo"
+    }
+  },
+  "footer": {
+    "tag": "Law firm registered with the Slovak Bar Association.",
+    "cols": [
+      { "head": "Services", "items": ["Insolvency", "Corporate law", "Real estate", "Litigation", "Criminal law", "IT law"] },
+      { "head": "Firm", "items": ["About us", "Our team", "Blog", "Careers"] },
+      { "head": "Legal", "items": ["Privacy", "Terms", "Cookies"] }
+    ],
+    "fine": "This website is for general information only and is not legal advice.",
+    "rights": "© kohút & partners s.r.o. · ID 47 235 888"
+  }
+}

@@ -1,0 +1,64 @@
+.card {
+  position: relative;
+  background: var(--color-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow var(--dur-base) var(--ease-standard),
+    transform var(--dur-base) var(--ease-standard),
+    border-color var(--dur-base) var(--ease-standard);
+}
+
+/* elevation */
+.eNone {
+  box-shadow: none;
+}
+.eXs {
+  box-shadow: var(--shadow-xs);
+}
+.eSm {
+  box-shadow: var(--shadow-sm);
+}
+.eMd {
+  box-shadow: var(--shadow-md);
+}
+.eLg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* padding */
+.pNone {
+  padding: 0;
+}
+.pSm {
+  padding: var(--space-4);
+}
+.pMd {
+  padding: var(--space-6);
+}
+.pLg {
+  padding: var(--space-8);
+}
+
+/* red "tail" top rule */
+.accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent);
+}
+
+/* hover lift — applies whether the card itself or a wrapping link is hovered */
+.interactive {
+  cursor: pointer;
+}
+.interactive:hover,
+:global(a):hover > .interactive,
+:global(a):focus-visible > .interactive {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+}

@@ -1,0 +1,119 @@
+/* ============================================================
+   kohút & partners — Color tokens
+   Brand: navy #1f2a51 (ink) · red #fe0202 (signal)
+   ------------------------------------------------------------
+   Base palette first, semantic aliases at the bottom.
+   ============================================================ */
+
+:root {
+  /* ---------- Brand: Navy (ink) ---------- */
+  --navy-950: #0d1226;
+  --navy-900: #141a35;
+  --navy-800: #1f2a51; /* ◆ primary brand navy */
+  --navy-700: #283566;
+  --navy-600: #34457e;
+  --navy-500: #455598;
+  --navy-400: #6573ac;
+  --navy-300: #909bc5;
+  --navy-200: #bfc6dd;
+  --navy-100: #e0e4ef;
+  --navy-50:  #f1f3f8;
+
+  /* ---------- Brand: Red (signal) ---------- */
+  --red-800: #960000;
+  --red-700: #c00000;
+  --red-600: #e00202;
+  --red-500: #fe0202; /* ◆ brand red — use sparingly */
+  --red-400: #ff3d3d;
+  --red-300: #ff8080;
+  --red-200: #ffbcbc;
+  --red-100: #ffe1e1;
+  --red-50:  #fff3f3;
+
+  /* ---------- Neutrals (cool, navy-tinted) ---------- */
+  --white:    #ffffff;
+  --gray-50:  #f6f7fa;
+  --gray-100: #eef0f5;
+  --gray-200: #e0e3ec;
+  --gray-300: #cbd0dc;
+  --gray-400: #9aa1b4;
+  --gray-500: #6e7689;
+  --gray-600: #515869;
+  --gray-700: #3b4151;
+  --gray-800: #262b38;
+  --gray-900: #161a24;
+  --black:    #0b0e16;
+
+  /* ---------- Semantic (status) ---------- */
+  --green-600: #157a45;
+  --green-500: #1f9152;
+  --green-100: #dcf3e6;
+  --green-50:  #effaf3;
+
+  --amber-600: #b06d00;
+  --amber-500: #d18400;
+  --amber-100: #fbedcf;
+  --amber-50:  #fdf7e8;
+
+  --blue-600: #1f5fc0;
+  --blue-500: #2a72db;
+  --blue-100: #d9e6fa;
+  --blue-50:  #eef4fd;
+
+  --danger-600: #c01f1f;
+  --danger-500: #dc2b2b;
+  --danger-100: #fbdede;
+  --danger-50:  #fdf0f0;
+
+  /* ============================================================
+     SEMANTIC ALIASES — reference these in components
+     ============================================================ */
+
+  /* Surfaces & backgrounds */
+  --color-bg:            var(--gray-50);   /* app / page background */
+  --color-surface:       var(--white);     /* cards, panels */
+  --color-surface-sunken:var(--gray-100);  /* wells, inputs, code */
+  --color-surface-ink:   var(--navy-800);  /* dark sections, footers */
+  --color-surface-ink-2: var(--navy-900);  /* deepest dark */
+
+  /* Text */
+  --text-strong:  var(--navy-800);  /* headings on light */
+  --text-body:    var(--gray-800);  /* default body copy */
+  --text-muted:   var(--gray-500);  /* secondary / captions */
+  --text-faint:   var(--gray-400);  /* placeholders, disabled */
+  --text-on-dark: var(--white);     /* text on navy */
+  --text-on-dark-muted: var(--navy-200);
+  --text-accent:  var(--red-500);   /* signal text / links emphasis */
+  --text-link:    var(--navy-700);
+
+  /* Borders & dividers */
+  --border:        var(--gray-200);
+  --border-strong: var(--gray-300);
+  --border-ink:    var(--navy-800);
+  --divider-on-dark: rgba(255, 255, 255, 0.12);
+
+  /* Brand roles */
+  --brand:          var(--navy-800);
+  --brand-ink:      var(--navy-900);
+  --brand-hover:    var(--navy-700);
+  --brand-active:   var(--navy-900);
+  --brand-subtle:   var(--navy-50);
+  --accent:         var(--red-500);
+  --accent-hover:   var(--red-600);
+  --accent-active:  var(--red-700);
+  --accent-subtle:  var(--red-50);
+
+  /* Status roles */
+  --success:  var(--green-500);
+  --success-bg: var(--green-50);
+  --warning:  var(--amber-500);
+  --warning-bg: var(--amber-50);
+  --info:     var(--blue-500);
+  --info-bg:  var(--blue-50);
+  --danger:   var(--danger-500);
+  --danger-bg:var(--danger-50);
+
+  /* Focus */
+  --focus-ring: 0 0 0 3px rgba(52, 69, 126, 0.35); /* navy-600 @ 35% */
+  --focus-ring-accent: 0 0 0 3px rgba(254, 2, 2, 0.28);
+}

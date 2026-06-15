@@ -1,0 +1,115 @@
+.section {
+  background: var(--color-bg);
+  padding: 64px 0 88px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+}
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+.infoRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.infoIcon {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy-50);
+  color: var(--navy-700);
+  flex-shrink: 0;
+}
+.infoLabel {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.infoValue {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16.5px;
+  color: var(--text-strong);
+}
+.infoLink {
+  color: inherit;
+  transition: color var(--dur-fast) var(--ease-standard);
+}
+.infoLink:hover {
+  color: var(--accent);
+}
+.infoSecondary {
+  display: block;
+  margin-top: 2px;
+}
+
+.officesTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-strong);
+  margin-bottom: 14px;
+}
+.officesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.officeIcon {
+  display: inline-flex;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.officeCity {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-strong);
+}
+.officeAddr {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.bookCard {
+  margin-top: 18px;
+  padding: 18px 20px;
+  background: var(--navy-800);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.bookCardLabel {
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15.5px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+@media (max-width: 480px) {
+  .officesGrid {
+    grid-template-columns: 1fr;
+  }
+}

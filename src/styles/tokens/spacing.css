@@ -1,0 +1,71 @@
+/* ============================================================
+   kohút & partners — Spacing, radius, shadow, layout, motion
+   4px base grid
+   ============================================================ */
+
+:root {
+  /* ---------- Spacing scale (4px base) ---------- */
+  --space-0:  0;
+  --space-1:  0.25rem;  /* 4px  */
+  --space-2:  0.5rem;   /* 8px  */
+  --space-3:  0.75rem;  /* 12px */
+  --space-4:  1rem;     /* 16px */
+  --space-5:  1.25rem;  /* 20px */
+  --space-6:  1.5rem;   /* 24px */
+  --space-7:  2rem;     /* 32px */
+  --space-8:  2.5rem;   /* 40px */
+  --space-9:  3rem;     /* 48px */
+  --space-10: 4rem;     /* 64px */
+  --space-11: 5rem;     /* 80px */
+  --space-12: 6rem;     /* 96px */
+  --space-14: 8rem;     /* 128px */
+  --space-16: 10rem;    /* 160px */
+
+  /* ---------- Radius (restrained, professional) ---------- */
+  --radius-xs:   3px;
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-2xl:  32px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  /* ---------- Shadows (navy-tinted, soft) ---------- */
+  --shadow-xs:  0 1px 2px rgba(15, 20, 40, 0.06);
+  --shadow-sm:  0 1px 3px rgba(15, 20, 40, 0.08), 0 1px 2px rgba(15, 20, 40, 0.05);
+  --shadow-md:  0 4px 12px rgba(15, 20, 40, 0.08), 0 2px 4px rgba(15, 20, 40, 0.05);
+  --shadow-lg:  0 12px 28px rgba(15, 20, 40, 0.12), 0 4px 8px rgba(15, 20, 40, 0.06);
+  --shadow-xl:  0 24px 56px rgba(15, 20, 40, 0.16), 0 8px 16px rgba(15, 20, 40, 0.07);
+  --shadow-ink: 0 18px 48px rgba(13, 18, 38, 0.30); /* navy raised on dark */
+
+  /* ---------- Layout ---------- */
+  --container-sm:  640px;
+  --container-md:  820px;  /* readable prose measure */
+  --container-lg:  1080px;
+  --container-xl:  1240px;
+  --container-2xl: 1400px;
+  --gutter:        var(--space-6);
+  --section-y:     var(--space-12);
+
+  /* ---------- Borders ---------- */
+  --border-width: 1px;
+  --border-width-strong: 1.5px;
+
+  /* ---------- Motion ---------- */
+  --ease-standard: cubic-bezier(0.2, 0, 0.1, 1); /* @kind other */
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ease-in:       cubic-bezier(0.4, 0, 1, 1); /* @kind other */
+  --dur-fast:   120ms; /* @kind other */
+  --dur-base:   200ms; /* @kind other */
+  --dur-slow:   320ms; /* @kind other */
+  --dur-slower: 520ms; /* @kind other */
+
+  /* ---------- Z-index ---------- */
+  --z-base: 0; /* @kind other */
+  --z-raised: 10; /* @kind other */
+  --z-sticky: 100; /* @kind other */
+  --z-overlay: 1000; /* @kind other */
+  --z-modal: 1100; /* @kind other */
+  --z-toast: 1200; /* @kind other */
+}

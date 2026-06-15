@@ -1,0 +1,98 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--text-strong);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 var(--field-pad, 14px);
+  height: var(--field-h, 46px);
+  background: var(--color-surface);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--dur-fast) var(--ease-standard),
+    box-shadow var(--dur-fast) var(--ease-standard);
+}
+
+.box:focus-within:not(.error) {
+  border-color: var(--navy-500);
+  box-shadow: var(--focus-ring);
+}
+
+.error {
+  border-color: var(--danger);
+}
+
+.disabled {
+  background: var(--gray-100);
+  opacity: 0.6;
+}
+
+.sm {
+  --field-h: 38px;
+  --field-pad: 12px;
+  --field-font: var(--text-sm);
+}
+.md {
+  --field-h: 46px;
+  --field-pad: 14px;
+  --field-font: var(--text-base);
+}
+.lg {
+  --field-h: 54px;
+  --field-pad: 16px;
+  --field-font: var(--text-md);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: var(--field-font, var(--text-base));
+  color: var(--text-body);
+}
+.input::placeholder {
+  color: var(--text-faint);
+}
+
+.adorn {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.help {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+.helpError {
+  color: var(--danger);
+}
+
+/* Multiline variant for textareas */
+.boxArea {
+  height: auto;
+  align-items: stretch;
+  padding: 12px 14px;
+}
+.textarea {
+  resize: vertical;
+  min-height: 84px;
+  line-height: 1.5;
+}

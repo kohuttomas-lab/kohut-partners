@@ -1,0 +1,157 @@
+.hero {
+  background: linear-gradient(135deg, var(--navy-800), var(--navy-900));
+  position: relative;
+  overflow: hidden;
+}
+.heroMark {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 280px;
+  opacity: 0.07;
+  pointer-events: none;
+}
+.heroInner {
+  position: relative;
+  padding: 40px 0 60px;
+}
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--navy-200);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 26px;
+  transition: color var(--dur-fast) var(--ease-standard);
+}
+.back:hover {
+  color: #fff;
+}
+.heroBody {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  max-width: 800px;
+}
+.title {
+  font-size: 44px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0 0 12px;
+  color: #fff;
+}
+.tagline {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--red-300);
+  margin: 0 0 14px;
+}
+.summary {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--navy-200);
+  margin: 0 0 26px;
+}
+
+.solveSection {
+  background: var(--color-surface);
+  padding: 80px 0;
+}
+.solveGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.solveItem {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+.solveCheck {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.solveText {
+  font-size: 16px;
+  color: var(--text-body);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.pkgSection {
+  background: var(--color-bg);
+  padding: 80px 0;
+}
+.pkgGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+.pkgCard {
+  display: flex;
+  flex-direction: column;
+}
+.pkgName {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 19px;
+  color: var(--text-strong);
+  margin-bottom: 8px;
+}
+.pkgDesc {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0 0 20px;
+  flex: 1;
+}
+.pkgPriceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.pkgFrom {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.pkgPrice {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--text-strong);
+}
+
+.faqSection {
+  background: var(--color-surface);
+  padding: 80px 0;
+}
+
+@media (max-width: 760px) {
+  .heroBody {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .solveGrid {
+    grid-template-columns: 1fr;
+  }
+}

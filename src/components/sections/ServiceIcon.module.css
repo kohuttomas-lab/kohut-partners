@@ -1,0 +1,12 @@
+.tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy-50);
+  color: var(--navy-700);
+  flex-shrink: 0;
+}
+.light {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}

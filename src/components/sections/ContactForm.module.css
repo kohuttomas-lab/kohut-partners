@@ -1,0 +1,33 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.success {
+  text-align: center;
+  padding: 50px 20px;
+}
+.successIcon {
+  display: inline-flex;
+  color: var(--success);
+  margin-bottom: 16px;
+}
+.successTitle {
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+.successLead {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}

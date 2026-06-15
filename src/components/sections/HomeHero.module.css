@@ -1,0 +1,148 @@
+.section {
+  background: var(--color-surface);
+  position: relative;
+  overflow: hidden;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 48px;
+  align-items: center;
+  padding: 72px 0 80px;
+}
+.title {
+  font-size: 60px;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  margin: 0 0 22px;
+  color: var(--text-strong);
+}
+.lead {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 540px;
+  margin: 0 0 30px;
+}
+.ctaRow {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.chips {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-body);
+}
+.chipIcon {
+  color: var(--success);
+  display: inline-flex;
+}
+
+.panel {
+  position: relative;
+  height: 460px;
+  border-radius: var(--radius-2xl);
+  background: var(--navy-800);
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+}
+.panelImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 44%;
+}
+.panelGrad {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13, 18, 38, 0.92) 0%,
+    rgba(13, 18, 38, 0.55) 32%,
+    rgba(13, 18, 38, 0) 58%
+  );
+}
+.panelBadge {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+.panelBottom {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+}
+.panelName {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 3px;
+}
+.panelRole {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--red-300);
+  margin-bottom: 12px;
+}
+.miniGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9px;
+}
+.mini {
+  padding: 9px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.miniValue {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+}
+.miniLabel {
+  font-size: 11px;
+  color: var(--navy-100);
+  margin-top: 1px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 48px 0 56px;
+  }
+  .title {
+    font-size: 42px;
+  }
+  .lead {
+    font-size: 17px;
+  }
+  .panel {
+    height: 420px;
+  }
+}
+@media (max-width: 560px) {
+  .title {
+    font-size: 34px;
+  }
+}

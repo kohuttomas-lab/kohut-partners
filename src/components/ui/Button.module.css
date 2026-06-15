@@ -1,0 +1,117 @@
+.btn {
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  line-height: 1;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background var(--dur-fast) var(--ease-standard),
+    border-color var(--dur-fast) var(--ease-standard),
+    color var(--dur-fast) var(--ease-standard),
+    transform var(--dur-fast) var(--ease-standard);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- sizes ---------- */
+.sm {
+  height: 36px;
+  padding: 0 14px;
+  font-size: var(--text-sm);
+  gap: 6px;
+}
+.md {
+  height: 44px;
+  padding: 0 20px;
+  font-size: var(--text-base);
+  gap: 8px;
+}
+.lg {
+  height: 54px;
+  padding: 0 28px;
+  font-size: var(--text-md);
+  gap: 10px;
+}
+
+.block {
+  display: flex;
+  width: 100%;
+}
+
+/* ---------- variants ---------- */
+.primary {
+  background: var(--brand);
+  color: var(--white);
+  border-color: var(--brand);
+}
+.primary:hover {
+  background: var(--brand-hover);
+  border-color: var(--brand-hover);
+}
+
+.accent {
+  background: var(--accent);
+  color: var(--white);
+  border-color: var(--accent);
+}
+.accent:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.secondary {
+  background: var(--white);
+  color: var(--brand);
+  border-color: var(--border-strong);
+}
+.secondary:hover {
+  background: var(--navy-50);
+  border-color: var(--brand);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--brand);
+  border-color: transparent;
+}
+.ghost:hover {
+  background: var(--navy-50);
+}
+
+.link {
+  background: transparent;
+  color: var(--text-link);
+  border-color: transparent;
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+}
+.link:hover {
+  color: var(--accent);
+}
+.link:active {
+  transform: none;
+}
