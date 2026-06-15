@@ -11,13 +11,20 @@ interface FooterCol {
   items: string[];
 }
 
-// Only static destinations are linked; legal pages don't exist yet → null = plain text.
-type StaticPathname = "/services" | "/about" | "/blog" | "/contact";
+// Per-column footer link targets (null = render as plain text).
+type StaticPathname =
+  | "/services"
+  | "/about"
+  | "/blog"
+  | "/contact"
+  | "/privacy"
+  | "/terms"
+  | "/cookies";
 
 const COL_LINKS: (StaticPathname | null)[][] = [
   ["/services", "/services", "/services", "/services", "/services", "/services"],
   ["/about", "/about", "/blog", "/contact"],
-  [null, null, null],
+  ["/privacy", "/terms", "/cookies"],
 ];
 
 const tel = (phone: string) => `tel:${phone.replace(/\s/g, "")}`;
