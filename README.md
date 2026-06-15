@@ -75,6 +75,9 @@ structured domain content (services, team, blog, subscriptions, templates) in
 - **Booking modal** — 3-step flow (type → area + date/time → details), with the
   date picker generating upcoming business days. Simulated confirmation.
 - Contact form with client-side validation and a simulated "sent" state.
+- **Stripe Checkout** wired for the e-shop (one-off cart) and subscriptions
+  (separate session), hosted/redirect flow. Without keys it gracefully falls
+  back to the simulated modal — see "Enabling Stripe" below.
 - SEO metadata + per-page titles/descriptions; brand favicon (`src/app/icon.svg`).
 
 ## Not yet wired (pending accounts / API keys) — handoff §8
@@ -84,11 +87,30 @@ These are **simulated** in the UI and need real integrations + credentials:
 | Area | Current | To wire |
 |---|---|---|
 | Booking | fake 3-step modal | **Cal.com** (online + in-person, €60 prepay) |
-| Payments (e-shop, subscriptions) | fake checkout | **Stripe** (cards, Apple Pay, subscriptions) |
+| Payments (e-shop, subscriptions) | **Stripe Checkout wired** — add keys to enable (falls back to the simulated modal without them) | webhook fulfilment + Stripe Tax for VAT |
 | Downloadable templates | fake | files behind a paywall (Stripe webhook → signed URL) |
 | Contact form | `setSent(true)` | API route + **Resend** + anti-spam |
 | Blog / team / services content | typed data in `content.ts` | **headless CMS** (Sanity / Payload) |
-| Cookies / GDPR | — | consent banner + real legal documents |
+| Cookies / GDPR | drafts published | consent banner + finalized legal wording |
+
+### Enabling Stripe (test mode)
+
+1. `cp .env.example .env.local` and fill in your **test** secret key (`sk_test_…`).
+2. Forward webhooks in another terminal and copy the printed `whsec_…` into `.env.local`:
+   ```bash
+   stripe listen --forward-to localhost:3200/api/stripe/webhook
+   ```
+3. Restart `npm run dev`. The cart's "Prejsť k platbe" and the subscription
+   "Vybrať plán" now create a hosted Stripe Checkout session and redirect;
+   `?stripe=success` clears the cart on return.
+
+- Hosted Checkout (redirect) — **no publishable key needed**.
+- One-off cart → `mode: payment`; subscriptions → a **separate** `mode: subscription`
+  session (Stripe can't mix one-time and recurring in one session).
+- Prices are charged **VAT-inclusive** (net × 1.2) to match the UI total. For a
+  proper VAT breakdown on invoices, switch to **Stripe Tax** (`automatic_tax`).
+- Fulfilment (granting template downloads, confirmation e-mail) is a TODO in
+  `src/app/api/stripe/webhook/route.ts`.
 
 ## Still TODO (content/assets)
 

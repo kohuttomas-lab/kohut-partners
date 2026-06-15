@@ -42,7 +42,25 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [checkoutOpen, setCheckoutOpen] = useState(false);
 
   // Load persisted cart after mount (avoids SSR/localStorage mismatch).
+  // Also handle the Stripe Checkout return: clear the cart on ?stripe=success.
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const stripeStatus = params.get("stripe");
+    if (stripeStatus) {
+      params.delete("stripe");
+      const qs = params.toString();
+      window.history.replaceState({}, "", window.location.pathname + (qs ? `?${qs}` : ""));
+    }
+    if (stripeStatus === "success") {
+      setItems({});
+      try {
+        localStorage.removeItem(STORAGE_KEY);
+      } catch {
+        /* ignore */
+      }
+      setHydrated(true);
+      return;
+    }
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (raw) setItems(JSON.parse(raw));

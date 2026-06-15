@@ -1,8 +1,9 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Check, ShoppingBag, Download } from "@/components/icons";
+import { startCheckout } from "@/lib/checkout-client";
 import { useCart } from "./CartProvider";
 
 /** Toggle-style add-to-cart button for packages and templates. */
@@ -32,17 +33,29 @@ export function AddToCartButton({
   );
 }
 
-/** Subscription CTA — always adds a single-line subscription. */
+/** Subscription CTA — starts a dedicated Stripe subscription checkout
+    (separate from the one-off cart). Falls back to add-to-cart without keys. */
 export function SubscribeButton({ id, popular }: { id: string; popular: boolean }) {
   const t = useTranslations("shop");
+  const locale = useLocale();
   const { addItem } = useCart();
+
+  const onClick = async () => {
+    const res = await startCheckout({
+      mode: "subscription",
+      id,
+      locale,
+      returnUrl: window.location.href.split("?")[0],
+    });
+    if ("url" in res && res.url) {
+      window.location.href = res.url;
+      return;
+    }
+    addItem(id);
+  };
+
   return (
-    <Button
-      variant={popular ? "accent" : "secondary"}
-      size="lg"
-      block
-      onClick={() => addItem(id)}
-    >
+    <Button variant={popular ? "accent" : "secondary"} size="lg" block onClick={onClick}>
       {t("subsChoose")}
     </Button>
   );
