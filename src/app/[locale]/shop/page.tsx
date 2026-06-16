@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { ESHOP_ENABLED } from "@/lib/flags";
 import { PageHero } from "@/components/layout/PageHero";
 import { FixedPackages } from "@/components/shop/FixedPackages";
 import { Templates } from "@/components/shop/Templates";
@@ -16,6 +18,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 }
 
 export default async function ShopPage(props: Props) {
+  if (!ESHOP_ENABLED) notFound();
   const { locale } = await props.params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "shop" });

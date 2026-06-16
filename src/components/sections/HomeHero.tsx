@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/Badge";
 import { LinkButton } from "@/components/ui/Button";
 import { BookingButton } from "@/components/booking/BookingButton";
 import { Calendar, CheckCircle } from "@/components/icons";
+import { ESHOP_ENABLED } from "@/lib/flags";
 import styles from "./HomeHero.module.css";
 
 interface Stat {
@@ -15,6 +16,7 @@ interface Stat {
 
 export function HomeHero() {
   const t = useTranslations("home");
+  const tNav = useTranslations("nav");
   const locale = useLocale() as Locale;
   const lead = getTeam(locale)[0];
   const chips = t.raw("heroChips") as string[];
@@ -31,9 +33,15 @@ export function HomeHero() {
             <BookingButton variant="accent" size="lg" leftIcon={<Calendar size={20} />}>
               {t("heroPrimary")}
             </BookingButton>
-            <LinkButton href="/shop" variant="secondary" size="lg">
-              {t("heroSecondary")}
-            </LinkButton>
+            {ESHOP_ENABLED ? (
+              <LinkButton href="/shop" variant="secondary" size="lg">
+                {t("heroSecondary")}
+              </LinkButton>
+            ) : (
+              <LinkButton href="/services" variant="secondary" size="lg">
+                {tNav("services")}
+              </LinkButton>
+            )}
           </div>
           <div className={styles.chips}>
             {chips.map((chip, i) => (

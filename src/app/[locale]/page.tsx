@@ -7,6 +7,7 @@ import { TeamSection } from "@/components/sections/TeamSection";
 import { BlogPreview } from "@/components/sections/BlogPreview";
 import { References } from "@/components/shop/References";
 import { CTABand } from "@/components/layout/CTABand";
+import { ESHOP_ENABLED } from "@/lib/flags";
 
 export default async function HomePage(props: PageProps<"/[locale]">) {
   const { locale } = await props.params;
@@ -20,7 +21,7 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
       <Process />
       <TeamSection withButton />
       <BlogPreview />
-      <References />
+      {ESHOP_ENABLED ? <References /> : null}
       <CTABand />
     </>
   );

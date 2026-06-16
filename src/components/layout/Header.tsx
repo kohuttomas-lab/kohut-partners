@@ -8,6 +8,7 @@ import { LanguageSwitch } from "./LanguageSwitch";
 import { Button } from "@/components/ui/Button";
 import { useBooking } from "@/components/booking/BookingProvider";
 import { Calendar, Menu, X } from "@/components/icons";
+import { ESHOP_ENABLED } from "@/lib/flags";
 import { cx } from "@/lib/cx";
 import styles from "./Header.module.css";
 
@@ -19,6 +20,9 @@ const NAV = [
   { key: "blog", href: "/blog" },
   { key: "contact", href: "/contact" },
 ] as const;
+
+// E-shop link is hidden until the shop is enabled.
+const NAV_ITEMS = ESHOP_ENABLED ? NAV : NAV.filter((item) => item.key !== "shop");
 
 function isActive(href: string, pathname: string): boolean {
   if (href === "/") return pathname === "/";
@@ -60,7 +64,7 @@ export function Header() {
           </Link>
 
           <nav className={styles.nav}>
-            {NAV.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
@@ -91,7 +95,7 @@ export function Header() {
 
         <div className={cx(styles.mobilePanel, menuOpen && styles.mobilePanelOpen)}>
           <nav className={styles.mobileNav}>
-            {NAV.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}

@@ -7,6 +7,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BookingProvider } from "@/components/booking/BookingProvider";
 import { CartProvider } from "@/components/shop/CartProvider";
+import { ESHOP_ENABLED } from "@/lib/flags";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -42,16 +43,20 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
+  const shell = (
+    <>
+      <Header />
+      <main>{props.children}</main>
+      <Footer />
+    </>
+  );
+
   return (
     <html lang={locale}>
       <body>
         <NextIntlClientProvider>
           <BookingProvider>
-            <CartProvider>
-              <Header />
-              <main>{props.children}</main>
-              <Footer />
-            </CartProvider>
+            {ESHOP_ENABLED ? <CartProvider>{shell}</CartProvider> : shell}
           </BookingProvider>
         </NextIntlClientProvider>
       </body>
