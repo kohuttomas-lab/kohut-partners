@@ -18,7 +18,9 @@
     "readTime": "min read",
     "backToBlog": "Back to blog",
     "areaOther": "Other",
-    "langSwitch": "SK"
+    "langSwitch": "SK",
+    "sending": "Sending…",
+    "formError": "Something went wrong. Please try again or call us."
   },
   "home": {
     "overline": "Law firm · Zvolen",

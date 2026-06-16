@@ -25,6 +25,11 @@
   color: var(--text-muted);
   margin: 0;
 }
+.error {
+  font-size: 14px;
+  color: var(--danger);
+  margin: 0;
+}
 
 @media (max-width: 480px) {
   .row2 {

@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import type { Locale } from "@/i18n/routing";
 import { getServices } from "@/lib/content";
+import { submitLead } from "@/lib/lead";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Select } from "@/components/ui/Select";
@@ -59,6 +60,7 @@ export function BookingModal({
   const [area, setArea] = useState(presetArea ?? "");
   const [dayIdx, setDayIdx] = useState<number | null>(null);
   const [timeIdx, setTimeIdx] = useState<number | null>(null);
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     if (open) {
@@ -67,6 +69,7 @@ export function BookingModal({
       setArea(presetArea ?? "");
       setDayIdx(null);
       setTimeIdx(null);
+      setSubmitting(false);
     }
   }, [open, presetArea]);
 
@@ -97,6 +100,30 @@ export function BookingModal({
           year: "numeric",
         }).format(days[dayIdx])
       : "";
+
+  const onSubmitDetails = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const fd = new FormData(e.currentTarget);
+    const areaName =
+      area === ""
+        ? ""
+        : area === "ine"
+          ? common("areaOther")
+          : services.find((s) => s.id === area)?.name || area;
+    const slot = timeIdx !== null ? `${confirmedDate} · ${TIMES[timeIdx]}` : confirmedDate;
+    const fields = {
+      Meno: String(fd.get("name") || ""),
+      "E-mail": String(fd.get("email") || ""),
+      Telefón: String(fd.get("phone") || ""),
+      "Typ konzultácie": type === "online" ? b("online") : b("inPerson"),
+      "Oblasť práva": areaName,
+      Termín: slot,
+    };
+    setSubmitting(true);
+    await submitLead(fields, `Rezervácia konzultácie — ${fields.Meno}`);
+    setSubmitting(false);
+    setStep(3);
+  };
 
   return (
     <div className={styles.overlay} role="dialog" aria-modal="true" aria-label={b("title")}>
@@ -212,17 +239,11 @@ export function BookingModal({
           )}
 
           {step === 2 && (
-            <form
-              id={FORM_ID}
-              onSubmit={(e) => {
-                e.preventDefault();
-                setStep(3);
-              }}
-              className={styles.stackTight}
-            >
-              <Input label={c("fName")} required placeholder={c("namePlaceholder")} autoComplete="name" />
+            <form id={FORM_ID} onSubmit={onSubmitDetails} className={styles.stackTight}>
+              <Input name="name" label={c("fName")} required placeholder={c("namePlaceholder")} autoComplete="name" />
               <div className={styles.row2}>
                 <Input
+                  name="email"
                   label={c("fEmail")}
                   type="email"
                   required
@@ -230,7 +251,7 @@ export function BookingModal({
                   placeholder={c("emailPlaceholder")}
                   autoComplete="email"
                 />
-                <Input label={c("fPhone")} placeholder={c("phonePlaceholder")} autoComplete="tel" />
+                <Input name="phone" label={c("fPhone")} placeholder={c("phonePlaceholder")} autoComplete="tel" />
               </div>
               <div className={styles.payNote}>
                 <span className={styles.payNoteIcon}>
@@ -280,8 +301,14 @@ export function BookingModal({
             </Button>
           ) : null}
           {step === 2 ? (
-            <Button variant="accent" type="submit" form={FORM_ID} leftIcon={<Shield size={16} />}>
-              {b("confirm")}
+            <Button
+              variant="accent"
+              type="submit"
+              form={FORM_ID}
+              disabled={submitting}
+              leftIcon={<Shield size={16} />}
+            >
+              {submitting ? common("sending") : b("confirm")}
             </Button>
           ) : null}
           {step === 3 ? (

@@ -18,7 +18,9 @@
     "readTime": "min čítania",
     "backToBlog": "Späť na blog",
     "areaOther": "Iné",
-    "langSwitch": "EN"
+    "langSwitch": "EN",
+    "sending": "Odosielam…",
+    "formError": "Niečo sa nepodarilo. Skúste to znova alebo nám zavolajte."
   },
   "home": {
     "overline": "Advokátska kancelária · Zvolen",
