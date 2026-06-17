@@ -25,7 +25,7 @@ export function ServicesGrid() {
               href={{ pathname: "/services/[id]", params: { id: s.id } }}
               className={styles.cardLink}
             >
-              <Card interactive padding="lg" elevation="sm">
+              <Card interactive padding="lg" elevation="sm" className={styles.card}>
                 <ServiceIcon name={s.icon} />
                 <div className={styles.name}>{s.name}</div>
                 <p className={styles.tagline}>{s.tagline}</p>

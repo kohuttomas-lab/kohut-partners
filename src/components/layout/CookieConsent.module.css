@@ -1,0 +1,42 @@
+.bar {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 400;
+  width: 380px;
+  max-width: calc(100% - 40px);
+  background: var(--color-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  padding: 20px 22px;
+}
+.text {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-body);
+  margin: 0 0 14px;
+}
+.link {
+  color: var(--text-link);
+  text-decoration: underline;
+}
+.link:hover {
+  color: var(--accent);
+}
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .bar {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    width: auto;
+  }
+  .actions {
+    flex-direction: column;
+  }
+}

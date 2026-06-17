@@ -141,7 +141,7 @@ const SERVICES: RawService[] = [
       summary:
         "Od založenia firmy cez zmluvy až po korporátne zmeny. Postavíme vaše podnikanie na zmluvách, ktoré obstoja, aj keď príde spor.",
       solve: [
-        "Založenie a zmeny v s.r.o. a a.s.",
+        "Zakladanie, zmeny a premeny obchodných spoločností a družstiev",
         "Obchodné zmluvy na mieru a ich revízia",
         "Korporátne poradenstvo a vzťahy spoločníkov",
         "Občianske zmluvy, vlastníctvo a záväzky",
@@ -164,7 +164,7 @@ const SERVICES: RawService[] = [
       summary:
         "From company formation through contracts to corporate changes. We build your business on contracts that hold up — even when a dispute arrives.",
       solve: [
-        "Formation and changes of LLCs and JSCs",
+        "Formation, changes and transformations of commercial companies and cooperatives",
         "Tailored commercial contracts and review",
         "Corporate advisory and shareholder relations",
         "Civil contracts, ownership and obligations",
@@ -556,7 +556,7 @@ const TEAM: RawTeamMember[] = [
     sk: ["Dominika", "spolupracujúca advokátka", "Zdravotnícke právo · rodinné právo"],
     en: ["Dominika", "associate attorney", "Healthcare law · family law"],
   },
-  { id: 5, tone: "neutral", sk: ["Lucia", "odborný asistent advokáta"], en: ["Lucia", "paralegal"] },
+  { id: 5, tone: "neutral", sk: ["Lucia", "odborná asistentka advokáta"], en: ["Lucia", "paralegal"] },
   { id: 6, tone: "neutral", sk: ["Eva", "účtovníčka"], en: ["Eva", "accountant"] },
   { id: 7, tone: "neutral", sk: ["Katarína", "účtovníčka"], en: ["Katarína", "accountant"] },
   { id: 8, tone: "neutral", sk: ["Ingrid", "sekretariát"], en: ["Ingrid", "office manager"] },

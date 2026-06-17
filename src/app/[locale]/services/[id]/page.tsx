@@ -11,7 +11,7 @@ import { ServiceIcon } from "@/components/sections/ServiceIcon";
 import { FaqItem } from "@/components/sections/FaqItem";
 import { BookingButton } from "@/components/booking/BookingButton";
 import { CTABand } from "@/components/layout/CTABand";
-import { ArrowLeft, Calendar, Check, ShoppingBag } from "@/components/icons";
+import { ArrowLeft, Calendar, Check } from "@/components/icons";
 import styles from "./service.module.css";
 
 type Props = { params: Promise<{ locale: string; id: string }> };
@@ -94,9 +94,9 @@ export default async function ServiceDetailPage(props: Props) {
                   area={service.id}
                   variant="primary"
                   block
-                  leftIcon={<ShoppingBag size={16} />}
+                  leftIcon={<Calendar size={16} />}
                 >
-                  {common("orderBtn")}
+                  {t("packageCta")}
                 </BookingButton>
               </Card>
             ))}

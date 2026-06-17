@@ -7,6 +7,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BookingProvider } from "@/components/booking/BookingProvider";
 import { CartProvider } from "@/components/shop/CartProvider";
+import { CookieConsent } from "@/components/layout/CookieConsent";
 import { ESHOP_ENABLED } from "@/lib/flags";
 import "../globals.css";
 
@@ -35,6 +36,11 @@ export async function generateMetadata(props: PageProps<"/[locale]">): Promise<M
       locale: sk ? "sk_SK" : "en_GB",
       type: "website",
     },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -58,6 +64,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
           <BookingProvider>
             {ESHOP_ENABLED ? <CartProvider>{shell}</CartProvider> : shell}
           </BookingProvider>
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>

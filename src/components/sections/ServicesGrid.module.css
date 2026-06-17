@@ -9,8 +9,14 @@
 }
 .cardLink {
   display: block;
+  height: 100%;
   color: inherit;
   text-decoration: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .name {
   font-family: var(--font-display);
@@ -29,6 +35,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  margin-top: auto;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 14px;

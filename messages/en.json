@@ -25,7 +25,7 @@
   "home": {
     "overline": "Law firm · Zvolen",
     "heroBadge": "SAK · Zvolen",
-    "heroTitle": "Legal certainty for your business.",
+    "heroTitle": "Legal certainty for business and life.",
     "heroLead": "Insolvency, commercial and IT law, real estate and litigation — clear advice, fast action, and a price you know up front.",
     "heroPrimary": "Book a consultation",
     "heroSecondary": "Legal shop",
@@ -49,7 +49,7 @@
     ],
     "teamOverline": "Our team",
     "teamTitle": "The people who will stand by you",
-    "teamLead": "A small, well-coordinated team of attorneys with real experience in insolvency, corporate law and litigation.",
+    "teamLead": "A well-coordinated team of attorneys with real experience in insolvency, corporate law and litigation.",
     "teamCta": "Meet the full team",
     "blogOverline": "From our practice",
     "blogTitle": "Law made clear — our blog",
@@ -70,7 +70,8 @@
     "packages": "Fixed-price packages",
     "packagesLead": "Selected services can be ordered online at a known price. More complex matters we handle after a consultation.",
     "faqTitle": "Frequently asked questions",
-    "bookForThis": "Consultation on this area"
+    "bookForThis": "Consultation on this area",
+    "packageCta": "I'm interested"
   },
   "about": {
     "heroOverline": "About the firm",
@@ -86,7 +87,7 @@
     "storyTitle": "Our story",
     "story": [
       "We founded the firm in 2011 with an ambition to do law differently — closer to the entrepreneur and further from needless complexity.",
-      "Today we’re a small, coordinated team guiding companies from formation through growth to crisis situations. We focus on insolvency, corporate and IT law, real estate and litigation.",
+      "Today we’re a coordinated team guiding companies from formation through growth to crisis situations. We focus on insolvency, corporate and IT law, real estate and litigation.",
       "We believe the best lawyer is the one you understand. So we explain every matter in human terms and state the price up front."
     ]
   },
@@ -190,11 +191,17 @@
   "footer": {
     "tag": "Law firm registered with the Slovak Bar Association.",
     "cols": [
-      { "head": "Services", "items": ["Insolvency", "Corporate law", "Real estate", "Litigation", "Criminal law", "IT law"] },
+      { "head": "Services", "items": ["Insolvency", "Commercial & civil law", "Real estate", "Litigation", "Criminal law", "IT law"] },
       { "head": "Firm", "items": ["About us", "Our team", "Blog", "Careers"] },
       { "head": "Legal", "items": ["Privacy", "Terms", "Cookies"] }
     ],
     "fine": "This website is for general information only and is not legal advice.",
     "rights": "© kohút & partners s.r.o. · ID 47 235 888"
+  },
+  "consent": {
+    "text": "We use cookies — essential ones to run the site and, with your consent, to measure traffic.",
+    "more": "Cookie policy",
+    "acceptAll": "Accept all",
+    "essential": "Essentials only"
   }
 }

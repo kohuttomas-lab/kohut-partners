@@ -25,7 +25,7 @@
   "home": {
     "overline": "Advokátska kancelária · Zvolen",
     "heroBadge": "SAK · Zvolen",
-    "heroTitle": "Právne istoty pre vaše podnikanie.",
+    "heroTitle": "Právne istoty pre podnikanie aj život.",
     "heroLead": "Insolvencie, obchodné a IT právo, nehnuteľnosti aj súdne spory — poradíme zrozumiteľne, konáme rýchlo a s vopred známou cenou.",
     "heroPrimary": "Rezervovať konzultáciu",
     "heroSecondary": "Právny e-shop",
@@ -49,7 +49,7 @@
     ],
     "teamOverline": "Náš tím",
     "teamTitle": "Ľudia, ktorí budú stáť pri vás",
-    "teamLead": "Malý zohraný tím advokátov s reálnou praxou v insolvenciách, korporátnom práve aj sporoch.",
+    "teamLead": "Zohraný tím advokátov s reálnou praxou v insolvenciách, korporátnom práve aj sporoch.",
     "teamCta": "Spoznať celý tím",
     "blogOverline": "Z našej praxe",
     "blogTitle": "Právo zrozumiteľne — náš blog",
@@ -70,7 +70,8 @@
     "packages": "Balíky s pevnou cenou",
     "packagesLead": "Vybrané služby viete objednať online za vopred známu cenu. Zložitejšie veci riešime po konzultácii.",
     "faqTitle": "Časté otázky",
-    "bookForThis": "Konzultácia k tejto oblasti"
+    "bookForThis": "Konzultácia k tejto oblasti",
+    "packageCta": "Mám záujem"
   },
   "about": {
     "heroOverline": "O kancelárii",
@@ -86,7 +87,7 @@
     "storyTitle": "Náš príbeh",
     "story": [
       "Kanceláriu sme založili v roku 2011 s ambíciou robiť právo inak — bližšie k podnikateľovi a ďalej od zbytočnej komplikovanosti.",
-      "Dnes tvoríme malý zohraný tím, ktorý sprevádza firmy od založenia cez rast až po krízové situácie. Špecializujeme sa na insolvencie, korporátne a IT právo, nehnuteľnosti a súdne spory.",
+      "Dnes tvoríme zohraný tím, ktorý sprevádza firmy od založenia cez rast až po krízové situácie. Špecializujeme sa na insolvencie, korporátne a IT právo, nehnuteľnosti a súdne spory.",
       "Veríme, že najlepší právnik je ten, ktorému rozumiete. Preto každú vec vysvetľujeme ľudsky a cenu hovoríme vopred."
     ]
   },
@@ -190,11 +191,17 @@
   "footer": {
     "tag": "Advokátska kancelária zapísaná v Slovenskej advokátskej komore.",
     "cols": [
-      { "head": "Služby", "items": ["Insolvencie", "Obchodné právo", "Nehnuteľnosti", "Súdne spory", "Trestné právo", "IT právo"] },
+      { "head": "Služby", "items": ["Insolvencie", "Obchodné a občianske právo", "Nehnuteľnosti", "Súdne spory", "Trestné právo", "IT právo"] },
       { "head": "Kancelária", "items": ["O nás", "Náš tím", "Blog", "Kariéra"] },
       { "head": "Právne", "items": ["Ochrana údajov", "Obchodné podmienky", "Cookies"] }
     ],
     "fine": "Tento web má informatívny charakter a nenahrádza právne poradenstvo.",
     "rights": "© kohút & partners s.r.o. · IČO 47 235 888"
+  },
+  "consent": {
+    "text": "Používame cookies — nevyhnutné na fungovanie webu a, s vaším súhlasom, na meranie návštevnosti.",
+    "more": "Zásady cookies",
+    "acceptAll": "Prijať všetko",
+    "essential": "Iba nevyhnutné"
   }
 }
