@@ -34,8 +34,8 @@
     "stats": [
       { "value": "20", "label": "rokov praxe" },
       { "value": "2 400+", "label": "vyriešených prípadov" },
-      { "value": "96 %", "label": "úspešnosť sporov" },
-      { "value": "4,9/5", "label": "hodnotenie klientov" }
+      { "value": "6", "label": "oblastí práva" },
+      { "value": "8", "label": "4 advokáti + podporný tím" }
     ],
     "servOverline": "Oblasti práva",
     "servTitle": "Šesť oblastí, v ktorých vás zastúpime",
@@ -203,5 +203,10 @@
     "more": "Zásady cookies",
     "acceptAll": "Prijať všetko",
     "essential": "Iba nevyhnutné"
+  },
+  "notFound": {
+    "title": "Stránka sa nenašla",
+    "text": "Stránka, ktorú hľadáte, neexistuje alebo bola presunutá.",
+    "back": "Späť na domov"
   }
 }

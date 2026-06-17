@@ -34,8 +34,8 @@
     "stats": [
       { "value": "20", "label": "years of practice" },
       { "value": "2,400+", "label": "matters resolved" },
-      { "value": "96%", "label": "litigation success" },
-      { "value": "4.9/5", "label": "client rating" }
+      { "value": "6", "label": "practice areas" },
+      { "value": "8", "label": "4 attorneys + support team" }
     ],
     "servOverline": "Practice areas",
     "servTitle": "Six areas where we represent you",
@@ -203,5 +203,10 @@
     "more": "Cookie policy",
     "acceptAll": "Accept all",
     "essential": "Essentials only"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you’re looking for doesn’t exist or has moved.",
+    "back": "Back home"
   }
 }

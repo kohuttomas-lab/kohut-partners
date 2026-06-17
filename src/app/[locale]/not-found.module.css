@@ -1,0 +1,36 @@
+.section {
+  background: var(--color-surface);
+  padding: 100px 0 120px;
+  text-align: center;
+}
+.code {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 96px;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--navy-100);
+  margin: 0 0 8px;
+}
+.title {
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  color: var(--text-strong);
+  margin: 0 0 12px;
+}
+.text {
+  font-size: 17px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0 auto 28px;
+  max-width: 460px;
+}
+
+@media (max-width: 560px) {
+  .section {
+    padding: 72px 0 88px;
+  }
+  .code {
+    font-size: 72px;
+  }
+}
