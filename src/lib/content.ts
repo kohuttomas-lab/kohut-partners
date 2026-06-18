@@ -643,6 +643,20 @@ const BLOG: RawArticle[] = [
       "GDPR for your e-shop: 7 things you must have",
       "A practical checklist for anyone selling online. Avoid fines and needless complications.",
     ],
+    body: {
+      sk: [
+        "Predávať online bez právnych dokumentov je ako otvoriť obchod bez dverí — funguje to dovtedy, kým nepríde kontrola alebo nespokojný zákazník. Väčšinu povinností pritom stačí vyriešiť raz a poriadne.",
+        "Sedem vecí, ktoré by ste mali mať: (1) obchodné podmienky, (2) reklamačný poriadok, (3) zásady ochrany osobných údajov podľa GDPR, (4) informáciu o cookies a nástroj na získanie súhlasu, (5) jasné poučenie o práve spotrebiteľa odstúpiť od zmluvy, (6) sprostredkovateľské zmluvy s dodávateľmi, ktorí spracúvajú údaje za vás (hosting, platby, e-maily), a (7) primerané zabezpečenie údajov.",
+        "Nie je to len byrokracia. Pri kontrole alebo spore rozhoduje, či máte dokumenty v poriadku — a pokuty za porušenie GDPR vedia byť citeľné. Zákazník navyše skôr nakúpi tam, kde vidí, že firma berie ochranu údajov vážne.",
+        "Vzory stiahnuté z internetu často nesedia na váš konkrétny e-shop. Radi vám pripravíme dokumenty na mieru — alebo skontrolujeme tie, ktoré už používate.",
+      ],
+      en: [
+        "Selling online without legal documents is like opening a shop without a door — it works until an inspection or an unhappy customer shows up. The good news: most obligations can be handled once and properly.",
+        "Seven things you should have: (1) terms and conditions, (2) a complaints policy, (3) a GDPR privacy policy, (4) a cookie notice and a consent tool, (5) clear information on the consumer’s right to withdraw, (6) data-processing agreements with vendors who process data for you (hosting, payments, e-mail), and (7) reasonable data security.",
+        "This isn’t just paperwork. In an inspection or a dispute, having your documents in order is what counts — and GDPR fines can hurt. Customers are also more likely to buy where they see a company takes data protection seriously.",
+        "Templates pulled off the internet often don’t fit your specific shop. We’re happy to prepare tailored documents — or review the ones you already use.",
+      ],
+    },
   },
   {
     id: "kupa-bytu",
@@ -658,6 +672,20 @@ const BLOG: RawArticle[] = [
       "Buying a flat: how to protect your money in the transfer",
       "Escrow, the cadastre and a contract check. Three steps that decide whether the purchase is safe.",
     ],
+    body: {
+      sk: [
+        "Kúpa bytu je často najväčšia transakcia v živote — a zároveň moment, keď sa dá najľahšie prísť o peniaze. Riziko nie je v cene, ale v tom, kedy a komu peniaze pošlete.",
+        "Najdôležitejšia ochrana je úschova. Kúpnu cenu neposielajte priamo predávajúcemu, ale do notárskej alebo advokátskej úschovy. Peniaze sa uvoľnia až vtedy, keď je vlastníctvo zapísané na vás v katastri — nie skôr.",
+        "Druhým pilierom je správne pripravená kúpna zmluva a návrh na vklad do katastra. Skontrolujte ťarchy (záložné práva, vecné bremená), či je predávajúci skutočne vlastníkom, a presné vymedzenie bytu vrátane podielu na pozemku a spoločných častiach.",
+        "Tri kroky — kontrola zmluvy, úschova a vklad do katastra — rozhodnú o tom, či bude kúpa bezpečná. Pri každom z nich vám vieme stáť po boku.",
+      ],
+      en: [
+        "Buying a flat is often the biggest transaction of your life — and the moment it’s easiest to lose money. The risk isn’t the price, but when and to whom you send the money.",
+        "The most important protection is escrow. Don’t send the purchase price directly to the seller — use a notarial or attorney escrow. The funds are released only once ownership is registered to you in the cadastre, not before.",
+        "The second pillar is a properly drafted purchase contract and a cadastre registration petition. Check for encumbrances (liens, easements), whether the seller is the actual owner, and the exact definition of the flat, including the share of the land and common areas.",
+        "Three steps — a contract check, escrow and cadastre registration — decide whether the purchase is safe. We can stand by you at each of them.",
+      ],
+    },
   },
   {
     id: "zmluva-revizia",
@@ -673,6 +701,20 @@ const BLOG: RawArticle[] = [
       "Why it pays to have every contract reviewed",
       "A review for a few dozen euros can save disputes worth thousands. What we look at most often.",
     ],
+    body: {
+      sk: [
+        "Zmluvu väčšina ľudí podpíše až vtedy, keď je rozhodnuté — a prečíta si ju, až keď nastane problém. Vtedy je už neskoro.",
+        "Pri revízii sa pozeráme hlavne na to, čo vás môže zabolieť: zmluvné pokuty a sankcie, podmienky a lehoty na ukončenie, zodpovednosť za škodu, splatnosť a platobné podmienky — a na to, čo v zmluve naopak chýba.",
+        "Revízia za pár desiatok eur dokáže predísť sporu za tisíce. Najčastejšie nejde o úmyselnú pascu, ale o nevýhodné formulácie, ktoré si bez praxe nevšimnete.",
+        "Než niečo podpíšete — obchodnú zmluvu, nájom či zmluvu o dielo — pošlite nám ju. Zrozumiteľne vám povieme, čo podpisujete a kde si dať pozor.",
+      ],
+      en: [
+        "Most people sign a contract once the deal is decided — and only read it when a problem appears. By then it’s too late.",
+        "In a review we focus on what can hurt you: penalties and sanctions, termination terms and notice periods, liability for damage, due dates and payment terms — and on what the contract is missing.",
+        "A review for a few dozen euros can prevent a dispute worth thousands. Usually it isn’t a deliberate trap, but unfavourable wording you wouldn’t spot without experience.",
+        "Before you sign anything — a commercial contract, a lease or a work contract — send it to us. We’ll tell you in plain terms what you’re signing and where to be careful.",
+      ],
+    },
   },
   {
     id: "vymahanie-pohladavok",
@@ -688,6 +730,20 @@ const BLOG: RawArticle[] = [
       "Debt recovery: from demand to enforcement",
       "How to get to your money quickly and without unnecessary court battles.",
     ],
+    body: {
+      sk: [
+        "Keď vám niekto nezaplatí, čas hrá proti vám. Čím dlhšie čakáte, tým ťažšie sa peniaze získavajú späť — a tým vyššie je riziko, že dlžník medzitým firmu „vyprázdni“.",
+        "Postup má jasné kroky. Najprv predžalobná výzva — tá často stačí, aby dlžník zaplatil. Ak nezaberie, nasleduje žaloba alebo návrh na platobný rozkaz a po právoplatnom rozhodnutí exekúcia.",
+        "Oplatí sa konať systematicky: mať poriadok v dokladoch (objednávky, faktúry, dodacie listy), strážiť premlčacie lehoty a pri väčších sumách zvážiť aj zabezpečenie majetku dlžníka. Niekedy je rýchlejšie a lacnejšie dohodnúť sa mimosúdne.",
+        "Pomôžeme vám vybrať najrýchlejšiu cestu k vašim peniazom — od výzvy po exekúciu — a celé konanie vybavíme za vás.",
+      ],
+      en: [
+        "When someone doesn’t pay you, time works against you. The longer you wait, the harder it is to get the money back — and the higher the risk the debtor empties the company in the meantime.",
+        "The process has clear steps. First a pre-action demand — which is often enough to get the debtor to pay. If it doesn’t work, a lawsuit or a payment-order petition follows, and after a final decision, enforcement.",
+        "It pays to act systematically: keep your records in order (orders, invoices, delivery notes), watch the limitation periods, and for larger amounts consider securing the debtor’s assets. Sometimes an out-of-court settlement is faster and cheaper.",
+        "We’ll help you choose the fastest route to your money — from demand to enforcement — and handle the whole process for you.",
+      ],
+    },
   },
   {
     id: "zalozenie-sro",
@@ -703,6 +759,20 @@ const BLOG: RawArticle[] = [
       "Forming an LLC step by step in 2026",
       "What you need, what it costs, and how to handle the whole process online.",
     ],
+    body: {
+      sk: [
+        "Založiť s.r.o. je dnes rýchlejšie než kedysi, no rozhodujú detaily. Dobre nastavená spoločnosť vám ušetrí starosti pri prvom spoločníkovi navyše aj pri prvom spore.",
+        "V skratke: zvolíte obchodné meno a predmety podnikania, pripravíte spoločenskú zmluvu (alebo zakladateľskú listinu pri jednom spoločníkovi), vybavíte živnostenské oprávnenia, splatíte základné imanie a podáte návrh na zápis do obchodného registra. Väčšina krokov ide elektronicky.",
+        "Pozor na veci, ktoré sa neskôr menia ťažko — vzťahy medzi spoločníkmi, konanie v mene firmy a rozdelenie obchodných podielov. Práve tu sa oplatí premyslieť to dopredu.",
+        "Vieme vám firmu založiť na kľúč — pripravíme dokumenty, podáme návrhy a vybavíme živnosti, vy len podpíšete. A nastavíme to tak, aby vám spoločnosť slúžila aj o pár rokov.",
+      ],
+      en: [
+        "Forming an LLC is faster than it used to be, but the details matter. A well-set-up company saves you trouble when the first extra shareholder — or the first dispute — arrives.",
+        "In short: you choose a business name and activities, prepare the articles of association (or a founding deed for a single shareholder), arrange trade licences, pay up the registered capital and file for entry in the commercial register. Most steps are done electronically.",
+        "Watch the things that are hard to change later — relationships between shareholders, who acts on the company’s behalf, and how ownership shares are split. This is exactly where it pays to think ahead.",
+        "We can form your company turn-key — prepare the documents, file the petitions and arrange the trade licences, and you just sign. And we set it up so it still serves you years from now.",
+      ],
+    },
   },
 ];
 
