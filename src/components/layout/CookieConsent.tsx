@@ -4,9 +4,8 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/Button";
+import { getConsent, setConsent } from "@/lib/consent";
 import styles from "./CookieConsent.module.css";
-
-const STORAGE_KEY = "kp_consent";
 
 // Lightweight consent banner. Stores "all" | "essential" in localStorage so
 // future analytics can gate on it. Shown once until a choice is made.
@@ -15,19 +14,11 @@ export function CookieConsent() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    try {
-      if (!localStorage.getItem(STORAGE_KEY)) setShow(true);
-    } catch {
-      /* ignore (private mode) */
-    }
+    if (!getConsent()) setShow(true);
   }, []);
 
   const choose = (value: "all" | "essential") => {
-    try {
-      localStorage.setItem(STORAGE_KEY, value);
-    } catch {
-      /* ignore */
-    }
+    setConsent(value);
     setShow(false);
   };
 

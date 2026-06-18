@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 import { BookingProvider } from "@/components/booking/BookingProvider";
 import { CartProvider } from "@/components/shop/CartProvider";
 import { CookieConsent } from "@/components/layout/CookieConsent";
+import { Analytics } from "@/components/analytics/Analytics";
 import { ESHOP_ENABLED } from "@/lib/flags";
 import "../globals.css";
 
@@ -65,6 +66,7 @@ export default async function LocaleLayout(props: LayoutProps<"/[locale]">) {
             {ESHOP_ENABLED ? <CartProvider>{shell}</CartProvider> : shell}
           </BookingProvider>
           <CookieConsent />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>

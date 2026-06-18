@@ -10,6 +10,7 @@ import {
 } from "react";
 import { getCalApi } from "@calcom/embed-react";
 import { CALCOM_ENABLED, CALCOM_LINK, CALCOM_NAMESPACE } from "@/lib/booking";
+import { trackLead } from "@/lib/analytics";
 import { BookingModal } from "./BookingModal";
 
 interface BookingContextValue {
@@ -45,6 +46,11 @@ export function BookingProvider({ children }: { children: ReactNode }) {
               light: { "cal-brand": "#1F2A51" },
               dark: { "cal-brand": "#1F2A51" },
             },
+          });
+          // Conversion: fires only if analytics is loaded (consent given).
+          cal("on", {
+            action: "bookingSuccessful",
+            callback: () => trackLead("booking"),
           });
           calInited.current = true;
         }

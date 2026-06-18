@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import type { Locale } from "@/i18n/routing";
 import { getServices } from "@/lib/content";
 import { submitLead } from "@/lib/lead";
+import { trackLead } from "@/lib/analytics";
 import { Card } from "@/components/ui/Card";
 import { Input, Textarea } from "@/components/ui/Input";
 import { Select } from "@/components/ui/Select";
@@ -44,7 +45,9 @@ export function ContactForm() {
     setStatus("sending");
     const r = await submitLead(fields, `Dopyt z webu — ${fields.Meno}`);
     // Without a key (configured:false) keep the simulated success so the UX still works.
-    setStatus(r.ok || !r.configured ? "sent" : "error");
+    const sent = r.ok || !r.configured;
+    setStatus(sent ? "sent" : "error");
+    if (sent) trackLead("contact");
   };
 
   return (
