@@ -108,10 +108,10 @@
 
 @media (max-width: 900px) {
   .inner {
-    height: 76px;
+    height: 78px;
   }
   .logoImg {
-    height: 48px;
+    height: 58px;
   }
   .nav,
   .desktopActions {
