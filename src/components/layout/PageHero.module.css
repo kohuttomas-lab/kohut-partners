@@ -14,7 +14,7 @@
 }
 .inner {
   position: relative;
-  padding: 64px 0 68px;
+  padding-block: 64px 68px;
 }
 .content {
   max-width: 720px;
