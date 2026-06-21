@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 import { getOffices, CONTACT } from "@/lib/content";
 import { Container } from "@/components/layout/Section";
@@ -17,7 +18,11 @@ const tel = (phone: string) => `tel:${phone.replace(/\s/g, "")}`;
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "contact" });
-  return { title: t("title"), description: t("lead") };
+  return {
+    title: t("title"),
+    description: t("lead"),
+    alternates: localeAlternates(locale, "/contact"),
+  };
 }
 
 export default async function ContactPage(props: Props) {

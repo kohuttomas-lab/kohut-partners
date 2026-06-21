@@ -100,7 +100,6 @@ export function TeamSection({
             </Card>
           ))}
         </div>
-        <p className={styles.note}>{tTeam("note")}</p>
       </Container>
     </section>
   );

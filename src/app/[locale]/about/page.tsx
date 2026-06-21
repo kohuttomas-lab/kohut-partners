@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/seo";
 import { Container, Overline, SectionHead } from "@/components/layout/Section";
 import { PageHero } from "@/components/layout/PageHero";
 import { Card } from "@/components/ui/Card";
@@ -21,7 +22,11 @@ interface Stat {
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "about" });
-  return { title: t("heroTitle"), description: t("heroLead") };
+  return {
+    title: t("heroTitle"),
+    description: t("heroLead"),
+    alternates: localeAlternates(locale, "/about"),
+  };
 }
 
 export default async function AboutPage(props: Props) {

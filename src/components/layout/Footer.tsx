@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "./Section";
-import { Mail, Phone } from "@/components/icons";
+import { Mail, MapPin, Phone } from "@/components/icons";
 import { CONTACT } from "@/lib/content";
 import { cx } from "@/lib/cx";
 import styles from "./Footer.module.css";
@@ -21,8 +21,22 @@ type StaticPathname =
   | "/terms"
   | "/cookies";
 
-const COL_LINKS: (StaticPathname | null)[][] = [
-  ["/services", "/services", "/services", "/services", "/services", "/services"],
+// Deep-link to an individual service detail page.
+type ServiceLink = { pathname: "/services/[id]"; params: { id: string } };
+type FooterLink = StaticPathname | ServiceLink | null;
+
+const svc = (id: string): ServiceLink => ({ pathname: "/services/[id]", params: { id } });
+
+// Order matches the footer "Služby" column items in messages.json.
+const COL_LINKS: FooterLink[][] = [
+  [
+    svc("insolvencie"),
+    svc("obchod"),
+    svc("nehnutelnosti"),
+    svc("spory"),
+    svc("trestne"),
+    svc("it"),
+  ],
   ["/about", "/about", "/blog", "/contact"],
   ["/privacy", "/terms", "/cookies"],
 ];
@@ -42,6 +56,10 @@ export function Footer() {
             <img src="/logo/logo-white.svg" alt="kohút & partners" className={styles.logoImg} />
             <p className={styles.tag}>{t("tag")}</p>
             <div className={styles.contacts}>
+              <span className={styles.contact}>
+                <MapPin size={15} className={styles.contactIcon} />
+                <span className={styles.contactLink}>{CONTACT.address}</span>
+              </span>
               <span className={styles.contact}>
                 <Phone size={15} className={styles.contactIcon} />
                 <a href={tel(CONTACT.phone)} className={styles.contactLink}>

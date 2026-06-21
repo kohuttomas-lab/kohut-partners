@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 import { getArticle, getArticleIds, BLOG_AUTHOR } from "@/lib/content";
 import { Link } from "@/i18n/navigation";
@@ -21,7 +22,11 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale, id } = await props.params;
   const article = getArticle(locale as Locale, id);
   if (!article) return {};
-  return { title: article.title, description: article.excerpt };
+  return {
+    title: article.title,
+    description: article.excerpt,
+    alternates: localeAlternates(locale, { pathname: "/blog/[id]", params: { id } }),
+  };
 }
 
 export default async function ArticlePage(props: Props) {

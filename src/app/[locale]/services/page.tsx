@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/seo";
 import { PageHero } from "@/components/layout/PageHero";
 import { ServicesList } from "@/components/sections/ServicesList";
 import { CTABand } from "@/components/layout/CTABand";
@@ -9,7 +10,11 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "services" });
-  return { title: t("heroTitle"), description: t("heroLead") };
+  return {
+    title: t("heroTitle"),
+    description: t("heroLead"),
+    alternates: localeAlternates(locale, "/services"),
+  };
 }
 
 export default async function ServicesPage(props: Props) {

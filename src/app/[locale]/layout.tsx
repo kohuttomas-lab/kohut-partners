@@ -10,6 +10,7 @@ import { CartProvider } from "@/components/shop/CartProvider";
 import { CookieConsent } from "@/components/layout/CookieConsent";
 import { Analytics } from "@/components/analytics/Analytics";
 import { ESHOP_ENABLED } from "@/lib/flags";
+import { localeAlternates } from "@/lib/seo";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -30,11 +31,13 @@ export async function generateMetadata(props: PageProps<"/[locale]">): Promise<M
     metadataBase: new URL("https://www.tkak.sk"),
     title: { default: title, template: "%s · kohút & partners" },
     description,
+    alternates: localeAlternates(locale, "/"),
     openGraph: {
       title,
       description,
       siteName: "kohút & partners",
       locale: sk ? "sk_SK" : "en_GB",
+      alternateLocale: sk ? "en_GB" : "sk_SK",
       type: "website",
     },
     twitter: {

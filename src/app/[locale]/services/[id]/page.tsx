@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 import { getService, getServiceIds } from "@/lib/content";
 import { formatEur } from "@/lib/format";
@@ -24,7 +25,11 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale, id } = await props.params;
   const service = getService(locale as Locale, id);
   if (!service) return {};
-  return { title: service.name, description: service.summary };
+  return {
+    title: service.name,
+    description: service.summary,
+    alternates: localeAlternates(locale, { pathname: "/services/[id]", params: { id } }),
+  };
 }
 
 export default async function ServiceDetailPage(props: Props) {

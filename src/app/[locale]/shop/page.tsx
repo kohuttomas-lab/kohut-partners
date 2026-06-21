@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { localeAlternates } from "@/lib/seo";
 import { ESHOP_ENABLED } from "@/lib/flags";
 import { PageHero } from "@/components/layout/PageHero";
 import { FixedPackages } from "@/components/shop/FixedPackages";
@@ -14,7 +15,11 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: "shop" });
-  return { title: t("heroTitle"), description: t("heroLead") };
+  return {
+    title: t("heroTitle"),
+    description: t("heroLead"),
+    alternates: localeAlternates(locale, "/shop"),
+  };
 }
 
 export default async function ShopPage(props: Props) {

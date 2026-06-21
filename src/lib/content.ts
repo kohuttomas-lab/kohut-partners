@@ -978,6 +978,7 @@ export const CONTACT = {
   phone: "+421 907 823 239",
   phone2: "+421 45 202 89 38",
   email: "klienti@tkak.sk",
+  address: "Námestie SNP 74/28, 960 01 Zvolen",
 } as const;
 
 // Placeholder company names — replace with real client logos.
