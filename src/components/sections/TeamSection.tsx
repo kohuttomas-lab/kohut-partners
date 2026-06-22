@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import type { Locale } from "@/i18n/routing";
 import { getTeam } from "@/lib/content";
@@ -66,8 +67,13 @@ export function TeamSection({
         <Card padding="none" elevation="md" accent className={styles.featured}>
           <div className={styles.photoWrap}>
             {lead.photo ? (
-              /* eslint-disable-next-line @next/next/no-img-element */
-              <img src={lead.photo} alt={lead.name} className={styles.photo} />
+              <Image
+                src={lead.photo}
+                alt={lead.name}
+                fill
+                sizes="(max-width: 900px) 100vw, 460px"
+                className={styles.photo}
+              />
             ) : (
               <>
                 {/* eslint-disable-next-line @next/next/no-img-element */}

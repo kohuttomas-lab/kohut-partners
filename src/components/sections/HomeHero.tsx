@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import type { Locale } from "@/i18n/routing";
 import { getTeam } from "@/lib/content";
@@ -54,10 +55,12 @@ export function HomeHero() {
         </div>
 
         <div className={styles.panel}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src="/team/tomas-hero-navy.jpg"
             alt={`${lead.name} — ${lead.role}`}
+            fill
+            priority
+            sizes="(max-width: 900px) 440px, 480px"
             className={styles.panelImg}
           />
           <div className={styles.panelGrad} />

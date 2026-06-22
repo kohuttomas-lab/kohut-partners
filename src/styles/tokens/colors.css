@@ -79,7 +79,7 @@
   /* Text */
   --text-strong:  var(--navy-800);  /* headings on light */
   --text-body:    var(--gray-800);  /* default body copy */
-  --text-muted:   var(--gray-500);  /* secondary / captions */
+  --text-muted:   var(--gray-600);  /* secondary / captions (AA ≈6.5:1 on white) */
   --text-faint:   var(--gray-400);  /* placeholders, disabled */
   --text-on-dark: var(--white);     /* text on navy */
   --text-on-dark-muted: var(--navy-200);

@@ -52,6 +52,7 @@ export default async function ArticlePage(props: Props) {
           description: article.excerpt,
           datePublished: article.iso,
           author: BLOG_AUTHOR,
+          authorUrl: absoluteUrl(locale, "/about"),
         })}
       />
       <JsonLd

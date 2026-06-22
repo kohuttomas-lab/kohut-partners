@@ -608,7 +608,7 @@ const BLOG: RawArticle[] = [
     tone: "accent",
     read: 6,
     date: { sk: "12. jún 2026", en: "12 June 2026" },
-    iso: "2026-06-12",
+    iso: "2026-06-12T09:00:00+02:00",
     sk: [
       "Reštrukturalizácia firmy v roku 2026: kedy konať a ako",
       "Najčastejšia chyba je čakať príliš dlho. Pozrime sa, aké signály značia, že je čas riešiť ozdravenie firmy — a aké možnosti máte.",
@@ -638,7 +638,7 @@ const BLOG: RawArticle[] = [
     tone: "brand",
     read: 4,
     date: { sk: "5. jún 2026", en: "5 June 2026" },
-    iso: "2026-06-05",
+    iso: "2026-06-05T09:00:00+02:00",
     sk: [
       "GDPR pre e-shop: 7 vecí, ktoré musíte mať",
       "Praktický kontrolný zoznam pre každého, kto predáva online. Vyhnite sa pokutám aj zbytočným komplikáciám.",
@@ -668,7 +668,7 @@ const BLOG: RawArticle[] = [
     tone: "brand",
     read: 5,
     date: { sk: "28. máj 2026", en: "28 May 2026" },
-    iso: "2026-05-28",
+    iso: "2026-05-28T09:00:00+02:00",
     sk: [
       "Kúpa bytu: ako ochrániť peniaze pri prevode",
       "Úschova, kataster a kontrola zmluvy. Tri kroky, ktoré rozhodnú o tom, či bude kúpa bezpečná.",
@@ -698,7 +698,7 @@ const BLOG: RawArticle[] = [
     tone: "brand",
     read: 3,
     date: { sk: "20. máj 2026", en: "20 May 2026" },
-    iso: "2026-05-20",
+    iso: "2026-05-20T09:00:00+02:00",
     sk: [
       "Prečo sa oplatí dať si skontrolovať každú zmluvu",
       "Revízia za pár desiatok eur vie ušetriť spory za tisíce. Na čo sa pozeráme najčastejšie.",
@@ -728,7 +728,7 @@ const BLOG: RawArticle[] = [
     tone: "brand",
     read: 5,
     date: { sk: "14. máj 2026", en: "14 May 2026" },
-    iso: "2026-05-14",
+    iso: "2026-05-14T09:00:00+02:00",
     sk: [
       "Vymáhanie pohľadávok: od výzvy po exekúciu",
       "Ako sa dostať k svojim peniazom rýchlo a bez zbytočných súdov.",
@@ -758,7 +758,7 @@ const BLOG: RawArticle[] = [
     tone: "brand",
     read: 4,
     date: { sk: "7. máj 2026", en: "7 May 2026" },
-    iso: "2026-05-07",
+    iso: "2026-05-07T09:00:00+02:00",
     sk: [
       "Založenie s.r.o. krok po kroku v roku 2026",
       "Čo potrebujete, koľko to stojí a ako celý proces vybaviť online.",

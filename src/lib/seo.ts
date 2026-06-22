@@ -67,6 +67,7 @@ export function articleSchema(opts: {
   description: string;
   datePublished: string;
   author: string;
+  authorUrl?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -77,7 +78,11 @@ export function articleSchema(opts: {
     datePublished: opts.datePublished,
     dateModified: opts.datePublished,
     image: ogImageUrl(opts.locale),
-    author: { "@type": "Person", name: opts.author },
+    author: {
+      "@type": "Person",
+      name: opts.author,
+      ...(opts.authorUrl ? { url: opts.authorUrl } : {}),
+    },
     publisher: ORGANIZATION,
     mainEntityOfPage: { "@type": "WebPage", "@id": opts.url },
   };
