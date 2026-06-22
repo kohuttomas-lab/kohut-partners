@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { localeAlternates } from "@/lib/seo";
+import { localeAlternates, absoluteUrl, breadcrumbSchema } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
 import type { Locale } from "@/i18n/routing";
 import { getService, getServiceIds } from "@/lib/content";
 import { formatEur } from "@/lib/format";
@@ -42,9 +43,20 @@ export default async function ServiceDetailPage(props: Props) {
   const t = await getTranslations({ locale, namespace: "services" });
   const tHome = await getTranslations({ locale, namespace: "home" });
   const common = await getTranslations({ locale, namespace: "common" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: tNav("home"), url: absoluteUrl(locale, "/") },
+          { name: tNav("services"), url: absoluteUrl(locale, "/services") },
+          {
+            name: service.name,
+            url: absoluteUrl(locale, { pathname: "/services/[id]", params: { id } }),
+          },
+        ])}
+      />
       <section className={styles.hero}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/logo/mark-white.svg" alt="" className={styles.heroMark} />

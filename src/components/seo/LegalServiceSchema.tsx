@@ -25,6 +25,11 @@ export function LegalServiceSchema({ locale }: { locale: string }) {
     areaServed: "SK",
     priceRange: "€€",
     knowsLanguage: ["sk", "en"],
+    founder: {
+      "@type": "Person",
+      name: "Tomáš Kohút",
+      jobTitle: sk ? "riadiaci partner" : "Managing Partner",
+    },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

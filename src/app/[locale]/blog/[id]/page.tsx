@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { localeAlternates } from "@/lib/seo";
+import { localeAlternates, absoluteUrl, articleSchema, breadcrumbSchema } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
 import type { Locale } from "@/i18n/routing";
 import { getArticle, getArticleIds, BLOG_AUTHOR } from "@/lib/content";
 import { Link } from "@/i18n/navigation";
@@ -38,9 +39,28 @@ export default async function ArticlePage(props: Props) {
 
   const t = await getTranslations({ locale, namespace: "home" });
   const common = await getTranslations({ locale, namespace: "common" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  const articleUrl = absoluteUrl(locale, { pathname: "/blog/[id]", params: { id } });
 
   return (
     <>
+      <JsonLd
+        data={articleSchema({
+          locale,
+          url: articleUrl,
+          headline: article.title,
+          description: article.excerpt,
+          datePublished: article.iso,
+          author: BLOG_AUTHOR,
+        })}
+      />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: tNav("home"), url: absoluteUrl(locale, "/") },
+          { name: tNav("blog"), url: absoluteUrl(locale, "/blog") },
+          { name: article.title, url: articleUrl },
+        ])}
+      />
       <section className={styles.head}>
         <Container style={{ maxWidth: 800 }}>
           <Link href="/blog" className={styles.back}>
