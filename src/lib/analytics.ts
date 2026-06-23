@@ -2,6 +2,8 @@
 // simply isn't loaded — so the site is safe without them.
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
 export const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "";
+export const ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID ?? "";
+export const ADS_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_LABEL ?? "";
 
 declare global {
   interface Window {
@@ -21,6 +23,9 @@ export function pageview(path: string): void {
 /** Conversion: a lead from a form or booking. No-op until analytics is loaded. */
 export function trackLead(source: string): void {
   if (typeof window === "undefined") return;
+  if (window.gtag && ADS_ID && ADS_LABEL) {
+    window.gtag("event", "conversion", { send_to: `${ADS_ID}/${ADS_LABEL}` });
+  }
   if (window.gtag) window.gtag("event", "generate_lead", { source });
   if (window.fbq) window.fbq("track", "Lead", { source });
 }

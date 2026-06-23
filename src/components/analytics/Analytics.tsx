@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Script from "next/script";
 import { usePathname } from "@/i18n/navigation";
 import { CONSENT_EVENT, getConsent } from "@/lib/consent";
-import { GA_ID, META_PIXEL_ID, pageview } from "@/lib/analytics";
+import { GA_ID, ADS_ID, META_PIXEL_ID, pageview } from "@/lib/analytics";
 
 // Loads GA4 + Meta Pixel ONLY after the visitor accepts all cookies.
 // Until then nothing is injected (no non-essential cookies/scripts) — EU/SK compliant.
@@ -34,14 +34,14 @@ export function Analytics() {
 
   return (
     <>
-      {GA_ID ? (
+      {GA_ID || ADS_ID ? (
         <>
           <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID || ADS_ID}`}
             strategy="afterInteractive"
           />
           <Script id="ga4-init" strategy="afterInteractive">
-            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_ID}');`}
+            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());${GA_ID ? `gtag('config','${GA_ID}');` : ""}${ADS_ID ? `gtag('config','${ADS_ID}');` : ""}`}
           </Script>
         </>
       ) : null}
