@@ -60,7 +60,13 @@ export function Header() {
         <div className={styles.inner}>
           <Link href="/" className={styles.logo} aria-label="kohút & partners">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo/logo-color.svg" alt="kohút & partners" className={styles.logoImg} />
+            <img
+              src="/logo/logo-color.svg"
+              alt="kohút & partners"
+              width={672}
+              height={322}
+              className={styles.logoImg}
+            />
           </Link>
 
           <nav className={styles.nav}>

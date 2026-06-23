@@ -53,7 +53,13 @@ export function Footer() {
         <div className={styles.top}>
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo/logo-white.svg" alt="kohút & partners" className={styles.logoImg} />
+            <img
+              src="/logo/logo-white.svg"
+              alt="kohút & partners"
+              width={510}
+              height={194}
+              className={styles.logoImg}
+            />
             <p className={styles.tag}>{t("tag")}</p>
             <div className={styles.contacts}>
               <span className={styles.contact}>
