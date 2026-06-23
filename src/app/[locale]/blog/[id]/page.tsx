@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { localeAlternates, absoluteUrl, articleSchema, breadcrumbSchema } from "@/lib/seo";
+import { localeAlternates, absoluteUrl, articleSchema, breadcrumbSchema, ogImageUrl } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
 import type { Locale } from "@/i18n/routing";
 import { getArticle, getArticleIds, BLOG_AUTHOR } from "@/lib/content";
@@ -27,6 +27,13 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     title: article.title,
     description: article.excerpt,
     alternates: localeAlternates(locale, { pathname: "/blog/[id]", params: { id } }),
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description: article.excerpt,
+      publishedTime: article.iso,
+      images: [{ url: ogImageUrl(locale) }],
+    },
   };
 }
 

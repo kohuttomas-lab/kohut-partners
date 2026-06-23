@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { localeAlternates, absoluteUrl, breadcrumbSchema } from "@/lib/seo";
+import { localeAlternates, absoluteUrl, breadcrumbSchema, faqSchema, ogImageUrl } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
 import type { Locale } from "@/i18n/routing";
 import { getService, getServiceIds } from "@/lib/content";
@@ -30,6 +30,12 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     title: service.name,
     description: service.summary,
     alternates: localeAlternates(locale, { pathname: "/services/[id]", params: { id } }),
+    openGraph: {
+      type: "website",
+      title: service.name,
+      description: service.summary,
+      images: [{ url: ogImageUrl(locale) }],
+    },
   };
 }
 
@@ -57,6 +63,7 @@ export default async function ServiceDetailPage(props: Props) {
           },
         ])}
       />
+      {service.faq.length > 0 && <JsonLd data={faqSchema(service.faq)} />}
       <section className={styles.hero}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/logo/mark-white.svg" alt="" className={styles.heroMark} />

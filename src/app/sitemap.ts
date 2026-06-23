@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getPathname } from "@/i18n/navigation";
-import { getArticleIds, getServiceIds } from "@/lib/content";
+import { getArticleIds, getServiceIds, getArticle } from "@/lib/content";
 
 const BASE = "https://www.tkak.sk";
 
@@ -40,11 +40,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [...STATIC, ...services, ...articles].map((href) => {
     const sk = BASE + getPathname({ locale: "sk", href });
     const en = BASE + getPathname({ locale: "en", href });
+    // Articles carry a real publish date → expose it as lastModified.
+    let lastModified: Date | undefined;
+    if (typeof href === "object" && href.pathname === "/blog/[id]") {
+      const article = getArticle("sk", String(href.params.id));
+      if (article) lastModified = new Date(article.iso);
+    }
     return {
       url: sk,
       alternates: { languages: { sk, en } },
       changeFrequency: "monthly" as const,
       priority: priorityFor(href),
+      ...(lastModified ? { lastModified } : {}),
     };
   });
 }
