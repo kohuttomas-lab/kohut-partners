@@ -38,6 +38,8 @@ jobs:
           delete-branch: true
           commit-message: "Blog: AI-generovaný článok (na schválenie)"
           title: "Nový blog článok (AI návrh — na schválenie)"
+          assignees: kohuttomas-lab
+          reviewers: kohuttomas-lab
           labels: |
             auto-article
             needs-review
