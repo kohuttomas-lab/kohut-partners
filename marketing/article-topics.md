@@ -7,7 +7,7 @@ Pridávaj nové témy na koniec ako `- [ ] <téma> | kategória: <SK kategória>
 Kategória musí sedieť s existujúcimi (Insolvencie, Obchodné právo, IT právo, Nehnuteľnosti, Súdne spory, Trestné právo).
 
 - [x] Konkurz vs. reštrukturalizácia: ktorý nástroj kedy zvoliť | kategória: Insolvencie
-- [ ] Oddlženie fyzickej osoby (osobný bankrot): podmienky a postup v roku 2026 | kategória: Insolvencie
+- [x] Oddlženie fyzickej osoby (osobný bankrot): podmienky a postup v roku 2026 | kategória: Insolvencie
 - [ ] Ako účinne vymáhať pohľadávku: od výzvy po exekúciu | kategória: Obchodné právo
 - [ ] Zodpovednosť konateľa s.r.o.: kedy ručíte vlastným majetkom | kategória: Obchodné právo
 - [ ] Založenie s.r.o. krok po kroku: čo často podcenia podnikatelia | kategória: Obchodné právo
