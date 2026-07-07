@@ -5,7 +5,8 @@ export function formatEur(amount: number): string {
   return `${amount.toLocaleString("sk-SK")} €`;
 }
 
-export const VAT_RATE = 0.2;
+// Standard Slovak VAT rate — 23 % since 1 Jan 2025.
+export const VAT_RATE = 0.23;
 
 export function withVat(net: number): number {
   return Math.round(net * VAT_RATE);

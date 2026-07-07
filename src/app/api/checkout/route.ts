@@ -1,10 +1,12 @@
 import type Stripe from "stripe";
 import { getStripe } from "@/lib/stripe";
 import { getCartCatalog } from "@/lib/content";
+import { VAT_RATE } from "@/lib/format";
 
-// Charge VAT-inclusive (handoff shows prices incl. 20% DPH). For production-grade
-// VAT breakdown on invoices, switch to Stripe Tax (automatic_tax) + tax behavior.
-const grossCents = (net: number) => Math.round(net * 1.2 * 100);
+// Charge VAT-inclusive (23 % DPH — standard Slovak rate since 1 Jan 2025).
+// For production-grade VAT breakdown on invoices, switch to Stripe Tax
+// (automatic_tax) + tax behavior.
+const grossCents = (net: number) => Math.round(net * (1 + VAT_RATE) * 100);
 
 export async function POST(req: Request) {
   const stripe = getStripe();
