@@ -4,7 +4,6 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 import { getCartCatalog } from "@/lib/content";
 import { formatEur, withVat } from "@/lib/format";
-import { startCheckout } from "@/lib/checkout-client";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, ShoppingBag } from "@/components/icons";
 import { useCart } from "./CartProvider";
@@ -16,7 +15,7 @@ export function CartBar() {
   const pathname = usePathname();
   const locale = useLocale();
   const t = useTranslations("shop");
-  const { items, count, openCheckout } = useCart();
+  const { items, count, openCart, startPayment } = useCart();
 
   if (pathname !== "/shop") return null;
   if (count === 0) return null;
@@ -28,35 +27,24 @@ export function CartBar() {
   }, 0);
   const total = subtotal + withVat(subtotal);
 
-  const handleCheckout = async () => {
-    const res = await startCheckout({
-      mode: "payment",
-      items: Object.entries(items).map(([id, qty]) => ({ id, qty })),
-      locale,
-      returnUrl: window.location.href.split("?")[0],
-    });
-    if ("url" in res && res.url) {
-      window.location.href = res.url;
-      return;
-    }
-    // Stripe not configured (or errored) → simulated checkout.
-    openCheckout();
-  };
-
   return (
     <div className={styles.wrap}>
       <div className={styles.bar}>
-        <span className={styles.iconWrap}>
+        <button className={styles.iconWrap} onClick={openCart} aria-label={t("cart.open")}>
           <ShoppingBag size={24} />
           <span className={styles.count}>{count}</span>
-        </span>
-        <div className={styles.meta}>
-          <div className={styles.metaSmall}>
+        </button>
+        <button className={styles.meta} onClick={openCart} aria-label={t("cart.open")}>
+          <span className={styles.metaSmall}>
             {count} {t("cart.items")} · {t("cart.vat")} {t("cart.vatIncl")}
-          </div>
-          <div className={styles.metaTotal}>{formatEur(total)}</div>
-        </div>
-        <Button variant="accent" rightIcon={<ArrowRight size={16} />} onClick={handleCheckout}>
+          </span>
+          <span className={styles.metaTotal}>{formatEur(total)}</span>
+        </button>
+        <Button
+          variant="accent"
+          rightIcon={<ArrowRight size={16} />}
+          onClick={() => startPayment(locale)}
+        >
           {t("cart.checkout")}
         </Button>
       </div>

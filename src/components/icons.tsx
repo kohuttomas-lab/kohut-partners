@@ -24,6 +24,9 @@ import {
   MapPin,
   X,
   Menu,
+  Plus,
+  Minus,
+  Trash2,
   type LucideIcon,
 } from "lucide-react";
 import type { IconName } from "@/lib/content";
@@ -52,6 +55,9 @@ export {
   MapPin,
   X,
   Menu,
+  Plus,
+  Minus,
+  Trash2,
 };
 
 // Resolve a string icon key (stored in content data) to its component.

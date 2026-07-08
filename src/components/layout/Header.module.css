@@ -70,8 +70,13 @@
   gap: 14px;
 }
 
-.menuBtn {
+.mobileActions {
   display: none;
+  align-items: center;
+  gap: 6px;
+}
+
+.menuBtn {
   background: none;
   border: none;
   cursor: pointer;
@@ -117,7 +122,7 @@
   .desktopActions {
     display: none;
   }
-  .menuBtn {
+  .mobileActions {
     display: inline-flex;
   }
   .mobilePanelOpen {

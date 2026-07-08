@@ -20,6 +20,14 @@
   display: inline-flex;
   color: #fff;
   flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+}
+.iconWrap:hover {
+  background: rgba(255, 255, 255, 0.12);
 }
 .count {
   position: absolute;
@@ -42,6 +50,15 @@
   color: #fff;
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  font: inherit;
 }
 .metaSmall {
   font-size: 12.5px;

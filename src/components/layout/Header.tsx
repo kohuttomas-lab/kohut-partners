@@ -7,6 +7,7 @@ import { Container } from "./Section";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { Button } from "@/components/ui/Button";
 import { useBooking } from "@/components/booking/BookingProvider";
+import { CartButton } from "@/components/shop/CartButton";
 import { Calendar, Menu, X } from "@/components/icons";
 import { ESHOP_ENABLED } from "@/lib/flags";
 import { cx } from "@/lib/cx";
@@ -83,20 +84,24 @@ export function Header() {
 
           <div className={cx(styles.actions, styles.desktopActions)}>
             <LanguageSwitch />
+            {ESHOP_ENABLED ? <CartButton /> : null}
             <Button variant="accent" size="sm" leftIcon={<Calendar size={16} />} onClick={book}>
               {tCommon("cta")}
             </Button>
           </div>
 
-          <button
-            type="button"
-            className={styles.menuBtn}
-            aria-label="Menu"
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((v) => !v)}
-          >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className={styles.mobileActions}>
+            {ESHOP_ENABLED ? <CartButton /> : null}
+            <button
+              type="button"
+              className={styles.menuBtn}
+              aria-label="Menu"
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen((v) => !v)}
+            >
+              {menuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         <div className={cx(styles.mobilePanel, menuOpen && styles.mobilePanelOpen)}>
