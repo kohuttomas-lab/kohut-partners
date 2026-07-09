@@ -95,6 +95,11 @@ export default async function ArticlePage(props: Props) {
 
       <section className={styles.body}>
         <Container style={{ maxWidth: 800 }}>
+          {locale === "en" ? (
+            <p className={styles.lawNote}>
+              {(await getTranslations({ locale, namespace: "blog" }))("skLawNote")}
+            </p>
+          ) : null}
           <div className={styles.cover}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo/mark-white.svg" alt="" className={styles.coverMark} />

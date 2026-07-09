@@ -14,6 +14,7 @@ const STATIC: Href[] = [
   "/about",
   "/blog",
   "/contact",
+  "/international",
   "/privacy",
   "/terms",
   "/cookies",

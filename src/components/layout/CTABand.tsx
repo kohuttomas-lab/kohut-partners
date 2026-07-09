@@ -4,7 +4,7 @@ import { BookingButton } from "@/components/booking/BookingButton";
 import { Calendar } from "@/components/icons";
 import styles from "./CTABand.module.css";
 
-export function CTABand() {
+export function CTABand({ title, lead }: { title?: string; lead?: string }) {
   const t = useTranslations("home");
   return (
     <section className={styles.band}>
@@ -12,8 +12,8 @@ export function CTABand() {
       <img src="/logo/mark-white.svg" alt="" className={styles.mark} />
       <Container className={styles.inner}>
         <div className={styles.copy}>
-          <h2 className={styles.title}>{t("ctaBandTitle")}</h2>
-          <p className={styles.lead}>{t("ctaBandLead")}</p>
+          <h2 className={styles.title}>{title ?? t("ctaBandTitle")}</h2>
+          <p className={styles.lead}>{lead ?? t("ctaBandLead")}</p>
         </div>
         <BookingButton variant="accent" size="lg" leftIcon={<Calendar size={20} />}>
           {t("ctaBandBtn")}

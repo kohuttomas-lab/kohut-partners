@@ -11,7 +11,7 @@ export function LegalServiceSchema({ locale }: { locale: string }) {
     name: "kohút & partners s.r.o.",
     description: sk
       ? "Advokátska kancelária vo Zvolene — insolvencie, obchodné a IT právo, nehnuteľnosti a súdne spory."
-      : "Law firm in Zvolen — insolvency, commercial and IT law, real estate and litigation.",
+      : "Slovak law firm in Zvolen advising international clients in English — real estate, company formation, debt recovery, insolvency and litigation under Slovak law.",
     url: sk ? BASE : `${BASE}/en`,
     telephone: CONTACT.phone.replace(/\s/g, ""),
     email: CONTACT.email,

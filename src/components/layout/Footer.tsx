@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Container } from "./Section";
 import { Mail, MapPin, Phone } from "@/components/icons";
@@ -17,6 +17,7 @@ type StaticPathname =
   | "/about"
   | "/blog"
   | "/contact"
+  | "/international"
   | "/privacy"
   | "/terms"
   | "/cookies";
@@ -27,8 +28,10 @@ type FooterLink = StaticPathname | ServiceLink | null;
 
 const svc = (id: string): ServiceLink => ({ pathname: "/services/[id]", params: { id } });
 
-// Order matches the footer "Služby" column items in messages.json.
-const COL_LINKS: FooterLink[][] = [
+// Order matches the footer column items in messages.json. The middle column
+// differs per locale: SK ends with "Kariéra" (→ contact), EN with
+// "International clients" (→ the dedicated page).
+const colLinks = (locale: string): FooterLink[][] => [
   [
     svc("insolvencie"),
     svc("obchod"),
@@ -37,7 +40,7 @@ const COL_LINKS: FooterLink[][] = [
     svc("trestne"),
     svc("it"),
   ],
-  ["/about", "/about", "/blog", "/contact"],
+  ["/about", "/about", "/blog", locale === "en" ? "/international" : "/contact"],
   ["/privacy", "/terms", "/cookies"],
 ];
 
@@ -45,7 +48,9 @@ const tel = (phone: string) => `tel:${phone.replace(/\s/g, "")}`;
 
 export function Footer() {
   const t = useTranslations("footer");
+  const locale = useLocale();
   const cols = t.raw("cols") as FooterCol[];
+  const COL_LINKS = colLinks(locale);
 
   return (
     <footer className={styles.footer}>

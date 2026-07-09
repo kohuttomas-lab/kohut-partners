@@ -95,25 +95,25 @@ const SERVICES: RawService[] = [
       ],
     },
     en: {
-      name: "Insolvency & restructuring",
-      tagline: "Rescue the company — or a controlled wind-down, without panic.",
+      name: "Insolvency & restructuring in Slovakia",
+      tagline: "Creditor protection and company rescue under Slovak law.",
       summary:
-        "We guide companies and creditors through the whole insolvency process. We look for a way to save the business, and when that’s not possible, how to exit the crisis with minimal loss.",
+        "We guide companies and foreign creditors through Slovak insolvency proceedings — protecting claims, rescuing viable businesses, and managing an orderly exit when rescue isn’t possible.",
       solve: [
-        "Restructuring and recovery plans",
-        "Bankruptcy and company liquidation",
-        "Filing and recovering creditor claims",
-        "Debt relief for individuals and entrepreneurs",
-        "Negotiations with banks and creditors",
+        "Representing foreign creditors in Slovak bankruptcies and restructurings",
+        "Filing creditor claims with the Slovak trustee within statutory deadlines",
+        "Restructuring and recovery plans under Slovak law",
+        "Bankruptcy and liquidation of Slovak companies",
+        "Negotiations with Slovak banks and creditors",
       ],
       faq: [
         [
-          "When should I address restructuring?",
-          "Ideally as soon as the company struggles to meet due obligations. The earlier you act, the more rescue options stay on the table.",
+          "My Slovak debtor went bankrupt — what now?",
+          "Claims must be filed with the Slovak trustee within strict statutory deadlines, or your rights are severely curtailed. Send us the basics and we file and represent you throughout the proceedings.",
         ],
         [
-          "Will I lose everything in bankruptcy?",
-          "Not necessarily. A well-managed process can protect part of the assets and your reputation. We explain the steps up front.",
+          "When should I address restructuring?",
+          "Ideally as soon as the company struggles to meet due obligations. The earlier you act, the more rescue options Slovak law leaves on the table.",
         ],
       ],
     },
@@ -159,25 +159,25 @@ const SERVICES: RawService[] = [
       ],
     },
     en: {
-      name: "Commercial & civil law",
-      tagline: "Solid foundations for every deal and relationship.",
+      name: "Doing business in Slovakia",
+      tagline: "Company formation, contracts and corporate — under Slovak law.",
       summary:
-        "From company formation through contracts to corporate changes. We build your business on contracts that hold up — even when a dispute arrives.",
+        "From forming a Slovak s.r.o. (LLC) for foreign founders through commercial contracts governed by Slovak law to corporate changes and due diligence on Slovak companies.",
       solve: [
-        "Formation, changes and transformations of commercial companies and cooperatives",
-        "Tailored commercial contracts and review",
-        "Corporate advisory and shareholder relations",
-        "Civil contracts, ownership and obligations",
-        "Due diligence on company acquisitions",
+        "Forming Slovak companies (s.r.o., a.s.) for foreign founders — fully remote",
+        "Commercial contracts governed by Slovak law, drafted or reviewed in English",
+        "Corporate advisory and shareholder relations in Slovak entities",
+        "Civil contracts, ownership and obligations under Slovak law",
+        "Due diligence on Slovak companies and acquisitions",
       ],
       faq: [
         [
-          "Can you form a company fully online?",
-          "Yes. We prepare the documents, file the registration and arrange trade licences — you just sign.",
+          "Can a foreigner own and run a Slovak s.r.o.?",
+          "Yes — foreign individuals and companies can own a Slovak s.r.o. For managing directors from outside the EU/OECD, additional residence requirements may apply. We check your setup and handle the whole formation remotely via power of attorney.",
         ],
         [
-          "Is it worth having a contract reviewed?",
-          "Almost always. A review for a few dozen euros can save disputes worth thousands.",
+          "Can you form the company without me travelling to Slovakia?",
+          "Yes. We prepare the documents, you sign them abroad (certified where required), and we file the registration and arrange trade licences for you.",
         ],
       ],
     },
@@ -226,25 +226,25 @@ const SERVICES: RawService[] = [
       ],
     },
     en: {
-      name: "Real estate & property development",
-      tagline: "From a flat to a development project — safely.",
+      name: "Real estate in Slovakia",
+      tagline: "Buying, selling and leasing Slovak property — safely.",
       summary:
-        "Purchase and lease agreements, the cadastre and development projects. We make sure the transfer runs smoothly and your money is protected.",
+        "Purchase and lease agreements, the Slovak land registry (kataster) and development projects. We make sure your money is protected and your ownership properly registered.",
       solve: [
-        "Purchase contracts and cadastre registration petitions",
-        "Lease agreements for landlords and tenants",
-        "Development projects and construction",
-        "Easements, liens and co-ownership",
-        "Resolving real-estate disputes",
+        "Property purchases by foreign buyers — contracts, title checks, escrow",
+        "Slovak land-registry (kataster) filings and registration of ownership",
+        "Lease agreements for landlords and tenants under Slovak law",
+        "Development projects and construction in Slovakia",
+        "Easements, liens, co-ownership and real-estate disputes",
       ],
       faq: [
         [
-          "How do you protect my money when buying a flat?",
-          "We use a notarial or attorney escrow — funds are released only after ownership is registered in the cadastre.",
+          "Can a foreigner buy property in Slovakia?",
+          "Yes — EU and most other foreign nationals and companies can acquire Slovak real estate, with limited exceptions (e.g. certain agricultural and forest land). We verify title in the land registry and structure the purchase safely.",
         ],
         [
-          "Will you prepare the cadastre petition too?",
-          "Yes, including the filing and communication with the cadastral office.",
+          "How do you protect my money when buying?",
+          "We use a notarial or attorney escrow — funds are released to the seller only after your ownership is registered in the Slovak land registry.",
         ],
       ],
     },
@@ -290,25 +290,25 @@ const SERVICES: RawService[] = [
       ],
     },
     en: {
-      name: "Litigation & debt recovery",
-      tagline: "When no agreement is reached, we stand up for you.",
+      name: "Litigation before Slovak courts",
+      tagline: "When no agreement is reached, we stand up for you in Slovakia.",
       summary:
-        "We build the strategy, represent you in court and recover what you’re owed. We always weigh a faster out-of-court route first.",
+        "We represent international clients in civil and commercial disputes before Slovak courts — from pre-action demands and payment orders to enforcement. We always weigh a faster out-of-court route first.",
       solve: [
-        "Representation in civil and commercial disputes",
-        "Debt recovery and enforcement",
-        "Out-of-court settlements and mediation",
-        "Damages and unjust enrichment",
-        "Representation in arbitration",
+        "Debt recovery against Slovak debtors — demand, payment order, enforcement",
+        "Representation before Slovak courts in civil and commercial disputes",
+        "Enforcement of foreign judgments and arbitral awards in Slovakia",
+        "Out-of-court settlements, damages and unjust enrichment",
+        "Interim measures and asset protection in Slovakia",
       ],
       faq: [
         [
-          "How long does a lawsuit take?",
-          "It depends, but many disputes we close out of court within weeks. You’ll get a realistic estimate at the consultation.",
+          "Do I have to travel to Slovakia for my court case?",
+          "In most civil and commercial matters we act on the basis of a power of attorney and your personal attendance isn’t needed. Where the court requires your testimony, we prepare you and arrange the practicalities.",
         ],
         [
-          "Do I pay even if we lose?",
-          "You know the price up front. For selected matters we can also agree a success-based fee.",
+          "How long does recovering a debt in Slovakia take?",
+          "An undisputed invoice can end in an enforceable Slovak payment order within weeks; contested cases take longer. You’ll get a realistic estimate and a fixed fee at the consultation.",
         ],
       ],
     },
@@ -354,25 +354,25 @@ const SERVICES: RawService[] = [
       ],
     },
     en: {
-      name: "Criminal law",
-      tagline: "Defence and protection of your rights at every stage.",
+      name: "Criminal defence in Slovakia",
+      tagline: "Defence and protection of your rights in Slovak criminal proceedings.",
       summary:
-        "We represent both the accused and injured parties — from the first questioning to the main hearing. We act fast, discreetly and without judgment.",
+        "We defend individuals and companies — including foreign nationals — in Slovak criminal proceedings, from the first questioning to the main hearing. We also represent injured parties. Fast, discreet, without judgment.",
       solve: [
-        "Defence in pre-trial and court proceedings",
-        "Representing injured parties and their claims",
-        "Economic and tax crime",
-        "Criminal complaints and appeals",
-        "Parole and remedies",
+        "Defence of foreign nationals in Slovak criminal proceedings",
+        "Assistance at police questioning and detention hearings",
+        "Economic and tax crime under Slovak law",
+        "Representing injured parties and their damage claims",
+        "Criminal complaints, appeals and remedies",
       ],
       faq: [
         [
-          "I’ve been summoned for questioning — what should I do?",
-          "Consult an attorney before questioning. You have the right to a defender from the start — call us before you start testifying.",
+          "I don’t speak Slovak — what are my rights?",
+          "You have the right to an interpreter throughout Slovak criminal proceedings and to a defence counsel from the very start. We communicate with you in English and defend you before the Slovak authorities — call us before you testify.",
         ],
         [
           "Do you represent injured parties too?",
-          "Yes. We help you claim damages and track the proceedings on your behalf.",
+          "Yes. We help you claim damages in the Slovak proceedings and track the case on your behalf.",
         ],
       ],
     },
@@ -418,25 +418,25 @@ const SERVICES: RawService[] = [
       ],
     },
     en: {
-      name: "IT & digital law",
-      tagline: "Law that keeps pace with technology.",
+      name: "IT, data & GDPR in Slovakia",
+      tagline: "Technology law under Slovak and EU rules.",
       summary:
-        "GDPR, software licences, e-shops and SaaS contracts. We help tech companies grow without legal gaps.",
+        "GDPR compliance for Slovak operations, e-commerce terms under Slovak consumer law, software and SaaS contracts. We help tech companies do business in Slovakia without legal gaps.",
       solve: [
-        "GDPR and personal-data protection",
-        "Software and licence contracts, SaaS",
-        "E-shop and online-service terms",
-        "Intellectual property and trademarks",
-        "Contracts for IT vendors and startups",
+        "GDPR compliance for Slovak entities and e-shops",
+        "E-commerce terms under Slovak consumer law",
+        "Software, licence and SaaS contracts governed by Slovak law",
+        "Intellectual property and trademarks in Slovakia",
+        "Contracts for IT vendors and startups operating in Slovakia",
       ],
       faq: [
         [
-          "Does my e-shop need legal documents?",
-          "Yes — terms, a complaints policy and GDPR are required by law. We prepare them tailored to you.",
+          "We sell online to Slovak customers — what documents do we need?",
+          "Slovak consumer law requires terms and conditions, a complaints policy and GDPR documentation adapted to Slovak rules. We prepare them tailored to your shop — in Slovak, with an English working version for you.",
         ],
         [
           "Do you handle startup and investor contracts?",
-          "Yes, including SAFE/investment agreements, vesting and shareholder agreements.",
+          "Yes — investment agreements, vesting and shareholder agreements for Slovak entities, drafted under Slovak law.",
         ],
       ],
     },
@@ -602,6 +602,96 @@ interface RawArticle {
 }
 
 const BLOG: RawArticle[] = [
+  {
+    id: "buying-property-slovakia",
+    cat: { sk: "Nehnuteľnosti", en: "Real estate" },
+    tone: "accent",
+    read: 6,
+    date: { sk: "8. júl 2026", en: "8 July 2026" },
+    iso: "2026-07-08T09:00:00+02:00",
+    sk: [
+      "Kúpa nehnuteľnosti na Slovensku zahraničným kupujúcim: ako to prebieha",
+      "Môže cudzinec kúpiť byt či dom na Slovensku? Väčšinou áno — dôležité je ustrážiť kataster, úschovu a zopár špecifík.",
+    ],
+    en: [
+      "Buying property in Slovakia as a foreigner: a step-by-step guide",
+      "Can a foreign national buy a flat or house in Slovakia? In most cases yes — the key is the land registry, escrow, and a few local specifics.",
+    ],
+    body: {
+      sk: [
+        "Zahraniční kupujúci — či už občania EÚ, alebo väčšina osôb z tretích krajín — môžu na Slovensku nadobúdať byty, domy aj pozemky; obmedzenia sa týkajú len výnimiek, ako je časť poľnohospodárskej a lesnej pôdy. Kúpa sa vždy spravuje slovenským právom a vlastníctvo vzniká až vkladom do slovenského katastra nehnuteľností.",
+        "Prvým krokom je previerka právneho stavu: list vlastníctva, ťarchy (záložné práva, vecné bremená), prístup k pozemku a súlad skutočného stavu so zápisom. Pri bytoch pribúda kontrola správcu a nedoplatkov. Zahraničný klient toto všetko nemusí riešiť osobne — previerku aj celý prevod vieme vykonať na základe plnomocenstva.",
+        "Najdôležitejšia poistka je úschova kúpnej ceny: peniaze idú do notárskej alebo advokátskej úschovy a predávajúcemu sa uvoľnia až po zápise vlastníctva v prospech kupujúceho. Zmluva autorizovaná advokátom navyše zrýchľuje katastrálne konanie a nahrádza osvedčovanie podpisov — praktické najmä pri podpisoch v zahraničí.",
+        "Ak kupujete zo zahraničia, celý proces zvládneme na diaľku: video konzultácia, plnomocenstvo (s apostilom, ak je potrebný), príprava zmlúv v slovenčine s anglickým pracovným prekladom, úschova a vklad do katastra. Ozvite sa nám ešte pred podpisom rezervačnej zmluvy — práve tam vzniká najviac chýb.",
+      ],
+      en: [
+        "Foreign buyers — EU citizens as well as most third-country nationals and companies — can acquire flats, houses and land in Slovakia; restrictions apply only to exceptions such as certain agricultural and forest land. The purchase is always governed by Slovak law, and ownership passes only upon registration in the Slovak land registry (kataster).",
+        "Step one is legal due diligence: the title deed, encumbrances (mortgages, easements), access to the land, and whether reality matches the registry. For flats, add a check of the building administrator and any arrears. As a foreign client you don’t have to handle any of this in person — we can run the checks and the entire transfer under a power of attorney.",
+        "The single most important safeguard is escrow: the purchase price goes into a notarial or attorney escrow and is released to the seller only after ownership is registered in your name. A contract authorized by a Slovak attorney also speeds up the registry proceedings and replaces signature certification — particularly practical when you sign abroad.",
+        "If you are buying from abroad, the whole process works remotely: a video consultation, a power of attorney (with an apostille where needed), contracts in Slovak with an English working translation, escrow and the land-registry filing. Talk to us before you sign a reservation agreement — that is where most costly mistakes happen.",
+      ],
+    },
+  },
+  {
+    id: "company-formation-slovakia",
+    cat: { sk: "Obchodné právo", en: "Corporate law" },
+    tone: "brand",
+    read: 5,
+    date: { sk: "1. júl 2026", en: "1 July 2026" },
+    iso: "2026-07-01T09:00:00+02:00",
+    sk: [
+      "Založenie s.r.o. na Slovensku pre zahraničného zakladateľa",
+      "Ako si cudzinec založí slovenskú s.r.o. bez cesty na Slovensko — a na čo si dať pozor pri konateľoch z tretích krajín.",
+    ],
+    en: [
+      "Starting a business in Slovakia: company formation for foreigners",
+      "How a foreigner sets up a Slovak s.r.o. without travelling to Slovakia — and what to watch with non-EU directors.",
+    ],
+    body: {
+      sk: [
+        "Slovenská s.r.o. je najčastejšia forma podnikania aj pre zahraničných zakladateľov: základné imanie od 5 000 EUR (nemusí sa skladať na účet v banke), jeden alebo viac spoločníkov — fyzické osoby aj zahraničné firmy. Spoločnosť vzniká zápisom do slovenského obchodného registra.",
+        "Celý proces vieme zvládnuť na diaľku: pripravíme zakladateľské dokumenty, zahraničný zakladateľ ich podpíše doma (s úradným osvedčením, prípadne apostilom) a na základe plnomocenstva vybavíme živnostenské oprávnenia aj zápis do obchodného registra. Bežný časový rámec sú približne dva až tri týždne od doručenia podpísaných dokumentov.",
+        "Pozor na konateľov: konateľom slovenskej s.r.o. môže byť bez ďalších podmienok občan EÚ alebo štátu OECD. Pri konateľovi z inej krajiny sa vyžaduje slovenský pobyt — to je najčastejší zádrhel, ktorý treba vyriešiť ešte pred podaním. Zahraničná materská firma ako spoločník problém nie je.",
+        "Po vzniku spoločnosti netreba zabudnúť na nadväzujúce povinnosti podľa slovenského práva: registráciu na daňovom úrade, zápis konečných užívateľov výhod, prípadne registráciu k DPH. Nastavíme všetko od začiatku správne — vrátane zmlúv o výkone funkcie a vzťahov medzi spoločníkmi.",
+      ],
+      en: [
+        "The Slovak s.r.o. (limited liability company) is the most common vehicle for foreign founders: registered capital from EUR 5,000 (no bank deposit required), one or more shareholders — individuals or foreign companies. The company comes into existence upon registration in the Slovak Commercial Register.",
+        "The whole process works remotely: we prepare the incorporation documents, you sign them at home (certified, with an apostille where required), and under a power of attorney we arrange the trade licences and the Commercial Register filing. The usual timeframe is roughly two to three weeks from receiving the signed documents.",
+        "Watch the director requirement: a Slovak s.r.o. director can be an EU or OECD national without further conditions. A director from any other country needs Slovak residence — the most common snag, best resolved before filing. A foreign parent company as the shareholder is not a problem.",
+        "After incorporation, Slovak law brings follow-up duties: tax-office registration, registering beneficial owners, VAT registration where applicable. We set everything up correctly from day one — including director service agreements and shareholder arrangements.",
+      ],
+    },
+  },
+  {
+    id: "debt-recovery-slovakia",
+    cat: { sk: "Súdne spory", en: "Litigation" },
+    tone: "brand",
+    read: 5,
+    date: { sk: "24. jún 2026", en: "24 June 2026" },
+    iso: "2026-06-24T09:00:00+02:00",
+    sk: [
+      "Slovenský odberateľ nezaplatil: ako vymáha pohľadávku zahraničný veriteľ",
+      "Od predžalobnej výzvy cez upomínacie konanie po exekúciu — ako na Slovensku efektívne vymôcť faktúru zo zahraničia.",
+    ],
+    en: [
+      "Recovering a debt from a Slovak company: what foreign creditors should know",
+      "From a pre-action demand through the Slovak payment-order procedure to enforcement — how to collect an unpaid invoice from abroad.",
+    ],
+    body: {
+      sk: [
+        "Ak vám slovenský obchodný partner nezaplatil faktúru, čas hrá proti vám — obchodné pohľadávky sa premlčujú spravidla za štyri roky a schopnosť dlžníka platiť sa časom zhoršuje. Vymáhanie prebieha podľa slovenského práva pred slovenskými súdmi, no zahraničný veriteľ pri ňom nemusí byť osobne prítomný.",
+        "Prvým krokom je kvalifikovaná predžalobná výzva od slovenskej advokátskej kancelárie — často zaberie sama osebe, pretože dlžníkovi signalizuje, že náklady konania pôjdu na jeho účet. Ak nezaberie, nasleduje návrh na vydanie platobného rozkazu v tzv. upomínacom konaní: elektronický, rýchly a s polovičným súdnym poplatkom.",
+        "Pri nespochybnenej faktúre vydá súd platobný rozkaz spravidla do desiatich pracovných dní; ak dlžník nepodá odpor, máte exekučný titul a pohľadávku vymáha súdny exekútor. Ak dlžník medzičasom skončil v konkurze, treba pohľadávku prihlásiť u správcu v zákonnej lehote — jej zmeškanie sa odpúšťa len výnimočne.",
+        "Zo zahraničia vám stačí poslať podklady (zmluvu či objednávku, faktúru, dodacie doklady) a podpísať plnomocenstvo. Postup, náklady aj reálnu vymožiteľnosť vám povieme vopred — vrátane preverenia majetkových pomerov dlžníka v slovenských registroch.",
+      ],
+      en: [
+        "If your Slovak business partner hasn’t paid an invoice, time works against you — commercial claims in Slovakia are generally time-barred after four years, and a debtor’s ability to pay tends to deteriorate. Recovery proceeds under Slovak law before Slovak courts, but as a foreign creditor you don’t need to attend in person.",
+        "Step one is a formal pre-action demand from a Slovak law firm — it often works by itself, because it signals to the debtor that the costs of proceedings will land on their side. If it doesn’t, we file for a Slovak payment order in the electronic “reminder procedure”: fast, fully online, with a court fee reduced by half.",
+        "For an undisputed invoice the court typically issues the payment order within ten working days; if the debtor files no objection, you hold an enforceable title and a court-appointed enforcement officer collects the debt. If the debtor has meanwhile entered Slovak insolvency, the claim must be filed with the trustee within the statutory deadline — missing it is forgiven only exceptionally.",
+        "From abroad, all we need are the documents (contract or order, invoice, delivery records) and a signed power of attorney. We tell you the strategy, the costs and a realistic recovery assessment up front — including a check of the debtor’s assets in Slovak registers.",
+      ],
+    },
+  },
   {
     id: "ako-ucinne-vymahat-pohladavku-krok-za-krokom",
     cat: { sk: "Obchodné právo", en: "Commercial Law" },
