@@ -5,7 +5,8 @@
     "shop": "E-shop",
     "about": "O kancelárii",
     "blog": "Blog",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "international": "Zahraniční klienti"
   },
   "common": {
     "cta": "Rezervovať konzultáciu",
@@ -201,6 +202,36 @@
     ],
     "fine": "Tento web má informatívny charakter a nenahrádza právne poradenstvo.",
     "rights": "© kohút & partners s.r.o. · IČO 47 235 888"
+  },
+  "blog": {
+    "skLawNote": "Tento článok sa týka práva Slovenskej republiky."
+  },
+  "intl": {
+    "heroOverline": "Zahraniční klienti",
+    "heroTitle": "Slovenské právo, vysvetlené po anglicky.",
+    "heroLead": "Sme slovenská advokátska kancelária a radíme výlučne k právu Slovenskej republiky. Ak má váš biznis, nehnuteľnosť, dlžník alebo spor väzbu na Slovensko, prevedieme vás slovenským právnym systémom — v angličtine, prevažne na diaľku.",
+    "helpOverline": "Čo pre vás riešime",
+    "helpTitle": "Typické veci, ktoré riešime pre zahraničných klientov",
+    "helpLead": "Všetky uvedené veci sa spravujú slovenským právom a prebiehajú pred slovenskými súdmi, notármi, katastrom a inými slovenskými orgánmi.",
+    "help": [
+      { "title": "Kúpa nehnuteľnosti na Slovensku", "desc": "Kúpne zmluvy, previerka vlastníctva v katastri, úschova kúpnej ceny a vklad vlastníckeho práva." },
+      { "title": "Podnikanie na Slovensku", "desc": "Založenie slovenskej s.r.o. pre zahraničných zakladateľov — plne na diaľku cez plnomocenstvo — obchodné zmluvy a korporátna agenda." },
+      { "title": "Vymáhanie pohľadávok voči slovenským dlžníkom", "desc": "Predžalobné výzvy, upomínacie konanie, súdne konanie a exekúcia — jasný postup so známymi nákladmi." },
+      { "title": "Veritelia v slovenských insolvenciách", "desc": "Prihlásenie pohľadávky u slovenského správcu v zákonných lehotách, zastupovanie vo veriteľských orgánoch a monitoring konania." },
+      { "title": "Spory pred slovenskými súdmi", "desc": "Civilné a obchodné spory, uznanie a výkon cudzích rozhodnutí na Slovensku, neodkladné opatrenia a rokovania o urovnaní." }
+    ],
+    "remoteOverline": "Ako to prebieha",
+    "remoteTitle": "Spolupráca zo zahraničia",
+    "remote": [
+      { "title": "Video konzultácia v angličtine", "desc": "Rezervujete si termín online — preberieme vašu vec, vysvetlíme pozíciu podľa slovenského práva a dohodneme ďalší postup." },
+      { "title": "Poverenie a plnomocenstvo", "desc": "E-mailom dostanete zmluvu o poskytovaní právnych služieb a plnomocenstvo. Pri väčšine vecí stačí podpísaný sken; kde slovenské orgány vyžadujú osvedčenie alebo apostil, prevedieme vás tým." },
+      { "title": "Konáme za vás na Slovensku", "desc": "Komunikujeme so slovenskými súdmi, notármi, katastrom a orgánmi verejnej moci za vás. Osobná účasť je potrebná len výnimočne." },
+      { "title": "Transparentné odmeny", "desc": "Pevná odmena dohodnutá vopred pri vymedzených veciach; faktúry v EUR prevodom. Žiadne hodinové prekvapenia." }
+    ],
+    "scopeTitle": "Jedno dôležité vymedzenie",
+    "scopeText": "Radíme výlučne k právu Slovenskej republiky. Neradíme k právu vašej domovskej krajiny — ak vaša vec presahuje do inej jurisdikcie, spolupracujeme s vaším tamojším právnym zástupcom.",
+    "ctaTitle": "Povedzte nám o vašej veci na Slovensku",
+    "ctaLead": "Prvá konzultácia je nezáväzná a prebieha v angličtine."
   },
   "consent": {
     "text": "Používame cookies — nevyhnutné na fungovanie webu a, s vaším súhlasom, na meranie návštevnosti.",

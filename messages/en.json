@@ -5,7 +5,8 @@
     "shop": "Shop",
     "about": "About",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    "international": "International clients"
   },
   "common": {
     "cta": "Book a consultation",
@@ -23,29 +24,29 @@
     "formError": "Something went wrong. Please try again or call us."
   },
   "home": {
-    "overline": "Law firm · Zvolen",
+    "overline": "Slovak law firm · Zvolen, Slovakia",
     "heroBadge": "SAK · Zvolen",
-    "heroTitle": "Legal certainty for business and life.",
-    "heroLead": "Insolvency, commercial and IT law, real estate and litigation — clear advice, fast action, and a price you know up front.",
+    "heroTitle": "Your counsel for Slovak law.",
+    "heroLead": "We advise international clients in English on Slovak law: real estate purchases, company formation, debt recovery, insolvency and disputes before Slovak courts — clear advice, fast action, and a price you know up front.",
     "heroPrimary": "Book a consultation",
     "heroSecondary": "Legal shop",
-    "heroChips": ["Fixed price", "Reply within 24 h", "Bar-registered attorneys"],
-    "trustLabel": "Trusted by entrepreneurs, companies and investors across Slovakia",
+    "heroChips": ["Fixed price", "Reply within 24 h", "We advise in English"],
+    "trustLabel": "Trusted by entrepreneurs, companies and investors — Slovak and international",
     "stats": [
       { "value": "20", "label": "years of practice" },
       { "value": "2,400+", "label": "matters resolved" },
       { "value": "6", "label": "practice areas" },
       { "value": "8", "label": "team members (4 attorneys)" }
     ],
-    "servOverline": "Practice areas",
-    "servTitle": "Six areas where we represent you",
-    "servLead": "We focus on law for entrepreneurs, companies and investors. Pick an area — see exactly what we handle, at what price, and how we work together.",
+    "servOverline": "Practice areas · Slovak law",
+    "servTitle": "How we help international clients in Slovakia",
+    "servLead": "We advise exclusively on the law of the Slovak Republic — from buying property to disputes before Slovak courts. Pick an area to see exactly what we handle, at what price, and how we work together.",
     "whyOverline": "How we work",
     "whyTitle": "Three steps to a clear solution",
     "why": [
-      { "title": "Book a consultation", "desc": "Online or in person. Choose a slot and describe your situation — first reply within 24 hours." },
-      { "title": "We agree the plan and price", "desc": "We propose a solution and a fixed price up front. No hourly surprises." },
-      { "title": "We handle it", "desc": "We take the matter off your plate and keep you informed at every step." }
+      { "title": "Book a consultation", "desc": "Online via video call, in English — or in person. Choose a slot and describe your situation; first reply within 24 hours." },
+      { "title": "We agree the plan and price", "desc": "We propose a solution under Slovak law and a fixed price up front. No hourly surprises." },
+      { "title": "We handle it", "desc": "We act for you before Slovak courts and authorities and keep you informed at every step — no travel to Slovakia needed in most matters." }
     ],
     "teamOverline": "Our team",
     "teamTitle": "The people who will stand by you",
@@ -55,16 +56,16 @@
     "blogTitle": "Law made clear — our blog",
     "blogLead": "Practical articles for business owners. No extra theory.",
     "blogCta": "All articles",
-    "ctaBandTitle": "Got a legal problem? Let’s start today.",
-    "ctaBandLead": "Your first consultation is non-binding. Pick a slot — online or at our office.",
+    "ctaBandTitle": "Got a legal matter in Slovakia? Let’s start today.",
+    "ctaBandLead": "Your first consultation is non-binding — online in English, or at our office. Pick a slot that suits you.",
     "ctaBandBtn": "Book a consultation"
   },
   "team": {
     "photoSlot": "Photo slot"
   },
   "services": {
-    "heroTitle": "Our legal services",
-    "heroLead": "From rescuing a company in crisis to protecting your data. All with a clear process and a fixed price.",
+    "heroTitle": "Legal services under Slovak law",
+    "heroLead": "From buying property in Slovakia to rescuing a company in crisis. We advise exclusively on Slovak law — with a clear process and a fixed price.",
     "whatWeSolve": "What we handle for you",
     "packages": "Fixed-price packages",
     "packagesLead": "Selected services can be ordered online at a known price. More complex matters we handle after a consultation.",
@@ -74,8 +75,8 @@
   },
   "about": {
     "heroOverline": "About the firm",
-    "heroTitle": "A law firm that speaks your language.",
-    "heroLead": "We started with a simple belief: law should be understandable, predictable and fair for the client. After 20 years of practice, it still holds.",
+    "heroTitle": "A Slovak law firm that speaks your language.",
+    "heroLead": "We started with a simple belief: law should be understandable, predictable and fair for the client. After 20 years of practice, it still holds — and today we advise international clients in English on Slovak law.",
     "valuesOverline": "Our values",
     "valuesTitle": "What we stand for",
     "values": [
@@ -93,7 +94,7 @@
   "contact": {
     "overline": "Contact",
     "title": "Get in touch",
-    "lead": "Fill in the form and we’ll reply within one business day. Or book a consultation slot right away.",
+    "lead": "Fill in the form and we’ll reply within one business day — in English. Or book a video consultation right away.",
     "fName": "Full name",
     "fEmail": "E-mail",
     "fPhone": "Phone",
@@ -196,11 +197,41 @@
     "tag": "Law firm registered with the Slovak Bar Association.",
     "cols": [
       { "head": "Services", "items": ["Insolvency", "Commercial & civil law", "Real estate", "Litigation", "Criminal law", "IT law"] },
-      { "head": "Firm", "items": ["About us", "Our team", "Blog", "Careers"] },
+      { "head": "Firm", "items": ["About us", "Our team", "Blog", "International clients"] },
       { "head": "Legal", "items": ["Privacy", "Terms", "Cookies"] }
     ],
-    "fine": "This website is for general information only and is not legal advice.",
+    "fine": "This website is for general information only and is not legal advice. All information and services concern exclusively the law of the Slovak Republic and its application by Slovak courts and public authorities.",
     "rights": "© kohút & partners s.r.o. · ID 47 235 888"
+  },
+  "blog": {
+    "skLawNote": "This article deals with the law of the Slovak Republic and its application by Slovak courts and authorities."
+  },
+  "intl": {
+    "heroOverline": "International clients",
+    "heroTitle": "Slovak law, explained in English.",
+    "heroLead": "We are a Slovak law firm advising exclusively on the law of the Slovak Republic. If your business, property, debtor or dispute is in Slovakia, we guide you through the Slovak legal system — in English, mostly remotely.",
+    "helpOverline": "What we do for you",
+    "helpTitle": "Typical matters we handle for international clients",
+    "helpLead": "Every matter below is governed by Slovak law and handled before Slovak courts, notaries, the land registry and other Slovak authorities.",
+    "help": [
+      { "title": "Buying property in Slovakia", "desc": "Purchase contracts, title checks in the Slovak land registry (kataster), escrow arrangements so your money is protected, and registration of ownership." },
+      { "title": "Doing business in Slovakia", "desc": "Formation of a Slovak s.r.o. (LLC) for foreign founders — fully remote via power of attorney — plus commercial contracts and corporate housekeeping." },
+      { "title": "Recovering debts from Slovak debtors", "desc": "Pre-action demands, Slovak payment-order proceedings, litigation and enforcement — a clear, staged process with known costs." },
+      { "title": "Creditors in Slovak insolvencies", "desc": "Filing your claim with the Slovak trustee within statutory deadlines, creditor-committee representation and monitoring of the proceedings." },
+      { "title": "Disputes before Slovak courts", "desc": "Civil and commercial litigation, enforcement of foreign judgments in Slovakia, interim measures and settlement negotiations." }
+    ],
+    "remoteOverline": "How it works",
+    "remoteTitle": "Working with us from abroad",
+    "remote": [
+      { "title": "Video consultation in English", "desc": "Book a slot online — we discuss your matter, outline the Slovak-law position and agree the next steps." },
+      { "title": "Engagement and power of attorney", "desc": "You receive an engagement letter and a power of attorney by e-mail. For most matters a simple signed scan is enough; where Slovak authorities require it, we guide you through certification or an apostille." },
+      { "title": "We act in Slovakia for you", "desc": "We deal with Slovak courts, notaries, the land registry and public authorities on your behalf. Personal attendance is rarely required." },
+      { "title": "Transparent fees", "desc": "A fixed fee agreed up front for defined matters; invoices in EUR with bank transfer. No hourly surprises." }
+    ],
+    "scopeTitle": "One important limitation",
+    "scopeText": "We advise exclusively on the law of the Slovak Republic. We do not advise on the law of your home country — where your matter touches another jurisdiction, we work alongside your local counsel.",
+    "ctaTitle": "Tell us about your matter in Slovakia",
+    "ctaLead": "The first consultation is non-binding and held in English."
   },
   "consent": {
     "text": "We use cookies — essential ones to run the site and, with your consent, to measure traffic.",

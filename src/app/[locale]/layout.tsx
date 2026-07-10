@@ -22,10 +22,10 @@ export async function generateMetadata(props: PageProps<"/[locale]">): Promise<M
   const sk = locale === "sk";
   const title = sk
     ? "kohút & partners — advokátska kancelária Zvolen"
-    : "kohút & partners — law firm in Zvolen";
+    : "kohút & partners — Slovak law firm | Zvolen, Slovakia";
   const description = sk
     ? "Insolvencie, obchodné a IT právo, nehnuteľnosti a súdne spory. Poradíme zrozumiteľne, konáme rýchlo a s vopred známou cenou. Zvolen."
-    : "Insolvency, commercial and IT law, real estate and litigation. Clear advice, fast action and a price you know up front. Zvolen, Slovakia.";
+    : "Slovak law firm advising international clients in English: real estate, company formation, debt recovery, insolvency and litigation — exclusively under Slovak law.";
 
   return {
     metadataBase: new URL("https://www.tkak.sk"),

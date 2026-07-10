@@ -1,0 +1,121 @@
+.helpSection {
+  background: var(--color-surface);
+  padding-block: 72px 80px;
+}
+.helpGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.helpCheck {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.helpTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--text-strong);
+  margin-bottom: 8px;
+}
+.helpDesc {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.remoteSection {
+  background: var(--color-bg);
+  padding-block: 80px;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 40px;
+  margin-bottom: 44px;
+}
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.stepNo {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--navy-800);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.stepTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16.5px;
+  color: var(--text-strong);
+  margin-bottom: 5px;
+}
+.stepDesc {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.scope {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px 26px;
+  background: var(--navy-50);
+  border-left: 3px solid var(--navy-800);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  max-width: 760px;
+}
+.scopeIcon {
+  color: var(--navy-800);
+  display: inline-flex;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.scopeTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-strong);
+  margin-bottom: 4px;
+}
+.scopeText {
+  font-size: 14.5px;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .helpGrid {
+    grid-template-columns: 1fr;
+  }
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .helpSection {
+    padding-block: 56px 60px;
+  }
+  .remoteSection {
+    padding-block: 60px;
+  }
+}

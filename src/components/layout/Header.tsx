@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Container } from "./Section";
 import { LanguageSwitch } from "./LanguageSwitch";
@@ -17,13 +17,21 @@ const NAV = [
   { key: "home", href: "/" },
   { key: "services", href: "/services" },
   { key: "shop", href: "/shop" },
+  { key: "international", href: "/international" },
   { key: "about", href: "/about" },
   { key: "blog", href: "/blog" },
   { key: "contact", href: "/contact" },
 ] as const;
 
-// E-shop link is hidden until the shop is enabled.
-const NAV_ITEMS = ESHOP_ENABLED ? NAV : NAV.filter((item) => item.key !== "shop");
+// E-shop link is hidden until the shop is enabled; the international-clients
+// page is surfaced in the EN navigation only (SK reaches it via the footer).
+function navItems(locale: string) {
+  return NAV.filter(
+    (item) =>
+      (item.key !== "shop" || ESHOP_ENABLED) &&
+      (item.key !== "international" || locale === "en")
+  );
+}
 
 function isActive(href: string, pathname: string): boolean {
   if (href === "/") return pathname === "/";
@@ -34,9 +42,11 @@ export function Header() {
   const tNav = useTranslations("nav");
   const tCommon = useTranslations("common");
   const pathname = usePathname();
+  const locale = useLocale();
   const { open } = useBooking();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const NAV_ITEMS = navItems(locale);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
