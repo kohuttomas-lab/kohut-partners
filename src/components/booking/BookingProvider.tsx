@@ -8,8 +8,9 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { useLocale } from "next-intl";
 import { getCalApi } from "@calcom/embed-react";
-import { CALCOM_ENABLED, CALCOM_LINK, CALCOM_NAMESPACE } from "@/lib/booking";
+import { CALCOM_ENABLED, CALCOM_NAMESPACE, calLinkForLocale } from "@/lib/booking";
 import { trackLead } from "@/lib/analytics";
 import { BookingModal } from "./BookingModal";
 
@@ -27,6 +28,7 @@ export function useBooking(): BookingContextValue {
 }
 
 export function BookingProvider({ children }: { children: ReactNode }) {
+  const locale = useLocale();
   const [state, setState] = useState<{ open: boolean; area: string }>({
     open: false,
     area: "",
@@ -54,12 +56,15 @@ export function BookingProvider({ children }: { children: ReactNode }) {
           });
           calInited.current = true;
         }
-        cal("modal", { calLink: CALCOM_LINK, config: { layout: "month_view" } });
+        cal("modal", {
+          calLink: calLinkForLocale(locale),
+          config: { layout: "month_view" },
+        });
       });
       return;
     }
     setState({ open: true, area: typeof area === "string" ? area : "" });
-  }, []);
+  }, [locale]);
 
   const close = useCallback(() => setState({ open: false, area: "" }), []);
 
