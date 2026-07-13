@@ -147,8 +147,14 @@
   .featured {
     grid-template-columns: 1fr;
   }
+  /* Full-width column: keep a portrait crop so the figure isn't cut
+     mid-chest by a short, wide band. */
   .photoWrap {
-    min-height: 280px;
+    min-height: auto;
+    aspect-ratio: 4 / 5;
+  }
+  .photo {
+    object-position: center 30%;
   }
   .grid {
     grid-template-columns: 1fr 1fr;
