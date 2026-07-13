@@ -1,6 +1,7 @@
 name: Auto-generuj blog článok
 
-# Vygeneruje SK+EN článok z prvej témy v marketing/article-topics.md a otvorí PR na schválenie.
+# Vygeneruje SK+EN článok z prvej témy v marketing/article-topics.md a publikuje ho PRIAMO na main
+# (auto-publish bez schvaľovania — zvolené userom 2026-07-13). Pred pushom beží typecheck ako poistka.
 # Beží automaticky (týždenne) aj ručne (workflow_dispatch).
 # Vyžaduje repo secret ANTHROPIC_API_KEY.
 
@@ -11,7 +12,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   generate:
@@ -22,6 +22,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: npm
+
+      - name: Inštalácia závislostí (pre typecheck)
+        run: npm ci
 
       - name: Inštalácia Anthropic SDK (mimo package.json)
         run: npm install --no-save --no-package-lock @anthropic-ai/sdk@latest
@@ -31,24 +35,17 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/generate-article.mjs
 
-      - name: Otvor PR na schválenie
-        uses: peter-evans/create-pull-request@v6
-        with:
-          branch: auto-article
-          delete-branch: true
-          commit-message: "Blog: AI-generovaný článok (na schválenie)"
-          title: "Nový blog článok (AI návrh — na schválenie)"
-          assignees: kohuttomas-lab
-          reviewers: kohuttomas-lab
-          labels: |
-            auto-article
-            needs-review
-          body: |
-            Automaticky vygenerovaný blog článok cez Claude API (`scripts/generate-article.mjs`).
+      - name: Typecheck — poistka pred publikovaním
+        run: npx tsc --noEmit --incremental false
 
-            ⚠️ **Pred mergom skontroluj:**
-            - právnu presnosť (žiadne nesprávne tvrdenia / paragrafy),
-            - tón a brand,
-            - SK aj EN verziu.
-
-            Ak je OK → **Merge** (nasadí sa cez Vercel). Ak nie → **Close** (tému netreba vracať, je už zaškrtnutá).
+      - name: Publikuj priamo na main
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Žiadne zmeny (došli témy alebo duplicitný slug) — nepublikujem."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Blog: AI-generovaný článok (auto-publish)"
+          git push
