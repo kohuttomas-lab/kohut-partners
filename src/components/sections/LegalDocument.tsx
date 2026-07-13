@@ -1,10 +1,11 @@
+import type { ReactNode } from "react";
 import type { LegalDoc } from "@/lib/legal";
 import { Container } from "@/components/layout/Section";
 import { PageHero } from "@/components/layout/PageHero";
 import { Shield } from "@/components/icons";
 import styles from "./LegalDocument.module.css";
 
-export function LegalDocument({ doc }: { doc: LegalDoc }) {
+export function LegalDocument({ doc, action }: { doc: LegalDoc; action?: ReactNode }) {
   return (
     <>
       <PageHero overline={doc.overline} title={doc.title} />
@@ -38,6 +39,8 @@ export function LegalDocument({ doc }: { doc: LegalDoc }) {
               ) : null}
             </div>
           ))}
+
+          {action ? <div className={styles.action}>{action}</div> : null}
         </Container>
       </section>
     </>

@@ -28,3 +28,21 @@ export function setConsent(value: Consent): void {
     /* ignore */
   }
 }
+
+/**
+ * Withdraw a previously given choice (GDPR: as easy to revoke as to grant).
+ * Clears the stored decision; callers reload so the banner re-appears and no
+ * trackers load until the visitor chooses again.
+ */
+export function resetConsent(): void {
+  try {
+    localStorage.removeItem(STORAGE_KEY);
+  } catch {
+    /* ignore */
+  }
+  try {
+    window.dispatchEvent(new CustomEvent(CONSENT_EVENT, { detail: null }));
+  } catch {
+    /* ignore */
+  }
+}

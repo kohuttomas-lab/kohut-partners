@@ -30,6 +30,7 @@ const COMPANY = "kohút & partners s.r.o.";
 const ICO = "47 235 888";
 const ADDRESS = "Námestie SNP 74/28, 960 01 Zvolen";
 const UPDATED = { sk: "Posledná aktualizácia: 15. jún 2026", en: "Last updated: 15 June 2026" };
+const COOKIES_UPDATED = { sk: "Posledná aktualizácia: 13. júl 2026", en: "Last updated: 13 July 2026" };
 const NOTICE = {
   sk: "Toto je pracovný návrh dokumentu. Pred zverejnením ho prosím skontrolujte a finalizujte podľa aktuálnej praxe kancelárie.",
   en: "This is a working draft. Please review and finalize it before publishing in line with the firm's current practice.",
@@ -254,33 +255,35 @@ const COOKIES: Doc = {
     slug: "cookies",
     overline: "Právne",
     title: "Zásady používania cookies",
-    updated: UPDATED.sk,
+    updated: COOKIES_UPDATED.sk,
     notice: NOTICE.sk,
     sections: [
       {
         heading: "Čo sú cookies",
         paragraphs: [
-          "Cookies sú malé súbory, ktoré web ukladá vo vašom prehliadači, aby si zapamätal vaše nastavenia a zabezpečil správne fungovanie stránky.",
+          "Cookies sú malé súbory, ktoré web ukladá vo vašom prehliadači, aby si zapamätal vaše nastavenia a zabezpečil správne fungovanie stránky. Podobné technológie zahŕňajú aj lokálne úložisko prehliadača a meracie kódy (pixely).",
         ],
       },
       {
-        heading: "Aké používame",
+        heading: "Aké cookies a nástroje používame",
         items: [
-          "Nevyhnutné: zapamätanie zvoleného jazyka (SK/EN).",
+          "Nevyhnutné (bez súhlasu): zapamätanie zvoleného jazyka (SK/EN) a vašej voľby v cookie lište.",
           "Lokálne úložisko prehliadača: obsah košíka v e-shope (neodosiela sa automaticky na server).",
-          "Aktuálne nepoužívame analytické ani marketingové cookies.",
+          "Analytické (len s vaším súhlasom): Google Analytics 4 — meranie návštevnosti a spôsobu používania webu.",
+          "Marketingové (len s vaším súhlasom): Meta Pixel (Facebook/Instagram) a Google Ads — meranie konverzií a prispôsobenie reklamy.",
         ],
       },
       {
-        heading: "Správa cookies",
+        heading: "Kto k údajom pristupuje",
         paragraphs: [
-          "Ukladanie cookies môžete kedykoľvek spravovať alebo zakázať v nastaveniach svojho prehliadača. Obmedzenie nevyhnutných cookies môže ovplyvniť funkčnosť webu.",
+          "Analytické a marketingové nástroje prevádzkujú spoločnosti Google Ireland Limited a Meta Platforms Ireland Limited, ktoré ako tretie strany spracúvajú príslušné údaje podľa vlastných zásad ochrany súkromia. Tieto nástroje sa vo vašom prehliadači načítajú až po udelení súhlasu; ak súhlas neudelíte, nespustia sa.",
         ],
       },
       {
-        heading: "Súhlas",
+        heading: "Súhlas a jeho odvolanie",
         paragraphs: [
-          "Po nasadení analytických alebo marketingových nástrojov doplníme nástroj na správu súhlasu (cookie lišta), prostredníctvom ktorého udelíte alebo odmietnete súhlas.",
+          "Pri prvej návšteve zobrazíme cookie lištu. Analytické a marketingové cookies aktivujeme iba ak zvolíte „Prijať všetko“. Ak zvolíte „Iba nevyhnutné“, tieto nástroje sa nenačítajú.",
+          "Svoj súhlas môžete kedykoľvek zmeniť alebo odvolať tlačidlom nižšie — cookie lišta sa zobrazí znova a vy si voľbu upravíte. Ukladanie cookies viete spravovať aj priamo v nastaveniach svojho prehliadača.",
         ],
       },
     ],
@@ -289,33 +292,35 @@ const COOKIES: Doc = {
     slug: "cookies",
     overline: "Legal",
     title: "Cookie policy",
-    updated: UPDATED.en,
+    updated: COOKIES_UPDATED.en,
     notice: NOTICE.en,
     sections: [
       {
         heading: "What cookies are",
         paragraphs: [
-          "Cookies are small files a website stores in your browser to remember your preferences and ensure the site works correctly.",
+          "Cookies are small files a website stores in your browser to remember your preferences and ensure the site works correctly. Similar technologies include browser local storage and tracking pixels.",
         ],
       },
       {
-        heading: "What we use",
+        heading: "Cookies and tools we use",
         items: [
-          "Essential: remembering your chosen language (SK/EN).",
+          "Essential (no consent required): remembering your chosen language (SK/EN) and your cookie-banner choice.",
           "Browser local storage: the shop cart contents (not sent to the server automatically).",
-          "We currently use no analytics or marketing cookies.",
+          "Analytics (only with your consent): Google Analytics 4 — measuring traffic and how the site is used.",
+          "Marketing (only with your consent): Meta Pixel (Facebook/Instagram) and Google Ads — conversion measurement and ad personalisation.",
         ],
       },
       {
-        heading: "Managing cookies",
+        heading: "Who accesses the data",
         paragraphs: [
-          "You can manage or disable cookie storage at any time in your browser settings. Restricting essential cookies may affect how the website works.",
+          "The analytics and marketing tools are operated by Google Ireland Limited and Meta Platforms Ireland Limited, which process the relevant data as third parties under their own privacy policies. These tools load in your browser only after you give consent; if you decline, they do not run.",
         ],
       },
       {
-        heading: "Consent",
+        heading: "Consent and withdrawal",
         paragraphs: [
-          "Once analytics or marketing tools are introduced, we will add a consent-management tool (cookie banner) through which you can grant or decline consent.",
+          "On your first visit we show a cookie banner. Analytics and marketing cookies are activated only if you choose “Accept all”. If you choose “Only necessary”, these tools do not load.",
+          "You can change or withdraw your consent at any time using the button below — the cookie banner reappears and you can update your choice. You can also manage cookie storage directly in your browser settings.",
         ],
       },
     ],

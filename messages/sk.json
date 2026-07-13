@@ -234,10 +234,11 @@
     "ctaLead": "Prvá konzultácia je nezáväzná a prebieha v angličtine."
   },
   "consent": {
-    "text": "Používame cookies — nevyhnutné na fungovanie webu a, s vaším súhlasom, na meranie návštevnosti.",
+    "text": "Používame cookies — nevyhnutné na fungovanie webu a, s vaším súhlasom, na meranie návštevnosti a marketing.",
     "more": "Zásady cookies",
     "acceptAll": "Prijať všetko",
-    "essential": "Iba nevyhnutné"
+    "essential": "Iba nevyhnutné",
+    "manage": "Zmeniť nastavenia cookies"
   },
   "notFound": {
     "title": "Stránka sa nenašla",

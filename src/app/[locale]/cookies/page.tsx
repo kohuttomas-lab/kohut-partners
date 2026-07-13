@@ -4,6 +4,7 @@ import { localeAlternates } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 import { getLegalDoc } from "@/lib/legal";
 import { LegalDocument } from "@/components/sections/LegalDocument";
+import { CookieSettings } from "@/components/layout/CookieSettings";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -18,5 +19,10 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 export default async function CookiesPage(props: Props) {
   const { locale } = await props.params;
   setRequestLocale(locale);
-  return <LegalDocument doc={getLegalDoc(locale as Locale, "cookies")} />;
+  return (
+    <LegalDocument
+      doc={getLegalDoc(locale as Locale, "cookies")}
+      action={<CookieSettings />}
+    />
+  );
 }

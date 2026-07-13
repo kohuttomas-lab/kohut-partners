@@ -234,10 +234,11 @@
     "ctaLead": "The first consultation is non-binding and held in English."
   },
   "consent": {
-    "text": "We use cookies — essential ones to run the site and, with your consent, to measure traffic.",
+    "text": "We use cookies — essential ones to run the site and, with your consent, for analytics and marketing.",
     "more": "Cookie policy",
     "acceptAll": "Accept all",
-    "essential": "Essentials only"
+    "essential": "Essentials only",
+    "manage": "Change cookie settings"
   },
   "notFound": {
     "title": "Page not found",
