@@ -79,10 +79,15 @@
   color: var(--text-strong);
 }
 .officeAddr {
+  display: block;
   font-size: 13.5px;
   color: var(--text-muted);
   margin-top: 4px;
   line-height: 1.5;
+}
+a.officeAddr:hover {
+  color: var(--text-strong);
+  text-decoration: underline;
 }
 
 .bookCard {

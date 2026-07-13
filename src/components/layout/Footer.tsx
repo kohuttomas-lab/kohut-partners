@@ -69,7 +69,15 @@ export function Footer() {
             <div className={styles.contacts}>
               <span className={styles.contact}>
                 <MapPin size={15} className={styles.contactIcon} />
-                <span className={styles.contactLink}>{CONTACT.address}</span>
+                <a
+                  href={CONTACT.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.contactLink}
+                >
+                  {CONTACT.address}
+                  {locale === "en" ? ", Slovak Republic" : ", Slovenská republika"}
+                </a>
               </span>
               <span className={styles.contact}>
                 <Phone size={15} className={styles.contactIcon} />

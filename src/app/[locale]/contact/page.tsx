@@ -89,7 +89,14 @@ export default async function ContactPage(props: Props) {
                     <MapPin size={20} />
                   </span>
                   <div className={styles.officeCity}>{o.city}</div>
-                  <div className={styles.officeAddr}>{o.address}</div>
+                  <a
+                    href={CONTACT.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.officeAddr}
+                  >
+                    {o.address}
+                  </a>
                 </Card>
               ))}
             </div>

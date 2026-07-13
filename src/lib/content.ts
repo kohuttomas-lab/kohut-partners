@@ -1120,8 +1120,8 @@ export interface Office {
 
 const OFFICES: LangPair<Office>[] = [
   {
-    sk: { city: "Zvolen", address: "Námestie SNP 74/28, 960 01 Zvolen" },
-    en: { city: "Zvolen", address: "Námestie SNP 74/28, 960 01 Zvolen" },
+    sk: { city: "Zvolen", address: "Námestie SNP 74/28, 960 01 Zvolen, Slovenská republika" },
+    en: { city: "Zvolen", address: "Námestie SNP 74/28, 960 01 Zvolen, Slovak Republic" },
   },
 ];
 
@@ -1134,6 +1134,8 @@ export const CONTACT = {
   phone2: "+421 45 202 89 38",
   email: "klienti@tkak.sk",
   address: "Námestie SNP 74/28, 960 01 Zvolen",
+  // Same destination the e-mail signatures link to.
+  mapsUrl: "https://maps.google.com/?q=N%C3%A1mestie+SNP+74%2F28%2C+960+01+Zvolen",
 } as const;
 
 // Placeholder company names — replace with real client logos.
