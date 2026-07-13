@@ -45,7 +45,8 @@ jobs:
             echo "Žiadne zmeny (došli témy alebo duplicitný slug) — nepublikujem."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Autor musí byť člen Vercel tímu, inak Hobby plán deploy odmietne — nie bot identita
+          git config user.name "Tomas Kohut"
+          git config user.email "kohut.tomas@gmail.com"
           git commit -m "Blog: AI-generovaný článok (auto-publish)"
           git push
