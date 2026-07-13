@@ -22,6 +22,7 @@ export function LegalServiceSchema({ locale }: { locale: string }) {
       addressLocality: "Zvolen",
       addressCountry: "SK",
     },
+    hasMap: CONTACT.mapsUrl,
     areaServed: "SK",
     priceRange: "€€",
     knowsLanguage: ["sk", "en"],
