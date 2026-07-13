@@ -23,7 +23,8 @@ import {
 import { cx } from "@/lib/cx";
 import styles from "./BookingModal.module.css";
 
-const TIMES = ["09:00", "10:30", "13:00", "14:30", "16:00"];
+// Slots stay inside opening hours (Mon–Fri 9:00–16:00); last one ends by 16:00.
+const TIMES = ["09:00", "10:30", "13:00", "14:30", "15:30"];
 const FORM_ID = "kp-booking-form";
 
 function nextBusinessDays(count = 8): Date[] {
