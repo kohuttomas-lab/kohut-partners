@@ -11,6 +11,7 @@ import styles from "./SubscriptionPlans.module.css";
 
 export function SubscriptionPlans() {
   const t = useTranslations("shop");
+  const common = useTranslations("common");
   const locale = useLocale() as Locale;
   const plans = getSubscriptions(locale);
 
@@ -41,7 +42,9 @@ export function SubscriptionPlans() {
                   <span className={cx(styles.price, pop && styles.pricePop)}>
                     {formatEur(p.price)}
                   </span>
-                  <span className={cx(styles.per, pop && styles.perPop)}>{t("subsMonth")}</span>
+                  <span className={cx(styles.per, pop && styles.perPop)}>
+                    {t("subsMonth")} · {common("withVat")}
+                  </span>
                 </div>
                 <div className={cx(styles.hours, pop && styles.hoursPop)}>
                   {p.hours} {t("hoursPerMonth")}

@@ -3,7 +3,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 import { getCartCatalog } from "@/lib/content";
-import { formatEur, withVat } from "@/lib/format";
+import { formatEur } from "@/lib/format";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, ShoppingBag } from "@/components/icons";
 import { useCart } from "./CartProvider";
@@ -25,7 +25,8 @@ export function CartBar() {
     const entry = catalog[id];
     return entry ? sum + entry.price * qty : sum;
   }, 0);
-  const total = subtotal + withVat(subtotal);
+  // Catalog prices are VAT-inclusive — the sum IS the final amount.
+  const total = subtotal;
 
   return (
     <div className={styles.wrap}>

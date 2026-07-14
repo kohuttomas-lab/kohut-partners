@@ -30,6 +30,7 @@ export function FixedPackages() {
                 <div>
                   <span className={styles.from}>{common("from")} </span>
                   <span className={styles.priceVal}>{formatEur(p.price)}</span>
+                  <span className={styles.from}> {common("withVat")}</span>
                 </div>
                 <AddToCartButton id={p.id} idleIcon="bag" idleLabelKey="addToCart" />
               </div>

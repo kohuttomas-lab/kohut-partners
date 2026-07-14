@@ -11,6 +11,7 @@ import styles from "./Templates.module.css";
 
 export function Templates() {
   const t = useTranslations("shop");
+  const common = useTranslations("common");
   const locale = useLocale() as Locale;
   const templates = getTemplates(locale);
   const trust = t.raw("tplTrust") as string[];
@@ -45,7 +46,9 @@ export function Templates() {
                 </div>
                 <div className={styles.name}>{tpl.name}</div>
                 <div className={styles.cardBottom}>
-                  <span className={styles.price}>{formatEur(tpl.price)}</span>
+                  <span className={styles.price}>
+                    {formatEur(tpl.price)} <span className={styles.vat}>{common("withVat")}</span>
+                  </span>
                   <AddToCartButton id={tpl.id} idleIcon="download" idleLabelKey="tplBuy" />
                 </div>
               </Card>

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { getCartCatalog } from "@/lib/content";
-import { formatEur, withVat } from "@/lib/format";
+import { formatEur, vatPortion } from "@/lib/format";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Select } from "@/components/ui/Select";
@@ -62,8 +62,10 @@ export function CheckoutModal() {
     })
     .filter((x): x is NonNullable<typeof x> => x !== null);
 
-  const subtotal = lines.reduce((s, it) => s + it.price * it.qty, 0);
-  const vat = withVat(subtotal);
+  // Prices are VAT-inclusive; the summary breaks the included VAT out of the total.
+  const total = lines.reduce((s, it) => s + it.price * it.qty, 0);
+  const vat = vatPortion(total);
+  const net = Math.round((total - vat) * 100) / 100;
   const payOpts = t.raw("checkout.payOpts") as string[];
 
   return (
@@ -160,7 +162,7 @@ export function CheckoutModal() {
               ))}
               <div className={cx(styles.totalsRow, styles.totalsRowFirst)}>
                 <span>{t("cart.subtotal")}</span>
-                <span>{formatEur(subtotal)}</span>
+                <span>{formatEur(net)}</span>
               </div>
               <div className={styles.totalsRow}>
                 <span>{t("cart.vat")}</span>
@@ -168,7 +170,7 @@ export function CheckoutModal() {
               </div>
               <div className={styles.totalFinal}>
                 <span className={styles.totalFinalLabel}>{t("cart.total")}</span>
-                <span className={styles.totalFinalValue}>{formatEur(subtotal + vat)}</span>
+                <span className={styles.totalFinalValue}>{formatEur(total)}</span>
               </div>
             </div>
           </div>

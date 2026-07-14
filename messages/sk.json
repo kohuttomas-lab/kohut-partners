@@ -14,6 +14,7 @@
     "servDetailCta": "Zobraziť detail",
     "servAll": "Všetky služby",
     "from": "od",
+    "withVat": "s DPH",
     "orderBtn": "Objednať",
     "readMore": "Čítať článok",
     "readTime": "min čítania",
@@ -172,10 +173,10 @@
       "remove": "Odstrániť z košíka",
       "qtyMinus": "Znížiť množstvo",
       "qtyPlus": "Zvýšiť množstvo",
-      "subtotal": "Medzisúčet",
+      "subtotal": "Cena bez DPH",
       "vat": "DPH 23 %",
       "vatIncl": "vrátane",
-      "total": "Spolu",
+      "total": "Spolu (s DPH)",
       "checkout": "Prejsť k platbe"
     },
     "checkout": {

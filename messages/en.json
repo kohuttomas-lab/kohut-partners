@@ -14,6 +14,7 @@
     "servDetailCta": "View detail",
     "servAll": "All services",
     "from": "from",
+    "withVat": "incl. VAT",
     "orderBtn": "Order",
     "readMore": "Read article",
     "readTime": "min read",
@@ -172,10 +173,10 @@
       "remove": "Remove from cart",
       "qtyMinus": "Decrease quantity",
       "qtyPlus": "Increase quantity",
-      "subtotal": "Subtotal",
+      "subtotal": "Price excl. VAT",
       "vat": "VAT 23%",
       "vatIncl": "incl.",
-      "total": "Total",
+      "total": "Total (incl. VAT)",
       "checkout": "Go to checkout"
     },
     "checkout": {

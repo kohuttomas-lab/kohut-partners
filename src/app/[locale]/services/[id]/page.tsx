@@ -113,6 +113,7 @@ export default async function ServiceDetailPage(props: Props) {
                 <div className={styles.pkgPriceRow}>
                   <span className={styles.pkgFrom}>{common("from")}</span>
                   <span className={styles.pkgPrice}>{formatEur(p.price)}</span>
+                  <span className={styles.pkgFrom}>{common("withVat")}</span>
                 </div>
                 <BookingButton
                   area={service.id}
