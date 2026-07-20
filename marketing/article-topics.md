@@ -10,7 +10,7 @@ Kategória musí sedieť s existujúcimi (Insolvencie, Obchodné právo, IT prá
 - [x] Oddlženie fyzickej osoby (osobný bankrot): podmienky a postup v roku 2026 | kategória: Insolvencie
 - [x] Ako účinne vymáhať pohľadávku: od výzvy po exekúciu | kategória: Obchodné právo
 - [x] Zodpovednosť konateľa s.r.o.: kedy ručíte vlastným majetkom | kategória: Obchodné právo
-- [ ] Založenie s.r.o. krok po kroku: čo často podcenia podnikatelia | kategória: Obchodné právo
+- [x] Založenie s.r.o. krok po kroku: čo často podcenia podnikatelia | kategória: Obchodné právo
 - [ ] Predžalobná výzva: prečo ju nepodceniť a čo má obsahovať | kategória: Súdne spory
 - [ ] Nájomná zmluva na byt: 7 klauzúl, ktoré chránia prenajímateľa aj nájomcu | kategória: Nehnuteľnosti
 - [ ] Vecné bremená a ťarchy: ako ich odhaliť pred kúpou nehnuteľnosti | kategória: Nehnuteľnosti
