@@ -27,13 +27,20 @@ jobs:
       - name: Inštalácia závislostí (pre typecheck)
         run: npm ci
 
+      # Bez --no-package-lock: inak npm ignoruje lockfile a preresolvuje celý strom
+      # (naposledy povýšil 52 balíkov vrátane stripe → typecheck padol na apiVersion).
       - name: Inštalácia Anthropic SDK (mimo package.json)
-        run: npm install --no-save --no-package-lock @anthropic-ai/sdk@latest
+        run: npm install --no-save @anthropic-ai/sdk@latest
 
       - name: Generovanie článku
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/generate-article.mjs
+
+      # PageProps/LayoutProps sú globály generované Nextom (.next/types + next-env.d.ts);
+      # v čistom checkoute neexistujú, takže tsc bez typegenu padne.
+      - name: Generovanie typov rout (pre tsc)
+        run: npx next typegen
 
       - name: Typecheck — poistka pred publikovaním
         run: npx tsc --noEmit --incremental false
