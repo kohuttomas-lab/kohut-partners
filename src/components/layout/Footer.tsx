@@ -20,7 +20,12 @@ type StaticPathname =
   | "/international"
   | "/privacy"
   | "/terms"
-  | "/cookies";
+  | "/cookies"
+  | "/lawyer-zvolen"
+  | "/lawyer-detva"
+  | "/lawyer-krupina"
+  | "/lawyer-banska-bystrica"
+  | "/lawyer-ziar-nad-hronom";
 
 // Deep-link to an individual service detail page.
 type ServiceLink = { pathname: "/services/[id]"; params: { id: string } };
@@ -42,6 +47,14 @@ const colLinks = (locale: string): FooterLink[][] => [
   ],
   ["/about", "/about", "/blog", locale === "en" ? "/international" : "/contact"],
   ["/privacy", "/terms", "/cookies"],
+  // "Pôsobíme v regióne" — local-SEO city landing pages.
+  [
+    "/lawyer-zvolen",
+    "/lawyer-detva",
+    "/lawyer-krupina",
+    "/lawyer-banska-bystrica",
+    "/lawyer-ziar-nad-hronom",
+  ],
 ];
 
 const tel = (phone: string) => `tel:${phone.replace(/\s/g, "")}`;

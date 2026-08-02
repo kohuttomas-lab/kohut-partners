@@ -1,0 +1,67 @@
+/* City landing pages (/advokat-{mesto}) — long-form prose + FAQ. */
+
+.wrap {
+  padding: 56px 0 72px;
+}
+
+.prose {
+  max-width: 760px;
+}
+
+.prose p {
+  margin: 0 0 18px;
+  font-size: 16.5px;
+  line-height: 1.75;
+  color: var(--text-body);
+}
+
+.h2 {
+  margin: 44px 0 16px;
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1.25;
+  color: var(--text-strong);
+}
+
+.faqHead {
+  margin: 52px 0 8px;
+  font-family: var(--font-display);
+  font-size: 26px;
+  color: var(--text-strong);
+}
+
+.faqList {
+  max-width: 760px;
+}
+
+.cities {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  max-width: 760px;
+}
+
+.citiesHead {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.citiesLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.citiesLinks a {
+  font-size: 15px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.citiesLinks a:hover {
+  text-decoration: underline;
+}

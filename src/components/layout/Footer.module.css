@@ -5,7 +5,8 @@
 }
 .top {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  /* brand + 4 link columns (services / firm / legal / region) */
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.2fr;
   gap: 40px;
   padding-bottom: 42px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);

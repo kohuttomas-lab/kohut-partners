@@ -2,8 +2,26 @@ import { CONTACT } from "@/lib/content";
 
 const BASE = "https://www.tkak.sk";
 
+// Claimed Google Business Profile listing (knowledge-graph id /g/11bvtj6wfv) —
+// linking it via sameAs ties the site to the GBP entity for local search.
+const GBP_URL =
+  "https://www.google.com/maps/place/koh%C3%BAt+%26+partners,+s.r.o./@48.5769516,19.126746,17z";
+
+// Cities the firm actively serves (mirrors the /advokat-{mesto} landing pages).
+const SERVED_CITIES = ["Zvolen", "Detva", "Krupina", "Banská Bystrica", "Žiar nad Hronom"];
+
+const city = (name: string) => ({ "@type": "City", name });
+
 // JSON-LD for Google rich results. LegalService is a LocalBusiness subtype.
-export function LegalServiceSchema({ locale }: { locale: string }) {
+// `areaServedCity` narrows areaServed on a city landing page; the default is
+// the full served-cities list (used on the homepage).
+export function LegalServiceSchema({
+  locale,
+  areaServedCity,
+}: {
+  locale: string;
+  areaServedCity?: string;
+}) {
   const sk = locale !== "en";
   const data = {
     "@context": "https://schema.org",
@@ -22,8 +40,10 @@ export function LegalServiceSchema({ locale }: { locale: string }) {
       addressLocality: "Zvolen",
       addressCountry: "SK",
     },
+    geo: { "@type": "GeoCoordinates", latitude: 48.5769516, longitude: 19.126746 },
     hasMap: CONTACT.mapsUrl,
-    areaServed: "SK",
+    sameAs: [GBP_URL],
+    areaServed: areaServedCity ? city(areaServedCity) : SERVED_CITIES.map(city),
     priceRange: "€€",
     knowsLanguage: ["sk", "en"],
     founder: {

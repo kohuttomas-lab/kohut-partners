@@ -31,13 +31,29 @@
     "heroLead": "Insolvencie, obchodné a IT právo, nehnuteľnosti aj súdne spory — poradíme zrozumiteľne, konáme rýchlo a s vopred známou cenou.",
     "heroPrimary": "Rezervovať konzultáciu",
     "heroSecondary": "Právny e-shop",
-    "heroChips": ["Pevná cena", "Odpoveď do 24 h", "Advokáti zapísaní v SAK"],
+    "heroChips": [
+      "Pevná cena",
+      "Odpoveď do 24 h",
+      "Advokáti zapísaní v SAK"
+    ],
     "trustLabel": "Dôverujú nám podnikatelia, firmy aj investori naprieč Slovenskom",
     "stats": [
-      { "value": "20", "label": "rokov praxe" },
-      { "value": "2 400+", "label": "vyriešených prípadov" },
-      { "value": "6", "label": "oblastí práva" },
-      { "value": "8", "label": "členov tímu (4 advokáti)" }
+      {
+        "value": "20",
+        "label": "rokov praxe"
+      },
+      {
+        "value": "2 400+",
+        "label": "vyriešených prípadov"
+      },
+      {
+        "value": "6",
+        "label": "oblastí práva"
+      },
+      {
+        "value": "8",
+        "label": "členov tímu (4 advokáti)"
+      }
     ],
     "servOverline": "Oblasti práva",
     "servTitle": "Šesť oblastí, v ktorých vás zastúpime",
@@ -45,9 +61,18 @@
     "whyOverline": "Ako spolupracujeme",
     "whyTitle": "Tri kroky k jasnému riešeniu",
     "why": [
-      { "title": "Rezervujete konzultáciu", "desc": "Online alebo osobne. Vyberiete si termín a opíšete situáciu — prvá odpoveď do 24 hodín." },
-      { "title": "Dohodneme postup a cenu", "desc": "Navrhneme riešenie a pevnú cenu vopred. Žiadne hodinové prekvapenia." },
-      { "title": "Riešime za vás", "desc": "Preberáme vec do svojich rúk a priebežne vás informujeme o každom kroku." }
+      {
+        "title": "Rezervujete konzultáciu",
+        "desc": "Online alebo osobne. Vyberiete si termín a opíšete situáciu — prvá odpoveď do 24 hodín."
+      },
+      {
+        "title": "Dohodneme postup a cenu",
+        "desc": "Navrhneme riešenie a pevnú cenu vopred. Žiadne hodinové prekvapenia."
+      },
+      {
+        "title": "Riešime za vás",
+        "desc": "Preberáme vec do svojich rúk a priebežne vás informujeme o každom kroku."
+      }
     ],
     "teamOverline": "Náš tím",
     "teamTitle": "Ľudia, ktorí budú stáť pri vás",
@@ -81,9 +106,18 @@
     "valuesOverline": "Naše hodnoty",
     "valuesTitle": "Na čom si zakladáme",
     "values": [
-      { "title": "Jasnosť", "desc": "Vysvetlíme vám veci tak, aby ste rozumeli každému rozhodnutiu. Žiadne prázdne paragrafy." },
-      { "title": "Predvídateľnosť", "desc": "Cenu aj postup poznáte vopred. Vďaka tomu sa rozhodujete pokojne." },
-      { "title": "Výsledok", "desc": "Sme tu, aby sme vašu vec vyriešili — nie aby sme ju naťahovali." }
+      {
+        "title": "Jasnosť",
+        "desc": "Vysvetlíme vám veci tak, aby ste rozumeli každému rozhodnutiu. Žiadne prázdne paragrafy."
+      },
+      {
+        "title": "Predvídateľnosť",
+        "desc": "Cenu aj postup poznáte vopred. Vďaka tomu sa rozhodujete pokojne."
+      },
+      {
+        "title": "Výsledok",
+        "desc": "Sme tu, aby sme vašu vec vyriešili — nie aby sme ju naťahovali."
+      }
     ],
     "storyTitle": "Náš príbeh",
     "story": [
@@ -132,7 +166,13 @@
     "doneTitle": "Ďakujeme za rezerváciu",
     "doneLead": "Ozveme sa vám čo najskôr s potvrdením termínu konzultácie.",
     "doneClose": "Hotovo",
-    "weekdays": ["Po", "Ut", "St", "Št", "Pi"]
+    "weekdays": [
+      "Po",
+      "Ut",
+      "St",
+      "Št",
+      "Pi"
+    ]
   },
   "shop": {
     "overline": "E-shop právnych služieb",
@@ -184,7 +224,11 @@
       "contact": "Fakturačné údaje",
       "company": "Firma / IČO (nepovinné)",
       "pay": "Spôsob platby",
-      "payOpts": ["Platobná karta", "Apple Pay", "Bankový prevod"],
+      "payOpts": [
+        "Platobná karta",
+        "Apple Pay",
+        "Bankový prevod"
+      ],
       "confirm": "Záväzne objednať a zaplatiť",
       "summary": "Súhrn objednávky",
       "doneTitle": "Ďakujeme za objednávku",
@@ -197,9 +241,44 @@
   "footer": {
     "tag": "Advokátska kancelária zapísaná v Slovenskej advokátskej komore.",
     "cols": [
-      { "head": "Služby", "items": ["Insolvencie", "Obchodné a občianske právo", "Nehnuteľnosti", "Súdne spory", "Trestné právo", "IT právo"] },
-      { "head": "Kancelária", "items": ["O nás", "Náš tím", "Blog", "Kariéra"] },
-      { "head": "Právne", "items": ["Ochrana údajov", "Obchodné podmienky", "Cookies"] }
+      {
+        "head": "Služby",
+        "items": [
+          "Insolvencie",
+          "Obchodné a občianske právo",
+          "Nehnuteľnosti",
+          "Súdne spory",
+          "Trestné právo",
+          "IT právo"
+        ]
+      },
+      {
+        "head": "Kancelária",
+        "items": [
+          "O nás",
+          "Náš tím",
+          "Blog",
+          "Kariéra"
+        ]
+      },
+      {
+        "head": "Právne",
+        "items": [
+          "Ochrana údajov",
+          "Obchodné podmienky",
+          "Cookies"
+        ]
+      },
+      {
+        "head": "Pôsobíme v regióne",
+        "items": [
+          "Advokát Zvolen",
+          "Advokát Detva",
+          "Advokát Krupina",
+          "Advokát Banská Bystrica",
+          "Advokát Žiar nad Hronom"
+        ]
+      }
     ],
     "fine": "Tento web má informatívny charakter a nenahrádza právne poradenstvo.",
     "rights": "© kohút & partners s.r.o. · IČO 47 235 888"
@@ -215,19 +294,46 @@
     "helpTitle": "Typické veci, ktoré riešime pre zahraničných klientov",
     "helpLead": "Všetky uvedené veci sa spravujú slovenským právom a prebiehajú pred slovenskými súdmi, notármi, katastrom a inými slovenskými orgánmi.",
     "help": [
-      { "title": "Kúpa nehnuteľnosti na Slovensku", "desc": "Kúpne zmluvy, previerka vlastníctva v katastri, úschova kúpnej ceny a vklad vlastníckeho práva." },
-      { "title": "Podnikanie na Slovensku", "desc": "Založenie slovenskej s.r.o. pre zahraničných zakladateľov — plne na diaľku cez plnomocenstvo — obchodné zmluvy a korporátna agenda." },
-      { "title": "Vymáhanie pohľadávok voči slovenským dlžníkom", "desc": "Predžalobné výzvy, upomínacie konanie, súdne konanie a exekúcia — jasný postup so známymi nákladmi." },
-      { "title": "Veritelia v slovenských insolvenciách", "desc": "Prihlásenie pohľadávky u slovenského správcu v zákonných lehotách, zastupovanie vo veriteľských orgánoch a monitoring konania." },
-      { "title": "Spory pred slovenskými súdmi", "desc": "Civilné a obchodné spory, uznanie a výkon cudzích rozhodnutí na Slovensku, neodkladné opatrenia a rokovania o urovnaní." }
+      {
+        "title": "Kúpa nehnuteľnosti na Slovensku",
+        "desc": "Kúpne zmluvy, previerka vlastníctva v katastri, úschova kúpnej ceny a vklad vlastníckeho práva."
+      },
+      {
+        "title": "Podnikanie na Slovensku",
+        "desc": "Založenie slovenskej s.r.o. pre zahraničných zakladateľov — plne na diaľku cez plnomocenstvo — obchodné zmluvy a korporátna agenda."
+      },
+      {
+        "title": "Vymáhanie pohľadávok voči slovenským dlžníkom",
+        "desc": "Predžalobné výzvy, upomínacie konanie, súdne konanie a exekúcia — jasný postup so známymi nákladmi."
+      },
+      {
+        "title": "Veritelia v slovenských insolvenciách",
+        "desc": "Prihlásenie pohľadávky u slovenského správcu v zákonných lehotách, zastupovanie vo veriteľských orgánoch a monitoring konania."
+      },
+      {
+        "title": "Spory pred slovenskými súdmi",
+        "desc": "Civilné a obchodné spory, uznanie a výkon cudzích rozhodnutí na Slovensku, neodkladné opatrenia a rokovania o urovnaní."
+      }
     ],
     "remoteOverline": "Ako to prebieha",
     "remoteTitle": "Spolupráca zo zahraničia",
     "remote": [
-      { "title": "Video konzultácia v angličtine", "desc": "Rezervujete si termín online — preberieme vašu vec, vysvetlíme pozíciu podľa slovenského práva a dohodneme ďalší postup." },
-      { "title": "Poverenie a plnomocenstvo", "desc": "E-mailom dostanete zmluvu o poskytovaní právnych služieb a plnomocenstvo. Pri väčšine vecí stačí podpísaný sken; kde slovenské orgány vyžadujú osvedčenie alebo apostil, prevedieme vás tým." },
-      { "title": "Konáme za vás na Slovensku", "desc": "Komunikujeme so slovenskými súdmi, notármi, katastrom a orgánmi verejnej moci za vás. Osobná účasť je potrebná len výnimočne." },
-      { "title": "Transparentné odmeny", "desc": "Pevná odmena dohodnutá vopred pri vymedzených veciach; faktúry v EUR prevodom. Žiadne hodinové prekvapenia." }
+      {
+        "title": "Video konzultácia v angličtine",
+        "desc": "Rezervujete si termín online — preberieme vašu vec, vysvetlíme pozíciu podľa slovenského práva a dohodneme ďalší postup."
+      },
+      {
+        "title": "Poverenie a plnomocenstvo",
+        "desc": "E-mailom dostanete zmluvu o poskytovaní právnych služieb a plnomocenstvo. Pri väčšine vecí stačí podpísaný sken; kde slovenské orgány vyžadujú osvedčenie alebo apostil, prevedieme vás tým."
+      },
+      {
+        "title": "Konáme za vás na Slovensku",
+        "desc": "Komunikujeme so slovenskými súdmi, notármi, katastrom a orgánmi verejnej moci za vás. Osobná účasť je potrebná len výnimočne."
+      },
+      {
+        "title": "Transparentné odmeny",
+        "desc": "Pevná odmena dohodnutá vopred pri vymedzených veciach; faktúry v EUR prevodom. Žiadne hodinové prekvapenia."
+      }
     ],
     "scopeTitle": "Jedno dôležité vymedzenie",
     "scopeText": "Radíme výlučne k právu Slovenskej republiky. Neradíme k právu vašej domovskej krajiny — ak vaša vec presahuje do inej jurisdikcie, spolupracujeme s vaším tamojším právnym zástupcom.",

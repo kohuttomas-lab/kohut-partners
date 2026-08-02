@@ -31,13 +31,29 @@
     "heroLead": "We advise international clients in English on Slovak law: real estate purchases, company formation, debt recovery, insolvency and disputes before Slovak courts — clear advice, fast action, and a price you know up front.",
     "heroPrimary": "Book a consultation",
     "heroSecondary": "Legal shop",
-    "heroChips": ["Fixed price", "Reply within 24 h", "We advise in English"],
+    "heroChips": [
+      "Fixed price",
+      "Reply within 24 h",
+      "We advise in English"
+    ],
     "trustLabel": "Trusted by entrepreneurs, companies and investors — Slovak and international",
     "stats": [
-      { "value": "20", "label": "years of practice" },
-      { "value": "2,400+", "label": "matters resolved" },
-      { "value": "6", "label": "practice areas" },
-      { "value": "8", "label": "team members (4 attorneys)" }
+      {
+        "value": "20",
+        "label": "years of practice"
+      },
+      {
+        "value": "2,400+",
+        "label": "matters resolved"
+      },
+      {
+        "value": "6",
+        "label": "practice areas"
+      },
+      {
+        "value": "8",
+        "label": "team members (4 attorneys)"
+      }
     ],
     "servOverline": "Practice areas · Slovak law",
     "servTitle": "How we help international clients in Slovakia",
@@ -45,9 +61,18 @@
     "whyOverline": "How we work",
     "whyTitle": "Three steps to a clear solution",
     "why": [
-      { "title": "Book a consultation", "desc": "Online via video call, in English — or in person. Choose a slot and describe your situation; first reply within 24 hours." },
-      { "title": "We agree the plan and price", "desc": "We propose a solution under Slovak law and a fixed price up front. No hourly surprises." },
-      { "title": "We handle it", "desc": "We act for you before Slovak courts and authorities and keep you informed at every step — no travel to Slovakia needed in most matters." }
+      {
+        "title": "Book a consultation",
+        "desc": "Online via video call, in English — or in person. Choose a slot and describe your situation; first reply within 24 hours."
+      },
+      {
+        "title": "We agree the plan and price",
+        "desc": "We propose a solution under Slovak law and a fixed price up front. No hourly surprises."
+      },
+      {
+        "title": "We handle it",
+        "desc": "We act for you before Slovak courts and authorities and keep you informed at every step — no travel to Slovakia needed in most matters."
+      }
     ],
     "teamOverline": "Our team",
     "teamTitle": "The people who will stand by you",
@@ -81,9 +106,18 @@
     "valuesOverline": "Our values",
     "valuesTitle": "What we stand for",
     "values": [
-      { "title": "Clarity", "desc": "We explain things so you understand every decision. No empty paragraphs." },
-      { "title": "Predictability", "desc": "You know the price and the plan up front, so you decide with a calm mind." },
-      { "title": "Results", "desc": "We’re here to resolve your matter — not to drag it out." }
+      {
+        "title": "Clarity",
+        "desc": "We explain things so you understand every decision. No empty paragraphs."
+      },
+      {
+        "title": "Predictability",
+        "desc": "You know the price and the plan up front, so you decide with a calm mind."
+      },
+      {
+        "title": "Results",
+        "desc": "We’re here to resolve your matter — not to drag it out."
+      }
     ],
     "storyTitle": "Our story",
     "story": [
@@ -132,7 +166,13 @@
     "doneTitle": "Thanks for your booking",
     "doneLead": "We’ll get back to you shortly to confirm your consultation slot.",
     "doneClose": "Done",
-    "weekdays": ["Mon", "Tue", "Wed", "Thu", "Fri"]
+    "weekdays": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri"
+    ]
   },
   "shop": {
     "overline": "Legal services shop",
@@ -184,7 +224,11 @@
       "contact": "Billing details",
       "company": "Company / ID (optional)",
       "pay": "Payment method",
-      "payOpts": ["Card", "Apple Pay", "Bank transfer"],
+      "payOpts": [
+        "Card",
+        "Apple Pay",
+        "Bank transfer"
+      ],
       "confirm": "Place order & pay",
       "summary": "Order summary",
       "doneTitle": "Thank you for your order",
@@ -197,9 +241,44 @@
   "footer": {
     "tag": "Law firm registered with the Slovak Bar Association.",
     "cols": [
-      { "head": "Services", "items": ["Insolvency", "Commercial & civil law", "Real estate", "Litigation", "Criminal law", "IT law"] },
-      { "head": "Firm", "items": ["About us", "Our team", "Blog", "International clients"] },
-      { "head": "Legal", "items": ["Privacy", "Terms", "Cookies"] }
+      {
+        "head": "Services",
+        "items": [
+          "Insolvency",
+          "Commercial & civil law",
+          "Real estate",
+          "Litigation",
+          "Criminal law",
+          "IT law"
+        ]
+      },
+      {
+        "head": "Firm",
+        "items": [
+          "About us",
+          "Our team",
+          "Blog",
+          "International clients"
+        ]
+      },
+      {
+        "head": "Legal",
+        "items": [
+          "Privacy",
+          "Terms",
+          "Cookies"
+        ]
+      },
+      {
+        "head": "Where we work",
+        "items": [
+          "Lawyer Zvolen",
+          "Lawyer Detva",
+          "Lawyer Krupina",
+          "Lawyer Banská Bystrica",
+          "Lawyer Žiar nad Hronom"
+        ]
+      }
     ],
     "fine": "This website is for general information only and is not legal advice. All information and services concern exclusively the law of the Slovak Republic and its application by Slovak courts and public authorities.",
     "rights": "© kohút & partners s.r.o. · ID 47 235 888"
@@ -215,19 +294,46 @@
     "helpTitle": "Typical matters we handle for international clients",
     "helpLead": "Every matter below is governed by Slovak law and handled before Slovak courts, notaries, the land registry and other Slovak authorities.",
     "help": [
-      { "title": "Buying property in Slovakia", "desc": "Purchase contracts, title checks in the Slovak land registry (kataster), escrow arrangements so your money is protected, and registration of ownership." },
-      { "title": "Doing business in Slovakia", "desc": "Formation of a Slovak s.r.o. (LLC) for foreign founders — fully remote via power of attorney — plus commercial contracts and corporate housekeeping." },
-      { "title": "Recovering debts from Slovak debtors", "desc": "Pre-action demands, Slovak payment-order proceedings, litigation and enforcement — a clear, staged process with known costs." },
-      { "title": "Creditors in Slovak insolvencies", "desc": "Filing your claim with the Slovak trustee within statutory deadlines, creditor-committee representation and monitoring of the proceedings." },
-      { "title": "Disputes before Slovak courts", "desc": "Civil and commercial litigation, enforcement of foreign judgments in Slovakia, interim measures and settlement negotiations." }
+      {
+        "title": "Buying property in Slovakia",
+        "desc": "Purchase contracts, title checks in the Slovak land registry (kataster), escrow arrangements so your money is protected, and registration of ownership."
+      },
+      {
+        "title": "Doing business in Slovakia",
+        "desc": "Formation of a Slovak s.r.o. (LLC) for foreign founders — fully remote via power of attorney — plus commercial contracts and corporate housekeeping."
+      },
+      {
+        "title": "Recovering debts from Slovak debtors",
+        "desc": "Pre-action demands, Slovak payment-order proceedings, litigation and enforcement — a clear, staged process with known costs."
+      },
+      {
+        "title": "Creditors in Slovak insolvencies",
+        "desc": "Filing your claim with the Slovak trustee within statutory deadlines, creditor-committee representation and monitoring of the proceedings."
+      },
+      {
+        "title": "Disputes before Slovak courts",
+        "desc": "Civil and commercial litigation, enforcement of foreign judgments in Slovakia, interim measures and settlement negotiations."
+      }
     ],
     "remoteOverline": "How it works",
     "remoteTitle": "Working with us from abroad",
     "remote": [
-      { "title": "Video consultation in English", "desc": "Book a slot online — we discuss your matter, outline the Slovak-law position and agree the next steps." },
-      { "title": "Engagement and power of attorney", "desc": "You receive an engagement letter and a power of attorney by e-mail. For most matters a simple signed scan is enough; where Slovak authorities require it, we guide you through certification or an apostille." },
-      { "title": "We act in Slovakia for you", "desc": "We deal with Slovak courts, notaries, the land registry and public authorities on your behalf. Personal attendance is rarely required." },
-      { "title": "Transparent fees", "desc": "A fixed fee agreed up front for defined matters; invoices in EUR with bank transfer. No hourly surprises." }
+      {
+        "title": "Video consultation in English",
+        "desc": "Book a slot online — we discuss your matter, outline the Slovak-law position and agree the next steps."
+      },
+      {
+        "title": "Engagement and power of attorney",
+        "desc": "You receive an engagement letter and a power of attorney by e-mail. For most matters a simple signed scan is enough; where Slovak authorities require it, we guide you through certification or an apostille."
+      },
+      {
+        "title": "We act in Slovakia for you",
+        "desc": "We deal with Slovak courts, notaries, the land registry and public authorities on your behalf. Personal attendance is rarely required."
+      },
+      {
+        "title": "Transparent fees",
+        "desc": "A fixed fee agreed up front for defined matters; invoices in EUR with bank transfer. No hourly surprises."
+      }
     ],
     "scopeTitle": "One important limitation",
     "scopeText": "We advise exclusively on the law of the Slovak Republic. We do not advise on the law of your home country — where your matter touches another jurisdiction, we work alongside your local counsel.",

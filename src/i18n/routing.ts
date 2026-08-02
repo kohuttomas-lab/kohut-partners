@@ -21,6 +21,12 @@ export const routing = defineRouting({
     "/blog/[id]": { sk: "/blog/[id]", en: "/blog/[id]" },
     "/contact": { sk: "/kontakt", en: "/contact" },
     "/international": { sk: "/zahranicni-klienti", en: "/international-clients" },
+    // Local-SEO city landing pages (target query: "advokát {mesto}").
+    "/lawyer-zvolen": { sk: "/advokat-zvolen", en: "/lawyer-zvolen" },
+    "/lawyer-detva": { sk: "/advokat-detva", en: "/lawyer-detva" },
+    "/lawyer-krupina": { sk: "/advokat-krupina", en: "/lawyer-krupina" },
+    "/lawyer-banska-bystrica": { sk: "/advokat-banska-bystrica", en: "/lawyer-banska-bystrica" },
+    "/lawyer-ziar-nad-hronom": { sk: "/advokat-ziar-nad-hronom", en: "/lawyer-ziar-nad-hronom" },
     "/privacy": { sk: "/ochrana-udajov", en: "/privacy" },
     "/terms": { sk: "/obchodne-podmienky", en: "/terms" },
     "/cookies": { sk: "/cookies", en: "/cookies" },
