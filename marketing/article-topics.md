@@ -13,7 +13,7 @@ Kategória musí sedieť s existujúcimi (Insolvencie, Obchodné právo, IT prá
 - [x] Založenie s.r.o. krok po kroku: čo často podcenia podnikatelia | kategória: Obchodné právo
 - [x] Predžalobná výzva: prečo ju nepodceniť a čo má obsahovať | kategória: Súdne spory
 - [x] Nájomná zmluva na byt: 7 klauzúl, ktoré chránia prenajímateľa aj nájomcu | kategória: Nehnuteľnosti
-- [ ] Vecné bremená a ťarchy: ako ich odhaliť pred kúpou nehnuteľnosti | kategória: Nehnuteľnosti
+- [x] Vecné bremená a ťarchy: ako ich odhaliť pred kúpou nehnuteľnosti | kategória: Nehnuteľnosti
 - [ ] Reklamácie v e-shope: práva spotrebiteľa a povinnosti predajcu | kategória: IT právo
 - [ ] Spracúvanie osobných údajov zamestnancov podľa GDPR | kategória: IT právo
 - [ ] Ako sa brániť neoprávnenej exekúcii | kategória: Súdne spory
