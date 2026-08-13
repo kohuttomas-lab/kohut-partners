@@ -425,3 +425,36 @@
     padding: 22px 20px;
   }
 }
+
+/* ---------- Ďalšie kampaňové témy ---------- */
+
+.moreTopics {
+  margin-top: 40px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.moreTopicsHead {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.moreTopicsLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.moreTopicsLinks a {
+  font-size: 15px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.moreTopicsLinks a:hover {
+  text-decoration: underline;
+}

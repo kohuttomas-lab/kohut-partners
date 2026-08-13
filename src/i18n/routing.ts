@@ -27,9 +27,14 @@ export const routing = defineRouting({
     "/lawyer-krupina": { sk: "/advokat-krupina", en: "/lawyer-krupina" },
     "/lawyer-banska-bystrica": { sk: "/advokat-banska-bystrica", en: "/lawyer-banska-bystrica" },
     "/lawyer-ziar-nad-hronom": { sk: "/advokat-ziar-nad-hronom", en: "/lawyer-ziar-nad-hronom" },
-    // Nationwide campaign landing page. Slovak-only by design (the service
-    // targets Slovak policyholders); the /en route renders notFound().
+    // Nationwide campaign landing pages. Slovak-only by design (they target
+    // Slovak clients); the /en routes render notFound().
     "/insurance-claim": { sk: "/zamietnute-poistne-plnenie", en: "/insurance-claim" },
+    "/employment-termination": { sk: "/neplatna-vypoved", en: "/employment-termination" },
+    "/accident-compensation": { sk: "/odskodnenie-dopravna-nehoda", en: "/accident-compensation" },
+    "/consumer-credit": { sk: "/bezurocny-uver", en: "/consumer-credit" },
+    "/enforcement-defense": { sk: "/zastavenie-exekucie", en: "/enforcement-defense" },
+    "/state-liability": { sk: "/nahrada-skody-od-statu", en: "/state-liability" },
     "/privacy": { sk: "/ochrana-udajov", en: "/privacy" },
     "/terms": { sk: "/obchodne-podmienky", en: "/terms" },
     "/cookies": { sk: "/cookies", en: "/cookies" },
@@ -44,4 +49,11 @@ export type AppPathname = keyof typeof routing.pathnames;
  * The language switch falls back to the home page on these so it can't strand
  * a visitor on a 404.
  */
-export const SK_ONLY_PATHNAMES: AppPathname[] = ["/insurance-claim"];
+export const SK_ONLY_PATHNAMES: AppPathname[] = [
+  "/insurance-claim",
+  "/employment-termination",
+  "/accident-compensation",
+  "/consumer-credit",
+  "/enforcement-defense",
+  "/state-liability",
+];

@@ -3,35 +3,29 @@ import { absoluteUrl, breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { LegalServiceSchema } from "@/components/seo/LegalServiceSchema";
 import { CONTACT } from "@/lib/content";
-import {
-  CLAIM_HERO,
-  CLAIM_REASONS,
-  CLAIM_TYPES,
-  CLAIM_STEPS,
-  CLAIM_PRICING,
-  CLAIM_DEADLINE,
-  CLAIM_FAQ,
-} from "@/lib/insurance-claim";
+import { CAMPAIGNS, CAMPAIGN_SHORT_NAMES, type CampaignData } from "@/lib/campaigns";
 import { Container, SectionHead, Overline } from "@/components/layout/Section";
 import { Card } from "@/components/ui/Card";
 import { FaqItem } from "@/components/sections/FaqItem";
-import { ClaimReviewForm } from "@/components/sections/ClaimReviewForm";
+import { CampaignForm } from "@/components/sections/CampaignForm";
 import { BookingButton } from "@/components/booking/BookingButton";
 import { Calendar, Check, Clock, Phone } from "@/components/icons";
-import styles from "./InsuranceClaimPage.module.css";
+import styles from "./CampaignPage.module.css";
 
-/** Kampaňová landing page /zamietnute-poistne-plnenie (len SK). */
-export function InsuranceClaimPage() {
+/** Zdieľané telo kampaňových landing pages (celoslovenské, len SK). */
+export function CampaignPage({ campaign }: { campaign: CampaignData }) {
+  const others = CAMPAIGNS.filter((c) => c.id !== campaign.id);
+
   return (
     <>
       <LegalServiceSchema locale="sk" nationwide />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Domov", url: absoluteUrl("sk", "/") },
-          { name: CLAIM_HERO.h1, url: absoluteUrl("sk", "/insurance-claim") },
+          { name: campaign.hero.h1, url: absoluteUrl("sk", campaign.pathname) },
         ])}
       />
-      <JsonLd data={faqSchema(CLAIM_FAQ)} />
+      <JsonLd data={faqSchema(campaign.faq)} />
 
       {/* ---------- Hero ---------- */}
       <section className={styles.hero}>
@@ -39,19 +33,22 @@ export function InsuranceClaimPage() {
         <img src="/logo/mark-white.svg" alt="" className={styles.heroMark} />
         <Container className={styles.heroInner}>
           <div className={styles.heroCopy}>
-            <Overline light>{CLAIM_HERO.overline}</Overline>
-            <h1 className={styles.h1}>{CLAIM_HERO.h1}</h1>
-            <p className={styles.heroLead}>{CLAIM_HERO.lead}</p>
-            {CLAIM_HERO.paragraphs.map((p, i) => (
+            <Overline light>{campaign.hero.overline}</Overline>
+            <h1 className={styles.h1}>{campaign.hero.h1}</h1>
+            <p className={styles.heroLead}>{campaign.hero.lead}</p>
+            {campaign.hero.paragraphs.map((p, i) => (
               <p key={i} className={styles.heroPara}>
                 {p}
               </p>
             ))}
             <div className={styles.heroActions}>
               <a href="#posudenie" className={styles.heroCta}>
-                Poslať zamietací list
+                {campaign.hero.cta}
               </a>
-              <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} className={styles.heroPhone}>
+              <a
+                href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
+                className={styles.heroPhone}
+              >
                 <Phone size={17} />
                 {CONTACT.phone}
               </a>
@@ -60,16 +57,16 @@ export function InsuranceClaimPage() {
         </Container>
       </section>
 
-      {/* ---------- Dôvody zamietnutia ---------- */}
+      {/* ---------- Dôvody ---------- */}
       <section className={styles.section}>
         <Container>
           <SectionHead
-            overline="Čo sa dá namietať"
-            title="Dôvody zamietnutia, ktoré sa oplatí preveriť"
-            lead="Nie každé zamietnutie je nesprávne. Toto sú ale odôvodnenia, s ktorými sa v praxi stretávame najčastejšie a ktoré po preskúmaní podkladov často neobstoja."
+            overline={campaign.reasons.overline}
+            title={campaign.reasons.heading}
+            lead={campaign.reasons.lead}
           />
           <div className={styles.reasonGrid}>
-            {CLAIM_REASONS.map((r) => (
+            {campaign.reasons.items.map((r) => (
               <Card key={r.title} padding="lg" elevation="sm" className={styles.reasonCard}>
                 <div className={styles.reasonTitle}>{r.title}</div>
                 <p className={styles.reasonDesc}>{r.desc}</p>
@@ -79,16 +76,16 @@ export function InsuranceClaimPage() {
         </Container>
       </section>
 
-      {/* ---------- Druhy poistenia ---------- */}
+      {/* ---------- Rozsah ---------- */}
       <section className={styles.sectionAlt}>
         <Container>
           <SectionHead
-            overline="Rozsah"
-            title="Ktoré poistenia riešime"
-            lead="Rovnako riešime aj krátené plnenie — teda situáciu, keď poisťovňa zaplatí, ale výrazne menej, než škoda reálne predstavuje. V praxi je to častejšie než úplné zamietnutie."
+            overline={campaign.scope.overline}
+            title={campaign.scope.heading}
+            lead={campaign.scope.lead}
           />
           <ul className={styles.typeList}>
-            {CLAIM_TYPES.map((t) => (
+            {campaign.scope.items.map((t) => (
               <li key={t} className={styles.typeItem}>
                 <span className={styles.typeCheck}>
                   <Check size={15} />
@@ -107,7 +104,7 @@ export function InsuranceClaimPage() {
         <Container className={styles.stepsInner}>
           <SectionHead overline="Postup" title="Ako to prebieha" center light />
           <div className={styles.stepGrid}>
-            {CLAIM_STEPS.map((s, i) => (
+            {campaign.steps.map((s, i) => (
               <div key={s.title} className={styles.step}>
                 <div className={styles.stepNum}>{i + 1}</div>
                 <div className={styles.stepTitle}>{s.title}</div>
@@ -118,7 +115,7 @@ export function InsuranceClaimPage() {
         </Container>
       </section>
 
-      {/* ---------- Lehoty ---------- */}
+      {/* ---------- Lehota ---------- */}
       <section className={styles.section}>
         <Container>
           <div className={styles.deadline}>
@@ -126,8 +123,8 @@ export function InsuranceClaimPage() {
               <Clock size={22} />
             </span>
             <div>
-              <div className={styles.deadlineHead}>{CLAIM_DEADLINE.heading}</div>
-              <p className={styles.deadlineBody}>{CLAIM_DEADLINE.body}</p>
+              <div className={styles.deadlineHead}>{campaign.deadline.heading}</div>
+              <p className={styles.deadlineBody}>{campaign.deadline.body}</p>
             </div>
           </div>
         </Container>
@@ -136,9 +133,13 @@ export function InsuranceClaimPage() {
       {/* ---------- Cena ---------- */}
       <section className={styles.sectionAlt}>
         <Container>
-          <SectionHead overline="Cena" title={CLAIM_PRICING.heading} lead={CLAIM_PRICING.lead} />
+          <SectionHead
+            overline="Cena"
+            title={campaign.pricing.heading}
+            lead={campaign.pricing.lead}
+          />
           <div className={styles.priceGrid}>
-            {CLAIM_PRICING.items.map((p) => (
+            {campaign.pricing.items.map((p) => (
               <Card key={p.label} padding="lg" elevation="sm" className={styles.priceCard}>
                 <div className={styles.priceLabel}>{p.label}</div>
                 <div className={styles.priceValue}>{p.value}</div>
@@ -148,7 +149,7 @@ export function InsuranceClaimPage() {
           </div>
           <div className={styles.priceCta}>
             <BookingButton
-              area="spory"
+              area={campaign.relatedServiceId}
               variant="primary"
               size="lg"
               leftIcon={<Calendar size={20} />}
@@ -164,22 +165,19 @@ export function InsuranceClaimPage() {
         <Container className={styles.formInner}>
           <div className={styles.formCopy}>
             <Overline>Bez záväzku</Overline>
-            <h2 className={styles.formTitle}>Pošlite nám zamietací list</h2>
-            <p className={styles.formLead}>
-              Do troch pracovných dní vám napíšeme, či nárok podľa nás obstojí a čo by sa
-              dalo namietať. Za posúdenie nič neplatíte a k ničomu vás nezaväzuje.
-            </p>
-            <p className={styles.formLead}>
-              Ak vec podľa nás nemá šancu, povieme vám to rovno — nemá zmysel, aby ste do
-              sporu išli s falošnými očakávaniami.
-            </p>
+            <h2 className={styles.formTitle}>{campaign.form.title}</h2>
+            {campaign.form.leads.map((p, i) => (
+              <p key={i} className={styles.formLead}>
+                {p}
+              </p>
+            ))}
             <div className={styles.formContact}>
               <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}>{CONTACT.phone}</a>
               <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
             </div>
           </div>
           <div className={styles.formCard}>
-            <ClaimReviewForm />
+            <CampaignForm campaign={campaign} />
           </div>
         </Container>
       </section>
@@ -189,15 +187,28 @@ export function InsuranceClaimPage() {
         <Container style={{ maxWidth: 880 }}>
           <SectionHead overline="Časté otázky" title="Časté otázky" />
           <div>
-            {CLAIM_FAQ.map((f) => (
+            {campaign.faq.map((f) => (
               <FaqItem key={f.q} q={f.q} a={f.a} />
             ))}
           </div>
           <p className={styles.related}>
-            Súvisiace: <Link href={{ pathname: "/services/[id]", params: { id: "spory" } }}>
-              Súdne spory a vymáhanie
+            Súvisiace:{" "}
+            <Link href={{ pathname: "/services/[id]", params: { id: campaign.relatedServiceId } }}>
+              {campaign.relatedServiceLabel}
             </Link>
           </p>
+
+          {/* Krížové prelinkovanie kampaňových tém. */}
+          <div className={styles.moreTopics}>
+            <div className={styles.moreTopicsHead}>Pomáhame aj s týmito témami</div>
+            <div className={styles.moreTopicsLinks}>
+              {others.map((c) => (
+                <Link key={c.id} href={c.pathname}>
+                  {CAMPAIGN_SHORT_NAMES[c.id] ?? c.hero.h1}
+                </Link>
+              ))}
+            </div>
+          </div>
         </Container>
       </section>
     </>

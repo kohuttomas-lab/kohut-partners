@@ -5,6 +5,7 @@ import { localeAlternates, absoluteUrl, breadcrumbSchema, faqSchema, ogImageUrl 
 import { JsonLd } from "@/components/seo/JsonLd";
 import type { Locale } from "@/i18n/routing";
 import { getService, getServiceIds } from "@/lib/content";
+import { CAMPAIGNS, CAMPAIGN_SHORT_NAMES } from "@/lib/campaigns";
 import { formatEur } from "@/lib/format";
 import { Link } from "@/i18n/navigation";
 import { Container, SectionHead } from "@/components/layout/Section";
@@ -99,14 +100,16 @@ export default async function ServiceDetailPage(props: Props) {
               </div>
             ))}
           </div>
-          {/* Slovak-only campaign landing page hangs off the litigation area. */}
-          {locale === "sk" && id === "spory" ? (
+          {/* Slovak-only campaign landing pages hang off their practice area. */}
+          {locale === "sk" && CAMPAIGNS.some((c) => c.relatedServiceId === id) ? (
             <p className={styles.deepLink}>
-              Riešite spor s poisťovňou?{" "}
-              <Link href="/insurance-claim">
-                Pozrite si stránku o zamietnutom poistnom plnení
-              </Link>
-              .
+              Špecializované témy:{" "}
+              {CAMPAIGNS.filter((c) => c.relatedServiceId === id).map((c, i) => (
+                <span key={c.id}>
+                  {i > 0 ? " · " : null}
+                  <Link href={c.pathname}>{CAMPAIGN_SHORT_NAMES[c.id]}</Link>
+                </span>
+              ))}
             </p>
           ) : null}
         </Container>

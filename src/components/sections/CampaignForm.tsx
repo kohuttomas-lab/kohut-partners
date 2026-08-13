@@ -4,12 +4,13 @@ import { useRef, useState, type FormEvent } from "react";
 import { submitLead } from "@/lib/lead";
 import { trackLead } from "@/lib/analytics";
 import { CONTACT } from "@/lib/content";
+import type { CampaignData } from "@/lib/campaigns";
 import { Card } from "@/components/ui/Card";
 import { Input, Textarea } from "@/components/ui/Input";
 import { Checkbox } from "@/components/ui/Checkbox";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, CheckCircle, Mail } from "@/components/icons";
-import styles from "./ClaimReviewForm.module.css";
+import styles from "./CampaignForm.module.css";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
@@ -66,13 +67,14 @@ function CopyRow({ label, value }: { label: string; value: string }) {
 }
 
 /**
- * Bezplatné posúdenie zamietacieho listu — konverzný formulár kampaňovej
- * stránky. Prílohy sa cez Web3Forms neposielajú, preto po odoslaní vedieme
- * klienta na e-mail s predvyplneným predmetom, kde dokumenty priloží sám.
+ * Konverzný formulár kampaňovej stránky — bezplatné posúdenie dokumentu.
+ * Prílohy sa cez formulárovú službu neposielajú, preto úspešná obrazovka
+ * vedie kopírovateľnou adresou a predmetom; mailto: je len skratka.
  */
-export function ClaimReviewForm() {
+export function CampaignForm({ campaign }: { campaign: CampaignData }) {
   const [status, setStatus] = useState<Status>("idle");
   const [name, setName] = useState("");
+  const f = campaign.form;
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -80,30 +82,28 @@ export function ClaimReviewForm() {
     const who = String(fd.get("name") || "");
     setName(who);
 
-    const fields = {
+    const fields: Record<string, string> = {
       Meno: who,
       "E-mail": String(fd.get("email") || ""),
       Telefón: String(fd.get("phone") || ""),
-      Poisťovňa: String(fd.get("insurer") || ""),
-      "Dátum poistnej udalosti": String(fd.get("eventDate") || ""),
-      "Výška nároku": String(fd.get("amount") || ""),
-      "Popis situácie": String(fd.get("message") || ""),
     };
+    for (const field of f.fields) {
+      fields[field.label] = String(fd.get(field.name) || "");
+    }
+    fields[f.messageLabel] = String(fd.get("message") || "");
 
     setStatus("sending");
-    const r = await submitLead(fields, `Zamietnuté poistné plnenie — ${who}`);
+    const r = await submitLead(fields, `${f.subject} — ${who}`);
     // Bez kľúča (configured:false) necháme simulovaný úspech, nech UX drží.
     const sent = r.ok || !r.configured;
     setStatus(sent ? "sent" : "error");
-    if (sent) trackLead("insurance-claim");
+    if (sent) trackLead(campaign.id);
   };
 
-  const subject = `Zamietnuté poistné plnenie — podklady (${name})`;
+  const subject = `${f.subject} (${name})`;
   const mailto = `mailto:${CONTACT.email}?subject=${encodeURIComponent(
     subject
-  )}&body=${encodeURIComponent(
-    "Dobrý deň,\n\nv prílohe posielam zamietací list, poistnú zmluvu a poistné podmienky.\n\nS pozdravom\n"
-  )}`;
+  )}&body=${encodeURIComponent("Dobrý deň,\n\nv prílohe posielam podklady.\n\nS pozdravom\n")}`;
 
   if (status === "sent") {
     return (
@@ -127,9 +127,9 @@ export function ClaimReviewForm() {
           </div>
 
           <ul className={styles.docList}>
-            <li>zamietací (alebo oznamovací) list poisťovne</li>
-            <li>poistnú zmluvu a poistné podmienky</li>
-            <li>hlásenie škody a fotodokumentáciu, ak ich máte</li>
+            {f.documents.map((d) => (
+              <li key={d}>{d}</li>
+            ))}
           </ul>
 
           <a href={mailto} className={styles.mailBtn}>
@@ -160,14 +160,32 @@ export function ClaimReviewForm() {
           leadingIcon={<Mail size={18} />}
           autoComplete="email"
         />
-        <div className={styles.row2}>
-          <Input name="insurer" label="Poisťovňa" placeholder="napr. Allianz, Generali…" />
-          <Input name="eventDate" label="Kedy sa udalosť stala" placeholder="napr. marec 2025" />
-        </div>
-        <Input name="amount" label="O akú sumu ide (orientačne)" placeholder="napr. 8 000 €" />
+        {/* Doplnkové polia po dvojiciach; nepárne posledné ide na celú šírku. */}
+        {Array.from({ length: Math.ceil(f.fields.length / 2) }, (_, i) => {
+          const pair = f.fields.slice(i * 2, i * 2 + 2);
+          return pair.length === 2 ? (
+            <div key={pair[0].name} className={styles.row2}>
+              {pair.map((field) => (
+                <Input
+                  key={field.name}
+                  name={field.name}
+                  label={field.label}
+                  placeholder={field.placeholder}
+                />
+              ))}
+            </div>
+          ) : (
+            <Input
+              key={pair[0].name}
+              name={pair[0].name}
+              label={pair[0].label}
+              placeholder={pair[0].placeholder}
+            />
+          );
+        })}
         <Textarea
           name="message"
-          label="Čo sa stalo a ako to poisťovňa odôvodnila"
+          label={f.messageLabel}
           rows={4}
           hint="Postačí pár viet. Podklady doložíte v ďalšom kroku e-mailom."
         />
@@ -190,7 +208,7 @@ export function ClaimReviewForm() {
           disabled={status === "sending"}
           rightIcon={<ArrowRight size={18} />}
         >
-          {status === "sending" ? "Odosielam…" : "Chcem bezplatné posúdenie"}
+          {status === "sending" ? "Odosielam…" : f.submit}
         </Button>
         <p className={styles.note}>
           Odoslanie formulára nezakladá poskytnutie právnej služby ani zastúpenie.

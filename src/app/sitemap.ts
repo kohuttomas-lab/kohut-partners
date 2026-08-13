@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getPathname } from "@/i18n/navigation";
 import { getArticleIds, getServiceIds, getArticle } from "@/lib/content";
+import { CAMPAIGNS } from "@/lib/campaigns";
 
 const BASE = "https://www.tkak.sk";
 
@@ -43,15 +44,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     params: { id },
   }));
 
-  // Slovak-only campaign page — listed on its own so it doesn't advertise an
-  // English alternate that 404s.
-  const skOnly: MetadataRoute.Sitemap = [
-    {
-      url: BASE + getPathname({ locale: "sk", href: "/insurance-claim" }),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-  ];
+  // Slovak-only campaign pages — listed on their own so they don't advertise
+  // an English alternate that 404s.
+  const skOnly: MetadataRoute.Sitemap = CAMPAIGNS.map((c) => ({
+    url: BASE + getPathname({ locale: "sk", href: c.pathname }),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
 
   const localized = [...STATIC, ...services, ...articles].map((href) => {
     const sk = BASE + getPathname({ locale: "sk", href });
