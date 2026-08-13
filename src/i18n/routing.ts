@@ -27,6 +27,9 @@ export const routing = defineRouting({
     "/lawyer-krupina": { sk: "/advokat-krupina", en: "/lawyer-krupina" },
     "/lawyer-banska-bystrica": { sk: "/advokat-banska-bystrica", en: "/lawyer-banska-bystrica" },
     "/lawyer-ziar-nad-hronom": { sk: "/advokat-ziar-nad-hronom", en: "/lawyer-ziar-nad-hronom" },
+    // Nationwide campaign landing page. Slovak-only by design (the service
+    // targets Slovak policyholders); the /en route renders notFound().
+    "/insurance-claim": { sk: "/zamietnute-poistne-plnenie", en: "/insurance-claim" },
     "/privacy": { sk: "/ochrana-udajov", en: "/privacy" },
     "/terms": { sk: "/obchodne-podmienky", en: "/terms" },
     "/cookies": { sk: "/cookies", en: "/cookies" },
@@ -35,3 +38,10 @@ export const routing = defineRouting({
 
 export type Locale = (typeof routing.locales)[number];
 export type AppPathname = keyof typeof routing.pathnames;
+
+/**
+ * Routes that exist in Slovak only — their /en counterpart renders notFound().
+ * The language switch falls back to the home page on these so it can't strand
+ * a visitor on a 404.
+ */
+export const SK_ONLY_PATHNAMES: AppPathname[] = ["/insurance-claim"];

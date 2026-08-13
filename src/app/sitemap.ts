@@ -43,7 +43,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     params: { id },
   }));
 
-  return [...STATIC, ...services, ...articles].map((href) => {
+  // Slovak-only campaign page — listed on its own so it doesn't advertise an
+  // English alternate that 404s.
+  const skOnly: MetadataRoute.Sitemap = [
+    {
+      url: BASE + getPathname({ locale: "sk", href: "/insurance-claim" }),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+  ];
+
+  const localized = [...STATIC, ...services, ...articles].map((href) => {
     const sk = BASE + getPathname({ locale: "sk", href });
     const en = BASE + getPathname({ locale: "en", href });
     // Articles carry a real publish date → expose it as lastModified.
@@ -60,4 +70,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ...(lastModified ? { lastModified } : {}),
     };
   });
+
+  return [...localized, ...skOnly];
 }

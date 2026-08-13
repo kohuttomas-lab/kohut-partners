@@ -99,6 +99,16 @@ export default async function ServiceDetailPage(props: Props) {
               </div>
             ))}
           </div>
+          {/* Slovak-only campaign landing page hangs off the litigation area. */}
+          {locale === "sk" && id === "spory" ? (
+            <p className={styles.deepLink}>
+              Riešite spor s poisťovňou?{" "}
+              <Link href="/insurance-claim">
+                Pozrite si stránku o zamietnutom poistnom plnení
+              </Link>
+              .
+            </p>
+          ) : null}
         </Container>
       </section>
 

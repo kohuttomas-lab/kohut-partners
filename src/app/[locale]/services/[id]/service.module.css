@@ -155,3 +155,18 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Kontextový odkaz na kampaňovú landing page (len oblasť „spory", SK). */
+.deepLink {
+  margin: 22px 0 0;
+  font-size: 15.5px;
+  color: var(--text-muted);
+}
+.deepLink a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.deepLink a:hover {
+  text-decoration: underline;
+}

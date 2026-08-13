@@ -13,14 +13,17 @@ const SERVED_CITIES = ["Zvolen", "Detva", "Krupina", "Banská Bystrica", "Žiar 
 const city = (name: string) => ({ "@type": "City", name });
 
 // JSON-LD for Google rich results. LegalService is a LocalBusiness subtype.
-// `areaServedCity` narrows areaServed on a city landing page; the default is
-// the full served-cities list (used on the homepage).
+// `areaServedCity` narrows areaServed on a city landing page; `nationwide`
+// widens it to the whole country for services run remotely (the insurance-claim
+// campaign page). The default is the full served-cities list (homepage).
 export function LegalServiceSchema({
   locale,
   areaServedCity,
+  nationwide = false,
 }: {
   locale: string;
   areaServedCity?: string;
+  nationwide?: boolean;
 }) {
   const sk = locale !== "en";
   const data = {
@@ -43,7 +46,11 @@ export function LegalServiceSchema({
     geo: { "@type": "GeoCoordinates", latitude: 48.5769516, longitude: 19.126746 },
     hasMap: CONTACT.mapsUrl,
     sameAs: [GBP_URL],
-    areaServed: areaServedCity ? city(areaServedCity) : SERVED_CITIES.map(city),
+    areaServed: nationwide
+      ? { "@type": "Country", name: "Slovensko" }
+      : areaServedCity
+        ? city(areaServedCity)
+        : SERVED_CITIES.map(city),
     priceRange: "€€",
     knowsLanguage: ["sk", "en"],
     founder: {
