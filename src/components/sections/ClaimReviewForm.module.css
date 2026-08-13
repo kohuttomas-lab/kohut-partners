@@ -49,9 +49,75 @@
 
 .successLead {
   color: var(--text-muted);
-  margin: 0 auto 22px;
+  margin: 0 auto 20px;
   max-width: 46ch;
   line-height: 1.7;
+}
+
+/* Odovzdanie na e-mail. Adresa a predmet sú vždy viditeľné ako text —
+   nespoliehame sa na to, že mailto: niečo otvorí. */
+.handoff {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 18px;
+  text-align: left;
+}
+
+.copyRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+}
+
+.copyLabel {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.copyValue {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  color: var(--text-strong);
+  /* `anywhere` (nie `break-word`) — láme až keď sa riadok inak nezmestí,
+     takže sa dlhá hodnota v úzkom stĺpci nerozsype po znakoch. */
+  overflow-wrap: anywhere;
+  user-select: all;
+}
+
+.copyBtn {
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  background: var(--color-surface);
+  color: var(--accent);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 6px 11px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.copyBtn:hover {
+  border-color: var(--accent);
+}
+
+.docList {
+  margin: 0 0 20px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--text-body);
 }
 
 .mailBtn {
@@ -75,6 +141,19 @@
   margin: 14px 0 0;
   font-size: 13px;
   color: var(--text-muted);
+}
+
+@media (max-width: 560px) {
+  /* Štítok, hodnota a tlačidlo vedľa seba nechávajú hodnote príliš úzky
+     stĺpec — na mobile ich preto stohujeme pod seba. */
+  .copyRow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 7px;
+  }
+  .copyBtn {
+    align-self: flex-start;
+  }
 }
 
 @media (max-width: 480px) {

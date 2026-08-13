@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useRef, useState, type FormEvent } from "react";
 import { submitLead } from "@/lib/lead";
 import { trackLead } from "@/lib/analytics";
 import { CONTACT } from "@/lib/content";
@@ -12,6 +12,58 @@ import { ArrowRight, CheckCircle, Mail } from "@/components/icons";
 import styles from "./ClaimReviewForm.module.css";
 
 type Status = "idle" | "sending" | "sent" | "error";
+
+/**
+ * Riadok „štítok + hodnota + kopírovať". Hodnota je vždy vybrateľná ako text,
+ * takže ostáva použiteľná aj tam, kde Clipboard API nie je dostupné
+ * (staršie prehliadače, stránka bez zabezpečeného kontextu).
+ */
+function CopyRow({ label, value }: { label: string; value: string }) {
+  const [state, setState] = useState<"idle" | "copied" | "selected">("idle");
+  const valueRef = useRef<HTMLSpanElement>(null);
+
+  // Ak Clipboard API nie je k dispozícii (nezabezpečený kontext, odopreté
+  // povolenie, starší prehliadač), text aspoň označíme — používateľ ho potom
+  // skopíruje sám. Tichý neúspech by bol horší než žiadne tlačidlo.
+  const selectValue = () => {
+    const node = valueRef.current;
+    if (!node) return;
+    const range = document.createRange();
+    range.selectNodeContents(node);
+    const sel = window.getSelection();
+    sel?.removeAllRanges();
+    sel?.addRange(range);
+    setState("selected");
+  };
+
+  return (
+    <div className={styles.copyRow}>
+      <span className={styles.copyLabel}>{label}</span>
+      <span ref={valueRef} className={styles.copyValue}>
+        {value}
+      </span>
+      <button
+        type="button"
+        className={styles.copyBtn}
+        onClick={async () => {
+          try {
+            await navigator.clipboard.writeText(value);
+            setState("copied");
+            setTimeout(() => setState("idle"), 2000);
+          } catch {
+            selectValue();
+          }
+        }}
+      >
+        {state === "copied"
+          ? "Skopírované"
+          : state === "selected"
+            ? "Stlačte Ctrl/Cmd+C"
+            : "Kopírovať"}
+      </button>
+    </div>
+  );
+}
 
 /**
  * Bezplatné posúdenie zamietacieho listu — konverzný formulár kampaňovej
@@ -46,8 +98,9 @@ export function ClaimReviewForm() {
     if (sent) trackLead("insurance-claim");
   };
 
+  const subject = `Zamietnuté poistné plnenie — podklady (${name})`;
   const mailto = `mailto:${CONTACT.email}?subject=${encodeURIComponent(
-    `Zamietnuté poistné plnenie — podklady (${name})`
+    subject
   )}&body=${encodeURIComponent(
     "Dobrý deň,\n\nv prílohe posielam zamietací list, poistnú zmluvu a poistné podmienky.\n\nS pozdravom\n"
   )}`;
@@ -62,15 +115,30 @@ export function ClaimReviewForm() {
           <h3 className={styles.successTitle}>Máme to, ďakujeme.</h3>
           <p className={styles.successLead}>
             Ozveme sa vám do troch pracovných dní. Aby sme vec vedeli naozaj posúdiť,
-            pošlite nám ešte podklady — zamietací list, poistnú zmluvu a poistné
-            podmienky. Stačí ich priložiť k e-mailu.
+            pošlite nám ešte podklady na tento e-mail:
           </p>
+
+          {/* Adresa a predmet sú primárna cesta — mailto: je len skratka.
+              Na desktope bez nastaveného poštového klienta (typicky používatelia
+              webmailu) mailto: nespraví nič, takže sa naň nesmie spoliehať. */}
+          <div className={styles.handoff}>
+            <CopyRow label="E-mail" value={CONTACT.email} />
+            <CopyRow label="Predmet" value={subject} />
+          </div>
+
+          <ul className={styles.docList}>
+            <li>zamietací (alebo oznamovací) list poisťovne</li>
+            <li>poistnú zmluvu a poistné podmienky</li>
+            <li>hlásenie škody a fotodokumentáciu, ak ich máte</li>
+          </ul>
+
           <a href={mailto} className={styles.mailBtn}>
             <Mail size={18} />
-            Priložiť podklady e-mailom
+            Otvoriť poštového klienta
           </a>
           <p className={styles.successNote}>
-            Alebo napíšte priamo na {CONTACT.email}.
+            Ak sa poštový klient neotvorí, skopírujte adresu vyššie a napíšte nám
+            z toho e-mailu, ktorý bežne používate.
           </p>
         </div>
       </Card>
