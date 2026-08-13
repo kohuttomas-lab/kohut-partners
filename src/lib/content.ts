@@ -270,8 +270,9 @@ const SERVICES: RawService[] = [
       name: "Súdne spory a vymáhanie",
       tagline: "Keď na dohodu nedôjde, postavíme sa za vás.",
       summary:
-        "Pripravíme stratégiu, zastúpime vás pred súdom a vymôžeme, čo vám patrí. Vždy najprv zvážime aj rýchlejšiu mimosúdnu cestu.",
+        "Pripravíme stratégiu, zastúpime vás pred súdom a vymôžeme, čo vám patrí — vrátane sporov s poisťovňami o zamietnuté poistné plnenie. Vždy najprv zvážime aj rýchlejšiu mimosúdnu cestu.",
       solve: [
+        "Zamietnuté alebo krátené poistné plnenie — spor s poisťovňou",
         "Zastupovanie v občianskych a obchodných sporoch",
         "Vymáhanie pohľadávok a exekúcie",
         "Mimosúdne urovnania a mediácia",
@@ -279,6 +280,18 @@ const SERVICES: RawService[] = [
         "Zastupovanie v rozhodcovskom konaní",
       ],
       faq: [
+        [
+          "Poisťovňa mi zamietla poistné plnenie. Dá sa s tým ešte niečo robiť?",
+          "Vo väčšine prípadov áno. Zamietnutie ani krátenie plnenia nie je konečné rozhodnutie — je to len stanovisko poisťovne. Preveríme poistnú zmluvu a poistné podmienky, dôvod zamietnutia a spis o likvidácii škody, a ak nárok obstojí, uplatníme ho voči poisťovni a v prípade potreby aj súdnou žalobou.",
+        ],
+        [
+          "Ktoré poistné udalosti riešite?",
+          "Poistenie majetku a domácnosti, havarijné poistenie a povinné zmluvné poistenie, poistenie zodpovednosti za škodu, životné a úrazové poistenie aj poistenie schopnosti splácať úver. Rovnako riešime krátené plnenie, teda situáciu, keď poisťovňa vyplatí výrazne menej, než škoda reálne predstavuje.",
+        ],
+        [
+          "Do kedy sa dá nárok voči poisťovni uplatniť?",
+          "Právo na poistné plnenie sa premlčuje v trojročnej lehote, ktorá začína plynúť rok po vzniku poistnej udalosti (§ 104 Občianskeho zákonníka). Zamietavý list poisťovne túto lehotu nezastaví, preto sa oplatí ozvať sa čo najskôr.",
+        ],
         [
           "Koľko trvá súdny spor?",
           "Závisí od veci, no veľa sporov vieme uzavrieť mimosúdne za týždne. Reálny odhad dostanete na konzultácii.",
