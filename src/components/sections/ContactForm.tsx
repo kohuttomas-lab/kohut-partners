@@ -16,6 +16,16 @@ import styles from "./ContactForm.module.css";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
+/** Hodnota z <option> → prekladový kľúč. Do e-mailu ide preložený text. */
+const SOURCE_KEYS: Record<string, string> = {
+  search: "fSourceSearch",
+  ai: "fSourceAi",
+  referral: "fSourceReferral",
+  social: "fSourceSocial",
+  returning: "fSourceReturning",
+  other: "fSourceOther",
+};
+
 export function ContactForm() {
   const t = useTranslations("contact");
   const common = useTranslations("common");
@@ -34,12 +44,19 @@ export function ContactForm() {
           ? common("areaOther")
           : services.find((s) => s.id === areaId)?.name || areaId;
 
+    // Nepovinné pole "ako ste nás našli" — jediný zdroj atribúcie, ktorý máme.
+    // Formulár neposiela referrer ani UTM, takže bez tejto odpovede sa pôvod
+    // dopytu (najmä zahraničného) spätne nedá zistiť.
+    const sourceId = String(fd.get("source") || "");
+    const sourceName = SOURCE_KEYS[sourceId] ? t(SOURCE_KEYS[sourceId]) : "";
+
     const fields = {
       Meno: String(fd.get("name") || ""),
       "E-mail": String(fd.get("email") || ""),
       Telefón: String(fd.get("phone") || ""),
       "Oblasť práva": areaName,
       Správa: String(fd.get("message") || ""),
+      "Ako nás našli": sourceName,
     };
 
     setStatus("sending");
@@ -87,6 +104,14 @@ export function ContactForm() {
             <option value="ine">{common("areaOther")}</option>
           </Select>
           <Textarea name="message" label={t("fMsg")} rows={3} />
+          <Select name="source" label={t("fSource")} defaultValue="">
+            <option value="">{t("fSourcePlaceholder")}</option>
+            {Object.entries(SOURCE_KEYS).map(([id, key]) => (
+              <option key={id} value={id}>
+                {t(key)}
+              </option>
+            ))}
+          </Select>
           <Checkbox name="consent" label={t("fConsent")} required />
           {status === "error" ? <p className={styles.error}>{common("formError")}</p> : null}
           <Button

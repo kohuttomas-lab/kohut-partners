@@ -4,6 +4,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { assertPureInsertion, extractIds, assertOnlyPrepended } from "./lib/insert-guard.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -25,8 +26,10 @@ function slugify(s) {
 
 // 1) Vyber prvú nezaškrtnutú tému.
 const topicsRaw = readFileSync(TOPICS, "utf8");
-const topicLine = topicsRaw.split("\n").find((l) => /^- \[ \] /.test(l));
-if (!topicLine) { console.log("Žiadne nezaškrtnuté témy — končím bez zmeny."); process.exit(0); }
+const topicsLines = topicsRaw.split("\n");
+const topicIdx = topicsLines.findIndex((l) => /^- \[ \] /.test(l));
+if (topicIdx === -1) { console.log("Žiadne nezaškrtnuté témy — končím bez zmeny."); process.exit(0); }
+const topicLine = topicsLines[topicIdx];
 const topicText = topicLine.replace(/^- \[ \] /, "").trim();
 const [topic, catPart] = topicText.split("|").map((s) => s.trim());
 const category = (catPart || "").replace(/^kategória:\s*/i, "").trim() || "Novinky";
@@ -107,16 +110,68 @@ const obj = `  {
   },
 `;
 const anchor = "const BLOG: RawArticle[] = [\n";
-if (!contentSrc.includes(anchor)) { console.error("Nenašiel som kotvu BLOG poľa v content.ts"); process.exit(1); }
-const updatedContent = contentSrc.replace(anchor, anchor + obj);
+const anchorAt = contentSrc.indexOf(anchor);
+if (anchorAt === -1) { console.error("Nenašiel som kotvu BLOG poľa v content.ts"); process.exit(1); }
+const insertAt = anchorAt + anchor.length; // hneď za kotvu = na začiatok poľa BLOG
+const updatedContent = contentSrc.slice(0, insertAt) + obj + contentSrc.slice(insertAt);
 
-// 5) Zaškrtni tému.
-const updatedTopics = topicsRaw.replace(topicLine, topicLine.replace("- [ ] ", "- [x] "));
+// 5) POISTKA (1. vrstva): dokáž, že išlo o čisté vloženie a že žiadny už zverejnený
+//    článok nezmizol ani sa nepremenoval. Beží aj v --dry-run a hodí chybu skôr,
+//    než sa čokoľvek zapíše — 2. vrstva je git kontrola v auto-article.yml.
+//    Id článkov hľadáme len vo VÝREZE poľa BLOG; v content.ts majú pole id aj
+//    služby a členovia tímu (a tie sú vnorené hlbšie).
+const BLOG_ID_RE = /^ {4}id: "([^"]+)",$/gm;
+function blogSlice(src) {
+  const from = src.indexOf(anchor) + anchor.length;
+  const end = src.indexOf("\n];\n", from); // pole BLOG končí "];" na začiatku riadku
+  if (end === -1) { console.error("Nenašiel som koniec poľa BLOG v content.ts"); process.exit(1); }
+  return src.slice(from, end);
+}
+assertPureInsertion({
+  original: contentSrc,
+  updated: updatedContent,
+  inserted: obj,
+  at: insertAt,
+  label: "src/lib/content.ts",
+});
+assertOnlyPrepended(
+  extractIds(blogSlice(contentSrc), BLOG_ID_RE),
+  extractIds(blogSlice(updatedContent), BLOG_ID_RE),
+  slug,
+  "pole BLOG v src/lib/content.ts",
+);
+
+// 6) Zaškrtni tému. Cez index riadku, NIE cez topicsRaw.replace(): String.replace by
+//    v náhradnom reťazci expandoval sekvencie $&, $', $` a $1–$9 (téma ich môže
+//    obsahovať) a hľadal by prvý výskyt PODREŤAZCA, teda nie nutne ten správny riadok.
+const updatedTopics = topicsLines
+  .map((l, i) => (i === topicIdx ? l.replace("- [ ] ", "- [x] ") : l))
+  .join("\n");
 
 if (DRY) {
   console.log("[dry-run] Vygenerovaný článok:\n", obj);
   process.exit(0);
 }
 writeFileSync(CONTENT, updatedContent);
+
+// 7) POISTKA (1. vrstva, kontrola PO zápise). Dôkaz v kroku 5 porovnáva reťazce, ktoré
+//    sme si sami poskladali v pamäti — je pravdivý z definície slice() a sám o sebe by
+//    nezlyhal nikdy. Až toto je dôkaz o súbore, ktorý REÁLNE leží na disku a pôjde na web.
+//    Ak zlyhá, article-topics.md sa už nezapíše, takže 2. vrstva uvidí neúplnú zmenu a tiež zastaví.
+const zapisane = readFileSync(CONTENT, "utf8");
+assertPureInsertion({
+  original: contentSrc,
+  updated: zapisane,
+  inserted: obj,
+  at: insertAt,
+  label: "src/lib/content.ts (stav po zápise)",
+});
+assertOnlyPrepended(
+  extractIds(blogSlice(contentSrc), BLOG_ID_RE),
+  extractIds(blogSlice(zapisane), BLOG_ID_RE),
+  slug,
+  "pole BLOG v src/lib/content.ts (stav po zápise)",
+);
+
 writeFileSync(TOPICS, updatedTopics);
 console.log(`Hotovo: pridaný článok "${a.title_sk}" (slug ${slug}).`);

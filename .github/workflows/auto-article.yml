@@ -45,6 +45,92 @@ jobs:
       - name: Typecheck — poistka pred publikovaním
         run: npx tsc --noEmit --incremental false
 
+      # 2. vrstva poistky (1. je matematický dôkaz v scripts/lib/insert-guard.mjs).
+      # Generátor smie IBA PRIDÁVAŤ — už zverejnené články sa nesmú ticho zmeniť.
+      # Pri akomkoľvek porušení končíme exit 1, takže sa NIČ nescommituje a main zostáva čistý.
+      - name: Poistka — smie pribudnúť len nový článok
+        run: |
+          set -euo pipefail
+          OBSAH="src/lib/content.ts"
+          TEMY="marketing/article-topics.md"
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Žiadne zmeny (došli témy alebo duplicitný slug) — poistka nemá čo kontrolovať."
+            exit 0
+          fi
+
+          zlyhaj() {
+            echo "POISTKA ZLYHALA: $1" >&2
+            echo "--- git diff --cached --stat ---" >&2
+            git diff --cached --stat >&2
+            echo "--- git diff --cached --numstat (pridané / zmazané / cesta) ---" >&2
+            git diff --cached --numstat >&2
+            echo "Končím s chybou — nič sa necommituje, main zostáva čistý." >&2
+            exit 1
+          }
+
+          obsah_pridane=""; obsah_zmazane=""
+          temy_pridane=""; temy_zmazane=""
+
+          # numstat: "pridané<TAB>zmazané<TAB>cesta"; binárne súbory majú "-".
+          # Cesty porovnávame presnou rovnosťou reťazcov, nie grepom (bodky v cestách).
+          while IFS=$'\t' read -r pridane zmazane cesta; do
+            [ -n "${cesta:-}" ] || continue
+            if [ "$cesta" = "$OBSAH" ]; then
+              obsah_pridane="$pridane"; obsah_zmazane="$zmazane"
+            elif [ "$cesta" = "$TEMY" ]; then
+              temy_pridane="$pridane"; temy_zmazane="$zmazane"
+            else
+              zlyhaj "zmenil sa neočakávaný súbor: $cesta (povolené sú výlučne $OBSAH a $TEMY)"
+            fi
+          done < <(git diff --cached --numstat)
+
+          # 1) Oba očakávané súbory musia byť v diffe.
+          if [ -z "$obsah_pridane" ]; then zlyhaj "v diffe chýba $OBSAH — nový článok sa nepridal"; fi
+          if [ -z "$temy_pridane" ]; then zlyhaj "v diffe chýba $TEMY — téma sa nezaškrtla"; fi
+
+          # Binárny diff (numstat "-") nevieme overiť po riadkoch — neprejde.
+          case "${obsah_pridane}${obsah_zmazane}${temy_pridane}${temy_zmazane}" in
+            *-*) zlyhaj "niektorý zo súborov je v diffe binárny — to nie je čisté textové vloženie" ;;
+          esac
+
+          # 2) Obsahový súbor: čisté vloženie nikdy nemaže riadky.
+          if [ "$obsah_zmazane" != "0" ]; then
+            zlyhaj "$OBSAH má $obsah_zmazane zmazaných riadkov — čisté vloženie nemaže ani neprepisuje riadky"
+          fi
+          if [ "$obsah_pridane" -le 0 ]; then
+            zlyhaj "$OBSAH nemá žiadny pridaný riadok — nie je čo publikovať"
+          fi
+
+          # 3) Pridané riadky musia tvoriť JEDEN súvislý blok hneď za kotvou poľa BLOG.
+          #    Samotné "0 zmazaných" nestačí: publikovaný článok sa dá zmeniť aj čistým
+          #    PRIDANÍM riadkov — napr. obalením starého článku do /* a */ (0 zmazaní,
+          #    platný TypeScript, typecheck prejde, a článok ticho zmizne z webu).
+          #    Také zmeny majú vždy viac než jeden blok zmien.
+          hunkov=$(git diff --cached -U0 -- "$OBSAH" | grep -c '^@@' || true)
+          if [ "$hunkov" != "1" ]; then
+            zlyhaj "$OBSAH má $hunkov blokov zmien — čisté vloženie jedného článku je práve 1 súvislý blok"
+          fi
+
+          # Kotva poľa BLOG v zacommitovanej verzii súboru (do nej sa vkladá).
+          kotva=$(git show "HEAD:$OBSAH" | grep -n '^const BLOG: RawArticle\[\] = \[$' | head -1 | cut -d: -f1 || true)
+          if [ -z "$kotva" ]; then
+            zlyhaj "v $OBSAH som nenašiel kotvu 'const BLOG: RawArticle[] = [' — súbor je inak naformátovaný"
+          fi
+          # Hlavička hunku "@@ -617,0 +618,14 @@" — prvé číslo je riadok, ZA ktorý sa vkladalo.
+          vlozene_za=$(git diff --cached -U0 -- "$OBSAH" | grep '^@@' | head -1 | sed -n 's/^@@ -\([0-9][0-9]*\).*/\1/p' || true)
+          if [ "$vlozene_za" != "$kotva" ]; then
+            zlyhaj "článok sa vložil za riadok ${vlozene_za:-?}, očakávaný je riadok $kotva (hneď za kotvou poľa BLOG)"
+          fi
+
+          # 4) Zoznam tém: presne zaškrtnutie jedného "- [ ]" na "- [x]".
+          if [ "$temy_pridane" != "1" ] || [ "$temy_zmazane" != "1" ]; then
+            zlyhaj "$TEMY má $temy_pridane pridaných a $temy_zmazane zmazaných riadkov — očakávané je presne 1 a 1 (zaškrtnutie témy)"
+          fi
+
+          echo "Poistka OK: pribudlo $obsah_pridane riadkov v $OBSAH (0 zmazaných) a zaškrtla sa 1 téma v $TEMY."
+
       - name: Publikuj priamo na main
         run: |
           git add -A
