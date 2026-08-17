@@ -26,7 +26,12 @@ const SOURCE_KEYS: Record<string, string> = {
   other: "fSourceOther",
 };
 
-export function ContactForm() {
+/**
+ * `source` označuje stránku, z ktorej dopyt prišiel. Ide do predmetu e-mailu
+ * aj do GA4, takže sa dá zistiť, ktorá stránka klienta priniesla — formulár
+ * inak neposiela referrer ani UTM a GA4 beží až po súhlase s cookies.
+ */
+export function ContactForm({ source = "Kontakt" }: { source?: string }) {
   const t = useTranslations("contact");
   const common = useTranslations("common");
   const locale = useLocale() as Locale;
@@ -59,12 +64,15 @@ export function ContactForm() {
       "Ako nás našli": sourceName,
     };
 
+    // Predmet nesie stránku aj jazykovú vetvu: "Dopyt z webu (CMR, EN) — Ján Novák".
+    const tag = locale === "sk" ? source : `${source}, EN`;
+
     setStatus("sending");
-    const r = await submitLead(fields, `Dopyt z webu — ${fields.Meno}`);
+    const r = await submitLead(fields, `Dopyt z webu (${tag}) — ${fields.Meno}`);
     // Without a key (configured:false) keep the simulated success so the UX still works.
     const sent = r.ok || !r.configured;
     setStatus(sent ? "sent" : "error");
-    if (sent) trackLead("contact");
+    if (sent) trackLead(tag);
   };
 
   return (
