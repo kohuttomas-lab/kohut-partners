@@ -14,7 +14,7 @@ Kategória musí sedieť s existujúcimi (Insolvencie, Obchodné právo, IT prá
 - [x] Predžalobná výzva: prečo ju nepodceniť a čo má obsahovať | kategória: Súdne spory
 - [x] Nájomná zmluva na byt: 7 klauzúl, ktoré chránia prenajímateľa aj nájomcu | kategória: Nehnuteľnosti
 - [x] Vecné bremená a ťarchy: ako ich odhaliť pred kúpou nehnuteľnosti | kategória: Nehnuteľnosti
-- [ ] Reklamácie v e-shope: práva spotrebiteľa a povinnosti predajcu | kategória: IT právo
+- [x] Reklamácie v e-shope: práva spotrebiteľa a povinnosti predajcu | kategória: IT právo
 - [ ] Spracúvanie osobných údajov zamestnancov podľa GDPR | kategória: IT právo
 - [ ] Ako sa brániť neoprávnenej exekúcii | kategória: Súdne spory
 - [ ] Trestné oznámenie vs. podanie na políciu: čo, kedy a ako | kategória: Trestné právo
