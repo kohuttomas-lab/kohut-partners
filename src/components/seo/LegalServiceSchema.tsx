@@ -47,7 +47,7 @@ export function LegalServiceSchema({
     hasMap: CONTACT.mapsUrl,
     sameAs: [GBP_URL],
     areaServed: nationwide
-      ? { "@type": "Country", name: "Slovensko" }
+      ? { "@type": "Country", name: sk ? "Slovensko" : "Slovakia" }
       : areaServedCity
         ? city(areaServedCity)
         : SERVED_CITIES.map(city),

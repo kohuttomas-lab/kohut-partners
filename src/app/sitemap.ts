@@ -16,6 +16,7 @@ const STATIC: Href[] = [
   "/blog",
   "/contact",
   "/international",
+  "/transport-debt-recovery",
   "/lawyer-zvolen",
   "/lawyer-detva",
   "/lawyer-krupina",
@@ -52,22 +53,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const localized = [...STATIC, ...services, ...articles].map((href) => {
+  // Každá dvojjazyčná cesta dostane dve položky — slovenskú aj anglickú —
+  // s rovnakým blokom alternatív. Bez vlastného <loc> pre /en Google anglickú
+  // URL nikdy nedostal ako samostatnú stránku na indexáciu; hreflang alternatíva
+  // v slovenskej položke na to nestačí. `x-default` mieri na slovenčinu, rovnako
+  // ako canonical/hreflang v <head> (lib/seo.ts).
+  const localized = [...STATIC, ...services, ...articles].flatMap((href) => {
     const sk = BASE + getPathname({ locale: "sk", href });
     const en = BASE + getPathname({ locale: "en", href });
+    const languages = { sk, en, "x-default": sk };
     // Articles carry a real publish date → expose it as lastModified.
     let lastModified: Date | undefined;
     if (typeof href === "object" && href.pathname === "/blog/[id]") {
       const article = getArticle("sk", String(href.params.id));
       if (article) lastModified = new Date(article.iso);
     }
-    return {
-      url: sk,
-      alternates: { languages: { sk, en } },
+    const common = {
+      alternates: { languages },
       changeFrequency: "monthly" as const,
       priority: priorityFor(href),
       ...(lastModified ? { lastModified } : {}),
     };
+    return [
+      { url: sk, ...common },
+      { url: en, ...common },
+    ];
   });
 
   return [...localized, ...skOnly];

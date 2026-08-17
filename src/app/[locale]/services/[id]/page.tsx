@@ -52,6 +52,20 @@ export default async function ServiceDetailPage(props: Props) {
   const common = await getTranslations({ locale, namespace: "common" });
   const tNav = await getTranslations({ locale, namespace: "nav" });
 
+  // Kampaňové stránky sú len po slovensky (ich /en vracia notFound), dvojjazyčné
+  // hĺbkové stránky patria do zoznamu v oboch jazykoch.
+  const deepTopics: { href: string; label: string }[] = [
+    ...(locale === "sk"
+      ? CAMPAIGNS.filter((c) => c.relatedServiceId === id).map((c) => ({
+          href: c.pathname as string,
+          label: CAMPAIGN_SHORT_NAMES[c.id],
+        }))
+      : []),
+    ...(id === "spory"
+      ? [{ href: "/transport-debt-recovery", label: t("deepCmr") }]
+      : []),
+  ];
+
   return (
     <>
       <JsonLd
@@ -100,14 +114,15 @@ export default async function ServiceDetailPage(props: Props) {
               </div>
             ))}
           </div>
-          {/* Slovak-only campaign landing pages hang off their practice area. */}
-          {locale === "sk" && CAMPAIGNS.some((c) => c.relatedServiceId === id) ? (
+          {/* Hĺbkové stránky visia na svojej oblasti práva. Kampaňové sú
+              zámerne len po slovensky, dvojjazyčné sa zobrazia v oboch. */}
+          {deepTopics.length ? (
             <p className={styles.deepLink}>
-              Špecializované témy:{" "}
-              {CAMPAIGNS.filter((c) => c.relatedServiceId === id).map((c, i) => (
-                <span key={c.id}>
+              {t("deepTopics")}{" "}
+              {deepTopics.map((d, i) => (
+                <span key={d.href}>
                   {i > 0 ? " · " : null}
-                  <Link href={c.pathname}>{CAMPAIGN_SHORT_NAMES[c.id]}</Link>
+                  <Link href={d.href as never}>{d.label}</Link>
                 </span>
               ))}
             </p>

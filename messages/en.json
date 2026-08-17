@@ -97,6 +97,8 @@
     "packagesLead": "Selected services can be ordered online at a known price. More complex matters we handle after a consultation.",
     "faqTitle": "Frequently asked questions",
     "bookForThis": "Consultation on this area",
+    "deepTopics": "Specialised topics:",
+    "deepCmr": "CMR transport debt recovery",
     "packageCta": "I'm interested"
   },
   "about": {
@@ -345,8 +347,207 @@
     ],
     "scopeTitle": "One important limitation",
     "scopeText": "We advise exclusively on the law of the Slovak Republic. We do not advise on the law of your home country — where your matter touches another jurisdiction, we work alongside your local counsel.",
+    "formOverline": "Write to us",
+    "formTitle": "Describe your matter — we reply in English",
+    "formLead": "Tell us what the matter concerns and how it connects to Slovakia. We will get back to you and set out the next steps. Submitting this form does not create a lawyer-client relationship.",
     "ctaTitle": "Tell us about your matter in Slovakia",
     "ctaLead": "The first consultation is non-binding and held in English."
+  },
+  "cmr": {
+    "metaTitle": "CMR debt recovery — unpaid carriage charges",
+    "metaDescription": "Unpaid carriage charges owed by a Slovak customer: limitation under Article 32 CMR, Slovak payment order proceedings and enforcement. Law firm in Zvolen.",
+    "heroOverline": "International road haulage",
+    "heroTitle": "Recovering unpaid carriage charges under the CMR Convention",
+    "heroLead": "Carriage charges left unpaid by a customer established in the Slovak Republic. We take the file on, check limitation under Article 32 of the CMR Convention and run the matter from the letter before action through to enforcement.",
+    "heroPara": [
+      "We act for carriers, freight forwarders and logistics operators — Slovak and foreign alike — whose customer has not paid the invoice for carriage already performed.",
+      "We work in English and Slovak and can run the whole matter remotely."
+    ],
+    "heroCta": "Send us the file",
+    "whoOverline": "Who we act for",
+    "whoTitle": "What we do and for whom",
+    "whoLead": "We focus on monetary claims arising from international carriage of goods by road where the debtor is established in the Slovak Republic.",
+    "who": [
+      {
+        "title": "Carriers",
+        "desc": "Unpaid carriage charges for carriage already performed — including cases where the customer never disputed the invoice and simply does not pay."
+      },
+      {
+        "title": "Freight forwarders",
+        "desc": "Claims against the customer, and clarifying your position in the customer — forwarder — carrier chain."
+      },
+      {
+        "title": "Foreign creditors",
+        "desc": "Polish, Lithuanian, Czech and other foreign companies whose debtor is based in Slovakia. We conduct the proceedings before Slovak courts and enforcement officers on your behalf."
+      },
+      {
+        "title": "Deducted and disputed invoices",
+        "desc": "Deductions for delay, damage to the goods or alleged breach of the transport order. We assess which of the deductions stand up under the CMR Convention and the contract."
+      }
+    ],
+    "keyOverline": "Two questions first",
+    "keyTitle": "What is decided on day one",
+    "keyLead": "Two things have to be established before the first letter goes out: how long the claim can still be brought, and which law governs it. Both answers follow from the CMR Convention, published in the Slovak Republic as Decree of the Minister of Foreign Affairs No. 11/1975 Coll. Under its Article 1(1) the Convention applies to every contract for the carriage of goods by road in vehicles for reward where the place of taking over of the goods and the place designated for delivery, as set out in the contract, are situated in two different countries, of which at least one is a contracting country — irrespective of the place of residence and the nationality of the parties.",
+    "key": [
+      {
+        "title": "Limitation under Article 32 CMR",
+        "desc": "Under Article 32(1) of the Convention, the period of limitation for an action arising out of carriage under the Convention is one year; in the case of wilful misconduct, or such default as is considered equivalent to wilful misconduct by the law of the court seised of the case, the period is three years. A claim for payment of the carriage charges is not a claim for loss, damage or delay, so Article 32(1)(c) applies: time runs from the expiry of three months after the making of the contract of carriage, and the day on which the period starts is not included in it. In practice the claim may be time-barred roughly fifteen months after the contract of carriage was concluded — from the conclusion of the contract, not from the invoice due date.",
+        "note": "Whether a carrier's claim for carriage charges is governed by the one-year period under Article 32 CMR or by the general four-year limitation period under Section 397 of the Slovak Commercial Code is not treated uniformly in professional practice. Given that uncertainty, it is appropriate to work with the shorter period."
+      },
+      {
+        "title": "Applicable law under the Rome I Regulation",
+        "desc": "Where the parties have not chosen the applicable law, it is determined under Article 5(1) of Regulation (EC) No 593/2008 (Rome I): the law of the country of habitual residence of the carrier applies, provided that the place of receipt or the place of delivery or the habitual residence of the consignor is also situated in that country. If those requirements are not met, the law of the country where the place of delivery as agreed by the parties is situated applies. Under Article 5(3), the law of another country applies where the contract is manifestly more closely connected with it.",
+        "note": "The CMR Convention takes precedence to the extent that it governs the matter — this follows from Section 756 of the Slovak Commercial Code. Article 25(1) of the Rome I Regulation also provides that the Regulation does not prejudice the application of international conventions to which Member States are parties and which lay down conflict-of-law rules relating to contractual obligations. The law determined under the Regulation therefore applies only to questions the Convention does not govern; the carrier's claim for carriage charges is one of them."
+      },
+      {
+        "title": "Where the action can be brought — Article 31 CMR",
+        "desc": "Under Article 31(1) of the Convention the claimant may bring an action in the courts of a contracting country designated by agreement between the parties, in the courts of the country in which the defendant is ordinarily resident or has his principal place of business or the branch or agency through which the contract of carriage was made, or in the courts of the country where the place of taking over of the goods or the place designated for delivery is situated; no other courts may be seised. Where the debtor is established in the Slovak Republic, or the goods were unloaded here, the Slovak courts have jurisdiction.",
+        "note": "Under Article 71(1) of Regulation (EU) No 1215/2012 (Brussels I bis) the Regulation does not affect conventions which, in relation to particular matters, govern jurisdiction or the recognition and enforcement of judgments; under Article 71(2)(b) a judgment given in the exercise of jurisdiction provided for in such a convention is recognised and enforced in the other Member States in accordance with that Regulation. Where the convention itself lays down conditions for recognition or enforcement — Article 31(3) of the CMR Convention makes enforceability in the other contracting countries subject to the formalities prescribed there — those conditions apply; in any event, the provisions of the Regulation on recognition and enforcement, and therefore enforcement without a declaration of enforceability, may be applied."
+      }
+    ],
+    "stepsOverline": "Procedure",
+    "stepsTitle": "How it runs",
+    "steps": [
+      {
+        "title": "Taking the file on and analysing it",
+        "desc": "We take over the transport order, the CMR consignment note and the invoice. We verify whether the matter is governed by the CMR Convention, how long the claim can still be brought and what exactly makes up the principal sum."
+      },
+      {
+        "title": "Checking the debtor",
+        "desc": "We check the commercial register, published financial statements, pending enforcement proceedings, and bankruptcy and restructuring proceedings. That shows whether proceedings are worth bringing and in what order to proceed."
+      },
+      {
+        "title": "Letter before action",
+        "desc": "We prepare and send a demand for payment quantifying the principal, default interest and the flat-rate compensation for recovery costs. The demand also forms the basis for the steps that follow."
+      },
+      {
+        "title": "Slovak payment order proceedings",
+        "desc": "If the debtor does not pay, we file an application under Act No. 307/2016 Coll. The application is filed exclusively by electronic means and the District Court Banská Bystrica has exclusive subject-matter jurisdiction. Where the payment order would have to be served on the defendant abroad, this route is not available (Section 3(6)(d) of the Act) — the European order for payment under Regulation (EC) No 1896/2006 then comes into play. Nor is the application admissible where the default interest claimed under the contract exceeds by more than five percentage points the rate that would apply without such an agreement (Section 3(5)(a) of the Act)."
+      },
+      {
+        "title": "Payment order or statement of opposition",
+        "desc": "The court issues the payment order no later than ten working days after the procedural conditions, including payment of the court fee, are met. From service of the payment order the defendant then has 15 days either to pay or to file a statement of opposition, which must be reasoned on the merits. If none is filed, the payment order has the effects of a final judgment; if one is filed, we respond to it and, within the 15-day period, apply for the proceedings to continue before the court having jurisdiction under the Civil Contentious Procedure Code."
+      },
+      {
+        "title": "Enforcement",
+        "desc": "Once the decision is final and enforceable, we file an application for enforcement. The District Court Banská Bystrica has exclusive jurisdiction over enforcement proceedings and assigns the case to an enforcement officer at random — the creditor does not choose the officer."
+      },
+      {
+        "title": "Escalation — bankruptcy",
+        "desc": "Where it turns out that the debtor is failing to pay several creditors, a bankruptcy petition and a claim against the statutory body for damage caused by failing to file in time come into consideration. We assess every such step separately: under Section 11(4) of Act No. 7/2005 Coll. a creditor is liable to the debtor and to other persons for damage arising from the effects of the commencement of bankruptcy proceedings if the court discontinues proceedings commenced on the creditor's petition because the debtor's solvency has been established, unless the creditor proves that it acted with professional care in filing the petition. A bankruptcy petition is therefore not a pressure tactic."
+      }
+    ],
+    "docsOverline": "Documents",
+    "docsTitle": "What we need from you",
+    "docsLead": "In most matters five documents are enough. Send them as scans or photographs; originals are not needed at this stage.",
+    "docs": [
+      "The transport order or contract of carriage — including the e-mail exchange under which it was concluded.",
+      "The CMR consignment note, including the consignee's confirmation of receipt of the goods.",
+      "The invoice for the carriage charges and proof that it was sent to the debtor.",
+      "Proof of delivery, and any further transport documents.",
+      "Correspondence with the debtor — reminders, claims, notified deductions, part payments."
+    ],
+    "priceOverline": "Fees",
+    "priceTitle": "What it costs",
+    "priceLead": "The scope and the fee are agreed in advance and in writing. You know the price for the assessment and for the letter before action before we start work.",
+    "price": [
+      {
+        "label": "Assessment of the matter",
+        "value": "fixed fee agreed in advance",
+        "desc": "We go through the documents, check limitation and the applicable law and set out the procedure we propose. We quote the fee before any work starts; if you decide not to go ahead, the matter ends there."
+      },
+      {
+        "label": "Letter before action",
+        "value": "fixed fee per step",
+        "desc": "Preparing and sending the demand for payment, including the calculation of default interest and the flat-rate compensation for recovery costs. Agreed as a fixed sum for the step, not at an hourly rate."
+      },
+      {
+        "label": "Representation in proceedings",
+        "value": "fixed fee or contingency fee",
+        "desc": "Under Section 7(1) of Decree of the Ministry of Justice of the Slovak Republic No. 655/2004 Coll., a contingency fee may be agreed in the form of a percentage share in the value of the matter; under Section 7(2) its maximum amount may not exceed 20 % of that value. Under Section 8(1) of the Decree it becomes payable only where the client has been fully successful in the matter; where the client is partly successful the lawyer is entitled under Section 8(2) to the tariff fee determined according to the degree of success, and where the client has not been successful even in part the lawyer may under Section 8(3) claim only reimbursement of out-of-pocket expenses."
+      }
+    ],
+    "priceNote": "Out-of-pocket expenses arise alongside the lawyer's fee, court fees in particular. In payment order proceedings the court fee is, under Section 11c(1) of Act No. 71/1992 Coll. on court fees, 50 % of the percentage rate set out in the schedule of fees; the basic rate under item 1(a) of the schedule is 6 % of the value of the subject matter, so 3 % in these proceedings, but not less than 25 euros and not more than 25 000 euros, or 50 000 euros in commercial matters. The court does not call on the applicant to pay it, and if the fee is not paid within 15 days of filing, the application is disregarded. The court fee for an application for enforcement is 25 euros under item 13(a) of the schedule. The outcome of proceedings depends on the circumstances of the individual case, in particular on the debtor's assets.",
+    "formOverline": "No obligation",
+    "formTitle": "Send us the papers on your claim",
+    "formLead": "Tell us which carriage the claim concerns and what the customer has left unpaid. We will get back to you and set out the next steps. Submitting this form does not create a lawyer-client relationship.",
+    "faqOverline": "FAQ",
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "How long do we have to bring a claim for unpaid carriage charges?",
+        "a": "Under Article 32(1) of the CMR Convention the basic period of limitation is one year. For a claim for payment of the carriage charges, point (c) applies: time runs from the expiry of three months after the making of the contract of carriage, and the day on which the period starts is not included in it. The claim may therefore be time-barred roughly fifteen months after the contract of carriage was concluded, not from the invoice due date. Whether this period or the general four-year period under Section 397 of the Slovak Commercial Code applies to carriage charges is not treated uniformly in professional practice, so it is appropriate to work with the shorter period. Under Article 32(4) of the Convention, a time-barred claim may not be made the subject of a counter-claim or set-off."
+      },
+      {
+        "q": "Can we sue a Slovak customer in Slovakia?",
+        "a": "Under Article 31(1) of the CMR Convention the claimant may bring an action, among other options, in the courts of the country in which the defendant has his principal place of business, and in the courts of the country where the place of taking over of the goods or the place designated for delivery is situated; no other courts may be seised. Where the debtor is established in the Slovak Republic, or the goods were unloaded here, the Slovak courts have jurisdiction. Under Article 31(5) of the Convention, no security for costs of proceedings may be required from nationals of contracting countries resident or having their place of business in one of those countries."
+      },
+      {
+        "q": "Which law governs the matter if we did not choose one?",
+        "a": "The CMR Convention takes precedence to the extent that it governs the matter; this follows from Section 756 of the Slovak Commercial Code, and Article 25(1) of the Rome I Regulation leaves the application of such conventions unaffected. Questions the Convention does not govern — including the claim for payment of the carriage charges itself — are governed by the law determined under Article 5(1) of the Rome I Regulation: the law of the country of habitual residence of the carrier, provided the place of receipt or the place of delivery or the habitual residence of the consignor is also situated in that country; failing that, the law of the country of the agreed place of delivery."
+      },
+      {
+        "q": "Can we claim interest and costs on top of the principal?",
+        "a": "Under Section 369(1) of the Slovak Commercial Code a creditor which has performed its own statutory and contractual obligations has the right to default interest without any separate reminder. Where the rate was not agreed, Section 369(2) of the Commercial Code applies the rate laid down by Government Regulation No. 21/2013 Coll.: under Section 1(1) the base interest rate of the European Central Bank in force on the first day of the relevant calendar half-year of default, increased by eight percentage points, or — if the creditor opts for the fixed variant under Section 1(2) — the base rate in force on the first day of default increased by nine percentage points. The current ECB base rate has to be checked as at the relevant date. Alongside interest, Section 369c(1) of the Commercial Code gives the creditor the right to flat-rate compensation for the costs of recovering the claim; under Section 2 of Government Regulation No. 21/2013 Coll. that is 40 euros, once, regardless of how long the default lasts."
+      },
+      {
+        "q": "How quickly does the court decide, and what happens if the debtor opposes?",
+        "a": "In payment order proceedings under Act No. 307/2016 Coll. the court issues the payment order no later than ten working days after the procedural conditions, including payment of the court fee, are met. From service of the payment order the defendant has 15 days to pay or to file a statement of opposition, which must be reasoned on the merits; opposition without reasons on the merits is rejected by the court. If no opposition is filed, the payment order has the effects of a final judgment. If opposition is filed, it has to be answered within 15 days and, within the same period, an application made for the proceedings to continue before the court having jurisdiction under the Civil Contentious Procedure Code — otherwise the proceedings are discontinued."
+      },
+      {
+        "q": "What if the debtor has no assets?",
+        "a": "Enforcement is carried out by an enforcement officer appointed by the District Court Banská Bystrica at random; the creditor does not choose the officer. Where the debtor has been in default for more than 90 days on at least two monetary obligations owed to more than one creditor and has been called on in writing by one of those creditors to pay, its insolvency may reasonably be presumed under Section 11(3) of Act No. 7/2005 Coll. and a bankruptcy petition may be filed. Under Section 11a(1) of the same Act, the person obliged to file a bankruptcy petition on the debtor's behalf is liable for damage caused to the debtor's creditors by failing to file in time; under Section 11a(3), unless a different amount is proven, the damage is presumed to be the amount of the creditor's claim that went unsatisfied after the bankruptcy proceedings were discontinued for want of assets, after the bankruptcy was cancelled for want of assets, or after enforcement against the debtor was terminated for want of assets."
+      }
+    ],
+    "relatedTitle": "Related",
+    "sourcesTitle": "The legislation this page is based on",
+    "sourcesLead": "The full text of each instrument is available on Slov-Lex and EUR-Lex. The information above is general and does not replace advice on an individual matter.",
+    "sources": [
+      {
+        "label": "Decree of the Minister of Foreign Affairs No. 11/1975 Coll. — CMR Convention",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1975/11/"
+      },
+      {
+        "label": "Act No. 513/1991 Coll. — Slovak Commercial Code",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "Government Regulation No. 21/2013 Coll.",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2013/21/"
+      },
+      {
+        "label": "Act No. 307/2016 Coll. on payment order proceedings",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2016/307/"
+      },
+      {
+        "label": "Act No. 71/1992 Coll. on court fees",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "Act No. 233/1995 Coll. — Slovak Enforcement Code",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1995/233/"
+      },
+      {
+        "label": "Act No. 7/2005 Coll. on bankruptcy and restructuring",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/7/"
+      },
+      {
+        "label": "Decree No. 655/2004 Coll. on lawyers' fees",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/655/"
+      },
+      {
+        "label": "Regulation (EC) No 593/2008 — Rome I",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008R0593"
+      },
+      {
+        "label": "Regulation (EU) No 1215/2012 — Brussels I bis",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32012R1215"
+      },
+      {
+        "label": "Regulation (EC) No 1896/2006 — European order for payment",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006R1896"
+      }
+    ]
   },
   "consent": {
     "text": "We use cookies — essential ones to run the site and, with your consent, for analytics and marketing.",

@@ -21,6 +21,12 @@ export const routing = defineRouting({
     "/blog/[id]": { sk: "/blog/[id]", en: "/blog/[id]" },
     "/contact": { sk: "/kontakt", en: "/contact" },
     "/international": { sk: "/zahranicni-klienti", en: "/international-clients" },
+    // Dvojjazyčná téma pre dopravcov a špedície — slovenská verzia cieli na
+    // slovenských dopravcov, anglická na zahraničných (najmä poľských).
+    "/transport-debt-recovery": {
+      sk: "/vymahanie-prepravnych-pohladavok",
+      en: "/transport-debt-recovery",
+    },
     // Local-SEO city landing pages (target query: "advokát {mesto}").
     "/lawyer-zvolen": { sk: "/advokat-zvolen", en: "/lawyer-zvolen" },
     "/lawyer-detva": { sk: "/advokat-detva", en: "/lawyer-detva" },

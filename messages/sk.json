@@ -97,6 +97,8 @@
     "packagesLead": "Vybrané služby viete objednať online za vopred známu cenu. Zložitejšie veci riešime po konzultácii.",
     "faqTitle": "Časté otázky",
     "bookForThis": "Konzultácia k tejto oblasti",
+    "deepTopics": "Špecializované témy:",
+    "deepCmr": "Vymáhanie prepravných pohľadávok (CMR)",
     "packageCta": "Mám záujem"
   },
   "about": {
@@ -345,8 +347,207 @@
     ],
     "scopeTitle": "Jedno dôležité vymedzenie",
     "scopeText": "Radíme výlučne k právu Slovenskej republiky. Neradíme k právu vašej domovskej krajiny — ak vaša vec presahuje do inej jurisdikcie, spolupracujeme s vaším tamojším právnym zástupcom.",
+    "formOverline": "Napíšte nám",
+    "formTitle": "Opíšte nám svoju vec — odpovieme po anglicky",
+    "formLead": "Napíšte, čoho sa vec týka a akú má väzbu na Slovensko. Ozveme sa vám a navrhneme ďalší postup. Odoslanie formulára nezakladá poskytnutie právnej služby ani vznik zmluvného vzťahu.",
     "ctaTitle": "Povedzte nám o vašej veci na Slovensku",
     "ctaLead": "Prvá konzultácia je nezáväzná a prebieha v angličtine."
+  },
+  "cmr": {
+    "metaTitle": "Vymáhanie prepravných pohľadávok podľa CMR",
+    "metaDescription": "Nezaplatené prepravné voči slovenskému odberateľovi: premlčanie podľa čl. 32 Dohovoru CMR, upomínacie konanie a exekúcia. Advokátska kancelária Zvolen.",
+    "heroOverline": "Medzinárodná cestná preprava",
+    "heroTitle": "Vymáhanie prepravných pohľadávok podľa Dohovoru CMR",
+    "heroLead": "Nezaplatené prepravné voči odberateľovi so sídlom v Slovenskej republike. Prevezmeme vec, overíme premlčanie podľa čl. 32 Dohovoru CMR a vedieme ju od predžalobnej výzvy až po exekúciu.",
+    "heroPara": [
+      "Zastupujeme dopravcov, špedície a zasielateľov — slovenských aj zahraničných —, ktorým objednávateľ prepravy neuhradil faktúru za vykonanú prepravu.",
+      "Komunikujeme po slovensky a po anglicky a celú vec vieme viesť na diaľku."
+    ],
+    "heroCta": "Poslať vec na posúdenie",
+    "whoOverline": "Pre koho",
+    "whoTitle": "Čo robíme a pre koho",
+    "whoLead": "Zameriavame sa na peňažné nároky z medzinárodnej cestnej nákladnej prepravy, kde je dlžníkom subjekt so sídlom v Slovenskej republike.",
+    "who": [
+      {
+        "title": "Dopravcovia",
+        "desc": "Nezaplatené prepravné za vykonanú prepravu — vrátane prípadov, keď objednávateľ faktúru nerozporoval, len neplatí."
+      },
+      {
+        "title": "Špedície a zasielatelia",
+        "desc": "Nároky voči objednávateľovi aj vyjasnenie postavenia v reťazci objednávateľ — zasielateľ — dopravca."
+      },
+      {
+        "title": "Zahraniční veritelia",
+        "desc": "Poľské, litovské, české a iné zahraničné firmy, ktorých dlžník sídli na Slovensku. Konanie pred slovenskými súdmi a exekútormi vedieme za vás."
+      },
+      {
+        "title": "Krátené a sporné faktúry",
+        "desc": "Zrážky za omeškanie, poškodenie zásielky či nedodržanie podmienok objednávky. Posúdime, čo z uplatnených zrážok podľa Dohovoru CMR a zmluvy obstojí."
+      }
+    ],
+    "keyOverline": "Dve veci na začiatku",
+    "keyTitle": "Čo rozhoduje hneď v prvý deň",
+    "keyLead": "Ešte pred prvým listom treba vedieť dve veci: dokedy je nárok uplatniteľný a ktorým právom sa spravuje. Obe odpovede vychádzajú z Dohovoru CMR, publikovaného v Slovenskej republike vyhláškou ministra zahraničných vecí č. 11/1975 Zb. Dohovor sa podľa svojho čl. 1 ods. 1 vzťahuje na každú zmluvu o preprave zásielok za odplatu cestným vozidlom, ak miesto prevzatia zásielky a predpokladané miesto jej dodania, ako sa uvádzajú v zmluve, ležia v dvoch rôznych štátoch, z ktorých aspoň jeden je zmluvným štátom Dohovoru — a to bez ohľadu na trvalé bydlisko a štátnu príslušnosť strán.",
+    "key": [
+      {
+        "title": "Premlčanie podľa čl. 32 Dohovoru CMR",
+        "desc": "Podľa čl. 32 ods. 1 Dohovoru sa nároky z prepráv, na ktoré sa Dohovor vzťahuje, premlčujú za jeden rok; v prípade úmyslu alebo takého zavinenia, ktoré sa podľa práva konajúceho súdu považuje za rovnocenné s úmyslom, je lehota trojročná. Pri nároku na zaplatenie prepravného nejde o stratu, poškodenie ani prekročenie dodacej lehoty, preto sa uplatní čl. 32 ods. 1 písm. c): lehota začína plynúť uplynutím troch mesiacov odo dňa uzavretia prepravnej zmluvy, pričom deň, ktorým začína plynúť, sa do nej nepočíta. V praxi to znamená, že nárok môže byť premlčaný približne pätnásť mesiacov od uzavretia prepravnej zmluvy — teda od uzavretia zmluvy, nie od splatnosti faktúry.",
+        "note": "Otázka, či sa nárok dopravcu na zaplatenie prepravného spravuje jednoročnou lehotou podľa čl. 32 Dohovoru CMR, alebo všeobecnou štvorročnou premlčacou dobou podľa § 397 Obchodného zákonníka, nie je v odbornej praxi jednotne posudzovaná. Vzhľadom na túto neistotu je namieste vychádzať z kratšej lehoty."
+      },
+      {
+        "title": "Rozhodné právo podľa nariadenia Rím I",
+        "desc": "Ak si strany rozhodné právo nezvolili, určí sa podľa čl. 5 ods. 1 nariadenia Európskeho parlamentu a Rady (ES) č. 593/2008 (Rím I): rozhodným je právo krajiny obvyklého pobytu dopravcu, ak sa v tej istej krajine nachádza aj miesto prijatia alebo miesto určenia tovaru alebo obvyklý pobyt odosielateľa. Ak tieto požiadavky splnené nie sú, použije sa právo krajiny, v ktorej sa nachádza miesto dodania tovaru dohodnuté stranami. Podľa čl. 5 ods. 3 sa použije právo inej krajiny, ak má zmluva zjavne užšiu väzbu s ňou.",
+        "note": "Dohovor CMR má prednosť v rozsahu, v akom vec upravuje — vyplýva to z § 756 Obchodného zákonníka. Čl. 25 ods. 1 nariadenia Rím I zároveň ustanovuje, že nariadenie nemá vplyv na uplatňovanie medzinárodných dohovorov, ktorých zmluvnými stranami sú členské štáty a ktoré ustanovujú kolízne normy pre zmluvné záväzky. Rozhodné právo určené podľa nariadenia sa preto použije len na otázky, ktoré Dohovor neupravuje; samotný nárok dopravcu na prepravné medzi ne patrí."
+      },
+      {
+        "title": "Kde sa dá žalovať — čl. 31 Dohovoru CMR",
+        "desc": "Podľa čl. 31 ods. 1 Dohovoru môže žalobca viesť spor na súdoch zmluvného štátu určeného dohodou strán, na súdoch štátu, v ktorom má žalovaný trvalé bydlisko, hlavné sídlo podniku alebo pobočku či zastupiteľstvo, ktorých prostredníctvom bola prepravná zmluva uzavretá, alebo na súdoch štátu, v ktorom leží miesto prevzatia zásielky na prepravu alebo miesto určené na jej vydanie. Na iných súdoch spor viesť nemožno. Ak má dlžník sídlo v Slovenskej republike alebo sa tu zásielka vykladala, právomoc slovenských súdov je daná.",
+        "note": "Podľa čl. 71 ods. 1 nariadenia (EÚ) č. 1215/2012 (Brusel I bis) nemá nariadenie vplyv na dohovory, ktoré v osobitných veciach upravujú právomoc alebo uznávanie a výkon rozhodnutí; podľa čl. 71 ods. 2 písm. b) sa rozsudok vydaný na základe právomoci podľa takého dohovoru uznáva a vykonáva v ostatných členských štátoch podľa tohto nariadenia. Ak dohovor sám ustanovuje podmienky uznania alebo výkonu — čl. 31 ods. 3 Dohovoru CMR viaže vykonateľnosť v ďalších zmluvných štátoch na splnenie predpísaných formalít —, použijú sa tieto podmienky; ustanovenia nariadenia o uznávaní a výkone rozhodnutí, a teda aj výkon bez doložky vykonateľnosti, však možno použiť v každom prípade."
+      }
+    ],
+    "stepsOverline": "Postup",
+    "stepsTitle": "Ako to prebieha",
+    "steps": [
+      {
+        "title": "Prevzatie a analýza",
+        "desc": "Prevezmeme objednávku prepravy, nákladný list CMR a faktúru. Overíme, či sa vec spravuje Dohovorom CMR, dokedy je nárok uplatniteľný a čo presne tvorí istinu."
+      },
+      {
+        "title": "Previerka dlžníka",
+        "desc": "Preveríme obchodný register, zverejnené účtovné závierky, prebiehajúce exekúcie, konkurzné a reštrukturalizačné konania. Z toho vyplynie, či má zmysel viesť konanie a v akom poradí postupovať."
+      },
+      {
+        "title": "Predžalobná výzva",
+        "desc": "Pripravíme a odošleme výzvu na zaplatenie s vyčíslením istiny, úrokov z omeškania a paušálnej náhrady nákladov spojených s uplatnením pohľadávky. Výzva je zároveň podkladom pre ďalšie kroky."
+      },
+      {
+        "title": "Upomínacie konanie",
+        "desc": "Ak dlžník nezaplatí, podáme návrh v upomínacom konaní podľa zákona č. 307/2016 Z. z. Návrh sa podáva výlučne elektronicky; kauzálne príslušný je Okresný súd Banská Bystrica. Ak by sa platobný rozkaz mal doručovať žalovanému do cudziny, tento návrh prípustný nie je (§ 3 ods. 6 písm. d) zákona) — vtedy prichádza do úvahy európsky platobný rozkaz podľa nariadenia (ES) č. 1896/2006. Návrh nie je prípustný ani vtedy, ak sa uplatňuje dohodnutý úrok z omeškania vo výške, ktorá o viac ako päť percentuálnych bodov presahuje sadzbu, ktorá by sa použila bez takej dohody (§ 3 ods. 5 písm. a) zákona)."
+      },
+      {
+        "title": "Platobný rozkaz alebo odpor",
+        "desc": "Súd vydá platobný rozkaz najneskôr do desiatich pracovných dní od splnenia procesných podmienok vrátane poplatkovej povinnosti. Žalovaný má od doručenia platobného rozkazu 15 dní na zaplatenie alebo na podanie vecne odôvodneného odporu. Ak odpor nepodá, platobný rozkaz má účinky právoplatného rozsudku; ak ho podá, vyjadríme sa k nemu a v 15-dňovej lehote navrhneme pokračovanie v konaní na súde príslušnom podľa Civilného sporového poriadku."
+      },
+      {
+        "title": "Exekúcia",
+        "desc": "S právoplatným a vykonateľným rozhodnutím podáme návrh na vykonanie exekúcie. Na exekučné konanie je kauzálne príslušný Okresný súd Banská Bystrica, ktorý vec pridelí exekútorovi náhodným výberom — oprávnený si exekútora nevyberá."
+      },
+      {
+        "title": "Eskalácia — konkurz",
+        "desc": "Ak sa ukáže, že dlžník neplní viacerým veriteľom, prichádza do úvahy návrh na vyhlásenie konkurzu a uplatnenie zodpovednosti štatutárneho orgánu za škodu spôsobenú nepodaním návrhu včas. Každý takýto krok posudzujeme samostatne: podľa § 11 ods. 4 zákona č. 7/2005 Z. z. veriteľ zodpovedá dlžníkovi aj iným osobám za škodu, ktorá im vznikla v súvislosti s účinkami začatia konkurzného konania, ak súd konanie začaté na jeho návrh zastaví pre osvedčenie platobnej schopnosti dlžníka a veriteľ nepreukáže, že pri podávaní návrhu postupoval s odbornou starostlivosťou. Návrh na konkurz preto nie je nástrojom nátlaku."
+      }
+    ],
+    "docsOverline": "Podklady",
+    "docsTitle": "Čo od vás potrebujeme",
+    "docsLead": "Vo väčšine vecí stačí päť dokumentov. Pošlite ich ako skeny alebo fotografie; originály zatiaľ netreba.",
+    "docs": [
+      "Objednávku prepravy alebo prepravnú zmluvu — vrátane e-mailovej komunikácie, ktorou bola uzavretá.",
+      "Nákladný list CMR, vrátane potvrdenia príjemcu o prevzatí zásielky.",
+      "Faktúru za prepravné a doklad o jej odoslaní dlžníkovi.",
+      "Potvrdenie dodania zásielky, prípadne ďalšie prepravné doklady.",
+      "Korešpondenciu s dlžníkom — upomienky, reklamácie, oznámené zrážky, čiastočné úhrady."
+    ],
+    "priceOverline": "Cena",
+    "priceTitle": "Koľko to stojí",
+    "priceLead": "Rozsah aj odmenu dohodneme vopred a písomne. Cenu za posúdenie aj za predžalobnú výzvu poznáte skôr, než začneme pracovať.",
+    "price": [
+      {
+        "label": "Posúdenie veci",
+        "value": "pevná cena dohodnutá vopred",
+        "desc": "Prejdeme podklady, overíme premlčanie a rozhodné právo a napíšeme, aký postup navrhujeme. Cenu vám oznámime pred začatím práce; ak sa rozhodnete nepokračovať, vec sa tým končí."
+      },
+      {
+        "label": "Predžalobná výzva",
+        "value": "pevná cena za úkon",
+        "desc": "Príprava a odoslanie výzvy na zaplatenie vrátane vyčíslenia úrokov z omeškania a paušálnej náhrady nákladov. Dohodnutá pevnou sumou za úkon, nie hodinovou sadzbou."
+      },
+      {
+        "label": "Zastupovanie v konaní",
+        "value": "pevná cena alebo podielová odmena",
+        "desc": "Podielovú odmenu možno podľa § 7 ods. 1 vyhlášky Ministerstva spravodlivosti SR č. 655/2004 Z. z. dohodnúť vo forme percentuálneho podielu na hodnote veci; podľa § 7 ods. 2 nesmie jej maximálna výška presiahnuť 20 % z hodnoty veci. Nárok na ňu vzniká podľa § 8 ods. 1 vyhlášky len vtedy, ak mal klient plný úspech vo veci; pri čiastočnom úspechu patrí advokátovi podľa § 8 ods. 2 tarifná odmena vo výške určenej podľa miery úspechu vo veci, a ak klient nemal ani čiastočný úspech, advokát môže podľa § 8 ods. 3 požadovať iba náhradu hotových výdavkov."
+      }
+    ],
+    "priceNote": "Popri odmene advokáta vznikajú hotové výdavky, najmä súdne poplatky. V upomínacom konaní je súdny poplatok podľa § 11c ods. 1 zákona č. 71/1992 Zb. o súdnych poplatkoch 50 % z percentnej sadzby ustanovenej v sadzobníku; základná sadzba podľa položky 1 písm. a) sadzobníka je 6 % z hodnoty predmetu sporu, v upomínacom konaní teda 3 %, najmenej však 25 eur a najviac 25 000 eur, v obchodných veciach najviac 50 000 eur. Súd na zaplatenie nevyzýva a ak poplatková povinnosť nie je splnená do 15 dní od podania návrhu, na návrh sa neprihliada. Súdny poplatok z návrhu na vykonanie exekúcie je podľa položky 13 písm. a) sadzobníka 25 eur. Výsledok konania závisí od okolností konkrétneho prípadu, najmä od majetkových pomerov dlžníka.",
+    "formOverline": "Bez záväzku",
+    "formTitle": "Pošlite nám podklady k pohľadávke",
+    "formLead": "Napíšte nám, o akú prepravu ide a čo vám objednávateľ neuhradil. Ozveme sa a navrhneme ďalší postup. Odoslanie formulára nezakladá poskytnutie právnej služby ani vznik zmluvného vzťahu.",
+    "faqOverline": "Otázky a odpovede",
+    "faqTitle": "Časté otázky",
+    "faq": [
+      {
+        "q": "Dokedy môžeme nezaplatené prepravné uplatniť?",
+        "a": "Podľa čl. 32 ods. 1 Dohovoru CMR je základná premlčacia lehota jeden rok. Pri nároku na zaplatenie prepravného sa uplatní písm. c): lehota začína plynúť uplynutím troch mesiacov odo dňa uzavretia prepravnej zmluvy, pričom deň, ktorým začína plynúť, sa do nej nepočíta. Nárok tak môže byť premlčaný približne pätnásť mesiacov od uzavretia prepravnej zmluvy, nie od splatnosti faktúry. Otázka, či sa na prepravné vzťahuje táto lehota alebo všeobecná štvorročná doba podľa § 397 Obchodného zákonníka, nie je v odbornej praxi jednotne posudzovaná — preto je namieste vychádzať z kratšej lehoty. Podľa čl. 32 ods. 4 Dohovoru sa premlčané nároky už nemôžu uplatňovať ani vzájomnou žalobou, ani námietkami."
+      },
+      {
+        "q": "Môžeme slovenského odberateľa žalovať na Slovensku?",
+        "a": "Podľa čl. 31 ods. 1 Dohovoru CMR môže žalobca viesť spor okrem iného na súdoch štátu, v ktorom má žalovaný hlavné sídlo podniku, a na súdoch štátu, v ktorom leží miesto prevzatia zásielky na prepravu alebo miesto určené na jej vydanie; na iných súdoch spor viesť nemožno. Ak má dlžník sídlo v Slovenskej republike alebo sa tu zásielka vykladala, právomoc slovenských súdov je daná. Podľa čl. 31 ods. 5 Dohovoru nemožno od občanov zmluvných štátov, ktorí majú v niektorom z týchto štátov bydlisko alebo sídlo podniku, požadovať zloženie záruky na zabezpečenie nákladov súdneho konania."
+      },
+      {
+        "q": "Ktorým právom sa vec spravuje, ak sme si rozhodné právo nezvolili?",
+        "a": "Prednosť má Dohovor CMR v rozsahu, v akom vec upravuje; vyplýva to z § 756 Obchodného zákonníka a čl. 25 ods. 1 nariadenia Rím I ponecháva uplatňovanie takých dohovorov nedotknuté. Otázky, ktoré Dohovor neupravuje — vrátane samotného nároku na zaplatenie prepravného —, sa spravujú právom určeným podľa čl. 5 ods. 1 nariadenia Rím I: právom krajiny obvyklého pobytu dopravcu, ak sa v tej istej krajine nachádza aj miesto prijatia alebo miesto určenia tovaru alebo obvyklý pobyt odosielateľa; ak tieto požiadavky splnené nie sú, právom krajiny, v ktorej sa nachádza miesto dodania tovaru dohodnuté stranami."
+      },
+      {
+        "q": "Môžeme popri istine žiadať aj úroky a náklady?",
+        "a": "Podľa § 369 ods. 1 Obchodného zákonníka vzniká veriteľovi, ktorý si splnil svoje zákonné a zmluvné povinnosti, právo na úroky z omeškania bez potreby osobitného upozornenia. Ak ich výška nebola dohodnutá, platí podľa § 369 ods. 2 Obchodného zákonníka sadzba ustanovená nariadením vlády SR č. 21/2013 Z. z.: podľa § 1 ods. 1 základná úroková sadzba Európskej centrálnej banky platná k prvému dňu príslušného kalendárneho polroka omeškania zvýšená o osem percentuálnych bodov, alebo — ak veriteľ zvolí fixný variant podľa § 1 ods. 2 — základná sadzba platná k prvému dňu omeškania zvýšená o deväť percentuálnych bodov. Aktuálnu základnú úrokovú sadzbu Európskej centrálnej banky treba overiť k rozhodnému dňu. Popri úrokoch vzniká podľa § 369c ods. 1 Obchodného zákonníka aj právo na paušálnu náhradu nákladov spojených s uplatnením pohľadávky; podľa § 2 nariadenia vlády č. 21/2013 Z. z. je to 40 eur jednorazovo bez ohľadu na dĺžku omeškania."
+      },
+      {
+        "q": "Ako rýchlo súd rozhodne a čo sa stane, ak dlžník podá odpor?",
+        "a": "V upomínacom konaní podľa zákona č. 307/2016 Z. z. vydá súd platobný rozkaz najneskôr do desiatich pracovných dní od splnenia procesných podmienok vrátane poplatkovej povinnosti. Žalovaný má od doručenia platobného rozkazu 15 dní na zaplatenie alebo na podanie odporu, ktorý musí byť vecne odôvodnený; odpor bez vecného odôvodnenia súd odmietne. Ak odpor podaný nebol, platobný rozkaz má účinky právoplatného rozsudku. Ak podaný bol, treba sa k nemu do 15 dní vyjadriť a v tej istej lehote navrhnúť pokračovanie v konaní na súde príslušnom podľa Civilného sporového poriadku, inak sa konanie zastavuje."
+      },
+      {
+        "q": "Čo ak dlžník nemá majetok?",
+        "a": "Exekúciu vykoná exekútor, ktorého poverí Okresný súd Banská Bystrica náhodným výberom; oprávnený si exekútora nevyberá. Ak dlžník neplní viac ako 90 dní aspoň dva peňažné záväzky viac ako jednému veriteľovi a bol jedným z týchto veriteľov písomne vyzvaný na zaplatenie, možno podľa § 11 ods. 3 zákona č. 7/2005 Z. z. odôvodnene predpokladať jeho platobnú neschopnosť a podať návrh na vyhlásenie konkurzu. Podľa § 11a ods. 1 toho istého zákona zodpovedá osoba povinná podať návrh na vyhlásenie konkurzu v mene dlžníka za škodu spôsobenú veriteľom porušením povinnosti podať návrh včas; podľa § 11a ods. 3 sa, ak sa nepreukáže iná výška, predpokladá škoda v rozsahu, v akom pohľadávka veriteľa nebola uspokojená po zastavení konkurzného konania pre nedostatok majetku dlžníka, po zrušení konkurzu pre nedostatok majetku alebo po ukončení exekúcie vedenej voči dlžníkovi pre nedostatok majetku."
+      }
+    ],
+    "relatedTitle": "Súvisiace",
+    "sourcesTitle": "Právne predpisy, z ktorých vychádzame",
+    "sourcesLead": "Znenie predpisov je dostupné v Slov-Lexe a v EUR-Lexe. Uvedené informácie sú všeobecné a nenahrádzajú posúdenie konkrétnej veci.",
+    "sources": [
+      {
+        "label": "Vyhláška ministra zahraničných vecí č. 11/1975 Zb. — Dohovor CMR",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1975/11/"
+      },
+      {
+        "label": "Zákon č. 513/1991 Zb. — Obchodný zákonník",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "Nariadenie vlády SR č. 21/2013 Z. z.",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2013/21/"
+      },
+      {
+        "label": "Zákon č. 307/2016 Z. z. o upomínacom konaní",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2016/307/"
+      },
+      {
+        "label": "Zákon č. 71/1992 Zb. o súdnych poplatkoch",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "Zákon č. 233/1995 Z. z. — Exekučný poriadok",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1995/233/"
+      },
+      {
+        "label": "Zákon č. 7/2005 Z. z. o konkurze a reštrukturalizácii",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/7/"
+      },
+      {
+        "label": "Vyhláška MS SR č. 655/2004 Z. z. o odmenách advokátov",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/655/"
+      },
+      {
+        "label": "Nariadenie (ES) č. 593/2008 — Rím I",
+        "url": "https://eur-lex.europa.eu/legal-content/SK/TXT/HTML/?uri=CELEX:32008R0593"
+      },
+      {
+        "label": "Nariadenie (EÚ) č. 1215/2012 — Brusel I bis",
+        "url": "https://eur-lex.europa.eu/legal-content/SK/TXT/HTML/?uri=CELEX:32012R1215"
+      },
+      {
+        "label": "Nariadenie (ES) č. 1896/2006 — európsky platobný rozkaz",
+        "url": "https://eur-lex.europa.eu/legal-content/SK/TXT/HTML/?uri=CELEX:32006R1896"
+      }
+    ]
   },
   "consent": {
     "text": "Používame cookies — nevyhnutné na fungovanie webu a, s vaším súhlasom, na meranie návštevnosti a marketing.",

@@ -105,6 +105,53 @@
   margin: 0;
 }
 
+/* ---------- Formulár ---------- */
+
+.formSection {
+  background: var(--color-surface);
+  padding-block: 78px;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 90px;
+}
+.formInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.formTitle {
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-strong);
+  margin: 6px 0 14px;
+}
+.formLead {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin: 0;
+}
+.formContact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.formContact a {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--accent);
+  text-decoration: none;
+}
+.formContact a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   .helpGrid {
     grid-template-columns: 1fr;
@@ -117,5 +164,18 @@
   }
   .remoteSection {
     padding-block: 60px;
+  }
+  .formInner {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  .formSection {
+    padding-block: 56px;
+  }
+  .formTitle {
+    font-size: 28px;
   }
 }

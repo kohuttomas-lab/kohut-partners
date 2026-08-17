@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeAlternates } from "@/lib/seo";
+import { LegalServiceSchema } from "@/components/seo/LegalServiceSchema";
 import { PageHero } from "@/components/layout/PageHero";
-import { Container, SectionHead } from "@/components/layout/Section";
+import { Container, SectionHead, Overline } from "@/components/layout/Section";
 import { Card } from "@/components/ui/Card";
 import { CTABand } from "@/components/layout/CTABand";
+import { ContactForm } from "@/components/sections/ContactForm";
+import { CONTACT } from "@/lib/content";
 import { Check, Shield } from "@/components/icons";
 import styles from "./international.module.css";
 
@@ -35,6 +38,11 @@ export default async function InternationalPage(props: Props) {
 
   return (
     <>
+      {/* Stránka cieli na klientov mimo Slovenska, ktorých vec sa spravuje
+          slovenským právom — areaServed preto pokrýva celú krajinu, nie
+          zoznam miest v okolí Zvolena. */}
+      <LegalServiceSchema locale={locale} nationwide />
+
       <PageHero overline={t("heroOverline")} title={t("heroTitle")} lead={t("heroLead")} />
 
       <section className={styles.helpSection}>
@@ -81,6 +89,27 @@ export default async function InternationalPage(props: Props) {
               <div className={styles.scopeTitle}>{t("scopeTitle")}</div>
               <p className={styles.scopeText}>{t("scopeText")}</p>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Formulár priamo na stránke — dovtedy bola jedinou konverznou cestou
+          rezervácia videohovoru cez tlačidlo v CTA páse. */}
+      <section className={styles.formSection} id="contact-form">
+        <Container className={styles.formInner}>
+          {/* Bez triedy — .formCopy v CSS module neexistuje, `styles.formCopy`
+              by bolo undefined a atribút class by sa aj tak nevypísal. */}
+          <div>
+            <Overline>{t("formOverline")}</Overline>
+            <h2 className={styles.formTitle}>{t("formTitle")}</h2>
+            <p className={styles.formLead}>{t("formLead")}</p>
+            <div className={styles.formContact}>
+              <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}>{CONTACT.phone}</a>
+              <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+            </div>
+          </div>
+          <div>
+            <ContactForm />
           </div>
         </Container>
       </section>
