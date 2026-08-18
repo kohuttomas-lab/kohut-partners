@@ -64,6 +64,9 @@ export default async function ServiceDetailPage(props: Props) {
     ...(id === "spory"
       ? [{ href: "/transport-debt-recovery", label: t("deepCmr") }]
       : []),
+    ...(id === "obchod"
+      ? [{ href: "/company-formation-residence", label: t("deepCfr") }]
+      : []),
   ];
 
   return (

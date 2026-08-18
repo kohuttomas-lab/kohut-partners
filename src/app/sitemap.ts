@@ -23,6 +23,7 @@ const STATIC: Href[] = [
   "/contact",
   "/international",
   "/transport-debt-recovery",
+  "/company-formation-residence",
   "/lawyer-zvolen",
   "/lawyer-detva",
   "/lawyer-krupina",

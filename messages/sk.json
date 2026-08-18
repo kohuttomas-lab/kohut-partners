@@ -99,6 +99,7 @@
     "bookForThis": "Konzultácia k tejto oblasti",
     "deepTopics": "Špecializované témy:",
     "deepCmr": "Vymáhanie prepravných pohľadávok (CMR)",
+    "deepCfr": "Založenie firmy a pobyt pre cudzincov",
     "packageCta": "Mám záujem"
   },
   "about": {
@@ -546,6 +547,174 @@
       {
         "label": "Nariadenie (ES) č. 1896/2006 — európsky platobný rozkaz",
         "url": "https://eur-lex.europa.eu/legal-content/SK/TXT/HTML/?uri=CELEX:32006R1896"
+      }
+    ]
+  },
+  "cfr": {
+    "metaTitle": "Založenie firmy a pobyt pre zahraničných podnikateľov",
+    "metaDescription": "Založenie s.r.o. a vybavenie pobytu alebo modrej karty EÚ pre jej konateľa — riešime spolu, podľa slovenského práva. Advokátska kancelária Zvolen.",
+    "heroOverline": "Pre zahraničných podnikateľov a zamestnancov",
+    "heroTitle": "Založenie firmy a pobyt — ako jedna vec, nie dve oddelené",
+    "heroLead": "Slovenskú s.r.o. založíte na diaľku bez väčších prekážok. Viesť ju ako konateľ mimo EÚ alebo OECD už nie — na to treba samostatný pobyt, o ktorý sa žiada podľa inej časti toho istého zákona. Vybavujeme oboje spolu, aby jedno nečakalo na druhé.",
+    "heroPara": [
+      "Zastupujeme zakladateľov slovenských firiem, vysokokvalifikovaných zamestnancov žiadajúcich o modrú kartu EÚ, aj štátnych príslušníkov tretích krajín žiadajúcich o pobyt na účel zamestnania.",
+      "Poskytujeme výhradne poradenstvo podľa slovenského práva a zastupujeme vás pred slovenským obchodným registrom, daňovým úradom a cudzineckou políciou."
+    ],
+    "heroCta": "Opíšte nám vašu situáciu",
+    "whoOverline": "Pre koho je táto stránka",
+    "whoTitle": "Tri východiská, jeden cieľ",
+    "whoLead": "Správny postup závisí od toho, prečo potrebujete byť na Slovensku — ako konateľ, ako zamestnanec, alebo ako vysokokvalifikovaný špecialista. Skôr než niečo podáme, zistíme, ktorý z nich sedí na váš prípad.",
+    "who": [
+      {
+        "title": "Konateľ slovenskej s.r.o. mimo EÚ/OECD",
+        "desc": "Občan EÚ alebo štátu OECD môže byť konateľom slovenskej spoločnosti bez akejkoľvek podmienky pobytu. Konateľ z inej krajiny potrebuje prechodný pobyt na účel podnikania — to je najčastejší zádrhel pri zakladaní firmy pre zahraničného zakladateľa."
+      },
+      {
+        "title": "Vysokokvalifikovaní zamestnanci — modrá karta EÚ",
+        "desc": "Vysokoškolské vzdelanie v príslušnom odbore (v IT postačí aj päť rokov relevantnej praxe), pracovná ponuka minimálne na rok a mzda nad zákonnú hranicu spĺňajú podmienky na zrýchlené konanie o modrej karte EÚ."
+      },
+      {
+        "title": "Pobyt na účel zamestnania",
+        "desc": "Ak pozícia nespĺňa podmienky modrej karty, žiadame o štandardný prechodný pobyt na účel zamestnania, vrátane vnútropodnikového presunu."
+      },
+      {
+        "title": "Existujúca firma so zaseknutým konateľom",
+        "desc": "Ak je vaša s.r.o. už založená, ale jej konateľ mimo EÚ nezíska alebo si nevie predĺžiť pobyt, overíme, prečo žiadosť neprešla, a podáme ju znova."
+      }
+    ],
+    "keyOverline": "Tri právne cesty",
+    "keyTitle": "Ktorý pobyt sa týka vás",
+    "keyLead": "Všetky tri cesty upravuje ten istý zákon o pobyte cudzincov, ale podmienky, požadované doklady aj dĺžka pobytu sa medzi nimi výrazne líšia.",
+    "key": [
+      {
+        "title": "Prechodný pobyt na účel podnikania",
+        "desc": "Podľa § 22 ods. 1 zákona č. 404/2011 Z. z. o pobyte cudzincov sa tento pobyt udeľuje štátnemu príslušníkovi tretej krajiny, ktorý podniká ako fyzická osoba, alebo koná v mene slovenskej obchodnej spoločnosti či družstva — spravidla ako jej konateľ — bez toho, aby v nej bol v pracovnom pomere. Udeľuje sa na predpokladanú dobu činnosti, najviac na tri roky naraz.",
+        "note": "Na predĺženie treba preukázať zdaniteľný príjem z podnikania za predchádzajúce zdaňovacie obdobie vo výške aspoň dvadsaťnásobku životného minima a doklad o zdravotnom poistení na Slovensku počas celého pobytu. Od roku 2026 sa pri konateľoch s.r.o. namiesto zisku posudzuje výška skutočne zaplatenej dane — s tým treba počítať už pri prvom daňovom priznaní firmy, nie až dodatočne."
+      },
+      {
+        "title": "Modrá karta EÚ",
+        "desc": "§ 37 a 38 zákona, ktorými sa transponuje smernica (EÚ) 2021/1883, upravujú samostatné zrýchlené konanie pre vysokokvalifikované zamestnanie: vysokoškolské vzdelanie v príslušnom odbore, alebo pri pozíciách v IT aspoň päť rokov relevantnej praxe, spolu so záväznou ponukou alebo pracovnou zmluvou minimálne na rok a hrubou mzdou vo výške aspoň 1,5-násobku priemernej hrubej mzdy v SR.",
+        "note": "Polícia rozhoduje do 30 dní, oproti 90 dňom pri štandardnom povolení na zamestnanie. Modrá karta navyše prináša mobilitu v rámci EÚ a kratšiu cestu k trvalému pobytu — oplatí sa overiť aj tam, kde by prichádzal do úvahy aj bežný pracovný pobyt."
+      },
+      {
+        "title": "Prechodný pobyt na účel zamestnania",
+        "desc": "§ 23 zákona upravuje štandardnú cestu: zamestnávateľ najprv nahlási voľné pracovné miesto, úrad práce vydá povolenie na zamestnanie a až potom rozhoduje cudzinecká polícia o pobyte — najviac päť rokov pri bežnej pozícii, najviac tri roky pri vnútropodnikovom presune manažéra či špecialistu, jeden rok pri presunutom zamestnancovi a najviac 240 dní v priebehu 12 po sebe nasledujúcich mesiacov pri sezónnom zamestnaní.",
+        "note": "Počítajte s tromi až štyrmi mesiacmi pred plánovaným nástupom. Potvrdenie Sociálnej poisťovne nesmie byť pri podaní staršie ako 30 dní a výpis z registra trestov nie starší ako 90 dní — obe lehoty vypršia skôr, než niektorí žiadatelia stihnú skompletizovať zvyšok spisu."
+      }
+    ],
+    "stepsOverline": "Postup",
+    "stepsTitle": "Ako obe veci postupujú spolu",
+    "steps": [
+      {
+        "title": "Posúdenie",
+        "desc": "Zistíme, ktorá z troch ciest sedí na vašu situáciu, ako má vyzerať štruktúra slovenskej firmy a aké doklady bude vyžadovať každý úrad."
+      },
+      {
+        "title": "Založenie firmy",
+        "desc": "Ak firma ešte neexistuje, pripravíme zakladateľské dokumenty a podáme návrh na registráciu na diaľku na základe plnomocenstva — na podpis nemusíte byť na Slovensku."
+      },
+      {
+        "title": "Žiadosť o pobyt",
+        "desc": "Pripravíme žiadosť vrátane potvrdení od firmy a podáme ju na cudzineckej polícii. Kde treba, prevedieme vás overovaním dokladov v zahraničí alebo apostilou."
+      },
+      {
+        "title": "Rozhodnutie a registrácie",
+        "desc": "Po udelení pobytu vybavíme, čo nasleduje na strane firmy — podnikateľský účet, daňovú registráciu a prípadne sídlo."
+      },
+      {
+        "title": "Predĺženie",
+        "desc": "Strážime termíny predĺženia aj doklady, ktoré každá cesta vyžaduje — zdaniteľný príjem, zaplatenú daň alebo mzdový prah modrej karty — aby pobyt nezanikol."
+      }
+    ],
+    "docsOverline": "Podklady",
+    "docsTitle": "Čo od vás zvyčajne potrebujeme",
+    "docsLead": "Presný zoznam závisí od toho, ktorá cesta sa vás týka; týchto päť pokrýva väčšinu prípadov na začiatku.",
+    "docs": [
+      "Platný cestovný doklad s platnosťou aspoň šesť mesiacov po plánovanom skončení pobytu.",
+      "Výpis z registra trestov domovskej krajiny (a každej krajiny pobytu za posledné tri roky), overený apostilou alebo inak legalizovaný, kde treba — nie starší ako 90 dní pri podaní.",
+      "Doklad o zabezpečenom ubytovaní na Slovensku.",
+      "Pri podnikateľskej ceste: výpis z obchodného registra (po založení firmy) alebo návrh zakladateľských dokumentov.",
+      "Pri zamestnaneckých cestách: pracovná zmluva alebo záväzná ponuka, a pri modrej karte doklad o kvalifikácii (diplom, v IT doklad o relevantnej praxi)."
+    ],
+    "priceOverline": "Odmena",
+    "priceTitle": "Koľko to stojí",
+    "priceLead": "Rozsah aj odmenu dohodneme vopred a písomne, za každú časť veci samostatne.",
+    "price": [
+      {
+        "label": "Založenie firmy",
+        "value": "299 € paušál",
+        "desc": "Kompletné založenie vrátane zápisu do obchodného registra a vybavenia živností — rovnaká cena, akú ponúkame pri založení akejkoľvek slovenskej s.r.o."
+      },
+      {
+        "label": "Žiadosť o pobyt",
+        "value": "pevná odmena dohodnutá vopred",
+        "desc": "Posúdenie, ktorá cesta sa vás týka, príprava žiadosti a zastupovanie pred cudzineckou políciou. Cenu oznámime, len čo vieme, ktorá z troch ciest sa vás týka."
+      },
+      {
+        "label": "Náklady tretích strán",
+        "value": "fakturujú sa samostatne, v skutočnej výške",
+        "desc": "Súdne a správne poplatky, súdne overené preklady, kde treba, a sídlo firmy, ak ho využijete — viď nižšie."
+      }
+    ],
+    "priceNote": "Právne zastupovanie vybavujeme sami; účtovníctvo, sídlo firmy, sprostredkovanie zamestnania ani zabezpečenie ubytovania vo vlastnej réžii neposkytujeme. Kde niečo z toho potrebujete, odporučíme vám konkrétneho, samostatne licencovaného partnera — jeho faktúra je oddelená od našej, nikdy nie je súčasťou našej odmeny. Vďaka tomu ostáva každá služba pod licenciou, ktorá ju naozaj pokrýva, a naše odporúčanie nie je zaťažené žiadnym záujmom na provízii.",
+    "formOverline": "Nezáväzne",
+    "formTitle": "Napíšte nám o vašej situácii",
+    "formLead": "Napíšte, či už máte slovenskú firmu, akú v nej máte alebo budete mať úlohu, a odkiaľ žiadate. Ozveme sa a povieme, ktorá cesta sa vás týka. Odoslaním formulára nevzniká vzťah advokát – klient.",
+    "faqOverline": "Časté otázky",
+    "faqTitle": "Časté otázky",
+    "faq": [
+      {
+        "q": "Môžem vlastniť slovenskú firmu bez toho, aby som žil na Slovensku?",
+        "a": "Áno. Vlastníctvo nenesie žiadnu podmienku pobytu pre nikoho. Podmienka pobytu vzniká len pre konateľa, ak nie je občanom EÚ alebo štátu OECD — vtedy § 22 zákona č. 404/2011 Z. z. vyžaduje prechodný pobyt na účel podnikania. Spoločník mimo EÚ/OECD, ktorý nie je konateľom, nepotrebuje pobyt vôbec."
+      },
+      {
+        "q": "Musím firmu založiť pred žiadosťou o pobyt, alebo naopak?",
+        "a": "V praxi musí firma existovať, alebo aspoň byť podaná na registráciu, aby žiadosť o pobyt vedela preukázať, čo bude konateľ na Slovensku robiť. Oba kroky poskladáme tak, aby bol spis o pobyt pripravený na podanie hneď, ako sa firma zapíše, nie až s odstupom."
+      },
+      {
+        "q": "Aký je rozdiel medzi modrou kartou EÚ a bežným povolením na zamestnanie?",
+        "a": "Oboje oprávňuje na zamestnanie, ale modrá karta je vyhradená pre pozície spĺňajúce kvalifikačné a mzdové podmienky § 37 – 38 zákona č. 404/2011 Z. z. (transponujúceho smernicu (EÚ) 2021/1883): relevantné vysokoškolské vzdelanie — v IT aspoň päť rokov relevantnej praxe —, pracovná ponuka minimálne na rok a mzda aspoň 1,5-násobku priemernej hrubej mzdy na Slovensku. Tam, kde pozícia podmienky spĺňa, modrá karta rozhoduje rýchlejšie (30 dní oproti 90) a prináša mobilitu v rámci EÚ aj jednoduchšiu cestu k trvalému pobytu."
+      },
+      {
+        "q": "Môže so mnou prísť aj rodina?",
+        "a": "Zlúčenie rodiny je dostupné pri podnikateľskej aj zamestnaneckej ceste aj pri modrej karte, pričom modrá karta je zvyčajne najjednoduchšia. Posudzujeme ho spolu s hlavnou žiadosťou, nie až dodatočne."
+      },
+      {
+        "q": "Vybavujete aj účtovníctvo, sídlo firmy, pracovné povolenie pre zamestnancov, ktorých najmem, alebo ubytovanie?",
+        "a": "Nie, nie pod vlastnou strechou, a to zámerne. Každá z týchto vecí je samostatne regulovaná činnosť — účtovníctvo vyžaduje vlastnú registráciu, sprostredkovanie zamestnania za úhradu vyžaduje povolenie úradu práce podľa zákona č. 5/2004 Z. z. a poskytovateľ sídla nesie vlastné oznamovacie a od júna 2026 aj registračné povinnosti v systéme goAML. Odporučíme vám konkrétnych partnerov s príslušnou licenciou, s ich vlastnou, oddelenou faktúrou — nič si k nej nepripočítavame ani z nej neberieme províziu."
+      },
+      {
+        "q": "Ako dlho trvá celý proces?",
+        "a": "Samotné založenie firmy trvá jeden až dva týždne od podpisu dokumentov. Rozhodnutie o pobyte viažu zákonné lehoty — 30 dní pri modrej karte, najviac 90 dní pri štandardnom podnikateľskom alebo zamestnaneckom pobyte, hoci jednoduché spisy sa často rozhodnú skôr. Odporúčame začať so spisom o pobyt tri až štyri mesiace pred termínom, kedy potrebujete na Slovensku reálne pôsobiť."
+      }
+    ],
+    "relatedTitle": "Súvisiace",
+    "sourcesTitle": "Predpisy, z ktorých táto stránka vychádza",
+    "sourcesLead": "Úplné znenie každého predpisu nájdete na Slov-Lex a EUR-Lex. Finančné hranice viazané na životné minimum alebo priemernú mzdu sa každoročne menia — aktuálnu sumu treba overiť ku dňu podania. Uvedené informácie sú všeobecné a nenahrádzajú poradenstvo v konkrétnej veci.",
+    "sources": [
+      {
+        "label": "Zákon č. 404/2011 Z. z. o pobyte cudzincov",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2011/404/"
+      },
+      {
+        "label": "Smernica (EÚ) 2021/1883 — modrá karta EÚ",
+        "url": "https://eur-lex.europa.eu/legal-content/SK/TXT/?uri=CELEX:32021L1883"
+      },
+      {
+        "label": "Zákon č. 513/1991 Zb. — Obchodný zákonník",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "Zákon č. 530/2003 Z. z. o obchodnom registri",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2003/530/"
+      },
+      {
+        "label": "Zákon č. 5/2004 Z. z. o službách zamestnanosti",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/5/"
+      },
+      {
+        "label": "Zákon č. 297/2008 Z. z. o ochrane pred legalizáciou príjmov z trestnej činnosti",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2008/297/"
       }
     ]
   },

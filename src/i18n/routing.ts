@@ -27,6 +27,12 @@ export const routing = defineRouting({
       sk: "/vymahanie-prepravnych-pohladavok",
       en: "/transport-debt-recovery",
     },
+    // Zahraniční zakladatelia s.r.o. a žiadatelia o pobyt — dvojjazyčná
+    // téma z rovnakého dôvodu ako CMR: cieľová skupina je prevažne mimo SR.
+    "/company-formation-residence": {
+      sk: "/zalozenie-firmy-a-pobyt",
+      en: "/company-formation-residence",
+    },
     // Local-SEO city landing pages (target query: "advokát {mesto}").
     "/lawyer-zvolen": { sk: "/advokat-zvolen", en: "/lawyer-zvolen" },
     "/lawyer-detva": { sk: "/advokat-detva", en: "/lawyer-detva" },

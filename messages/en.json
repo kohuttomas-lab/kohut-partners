@@ -99,6 +99,7 @@
     "bookForThis": "Consultation on this area",
     "deepTopics": "Specialised topics:",
     "deepCmr": "CMR transport debt recovery",
+    "deepCfr": "Company formation and residence for foreigners",
     "packageCta": "I'm interested"
   },
   "about": {
@@ -546,6 +547,174 @@
       {
         "label": "Regulation (EC) No 1896/2006 — European order for payment",
         "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006R1896"
+      }
+    ]
+  },
+  "cfr": {
+    "metaTitle": "Company formation & residence permits for foreign entrepreneurs",
+    "metaDescription": "Form a Slovak s.r.o. and secure the residence permit or EU Blue Card that lets you run it — handled together, under Slovak law. Law firm in Zvolen, remote-friendly.",
+    "heroOverline": "For foreign entrepreneurs and employees",
+    "heroTitle": "Company formation and residence permits — handled as one matter",
+    "heroLead": "A Slovak s.r.o. is easy to form remotely. Running it as its director from outside the EU or OECD is not — that needs a separate residence permit, applied for under a different chapter of the same Act. We handle both together, so one doesn't stall on the other.",
+    "heroPara": [
+      "We act for founders forming a Slovak company, for highly qualified employees applying for the EU Blue Card, and for third-country nationals seeking a work-based residence permit.",
+      "We advise exclusively on Slovak law and represent you before the Slovak commercial register, the tax authority and the foreign police (cudzinecká polícia)."
+    ],
+    "heroCta": "Describe your situation",
+    "whoOverline": "Who this is for",
+    "whoTitle": "Three starting points, one destination",
+    "whoLead": "The right procedure depends on why you need to be in Slovakia — as a director, as an employee, or as a highly qualified specialist. We work out which one fits before we file anything.",
+    "who": [
+      {
+        "title": "Non-EU/OECD director of a Slovak s.r.o.",
+        "desc": "EU and OECD nationals can act as director of a Slovak company without any residence condition. A director from any other country needs a temporary residence permit for business purposes — this is the single most common snag in forming a company for a non-EU founder."
+      },
+      {
+        "title": "Highly qualified employees — EU Blue Card",
+        "desc": "A university degree in the relevant field (or, in IT, at least five years of equivalent experience), a job offer of at least one year and a salary above the statutory threshold qualify for the fast-track EU Blue Card procedure."
+      },
+      {
+        "title": "Employment-based residence",
+        "desc": "Where the position does not qualify for the Blue Card, we apply for a standard temporary residence permit for employment, including intra-company transfers."
+      },
+      {
+        "title": "Existing companies with a stalled director",
+        "desc": "If your Slovak s.r.o. is already formed but its non-EU director cannot obtain or renew residence, we review why the application failed and refile."
+      }
+    ],
+    "keyOverline": "Three legal tracks",
+    "keyTitle": "Which permit applies to you",
+    "keyLead": "All three tracks run under the same Act on the Residence of Aliens, but the conditions, the evidence required and the length of the permit differ sharply between them.",
+    "key": [
+      {
+        "title": "Temporary residence for business purposes",
+        "desc": "Under Section 22(1) of Act No. 404/2011 Coll. on the Residence of Aliens, this permit is granted to a third-country national who carries on business as a self-employed person, or who acts on behalf of a Slovak trading company or cooperative — typically as its director — without being its employee. It is granted for the expected duration of the activity, up to three years at a time.",
+        "note": "Renewal requires proof of taxable income from the business for the preceding tax period of at least twenty times the subsistence minimum, and confirmation of health insurance in Slovakia for the whole period of residence. Since 2026 the renewal test for company directors looks at tax actually paid rather than profit shown — plan the company's first tax return with this in mind, not as an afterthought."
+      },
+      {
+        "title": "EU Blue Card",
+        "desc": "Sections 37 and 38 of the Act, transposing Directive (EU) 2021/1883, set out a dedicated fast-track permit for highly qualified employment: a university degree in the relevant field, or — for IT roles — at least five years of equivalent professional experience, together with a binding job offer or employment contract of at least one year and a gross salary of at least 1.5 times the average gross wage in Slovakia.",
+        "note": "The police authority decides within 30 days, against 90 days for a standard employment permit. The Blue Card also carries EU-wide labour mobility and a shorter path to permanent residence — worth checking even where a standard work permit would also be available."
+      },
+      {
+        "title": "Temporary residence for employment",
+        "desc": "Section 23 of the Act covers the standard route: an employer first advertises the vacancy, the labour office issues a work permit, and only then does the foreign police decide on residence — up to five years for an ordinary position, up to three years for an intra-company transfer as a manager or specialist, one year as a transferred employee, and up to 240 days within any 12 months for seasonal work.",
+        "note": "Budget three to four months before the planned start date. The Social Insurance Agency confirmation may not be older than 30 days and the criminal record extract not older than 90 days at the time of filing — both expire before some applicants have finished collecting the rest of the file."
+      }
+    ],
+    "stepsOverline": "Procedure",
+    "stepsTitle": "How the two matters run together",
+    "steps": [
+      {
+        "title": "Assessment",
+        "desc": "We establish which of the three tracks fits your situation, what the Slovak company structure needs to look like, and what evidence each authority will ask for."
+      },
+      {
+        "title": "Company formation",
+        "desc": "Where a company does not exist yet, we prepare the incorporation documents and file the registration remotely via power of attorney — you do not need to be in Slovakia to sign."
+      },
+      {
+        "title": "Residence application",
+        "desc": "We prepare the application file, including confirmations from the company, and file it with the foreign police. Where required, we guide you through certifying documents abroad or obtaining an apostille."
+      },
+      {
+        "title": "Decision and registration",
+        "desc": "Once residence is granted, we handle what follows on the company side — the business bank account, tax registration and, where relevant, the registered seat."
+      },
+      {
+        "title": "Renewal",
+        "desc": "We track the renewal deadlines and the evidence each track requires — taxable income, tax paid or the Blue Card salary threshold — so the permit does not lapse."
+      }
+    ],
+    "docsOverline": "Documents",
+    "docsTitle": "What we typically need",
+    "docsLead": "The exact list depends on which track applies; these five cover most matters at the outset.",
+    "docs": [
+      "Valid travel document, valid for at least six months beyond the intended stay.",
+      "Extract from the criminal record of your home country (and of any country of residence in the last three years), apostilled or otherwise legalised where required — not older than 90 days at filing.",
+      "Proof of secured accommodation in Slovakia.",
+      "For the business track: extract from the Slovak commercial register (once the company is formed) or the draft incorporation documents.",
+      "For the employment tracks: the employment contract or binding job offer, and — for the Blue Card — proof of qualification (diploma or, for IT, evidence of relevant experience)."
+    ],
+    "priceOverline": "Fees",
+    "priceTitle": "What it costs",
+    "priceLead": "The scope and the fee are agreed in advance and in writing, for each part of the matter separately.",
+    "price": [
+      {
+        "label": "Company formation",
+        "value": "299 € flat fee",
+        "desc": "Full formation including filing with the commercial register and arranging the trade licences — the same fee we quote for any Slovak s.r.o."
+      },
+      {
+        "label": "Residence permit application",
+        "value": "fixed fee agreed in advance",
+        "desc": "Assessing which track applies, preparing the application and representing you before the foreign police. Quoted once we know which of the three tracks fits your matter."
+      },
+      {
+        "label": "Third-party costs",
+        "value": "billed separately, at cost",
+        "desc": "Court and administrative fees, sworn translations where required, and the registered seat, if you use one — see below."
+      }
+    ],
+    "priceNote": "We handle the legal representation ourselves; we do not provide accounting, a registered seat, employment intermediation or accommodation sourcing in-house. Where you need one of these, we refer you to a named, independently licensed partner, and their invoice is separate from ours — never bundled into our fee. This keeps each service under the licence that actually covers it, and keeps our advice to you free of any referral interest.",
+    "formOverline": "No obligation",
+    "formTitle": "Tell us about your situation",
+    "formLead": "Tell us whether you already have a Slovak company, what your role in it is or will be, and where you are applying from. We will get back to you and set out which track applies. Submitting this form does not create a lawyer-client relationship.",
+    "faqOverline": "FAQ",
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "Can I own a Slovak company without living in Slovakia?",
+        "a": "Yes. Ownership carries no residence condition for anyone. A residence condition arises only for the director if the director is not an EU or OECD national — Section 22 of Act No. 404/2011 Coll. then requires a temporary residence permit for business purposes. A non-EU/OECD owner who is not the director needs no permit at all."
+      },
+      {
+        "q": "Do I need to found the company before I apply for residence, or the other way round?",
+        "a": "In practice the company has to exist, or at least be filed for registration, before the residence application can show what the director will be doing in Slovakia. We sequence the two so the residence file is ready to submit as soon as the company is registered, rather than waiting afterwards."
+      },
+      {
+        "q": "What is the difference between the EU Blue Card and a standard work permit?",
+        "a": "Both authorise employment, but the Blue Card is reserved for roles meeting the qualification and salary conditions of Sections 37–38 of Act No. 404/2011 Coll. (transposing Directive (EU) 2021/1883): a relevant university degree — or, in IT, at least five years' equivalent experience — a job offer of at least one year and a salary of at least 1.5 times the average gross wage in Slovakia. Where a role qualifies, the Blue Card decides faster (30 days against 90) and carries EU-wide mobility and an easier path to permanent residence."
+      },
+      {
+        "q": "Can my family come with me?",
+        "a": "Family reunification is available under both the business and employment tracks and under the Blue Card, with the Blue Card route generally the most straightforward. We assess it alongside the main application, not as an afterthought."
+      },
+      {
+        "q": "Do you handle accounting, the registered seat, a work permit for staff I hire, or finding accommodation?",
+        "a": "No, not under our own roof, and deliberately so. Each of those is a separately regulated activity — accounting requires its own registration, employment intermediation for payment requires a licence issued by the labour office under Act No. 5/2004 Coll., and a registered-seat provider carries its own disclosure and, since June 2026, goAML registration duties. We refer you to named partners who hold the relevant licence, with their own, separate invoice — we do not mark it up or take a referral fee."
+      },
+      {
+        "q": "How long does the whole process take?",
+        "a": "Forming the company itself takes one to two weeks once the documents are signed. The residence decision is bound by statutory deadlines — 30 days for the Blue Card, up to 90 days for the standard business or employment permit, though straightforward files are often decided sooner. We recommend starting the residence file three to four months before the date you need to be operating in Slovakia."
+      }
+    ],
+    "relatedTitle": "Related",
+    "sourcesTitle": "The legislation this page is based on",
+    "sourcesLead": "The full text of each instrument is available on Slov-Lex and EUR-Lex. Financial thresholds tied to the subsistence minimum or the average wage change each year — the current figure must be checked as at the date of filing. The information above is general and does not replace advice on an individual matter.",
+    "sources": [
+      {
+        "label": "Act No. 404/2011 Coll. on the Residence of Aliens",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2011/404/"
+      },
+      {
+        "label": "Directive (EU) 2021/1883 — EU Blue Card",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021L1883"
+      },
+      {
+        "label": "Act No. 513/1991 Coll. — Slovak Commercial Code",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "Act No. 530/2003 Coll. on the Commercial Register",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2003/530/"
+      },
+      {
+        "label": "Act No. 5/2004 Coll. on Employment Services",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/5/"
+      },
+      {
+        "label": "Act No. 297/2008 Coll. on Protection against Money Laundering",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2008/297/"
       }
     ]
   },
