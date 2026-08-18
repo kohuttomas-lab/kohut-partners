@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Script from "next/script";
 import { usePathname } from "@/i18n/navigation";
 import { CONSENT_EVENT, getConsent } from "@/lib/consent";
-import { GA_ID, ADS_ID, META_PIXEL_ID, pageview } from "@/lib/analytics";
+import { GA_ID, ADS_ID, META_PIXEL_ID, pageview, trackPhoneClick } from "@/lib/analytics";
 
 // Loads GA4 + Meta Pixel ONLY after the visitor accepts all cookies.
 // Until then nothing is injected (no non-essential cookies/scripts) — EU/SK compliant.
@@ -29,6 +29,20 @@ export function Analytics() {
     }
     pageview(window.location.pathname);
   }, [allowed, pathname]);
+
+  // Phone taps are a lead for a law firm, but the numbers live in server
+  // components (footer, contact page, city/campaign landing pages), so one
+  // delegated listener beats turning each of them into a client component.
+  useEffect(() => {
+    if (!allowed) return;
+    const onClick = (e: MouseEvent) => {
+      const el = e.target instanceof Element ? e.target : null;
+      if (!el?.closest('a[href^="tel:"]')) return;
+      trackPhoneClick(window.location.pathname);
+    };
+    document.addEventListener("click", onClick, true);
+    return () => document.removeEventListener("click", onClick, true);
+  }, [allowed]);
 
   if (!allowed) return null;
 
