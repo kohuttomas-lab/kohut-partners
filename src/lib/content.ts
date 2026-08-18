@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/routing";
+import { enArticleSlug } from "@/lib/article-slugs";
 
 /* ============================================================
    Domain content — services, team, blog, subscriptions,
@@ -603,6 +604,8 @@ export interface Article {
 }
 
 interface RawArticle {
+  /* Slovenský slug. Anglický slug je v `lib/article-slugs.ts` — nie tu, lebo ho
+     potrebuje aj klientsky prepínač jazyka a tento modul má 100+ kB textov. */
   id: string;
   cat: LangPair<string>;
   tone: "brand" | "accent";
@@ -1013,9 +1016,23 @@ const BLOG: RawArticle[] = [
   },
 ];
 
+/** Slug článku pre daný jazyk. Slovenčina vždy `id`, angličtina podľa mapy v lib/article-slugs.ts. */
+function articleSlug(a: RawArticle, locale: Locale): string {
+  return locale === "en" ? enArticleSlug(a.id) : a.id;
+}
+
+/* Vyhľadanie článku podľa slugu v danom jazyku. Zámerne prísne — v angličtine
+   matchujeme LEN anglický slug, aby stará adresa /en/blog/{slovenský-slug}
+   neostala živá ako duplicitný obsah. Tá dostane 301 (viď next.config.ts). */
+function findArticle(locale: Locale, slug: string): RawArticle | undefined {
+  return BLOG.find((a) => articleSlug(a, locale) === slug);
+}
+
 function localizeArticle(a: RawArticle, locale: Locale): Article {
   return {
-    id: a.id,
+    // `id` je slug v aktuálnom jazyku — odkazy v komponentoch tak vedú
+    // na správnu jazykovú adresu bez ďalšieho zásahu.
+    id: articleSlug(a, locale),
     category: a.cat[locale],
     tone: a.tone,
     read: a.read,
@@ -1031,13 +1048,35 @@ export function getBlog(locale: Locale): Article[] {
   return BLOG.map((a) => localizeArticle(a, locale));
 }
 
-export function getArticleIds(): string[] {
-  return BLOG.map((a) => a.id);
+/** Slugy článkov pre daný jazyk (pre generateStaticParams). */
+export function getArticleIds(locale: Locale): string[] {
+  return BLOG.map((a) => articleSlug(a, locale));
 }
 
 export function getArticle(locale: Locale, id: string): Article | undefined {
-  const a = BLOG.find((x) => x.id === id);
+  const a = findArticle(locale, id);
   return a ? localizeArticle(a, locale) : undefined;
+}
+
+/** Slovenský aj anglický slug jedného článku — pre hreflang a sitemap. */
+export interface ArticleSlugs {
+  sk: string;
+  en: string;
+}
+
+function slugsOf(a: RawArticle): ArticleSlugs {
+  return { sk: a.id, en: enArticleSlug(a.id) };
+}
+
+/** Dvojice slugov všetkých článkov (sitemap). */
+export function getArticleSlugPairs(): ArticleSlugs[] {
+  return BLOG.map(slugsOf);
+}
+
+/** Dvojica slugov pre článok nájdený podľa slugu v danom jazyku (hreflang). */
+export function getArticleSlugs(locale: Locale, id: string): ArticleSlugs | undefined {
+  const a = findArticle(locale, id);
+  return a ? slugsOf(a) : undefined;
 }
 
 /* The blog author byline. (The handoff prototype showed "Martin Kohút" here,

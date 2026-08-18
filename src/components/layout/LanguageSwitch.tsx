@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useLocale } from "next-intl";
 import { usePathname, getPathname } from "@/i18n/navigation";
 import { SK_ONLY_PATHNAMES, type AppPathname } from "@/i18n/routing";
+import { articleSlugIn } from "@/lib/article-slugs";
 import { Globe } from "@/components/icons";
 import { cx } from "@/lib/cx";
 import styles from "./LanguageSwitch.module.css";
@@ -29,10 +30,21 @@ export function LanguageSwitch({ className }: { className?: string }) {
   //
   // Slovenské-only cesty nemajú anglický náprotivok, tak vedú na domovskú
   // stránku v druhom jazyku namiesto do 404.
+  //
+  // Články majú v každom jazyku iný slug (mapa v lib/article-slugs.ts), takže
+  // samotný `params` z aktuálnej adresy nestačí — `id` treba preložiť. Bez toho
+  // vedie prepínač z anglického článku na /blog/{anglický-slug}, čo je 404;
+  // zo slovenského zas na /en/blog/{slovenský-slug}, čo je zbytočná 301.
+  // Zámerne sa mapuje len pathname článku, ostatné dynamické cesty (služby)
+  // majú slug v oboch jazykoch rovnaký.
   const skOnly = SK_ONLY_PATHNAMES.includes(pathname as AppPathname);
+  const otherParams =
+    pathname === "/blog/[id]" && typeof params.id === "string"
+      ? { ...params, id: articleSlugIn(params.id, locale, other) }
+      : params;
   const href = skOnly
     ? getPathname({ locale: other, href: "/" })
-    : getPathname({ locale: other, href: { pathname, params } as never });
+    : getPathname({ locale: other, href: { pathname, params: otherParams } as never });
 
   return (
     <a

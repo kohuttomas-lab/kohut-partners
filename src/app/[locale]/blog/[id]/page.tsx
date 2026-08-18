@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeAlternates, absoluteUrl, articleSchema, breadcrumbSchema, ogImageUrl } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
 import type { Locale } from "@/i18n/routing";
-import { getArticle, getArticleIds, BLOG_AUTHOR } from "@/lib/content";
+import { getArticle, getArticleIds, getArticleSlugs, BLOG_AUTHOR } from "@/lib/content";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/Section";
 import { Badge } from "@/components/ui/Badge";
@@ -15,18 +15,26 @@ import styles from "./article.module.css";
 
 type Props = { params: Promise<{ locale: string; id: string }> };
 
-export function generateStaticParams() {
-  return getArticleIds().map((id) => ({ id }));
+// Anglické články majú vlastný slug, takže sa zoznam líši podľa jazyka.
+// Rodičovský [locale]/layout.tsx generuje `locale` a táto funkcia beží raz pre
+// každý z nich — `params` je tu obyčajný objekt, nie Promise.
+export function generateStaticParams({ params }: { params: { locale: string } }) {
+  return getArticleIds(params.locale as Locale).map((id) => ({ id }));
 }
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale, id } = await props.params;
   const article = getArticle(locale as Locale, id);
-  if (!article) return {};
+  const slugs = getArticleSlugs(locale as Locale, id);
+  if (!article || !slugs) return {};
   return {
     title: article.title,
     description: article.excerpt,
-    alternates: localeAlternates(locale, { pathname: "/blog/[id]", params: { id } }),
+    // Hreflang musí spárovať slovenský slug s anglickým, nie ten istý dvakrát.
+    alternates: localeAlternates(locale, (l) => ({
+      pathname: "/blog/[id]",
+      params: { id: l === "en" ? slugs.en : slugs.sk },
+    })),
     openGraph: {
       type: "article",
       title: article.title,

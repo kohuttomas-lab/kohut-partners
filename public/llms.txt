@@ -30,3 +30,63 @@
 - Adresa: Námestie SNP 74/28, 960 01 Zvolen
 - Otváracie hodiny: Po–Pia 09:00–18:00
 - Jazyky: slovenčina, angličtina
+
+## English version (/en)
+
+The site has a full English branch under `/en` for international clients. It is
+not a separate practice: we advise exclusively under Slovak law, only in English.
+Slovak URLs have no prefix, English ones are prefixed with `/en`.
+
+### Firm (English)
+
+- **Who:** kohút & partners s.r.o., a law firm based in Zvolen, Slovakia (attorney Tomáš Kohút, Slovak Bar Association).
+- **For whom:** Slovak and foreign businesses (sole traders, s.r.o./LLC, a.s./JSC) and individuals.
+- **Approach:** plain-language explanation, prompt action and a price agreed in advance.
+- **Languages:** Slovak, English.
+
+### Main English pages
+
+- https://www.tkak.sk/en — Home
+- https://www.tkak.sk/en/services — Practice areas
+- https://www.tkak.sk/en/about — About the firm
+- https://www.tkak.sk/en/blog — Articles in English
+- https://www.tkak.sk/en/contact — Contact
+- https://www.tkak.sk/en/international-clients — Services for international clients (English-speaking, handled remotely)
+- https://www.tkak.sk/en/transport-debt-recovery — Recovering unpaid carriage charges from Slovak debtors under the CMR Convention; written for foreign hauliers and freight forwarders (the Slovak counterpart is /vymahanie-prepravnych-pohladavok)
+
+### Practice areas (English)
+
+- https://www.tkak.sk/en/services/insolvencie — Insolvency & restructuring in Slovakia
+- https://www.tkak.sk/en/services/obchod — Doing business in Slovakia (company formation, contracts, corporate)
+- https://www.tkak.sk/en/services/nehnutelnosti — Real estate in Slovakia
+- https://www.tkak.sk/en/services/spory — Litigation before Slovak courts and debt recovery
+- https://www.tkak.sk/en/services/trestne — Criminal defence in Slovakia
+- https://www.tkak.sk/en/services/it — IT, data & GDPR in Slovakia
+
+### Guides written for foreign clients
+
+- https://www.tkak.sk/en/blog/buying-property-slovakia — Buying property in Slovakia as a foreigner
+- https://www.tkak.sk/en/blog/company-formation-slovakia — Setting up a company in Slovakia
+- https://www.tkak.sk/en/blog/debt-recovery-slovakia — Recovering debt from a Slovak company
+
+### Offices by city (English)
+
+- https://www.tkak.sk/en/lawyer-zvolen — Lawyer in Zvolen (registered office)
+- https://www.tkak.sk/en/lawyer-detva — Lawyer in Detva
+- https://www.tkak.sk/en/lawyer-krupina — Lawyer in Krupina
+- https://www.tkak.sk/en/lawyer-banska-bystrica — Lawyer in Banská Bystrica
+- https://www.tkak.sk/en/lawyer-ziar-nad-hronom — Lawyer in Žiar nad Hronom
+
+### Legal pages (English)
+
+- https://www.tkak.sk/en/privacy — Privacy policy
+- https://www.tkak.sk/en/terms — Terms and conditions
+- https://www.tkak.sk/en/cookies — Cookie policy
+
+### Contact (English)
+
+- Web: https://www.tkak.sk/en
+- Phone: +421 907 823 239
+- E-mail: klienti@tkak.sk
+- Address: Námestie SNP 74/28, 960 01 Zvolen, Slovakia
+- Office hours: Mon–Fri 09:00–18:00 (CET/CEST)

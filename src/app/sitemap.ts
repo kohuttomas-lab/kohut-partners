@@ -1,11 +1,17 @@
 import type { MetadataRoute } from "next";
 import { getPathname } from "@/i18n/navigation";
-import { getArticleIds, getServiceIds, getArticle } from "@/lib/content";
+import { getArticleSlugPairs, getServiceIds, getArticle } from "@/lib/content";
 import { CAMPAIGNS } from "@/lib/campaigns";
 
 const BASE = "https://www.tkak.sk";
 
 type Href = Parameters<typeof getPathname>[0]["href"];
+
+/** Cesta v oboch jazykoch. Pri článkoch sa slug medzi SK a EN líši. */
+type HrefPair = { sk: Href; en: Href };
+
+/** Cesta, ktorá je v oboch jazykoch rovnaká (routing si prefix doplní sám). */
+const bothLocales = (href: Href): HrefPair => ({ sk: href, en: href });
 
 // Static routes that are live at launch (e-shop is intentionally excluded —
 // it 404s while the flag is off, so it must not appear in the sitemap).
@@ -36,13 +42,14 @@ function priorityFor(href: Href): number {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const services: Href[] = getServiceIds().map((id) => ({
-    pathname: "/services/[id]",
-    params: { id },
-  }));
-  const articles: Href[] = getArticleIds().map((id) => ({
-    pathname: "/blog/[id]",
-    params: { id },
+  const services: HrefPair[] = getServiceIds().map((id) =>
+    bothLocales({ pathname: "/services/[id]", params: { id } })
+  );
+  // Anglická položka nesie anglický slug — inak by sitemap ohlásil adresu,
+  // ktorá po zavedení anglických slugov už len presmerúva (301).
+  const articles: HrefPair[] = getArticleSlugPairs().map((p) => ({
+    sk: { pathname: "/blog/[id]", params: { id: p.sk } },
+    en: { pathname: "/blog/[id]", params: { id: p.en } },
   }));
 
   // Slovak-only campaign pages — listed on their own so they don't advertise
@@ -58,20 +65,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // URL nikdy nedostal ako samostatnú stránku na indexáciu; hreflang alternatíva
   // v slovenskej položke na to nestačí. `x-default` mieri na slovenčinu, rovnako
   // ako canonical/hreflang v <head> (lib/seo.ts).
-  const localized = [...STATIC, ...services, ...articles].flatMap((href) => {
-    const sk = BASE + getPathname({ locale: "sk", href });
-    const en = BASE + getPathname({ locale: "en", href });
+  const localized = [...STATIC.map(bothLocales), ...services, ...articles].flatMap((pair) => {
+    const sk = BASE + getPathname({ locale: "sk", href: pair.sk });
+    const en = BASE + getPathname({ locale: "en", href: pair.en });
     const languages = { sk, en, "x-default": sk };
     // Articles carry a real publish date → expose it as lastModified.
     let lastModified: Date | undefined;
-    if (typeof href === "object" && href.pathname === "/blog/[id]") {
-      const article = getArticle("sk", String(href.params.id));
+    if (typeof pair.sk === "object" && pair.sk.pathname === "/blog/[id]") {
+      const article = getArticle("sk", String(pair.sk.params.id));
       if (article) lastModified = new Date(article.iso);
     }
     const common = {
       alternates: { languages },
       changeFrequency: "monthly" as const,
-      priority: priorityFor(href),
+      priority: priorityFor(pair.sk),
       ...(lastModified ? { lastModified } : {}),
     };
     return [
