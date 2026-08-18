@@ -566,12 +566,12 @@
     "whoLead": "Správny postup závisí od toho, prečo potrebujete byť na Slovensku — ako konateľ, ako zamestnanec, alebo ako vysokokvalifikovaný špecialista. Skôr než niečo podáme, zistíme, ktorý z nich sedí na váš prípad.",
     "who": [
       {
-        "title": "Konateľ slovenskej s.r.o. mimo EÚ/OECD",
-        "desc": "Občan EÚ alebo štátu OECD môže byť konateľom slovenskej spoločnosti bez akejkoľvek podmienky pobytu. Konateľ z inej krajiny potrebuje prechodný pobyt na účel podnikania — to je najčastejší zádrhel pri zakladaní firmy pre zahraničného zakladateľa."
+        "title": "Konateľ mimo EÚ, EHP a OECD",
+        "desc": "Občan členského štátu EÚ, štátu Európskeho hospodárskeho priestoru alebo štátu OECD sa zapíše ako konateľ bez dokladu o pobyte. Pri osobe z inej krajiny registrový súd pred zápisom preveruje povolenie na pobyt v SR — a platí to pre každého, kto je oprávnený konať v mene spoločnosti alebo za ňu, teda aj pre prokuristu či vedúceho pobočky. Je to najčastejší zádrhel pri zakladaní firmy pre zahraničného zakladateľa."
       },
       {
         "title": "Vysokokvalifikovaní zamestnanci — modrá karta EÚ",
-        "desc": "Vysokoškolské vzdelanie v príslušnom odbore (v IT postačí aj päť rokov relevantnej praxe), pracovná ponuka minimálne na rok a mzda nad zákonnú hranicu spĺňajú podmienky na zrýchlené konanie o modrej karte EÚ."
+        "desc": "Uznané vysokoškolské vzdelanie — pri vybraných povolaniach v oblasti IKT aj tri roky odbornej praxe získané v období siedmich rokov —, pracovný pomer dohodnutý najmenej na šesť mesiacov a mzda nad zákonnou hranicou spĺňajú podmienky na zrýchlené konanie o modrej karte EÚ."
       },
       {
         "title": "Pobyt na účel zamestnania",
@@ -588,18 +588,18 @@
     "key": [
       {
         "title": "Prechodný pobyt na účel podnikania",
-        "desc": "Podľa § 22 ods. 1 zákona č. 404/2011 Z. z. o pobyte cudzincov sa tento pobyt udeľuje štátnemu príslušníkovi tretej krajiny, ktorý podniká ako fyzická osoba, alebo koná v mene slovenskej obchodnej spoločnosti či družstva — spravidla ako jej konateľ — bez toho, aby v nej bol v pracovnom pomere. Udeľuje sa na predpokladanú dobu činnosti, najviac na tri roky naraz.",
-        "note": "Na predĺženie treba preukázať zdaniteľný príjem z podnikania za predchádzajúce zdaňovacie obdobie vo výške aspoň dvadsaťnásobku životného minima a doklad o zdravotnom poistení na Slovensku počas celého pobytu. Od roku 2026 sa pri konateľoch s.r.o. namiesto zisku posudzuje výška skutočne zaplatenej dane — s tým treba počítať už pri prvom daňovom priznaní firmy, nie až dodatočne."
+        "desc": "Podľa § 22 ods. 1 zákona č. 404/2011 Z. z. o pobyte cudzincov sa tento pobyt udelí štátnemu príslušníkovi tretej krajiny, ktorý podniká alebo bude podnikať na Slovensku ako fyzická osoba (písm. a), alebo koná či bude konať v mene obchodnej spoločnosti alebo družstva a nie je v pracovnoprávnom vzťahu (písm. b) — teda spravidla konateľ. Od 1. júla 2025 sa udeľuje pevne na tri roky (§ 22 ods. 2), nie na predpokladaný čas podnikania. Popri tom sa preukazuje finančné zabezpečenie podnikateľskej činnosti na podnikateľskom účte: pri konateľovi stonásobok životného minima, pri živnostníkovi dvadsaťnásobok a pri konateľovi s podnikateľským zámerom posúdeným ako inovatívny projekt štyridsaťnásobok (§ 32 ods. 7). Finančné zabezpečenie samotného pobytu je dvanásťnásobok životného minima (§ 32 ods. 14).",
+        "note": "Podmienky obnovenia sa od 15. júla 2026 zmenili (novela č. 128/2026 Z. z.). Pri konateľovi sa už neposudzuje zisk spoločnosti po zdanení, ale zaplatenie dane najmenej vo výške minimálnej dane právnickej osoby podľa § 46b ods. 2 zákona o dani z príjmov (§ 34 ods. 6). Pri živnostníkovi sa preukazujú zdaniteľné príjmy presahujúce hranicu podľa § 32 ods. 1 zákona o dani z príjmov (§ 34 ods. 5). Staršie zdroje ešte uvádzajú dvadsaťnásobok, resp. šesťdesiatnásobok životného minima — to je stav do 14. júla 2026. S novou úpravou treba počítať už pri prvom daňovom priznaní firmy, nie až pri podávaní žiadosti o obnovenie."
       },
       {
         "title": "Modrá karta EÚ",
-        "desc": "§ 37 a 38 zákona, ktorými sa transponuje smernica (EÚ) 2021/1883, upravujú samostatné zrýchlené konanie pre vysokokvalifikované zamestnanie: vysokoškolské vzdelanie v príslušnom odbore, alebo pri pozíciách v IT aspoň päť rokov relevantnej praxe, spolu so záväznou ponukou alebo pracovnou zmluvou minimálne na rok a hrubou mzdou vo výške aspoň 1,5-násobku priemernej hrubej mzdy v SR.",
-        "note": "Polícia rozhoduje do 30 dní, oproti 90 dňom pri štandardnom povolení na zamestnanie. Modrá karta navyše prináša mobilitu v rámci EÚ a kratšiu cestu k trvalému pobytu — oplatí sa overiť aj tam, kde by prichádzal do úvahy aj bežný pracovný pobyt."
+        "desc": "Modrú kartu upravujú § 37 až 41 zákona, ktorými sa transponuje smernica (EÚ) 2021/1883. Podľa § 37 ods. 3 ide o zamestnanie, na ktorého výkon sa vyžaduje vyššia odborná kvalifikácia a za ktoré patrí mesačná mzda najmenej vo výške 1,2-násobku priemernej mesačnej mzdy zamestnanca v hospodárstve SR za kalendárny rok predchádzajúci roku podania žiadosti; ak žiadateľ získal vysokoškolské vzdelanie najviac tri roky pred podaním žiadosti, postačuje jednonásobok tejto mzdy. Kvalifikácia sa preukazuje rozhodnutím o uznaní vysokoškolského vzdelania; pri povolaniach uvedených v prílohe č. 3 zákona (riadiaci pracovníci a špecialisti v oblasti IKT) aj dokladom o vyšších odborných zručnostiach získaných počas najmenej troch rokov v období siedmich rokov pred podaním žiadosti (§ 37 ods. 5).",
+        "note": "Policajný útvar rozhodne do 30 dní od doručenia žiadosti so všetkými náležitosťami (§ 38 ods. 7) — oproti 60 dňom pri bežnom pobyte na účel zamestnania. Trvanie pracovného pomeru musí byť dohodnuté najmenej na šesť mesiacov; túto podmienku neupravuje zákon o pobyte cudzincov, ale § 21a ods. 4 písm. d) zákona č. 5/2004 Z. z. o službách zamestnanosti. Modrá karta prináša aj mobilitu v rámci EÚ a kratšiu cestu k trvalému pobytu — oplatí sa overiť aj tam, kde by prichádzal do úvahy bežný pracovný pobyt."
       },
       {
         "title": "Prechodný pobyt na účel zamestnania",
-        "desc": "§ 23 zákona upravuje štandardnú cestu: zamestnávateľ najprv nahlási voľné pracovné miesto, úrad práce vydá povolenie na zamestnanie a až potom rozhoduje cudzinecká polícia o pobyte — najviac päť rokov pri bežnej pozícii, najviac tri roky pri vnútropodnikovom presune manažéra či špecialistu, jeden rok pri presunutom zamestnancovi a najviac 240 dní v priebehu 12 po sebe nasledujúcich mesiacov pri sezónnom zamestnaní.",
-        "note": "Počítajte s tromi až štyrmi mesiacmi pred plánovaným nástupom. Potvrdenie Sociálnej poisťovne nesmie byť pri podaní staršie ako 30 dní a výpis z registra trestov nie starší ako 90 dní — obe lehoty vypršia skôr, než niektorí žiadatelia stihnú skompletizovať zvyšok spisu."
+        "desc": "§ 23 zákona upravuje štandardnú cestu: zamestnávateľ najprv nahlási voľné pracovné miesto, úrad práce vydá potvrdenie o možnosti jeho obsadenia a až potom rozhoduje policajný útvar o pobyte. Pobyt sa udelí na predpokladaný čas zamestnania, najviac však na päť rokov (§ 23 ods. 3). Pri vnútropodnikovom presune je to najviac tri roky pri vedúcom zamestnancovi alebo odborníkovi a najviac jeden rok pri zamestnancovi – stážistovi (§ 23 ods. 5). Pri sezónnom zamestnaní najviac 240 dní počas 12 po sebe nasledujúcich mesiacov (§ 23 ods. 4).",
+        "note": "Policajný útvar rozhodne o žiadosti do 60 dní odo dňa jej doručenia so všetkými náležitosťami (§ 33 ods. 8 písm. b) zákona); pri zamestnaní s nedostatkom pracovnej sily v kraji je lehota 30 dní (§ 33 ods. 8 písm. c)). Samotnému konaniu však predchádza nahlásenie voľného pracovného miesta a vydanie potvrdenia úradom práce — s celkovým časom preto počítajte v mesiacoch, nie v týždňoch, a doklady si zaobstarajte tak, aby im do podania nevypršala platnosť."
       }
     ],
     "stepsOverline": "Postup",
@@ -634,7 +634,7 @@
       "Výpis z registra trestov domovskej krajiny (a každej krajiny pobytu za posledné tri roky), overený apostilou alebo inak legalizovaný, kde treba — nie starší ako 90 dní pri podaní.",
       "Doklad o zabezpečenom ubytovaní na Slovensku.",
       "Pri podnikateľskej ceste: výpis z obchodného registra (po založení firmy) alebo návrh zakladateľských dokumentov.",
-      "Pri zamestnaneckých cestách: pracovná zmluva alebo záväzná ponuka, a pri modrej karte doklad o kvalifikácii (diplom, v IT doklad o relevantnej praxi)."
+      "Pri zamestnaneckých cestách: pracovná zmluva alebo písomný prísľub zamestnávateľa, a pri modrej karte doklad o kvalifikácii — rozhodnutie o uznaní vysokoškolského vzdelania, prípadne doklad o vyšších odborných zručnostiach pri povolaniach z prílohy č. 3 zákona."
     ],
     "priceOverline": "Odmena",
     "priceTitle": "Koľko to stojí",
@@ -665,7 +665,7 @@
     "faq": [
       {
         "q": "Môžem vlastniť slovenskú firmu bez toho, aby som žil na Slovensku?",
-        "a": "Áno. Vlastníctvo nenesie žiadnu podmienku pobytu pre nikoho. Podmienka pobytu vzniká len pre konateľa, ak nie je občanom EÚ alebo štátu OECD — vtedy § 22 zákona č. 404/2011 Z. z. vyžaduje prechodný pobyt na účel podnikania. Spoločník mimo EÚ/OECD, ktorý nie je konateľom, nepotrebuje pobyt vôbec."
+        "a": "Áno. Vlastníctvo obchodného podielu nenesie podmienku pobytu pre nikoho — pri zakladateľovi a spoločníkovi s.r.o. registrový súd preveruje daňové a exekučné prekážky, nie pobyt. Podmienka pobytu vzniká pri osobe oprávnenej konať v mene spoločnosti, typicky pri konateľovi: podľa § 51 ods. 4 zákona č. 29/2026 Z. z. o obchodnom registri registrový súd pred zápisom preveruje povolenie na pobyt v Slovenskej republike, ak nejde o občana členského štátu EÚ, štátu Európskeho hospodárskeho priestoru alebo štátu OECD. Samotný pobyt sa potom rieši ako prechodný pobyt na účel podnikania podľa § 22 zákona č. 404/2011 Z. z. Spoločník, ktorý nie je konateľom, nepotrebuje pobyt vôbec. Ide o podmienku pre zápis do obchodného registra; pri remeselných a viazaných živnostiach musí mať zodpovedný zástupca bydlisko na Slovensku alebo iné oprávnenie na pobyt (§ 11 ods. 3 živnostenského zákona) — to je samostatná podmienka."
       },
       {
         "q": "Musím firmu založiť pred žiadosťou o pobyt, alebo naopak?",
@@ -673,7 +673,7 @@
       },
       {
         "q": "Aký je rozdiel medzi modrou kartou EÚ a bežným povolením na zamestnanie?",
-        "a": "Oboje oprávňuje na zamestnanie, ale modrá karta je vyhradená pre pozície spĺňajúce kvalifikačné a mzdové podmienky § 37 – 38 zákona č. 404/2011 Z. z. (transponujúceho smernicu (EÚ) 2021/1883): relevantné vysokoškolské vzdelanie — v IT aspoň päť rokov relevantnej praxe —, pracovná ponuka minimálne na rok a mzda aspoň 1,5-násobku priemernej hrubej mzdy na Slovensku. Tam, kde pozícia podmienky spĺňa, modrá karta rozhoduje rýchlejšie (30 dní oproti 90) a prináša mobilitu v rámci EÚ aj jednoduchšiu cestu k trvalému pobytu."
+        "a": "Oboje oprávňuje na zamestnanie, ale modrá karta je vyhradená pre pozície spĺňajúce kvalifikačné a mzdové podmienky § 37 a nasl. zákona č. 404/2011 Z. z. (transponujúceho smernicu (EÚ) 2021/1883): uznané vysokoškolské vzdelanie — pri povolaniach z prílohy č. 3 zákona (IKT) aj tri roky odbornej praxe získané v období siedmich rokov — a mzda najmenej 1,2-násobku priemernej mesačnej mzdy zamestnanca v hospodárstve SR za predchádzajúci kalendárny rok, resp. jednonásobok u absolventa do troch rokov od získania vzdelania. Pracovný pomer musí byť dohodnutý najmenej na šesť mesiacov (§ 21a ods. 4 písm. d) zákona č. 5/2004 Z. z.). Tam, kde pozícia podmienky spĺňa, sa o modrej karte rozhoduje do 30 dní oproti 60 dňom pri bežnom pobyte na účel zamestnania, a prináša mobilitu v rámci EÚ aj jednoduchšiu cestu k trvalému pobytu."
       },
       {
         "q": "Môže so mnou prísť aj rodina?",
@@ -685,12 +685,12 @@
       },
       {
         "q": "Ako dlho trvá celý proces?",
-        "a": "Samotné založenie firmy trvá jeden až dva týždne od podpisu dokumentov. Rozhodnutie o pobyte viažu zákonné lehoty — 30 dní pri modrej karte, najviac 90 dní pri štandardnom podnikateľskom alebo zamestnaneckom pobyte, hoci jednoduché spisy sa často rozhodnú skôr. Odporúčame začať so spisom o pobyt tri až štyri mesiace pred termínom, kedy potrebujete na Slovensku reálne pôsobiť."
+        "a": "Samotné založenie firmy trvá jeden až dva týždne od podpisu dokumentov. Rozhodnutie o pobyte viažu zákonné lehoty podľa § 33 ods. 8 zákona č. 404/2011 Z. z. a § 38 ods. 7 pri modrej karte: 30 dní pri modrej karte, 60 dní pri pobyte na účel zamestnania a 90 dní pri ostatných účeloch vrátane podnikania. Lehota začína plynúť až od doručenia žiadosti so všetkými náležitosťami, a predchádza jej zaobstaranie dokladov zo zahraničia. Odporúčame preto začať tri až štyri mesiace pred termínom, kedy potrebujete na Slovensku reálne pôsobiť."
       }
     ],
     "relatedTitle": "Súvisiace",
     "sourcesTitle": "Predpisy, z ktorých táto stránka vychádza",
-    "sourcesLead": "Úplné znenie každého predpisu nájdete na Slov-Lex a EUR-Lex. Finančné hranice viazané na životné minimum alebo priemernú mzdu sa každoročne menia — aktuálnu sumu treba overiť ku dňu podania. Uvedené informácie sú všeobecné a nenahrádzajú poradenstvo v konkrétnej veci.",
+    "sourcesLead": "Právny stav k 18. augustu 2026; zákon č. 404/2011 Z. z. sa uvádza v znení účinnom od 15. júla 2026 a zákon č. 29/2026 Z. z. o obchodnom registri, ktorý od 17. augusta 2026 nahradil zákon č. 530/2003 Z. z. Úplné znenie každého predpisu nájdete na Slov-Lex a EUR-Lex. Hranice viazané na životné minimum alebo priemernú mzdu sa menia každoročne — aktuálnu sumu treba overiť ku dňu podania. Uvedené informácie sú všeobecné a nenahrádzajú poradenstvo v konkrétnej veci.",
     "sources": [
       {
         "label": "Zákon č. 404/2011 Z. z. o pobyte cudzincov",
@@ -705,8 +705,12 @@
         "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
       },
       {
-        "label": "Zákon č. 530/2003 Z. z. o obchodnom registri",
-        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2003/530/"
+        "label": "Zákon č. 29/2026 Z. z. o obchodnom registri (účinný od 17. 8. 2026)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/29/"
+      },
+      {
+        "label": "Vyhláška MS SR č. 203/2026 Z. z. o zápisových podkladoch",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/203/"
       },
       {
         "label": "Zákon č. 5/2004 Z. z. o službách zamestnanosti",

@@ -566,12 +566,12 @@
     "whoLead": "The right procedure depends on why you need to be in Slovakia — as a director, as an employee, or as a highly qualified specialist. We work out which one fits before we file anything.",
     "who": [
       {
-        "title": "Non-EU/OECD director of a Slovak s.r.o.",
-        "desc": "EU and OECD nationals can act as director of a Slovak company without any residence condition. A director from any other country needs a temporary residence permit for business purposes — this is the single most common snag in forming a company for a non-EU founder."
+        "title": "Directors from outside the EU, EEA and OECD",
+        "desc": "A national of an EU member state, an EEA state or an OECD state is registered as a director without any proof of residence. For anyone else, the registry court checks for a Slovak residence permit before registration — and this applies to every person authorised to act on behalf of or for the company, so to a procurator or branch manager too. It is the single most common snag in forming a company for a non-EU founder."
       },
       {
         "title": "Highly qualified employees — EU Blue Card",
-        "desc": "A university degree in the relevant field (or, in IT, at least five years of equivalent experience), a job offer of at least one year and a salary above the statutory threshold qualify for the fast-track EU Blue Card procedure."
+        "desc": "A recognised university degree — or, for selected ICT occupations, three years' professional experience gained within the preceding seven — an employment relationship agreed for at least six months, and a salary above the statutory threshold qualify for the fast-track EU Blue Card procedure."
       },
       {
         "title": "Employment-based residence",
@@ -588,18 +588,18 @@
     "key": [
       {
         "title": "Temporary residence for business purposes",
-        "desc": "Under Section 22(1) of Act No. 404/2011 Coll. on the Residence of Aliens, this permit is granted to a third-country national who carries on business as a self-employed person, or who acts on behalf of a Slovak trading company or cooperative — typically as its director — without being its employee. It is granted for the expected duration of the activity, up to three years at a time.",
-        "note": "Renewal requires proof of taxable income from the business for the preceding tax period of at least twenty times the subsistence minimum, and confirmation of health insurance in Slovakia for the whole period of residence. Since 2026 the renewal test for company directors looks at tax actually paid rather than profit shown — plan the company's first tax return with this in mind, not as an afterthought."
+        "desc": "Under Section 22(1) of Act No. 404/2011 Coll. on the Residence of Aliens, this permit is granted to a third-country national who carries on or will carry on business in Slovakia as a self-employed person (point (a)), or who acts or will act on behalf of a trading company or cooperative without being in an employment relationship with it (point (b)) — in practice, its director. Since 1 July 2025 it is granted for a fixed three years (Section 22(2)), not for the expected duration of the activity. Alongside it you must show financial security for the business activity in a dedicated business account: one hundred times the subsistence minimum for a director, twenty times for a self-employed person, and forty times for a director whose business plan has been assessed as an innovative project (Section 32(7)). Financial security for the residence itself is a further twelve times the subsistence minimum (Section 32(14)).",
+        "note": "The renewal test changed on 15 July 2026 (amending Act No. 128/2026 Coll.). For a director, the company's after-tax profit is no longer assessed; what counts is tax actually paid, at least at the level of the minimum corporate tax under Section 46b(2) of the Income Tax Act (Section 34(6)). A self-employed applicant instead shows taxable income above the threshold in Section 32(1) of the Income Tax Act (Section 34(5)). Older sources still quote twenty or sixty times the subsistence minimum — that is the position up to 14 July 2026. Plan the company's first tax return around the new test, not the renewal application."
       },
       {
         "title": "EU Blue Card",
-        "desc": "Sections 37 and 38 of the Act, transposing Directive (EU) 2021/1883, set out a dedicated fast-track permit for highly qualified employment: a university degree in the relevant field, or — for IT roles — at least five years of equivalent professional experience, together with a binding job offer or employment contract of at least one year and a gross salary of at least 1.5 times the average gross wage in Slovakia.",
-        "note": "The police authority decides within 30 days, against 90 days for a standard employment permit. The Blue Card also carries EU-wide labour mobility and a shorter path to permanent residence — worth checking even where a standard work permit would also be available."
+        "desc": "The Blue Card is governed by Sections 37 to 41 of the Act, transposing Directive (EU) 2021/1883. Under Section 37(3) it covers employment requiring higher professional qualifications and carrying a monthly salary of at least 1.2 times the average monthly wage of an employee in the Slovak economy for the calendar year preceding the year of application; where the applicant obtained their degree no more than three years before applying, the plain average wage is enough. Qualification is proved by a decision recognising the university degree — or, for the occupations listed in Annex 3 to the Act (ICT managers and specialists), by evidence of higher professional skills acquired over at least three years within the seven years preceding the application (Section 37(5)).",
+        "note": "The police authority decides within 30 days of receiving a complete application (Section 38(7)) — against 60 days for standard employment residence. The employment relationship must be agreed for at least six months; that condition sits not in the Residence of Aliens Act but in Section 21a(4)(d) of Act No. 5/2004 Coll. on Employment Services. The Blue Card also carries EU-wide labour mobility and a shorter path to permanent residence — worth checking even where a standard work permit would also be available."
       },
       {
         "title": "Temporary residence for employment",
-        "desc": "Section 23 of the Act covers the standard route: an employer first advertises the vacancy, the labour office issues a work permit, and only then does the foreign police decide on residence — up to five years for an ordinary position, up to three years for an intra-company transfer as a manager or specialist, one year as a transferred employee, and up to 240 days within any 12 months for seasonal work.",
-        "note": "Budget three to four months before the planned start date. The Social Insurance Agency confirmation may not be older than 30 days and the criminal record extract not older than 90 days at the time of filing — both expire before some applicants have finished collecting the rest of the file."
+        "desc": "Section 23 of the Act covers the standard route: the employer first reports the vacancy, the labour office issues a confirmation that it can be filled, and only then does the police authority decide on residence. The permit is granted for the expected duration of the employment, up to five years (Section 23(3)). For an intra-company transfer it is up to three years for a manager or specialist and up to one year for a trainee employee (Section 23(5)). Seasonal employment is capped at 240 days within any 12 consecutive months (Section 23(4)).",
+        "note": "The police authority decides within 60 days of receiving a complete application (Section 33(8)(b)); where the role is one with a recognised labour shortage in the region, the deadline is 30 days (Section 33(8)(c)). That decision is preceded by reporting the vacancy and obtaining the labour office's confirmation, so plan the overall timeline in months rather than weeks — and obtain the supporting documents late enough that they are still valid when the application is filed."
       }
     ],
     "stepsOverline": "Procedure",
@@ -634,7 +634,7 @@
       "Extract from the criminal record of your home country (and of any country of residence in the last three years), apostilled or otherwise legalised where required — not older than 90 days at filing.",
       "Proof of secured accommodation in Slovakia.",
       "For the business track: extract from the Slovak commercial register (once the company is formed) or the draft incorporation documents.",
-      "For the employment tracks: the employment contract or binding job offer, and — for the Blue Card — proof of qualification (diploma or, for IT, evidence of relevant experience)."
+      "For the employment tracks: the employment contract or the employer's written promise of employment, and — for the Blue Card — proof of qualification: the decision recognising the university degree, or evidence of higher professional skills for the ICT occupations listed in Annex 3 to the Act."
     ],
     "priceOverline": "Fees",
     "priceTitle": "What it costs",
@@ -665,7 +665,7 @@
     "faq": [
       {
         "q": "Can I own a Slovak company without living in Slovakia?",
-        "a": "Yes. Ownership carries no residence condition for anyone. A residence condition arises only for the director if the director is not an EU or OECD national — Section 22 of Act No. 404/2011 Coll. then requires a temporary residence permit for business purposes. A non-EU/OECD owner who is not the director needs no permit at all."
+        "a": "Yes. Owning a share carries no residence condition for anyone — for the founder and shareholder of an s.r.o. the registry court checks tax and enforcement obstacles, not residence. The residence condition attaches to the person authorised to act on behalf of the company, typically the director: under Section 51(4) of Act No. 29/2026 Coll. on the Commercial Register the registry court checks, before registration, whether that person holds a Slovak residence permit, unless they are a national of an EU member state, an EEA state or an OECD state. The permit itself is then obtained as temporary residence for business purposes under Section 22 of Act No. 404/2011 Coll. A shareholder who is not a director needs no permit at all. Note that this is a condition for entry in the commercial register; for skilled and regulated trades the responsible representative must additionally be resident in Slovakia or otherwise authorised to reside here (Section 11(3) of the Trade Licensing Act) — a separate condition."
       },
       {
         "q": "Do I need to found the company before I apply for residence, or the other way round?",
@@ -673,7 +673,7 @@
       },
       {
         "q": "What is the difference between the EU Blue Card and a standard work permit?",
-        "a": "Both authorise employment, but the Blue Card is reserved for roles meeting the qualification and salary conditions of Sections 37–38 of Act No. 404/2011 Coll. (transposing Directive (EU) 2021/1883): a relevant university degree — or, in IT, at least five years' equivalent experience — a job offer of at least one year and a salary of at least 1.5 times the average gross wage in Slovakia. Where a role qualifies, the Blue Card decides faster (30 days against 90) and carries EU-wide mobility and an easier path to permanent residence."
+        "a": "Both authorise employment, but the Blue Card is reserved for roles meeting the qualification and salary conditions of Sections 37 ff. of Act No. 404/2011 Coll. (transposing Directive (EU) 2021/1883): a recognised university degree — or, for the ICT occupations listed in Annex 3 to the Act, three years' professional experience gained within the preceding seven — and a salary of at least 1.2 times the average monthly wage of an employee in the Slovak economy for the preceding calendar year, or the plain average wage for a graduate within three years of obtaining the degree. The employment relationship must be agreed for at least six months (Section 21a(4)(d) of Act No. 5/2004 Coll.). Where a role qualifies, the Blue Card is decided within 30 days against 60 for standard employment residence, and carries EU-wide mobility and an easier path to permanent residence."
       },
       {
         "q": "Can my family come with me?",
@@ -685,12 +685,12 @@
       },
       {
         "q": "How long does the whole process take?",
-        "a": "Forming the company itself takes one to two weeks once the documents are signed. The residence decision is bound by statutory deadlines — 30 days for the Blue Card, up to 90 days for the standard business or employment permit, though straightforward files are often decided sooner. We recommend starting the residence file three to four months before the date you need to be operating in Slovakia."
+        "a": "Forming the company itself takes one to two weeks once the documents are signed. The residence decision is bound by statutory deadlines under Section 33(8) of Act No. 404/2011 Coll., and Section 38(7) for the Blue Card: 30 days for the Blue Card, 60 days for employment-based residence, and 90 days for the remaining purposes including business. Those periods start only once the application is complete, and obtaining documents from abroad comes first. We therefore recommend starting three to four months before the date you need to be operating in Slovakia."
       }
     ],
     "relatedTitle": "Related",
     "sourcesTitle": "The legislation this page is based on",
-    "sourcesLead": "The full text of each instrument is available on Slov-Lex and EUR-Lex. Financial thresholds tied to the subsistence minimum or the average wage change each year — the current figure must be checked as at the date of filing. The information above is general and does not replace advice on an individual matter.",
+    "sourcesLead": "Legal position as at 18 August 2026; Act No. 404/2011 Coll. is cited as in force from 15 July 2026, and Act No. 29/2026 Coll. on the Commercial Register, which replaced Act No. 530/2003 Coll. on 17 August 2026. The full text of each instrument is available on Slov-Lex and EUR-Lex. Thresholds tied to the subsistence minimum or the average wage change each year — the current figure must be checked as at the date of filing. The information above is general and does not replace advice on an individual matter.",
     "sources": [
       {
         "label": "Act No. 404/2011 Coll. on the Residence of Aliens",
@@ -705,8 +705,12 @@
         "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
       },
       {
-        "label": "Act No. 530/2003 Coll. on the Commercial Register",
-        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2003/530/"
+        "label": "Act No. 29/2026 Coll. on the Commercial Register (in force from 17 August 2026)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/29/"
+      },
+      {
+        "label": "Decree of the Ministry of Justice No. 203/2026 Coll. on registration documents",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/203/"
       },
       {
         "label": "Act No. 5/2004 Coll. on Employment Services",
