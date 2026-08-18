@@ -56,6 +56,7 @@ const PRIVACY: Doc = {
         heading: "Aké údaje spracúvame",
         items: [
           "Kontaktný formulár: meno a priezvisko, e-mail, telefón, obsah správy.",
+          "Údaje o zdroji dopytu: adresa stránky, z ktorej ste formulár odoslali, odkazujúca stránka a parametre kampane (UTM, gclid), ak boli v adrese.",
           "Rezervácia konzultácie: meno, e-mail, telefón, zvolená oblasť práva a termín.",
           "Objednávka v e-shope: fakturačné údaje, prípadne IČO firmy a údaje o platbe.",
           "Technické údaje: IP adresa, typ zariadenia a prehliadača v rozsahu nevyhnutnom pre prevádzku webu.",
@@ -108,6 +109,7 @@ const PRIVACY: Doc = {
         heading: "What data we process",
         items: [
           "Contact form: full name, e-mail, phone, message content.",
+          "Inquiry source data: the address of the page you submitted the form from, the referring page and campaign parameters (UTM, gclid) if present in the address.",
           "Consultation booking: name, e-mail, phone, the chosen area of law and slot.",
           "Shop order: billing details, optionally a company ID, and payment data.",
           "Technical data: IP address, device and browser type, to the extent necessary to run the website.",

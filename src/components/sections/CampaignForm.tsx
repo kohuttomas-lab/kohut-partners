@@ -1,7 +1,9 @@
 "use client";
 
 import { useRef, useState, type FormEvent } from "react";
+import { useLocale } from "next-intl";
 import { submitLead } from "@/lib/lead";
+import { collectAttribution } from "@/lib/attribution";
 import { trackLead } from "@/lib/analytics";
 import { CONTACT } from "@/lib/content";
 import type { CampaignData } from "@/lib/campaigns";
@@ -74,6 +76,7 @@ function CopyRow({ label, value }: { label: string; value: string }) {
 export function CampaignForm({ campaign }: { campaign: CampaignData }) {
   const [status, setStatus] = useState<Status>("idle");
   const [name, setName] = useState("");
+  const locale = useLocale();
   const f = campaign.form;
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -91,6 +94,9 @@ export function CampaignForm({ campaign }: { campaign: CampaignData }) {
       fields[field.label] = String(fd.get(field.name) || "");
     }
     fields[f.messageLabel] = String(fd.get("message") || "");
+    // Atribúcia až za obsahovými poľami — technický blok patrí v e-maile
+    // pod odpovede klienta. Prázdne hodnoty odfiltruje submitLead.
+    Object.assign(fields, collectAttribution(locale));
 
     setStatus("sending");
     const r = await submitLead(fields, `${f.subject} — ${who}`);
