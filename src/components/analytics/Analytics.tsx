@@ -8,6 +8,9 @@ import { GA_ID, ADS_ID, META_PIXEL_ID, pageview, trackPhoneClick } from "@/lib/a
 
 // Loads GA4 + Meta Pixel ONLY after the visitor accepts all cookies.
 // Until then nothing is injected (no non-essential cookies/scripts) — EU/SK compliant.
+// Východiskový stav súhlasu (Consent Mode v2, všetko „denied") nastavuje
+// ConsentDefaults ešte pred týmto komponentom; tu sa už len prepína na
+// „granted", prípadne späť pri odvolaní súhlasu.
 export function Analytics() {
   const [allowed, setAllowed] = useState(false);
   const pathname = usePathname();
@@ -19,6 +22,26 @@ export function Analytics() {
     window.addEventListener(CONSENT_EVENT, update);
     return () => window.removeEventListener(CONSENT_EVENT, update);
   }, []);
+
+  // Odvolanie súhlasu: značka už môže byť načítaná z tohto načítania stránky,
+  // takže samotné odmontovanie <Script> nestačí — Googlu treba povedať, že
+  // súhlas padol. Prvý beh preskakujeme, aby sa „denied" neposielalo zbytočne.
+  const wasAllowed = useRef(false);
+  useEffect(() => {
+    if (allowed) {
+      wasAllowed.current = true;
+      return;
+    }
+    if (!wasAllowed.current) return;
+    wasAllowed.current = false;
+    window.gtag?.("consent", "update", {
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      analytics_storage: "denied",
+    });
+    window.fbq?.("consent", "revoke");
+  }, [allowed]);
 
   // SPA route-change page views. The first view is sent by the init scripts.
   useEffect(() => {
@@ -55,7 +78,7 @@ export function Analytics() {
             strategy="afterInteractive"
           />
           <Script id="ga4-init" strategy="afterInteractive">
-            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());${GA_ID ? `gtag('config','${GA_ID}');` : ""}${ADS_ID ? `gtag('config','${ADS_ID}');` : ""}`}
+            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});gtag('set','ads_data_redaction',false);gtag('js',new Date());${GA_ID ? `gtag('config','${GA_ID}');` : ""}${ADS_ID ? `gtag('config','${ADS_ID}');` : ""}`}
           </Script>
         </>
       ) : null}
