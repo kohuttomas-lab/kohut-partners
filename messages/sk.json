@@ -656,7 +656,7 @@
         "desc": "Súdne a správne poplatky, súdne overené preklady, kde treba, a sídlo firmy, ak ho využijete — viď nižšie."
       }
     ],
-    "priceNote": "Právne zastupovanie vybavujeme sami; účtovníctvo, sídlo firmy, sprostredkovanie zamestnania ani zabezpečenie ubytovania vo vlastnej réžii neposkytujeme. Kde niečo z toho potrebujete, odporučíme vám konkrétneho, samostatne licencovaného partnera — jeho faktúra je oddelená od našej, nikdy nie je súčasťou našej odmeny. Vďaka tomu ostáva každá služba pod licenciou, ktorá ju naozaj pokrýva, a naše odporúčanie nie je zaťažené žiadnym záujmom na provízii.",
+    "priceNote": "Právne zastupovanie vybavujeme sami; účtovníctvo, sídlo firmy, sprostredkovanie zamestnania ani zabezpečenie ubytovania vo vlastnej réžii neposkytujeme. Kde niečo z toho potrebujete, odporučíme vám samostatne licencovaného poskytovateľa — jeho faktúra je oddelená od našej, nikdy nie je súčasťou našej odmeny. Vďaka tomu ostáva každá služba pod licenciou, ktorá ju naozaj pokrýva, a naše odporúčanie nie je zaťažené žiadnym záujmom na provízii.",
     "formOverline": "Nezáväzne",
     "formTitle": "Napíšte nám o vašej situácii",
     "formLead": "Napíšte, či už máte slovenskú firmu, akú v nej máte alebo budete mať úlohu, a odkiaľ žiadate. Ozveme sa a povieme, ktorá cesta sa vás týka. Odoslaním formulára nevzniká vzťah advokát – klient.",
@@ -681,7 +681,7 @@
       },
       {
         "q": "Vybavujete aj účtovníctvo, sídlo firmy, pracovné povolenie pre zamestnancov, ktorých najmem, alebo ubytovanie?",
-        "a": "Nie, nie pod vlastnou strechou, a to zámerne. Každá z týchto vecí je samostatne regulovaná činnosť — účtovníctvo vyžaduje vlastnú registráciu, sprostredkovanie zamestnania za úhradu vyžaduje povolenie úradu práce podľa zákona č. 5/2004 Z. z. a poskytovateľ sídla nesie vlastné oznamovacie a od júna 2026 aj registračné povinnosti v systéme goAML. Odporučíme vám konkrétnych partnerov s príslušnou licenciou, s ich vlastnou, oddelenou faktúrou — nič si k nej nepripočítavame ani z nej neberieme províziu."
+        "a": "Nie, nie pod vlastnou strechou, a to zámerne. Každá z týchto vecí je samostatne regulovaná činnosť — účtovníctvo vyžaduje vlastnú registráciu, sprostredkovanie zamestnania za úhradu vyžaduje povolenie úradu práce podľa zákona č. 5/2004 Z. z. a poskytovateľ sídla nesie vlastné oznamovacie a od júna 2026 aj registračné povinnosti v systéme goAML. Odporučíme vám poskytovateľa s príslušnou licenciou, ktorý fakturuje sám a oddelene — nič si k jeho faktúre nepripočítavame ani z nej neberieme províziu."
       },
       {
         "q": "Ako dlho trvá celý proces?",

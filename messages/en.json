@@ -656,7 +656,7 @@
         "desc": "Court and administrative fees, sworn translations where required, and the registered seat, if you use one — see below."
       }
     ],
-    "priceNote": "We handle the legal representation ourselves; we do not provide accounting, a registered seat, employment intermediation or accommodation sourcing in-house. Where you need one of these, we refer you to a named, independently licensed partner, and their invoice is separate from ours — never bundled into our fee. This keeps each service under the licence that actually covers it, and keeps our advice to you free of any referral interest.",
+    "priceNote": "We handle the legal representation ourselves; we do not provide accounting, a registered seat, employment intermediation or accommodation sourcing in-house. Where you need one of these, we point you to an independently licensed provider, and their invoice is separate from ours — never bundled into our fee. This keeps each service under the licence that actually covers it, and keeps our advice to you free of any referral interest.",
     "formOverline": "No obligation",
     "formTitle": "Tell us about your situation",
     "formLead": "Tell us whether you already have a Slovak company, what your role in it is or will be, and where you are applying from. We will get back to you and set out which track applies. Submitting this form does not create a lawyer-client relationship.",
@@ -681,7 +681,7 @@
       },
       {
         "q": "Do you handle accounting, the registered seat, a work permit for staff I hire, or finding accommodation?",
-        "a": "No, not under our own roof, and deliberately so. Each of those is a separately regulated activity — accounting requires its own registration, employment intermediation for payment requires a licence issued by the labour office under Act No. 5/2004 Coll., and a registered-seat provider carries its own disclosure and, since June 2026, goAML registration duties. We refer you to named partners who hold the relevant licence, with their own, separate invoice — we do not mark it up or take a referral fee."
+        "a": "No, not under our own roof, and deliberately so. Each of those is a separately regulated activity — accounting requires its own registration, employment intermediation for payment requires a licence issued by the labour office under Act No. 5/2004 Coll., and a registered-seat provider carries its own disclosure and, since June 2026, goAML registration duties. We point you to a provider holding the relevant licence, who invoices you separately — we do not mark it up or take a referral fee."
       },
       {
         "q": "How long does the whole process take?",
