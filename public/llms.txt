@@ -17,10 +17,84 @@
 - **Trestné právo** — obhajoba a trestná agenda.
 - **IT a digitálne právo** — GDPR, obchodné podmienky pre e-shopy, zmluvy pre IT dodávateľov a startupy.
 
+## Hlavné stránky (slovensky)
+
+Slovenské adresy sú bez jazykového prefixu, anglické majú prefix `/en`.
+
+- https://www.tkak.sk — domovská stránka
+- https://www.tkak.sk/sluzby — prehľad oblastí práva a cien balíkov
+- https://www.tkak.sk/o-kancelarii — o kancelárii a tíme
+- https://www.tkak.sk/blog — články
+- https://www.tkak.sk/kontakt — kontakt a objednanie konzultácie
+
+### Oblasti práva (slovensky)
+
+- https://www.tkak.sk/sluzby/insolvencie — insolvencie a reštrukturalizácie
+- https://www.tkak.sk/sluzby/obchod — obchodné a občianske právo
+- https://www.tkak.sk/sluzby/nehnutelnosti — právo nehnuteľností a realitný development
+- https://www.tkak.sk/sluzby/spory — súdne spory a vymáhanie pohľadávok
+- https://www.tkak.sk/sluzby/trestne — trestné právo a obhajoba
+- https://www.tkak.sk/sluzby/it — IT a digitálne právo, GDPR
+
+## Konkrétne situácie klientov (slovensky)
+
+Stránky písané na jednu konkrétnu situáciu — s lehotami, ktoré v nej bežia, a s postupom krok za krokom. Vecné informácie podľa slovenského práva; nenahrádzajú posúdenie konkrétneho prípadu.
+
+- https://www.tkak.sk/zamietnute-poistne-plnenie — poisťovňa zamietla alebo krátila poistné plnenie. Právo na plnenie sa premlčuje v trojročnej lehote, ktorá začína plynúť až rok po poistnej udalosti (§ 101 a § 104 Občianskeho zákonníka).
+- https://www.tkak.sk/neplatna-vypoved — neplatné skončenie pracovného pomeru. Neplatnosť treba uplatniť na súde do dvoch mesiacov odo dňa, keď sa mal pracovný pomer skončiť; lehota je prekluzívna a nedá sa odpustiť (§ 77 Zákonníka práce).
+- https://www.tkak.sk/odskodnenie-dopravna-nehoda — odškodnenie po dopravnej nehode: bolestné, sťaženie spoločenského uplatnenia, strata na zárobku a náklady liečenia (zákon č. 437/2004 Z. z.).
+- https://www.tkak.sk/bezurocny-uver — chyby v zmluve o spotrebiteľskom úvere, pre ktoré sa úver považuje za bezúročný a bez poplatkov (§ 11 zákona č. 129/2010 Z. z.).
+- https://www.tkak.sk/zastavenie-exekucie — obrana proti exekúcii. Návrh na zastavenie podaný do 15 dní od doručenia upovedomenia o začatí exekúcie má odkladný účinok (§ 61k Exekučného poriadku).
+- https://www.tkak.sk/nahrada-skody-od-statu — náhrada škody spôsobenej nezákonným rozhodnutím alebo nesprávnym úradným postupom vrátane prieťahov v konaní (zákon č. 514/2003 Z. z.).
+
+## Medzinárodná agenda
+
+Témy pre klientov mimo Slovenska. Existujú v slovenčine aj v angličtine.
+
+- https://www.tkak.sk/vymahanie-prepravnych-pohladavok — vymáhanie nezaplateného prepravného voči slovenskému odberateľovi podľa Dohovoru CMR; premlčanie, právomoc súdov, upomínacie konanie a exekúcia. Anglicky: https://www.tkak.sk/en/transport-debt-recovery
+- https://www.tkak.sk/zalozenie-firmy-a-pobyt — založenie s.r.o. na Slovensku v kombinácii s povolením na pobyt (podnikanie, zamestnanie, modrá karta EÚ) pre štátnych príslušníkov tretích krajín. Anglicky: https://www.tkak.sk/en/company-formation-residence
+- https://www.tkak.sk/zahranicni-klienti — služby pre zahraničných klientov, vedené na diaľku. Anglicky: https://www.tkak.sk/en/international-clients
+
+## Kancelária podľa miest (slovensky)
+
+- https://www.tkak.sk/advokat-zvolen — advokát Zvolen (sídlo kancelárie)
+- https://www.tkak.sk/advokat-detva — advokát Detva
+- https://www.tkak.sk/advokat-krupina — advokát Krupina
+- https://www.tkak.sk/advokat-banska-bystrica — advokát Banská Bystrica
+- https://www.tkak.sk/advokat-ziar-nad-hronom — advokát Žiar nad Hronom
+
+## Články (slovensky)
+
+- https://www.tkak.sk/blog/osobny-bankrot-2026-podmienky-a-postup — Osobný bankrot 2026: podmienky a postup
+- https://www.tkak.sk/blog/konkurz-vs-restrukturalizacia-ktory-nastroj-kedy — Konkurz vs. reštrukturalizácia: ktorý nástroj kedy
+- https://www.tkak.sk/blog/restrukturalizacia-2026 — Reštrukturalizácia firmy v roku 2026: kedy konať a ako
+- https://www.tkak.sk/blog/zodpovednost-konatela-s-r-o-kedy-rucite-majetkom — Zodpovednosť konateľa s.r.o.: kedy ručíte majetkom
+- https://www.tkak.sk/blog/zalozenie-sro — Založenie s.r.o. krok po kroku v roku 2026
+- https://www.tkak.sk/blog/zalozenie-s-r-o-krok-po-kroku — Založenie s.r.o. krok po kroku
+- https://www.tkak.sk/blog/vymahanie-pohladavok — Vymáhanie pohľadávok: od výzvy po exekúciu
+- https://www.tkak.sk/blog/ako-ucinne-vymahat-pohladavku-krok-za-krokom — Ako účinne vymáhať pohľadávku krok za krokom
+- https://www.tkak.sk/blog/predzalobna-vyzva-preco-ju-nepodcenit — Predžalobná výzva: prečo ju nepodceniť
+- https://www.tkak.sk/blog/kupa-bytu — Kúpa bytu: ako ochrániť peniaze pri prevode
+- https://www.tkak.sk/blog/vecne-bremena-a-tarchy-odhalte-ich-pred-kupou — Vecné bremená a ťarchy: odhaľte ich pred kúpou
+- https://www.tkak.sk/blog/najomna-zmluva-na-byt-7-klucovych-klauzul — Nájomná zmluva na byt: 7 kľúčových klauzúl
+- https://www.tkak.sk/blog/zmluva-revizia — Prečo sa oplatí dať si skontrolovať každú zmluvu
+- https://www.tkak.sk/blog/gdpr-eshop — GDPR pre e-shop: 7 vecí, ktoré musíte mať
+- https://www.tkak.sk/blog/reklamacie-v-e-shope-prava-a-povinnosti — Reklamácie v e-shope: práva a povinnosti
+- https://www.tkak.sk/blog/buying-property-slovakia — Kúpa nehnuteľnosti na Slovensku zahraničným kupujúcim
+- https://www.tkak.sk/blog/company-formation-slovakia — Založenie s.r.o. na Slovensku pre zahraničného zakladateľa
+- https://www.tkak.sk/blog/debt-recovery-slovakia — Slovenský odberateľ nezaplatil: ako vymáha pohľadávku zahraničný veriteľ
+
+## Právne stránky (slovensky)
+
+- https://www.tkak.sk/ochrana-udajov — ochrana osobných údajov
+- https://www.tkak.sk/obchodne-podmienky — obchodné podmienky
+- https://www.tkak.sk/cookies — zásady používania cookies
+
 ## Vzory zmlúv (na stiahnutie online)
 
 - Pracovná zmluva (19 €), Zmluva o mlčanlivosti / NDA (19 €), Obchodné podmienky pre e-shop (39 €), Nájomná zmluva (24 €), Zmluva o dielo (29 €).
 - Pre firmy s pravidelnou právnou agendou sú dostupné právne paušály.
+- Poznámka: e-shop so vzormi sa pripravuje a zatiaľ nie je verejne dostupný.
 
 ## Kontakt
 
@@ -53,6 +127,7 @@ Slovak URLs have no prefix, English ones are prefixed with `/en`.
 - https://www.tkak.sk/en/contact — Contact
 - https://www.tkak.sk/en/international-clients — Services for international clients (English-speaking, handled remotely)
 - https://www.tkak.sk/en/transport-debt-recovery — Recovering unpaid carriage charges from Slovak debtors under the CMR Convention; written for foreign hauliers and freight forwarders (the Slovak counterpart is /vymahanie-prepravnych-pohladavok)
+- https://www.tkak.sk/en/company-formation-residence — Setting up a Slovak company together with a residence permit (business, employment, EU Blue Card) for third-country nationals (the Slovak counterpart is /zalozenie-firmy-a-pobyt)
 
 ### Practice areas (English)
 
@@ -68,6 +143,24 @@ Slovak URLs have no prefix, English ones are prefixed with `/en`.
 - https://www.tkak.sk/en/blog/buying-property-slovakia — Buying property in Slovakia as a foreigner
 - https://www.tkak.sk/en/blog/company-formation-slovakia — Setting up a company in Slovakia
 - https://www.tkak.sk/en/blog/debt-recovery-slovakia — Recovering debt from a Slovak company
+
+### All other articles (English)
+
+- https://www.tkak.sk/en/blog/personal-bankruptcy-2026-terms-and-process — Personal Bankruptcy 2026: Terms and Process
+- https://www.tkak.sk/en/blog/bankruptcy-vs-restructuring-which-tool-when — Bankruptcy vs. Restructuring: Which Tool, When
+- https://www.tkak.sk/en/blog/restructuring-a-company-in-2026 — Restructuring a company in 2026: when to act and how
+- https://www.tkak.sk/en/blog/director-liability-in-an-llc-personal-assets — Director Liability in an LLC: When Personal Assets Are at Risk
+- https://www.tkak.sk/en/blog/forming-an-llc-step-by-step-in-2026 — Forming an LLC step by step in 2026
+- https://www.tkak.sk/en/blog/setting-up-an-sro-step-by-step — Setting up an s.r.o. step by step
+- https://www.tkak.sk/en/blog/debt-recovery-from-demand-to-enforcement — Debt recovery: from demand to enforcement
+- https://www.tkak.sk/en/blog/how-to-recover-a-debt-step-by-step — How to Effectively Recover a Debt Step by Step
+- https://www.tkak.sk/en/blog/pre-litigation-notice-why-it-matters — Pre-litigation Notice: Why It Matters
+- https://www.tkak.sk/en/blog/buying-a-flat-how-to-protect-your-money — Buying a flat: how to protect your money in the transfer
+- https://www.tkak.sk/en/blog/easements-and-encumbrances-before-you-buy — Easements and Encumbrances: Spot Them Before You Buy
+- https://www.tkak.sk/en/blog/apartment-lease-7-key-protective-clauses — Apartment Lease: 7 Key Protective Clauses
+- https://www.tkak.sk/en/blog/why-it-pays-to-have-every-contract-reviewed — Why it pays to have every contract reviewed
+- https://www.tkak.sk/en/blog/gdpr-for-your-e-shop-7-things-you-must-have — GDPR for your e-shop: 7 things you must have
+- https://www.tkak.sk/en/blog/e-shop-complaints-rights-and-obligations — E-shop Complaints: Rights and Obligations
 
 ### Offices by city (English)
 
@@ -90,3 +183,9 @@ Slovak URLs have no prefix, English ones are prefixed with `/en`.
 - E-mail: klienti@tkak.sk
 - Address: Námestie SNP 74/28, 960 01 Zvolen, Slovakia
 - Office hours: Mon–Fri 09:00–18:00 (CET/CEST)
+
+### Note on the situation pages
+
+The six situation pages listed under „Konkrétne situácie klientov“ are written in
+Slovak only, for clients in Slovakia. They have no English counterpart and their
+`/en` addresses return 404.
