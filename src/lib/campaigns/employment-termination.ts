@@ -8,7 +8,9 @@ import type { CampaignData } from "./types";
  * § 79 ZP — náhrada mzdy v sume priemerného zárobku, najviac za 36 mesiacov;
  * nad 12 mesiacov ju súd môže na žiadosť zamestnávateľa znížiť alebo nepriznať.
  * § 79 ods. 4 ZP — ak zamestnanec netrvá na ďalšom zamestnávaní, platí fikcia
- * skončenia dohodou.
+ * skončenia dohodou; § 79 ods. 5 — pri neplatnom okamžitom skončení a pri
+ * skončení v skúšobnej dobe mu však patrí náhrada mzdy za výpovednú dobu
+ * dvoch mesiacov.
  */
 export const employmentTermination: CampaignData = {
   id: "employment-termination",
@@ -133,8 +135,16 @@ export const employmentTermination: CampaignData = {
     ],
     fields: [
       { name: "employer", label: "Zamestnávateľ", placeholder: "názov firmy" },
-      { name: "endDate", label: "Kedy sa mal pracovný pomer skončiť", placeholder: "napr. 30. 6. 2026" },
-      { name: "salary", label: "Priemerný mesačný zárobok (orientačne)", placeholder: "napr. 1 400 €" },
+      {
+        name: "endDate",
+        label: "Kedy sa mal pracovný pomer skončiť",
+        placeholder: "napr. 30. 6. 2026",
+      },
+      {
+        name: "salary",
+        label: "Priemerný mesačný zárobok (orientačne)",
+        placeholder: "napr. 1 400 €",
+      },
     ],
     messageLabel: "Ako to prebehlo a čo vám zamestnávateľ uviedol ako dôvod",
     subject: "Neplatné skončenie pracovného pomeru — podklady",
@@ -153,7 +163,7 @@ export const employmentTermination: CampaignData = {
     },
     {
       q: "Čo znamená „trvať na ďalšom zamestnávaní“ a musím to urobiť?",
-      a: "Je to písomné oznámenie zamestnávateľovi, že trváte na tom, aby vás naďalej zamestnával. Má to zásadný finančný dopad: od tohto oznámenia vám patrí náhrada mzdy v sume priemerného zárobku až do času, kým vám umožní pokračovať v práci alebo kým súd rozhodne (§ 79 ods. 1). Ak na ďalšom zamestnávaní netrváte, zákon vychádza z toho, že pracovný pomer sa skončil dohodou — a náhrada mzdy vám nepatrí.",
+      a: "Je to písomné oznámenie zamestnávateľovi, že trváte na tom, aby vás naďalej zamestnával. Má to zásadný finančný dopad: od tohto oznámenia vám patrí náhrada mzdy v sume priemerného zárobku až do času, kým vám umožní pokračovať v práci alebo kým súd rozhodne (§ 79 ods. 1). Ak na ďalšom zamestnávaní netrváte, zákon vychádza z toho, že pracovný pomer sa skončil dohodou (§ 79 ods. 4). Neznamená to však vždy nulu: ak išlo o neplatné okamžité skončenie alebo o neplatné skončenie v skúšobnej dobe, patrí vám náhrada mzdy v sume priemerného zárobku za výpovednú dobu dvoch mesiacov (§ 79 ods. 5).",
     },
     {
       q: "Koľko môžem dostať?",

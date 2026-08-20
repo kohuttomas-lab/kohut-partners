@@ -6,15 +6,22 @@ import type { CampaignData } from "./types";
  * ak orgán do 6 mesiacov neuspokojí, možno sa domáhať na súde.
  * § 17: uhrádza sa skutočná škoda a ušlý zisk; ak konštatovanie porušenia
  * nestačí, aj nemajetková ujma v peniazoch.
+ * § 16 ods. 4: na súde možno požadovať úhradu len v rozsahu nároku a z titulu,
+ * ktoré boli predbežne prerokované.
+ * § 17 ods. 4: nemajetková ujma nesmie presiahnuť náhradu pre obete násilných
+ * trestných činov.
  * § 19: premlčanie 3 roky od vedomosti o škode; ak je podmienkou zrušenie
- * rozhodnutia, od doručenia zrušujúceho rozhodnutia.
+ * rozhodnutia, od doručenia zrušujúceho rozhodnutia. Ods. 3 — lehota NEPLYNIE
+ * počas predbežného prerokovania (najdlhšie 6 mesiacov). Ods. 2 — objektívna
+ * hranica 10 rokov okrem škody na zdraví.
  */
 export const stateLiability: CampaignData = {
   id: "state-liability",
   pathname: "/state-liability",
 
   meta: {
-    title: "Náhrada škody od štátu — prieťahy a nezákonné rozhodnutia | kohút & partners",
+    title:
+      "Náhrada škody od štátu — prieťahy a nezákonné rozhodnutia | kohút & partners",
     description:
       "Súd či úrad rozhodol nezákonne alebo koná neprimerane dlho? Štát za to zodpovedá. Posúdime nárok podľa zákona 514/2003 zadarmo. Celá SR.",
   },
@@ -65,7 +72,7 @@ export const stateLiability: CampaignData = {
   scope: {
     overline: "Rozsah",
     heading: "Čo sa dá nahradiť",
-    lead: "Náhrada nie je len symbolická — uhrádza sa skutočná škoda, ušlý zisk a v odôvodnených prípadoch aj nemajetková ujma v peniazoch (§ 17).",
+    lead: "Náhrada nie je len symbolická — uhrádza sa skutočná škoda, ušlý zisk a v odôvodnených prípadoch aj nemajetková ujma v peniazoch (§ 17). Nemajetková ujma má však zákonný strop: nemôže byť vyššia ako náhrada poskytovaná osobám poškodeným násilnými trestnými činmi (§ 17 ods. 4).",
     items: [
       "Skutočná škoda vrátane trov predchádzajúcich konaní",
       "Trovy obhajoby pri zrušenom trestnom stíhaní",
@@ -85,7 +92,7 @@ export const stateLiability: CampaignData = {
     },
     {
       title: "Žiadosť o predbežné prerokovanie",
-      desc: "Nárok treba najprv písomne uplatniť u príslušného orgánu (§ 15). Žiadosť pripravíme so všetkými náležitosťami — jej kvalita rozhoduje o tom, či sa vec vyrieši bez súdu.",
+      desc: "Nárok treba najprv písomne uplatniť u príslušného orgánu (§ 15). Žiadosť pripravíme so všetkými náležitosťami vrátane vyčíslenia. Na súde potom možno požadovať úhradu len v rozsahu nároku a z titulu, ktoré boli predbežne prerokované (§ 16 ods. 4) — čo sa v žiadosti podhodnotí, to sa už v žalobe nedohoní.",
     },
     {
       title: "Šesťmesačná lehota orgánu",
@@ -99,7 +106,7 @@ export const stateLiability: CampaignData = {
 
   deadline: {
     heading: "Tri roky — a povinný predkrok",
-    body: "Právo na náhradu škody sa premlčuje za tri roky odo dňa, keď ste sa o škode dozvedeli; ak je podmienkou zrušenie rozhodnutia, lehota beží od doručenia zrušujúceho rozhodnutia (§ 19). Pred žalobou je navyše povinné predbežné prerokovanie nároku u príslušného orgánu — bez neho súd žalobu neprejedná. Kým orgán vec šesť mesiacov posudzuje, čas beží, preto sa oplatí začať čo najskôr.",
+    body: "Právo na náhradu škody sa premlčuje za tri roky odo dňa, keď ste sa o škode dozvedeli; ak je podmienkou zrušenie rozhodnutia, lehota beží od doručenia zrušujúceho rozhodnutia (§ 19). Pred žalobou je navyše povinné predbežné prerokovanie nároku u príslušného orgánu — bez neho súd žalobu neprejedná. Počas predbežného prerokovania premlčacia lehota neplynie — odo dňa podania žiadosti do skončenia prerokovania, najdlhšie však šesť mesiacov (§ 19 ods. 3). Najneskôr sa právo premlčí za desať rokov odo dňa, keď vám bolo doručené rozhodnutie, ktorým škoda vznikla; to neplatí pri škode na zdraví (§ 19 ods. 2).",
   },
 
   pricing: {
@@ -131,9 +138,21 @@ export const stateLiability: CampaignData = {
       "Ak nárok šancu nemá — napríklad preto, že neboli vyčerpané opravné prostriedky — povieme vám to rovno aj s tým, či sa to ešte dá napraviť.",
     ],
     fields: [
-      { name: "authority", label: "Ktorý orgán vo veci konal", placeholder: "súd / prokuratúra / úrad / exekútor" },
-      { name: "caseNumber", label: "Spisová značka, ak ju máte", placeholder: "napr. 12C/45/2021" },
-      { name: "duration", label: "Ako dlho konanie trvá / trvalo", placeholder: "napr. od roku 2019" },
+      {
+        name: "authority",
+        label: "Ktorý orgán vo veci konal",
+        placeholder: "súd / prokuratúra / úrad / exekútor",
+      },
+      {
+        name: "caseNumber",
+        label: "Spisová značka, ak ju máte",
+        placeholder: "napr. 12C/45/2021",
+      },
+      {
+        name: "duration",
+        label: "Ako dlho konanie trvá / trvalo",
+        placeholder: "napr. od roku 2019",
+      },
     ],
     messageLabel: "Čo sa stalo a aká škoda vám vznikla",
     subject: "Náhrada škody od štátu — podklady",
@@ -148,7 +167,7 @@ export const stateLiability: CampaignData = {
   faq: [
     {
       q: "Trestné stíhanie proti mne bolo zastavené. Na čo mám nárok?",
-      a: "Ustálená rozhodovacia prax vychádza z toho, že vznesené obvinenie, ktoré neskončilo právoplatným odsúdením, sa posudzuje ako nezákonné rozhodnutie. Nahrádzajú sa najmä trovy obhajoby, ušlý zisk či strata na zárobku a spravidla aj nemajetková ujma — jej výška závisí od dĺžky stíhania, jeho medializácie a dopadov na váš život (§ 17 ods. 3).",
+      a: "Ustálená rozhodovacia prax vychádza z toho, že vznesené obvinenie, ktoré neskončilo právoplatným odsúdením, sa posudzuje ako nezákonné rozhodnutie. Nahrádzajú sa najmä trovy obhajoby, ušlý zisk či strata na zárobku a spravidla aj nemajetková ujma — jej výška sa určuje podľa zákonných kritérií — osoby poškodeného a prostredia, v ktorom žije a pracuje, závažnosti ujmy a okolností jej vzniku a závažnosti následkov v súkromnom živote aj v spoločenskom uplatnení (§ 17 ods. 3).",
     },
     {
       q: "Moje súdne konanie trvá už mnoho rokov. Je to prieťah?",
@@ -164,7 +183,7 @@ export const stateLiability: CampaignData = {
     },
     {
       q: "Dokedy sa dá nárok uplatniť?",
-      a: "Premlčacia lehota je tri roky odo dňa, keď ste sa o škode dozvedeli. Ak je podmienkou uplatnenia zrušenie právoplatného rozhodnutia, beží od doručenia zrušujúceho rozhodnutia (§ 19). Do lehoty sa počíta aj šesťmesačné predbežné prerokovanie, preto neodkladajte začiatok na poslednú chvíľu.",
+      a: "Premlčacia lehota je tri roky odo dňa, keď ste sa o škode dozvedeli. Ak je podmienkou uplatnenia zrušenie právoplatného rozhodnutia, beží od doručenia zrušujúceho rozhodnutia (§ 19). Počas predbežného prerokovania lehota neplynie, a to odo dňa podania žiadosti do skončenia prerokovania, najdlhšie však šesť mesiacov (§ 19 ods. 3) — o tento čas sa teda lehota reálne predĺži. Nezávisle od toho platí desaťročná hranica odo dňa doručenia rozhodnutia, ktorým škoda vznikla, okrem škody na zdraví (§ 19 ods. 2).",
     },
     {
       q: "Má zmysel ísť do sporu so štátom? Nie je to vopred prehraté?",

@@ -7,8 +7,10 @@ import type { CampaignData } from "./types";
  * hodnotenie bolesti sa zvýši až o polovicu pri infekcii rany, bolestivejšom
  * liečení či komplikáciách a pri operačnom výkone; § 5 ods. 5 — v prípadoch
  * hodných osobitného zreteľa (napr. invalidita) môže súd náhradu za sťaženie
- * spoločenského uplatnenia zvýšiť najviac o 50 %; § 6 — dohoda o vyrovnaní,
- * pri PZP ju uzatvára poisťovateľ alebo Slovenská kancelária poisťovateľov.
+ * spoločenského uplatnenia zvýšiť najviac o 50 %; § 6 ods. 1 — dohoda
+ * o náhrade za SSU aj nad zákonnú výšku, najviac však do výšky podľa § 5 ods. 5;
+ * písomná forma (§ 6 ods. 2); pri PZP ju uzatvára poisťovateľ alebo Slovenská
+ * kancelária poisťovateľov.
  */
 export const accidentCompensation: CampaignData = {
   id: "accident-compensation",
@@ -54,7 +56,7 @@ export const accidentCompensation: CampaignData = {
       },
       {
         title: "Neskoré uzavretie dohody o vyrovnaní",
-        desc: "Dohodu možno uzavrieť aj nad zákonnú výšku náhrady (§ 6 zákona 437/2004). Podpísaná predčasne — pred ustálením stavu — však spravidla uzavrie aj nároky, ktoré sa prejavia až neskôr.",
+        desc: "Dohodu o náhrade za sťaženie spoločenského uplatnenia možno uzavrieť aj nad zákonnú výšku, najviac však do výšky podľa § 5 ods. 5, teda so zvýšením do 50 % (§ 6 ods. 1 zákona 437/2004); musí mať písomnú formu. Podpísaná predčasne — pred ustálením stavu — však spravidla uzavrie aj nároky, ktoré sa prejavia až neskôr.",
       },
       {
         title: "Nezohľadnený osobitný zreteľ",
@@ -132,9 +134,21 @@ export const accidentCompensation: CampaignData = {
       "Ak je ponuka poisťovne primeraná, povieme vám to rovno — aj to je užitočná informácia, keď sa rozhodujete, či ju podpísať.",
     ],
     fields: [
-      { name: "accidentDate", label: "Kedy sa nehoda stala", placeholder: "napr. 12. 3. 2026" },
-      { name: "insurer", label: "Poisťovňa vinníka", placeholder: "ak ju poznáte" },
-      { name: "offer", label: "Ponúknutá suma (orientačne)", placeholder: "napr. 2 400 €" },
+      {
+        name: "accidentDate",
+        label: "Kedy sa nehoda stala",
+        placeholder: "napr. 12. 3. 2026",
+      },
+      {
+        name: "insurer",
+        label: "Poisťovňa vinníka",
+        placeholder: "ak ju poznáte",
+      },
+      {
+        name: "offer",
+        label: "Ponúknutá suma (orientačne)",
+        placeholder: "napr. 2 400 €",
+      },
     ],
     messageLabel: "Aké zranenia ste utrpeli a ako prebiehalo liečenie",
     subject: "Odškodnenie po dopravnej nehode — podklady",

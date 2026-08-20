@@ -7,14 +7,16 @@ import type { CampaignData } from "./types";
  * písm. d), e), g) až i), l) a p), RPMN je uvedená nesprávne v neprospech
  * spotrebiteľa, RPMN prekračuje najvyššiu prípustnú odplatu, úver nebol
  * poskytnutý bezhotovostne predpísaným spôsobom, alebo veriteľ hrubo porušil
- * povinnosť posúdiť schopnosť splácať (§ 11 ods. 2).
+ * povinnosť posúdiť schopnosť splácať (§ 11 ods. 2); pri samotnom
+ * nedodržaní odbornej starostlivosti nemôže veriteľ žiadať jednorazové splatenie.
  */
 export const consumerCredit: CampaignData = {
   id: "consumer-credit",
   pathname: "/consumer-credit",
 
   meta: {
-    title: "Bezúročný spotrebiteľský úver — preverenie zmluvy | kohút & partners",
+    title:
+      "Bezúročný spotrebiteľský úver — preverenie zmluvy | kohút & partners",
     description:
       "Chyba v úverovej zmluve môže znamenať, že vraciate len požičanú sumu — bez úrokov a poplatkov. Preveríme zmluvu zadarmo. Advokátska kancelária, celá SR.",
   },
@@ -49,7 +51,7 @@ export const consumerCredit: CampaignData = {
       },
       {
         title: "Neposúdená schopnosť splácať",
-        desc: "Ak veriteľ poskytol úver bez akýchkoľvek údajov o vašich príjmoch a výdavkoch alebo bez nahliadnutia do úverového registra, ide o hrubé porušenie odbornej starostlivosti a úver je bezúročný (§ 11 ods. 2).",
+        desc: "Ak veriteľ poskytol úver bez akýchkoľvek údajov o vašich príjmoch a výdavkoch alebo bez nahliadnutia do úverového registra, ide o hrubé porušenie odbornej starostlivosti a úver je bezúročný a bez poplatkov. Už pri samotnom nedodržaní odbornej starostlivosti navyše veriteľ nie je oprávnený žiadať jednorazové splatenie celého úveru (§ 11 ods. 2).",
       },
       {
         title: "Nesprávny spôsob poskytnutia",
@@ -131,11 +133,20 @@ export const consumerCredit: CampaignData = {
       "Ak je zmluva v poriadku, povieme vám to rovno — nebudeme vymýšľať spor tam, kde nie je.",
     ],
     fields: [
-      { name: "creditor", label: "Veriteľ", placeholder: "banka / splátková spoločnosť / nebankovka" },
-      { name: "signedDate", label: "Kedy ste zmluvu podpísali", placeholder: "napr. jún 2022" },
+      {
+        name: "creditor",
+        label: "Veriteľ",
+        placeholder: "banka / splátková spoločnosť / nebankovka",
+      },
+      {
+        name: "signedDate",
+        label: "Kedy ste zmluvu podpísali",
+        placeholder: "napr. jún 2022",
+      },
       { name: "amount", label: "Požičaná suma", placeholder: "napr. 6 000 €" },
     ],
-    messageLabel: "Stav úveru — splácate, splatili ste, alebo vás niekto vymáha?",
+    messageLabel:
+      "Stav úveru — splácate, splatili ste, alebo vás niekto vymáha?",
     subject: "Preverenie spotrebiteľského úveru — podklady",
     documents: [
       "úverovú zmluvu vrátane všeobecných obchodných podmienok",

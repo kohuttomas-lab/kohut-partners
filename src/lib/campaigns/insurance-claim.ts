@@ -1,6 +1,7 @@
 import type { CampaignData } from "./types";
 
-/** Zamietnuté alebo krátené poistné plnenie. Premlčanie: § 104 OZ. */
+/** Zamietnuté alebo krátené poistné plnenie. Premlčanie: trojročná lehota podľa
+ *  § 101 OZ, ktorá podľa § 104 OZ začína plynúť až rok po poistnej udalosti. */
 export const insuranceClaim: CampaignData = {
   id: "insurance-claim",
   pathname: "/insurance-claim",
@@ -91,7 +92,7 @@ export const insuranceClaim: CampaignData = {
 
   deadline: {
     heading: "Nenechajte nárok premlčať",
-    body: "Právo na plnenie z poistenia sa premlčuje v trojročnej lehote, ktorá začína plynúť až rok po vzniku poistnej udalosti (§ 104 Občianskeho zákonníka). Zamietavý list poisťovne túto lehotu nezastaví ani nepredĺži — plynie ďalej aj počas toho, ako sa s poisťovňou dohadujete. Čím skôr sa ozvete, tým viac možností zostáva otvorených.",
+    body: "Právo na plnenie z poistenia sa premlčuje vo všeobecnej trojročnej lehote (§ 101 Občianskeho zákonníka), ktorá však začína plynúť až rok po poistnej udalosti (§ 104 Občianskeho zákonníka). Zamietavý list poisťovne túto lehotu nezastaví ani nepredĺži — plynie ďalej aj počas toho, ako sa s poisťovňou dohadujete. Čím skôr sa ozvete, tým viac možností zostáva otvorených.",
   },
 
   pricing: {
@@ -123,9 +124,21 @@ export const insuranceClaim: CampaignData = {
       "Ak vec podľa nás nemá šancu, povieme vám to rovno — nemá zmysel, aby ste do sporu išli s falošnými očakávaniami.",
     ],
     fields: [
-      { name: "insurer", label: "Poisťovňa", placeholder: "napr. Allianz, Generali…" },
-      { name: "eventDate", label: "Kedy sa udalosť stala", placeholder: "napr. marec 2025" },
-      { name: "amount", label: "O akú sumu ide (orientačne)", placeholder: "napr. 8 000 €" },
+      {
+        name: "insurer",
+        label: "Poisťovňa",
+        placeholder: "napr. Allianz, Generali…",
+      },
+      {
+        name: "eventDate",
+        label: "Kedy sa udalosť stala",
+        placeholder: "napr. marec 2025",
+      },
+      {
+        name: "amount",
+        label: "O akú sumu ide (orientačne)",
+        placeholder: "napr. 8 000 €",
+      },
     ],
     messageLabel: "Čo sa stalo a ako to poisťovňa odôvodnila",
     subject: "Zamietnuté poistné plnenie — podklady",
@@ -160,7 +173,7 @@ export const insuranceClaim: CampaignData = {
     },
     {
       q: "Do kedy sa dá nárok uplatniť?",
-      a: "Právo na poistné plnenie sa premlčuje v trojročnej lehote plynúcej rok po vzniku poistnej udalosti (§ 104 Občianskeho zákonníka). Ak sa poistná udalosť stala pred viac ako tromi rokmi, ozvite sa čo najskôr — lehotu treba prepočítať prednostne.",
+      a: "Právo na poistné plnenie sa premlčuje vo všeobecnej trojročnej lehote (§ 101 Občianskeho zákonníka), ktorá začína plynúť až rok po poistnej udalosti (§ 104 Občianskeho zákonníka). Ak sa poistná udalosť stala pred viac ako tromi rokmi, ozvite sa čo najskôr — lehotu treba prepočítať prednostne.",
     },
     {
       q: "Ako je to s odmenou, ak spor nevyjde?",

@@ -6,7 +6,8 @@ import type { CampaignData } from "./types";
  * spôsobujúce zánik nároku, titul bol zrušený alebo sú tu iné skutočnosti
  * brániace vymáhateľnosti titulu. Návrh na zastavenie možno podať do 15 dní
  * od doručenia upovedomenia o začatí exekúcie a v tejto lehote má odkladný
- * účinok (§ 61k ods. 2); neskôr len k novým skutočnostiam (ods. 3).
+ * účinok (§ 61k ods. 2); neskôr len k novým skutočnostiam (ods. 3) — okrem
+ * skutočností, ktoré povinný bez vlastnej viny nemohol uplatniť skôr.
  */
 export const enforcementDefense: CampaignData = {
   id: "enforcement-defense",
@@ -98,7 +99,7 @@ export const enforcementDefense: CampaignData = {
 
   deadline: {
     heading: "15 dní s odkladným účinkom",
-    body: "Návrh na zastavenie exekúcie môžete podať do 15 dní od doručenia upovedomenia o začatí exekúcie — a len návrh podaný v tejto lehote má odkladný účinok, teda bráni speňažovaniu majetku, kým súd nerozhodne (§ 61k ods. 2 Exekučného poriadku). Neskôr sa dajú namietať už len skutočnosti, ktoré nastali po uplynutí lehoty, a odkladný účinok návrh nemá. Deň doručenia upovedomenia je preto najdôležitejší dátum celej exekúcie — nečakajte.",
+    body: "Návrh na zastavenie exekúcie môžete podať do 15 dní od doručenia upovedomenia o začatí exekúcie — a len návrh podaný v tejto lehote má odkladný účinok, teda bráni speňažovaniu majetku, kým súd nerozhodne (§ 61k ods. 2 Exekučného poriadku). Návrh musí byť odôvodnený a musia v ňom byť uvedené všetky skutočnosti, ktoré viete ku dňu jeho podania uplatniť — držať si niečo „na neskôr“ sa nedá. V neskôr podaných návrhoch už možno namietať len skutočnosti, ktoré nastali po uplynutí lehoty, a odkladný účinok taký návrh nemá; to však neplatí pre skutočnosti, ktoré ste bez vlastnej viny nemohli uplatniť skôr (§ 61k ods. 3). Deň doručenia upovedomenia je preto najdôležitejší dátum celej exekúcie — nečakajte.",
   },
 
   pricing: {
@@ -130,8 +131,16 @@ export const enforcementDefense: CampaignData = {
       "Ak sa exekúcia zastaviť nedá, povieme vám to rovno — a poradíme, ako si aspoň ochrániť účet, mzdu a nepostihnuteľné minimum.",
     ],
     fields: [
-      { name: "deliveryDate", label: "Kedy vám upovedomenie prišlo", placeholder: "napr. 11. 8. 2026" },
-      { name: "creditor", label: "Oprávnený (kto vymáha)", placeholder: "napr. EOS KSI, Intrum…" },
+      {
+        name: "deliveryDate",
+        label: "Kedy vám upovedomenie prišlo",
+        placeholder: "napr. 11. 8. 2026",
+      },
+      {
+        name: "creditor",
+        label: "Oprávnený (kto vymáha)",
+        placeholder: "napr. EOS KSI, Intrum…",
+      },
       { name: "amount", label: "Vymáhaná suma", placeholder: "napr. 3 200 €" },
     ],
     messageLabel: "Z čoho dlh pochádza a čo o ňom viete",
