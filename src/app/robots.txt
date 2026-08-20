@@ -1,0 +1,9 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://www.tkak.sk
+Sitemap: https://www.tkak.sk/sitemap.xml
+
+# llms.txt — štruktúrovaný prehľad webu pre jazykové modely
+# https://www.tkak.sk/llms.txt
