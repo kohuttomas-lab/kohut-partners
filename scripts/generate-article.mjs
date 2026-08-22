@@ -1,7 +1,7 @@
 // Auto-generuje SK+EN blog článok cez Claude API a vloží ho do src/lib/content.ts.
 // Spúšťa GitHub Action (.github/workflows/auto-article.yml), výstup ide do PR na schválenie.
 // Vyžaduje env ANTHROPIC_API_KEY. Lokálny suchý beh: `node scripts/generate-article.mjs --dry-run`.
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, appendFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { assertPureInsertion, extractIds, assertOnlyPrepended } from "./lib/insert-guard.mjs";
@@ -175,3 +175,15 @@ assertOnlyPrepended(
 
 writeFileSync(TOPICS, updatedTopics);
 console.log(`Hotovo: pridaný článok "${a.title_sk}" (slug ${slug}).`);
+
+// GitHub Actions output pre nadväzujúci krok (návrh GBP príspevku na Telegram).
+// Zámerne AŽ TU, po všetkých poistkách a zápise — output existuje len keď sa
+// článok naozaj publikoval, nie pri --dry-run ani pri predčasnom exit(0)/(1) vyššie.
+if (process.env.GITHUB_OUTPUT) {
+  const draft = JSON.stringify({
+    title: a.title_sk,
+    excerpt: a.excerpt_sk,
+    url: `https://www.tkak.sk/blog/${slug}`,
+  });
+  appendFileSync(process.env.GITHUB_OUTPUT, `gbp_draft<<GBP_DRAFT_EOF\n${draft}\nGBP_DRAFT_EOF\n`);
+}

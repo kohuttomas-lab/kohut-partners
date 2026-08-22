@@ -33,6 +33,7 @@ jobs:
         run: npm install --no-save @anthropic-ai/sdk@latest
 
       - name: Generovanie článku
+        id: generate
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/generate-article.mjs
@@ -143,3 +144,35 @@ jobs:
           git config user.email "kohut.tomas@gmail.com"
           git commit -m "Blog: AI-generovaný článok (auto-publish)"
           git push
+
+      # Poloautomat pre GBP: príspevky na Google Business Profile nejde publikovať cez
+      # API (Google zrušil verejný prístup k Local Posts), takže sem pošleme hotový
+      # návrh textu na skopírovanie. `gbp_draft` existuje len keď sa článok naozaj
+      # publikoval (nastavuje ho generate-article.mjs po zápise) — inak krok nič nepošle.
+      - name: Návrh GBP príspevku (Telegram)
+        if: steps.generate.outputs.gbp_draft != ''
+        env:
+          DRAFT: ${{ steps.generate.outputs.gbp_draft }}
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          node -e '
+            const d = JSON.parse(process.env.DRAFT);
+            const text = [
+              "📋 <b>Návrh GBP príspevku — kohút & partners</b>",
+              "",
+              "<b>" + d.title + "</b>",
+              d.excerpt,
+              "",
+              "🔗 " + d.url,
+              "",
+              "Skopíruj vyššie do Google Business Profile → Príspevky → Pridať aktualizáciu.",
+            ].join("\n");
+            fetch(`https://api.telegram.org/bot${process.env.BOT_TOKEN}/sendMessage`, {
+              method: "POST",
+              headers: { "content-type": "application/json" },
+              body: JSON.stringify({ chat_id: process.env.CHAT_ID, text, parse_mode: "HTML" }),
+            }).then(async (r) => {
+              if (!r.ok) { console.error("Telegram error:", r.status, await r.text()); process.exitCode = 1; }
+            });
+          '
