@@ -20,10 +20,35 @@ Ani jedna nie je cieľom žiadnej reklamy.
 |---|---|---|---|
 | B1 | `generate_lead` nie je kľúčová udalosť v GA4 | Ads vidí 0 konverzií, nemá podľa čoho optimalizovať a merať cenu za dopyt | používateľ (GA4 → Správa → Udalosti) |
 | B2 | Výstraha „Overenie pre oblasť finančných služieb v EÚ/EHP" | Ak je účet klasifikovaný ako finančné služby, môže byť doručovanie obmedzené | používateľ (vlákno 460402430) |
-| B3 | Kampaň „SK – Search – Poistné plnenie" (3 €/deň) má 0 zobrazení | Neznáma príčina — pozastavená, bez kľúčových slov, neschválená reklama alebo B2 | diagnostikovať |
+| B3 | ~~Kampaň „SK – Search – Poistné plnenie" má 0 zobrazení~~ **VYRIEŠENÉ 20. 8.** | Príčinou sú kľúčové slová v presnej zhode s nulovým objemom — pozri nižšie | — |
 
-**B3 je rozhodujúci.** Kým nevieme, prečo prvá tematická kampaň nedoručuje,
-nemá zmysel stavať ďalších päť.
+### B3 — diagnóza z 20. 8. 2026
+
+Kampaň je **Aktívne**, vyhľadávacia sieť, 3 €/deň, Maximalizovať kliknutia,
+reklama je **Vhodné** (schválená, účinnosť „Zlá"). Nič z toho ju nebrzdí.
+Brzdia ju **kľúčové slová**:
+
+| Kľúčové slovo | Zhoda | Stav |
+|---|---|---|
+| „krátenie poistného plnenia" | frázová | Vhodné |
+| „sťažnosť na poisťovňu" | frázová | Vhodné |
+| [poisťovňa nechce zaplatiť] | **presná** | **Nevhodné — nízky objem vyhľadávania** |
+| [spor s poisťovňou] | **presná** | **Nevhodné — nízky objem vyhľadávania** |
+| [krátené poistné plnenie] | **presná** | **Nevhodné — nízky objem vyhľadávania** |
+| [advokát poistné…] | **presná** | **Nevhodné — nízky objem vyhľadávania** |
+
+Väčšina slov je v **presnej zhode** a Google ich pre nulový objem vôbec
+neservíruje. Dve, ktoré vhodné sú, majú tak malý objem, že nazbierali nula
+zobrazení. Rovnaký problém má aj lokálna kampaň — z jej 27 slov je „nízky
+objem" na „vymáhanie pohľadávok advokát", „advokát nehnuteľností", „právne
+služby zvolen", „advokát súdny spor" aj „kúpna zmluva byt advokát".
+
+**Dôsledok pre túto prestavbu:** slovenské právne frázy sú príliš úzke na
+presnú zhodu. Preto sú v tomto dokumente všetky kľúčové slová vo **frázovej
+zhode** — a aj tak treba počítať s tým, že tie najšpecifickejšie („nesprávna
+RPMN", „rozhodcovský rozsudok exekúcia") objem mať nebudú. Pri každej skupine
+preto nechať aj jedno-dve širšie slová, ktoré objem majú, a presnosť riešiť
+negatívnymi kľúčovými slovami, nie zúžením zhody.
 
 ## Cieľová štruktúra
 
