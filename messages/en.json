@@ -611,7 +611,7 @@
       },
       {
         "title": "Company formation",
-        "desc": "Where a company does not exist yet, we prepare the incorporation documents and file the registration remotely via power of attorney — you do not need to be in Slovakia to sign."
+        "desc": "Where a company does not exist yet, we draft the founder’s deed or memorandum of association and authorise it as attorneys — since 17 August 2026 that is, alongside a notarial deed, the only permitted form (Section 57 of the Commercial Code). You do not need to be in Slovakia to sign: a representative signs for you under a power of attorney with an officially certified signature (Section 57(2)). We file the registration electronically; the registry court registers the company within two working days of receiving a complete application (Section 58(1) of Act No. 29/2026 Coll.)."
       },
       {
         "title": "Residence application",
@@ -633,7 +633,7 @@
       "Valid travel document, valid for at least six months beyond the intended stay.",
       "Extract from the criminal record of your home country (and of any country of residence in the last three years), apostilled or otherwise legalised where required — not older than 90 days at filing.",
       "Proof of secured accommodation in Slovakia.",
-      "For the business track: extract from the Slovak commercial register (once the company is formed) or the draft incorporation documents.",
+      "For the business track: extract from the Slovak commercial register (once the company is formed) or the draft incorporation documents; for remote formation, a power of attorney with an officially certified signature, apostilled or otherwise legalised where required.",
       "For the employment tracks: the employment contract or the employer's written promise of employment, and — for the Blue Card — proof of qualification: the decision recognising the university degree, or evidence of higher professional skills for the ICT occupations listed in Annex 3 to the Act."
     ],
     "priceOverline": "Fees",
@@ -643,7 +643,7 @@
       {
         "label": "Company formation",
         "value": "299 € flat fee",
-        "desc": "Full formation including filing with the commercial register and arranging the trade licences — the same fee we quote for any Slovak s.r.o."
+        "desc": "Full formation including attorney authorisation of the founding documents, filing with the commercial register and arranging the trade licences — the same fee we quote for any Slovak s.r.o. The EUR 220 court fee for first registration is paid separately."
       },
       {
         "label": "Residence permit application",
@@ -668,6 +668,10 @@
         "a": "Yes. Owning a share carries no residence condition for anyone — for the founder and shareholder of an s.r.o. the registry court checks tax and enforcement obstacles, not residence. The residence condition attaches to the person authorised to act on behalf of the company, typically the director: under Section 51(4) of Act No. 29/2026 Coll. on the Commercial Register the registry court checks, before registration, whether that person holds a Slovak residence permit, unless they are a national of an EU member state, an EEA state or an OECD state. The permit itself is then obtained as temporary residence for business purposes under Section 22 of Act No. 404/2011 Coll. A shareholder who is not a director needs no permit at all. Note that this is a condition for entry in the commercial register; for skilled and regulated trades the responsible representative must additionally be resident in Slovakia or otherwise authorised to reside here (Section 11(3) of the Trade Licensing Act) — a separate condition."
       },
       {
+        "q": "Do I have to go to a notary to form the company?",
+        "a": "Not necessarily. Since 17 August 2026 the memorandum of association and the founder’s deed must be drawn up either as a notarial deed or as a document authorised by an attorney (Section 57(1) and (3) of the Commercial Code as amended by Act No. 29/2026 Coll.). Authorisation means the attorney draws up the document, verifies the identity of the party and any representative and assesses the act’s compliance with the law (Section 1a(2) of Act No. 586/2003 Coll. on the Legal Profession); the document is deposited the same day in the Slovak Bar Association’s register of authorisations. Where a document is authorised by an attorney, no official certification of signatures is required (Section 50(4) of Act No. 29/2026 Coll.). A notarial deed remains mandatory for later general-meeting decisions of a multi-member s.r.o. on managing directors or on changes to shares (Section 127a(4) of the Commercial Code)."
+      },
+      {
         "q": "Do I need to found the company before I apply for residence, or the other way round?",
         "a": "In practice the company has to exist, or at least be filed for registration, before the residence application can show what the director will be doing in Slovakia. We sequence the two so the residence file is ready to submit as soon as the company is registered, rather than waiting afterwards."
       },
@@ -690,7 +694,7 @@
     ],
     "relatedTitle": "Related",
     "sourcesTitle": "The legislation this page is based on",
-    "sourcesLead": "Legal position as at 18 August 2026; Act No. 404/2011 Coll. is cited as in force from 15 July 2026, and Act No. 29/2026 Coll. on the Commercial Register, which replaced Act No. 530/2003 Coll. on 17 August 2026. The full text of each instrument is available on Slov-Lex and EUR-Lex. Thresholds tied to the subsistence minimum or the average wage change each year — the current figure must be checked as at the date of filing. The information above is general and does not replace advice on an individual matter.",
+    "sourcesLead": "Legal position as at 23 August 2026; Act No. 404/2011 Coll. is cited as in force from 15 July 2026, and Act No. 29/2026 Coll. on the Commercial Register, which replaced Act No. 530/2003 Coll. on 17 August 2026. The full text of each instrument is available on Slov-Lex and EUR-Lex. Thresholds tied to the subsistence minimum or the average wage change each year — the current figure must be checked as at the date of filing. The information above is general and does not replace advice on an individual matter.",
     "sources": [
       {
         "label": "Act No. 404/2011 Coll. on the Residence of Aliens",
@@ -707,6 +711,14 @@
       {
         "label": "Act No. 29/2026 Coll. on the Commercial Register (in force from 17 August 2026)",
         "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/29/"
+      },
+      {
+        "label": "Act No. 586/2003 Coll. on the Legal Profession — Sections 1a to 1ac, authorisation of documents",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2003/586/"
+      },
+      {
+        "label": "Act No. 71/1992 Coll. on Court Fees — item 17 of the tariff",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
       },
       {
         "label": "Decree of the Ministry of Justice No. 203/2026 Coll. on registration documents",

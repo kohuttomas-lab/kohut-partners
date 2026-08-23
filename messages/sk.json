@@ -611,7 +611,7 @@
       },
       {
         "title": "Založenie firmy",
-        "desc": "Ak firma ešte neexistuje, pripravíme zakladateľské dokumenty a podáme návrh na registráciu na diaľku na základe plnomocenstva — na podpis nemusíte byť na Slovensku."
+        "desc": "Ak firma ešte neexistuje, pripravíme zakladateľskú listinu alebo spoločenskú zmluvu a autorizujeme ju ako advokáti — od 17. augusta 2026 je to popri notárskej zápisnici jediná prípustná forma (§ 57 Obchodného zákonníka). Na podpis nemusíte byť na Slovensku: dokument za vás podpíše splnomocnenec na základe plnomocenstva s úradne osvedčeným podpisom (§ 57 ods. 2). Návrh na zápis podáme elektronicky; registrový súd zapíše firmu do dvoch pracovných dní od doručenia úplného návrhu (§ 58 ods. 1 zákona č. 29/2026 Z. z.)."
       },
       {
         "title": "Žiadosť o pobyt",
@@ -633,7 +633,7 @@
       "Platný cestovný doklad s platnosťou aspoň šesť mesiacov po plánovanom skončení pobytu.",
       "Výpis z registra trestov domovskej krajiny (a každej krajiny pobytu za posledné tri roky), overený apostilou alebo inak legalizovaný, kde treba — nie starší ako 90 dní pri podaní.",
       "Doklad o zabezpečenom ubytovaní na Slovensku.",
-      "Pri podnikateľskej ceste: výpis z obchodného registra (po založení firmy) alebo návrh zakladateľských dokumentov.",
+      "Pri podnikateľskej ceste: výpis z obchodného registra (po založení firmy) alebo návrh zakladateľských dokumentov; pri založení na diaľku plnomocenstvo s úradne osvedčeným podpisom, overené apostilou alebo inak legalizované, kde treba.",
       "Pri zamestnaneckých cestách: pracovná zmluva alebo písomný prísľub zamestnávateľa, a pri modrej karte doklad o kvalifikácii — rozhodnutie o uznaní vysokoškolského vzdelania, prípadne doklad o vyšších odborných zručnostiach pri povolaniach z prílohy č. 3 zákona."
     ],
     "priceOverline": "Odmena",
@@ -643,7 +643,7 @@
       {
         "label": "Založenie firmy",
         "value": "299 € paušál",
-        "desc": "Kompletné založenie vrátane zápisu do obchodného registra a vybavenia živností — rovnaká cena, akú ponúkame pri založení akejkoľvek slovenskej s.r.o."
+        "desc": "Kompletné založenie vrátane autorizácie zakladateľských dokumentov advokátom, zápisu do obchodného registra a vybavenia živností — rovnaká cena, akú ponúkame pri založení akejkoľvek slovenskej s.r.o. Súdny poplatok za prvozápis 220 € sa platí samostatne."
       },
       {
         "label": "Žiadosť o pobyt",
@@ -668,6 +668,10 @@
         "a": "Áno. Vlastníctvo obchodného podielu nenesie podmienku pobytu pre nikoho — pri zakladateľovi a spoločníkovi s.r.o. registrový súd preveruje daňové a exekučné prekážky, nie pobyt. Podmienka pobytu vzniká pri osobe oprávnenej konať v mene spoločnosti, typicky pri konateľovi: podľa § 51 ods. 4 zákona č. 29/2026 Z. z. o obchodnom registri registrový súd pred zápisom preveruje povolenie na pobyt v Slovenskej republike, ak nejde o občana členského štátu EÚ, štátu Európskeho hospodárskeho priestoru alebo štátu OECD. Samotný pobyt sa potom rieši ako prechodný pobyt na účel podnikania podľa § 22 zákona č. 404/2011 Z. z. Spoločník, ktorý nie je konateľom, nepotrebuje pobyt vôbec. Ide o podmienku pre zápis do obchodného registra; pri remeselných a viazaných živnostiach musí mať zodpovedný zástupca bydlisko na Slovensku alebo iné oprávnenie na pobyt (§ 11 ods. 3 živnostenského zákona) — to je samostatná podmienka."
       },
       {
+        "q": "Musím kvôli založeniu firmy ísť k notárovi?",
+        "a": "Nie nevyhnutne. Od 17. augusta 2026 musí byť spoločenská zmluva aj zakladateľská listina vyhotovená vo forme notárskej zápisnice alebo vo forme dokumentu autorizovaného advokátom (§ 57 ods. 1 a 3 Obchodného zákonníka v znení zákona č. 29/2026 Z. z.). Autorizácia znamená, že advokát dokument spíše, zistí totožnosť účastníka a jeho zástupcu a posúdi súlad úkonu so zákonom (§ 1a ods. 2 zákona č. 586/2003 Z. z. o advokácii); dokument v ten istý deň uloží do registra autorizácií Slovenskej advokátskej komory. Pri dokumente autorizovanom advokátom sa úradné osvedčenie podpisov nevyžaduje (§ 50 ods. 4 zákona č. 29/2026 Z. z.). Notárska zápisnica ostáva povinná pri neskorších rozhodnutiach valného zhromaždenia viacosobovej s.r.o. o konateľoch alebo o zmene podielov (§ 127a ods. 4 Obchodného zákonníka)."
+      },
+      {
         "q": "Musím firmu založiť pred žiadosťou o pobyt, alebo naopak?",
         "a": "V praxi musí firma existovať, alebo aspoň byť podaná na registráciu, aby žiadosť o pobyt vedela preukázať, čo bude konateľ na Slovensku robiť. Oba kroky poskladáme tak, aby bol spis o pobyt pripravený na podanie hneď, ako sa firma zapíše, nie až s odstupom."
       },
@@ -690,7 +694,7 @@
     ],
     "relatedTitle": "Súvisiace",
     "sourcesTitle": "Predpisy, z ktorých táto stránka vychádza",
-    "sourcesLead": "Právny stav k 18. augustu 2026; zákon č. 404/2011 Z. z. sa uvádza v znení účinnom od 15. júla 2026 a zákon č. 29/2026 Z. z. o obchodnom registri, ktorý od 17. augusta 2026 nahradil zákon č. 530/2003 Z. z. Úplné znenie každého predpisu nájdete na Slov-Lex a EUR-Lex. Hranice viazané na životné minimum alebo priemernú mzdu sa menia každoročne — aktuálnu sumu treba overiť ku dňu podania. Uvedené informácie sú všeobecné a nenahrádzajú poradenstvo v konkrétnej veci.",
+    "sourcesLead": "Právny stav k 23. augustu 2026; zákon č. 404/2011 Z. z. sa uvádza v znení účinnom od 15. júla 2026 a zákon č. 29/2026 Z. z. o obchodnom registri, ktorý od 17. augusta 2026 nahradil zákon č. 530/2003 Z. z. Úplné znenie každého predpisu nájdete na Slov-Lex a EUR-Lex. Hranice viazané na životné minimum alebo priemernú mzdu sa menia každoročne — aktuálnu sumu treba overiť ku dňu podania. Uvedené informácie sú všeobecné a nenahrádzajú poradenstvo v konkrétnej veci.",
     "sources": [
       {
         "label": "Zákon č. 404/2011 Z. z. o pobyte cudzincov",
@@ -707,6 +711,14 @@
       {
         "label": "Zákon č. 29/2026 Z. z. o obchodnom registri (účinný od 17. 8. 2026)",
         "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/29/"
+      },
+      {
+        "label": "Zákon č. 586/2003 Z. z. o advokácii — § 1a až 1ac, autorizácia dokumentov",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2003/586/"
+      },
+      {
+        "label": "Zákon č. 71/1992 Zb. o súdnych poplatkoch — položka 17 sadzobníka",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
       },
       {
         "label": "Vyhláška MS SR č. 203/2026 Z. z. o zápisových podkladoch",
