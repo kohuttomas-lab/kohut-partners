@@ -50,21 +50,107 @@ RPMN", „rozhodcovský rozsudok exekúcia") objem mať nebudú. Pri každej sku
 preto nechať aj jedno-dve širšie slová, ktoré objem majú, a presnosť riešiť
 negatívnymi kľúčovými slovami, nie zúžením zhody.
 
+## Objem vyhľadávania — overené v Plánovači 23. 8. 2026
+
+Všetkých 48 pôvodne navrhnutých kľúčových slov prešlo Plánovačom kľúčových slov
+(Slovensko, všetky jazyky, 8/2025 – 7/2026). **Objem má 12 z nich, 36 nemá
+žiadny.**
+
+| Kľúčové slovo | Vyhľadávaní/mes | Konkurencia | Ponuka (horná časť) |
+|---|---|---|---|
+| okamžité skončenie pracovného pomeru | **210** | Nízka | — |
+| upovedomenie o začatí exekúcie | **50** | Nízka | — |
+| sťaženie spoločenského uplatnenia | **40** | Nízka | — |
+| zastavenie exekúcie | **30** | Nízka | 0,30 – 0,46 € |
+| odškodnenie po dopravnej nehode | **20** | Stredná | 0,99 – 1,42 € |
+| prieťahy v konaní | **20** | Nízka | — |
+| bezúročný úver | 10 | Stredná | 0,18 – 0,58 € |
+| neoprávnená exekúcia | 10 | — | — |
+| neplatná výpoveď | 10 | Nízka | — |
+| nesprávny úradný postup | 10 | Nízka | — |
+| náhrada škody od štátu | 10 | — | — |
+| námietky proti exekúcii | 10 | Nízka | — |
+| **spolu** | **430** | | |
+
+**Nulový objem má okrem iného celá poistná téma** — všetkých osem slov
+(zamietnuté poistné plnenie, poisťovňa nechce plniť, spor s poisťovňou,
+krátené poistné plnenie, odvolanie proti poisťovni, poisťovňa neuznala škodu,
+nevyplatené poistné plnenie, odškodné od poisťovne nehoda). Ďalej nemajú objem
+napr. nesprávna RPMN, rozhodcovský rozsudok exekúcia, žaloba proti štátu,
+odškodnenie za väzbu, výpoveď v ochrannej dobe, napadnúť výpoveď.
+
+### Čo z toho vyplýva — a je to nepríjemné
+
+Celý slovenský trh týchto tém je **430 vyhľadávaní mesačne**. Pri miere
+preklikov okolo 10 % je to **~43 klikov mesačne**, teda pri cene okolo 0,60 €
+zhruba **26 € mesačne**. Rozpočet 8 €/deň sa v týchto témach **nedá minúť ani
+z tretiny**.
+
+Nie je to chyba stavby kampane. Slovenský dopyt po týchto službách vo
+vyhľadávaní jednoducho neexistuje v objeme, ktorý by uniesol reklamný rozpočet.
+Šesť rovnocenných reklamných skupín preto nemá zmysel stavať.
+
 ## Cieľová štruktúra
 
-Tri kampane namiesto dvoch. Rozpočet 15 €/deň sa neprekračuje — len prerozdelí.
+Namiesto šiestich rovnocenných skupín **tri, ktoré objem majú**, a dve témy,
+ktoré sa cez Search nestavajú vôbec.
 
-| Kampaň | Cieľ | Zacielenie | Rozpočet |
+| Kampaň | Zacielenie | Rozpočet |
+|---|---|---|
+| **A** SK – Search – Zvolen & BB kraj (lokálne) | BB kraj | 9 €/deň *(z 12)* |
+| **C** SK – Search – Situácie (celoštátne) | celé Slovensko | 6 €/deň *(z toho 3 od kampane Poistné plnenie)* |
+
+Kampaň „SK – Search – Poistné plnenie" sa **premenuje** na kampaň C — zachová sa
+tým jej história — a jej poistné kľúčové slová sa zrušia, keďže majú nulový objem.
+
+### Reklamné skupiny kampane C — len tie s objemom
+
+| # | Skupina | Objem/mes | Cieľová URL |
 |---|---|---|---|
-| **A** SK – Search – Zvolen & BB kraj (lokálne) | značka a všeobecné „advokát Zvolen" | BB kraj | 7 €/deň *(z 12)* |
-| **C** SK – Search – Situácie (celoštátne) | šesť tematických stránok, 6 reklamných skupín | celé Slovensko | 8 €/deň *(z toho 3 od pôvodnej kampane Poistné plnenie)* |
+| 1 | Neplatné skončenie pracovného pomeru | **220** | `/neplatna-vypoved` |
+| 2 | Exekúcia | **100** | `/zastavenie-exekucie` |
+| 3 | Odškodnenie po nehode | **60** | `/odskodnenie-dopravna-nehoda` |
+| 4 | Škoda spôsobená štátom | 40 | `/nahrada-skody-od-statu` |
 
-Kampaň „SK – Search – Poistné plnenie" sa **nezakladá nanovo** — premenuje sa na
-kampaň C a doplní o zvyšných päť reklamných skupín. Zachová sa tým jej história.
+**Nestavajú sa:**
 
-Spoločné nastavenia kampane C: Vyhľadávacia sieť, **Obsahová sieť VYPNUTÁ**,
-Slovensko, slovenčina, Maximalizovať počet kliknutí, strop CPC 1,20 €,
-AI Max VYPNUTÉ, politický obsah v EÚ = Nie.
+- **Zamietnuté poistné plnenie** — nulový objem na všetkých ôsmich slovách.
+  Stránka ostáva na webe pre organiku a pre ľudí, ktorých tam pošleme priamo,
+  ale reklamu na ňu nemá zmysel platiť.
+- **Bezúročný úver** — 10 vyhľadávaní mesačne na jedinom slove. Príliš málo na
+  vlastnú skupinu; slovo sa dá pridať do skupiny 4 ako doplnok.
+
+### Kľúčové slová podľa skupín (len overené, frázová zhoda)
+
+```
+Skupina 1 — Neplatné skončenie pracovného pomeru
+"okamžité skončenie pracovného pomeru"     210/mes
+"neplatná výpoveď"                          10/mes
+
+Skupina 2 — Exekúcia
+"upovedomenie o začatí exekúcie"            50/mes
+"zastavenie exekúcie"                       30/mes
+"neoprávnená exekúcia"                      10/mes
+"námietky proti exekúcii"                   10/mes
+
+Skupina 3 — Odškodnenie po nehode
+"sťaženie spoločenského uplatnenia"         40/mes
+"odškodnenie po dopravnej nehode"           20/mes
+
+Skupina 4 — Škoda spôsobená štátom
+"prieťahy v konaní"                         20/mes
+"nesprávny úradný postup"                   10/mes
+"náhrada škody od štátu"                    10/mes
+```
+
+Nadpisy a popisy pre tieto štyri skupiny sú nižšie v pôvodných sekciách 2, 5, 3
+a 6 — tie ostávajú v platnosti, menia sa len kľúčové slová.
+
+### Ďalší krok pred spustením
+
+Prejsť kartu **Návrhy kľúčových slov** v tom istom pláne. Plánovač k zadaným
+slovám navrhuje príbuzné výrazy aj s objemom — tam sa dajú nájsť širšie slová
+(napr. okolo výpovede a exekúcie), ktoré objem majú a v tomto zozname chýbajú.
 
 ### Negatívne kľúčové slová (celá kampaň C)
 
