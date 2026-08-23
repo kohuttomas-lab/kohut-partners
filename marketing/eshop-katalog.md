@@ -40,6 +40,10 @@ Zákon č. 29/2026 Z. z. ďalej:
 
 - **§ 50 ods. 4** — ak je dokument autorizovaný advokátom, nevyžaduje sa úradné osvedčenie podpisov.
 - **§ 126 ods. 1** — konania začaté do 16. 8. 2026 sa dokončia podľa starých predpisov.
+- **Tretia cesta ostáva:** založenie zjednodušeným spôsobom cez elektronický formulár
+  ministerstva (§ 57 ods. 4 a § 110a ObchZ) — najviac 5 spoločníkov, len peňažné vklady,
+  iba vybrané voľné živnosti (max. 15), bez dozornej rady. V textoch preto nikdy „len
+  notár alebo advokát" bez tejto výhrady.
 
 Zákon č. 586/2003 Z. z. o advokácii (čl. IX novely):
 

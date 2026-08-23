@@ -1,448 +1,441 @@
-# Prestavba Google Ads na tematické stránky
+# Prestavba Google Ads — verzia 2 (firemná agenda pred situáciami)
 
-Pripravené 20. 8. 2026 · účet **395-896-5684** (kohút & partners) pod MCC 298-181-8748
+Pripravené 20. 8. 2026, **prepísané 23. 8. 2026** podľa [researchu dopytu](eshop-research-dopyt.md) §6
+a [katalógu balíkov](eshop-katalog.md) · účet **395-896-5684** (kohút & partners) pod MCC 298-181-8748
 
-## Prečo
+## Čo sa zmenilo oproti verzii 1
 
-GA4 za 23. 6. – 19. 8. 2026: **236 z 277 platených návštev pristane na domovskej
-stránke.** Človek, ktorý hľadal „zastavenie exekúcie", dostane všeobecnú stránku
-kancelárie a musí sa preklikať. Miera preklikov je pritom 10,9 % — reklama funguje,
-zlyháva to, čo je za klikom.
+Verzia 1 stavala kampaň C na štyroch situačných témach (výpoveď, exekúcia, nehoda,
+štát) — spolu **430 vyhľadávaní mesačne**, ľudia tam hľadajú informácie a klik stojí
+0,30 – 1,40 €. Research z 23. 8. ukázal, že **firemná agenda má ~4 500 vyhľadávaní
+mesačne, konkurencia za ňu platí 3 – 8 € za klik** a od 17. 8. 2026 dáva zákon
+č. 29/2026 Z. z. advokátom (spolu s notármi) výlučnú formu zakladateľských dokumentov
+(§ 57 ObchZ). Preto sa poradie obracia: **najprv firma, potom situácie.**
 
-Náklad na jeden dopyt je **219,42 €** (438,84 € / 2 dopyty).
+Čo ostáva v platnosti z verzie 1: všetky kľúčové slová vo **frázovej zhode** (presná
+zhoda končí ako „nízky objem"), diagnóza B3, zákaz negatívneho `vzor`, súlad s § 29b.
+Pôvodné texty situačných skupín sú v git histórii tohto súboru.
 
-Web má šesť stránok písaných presne na jednu situáciu, každú s lehotou a postupom.
-Ani jedna nie je cieľom žiadnej reklamy.
+## Stav blokerov
 
-## Blokery — vyriešiť PRED spustením
-
-| # | Bloker | Prečo blokuje | Kto |
-|---|---|---|---|
-| B1 | `generate_lead` nie je kľúčová udalosť v GA4 | Ads vidí 0 konverzií, nemá podľa čoho optimalizovať a merať cenu za dopyt | používateľ (GA4 → Správa → Udalosti) |
-| B2 | Výstraha „Overenie pre oblasť finančných služieb v EÚ/EHP" | Ak je účet klasifikovaný ako finančné služby, môže byť doručovanie obmedzené | používateľ (vlákno 460402430) |
-| B3 | ~~Kampaň „SK – Search – Poistné plnenie" má 0 zobrazení~~ **VYRIEŠENÉ 20. 8.** | Príčinou sú kľúčové slová v presnej zhode s nulovým objemom — pozri nižšie | — |
-
-### B3 — diagnóza z 20. 8. 2026
-
-Kampaň je **Aktívne**, vyhľadávacia sieť, 3 €/deň, Maximalizovať kliknutia,
-reklama je **Vhodné** (schválená, účinnosť „Zlá"). Nič z toho ju nebrzdí.
-Brzdia ju **kľúčové slová**:
-
-| Kľúčové slovo | Zhoda | Stav |
+| # | Bloker | Stav |
 |---|---|---|
-| „krátenie poistného plnenia" | frázová | Vhodné |
-| „sťažnosť na poisťovňu" | frázová | Vhodné |
-| [poisťovňa nechce zaplatiť] | **presná** | **Nevhodné — nízky objem vyhľadávania** |
-| [spor s poisťovňou] | **presná** | **Nevhodné — nízky objem vyhľadávania** |
-| [krátené poistné plnenie] | **presná** | **Nevhodné — nízky objem vyhľadávania** |
-| [advokát poistné…] | **presná** | **Nevhodné — nízky objem vyhľadávania** |
+| B1 | `generate_lead` kľúčová udalosť v GA4 | **HOTOVO** (23. 8.); Ads má vlastnú konverziu „Lead – dopyt (web)" 7661170005, import z GA4 sa nerobí (duplicita) |
+| B2 | Overenie pre finančné služby EÚ/EHP (vlákno 460402430) | **otvorené** — používateľ |
+| B3 | Poistné plnenie 0 zobrazení | **VYRIEŠENÉ** — presná zhoda s nulovým objemom; 8 slov odstránených, kampaň pozastavená |
+| **B4** | **Cieľové stránky pre firemné témy neexistujú** | **nový bloker** — pozri fázu 1 a 2 nižšie |
 
-Väčšina slov je v **presnej zhode** a Google ich pre nulový objem vôbec
-neservíruje. Dve, ktoré vhodné sú, majú tak malý objem, že nazbierali nula
-zobrazení. Rovnaký problém má aj lokálna kampaň — z jej 27 slov je „nízky
-objem" na „vymáhanie pohľadávok advokát", „advokát nehnuteľností", „právne
-služby zvolen", „advokát súdny spor" aj „kúpna zmluva byt advokát".
+### B4 — na čo reklamu smerovať, kým nie sú landing pages
 
-**Dôsledok pre túto prestavbu:** slovenské právne frázy sú príliš úzke na
-presnú zhodu. Preto sú v tomto dokumente všetky kľúčové slová vo **frázovej
-zhode** — a aj tak treba počítať s tým, že tie najšpecifickejšie („nesprávna
-RPMN", „rozhodcovský rozsudok exekúcia") objem mať nebudú. Pri každej skupine
-preto nechať aj jedno-dve širšie slová, ktoré objem majú, a presnosť riešiť
-negatívnymi kľúčovými slovami, nie zúžením zhody.
+Pre firemné témy dnes existujú len: článok `/blog/zalozenie-sro` (prepísaný 23. 8.
+o novelu, končí ponukou balíka), stránka služby `/sluzby/obchod` s balíkom „Založenie
+s.r.o. na kľúč 299 €", články `/blog/vymahanie-pohladavok`, `/blog/gdpr-eshop`
+a `/blog/osobny-bankrot-2026-podmienky-a-postup`. Pre likvidáciu, ochrannú známku,
+prevod podielu a zmeny v s.r.o. nie je nič.
 
-## Objem vyhľadávania — overené v Plánovači 23. 8. 2026
+Preto dve fázy:
 
-Všetkých 48 pôvodne navrhnutých kľúčových slov prešlo Plánovačom kľúčových slov
-(Slovensko, všetky jazyky, 8/2025 – 7/2026). **Objem má 12 z nich, 36 nemá
-žiadny.**
+- **Fáza 1 (spustiť hneď):** skupiny, ktoré majú kam pristáť — Založenie s.r.o.
+  (→ článok s novelou), Vymáhanie pohľadávok (→ článok), GDPR/e-shop (→ článok).
+  Rozpočet kampane C: 6 €/deň.
+- **Fáza 2 (po zverejnení landing pages z katalógu):** Likvidácia, Ochranná známka,
+  Zmeny v s.r.o. a prevod podielu, Živnosť; presmerovanie skupiny Založenie na
+  `/zalozenie-sro`. Rozpočet kampane C: 10 €/deň, kampaň A klesne na 7 €/deň.
 
-| Kľúčové slovo | Vyhľadávaní/mes | Konkurencia | Ponuka (horná časť) |
-|---|---|---|---|
-| okamžité skončenie pracovného pomeru | **210** | Nízka | — |
-| upovedomenie o začatí exekúcie | **50** | Nízka | — |
-| sťaženie spoločenského uplatnenia | **40** | Nízka | — |
-| zastavenie exekúcie | **30** | Nízka | 0,30 – 0,46 € |
-| odškodnenie po dopravnej nehode | **20** | Stredná | 0,99 – 1,42 € |
-| prieťahy v konaní | **20** | Nízka | — |
-| bezúročný úver | 10 | Stredná | 0,18 – 0,58 € |
-| neoprávnená exekúcia | 10 | — | — |
-| neplatná výpoveď | 10 | Nízka | — |
-| nesprávny úradný postup | 10 | Nízka | — |
-| náhrada škody od štátu | 10 | — | — |
-| námietky proti exekúcii | 10 | Nízka | — |
-| **spolu** | **430** | | |
+Článok ako cieľ reklamy je kompromis — konverzia bude nižšia než na produktovej
+stránke. Ale je to lepšie než domovská stránka (verzia 1 ukázala 236 z 277 klikov na
+úvodnej stránke) a dáta z fázy 1 povedia, ktoré landing pages stavať ako prvé.
 
-**Nulový objem má okrem iného celá poistná téma** — všetkých osem slov
-(zamietnuté poistné plnenie, poisťovňa nechce plniť, spor s poisťovňou,
-krátené poistné plnenie, odvolanie proti poisťovni, poisťovňa neuznala škodu,
-nevyplatené poistné plnenie, odškodné od poisťovne nehoda). Ďalej nemajú objem
-napr. nesprávna RPMN, rozhodcovský rozsudok exekúcia, žaloba proti štátu,
-odškodnenie za väzbu, výpoveď v ochrannej dobe, napadnúť výpoveď.
+## Objem a cena — overené v Plánovači 23. 8. 2026
 
-### Čo z toho vyplýva — a je to nepríjemné
+| Téma | Kľúčové slová (frázová zhoda) | Vyhľadávaní/mes | Konkurencia | Klik (horný odhad) |
+|---|---|---|---|---|
+| **Založenie s.r.o.** | zalozenie sro · založenie sro · založenie sro online · založenie firmy | 1 600 + 720 + 170 + 110 = **2 600** | Vysoká | 2,93 – 3,47 € |
+| **Likvidácia / zrušenie** | likvidácia sro · zrušenie sro | 480 + 390 = **870** | Vysoká | 3,51 – 3,92 € |
+| **Ochranná známka** | ochranná známka · registrácia ochrannej známky | 480 + 140 = **620** | Stredná/Vysoká | 1,79 – 3,09 € |
+| **Živnosť** | založenie živnosti · zalozenie zivnosti · znovuzaloženie živnosti | 720 + 390 + 720 = **1 830** | Vysoká | 1,10 – 1,33 € |
+| **Vymáhanie** | vymáhanie pohľadávok · predžalobná výzva | 210 + 320 = **530** | Vysoká/Nízka | 0,85 – 3,31 € |
+| **Zmeny v s.r.o.** | prevod obchodného podielu · zmluva o prevode obchodného podielu · zmena sídla firmy · zmena konateľa | 90 + 110 + 70 + 10 = **280** | Stredná/Vysoká | 3,02 – 4,34 € |
+| **GDPR / e-shop** | gdpr dokumentácia · obchodné podmienky eshop · reklamačný poriadok · ochrana osobných údajov | 50 + 30 + 170 + 590 = **840** | Vysoká (prvé dve) | 3,00 – **16,97** € |
+| Ready-made | ready made sro | 260 | Vysoká | 8,09 € |
+| *Situácie (v1)* | *výpoveď · exekúcia · nehoda · štát* | *430* | *Nízka* | *0,30 – 1,42 €* |
 
-Celý slovenský trh týchto tém je **430 vyhľadávaní mesačne**. Pri miere
-preklikov okolo 10 % je to **~43 klikov mesačne**, teda pri cene okolo 0,60 €
-zhruba **26 € mesačne**. Rozpočet 8 €/deň sa v týchto témach **nedá minúť ani
-z tretiny**.
-
-Nie je to chyba stavby kampane. Slovenský dopyt po týchto službách vo
-vyhľadávaní jednoducho neexistuje v objeme, ktorý by uniesol reklamný rozpočet.
-Šesť rovnocenných reklamných skupín preto nemá zmysel stavať.
+Pozn.: „ochrana osobných údajov" (590) a „reklamačný poriadok" (170) sú z veľkej časti
+informačné dopyty — v skupine GDPR ostávajú len s nízkou ponukou a s negatívnymi
+slovami `zákon`, `nariadenie`, `čo je`.
 
 ## Cieľová štruktúra
 
-Namiesto šiestich rovnocenných skupín **tri, ktoré objem majú**, a dve témy,
-ktoré sa cez Search nestavajú vôbec.
-
-| Kampaň | Zacielenie | Rozpočet |
-|---|---|---|
-| **A** SK – Search – Zvolen & BB kraj (lokálne) | BB kraj | 9 €/deň *(z 12)* |
-| **C** SK – Search – Situácie (celoštátne) | celé Slovensko | 6 €/deň *(z toho 3 od kampane Poistné plnenie)* |
-
-Kampaň „SK – Search – Poistné plnenie" sa **premenuje** na kampaň C — zachová sa
-tým jej história — a jej poistné kľúčové slová sa zrušia, keďže majú nulový objem.
-
-### Reklamné skupiny kampane C — len tie s objemom
-
-| # | Skupina | Objem/mes | Cieľová URL |
+| Kampaň | Zacielenie | Rozpočet fáza 1 | Rozpočet fáza 2 |
 |---|---|---|---|
-| 1 | Neplatné skončenie pracovného pomeru | **220** | `/neplatna-vypoved` |
-| 2 | Exekúcia | **100** | `/zastavenie-exekucie` |
-| 3 | Odškodnenie po nehode | **60** | `/odskodnenie-dopravna-nehoda` |
-| 4 | Škoda spôsobená štátom | 40 | `/nahrada-skody-od-statu` |
+| **A** SK – Search – Zvolen & BB kraj (lokálne) | BB kraj | 9 €/deň | 7 €/deň |
+| **C** SK – Search – Firma & dokumenty (celoštátne) | celé SK | 6 €/deň | 10 €/deň |
+| *D* SK – Search – Situácie (celoštátne) | celé SK | — | 3 €/deň, až po obsadení C |
 
-**Nestavajú sa:**
+Pozastavená kampaň „SK – Search – Poistné plnenie" sa **premenuje na kampaň C** (zachová
+históriu účtu), zacielenie sa zmení na celé Slovensko. Situačné skupiny z verzie 1 idú do
+samostatnej kampane D až vtedy, keď C beží aspoň mesiac — aby si vzájomne nekradli rozpočet.
 
-- **Zamietnuté poistné plnenie** — nulový objem na všetkých ôsmich slovách.
-  Stránka ostáva na webe pre organiku a pre ľudí, ktorých tam pošleme priamo,
-  ale reklamu na ňu nemá zmysel platiť.
-- **Bezúročný úver** — 10 vyhľadávaní mesačne na jedinom slove. Príliš málo na
-  vlastnú skupinu; slovo sa dá pridať do skupiny 4 ako doplnok.
+Stratégia ponúk: C začína na **Maximalizovať kliknutia s limitom CPC 3,50 €** (pri 6 €/deň
+to sú 2 kliky denne na založení s.r.o. — je to drahé, ale klik = človek, ktorý ide
+zaplatiť ~520 €). Po 30 konverziách prejsť na Maximalizovať konverzie.
 
-### Kľúčové slová podľa skupín (len overené, frázová zhoda)
+### Reklamné skupiny kampane C
 
-```
-Skupina 1 — Neplatné skončenie pracovného pomeru
-"okamžité skončenie pracovného pomeru"     210/mes
-"neplatná výpoveď"                          10/mes
+| # | Skupina | Objem/mes | Fáza | Cieľová URL fáza 1 | Cieľová URL fáza 2 |
+|---|---|---|---|---|---|
+| 1 | Založenie s.r.o. | 2 600 | 1 | `/blog/zalozenie-sro` | `/zalozenie-sro` |
+| 2 | Vymáhanie pohľadávok | 530 | 1 | `/blog/vymahanie-pohladavok` | `/vymahanie-pohladavok` |
+| 3 | GDPR a dokumenty pre e-shop | 840 | 1 | `/blog/gdpr-eshop` | `/gdpr-dokumentacia` |
+| 4 | Likvidácia a zrušenie s.r.o. | 870 | 2 | — | `/likvidacia-sro` |
+| 5 | Ochranná známka | 620 | 2 | — | `/ochranna-znamka` |
+| 6 | Zmeny v s.r.o. a prevod podielu | 280 | 2 | — | `/zmena-konatela-sidla-sro`, `/prevod-obchodneho-podielu` |
+| 7 | Založenie živnosti | 1 830 | 2, nízka ponuka | — | `/zalozenie-zivnosti` |
 
-Skupina 2 — Exekúcia
-"upovedomenie o začatí exekúcie"            50/mes
-"zastavenie exekúcie"                       30/mes
-"neoprávnená exekúcia"                      10/mes
-"námietky proti exekúcii"                   10/mes
-
-Skupina 3 — Odškodnenie po nehode
-"sťaženie spoločenského uplatnenia"         40/mes
-"odškodnenie po dopravnej nehode"           20/mes
-
-Skupina 4 — Škoda spôsobená štátom
-"prieťahy v konaní"                         20/mes
-"nesprávny úradný postup"                   10/mes
-"náhrada škody od štátu"                    10/mes
-```
-
-Nadpisy a popisy pre tieto štyri skupiny sú nižšie v pôvodných sekciách 2, 5, 3
-a 6 — tie ostávajú v platnosti, menia sa len kľúčové slová.
-
-### Ďalší krok pred spustením
-
-Prejsť kartu **Návrhy kľúčových slov** v tom istom pláne. Plánovač k zadaným
-slovám navrhuje príbuzné výrazy aj s objemom — tam sa dajú nájsť širšie slová
-(napr. okolo výpovede a exekúcie), ktoré objem majú a v tomto zozname chýbajú.
+**Nestavia sa:** ready-made (bez partnera nie je čo predať), osobný bankrot cez Search
+(8 100 vyhľadávaní „bankrot" je prevažne informačných — téma ide cez organiku a článok;
+balík z katalógu sa inzeruje až s vlastnou stránkou), poistné plnenie (nulový objem).
 
 ### Negatívne kľúčové slová (celá kampaň C)
 
-`zadarmo`, `bezplatne`, `vzor`*, `wikipedia`, `práca`, `brigáda`, `študent`,
-`kalkulačka`, `forum`, `diskusia`, `svojpomocne`, `sám`, `ako na to`
+`zadarmo`, `bezplatne`, `wikipedia`, `práca`, `brigáda`, `študent`, `kalkulačka`,
+`forum`, `diskusia`, `svojpomocne`, `sám`, `ako na to`, `zákon`, `nariadenie`, `čo je`,
+`definícia`, `účtovníctvo`, `účtovník`, `česko`, `čr`; v skupine 1 navyše `ready made`
+a `sídlo` *(v skupine 6 „sídlo" ostáva — „zmena sídla" je cieľový dopyt)*.
 
-\* **POZOR:** `vzor` a `vzory` sa **nikdy** nepridávajú ako negatívne na účte tkak —
-pripravuje sa e-shop so vzormi dokumentov, sú to cieľové dopyty. Tu uvedené
-`vzor` je preto **preškrtnuté, nepoužiť.** Ponechané v zozname len ako
-pripomienka, prečo tam nie je.
+**NIKDY** `vzor`, `vzory`, `tlačivo` — sú to cieľové dopyty pre produkt č. 3 (vzory).
 
 ---
 
-## Reklamná skupina 1 — Zamietnuté poistné plnenie
+## Reklamná skupina 1 — Založenie s.r.o.
 
-**Cieľová URL:** `https://www.tkak.sk/zamietnute-poistne-plnenie`
-**Zobrazovaná cesta:** `/poistne-plnenie` · `/zamietnute`
+**Cieľová URL (fáza 1):** `https://www.tkak.sk/blog/zalozenie-sro`
+**Zobrazovaná cesta:** `/zalozenie-sro` · `/advokat`
 
 **Kľúčové slová (frázová zhoda)**
 
 ```
-"zamietnuté poistné plnenie"
-"poisťovňa nechce plniť"
-"poisťovňa zamietla škodu"
-"krátené poistné plnenie"
-"odvolanie proti poisťovni"
-"spor s poisťovňou"
-"poisťovňa neuznala škodu"
-"nevyplatené poistné plnenie"
+"zalozenie sro"                 1 600/mes
+"založenie sro"                   720/mes
+"založenie sro online"            170/mes
+"založenie firmy"                 110/mes
+"zalozenie firmy"                 (bez diakritiky — objem neoverený, doplniť)
+"založenie s.r.o."                (variant s bodkami — Google zlučuje, ponechať)
 ```
 
 **Nadpisy** (max 30 znakov)
 
 ```
-Zamietli vám poistné plnenie
-Poisťovňa nechce plniť?
-Posúdenie zamietacieho listu
-Advokát na spory s poisťovňou
-Krátili vám poistné plnenie
-Nárok voči poisťovni
-Trojročná premlčacia lehota
-Posúdime váš prípad
-Zastupovanie proti poisťovni
-Advokátska kancelária
+Založenie s.r.o. advokátom
+Od 17. 8. 2026 nová forma
+Dokument autorizuje advokát
+Bez osvedčovania podpisov
+Zápis do OR do 2 prac. dní
+Založenie s.r.o. za 299 €
+Súdny poplatok 220 € navyše
+Celé Slovensko, na diaľku
+Živnosti a daňová registrácia
+Advokátska kancelária Zvolen
 ```
 
 **Popisy** (max 90 znakov)
 
 ```
-Posúdime zamietací list a povieme, či má zmysel nárok uplatniť. Cenu poznáte vopred.
-Právo na plnenie sa premlčuje za tri roky, plynúť začína rok po poistnej udalosti.
-Zastupujeme v konaní proti poisťovni. Rozsah aj odmenu dohodneme písomne vopred.
-Vec vieme viesť na diaľku, e-mailom aj cez videohovor. Advokátska kancelária Zvolen.
+Od 17. 8. 2026 musí byť spoločenská zmluva notárska zápisnica alebo dokument od advokáta.
+Pripravíme a autorizujeme zakladateľské dokumenty, ohlásime živnosti, podáme návrh na zápis.
+Odmena 299 € s DPH, súdny poplatok 220 € samostatne. Spravidla 7 – 10 pracovných dní.
+Registrový súd zapíše firmu do dvoch pracovných dní od úplného návrhu. Vec vedieme na diaľku.
 ```
+
+Pozn. k § 29b: „nová forma" a „autorizuje advokát" sú opisy zákonného stavu (§ 57 ObchZ,
+§ 1a zák. o advokácii), nie porovnanie s inými poskytovateľmi. Nepísať „len advokát"
+— notár je rovnocenná alternatíva a existuje aj zjednodušený formulár (§ 110a).
 
 ---
 
-## Reklamná skupina 2 — Neplatná výpoveď
+## Reklamná skupina 2 — Vymáhanie pohľadávok
 
-**Cieľová URL:** `https://www.tkak.sk/neplatna-vypoved`
-**Zobrazovaná cesta:** `/neplatna-vypoved` · `/vypoved`
+**Cieľová URL (fáza 1):** `https://www.tkak.sk/blog/vymahanie-pohladavok`
+**Zobrazovaná cesta:** `/vymahanie` · `/pohladavky`
 
 **Kľúčové slová (frázová zhoda)**
 
 ```
-"neplatná výpoveď"
-"dostal som výpoveď"
-"okamžité skončenie pracovného pomeru"
-"výpoveď zo zamestnania právnik"
-"napadnúť výpoveď"
-"žaloba na neplatnosť výpovede"
-"výpoveď v ochrannej dobe"
-"skončenie pracovného pomeru advokát"
+"vymáhanie pohľadávok"            210/mes
+"vymahanie pohladavok"            (bez diakritiky — doplniť po overení)
+"predžalobná výzva"               320/mes
+"výzva na zaplatenie"             (doplniť po overení)
+"neuhradená faktúra"              (doplniť po overení)
+"platobný rozkaz"                 (doplniť po overení)
 ```
 
 **Nadpisy**
 
 ```
-Dostali ste výpoveď?
-Na žalobu máte dva mesiace
-Neplatná výpoveď v práci
-Lehota je prekluzívna
-Posúdenie výpovede
-Advokát na pracovné právo
-Napadnutie výpovede na súde
-Náhrada mzdy za spor
-Okamžité skončenie pomeru
+Vymáhanie pohľadávok
+Predžalobná výzva za 89 €
+Od výzvy po exekúciu
+Pevné ceny, vopred
+Neuhradená faktúra?
+Úroky a náhrada 40 € navyše
+Platobný rozkaz
+Advokát na pohľadávky
+Celé Slovensko, na diaľku
 Advokátska kancelária
 ```
 
 **Popisy**
 
 ```
-Neplatnosť treba uplatniť na súde do dvoch mesiacov. Lehota sa nedá odpustiť.
-Posúdime výpoveď a povieme, či obstojí. Cenu za posúdenie poznáte vopred.
-Pri neplatnom skončení patrí náhrada mzdy v sume priemerného zárobku.
-Zastupujeme zamestnancov v konaní o neplatnosť skončenia pracovného pomeru.
+Predžalobná výzva do 2 pracovných dní za 89 €. Vyčíslime istinu, úroky aj paušálnu náhradu.
+Ak dlžník nezaplatí, pripravíme návrh na platobný rozkaz. Cenu každého kroku poznáte vopred.
+Preveríme premlčanie a vymáhateľnosť skôr, než do toho dáte ďalšie peniaze.
+Zastupujeme veriteľov od výzvy po exekúciu. Rozsah aj odmenu dohodneme písomne.
 ```
 
 ---
 
-## Reklamná skupina 3 — Odškodnenie po dopravnej nehode
+## Reklamná skupina 3 — GDPR a dokumenty pre e-shop
 
-**Cieľová URL:** `https://www.tkak.sk/odskodnenie-dopravna-nehoda`
-**Zobrazovaná cesta:** `/odskodnenie` · `/dopravna-nehoda`
+**Cieľová URL (fáza 1):** `https://www.tkak.sk/blog/gdpr-eshop`
+**Zobrazovaná cesta:** `/gdpr` · `/eshop`
 
 **Kľúčové slová (frázová zhoda)**
 
 ```
-"odškodnenie po dopravnej nehode"
-"bolestné po nehode"
-"sťaženie spoločenského uplatnenia"
-"odškodné od poisťovne nehoda"
-"nárok na bolestné"
-"odškodnenie zranenia pri nehode"
-"advokát dopravná nehoda"
-"náhrada škody po nehode"
+"gdpr dokumentácia"                50/mes   — klik až 16,97 €: limit CPC 4 €
+"gdpr pre eshop"                   (doplniť po overení; Search Console: 96 zobrazení)
+"obchodné podmienky eshop"         30/mes
+"reklamačný poriadok"             170/mes   — nízka ponuka, info dopyt
+"ochrana osobných údajov"         590/mes   — nízka ponuka, info dopyt
 ```
 
 **Nadpisy**
 
 ```
-Odškodnenie po nehode
-Bolestné a trvalé následky
-Posúdime lekársky posudok
-Ponuka poisťovne býva nízka
-Sťaženie spol. uplatnenia
-Advokát na odškodnenie
-Nepodpisujte dohodu hneď
-Nárok sa dá prepočítať
-Strata na zárobku po úraze
+GDPR dokumentácia na mieru
+Dokumenty pre e-shop
+GDPR pre firmu za 199 €
+Obchodné podmienky za 169 €
+Reklamačný poriadok v cene
+Do 7 pracovných dní
+Spísané advokátom
+Ročná aktualizácia
+Pre e-shopy aj ambulancie
 Advokátska kancelária
 ```
 
 **Popisy**
 
 ```
-Prepočítame bodové hodnotenie a ponuku poisťovne. Cenu poznáte pred začatím práce.
-Bolestné a sťaženie spoločenského uplatnenia sú dva samostatné nároky.
-Dohoda podpísaná pred ustálením stavu spravidla uzavrie aj neskoršie nároky.
-Zastupujeme poškodených voči poisťovni vinníka aj v súdnom konaní.
+Záznamy o spracovateľských činnostiach, informačná povinnosť, smernica, poverenia. 199 €.
+Obchodné podmienky, reklamačný poriadok, zásady ochrany údajov a cookies pre e-shop. 169 €.
+Dokumenty pripravíme podľa vášho dotazníka do 7 pracovných dní. Cenu poznáte vopred.
+Kontrola povinných údajov na webe v cene. Aktualizácia pri zmene zákona za 49 €.
 ```
 
 ---
 
-## Reklamná skupina 4 — Bezúročný spotrebiteľský úver
+## Reklamná skupina 4 — Likvidácia a zrušenie s.r.o. *(fáza 2)*
 
-**Cieľová URL:** `https://www.tkak.sk/bezurocny-uver`
-**Zobrazovaná cesta:** `/bezurocny-uver` · `/uverova-zmluva`
-
-**Kľúčové slová (frázová zhoda)**
+**Cieľová URL:** `https://www.tkak.sk/likvidacia-sro` (vznikne podľa katalógu A2)
 
 ```
-"bezúročný úver"
-"chyba v úverovej zmluve"
-"nesprávna RPMN"
-"preverenie úverovej zmluvy"
-"nebankový úver právnik"
-"neprimeraná odplata úver"
-"vrátenie úrokov z úveru"
-"spotrebiteľský úver advokát"
+"likvidácia sro"                  480/mes
+"zrušenie sro"                    390/mes
+"likvidacia sro"  "zrusenie sro"  (bez diakritiky — doplniť po overení)
+"ako zrušiť sro"                  (doplniť po overení)
+"výmaz z obchodného registra"     (doplniť po overení)
 ```
 
 **Nadpisy**
 
 ```
-Chyba v úverovej zmluve
-Úver môže byť bezúročný
-Preverenie úverovej zmluvy
-Nesprávna RPMN v zmluve
-Vraciate len požičanú sumu
-Advokát na spotreb. úvery
-Posúdime zmluvu
-Chýbajúce náležitosti zmluvy
-Neposúdená schopnosť splácať
+Likvidácia s.r.o.
+Zrušenie firmy bez rizika
+Posúdenie stavu firmy 149 €
+Likvidácia od 690 €
+Likvidátor, vestník, výmaz
+Spravidla 6 – 9 mesiacov
+Firma v exekúcii? Poradíme
+Advokát na likvidácie
+Celé Slovensko
 Advokátska kancelária
 ```
 
 **Popisy**
 
 ```
-Chyba v zmluve môže znamenať, že vraciate istinu bez úrokov a poplatkov.
-Prepočet RPMN je matematická kontrola, ktorú urobíme z údajov vo vašej zmluve.
-Dôvody bezúročnosti stanovuje zákon o spotrebiteľských úveroch taxatívne.
-Pošlite zmluvu na preverenie. Rozsah aj odmenu dohodneme písomne vopred.
+Najprv posúdime záväzky, majetok a nedoplatky a povieme, či je likvidácia správna cesta.
+Vedieme celú likvidáciu: rozhodnutie, zápis likvidátora, vestník, zoznam pohľadávok, výmaz.
+Súdne poplatky a zverejnenie sa účtujú samostatne. Cenu za vedenie dohodneme po posúdení.
+Predlženú firmu nemožno likvidovať — vysvetlíme, kedy ide o konkurz a čo hrozí konateľovi.
 ```
 
 ---
 
-## Reklamná skupina 5 — Zastavenie exekúcie
+## Reklamná skupina 5 — Ochranná známka *(fáza 2)*
 
-**Cieľová URL:** `https://www.tkak.sk/zastavenie-exekucie`
-**Zobrazovaná cesta:** `/zastavenie-exekucie` · `/exekucia`
-
-**Kľúčové slová (frázová zhoda)**
+**Cieľová URL:** `https://www.tkak.sk/ochranna-znamka` (katalóg A5)
 
 ```
-"zastavenie exekúcie"
-"upovedomenie o začatí exekúcie"
-"námietky proti exekúcii"
-"obrana proti exekúcii"
-"premlčaná pohľadávka exekúcia"
-"exekúcia advokát"
-"rozhodcovský rozsudok exekúcia"
-"neoprávnená exekúcia"
+"ochranná známka"                 480/mes
+"ochranna znamka"                 (bez diakritiky — doplniť po overení)
+"registrácia ochrannej známky"    140/mes
+"ochranná známka cena"            (doplniť po overení)
+"ochranná známka eú"              (doplniť po overení)
 ```
 
 **Nadpisy**
 
 ```
-Prišlo upovedomenie o exekúcii
-Na obranu máte 15 dní
-Návrh na zastavenie exekúcie
-Odkladný účinok návrhu
-Advokát na exekúcie
-Premlčaná pohľadávka
-Posúdime vašu exekúciu
-Deň doručenia rozhoduje
-Exekučný titul môže padnúť
+Registrácia ochrannej známky
+Rešerš kolízie v cene
+Známka SR od 249 €
+Známka EÚ od 349 €
+Poplatky úradu samostatne
+Správne triedy tovarov
+Podanie do 5 prac. dní
+Zastupovanie pred ÚPV a EUIPO
+Advokát na ochranné známky
 Advokátska kancelária
 ```
 
 **Popisy**
 
 ```
-Návrh podaný do 15 dní od doručenia upovedomenia má odkladný účinok.
-Súd exekúciu zastaví, ak nárok zanikol alebo titul bránil vymáhateľnosti.
-Posúdime, či je vymáhaná pohľadávka premlčaná. Cenu poznáte vopred.
-Zastupujeme povinných v exekučnom konaní. Vec vedieme aj na diaľku.
+Pred podaním preveríme kolízie s existujúcimi známkami v SR a EÚ a navrhneme triedy.
+Prihlášku podáme na ÚPV SR alebo EUIPO a zastupujeme vás v konaní. Cenu poznáte vopred.
+Odmena 249 € (SR) alebo 349 € (EÚ). Poplatky úradu sa platia samostatne podľa počtu tried.
+Konanie na úrade trvá spravidla 4 – 6 mesiacov. Lehoty strážime za vás.
 ```
 
 ---
 
-## Reklamná skupina 6 — Náhrada škody od štátu
+## Reklamná skupina 6 — Zmeny v s.r.o. a prevod podielu *(fáza 2)*
 
-**Cieľová URL:** `https://www.tkak.sk/nahrada-skody-od-statu`
-**Zobrazovaná cesta:** `/nahrada-skody` · `/od-statu`
-
-**Kľúčové slová (frázová zhoda)**
+**Cieľové URL:** `/zmena-konatela-sidla-sro` (A4) · `/prevod-obchodneho-podielu` (A3) —
+každá reklama má jednu finálnu URL, preto v praxi dve skupiny 6a (prevod) a 6b (zmeny).
 
 ```
-"náhrada škody od štátu"
-"nezákonné rozhodnutie náhrada"
-"prieťahy v konaní"
-"nesprávny úradný postup"
-"odškodnenie za väzbu"
-"zastavené trestné stíhanie odškodnenie"
-"žaloba proti štátu"
-"zodpovednosť štátu za škodu"
+6a  "prevod obchodného podielu"               90/mes   — klik až 4,34 €
+6a  "zmluva o prevode obchodného podielu"    110/mes
+6a  "predaj sro"                              (doplniť po overení)
+6b  "zmena sídla firmy"                       70/mes
+6b  "zmena sídla sro"                         (doplniť po overení)
+6b  "zmena konateľa"                          10/mes
 ```
 
 **Nadpisy**
 
 ```
-Za škodu zodpovedá štát
-Nezákonné rozhodnutie
-Prieťahy v súdnom konaní
-Náhrada škody od štátu
-Nemajetková ujma v peniazoch
-Advokát na spory so štátom
-Posúdime váš nárok
-Zodpovednosť je objektívna
-Zastavené trestné stíhanie
+Prevod obchodného podielu
+Zmluva autorizovaná advokátom
+Od 17. 8. 2026 povinná forma
+Prevod podielu za 249 €
+Zmena konateľa alebo sídla
+Zmena v s.r.o. od 149 €
+Súdny poplatok 50 € navyše
+Zápis do OR do 2 prac. dní
+Celé Slovensko, na diaľku
 Advokátska kancelária
 ```
 
 **Popisy**
 
 ```
-Nezákonné rozhodnutie aj neprimeraná dĺžka konania zakladajú zodpovednosť štátu.
-Uhrádza sa skutočná škoda, ušlý zisk a v odôvodnených prípadoch nemajetková ujma.
-Pred žalobou je povinné predbežné prerokovanie nároku u príslušného orgánu.
-Premlčacia lehota sú tri roky. Počas prerokovania lehota neplynie.
+Zmluva o prevode podielu musí byť notárska zápisnica alebo zmluva autorizovaná advokátom.
+Pripravíme zmluvu, súhlas valného zhromaždenia a návrh na zápis zmeny. 249 € + 50 € poplatok.
+Zmena konateľa, sídla, mena alebo predmetu: 149 € za zmenu, ďalšia v tom istom návrhu 49 €.
+Pri viacosobovej s.r.o. a zmene konateľa zabezpečíme notársku zápisnicu, ktorú zákon vyžaduje.
 ```
+
+---
+
+## Reklamná skupina 7 — Založenie živnosti *(fáza 2, nízka ponuka)*
+
+**Cieľová URL:** `https://www.tkak.sk/zalozenie-zivnosti` (A6) · limit CPC 0,60 €
+
+```
+"založenie živnosti"              720/mes
+"zalozenie zivnosti"              390/mes
+"znovuzaloženie živnosti"         720/mes
+"obnovenie živnosti"              (doplniť po overení)
+```
+
+**Nadpisy**
+
+```
+Založenie živnosti za 29 €
+Aj znovuzaloženie živnosti
+Do 3 pracovných dní
+Správne predmety podnikania
+Daňová registrácia v cene
+Voľná živnosť bez poplatku
+Celé Slovensko, online
+Advokátska kancelária
+```
+
+**Popisy**
+
+```
+Zatriedime predmety podnikania, ohlásime živnosť elektronicky a zaregistrujeme vás na dani.
+Odmena 29 €. Voľná živnosť ohlásená elektronicky je bez správneho poplatku.
+Keď živnosť prerastie do firmy, založíme vám s.r.o. — dokumenty autorizujeme ako advokáti.
+```
+
+Zámer skupiny: lacný prvý kontakt, nie marža. Držať ponuku nízko a sledovať, koľko
+z týchto klientov sa do roka vráti na s.r.o.
+
+---
+
+## Kampaň A — lokálna (ostáva, zoštíhliť)
+
+Pôvodné slová s „nízkym objemom" (vymáhanie pohľadávok advokát, advokát nehnuteľností,
+právne služby zvolen, advokát súdny spor, kúpna zmluva byt advokát) vyhodiť. Ponechať
+a doplniť len overené:
+
+```
+"advokát zvolen"                   40/mes
+"právnik zvolen"                   90/mes
+"advokát banská bystrica"          70/mes
+"právnik online"                  210/mes   (celoštátne slovo — zvážiť presun do C)
+"advokát online"                   40/mes
+```
+
+---
+
+## Kampaň D — situácie *(až po obsadení C, 3 €/deň)*
+
+Štyri skupiny z verzie 1 s overenými slovami, bez zmeny textov:
+
+| Skupina | Slová (frázová zhoda) | Objem | URL |
+|---|---|---|---|
+| Neplatné skončenie PP | okamžité skončenie pracovného pomeru (210) · neplatná výpoveď (10) | 220 | `/neplatna-vypoved` |
+| Exekúcia | upovedomenie o začatí exekúcie (50) · zastavenie exekúcie (30) · neoprávnená exekúcia (10) · námietky proti exekúcii (10) | 100 | `/zastavenie-exekucie` |
+| Odškodnenie po nehode | sťaženie spoločenského uplatnenia (40) · odškodnenie po dopravnej nehode (20) | 60 | `/odskodnenie-dopravna-nehoda` |
+| Škoda od štátu | prieťahy v konaní (20) · nesprávny úradný postup (10) · náhrada škody od štátu (10) | 40 | `/nahrada-skody-od-statu` |
+
+Nadpisy a popisy: verzia 1 tohto súboru v git histórii (stav pred 23. 8. 2026) —
+ostávajú platné, sú overené pri audite stránok 20. 8. 2026.
 
 ---
 
 ## Súlad s § 29b zákona o advokácii
 
-Všetky texty sú vecné a objektívne. Neobsahujú porovnávanie s inými advokátmi,
-sľub výsledku ani hodnotiace tvrdenia o kvalite. Lehoty a inštitúty zodpovedajú
-zneniam overeným pri audite kampaňových stránok 20. 8. 2026.
-
-Formulácie „Posúdime váš prípad" a „Cenu poznáte vopred" opisujú spôsob práce,
-nie výsledok. Nikde nie je uvedené „vyhráme", „získate" ani „nárok máte".
+Všetky texty sú vecné. Ceny sú konečné s DPH, poplatky štátu uvedené samostatne.
+Tvrdenia o forme dokumentov opisujú zákon (§ 57, § 115 ods. 4, § 127a ods. 4, § 132
+ObchZ; § 1a zák. o advokácii; § 50 ods. 4 zák. 29/2026), nie porovnanie s konkurenciou.
+Nikde „najlacnejšie", „zaručene", „vyhráme". Advantage+ kreatíva ostáva **vypnutá** —
+Google by texty generoval mimo týchto mantinelov.
 
 ## Poradie krokov
 
-1. **B1** — označiť `generate_lead` ako kľúčovú udalosť v GA4 a naimportovať ju do Ads.
-2. **B3** — otvoriť kampaň „SK – Search – Poistné plnenie" a zistiť, prečo má 0 zobrazení.
-3. **B2** — dotiahnuť overenie pre finančné služby, ak sa potvrdí, že sa účtu týka.
-4. Premenovať kampaň na „SK – Search – Situácie (celoštátne)", zacielenie na celé SK.
-5. Doplniť päť reklamných skupín podľa tohto dokumentu.
-6. Prerozdeliť rozpočty na 7 + 8 €/deň.
-7. Po dvoch týždňoch vyhodnotiť podľa ceny za dopyt, nie podľa počtu klikov.
+1. Premenovať „SK – Search – Poistné plnenie" → „SK – Search – Firma & dokumenty (celoštátne)", zacielenie celé SK, 6 €/deň, Max. kliknutia s limitom CPC 3,50 €.
+2. Vytvoriť skupiny 1 – 3 (fáza 1) podľa tohto dokumentu; pred uložením prehnať Plánovačom slová označené „doplniť po overení" a vyhodiť tie s nulovým objemom.
+3. Kampaň A: vyhodiť slová s nízkym objemom, rozpočet 9 €/deň.
+4. Negatívne slová na úrovni kampane C (bez `vzor`).
+5. Postaviť landing pages z katalógu v poradí: `/zalozenie-sro` → `/likvidacia-sro` → `/ochranna-znamka` → `/vymahanie-pohladavok` → `/gdpr-dokumentacia` → zmeny/prevod → živnosť.
+6. Po každej zverejnenej stránke prepnúť URL skupiny, resp. spustiť skupinu fázy 2; rozpočty C 10 € / A 7 €.
+7. Po mesiaci behu C spustiť kampaň D (situácie) na 3 €/deň.
+8. Vyhodnocovať podľa **ceny za dopyt** (konverzia „Lead – dopyt (web)" + „Hovor"), nie klikov. Cieľ: pod 60 € za dopyt pri firemných témach (pri hodnote zákazky ~520 € je to únosné).
