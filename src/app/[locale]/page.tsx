@@ -4,6 +4,7 @@ import { Stats } from "@/components/sections/Stats";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { Process } from "@/components/sections/Process";
 import { TeamSection } from "@/components/sections/TeamSection";
+import { Regions } from "@/components/sections/Regions";
 import { BlogPreview } from "@/components/sections/BlogPreview";
 import { References } from "@/components/shop/References";
 import { CTABand } from "@/components/layout/CTABand";
@@ -22,6 +23,7 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
       <ServicesGrid />
       <Process />
       <TeamSection withButton />
+      <Regions />
       <BlogPreview />
       {ESHOP_ENABLED ? <References /> : null}
       <CTABand />

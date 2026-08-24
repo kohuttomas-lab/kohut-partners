@@ -78,6 +78,16 @@
     "teamTitle": "The people who will stand by you",
     "teamLead": "A well-coordinated team of attorneys with real experience in insolvency, corporate law and litigation.",
     "teamCta": "Meet the full team",
+    "regionsOverline": "Where we work",
+    "regionsTitle": "A lawyer for Zvolen and central Slovakia",
+    "regionsLead": "Our office is on Námestie SNP in Zvolen, but we represent clients across the region. See what we can handle in your town.",
+    "regionsCity": {
+      "zvolen": "Our office is right in the centre — meet us without travelling.",
+      "detva": "Legal services for Detva and the whole Podpoľanie region.",
+      "krupina": "Representation for Krupina and the surrounding area.",
+      "banska-bystrica": "The regional capital with its courts and authorities — we are there regularly.",
+      "ziar-nad-hronom": "Legal help for Žiar nad Hronom and the Hron valley."
+    },
     "blogOverline": "From our practice",
     "blogTitle": "Law made clear — our blog",
     "blogLead": "Practical articles for business owners. No extra theory.",

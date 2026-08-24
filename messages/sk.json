@@ -78,6 +78,16 @@
     "teamTitle": "Ľudia, ktorí budú stáť pri vás",
     "teamLead": "Zohraný tím advokátov s reálnou praxou v insolvenciách, korporátnom práve aj sporoch.",
     "teamCta": "Spoznať celý tím",
+    "regionsOverline": "Kde pôsobíme",
+    "regionsTitle": "Advokát pre Zvolen a stredné Slovensko",
+    "regionsLead": "Kanceláriu máme na Námestí SNP vo Zvolene, zastupujeme však klientov v celom regióne. Pozrite si, čo pre vás vieme vybaviť vo vašom meste.",
+    "regionsCity": {
+      "zvolen": "Kancelária priamo v centre — osobná konzultácia bez cestovania.",
+      "detva": "Právne služby pre Detvu a celé Podpoľanie, 20 minút od kancelárie.",
+      "krupina": "Zastupovanie pre Krupinu a okolie — rodinné, občianske aj firemné veci.",
+      "banska-bystrica": "Krajské mesto so súdmi aj úradmi — sme tam pravidelne.",
+      "ziar-nad-hronom": "Právna pomoc pre Žiar nad Hronom a Pohronie."
+    },
     "blogOverline": "Z našej praxe",
     "blogTitle": "Právo zrozumiteľne — náš blog",
     "blogLead": "Praktické články pre podnikateľov. Žiadna teória navyše.",
