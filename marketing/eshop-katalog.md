@@ -2,8 +2,8 @@
 
 kohút & partners · 23. 8. 2026 · nadväzuje na [eshop-research-dopyt.md](eshop-research-dopyt.md)
 
-Rozpracované: úroveň A celá (7), úroveň B celá (4), z úrovne C závet a kataster, plus
-osobný bankrot ako samostatný balík. Spolu **14 balíkov**.
+Rozpracované: úroveň A celá (7 + A4b vyčlenené 24. 8. 2026), úroveň B celá (4), z úrovne C
+závet a kataster, plus osobný bankrot ako samostatný balík. Spolu **15 balíkov**.
 
 Každý balík má rovnakú štruktúru: pre koho · čo obsahuje · čo neobsahuje · cena · postup ·
 lehota · právny základ · čo od klienta potrebujeme · slug · kľúčové slová · upsell.
@@ -22,7 +22,7 @@ Dve zásady naprieč katalógom:
 
 ---
 
-## Spoločný právny základ firemných balíkov (A1 – A4)
+## Spoločný právny základ firemných balíkov (A1 – A4b)
 
 Zákon č. 29/2026 Z. z. o obchodnom registri nadobudol účinnosť **17. 8. 2026** a čl. II
 novelizoval Obchodný zákonník (zák. č. 513/1991 Zb.):
@@ -170,21 +170,18 @@ a podmienky.
 
 ---
 
-### A4 · Zmena v s.r.o. (konateľ · sídlo · obchodné meno · predmet podnikania · základné imanie)
+### A4 · Zmena v s.r.o. (sídlo · obchodné meno · predmet podnikania · základné imanie)
 
 **Pre koho:** existujúca s.r.o., ktorá potrebuje zapísať zmenu.
 
 **Obsahuje**
 - rozhodnutie jediného spoločníka (autorizované advokátom, § 132 ods. 1) alebo zápisnica z VZ
-- pri viacosobovej s.r.o. a zmene konateľa: **zabezpečenie notárskej zápisnice** (§ 127a
-  ods. 4 — tu advokát alternatívou nie je; uviesť rovno na stránke, notárska odmena sa
-  účtuje samostatne)
 - úplné znenie spoločenskej zmluvy / zakladateľskej listiny po zmene
-- pri sídle: súhlas vlastníka, pri konateľovi: podpisový vzor a čestné vyhlásenie,
-  pri predmete: ohlásenie živností
+- pri sídle: súhlas vlastníka, pri predmete: ohlásenie živností
 - návrh na zápis zmeny do OR, autorizované podanie
 
-**Neobsahuje:** súdny poplatok 50 €, notársku odmenu (ak treba), správne poplatky za živnosti.
+**Neobsahuje:** súdny poplatok 50 €, správne poplatky za živnosti, **vymenovanie alebo
+odvolanie konateľa** — to je samostatný balík A4b, lebo má inú, prísnejšiu formu.
 
 **Cena:** **149 €** jedna zmena; každá ďalšia v tom istom návrhu **+49 €** (súdny poplatok
 50 € pokrýva ľubovoľný počet zmien v jednom návrhu — pozn. 1 k položke 17).
@@ -192,6 +189,54 @@ a podmienky.
 
 **Slug:** `/zmena-konatela-sidla-sro` · **Title:** „Zmena konateľa, sídla alebo názvu s.r.o. 2026 — zápis zmeny do OR od 149 €"
 **Kľúčové slová:** zmena konateľa · zmena sídla firmy · zmena sídla sro · zmena obchodného mena · zmena predmetu podnikania · zápis zmeny obchodný register
+
+---
+
+### A4b · Vymenovanie alebo odvolanie konateľa
+
+**Prečo samostatne:** je to jediná zmena v s.r.o., ktorú nemožno urobiť obyčajným
+podpísaným rozhodnutím ani s úradne osvedčeným podpisom. Pri **viacosobovej** s.r.o. musí
+byť priebeh valného zhromaždenia osvedčený **notárskou zápisnicou** (§ 127a ods. 4
+písm. c) ObchZ) — advokát tu alternatívou nie je. Pri **jednoosobovej** s.r.o. sa
+rozhodnutie jediného spoločníka musí vyhotoviť vo forme notárskej zápisnice **alebo
+dokumentu autorizovaného advokátom** (§ 132 ods. 1 posledná veta, ktorá odkazuje na
+§ 127a ods. 4).
+
+**Predajný argument (len pri jednoosobovej s.r.o.):** klient nemusí ísť k notárovi vôbec.
+Rozhodnutie autorizujeme sami a podľa § 50 ods. 4 zákona o obchodnom registri odpadá aj
+úradné osvedčenie podpisu na **podpisovom vzore** nového konateľa (§ 34 písm. g), ktorý by
+inak musel podpísať pred notárom alebo na obci.
+
+**Obsahuje**
+- posúdenie spoločenskej zmluvy (kvórum, osobitný postup) a preverenie prekážok zápisu
+  v registri diskvalifikácií a v registri poverení na vykonanie exekúcie (§ 51 ods. 3
+  zák. 29/2026) — pred podaním, nie po zamietnutí
+- rozhodnutie o ustanovení do funkcie alebo o skončení funkcie (§ 34 písm. e), súhlas
+  s ustanovením (písm. f), podpisový vzor konateľa (písm. g)
+- variant A: autorizácia rozhodnutia aj podpisového vzoru advokátom · variant B: príprava
+  podkladov na valné zhromaždenie a sprevádzanie u notára
+- návrh na zápis zmeny a jeho elektronické podanie, odovzdanie výpisu z OR
+
+**Neobsahuje:** súdny poplatok 50 €, pri variante B odmenu notára (notárska tarifa
+31/1993 Zb. — na stránke uviesť aspoň rádový odhad, inak cena vyzerá zavádzajúco),
+zmluvu o výkone funkcie a rozhodnutie o odmene konateľa (to vyžaduje úradne osvedčený
+podpis podľa § 125 ods. 1 písm. f).
+
+**Cena:** **199 €** jednoosobová s.r.o. (autorizácia u nás) · **149 €** viacosobová s.r.o.
+(zápisnica u notára) + súdny poplatok 50 €. Ďalšia zmena v tom istom návrhu +49 €.
+**Lehota:** variant A spravidla 3 – 5 pracovných dní (registrový súd zapíše do 2 pracovných
+dní od úplného návrhu, § 58 ods. 1); variant B podľa termínu u notára.
+
+**Umiestnenie:** nie samostatná stránka — dopyt je malý („zmena konateľa" 10/mes,
+„rozhodnutie jediného spoločníka" 70/mes). Sekcia na stránke `/zmena-konatela-sidla-sro`
+a argument v skupine 6b kampane C.
+
+**Upsell:** zmena sídla alebo predmetu v tom istom návrhu (A4), zmluva o výkone funkcie
+konateľa, prevod obchodného podielu (A3).
+
+**Súvisiace:** e-shopový vzor „Rozhodnutie jediného spoločníka" (9 €) tému vymenovania
+konateľa zámerne nepokrýva a odkazuje sem — dokument na stiahnutie nemôže mať zákonom
+vyžadovanú formu. Rozpis služby je v `~/SynologyDrive/tkak-eshop-vzory-DRAFT 2026 leto/03_Firemne_SRO/04b_SLUZBA_Vymenovanie_konatela.md`.
 
 ---
 
@@ -441,9 +486,9 @@ rozdiel oproti Centru bez toho, aby sme Centrum kritizovali.
 | Analýza insolvenčného rizika 290 € | **Vyradiť z e-shopu** (nulový vyhľadávací dopyt) |
 | Obhajoba pri výsluchu 290 € | **Vyradiť z e-shopu** (nie je produkt do košíka) |
 
-**Nové:** A2 likvidácia, A3 prevod podielu, A4 zmena v s.r.o., A5 ochranná známka, A6
-živnosť, A7 ready-made (partner), C1 závet, osobný bankrot. **Spolu 14 + 7 ponechaných
-= 21 položiek.** To je veľa na jednu stránku — e-shop treba rozdeliť na kategórie
+**Nové:** A2 likvidácia, A3 prevod podielu, A4 zmena v s.r.o., A4b vymenovanie konateľa,
+A5 ochranná známka, A6 živnosť, A7 ready-made (partner), C1 závet, osobný bankrot.
+**Spolu 15 + 7 ponechaných = 22 položiek.** To je veľa na jednu stránku — e-shop treba rozdeliť na kategórie
 (Firma · Dokumenty a GDPR · Pohľadávky · Súkromie) a každú s vlastnou landing page.
 
 ---
