@@ -172,8 +172,9 @@ a podmienky.
 obchodného podielu" za 29 € sa predáva samostatne — s výrazným upozornením priamo
 v produkte, že bez autorizácie advokátom alebo notárskej zápisnice je zmluva neplatná
 (§ 115 ods. 4) a slúži ako podklad na autorizáciu. Vzor je most k tejto službe.
-**Návrh na odsúhlasenie:** 29 € za vzor započítať do ceny služby, ak si zákazník
-autorizáciu objedná do 30 dní.
+**Zápočet schválený 24. 8. 2026:** 29 € za vzor sa započíta do ceny služby, ak si
+zákazník autorizáciu objedná do 30 dní od kúpy vzoru (e-shop musí vedieť kúpu spárovať —
+kupón alebo e-mail).
 
 ---
 
