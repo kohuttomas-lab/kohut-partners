@@ -239,7 +239,7 @@
       "vatIncl": "incl.",
       "total": "Total (incl. VAT)",
       "checkout": "Go to checkout",
-      "reserveNote": "At checkout your card is only pre-authorized. We capture the payment after reviewing the order — usually within 1 business day. If we cannot take the matter on, the hold is released and you pay nothing."
+      "reserveNote": "We review every order after payment — usually within 1 business day. If we cannot take the matter on, we promptly refund the payment in full."
     },
     "checkout": {
       "title": "Complete your order",

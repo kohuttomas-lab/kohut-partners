@@ -239,7 +239,7 @@
       "vatIncl": "vrátane",
       "total": "Spolu (s DPH)",
       "checkout": "Prejsť k platbe",
-      "reserveNote": "Platba sa pri objednávke na karte iba rezervuje. Stiahneme ju až po preverení objednávky — spravidla do 1 pracovného dňa. Ak vec nemôžeme prevziať, rezervácia sa uvoľní a nič neplatíte."
+      "reserveNote": "Objednávku po zaplatení preveríme — spravidla do 1 pracovného dňa. Ak vec nemôžeme prevziať, platbu vám bezodkladne vrátime v plnej výške."
     },
     "checkout": {
       "title": "Dokončenie objednávky",

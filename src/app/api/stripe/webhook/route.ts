@@ -25,12 +25,12 @@ export async function POST(req: Request) {
   switch (event.type) {
     case "checkout.session.completed": {
       const session = event.data.object;
-      // Model 2 (card reservation): payment-mode sessions complete with the
-      // PaymentIntent in `requires_capture` — the office captures or cancels
-      // it in the Stripe Dashboard after the conflict check (holds auto-expire
-      // after ~7 days). Order alerting runs via Stripe Dashboard e-mail
-      // notifications; template download fulfilment is intentionally absent
-      // (templates are not for sale yet — see TEMPLATES_FOR_SALE in flags).
+      // Payments charge automatically at checkout. The office reviews every
+      // order (conflict check); when it cannot take the matter on, it refunds
+      // the payment via the Stripe Dashboard (Refund) and issues a credit
+      // note. Order alerting runs via Stripe Dashboard e-mail notifications;
+      // template download fulfilment is intentionally absent (templates are
+      // not for sale yet — see TEMPLATES_FOR_SALE in flags).
       console.log(
         "[webhook] checkout.session.completed",
         session.id,
