@@ -80,6 +80,20 @@ export async function POST(req: Request) {
       }
     }
 
+    // Model 2 — card reservation: one-off packages only AUTHORIZE the card
+    // (capture_method: "manual"); the office captures in the Stripe Dashboard
+    // after the conflict check, or cancels to release the hold. Card networks
+    // release uncaptured authorizations after ~7 days. Manual capture is
+    // card-only and unsupported in subscription mode — subscriptions charge
+    // automatically as before.
+    const itemsMeta =
+      sessionMode === "payment"
+        ? lineItems
+            .map((li) => `${li.price_data?.product_data?.name} x${li.quantity}`)
+            .join("; ")
+            .slice(0, 480)
+        : (id ?? "");
+
     const session = await stripe.checkout.sessions.create({
       mode: sessionMode,
       line_items: lineItems,
@@ -88,6 +102,25 @@ export async function POST(req: Request) {
       billing_address_collection: "auto",
       allow_promotion_codes: true,
       locale: isSk ? "sk" : "en",
+      phone_number_collection: { enabled: true },
+      metadata: { items: itemsMeta },
+      ...(sessionMode === "payment"
+        ? {
+            payment_method_types: ["card"] as Stripe.Checkout.SessionCreateParams.PaymentMethodType[],
+            payment_intent_data: {
+              capture_method: "manual" as const,
+              metadata: { items: itemsMeta },
+              description: `kohut & partners — ${itemsMeta}`.slice(0, 500),
+            },
+            custom_text: {
+              submit: {
+                message: isSk
+                  ? "Suma sa na karte iba rezervuje. Stiahneme ju až po preverení objednávky — spravidla do 1 pracovného dňa. Ak vec nemôžeme prevziať, rezervácia sa uvoľní a nič neplatíte."
+                  : "Your card is only pre-authorized now. We capture the payment after reviewing the order — usually within 1 business day. If we cannot take the matter on, the hold is released and you pay nothing.",
+              },
+            },
+          }
+        : {}),
     });
 
     return Response.json({ url: session.url });

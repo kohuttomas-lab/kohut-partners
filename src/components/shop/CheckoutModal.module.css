@@ -74,6 +74,25 @@
   grid-template-columns: 1fr 1fr;
   gap: 14px;
 }
+.offlineLead {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text);
+  margin: 0;
+}
+.offlineContact {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--color-bg);
+}
+.offlineContact strong {
+  color: var(--text-strong);
+}
 
 .summary {
   padding: 26px;

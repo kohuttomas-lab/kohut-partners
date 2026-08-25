@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getPathname } from "@/i18n/navigation";
 import { getArticleSlugPairs, getServiceIds, getArticle } from "@/lib/content";
 import { CAMPAIGNS } from "@/lib/campaigns";
+import { ESHOP_ENABLED } from "@/lib/flags";
 
 const BASE = "https://www.tkak.sk";
 
@@ -13,9 +14,10 @@ type HrefPair = { sk: Href; en: Href };
 /** Cesta, ktorá je v oboch jazykoch rovnaká (routing si prefix doplní sám). */
 const bothLocales = (href: Href): HrefPair => ({ sk: href, en: href });
 
-// Static routes that are live at launch (e-shop is intentionally excluded —
-// it 404s while the flag is off, so it must not appear in the sitemap).
+// Static routes. The e-shop entry follows the feature flag — the page 404s
+// while the flag is off, so it must not appear in the sitemap then.
 const STATIC: Href[] = [
+  ...(ESHOP_ENABLED ? (["/shop"] as Href[]) : []),
   "/",
   "/services",
   "/about",

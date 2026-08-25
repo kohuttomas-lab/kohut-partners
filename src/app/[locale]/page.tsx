@@ -6,10 +6,8 @@ import { Process } from "@/components/sections/Process";
 import { TeamSection } from "@/components/sections/TeamSection";
 import { Regions } from "@/components/sections/Regions";
 import { BlogPreview } from "@/components/sections/BlogPreview";
-import { References } from "@/components/shop/References";
 import { CTABand } from "@/components/layout/CTABand";
 import { LegalServiceSchema } from "@/components/seo/LegalServiceSchema";
-import { ESHOP_ENABLED } from "@/lib/flags";
 
 export default async function HomePage(props: PageProps<"/[locale]">) {
   const { locale } = await props.params;
@@ -25,7 +23,8 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
       <TeamSection withButton />
       <Regions />
       <BlogPreview />
-      {ESHOP_ENABLED ? <References /> : null}
+      {/* <References /> stays out until REFERENCES holds real, approved client
+          names — the placeholder list is fictitious and must never render. */}
       <CTABand />
     </>
   );

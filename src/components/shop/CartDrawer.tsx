@@ -134,6 +134,9 @@ export function CartDrawer() {
                 <span>{t("cart.total")}</span>
                 <span className={styles.totalFinalValue}>{formatEur(total)}</span>
               </div>
+              {/* Model 2: the card is only authorized at checkout; capture
+                  happens after the conflict check. Say so before the button. */}
+              <p className={styles.reserveNote}>{t("cart.reserveNote")}</p>
               <Button
                 variant="accent"
                 size="lg"

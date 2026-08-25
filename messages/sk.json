@@ -198,7 +198,7 @@
   "shop": {
     "overline": "E-shop právnych služieb",
     "heroTitle": "Právne služby, ktoré si objednáte online",
-    "heroLead": "Jednorazové právne balíky s pevnou cenou, hotové šablóny na stiahnutie aj mesačné predplatné pre firmy. Bez čakania, bez prekvapení.",
+    "heroLead": "Jednorazové právne balíky s pevnou cenou a mesačné predplatné pre firmy. Bez čakania, bez prekvapení.",
     "pkgOverline": "Balíky s pevnou cenou",
     "pkgTitle": "Jednorazové právne balíky",
     "pkgLead": "Konkrétna služba za vopred známu cenu. Ideálne, keď potrebujete vyriešiť jednu vec.",
@@ -212,7 +212,7 @@
     "tplTrust": [
       "Pripravené advokátmi zapísanými v SAK",
       "Podľa aktuálnych právnych predpisov SR",
-      "Garancia správnosti — žiadne AI generované vzory"
+      "Každý vzor pred zaradením do ponuky kontroluje advokát"
     ],
     "subsOverline": "Predplatné právnych služieb",
     "subsTitle": "Mesačné predplatné pre firmy",
@@ -238,26 +238,22 @@
       "vat": "DPH 23 %",
       "vatIncl": "vrátane",
       "total": "Spolu (s DPH)",
-      "checkout": "Prejsť k platbe"
+      "checkout": "Prejsť k platbe",
+      "reserveNote": "Platba sa pri objednávke na karte iba rezervuje. Stiahneme ju až po preverení objednávky — spravidla do 1 pracovného dňa. Ak vec nemôžeme prevziať, rezervácia sa uvoľní a nič neplatíte."
     },
     "checkout": {
       "title": "Dokončenie objednávky",
-      "contact": "Fakturačné údaje",
-      "company": "Firma / IČO (nepovinné)",
-      "pay": "Spôsob platby",
-      "payOpts": [
-        "Platobná karta",
-        "Apple Pay",
-        "Bankový prevod"
-      ],
-      "confirm": "Záväzne objednať a zaplatiť",
       "summary": "Súhrn objednávky",
-      "doneTitle": "Ďakujeme za objednávku",
-      "doneLead": "Potvrdenie a faktúru sme poslali na váš e-mail. Šablóny nájdete pripravené na stiahnutie vo svojom konte.",
-      "orderNo": "Číslo objednávky",
-      "close": "Hotovo",
-      "perMonth": "/mes"
-    }
+      "perMonth": "/mes",
+      "offlineTitle": "Objednávka e-mailom",
+      "offlineLead": "Online platba je momentálne nedostupná. Pošlite nám objednávku e-mailom alebo zavolajte — ozveme sa spravidla do jedného pracovného dňa a dohodneme ďalší postup aj platbu.",
+      "offlineBtn": "Odoslať objednávku e-mailom",
+      "mailSubject": "Objednávka z e-shopu tkak.sk",
+      "mailIntro": "Dobrý deň, mám záujem o tieto služby:",
+      "mailOutro": "Prosím o potvrdenie objednávky a informáciu o ďalšom postupe."
+    },
+    "tplSoonTitle": "Vzory dokumentov pripravujeme",
+    "tplSoonLead": "Vzory zmlúv a podaní prechádzajú záverečnou kontrolou advokátov. Do ponuky ich zaradíme hneď, ako bude hotová — dovtedy vám s konkrétnym dokumentom radi pomôžeme individuálne."
   },
   "footer": {
     "tag": "Advokátska kancelária zapísaná v Slovenskej advokátskej komore.",

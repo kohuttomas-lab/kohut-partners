@@ -253,8 +253,14 @@ const SERVICES: RawService[] = [
       {
         id: "nh-kupna",
         price: 249,
-        sk: ["Kúpna zmluva na byt", "Príprava zmluvy a návrh na vklad do katastra nehnuteľností."],
-        en: ["Property purchase contract", "Contract drafting and the cadastre registration petition."],
+        sk: [
+          "Kúpna zmluva na nehnuteľnosť + vklad",
+          "Zmluva autorizovaná advokátom — bez osvedčovania podpisov — a elektronický návrh na vklad do katastra.",
+        ],
+        en: [
+          "Property purchase contract + cadastre filing",
+          "A contract authorized by an attorney — no signature certification needed — plus the electronic cadastre petition.",
+        ],
       },
       {
         id: "nh-najom",
@@ -334,10 +340,19 @@ const SERVICES: RawService[] = [
         en: ["Pre-action demand", "Drafting and sending a demand to the debtor — often enough to get paid."],
       },
       {
+        // B4 katalóg: bývalá „Príprava žaloby" 390 € rozložená do lievika —
+        // predajná položka je návrh na platobný rozkaz za 290 €; sporové
+        // konanie po odpore sa dohodne individuálne (viď /vymahanie-pohladavok).
         id: "sp-zaloba",
-        price: 390,
-        sk: ["Príprava žaloby", "Spísanie žaloby a podanie na príslušný súd."],
-        en: ["Lawsuit preparation", "Drafting the lawsuit and filing it with the competent court."],
+        price: 290,
+        sk: [
+          "Návrh na platobný rozkaz",
+          "Návrh na vydanie platobného rozkazu v upomínacom konaní — najrýchlejšia cesta k exekučnému titulu. Súdny poplatok sa platí samostatne.",
+        ],
+        en: [
+          "Payment-order petition",
+          "A petition for a payment order in the electronic demand procedure — the fastest route to an enforceable title. The court fee is paid separately.",
+        ],
       },
     ],
   },
@@ -510,9 +525,17 @@ export interface ShopPackage extends ServicePackage {
   icon: IconName;
 }
 
+// Packages pulled from the e-shop grid per the 2026 catalogue review — they
+// stay offered on their service pages, just not as one-click purchases:
+// insolvency risk analysis needs scoping first, defence at questioning is an
+// urgent matter that must start with a phone call, not a cart.
+const SHOP_EXCLUDED_PACKAGES = new Set(["ins-analyza", "tr-obhajoba"]);
+
 export function getShopPackages(locale: Locale): ShopPackage[] {
   return getServices(locale).flatMap((s) =>
-    s.packages.map((p) => ({ ...p, area: s.name, icon: s.icon }))
+    s.packages
+      .filter((p) => !SHOP_EXCLUDED_PACKAGES.has(p.id))
+      .map((p) => ({ ...p, area: s.name, icon: s.icon }))
   );
 }
 

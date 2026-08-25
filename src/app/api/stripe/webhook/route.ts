@@ -25,9 +25,19 @@ export async function POST(req: Request) {
   switch (event.type) {
     case "checkout.session.completed": {
       const session = event.data.object;
-      // TODO fulfilment: grant template downloads, send the confirmation e-mail
-      // (Resend) and record the order. `session.metadata` can carry item ids.
-      console.log("[webhook] checkout.session.completed", session.id);
+      // Model 2 (card reservation): payment-mode sessions complete with the
+      // PaymentIntent in `requires_capture` — the office captures or cancels
+      // it in the Stripe Dashboard after the conflict check (holds auto-expire
+      // after ~7 days). Order alerting runs via Stripe Dashboard e-mail
+      // notifications; template download fulfilment is intentionally absent
+      // (templates are not for sale yet — see TEMPLATES_FOR_SALE in flags).
+      console.log(
+        "[webhook] checkout.session.completed",
+        session.id,
+        session.mode,
+        session.metadata?.items ?? "",
+        session.customer_details?.email ?? ""
+      );
       break;
     }
     default:

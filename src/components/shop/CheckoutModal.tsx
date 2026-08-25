@@ -1,36 +1,27 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { getCartCatalog } from "@/lib/content";
+import { getCartCatalog, CONTACT } from "@/lib/content";
 import { formatEur, vatPortion } from "@/lib/format";
 import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
-import { Select } from "@/components/ui/Select";
-import { Checkbox } from "@/components/ui/Checkbox";
-import { CheckCircle, Mail, Shield, X } from "@/components/icons";
+import { Mail, X } from "@/components/icons";
 import { cx } from "@/lib/cx";
 import { useCart } from "./CartProvider";
 import styles from "./CheckoutModal.module.css";
 
-function makeOrderNumber(): string {
-  const year = new Date().getFullYear();
-  const n = Math.floor(1000 + Math.random() * 9000);
-  return `KP-${year}-${n}`;
-}
-
+/**
+ * Fallback checkout. This modal only ever opens when Stripe checkout is
+ * unavailable (no keys / API error) — the live path redirects straight to
+ * Stripe. It must never pretend an order happened: no fake order numbers,
+ * no "invoice sent" copy. Instead it hands the visitor an honest e-mail
+ * order path with the cart summary prefilled (mailto is a shortcut; the
+ * visible address is the primary, copyable route — same rule as CampaignForm).
+ */
 export function CheckoutModal() {
   const locale = useLocale();
   const t = useTranslations("shop");
-  const c = useTranslations("contact");
-  const { items, checkoutOpen, closeCheckout, clear } = useCart();
-
-  const [done, setDone] = useState(false);
-  const [orderNo, setOrderNo] = useState("");
-
-  useEffect(() => {
-    if (checkoutOpen) setDone(false);
-  }, [checkoutOpen]);
+  const { items, checkoutOpen, closeCheckout } = useCart();
 
   useEffect(() => {
     if (!checkoutOpen) return;
@@ -66,7 +57,18 @@ export function CheckoutModal() {
   const total = lines.reduce((s, it) => s + it.price * it.qty, 0);
   const vat = vatPortion(total);
   const net = Math.round((total - vat) * 100) / 100;
-  const payOpts = t.raw("checkout.payOpts") as string[];
+
+  const orderBody = lines
+    .map(
+      (it) =>
+        `- ${it.name}${it.qty > 1 ? ` × ${it.qty}` : ""}${
+          it.type === "sub" ? ` ${t("checkout.perMonth")}` : ""
+        } — ${formatEur(it.price * it.qty)}`
+    )
+    .join("\n");
+  const mailto = `mailto:${CONTACT.email}?subject=${encodeURIComponent(
+    t("checkout.mailSubject")
+  )}&body=${encodeURIComponent(`${t("checkout.mailIntro")}\n\n${orderBody}\n\n${t("checkout.mailOutro")}`)}`;
 
   return (
     <div
@@ -78,103 +80,62 @@ export function CheckoutModal() {
       <button className={styles.backdrop} aria-label="Close" onClick={closeCheckout} />
       <div className={styles.dialog}>
         <div className={styles.header}>
-          <span className={styles.headTitle}>
-            {done ? t("checkout.doneTitle") : t("checkout.title")}
-          </span>
+          <span className={styles.headTitle}>{t("checkout.title")}</span>
           <button className={styles.close} onClick={closeCheckout} aria-label="Close">
             <X size={22} />
           </button>
         </div>
 
-        {done ? (
-          <div className={styles.done}>
-            <span className={styles.doneIcon}>
-              <CheckCircle size={60} />
-            </span>
-            <h3 className={styles.doneTitle}>{t("checkout.doneTitle")}</h3>
-            <p className={styles.doneLead}>{t("checkout.doneLead")}</p>
-            <div className={styles.orderBox}>
-              <span className={styles.orderLabel}>{t("checkout.orderNo")}</span>
-              <span className={styles.orderNo}>{orderNo}</span>
-            </div>
+        <div className={styles.grid}>
+          <div className={styles.form}>
+            <div className={styles.formTitle}>{t("checkout.offlineTitle")}</div>
+            <p className={styles.offlineLead}>{t("checkout.offlineLead")}</p>
+            <p className={styles.offlineContact}>
+              <strong>{CONTACT.email}</strong>
+              <br />
+              {CONTACT.phone}
+            </p>
             <Button
-              variant="primary"
+              variant="accent"
               size="lg"
               block
+              leftIcon={<Mail size={18} />}
               onClick={() => {
-                clear();
-                closeCheckout();
+                window.location.href = mailto;
               }}
             >
-              {t("checkout.close")}
+              {t("checkout.offlineBtn")}
             </Button>
           </div>
-        ) : (
-          <div className={styles.grid}>
-            <form
-              className={styles.form}
-              onSubmit={(e) => {
-                e.preventDefault();
-                setOrderNo(makeOrderNumber());
-                setDone(true);
-              }}
-            >
-              <div className={styles.formTitle}>{t("checkout.contact")}</div>
-              <Input label={c("fName")} required placeholder={c("namePlaceholder")} autoComplete="name" />
-              <div className={styles.row2}>
-                <Input
-                  label={c("fEmail")}
-                  type="email"
-                  required
-                  leadingIcon={<Mail size={18} />}
-                  placeholder={c("emailPlaceholder")}
-                  autoComplete="email"
-                />
-                <Input label={c("fPhone")} placeholder={c("phonePlaceholder")} autoComplete="tel" />
-              </div>
-              <Input label={t("checkout.company")} placeholder="—" />
-              <Select label={t("checkout.pay")} defaultValue="0">
-                {payOpts.map((o, i) => (
-                  <option key={i} value={i}>
-                    {o}
-                  </option>
-                ))}
-              </Select>
-              <Checkbox label={c("fConsent")} required />
-              <Button variant="accent" size="lg" block type="submit" leftIcon={<Shield size={18} />}>
-                {t("checkout.confirm")}
-              </Button>
-            </form>
 
-            <div className={styles.summary}>
-              <div className={styles.summaryTitle}>{t("checkout.summary")}</div>
-              {lines.map((it) => (
-                <div key={it.id} className={styles.line}>
-                  <span className={styles.lineName}>
-                    {it.name}
-                    {it.qty > 1 ? <span className={styles.lineMuted}> × {it.qty}</span> : null}
-                    {it.type === "sub" ? (
-                      <span className={styles.lineMuted}> {t("checkout.perMonth")}</span>
-                    ) : null}
-                  </span>
-                  <span className={styles.linePrice}>{formatEur(it.price * it.qty)}</span>
-                </div>
-              ))}
-              <div className={cx(styles.totalsRow, styles.totalsRowFirst)}>
-                <span>{t("cart.subtotal")}</span>
-                <span>{formatEur(net)}</span>
+          <div className={styles.summary}>
+            <div className={styles.summaryTitle}>{t("checkout.summary")}</div>
+            {lines.map((it) => (
+              <div key={it.id} className={styles.line}>
+                <span className={styles.lineName}>
+                  {it.name}
+                  {it.qty > 1 ? <span className={styles.lineMuted}> × {it.qty}</span> : null}
+                  {it.type === "sub" ? (
+                    <span className={styles.lineMuted}> {t("checkout.perMonth")}</span>
+                  ) : null}
+                </span>
+                <span className={styles.linePrice}>{formatEur(it.price * it.qty)}</span>
               </div>
-              <div className={styles.totalsRow}>
-                <span>{t("cart.vat")}</span>
-                <span>{formatEur(vat)}</span>
-              </div>
-              <div className={styles.totalFinal}>
-                <span className={styles.totalFinalLabel}>{t("cart.total")}</span>
-                <span className={styles.totalFinalValue}>{formatEur(total)}</span>
-              </div>
+            ))}
+            <div className={cx(styles.totalsRow, styles.totalsRowFirst)}>
+              <span>{t("cart.subtotal")}</span>
+              <span>{formatEur(net)}</span>
+            </div>
+            <div className={styles.totalsRow}>
+              <span>{t("cart.vat")}</span>
+              <span>{formatEur(vat)}</span>
+            </div>
+            <div className={styles.totalFinal}>
+              <span className={styles.totalFinalLabel}>{t("cart.total")}</span>
+              <span className={styles.totalFinalValue}>{formatEur(total)}</span>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

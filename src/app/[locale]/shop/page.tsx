@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeAlternates } from "@/lib/seo";
-import { ESHOP_ENABLED } from "@/lib/flags";
+import { ESHOP_ENABLED, TEMPLATES_FOR_SALE } from "@/lib/flags";
 import { PageHero } from "@/components/layout/PageHero";
+import { Container, SectionHead } from "@/components/layout/Section";
 import { FixedPackages } from "@/components/shop/FixedPackages";
 import { Templates } from "@/components/shop/Templates";
 import { SubscriptionPlans } from "@/components/shop/SubscriptionPlans";
-import { References } from "@/components/shop/References";
 import { CTABand } from "@/components/layout/CTABand";
+import styles from "@/components/shop/Templates.module.css";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -32,9 +33,23 @@ export default async function ShopPage(props: Props) {
     <>
       <PageHero overline={t("overline")} title={t("heroTitle")} lead={t("heroLead")} />
       <FixedPackages />
-      <Templates />
+      {TEMPLATES_FOR_SALE ? (
+        <Templates />
+      ) : (
+        // Teaser until templates pass attorney review and download delivery
+        // exists — no purchase buttons before both are in place.
+        <section className={styles.section}>
+          <Container>
+            <SectionHead
+              overline={t("tplOverline")}
+              title={t("tplSoonTitle")}
+              lead={t("tplSoonLead")}
+            />
+          </Container>
+        </section>
+      )}
       <SubscriptionPlans />
-      <References />
+      {/* <References /> intentionally absent — placeholder logos are fictitious. */}
       <CTABand />
     </>
   );

@@ -219,3 +219,9 @@
 .totalFinalValue {
   font-size: 22px;
 }
+.reserveNote {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0 0 10px;
+}
