@@ -440,7 +440,36 @@ ObchZ; § 1a zák. o advokácii; § 50 ods. 4 zák. 29/2026), nie porovnanie s k
 Nikde „najlacnejšie", „zaručene", „vyhráme". Advantage+ kreatíva ostáva **vypnutá** —
 Google by texty generoval mimo týchto mantinelov.
 
-## Poradie krokov
+## VYKONANÉ 24. 8. 2026 — prestavba v účte dokončená
+
+Cez Google Ads UI (s overením identity používateľom) vykonané:
+
+1. Kampaň „SK – Search – Poistné plnenie" **premenovaná** na „SK – Search – Firma &
+   dokumenty (celoštátne)" — história zachovaná, campaignId 24148871722.
+2. Nastavenia C: rozpočet **10 €/deň**, Maximalizovať kliknutia s **limitom CPC 3,50 €**,
+   oblasť Slovensko, jazyk slovenčina (boli už nastavené).
+3. Vytvorených **8 reklamných skupín** (1 Založenie s.r.o. · 2 Vymáhanie pohľadávok ·
+   3 GDPR a dokumenty pre e-shop · 4 Likvidácia a zrušenie s.r.o. · 5 Ochranná známka ·
+   6a Prevod obchodného podielu · 6b Zmeny v s.r.o. · 7 Založenie živnosti), spolu
+   41 kľúčových slov vo frázovej zhode a 8 responzívnych reklám podľa tohto dokumentu.
+   Finálne URL všetkých reklám overené v stĺpci „Cieľová webová adresa" — smerujú na
+   produktové stránky. Reklamy sú v stave „Prebieha kontrola" (štandardné schvaľovanie).
+4. Stará „Reklamná skupina č. 1" (poistné plnenie) **odstránená**.
+5. Negatívne slová kampane C: z pôvodných poistných negatív **odstránené `vzor`
+   a `tlačivo`** (cieľové dopyty e-shopu!), pridaných 14 nových (zadarmo, bezplatne,
+   študent, svojpomocne, sám, ako na to, zákon, nariadenie, čo je, definícia,
+   účtovníctvo, účtovník, česko, čr) — spolu 32. Poistné značky (allianz, generali…)
+   ponechané, neškodia.
+6. Kampaň A: rozpočet **12 → 7 €/deň**; odstránených 6 slov („predžalobná výzva" — presun
+   do C skupiny 2, aby si kampane nekonkurovali + 5 slov s nízkym objemom); doplnené
+   „právnik online" a „advokát online". Ostáva 6 overených slov.
+
+**Nevykonané / na sledovanie:** B2 overenie pre finančné služby (vlákno 460402430 —
+používateľ); slová „doplniť po overení" v skupinách — prehnať Plánovačom pri prvej
+mesačnej kontrole; kampaň D (situácie) spustiť po mesiaci behu C; po 30 konverziách
+prepnúť C na Maximalizovať konverzie.
+
+## Poradie krokov (pôvodný plán)
 
 1. Premenovať „SK – Search – Poistné plnenie" → „SK – Search – Firma & dokumenty (celoštátne)", zacielenie celé SK, 6 €/deň, Max. kliknutia s limitom CPC 3,50 €.
 2. Vytvoriť skupiny 1 – 3 (fáza 1) podľa tohto dokumentu; pred uložením prehnať Plánovačom slová označené „doplniť po overení" a vyhodiť tie s nulovým objemom.
