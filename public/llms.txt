@@ -47,6 +47,22 @@ Stránky písané na jednu konkrétnu situáciu — s lehotami, ktoré v nej be�
 - https://www.tkak.sk/zastavenie-exekucie — obrana proti exekúcii. Návrh na zastavenie podaný do 15 dní od doručenia upovedomenia o začatí exekúcie má odkladný účinok (§ 61k Exekučného poriadku).
 - https://www.tkak.sk/nahrada-skody-od-statu — náhrada škody spôsobenej nezákonným rozhodnutím alebo nesprávnym úradným postupom vrátane prieťahov v konaní (zákon č. 514/2003 Z. z.).
 
+## Právne služby s pevnou cenou (slovensky)
+
+- https://www.tkak.sk/zalozenie-sro — založenie s.r.o. na kľúč za 299 € + súdny poplatok 220 €. Od 17. 8. 2026 musí byť zakladateľská listina notárska zápisnica alebo dokument autorizovaný advokátom (§ 57 ObchZ); pri autorizácii advokátom odpadá osvedčovanie podpisov (§ 50 ods. 4 zák. 29/2026 Z. z.). Zápis do 2 pracovných dní.
+- https://www.tkak.sk/likvidacia-sro — zrušenie a likvidácia s.r.o.: posúdenie stavu firmy 149 €, vedenie likvidácie od 690 €. Reálne trvanie 6 – 9 mesiacov; predlžená firma patrí do konkurzu, nie do likvidácie.
+- https://www.tkak.sk/prevod-obchodneho-podielu — prevod obchodného podielu za 249 € + poplatok 50 €. Zmluva musí byť notárska zápisnica alebo zmluva autorizovaná advokátom (§ 115 ods. 4 ObchZ), inak je neplatná; osoba v exekúcii podiel previesť ani nadobudnúť nemôže.
+- https://www.tkak.sk/zmena-konatela-sidla-sro — zmeny v s.r.o. od 149 €; vymenovanie alebo odvolanie konateľa pri jednoosobovej s.r.o. 199 € s autorizáciou advokátom (bez notára), pri viacosobovej 149 € + notárska zápisnica (§ 127a ods. 4 ObchZ).
+- https://www.tkak.sk/ochranna-znamka — registrácia ochrannej známky: SR 249 €, EÚ 349 € + poplatky úradu; rešerš kolízie v cene. Priorita patrí tomu, kto podá prihlášku skôr.
+- https://www.tkak.sk/zalozenie-zivnosti — založenie aj znovuzaloženie živnosti za 29 €; voľné živnosti elektronicky bez správneho poplatku, osvedčenie do 3 pracovných dní.
+- https://www.tkak.sk/gdpr-dokumentacia — GDPR dokumentácia na mieru za 199 €: záznamy o spracovateľských činnostiach, informačné povinnosti, smernica, poverenia, sprostredkovateľské zmluvy. Do 7 pracovných dní, ročná aktualizácia 79 €.
+- https://www.tkak.sk/obchodne-podmienky-eshop — dokumenty pre e-shop za 169 €: obchodné podmienky, reklamačný poriadok, odstúpenie s formulárom, kontrola povinných údajov. Podľa zákona 108/2024 Z. z. vrátane zmien účinných od 27. 9. 2026 (§ 20a online funkcia odstúpenia). S GDPR spolu 299 €.
+- https://www.tkak.sk/predzalobna-vyzva — predžalobná výzva od advokáta za 89 €, odoslaná do 2 pracovných dní; vyčíslenie istiny, úrokov a paušálnej náhrady 40 € pri B2B pohľadávkach.
+- https://www.tkak.sk/vymahanie-pohladavok — vymáhanie pohľadávok po krokoch s pevnými cenami: výzva 89 €, platobný rozkaz 290 € (upomínacie konanie s polovičným súdnym poplatkom), návrh na exekúciu 149 €; sporové konanie dohodou (podielová odmena max. 20 %).
+- https://www.tkak.sk/zavet — závet spísaný advokátom za 99 €, s listinou o vydedení 149 €. Neopomenuteľní dedičia podľa § 479 OZ, vydedenie len z dôvodov § 469a OZ; chýbajúci dátum robí závet neplatným (§ 476 ods. 2).
+- https://www.tkak.sk/kupna-zmluva-nehnutelnost — kúpna zmluva na byt/dom + návrh na vklad 249 €, darovacia + vklad 99 €, samostatný vklad 149 €. Zmluva autorizovaná advokátom bez osvedčovania podpisov (§ 42 ods. 3 katastrálneho zákona); advokátska úschova kúpnej ceny.
+- https://www.tkak.sk/osobny-bankrot — osobný bankrot: bezplatné posúdenie, príprava podkladov pre Centrum právnej pomoci za 149 € (§ 167 ods. 2 ZKR), zastúpenie počas konkurzu od 290 €. Návrh na súd podáva Centrum právnej pomoci (§ 166k ZKR); podmienkou je exekúcia, pri konkurze aspoň rok od poverenia exekútora.
+
 ## Medzinárodná agenda
 
 Témy pre klientov mimo Slovenska. Existujú v slovenčine aj v angličtine.

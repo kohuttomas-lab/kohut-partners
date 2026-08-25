@@ -5,7 +5,21 @@ export type CampaignPathname =
   | "/accident-compensation"
   | "/consumer-credit"
   | "/enforcement-defense"
-  | "/state-liability";
+  | "/state-liability"
+  // Produktové landing pages (e-shop katalóg, marketing/eshop-katalog.md)
+  | "/company-formation"
+  | "/company-liquidation"
+  | "/share-transfer"
+  | "/company-changes"
+  | "/trademark-registration"
+  | "/trade-licence"
+  | "/gdpr-documentation"
+  | "/eshop-documents"
+  | "/pre-action-letter"
+  | "/debt-recovery"
+  | "/last-will"
+  | "/property-transfer"
+  | "/personal-bankruptcy";
 
 /* ============================================================
    Kampaňové landing pages (celoslovenské, len po slovensky).
@@ -50,6 +64,11 @@ export interface CampaignData {
   id: string;
   /** Kanonická cesta v routingu; SK-only, /en vracia notFound(). */
   pathname: CampaignPathname;
+  /**
+   * Skupina pre krížové prelinkovanie v pätičke: situačné stránky (default)
+   * odkazujú na seba navzájom, produktové stránky katalógu tiež len na seba.
+   */
+  group?: "situacie" | "produkt";
   meta: { title: string; description: string };
 
   hero: {

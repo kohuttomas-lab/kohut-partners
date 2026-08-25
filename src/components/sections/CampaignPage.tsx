@@ -14,7 +14,9 @@ import styles from "./CampaignPage.module.css";
 
 /** Zdieľané telo kampaňových landing pages (celoslovenské, len SK). */
 export function CampaignPage({ campaign }: { campaign: CampaignData }) {
-  const others = CAMPAIGNS.filter((c) => c.id !== campaign.id);
+  const others = CAMPAIGNS.filter(
+    (c) => c.id !== campaign.id && (c.group ?? "situacie") === (campaign.group ?? "situacie")
+  );
 
   return (
     <>

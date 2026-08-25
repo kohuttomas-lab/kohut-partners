@@ -23,9 +23,20 @@ Pôvodné texty situačných skupín sú v git histórii tohto súboru.
 | B1 | `generate_lead` kľúčová udalosť v GA4 | **HOTOVO** (23. 8.); Ads má vlastnú konverziu „Lead – dopyt (web)" 7661170005, import z GA4 sa nerobí (duplicita) |
 | B2 | Overenie pre finančné služby EÚ/EHP (vlákno 460402430) | **otvorené** — používateľ |
 | B3 | Poistné plnenie 0 zobrazení | **VYRIEŠENÉ** — presná zhoda s nulovým objemom; 8 slov odstránených, kampaň pozastavená |
-| **B4** | **Cieľové stránky pre firemné témy neexistujú** | **nový bloker** — pozri fázu 1 a 2 nižšie |
+| **B4** | ~~Cieľové stránky pre firemné témy neexistujú~~ | **VYRIEŠENÉ 24. 8.** — 13 produktových stránok nasadených (viď nižšie); fáza 2 je otvorená |
 
-### B4 — na čo reklamu smerovať, kým nie sú landing pages
+### B4 — VYRIEŠENÉ: produktové stránky nasadené 24. 8. 2026
+
+Postavených 13 stránok na infraštruktúre kampaňových stránok (`src/lib/campaigns/`,
+group „produkt“, SK-only, FAQ schéma, formulár s `generate_lead`): `/zalozenie-sro`,
+`/likvidacia-sro`, `/prevod-obchodneho-podielu`, `/zmena-konatela-sidla-sro`,
+`/ochranna-znamka`, `/zalozenie-zivnosti`, `/gdpr-dokumentacia`,
+`/obchodne-podmienky-eshop`, `/predzalobna-vyzva`, `/vymahanie-pohladavok`, `/zavet`,
+`/kupna-zmluva-nehnutelnost`, `/osobny-bankrot`. Nestavia sa: ready-made (čaká na
+partnera). **Skupiny kampane C teda môžu cieliť rovno na produktové stránky — stĺpec
+„fáza 2“ v tabuľke nižšie je aktuálny cieľ; fáza 1 s článkami je prekonaná.**
+
+Pôvodný bloker (pre históriu):
 
 Pre firemné témy dnes existujú len: článok `/blog/zalozenie-sro` (prepísaný 23. 8.
 o novelu, končí ponukou balíka), stránka služby `/sluzby/obchod` s balíkom „Založenie
@@ -435,7 +446,7 @@ Google by texty generoval mimo týchto mantinelov.
 2. Vytvoriť skupiny 1 – 3 (fáza 1) podľa tohto dokumentu; pred uložením prehnať Plánovačom slová označené „doplniť po overení" a vyhodiť tie s nulovým objemom.
 3. Kampaň A: vyhodiť slová s nízkym objemom, rozpočet 9 €/deň.
 4. Negatívne slová na úrovni kampane C (bez `vzor`).
-5. Postaviť landing pages z katalógu v poradí: `/zalozenie-sro` → `/likvidacia-sro` → `/ochranna-znamka` → `/vymahanie-pohladavok` → `/gdpr-dokumentacia` → zmeny/prevod → živnosť.
-6. Po každej zverejnenej stránke prepnúť URL skupiny, resp. spustiť skupinu fázy 2; rozpočty C 10 € / A 7 €.
+5. ~~Postaviť landing pages~~ HOTOVO 24. 8. — všetkých 13 stránok nasadených naraz.
+6. Vytvoriť rovno aj skupiny 4 – 7 s cieľmi podľa stĺpca „fáza 2“; rozpočty C 10 € / A 7 €.
 7. Po mesiaci behu C spustiť kampaň D (situácie) na 3 €/deň.
 8. Vyhodnocovať podľa **ceny za dopyt** (konverzia „Lead – dopyt (web)" + „Hovor"), nie klikov. Cieľ: pod 60 € za dopyt pri firemných témach (pri hodnote zákazky ~520 € je to únosné).
