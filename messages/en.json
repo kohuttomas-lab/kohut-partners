@@ -255,7 +255,20 @@
     "tplSoonTitle": "Document templates are coming",
     "tplSoonLead": "Our contract and filing templates are going through final attorney review. They will appear here as soon as it is complete — until then we are happy to help with any document individually.",
     "subsCancelNote": "You can cancel the subscription at any time — it stays active until the end of the paid month and no further payment is taken; the started month is not prorated. Cancel or update your card yourself online, or by e-mail at klienti@tkak.sk.",
-    "subsManageLink": "Manage subscription"
+    "subsManageLink": "Manage subscription",
+    "result": {
+      "successTitle": "Thank you — order received",
+      "successLead": "Your payment was successful. What happens next:",
+      "steps": [
+        "Stripe e-mails you the payment confirmation and the invoice.",
+        "We review the order (conflict of interest check) and usually within 1 business day we contact you with next steps and the documents we will need.",
+        "If we cannot take the matter on, we promptly refund the payment in full."
+      ],
+      "subsNote": "Manage your subscription (cancellation, card, invoices) yourself:",
+      "cancelTitle": "Payment not completed",
+      "cancelLead": "Nothing was charged and your cart is untouched — you can try again, or write to klienti@tkak.sk and we will sort it out.",
+      "close": "Got it"
+    }
   },
   "footer": {
     "tag": "Law firm registered with the Slovak Bar Association.",

@@ -255,7 +255,20 @@
     "tplSoonTitle": "Vzory dokumentov pripravujeme",
     "tplSoonLead": "Vzory zmlúv a podaní prechádzajú záverečnou kontrolou advokátov. Do ponuky ich zaradíme hneď, ako bude hotová — dovtedy vám s konkrétnym dokumentom radi pomôžeme individuálne.",
     "subsCancelNote": "Predplatné môžete kedykoľvek zrušiť — platí do konca zaplateného mesiaca a ďalšia platba sa už nestrhne; za začatý mesiac sa pomerná časť nevracia. Zrušenie aj zmenu platobnej karty vybavíte samoobslužne alebo e-mailom na klienti@tkak.sk.",
-    "subsManageLink": "Spravovať predplatné"
+    "subsManageLink": "Spravovať predplatné",
+    "result": {
+      "successTitle": "Ďakujeme, objednávku sme prijali",
+      "successLead": "Platba prebehla úspešne. Čo bude nasledovať:",
+      "steps": [
+        "Potvrdenie platby a faktúru vám Stripe posiela e-mailom.",
+        "Objednávku preveríme (konflikt záujmov) a spravidla do 1 pracovného dňa sa vám ozveme s ďalším postupom aj s tým, aké podklady budeme potrebovať.",
+        "Ak vec nemôžeme prevziať, platbu vám bezodkladne vrátime v plnej výške."
+      ],
+      "subsNote": "Predplatné (zrušenie, zmena karty, faktúry) spravujete samoobslužne:",
+      "cancelTitle": "Platba nebola dokončená",
+      "cancelLead": "Nič sme vám nestrhli a košík sme vám ponechali — môžete platbu skúsiť znova, alebo nám napíšte na klienti@tkak.sk a dohodneme sa inak.",
+      "close": "Rozumiem"
+    }
   },
   "footer": {
     "tag": "Advokátska kancelária zapísaná v Slovenskej advokátskej komore.",

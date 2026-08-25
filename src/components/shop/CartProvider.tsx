@@ -14,6 +14,7 @@ import { startCheckout } from "@/lib/checkout-client";
 import { CartBar } from "./CartBar";
 import { CartDrawer } from "./CartDrawer";
 import { CheckoutModal } from "./CheckoutModal";
+import { CheckoutResult } from "./CheckoutResult";
 
 type CartItems = Record<string, number>; // id -> quantity
 
@@ -51,6 +52,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [hydrated, setHydrated] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
   const [checkoutOpen, setCheckoutOpen] = useState(false);
+  const [stripeResult, setStripeResult] = useState<"success" | "cancel" | null>(null);
 
   // Load persisted cart after mount (avoids SSR/localStorage mismatch).
   // Also handle the Stripe Checkout return: clear the cart on ?stripe=success.
@@ -61,6 +63,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
       params.delete("stripe");
       const qs = params.toString();
       window.history.replaceState({}, "", window.location.pathname + (qs ? `?${qs}` : ""));
+    }
+    if (stripeStatus === "success" || stripeStatus === "cancel") {
+      setStripeResult(stripeStatus);
     }
     if (stripeStatus === "success") {
       setItems({});
@@ -202,6 +207,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
       <CartBar />
       <CartDrawer />
       <CheckoutModal />
+      {stripeResult ? (
+        <CheckoutResult result={stripeResult} onClose={() => setStripeResult(null)} />
+      ) : null}
     </CartContext.Provider>
   );
 }

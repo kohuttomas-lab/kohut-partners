@@ -3,10 +3,13 @@ import { getStripe } from "@/lib/stripe";
 import { getCartCatalog } from "@/lib/content";
 
 // Catalog prices are FINAL consumer prices with 23 % Slovak VAT already
-// included — charge exactly what the shop displays. For a production-grade
-// VAT breakdown on invoices, switch to Stripe Tax (automatic_tax) with
-// tax_behavior: "inclusive".
+// included — charge exactly what the shop displays. The inclusive manual tax
+// rate below breaks the included VAT out on checkout, invoices and credit
+// notes (SK-only sales at a flat 23 %; cheaper than Stripe Tax's per-txn fee).
 const grossCents = (gross: number) => Math.round(gross * 100);
+
+// "DPH 23 % (SR)" — VAT 23 %, inclusive, created 25. 8. 2026 in the Dashboard.
+const SK_VAT_RATE = "txr_1U8S3N6RAtjEMzYbe2cm00ly";
 
 export async function POST(req: Request) {
   const stripe = getStripe();
@@ -48,6 +51,7 @@ export async function POST(req: Request) {
       lineItems = [
         {
           quantity: 1,
+          tax_rates: [SK_VAT_RATE],
           price_data: {
             currency: "eur",
             unit_amount: grossCents(entry.price),
@@ -67,6 +71,7 @@ export async function POST(req: Request) {
         return [
           {
             quantity,
+            tax_rates: [SK_VAT_RATE],
             price_data: {
               currency: "eur",
               unit_amount: grossCents(entry.price),
@@ -104,6 +109,9 @@ export async function POST(req: Request) {
       metadata: { items: itemsMeta },
       ...(sessionMode === "payment"
         ? {
+            // A numbered VAT invoice for every one-off order (subscriptions
+            // invoice automatically). Stripe Invoicing fee ~0.4 % per invoice.
+            invoice_creation: { enabled: true },
             payment_intent_data: {
               metadata: { items: itemsMeta },
               description: `kohut & partners — ${itemsMeta}`.slice(0, 500),
