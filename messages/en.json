@@ -253,7 +253,9 @@
       "mailOutro": "Please confirm the order and let me know the next steps."
     },
     "tplSoonTitle": "Document templates are coming",
-    "tplSoonLead": "Our contract and filing templates are going through final attorney review. They will appear here as soon as it is complete — until then we are happy to help with any document individually."
+    "tplSoonLead": "Our contract and filing templates are going through final attorney review. They will appear here as soon as it is complete — until then we are happy to help with any document individually.",
+    "subsCancelNote": "You can cancel the subscription at any time — it stays active until the end of the paid month and no further payment is taken; the started month is not prorated. Cancel or update your card yourself online, or by e-mail at klienti@tkak.sk.",
+    "subsManageLink": "Manage subscription"
   },
   "footer": {
     "tag": "Law firm registered with the Slovak Bar Association.",

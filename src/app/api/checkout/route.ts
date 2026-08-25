@@ -116,7 +116,17 @@ export async function POST(req: Request) {
               },
             },
           }
-        : {}),
+        : {
+            // Subscription cancellation terms, mirrored from the shop page and
+            // the customer-portal config (cancel at period end, no proration).
+            custom_text: {
+              submit: {
+                message: isSk
+                  ? "Predplatné môžete kedykoľvek zrušiť — platí do konca zaplateného mesiaca a ďalšia platba sa už nestrhne; za začatý mesiac sa pomerná časť nevracia."
+                  : "You can cancel the subscription at any time — it stays active until the end of the paid month and no further payment is taken; the started month is not prorated.",
+              },
+            },
+          }),
     });
 
     return Response.json({ url: session.url });

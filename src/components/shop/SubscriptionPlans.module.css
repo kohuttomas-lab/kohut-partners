@@ -125,3 +125,19 @@
     transform: none;
   }
 }
+.cancelNote {
+  margin: 26px auto 0;
+  max-width: 620px;
+  text-align: center;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+.cancelLink {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cancelLink:hover {
+  color: var(--text-strong);
+}

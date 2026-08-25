@@ -253,7 +253,9 @@
       "mailOutro": "Prosím o potvrdenie objednávky a informáciu o ďalšom postupe."
     },
     "tplSoonTitle": "Vzory dokumentov pripravujeme",
-    "tplSoonLead": "Vzory zmlúv a podaní prechádzajú záverečnou kontrolou advokátov. Do ponuky ich zaradíme hneď, ako bude hotová — dovtedy vám s konkrétnym dokumentom radi pomôžeme individuálne."
+    "tplSoonLead": "Vzory zmlúv a podaní prechádzajú záverečnou kontrolou advokátov. Do ponuky ich zaradíme hneď, ako bude hotová — dovtedy vám s konkrétnym dokumentom radi pomôžeme individuálne.",
+    "subsCancelNote": "Predplatné môžete kedykoľvek zrušiť — platí do konca zaplateného mesiaca a ďalšia platba sa už nestrhne; za začatý mesiac sa pomerná časť nevracia. Zrušenie aj zmenu platobnej karty vybavíte samoobslužne alebo e-mailom na klienti@tkak.sk.",
+    "subsManageLink": "Spravovať predplatné"
   },
   "footer": {
     "tag": "Advokátska kancelária zapísaná v Slovenskej advokátskej komore.",

@@ -66,6 +66,20 @@ export function SubscriptionPlans() {
             );
           })}
         </div>
+        {/* Cancellation terms shown before purchase + self-service portal link
+            (Stripe no-code customer portal; cancel takes effect at period end,
+            no proration — matches the portal configuration). */}
+        <p className={styles.cancelNote}>
+          {t("subsCancelNote")}{" "}
+          <a
+            href="https://billing.stripe.com/p/login/cNi28keQK9h82UIgregYU00"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.cancelLink}
+          >
+            {t("subsManageLink")}
+          </a>
+        </p>
       </Container>
     </section>
   );
