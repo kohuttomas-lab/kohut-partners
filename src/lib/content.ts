@@ -184,6 +184,12 @@ const SERVICES: RawService[] = [
     },
     packages: [
       {
+        id: "ob-zivnost",
+        price: 29,
+        sk: ["Založenie živnosti", "Zatriedenie predmetov podnikania, elektronické ohlásenie a registrácia na daňovom úrade aj v zdravotnej poisťovni. Voľné živnosti sú pri elektronickom ohlásení bez poplatku, remeselné a viazané podľa sadzobníka správnych poplatkov."],
+        en: ["Trade licence (živnosť)", "Classification of the activities, electronic filing and registration with the tax office and health insurer. Free trades carry no fee when filed electronically; craft and regulated trades per the fee schedule."],
+      },
+      {
         id: "ob-sro",
         price: 299,
         sk: ["Založenie s.r.o. na kľúč", "Zakladateľské dokumenty autorizované advokátom — od 17. 8. 2026 povinná forma —, zápis do OR a živnosti. Súdny poplatok 220 € sa platí samostatne."],
