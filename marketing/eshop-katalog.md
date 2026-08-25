@@ -166,7 +166,14 @@ a podmienky.
 **Slug:** `/prevod-obchodneho-podielu` · **Title:** „Prevod obchodného podielu v s.r.o. 2026 — zmluva autorizovaná advokátom"
 **Kľúčové slová:** prevod obchodného podielu · zmluva o prevode obchodného podielu · predaj sro · predaj firmy sro · zmena spoločníka sro
 
-**Upsell:** advokátska úschova kúpnej ceny, zmena konateľa (A4), due diligence pri kúpe.
+**Upsell:** advokátska úschova kúpnej ceny, zmena konateľa (A4b), due diligence pri kúpe.
+
+**Vzťah k vzoru 03/01 (rozhodnuté 24. 8. 2026):** e-shopový vzor „Zmluva o prevode
+obchodného podielu" za 29 € sa predáva samostatne — s výrazným upozornením priamo
+v produkte, že bez autorizácie advokátom alebo notárskej zápisnice je zmluva neplatná
+(§ 115 ods. 4) a slúži ako podklad na autorizáciu. Vzor je most k tejto službe.
+**Návrh na odsúhlasenie:** 29 € za vzor započítať do ceny služby, ak si zákazník
+autorizáciu objedná do 30 dní.
 
 ---
 
