@@ -16,7 +16,7 @@ Kategória musí sedieť s existujúcimi (Insolvencie, Obchodné právo, IT prá
 - [x] Vecné bremená a ťarchy: ako ich odhaliť pred kúpou nehnuteľnosti | kategória: Nehnuteľnosti
 - [x] Reklamácie v e-shope: práva spotrebiteľa a povinnosti predajcu | kategória: IT právo
 - [x] Spracúvanie osobných údajov zamestnancov podľa GDPR | kategória: IT právo
-- [ ] Ako sa brániť neoprávnenej exekúcii | kategória: Súdne spory
+- [x] Ako sa brániť neoprávnenej exekúcii | kategória: Súdne spory
 - [ ] Trestné oznámenie vs. podanie na políciu: čo, kedy a ako | kategória: Trestné právo
 - [ ] Reštrukturalizácia firmy v roku 2026: podmienky a priebeh | kategória: Insolvencie
 - [ ] Prihláška pohľadávky do konkurzu: lehoty a najčastejšie chyby | kategória: Insolvencie
