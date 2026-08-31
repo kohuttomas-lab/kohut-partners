@@ -479,3 +479,59 @@ prepnúť C na Maximalizovať konverzie.
 6. Vytvoriť rovno aj skupiny 4 – 7 s cieľmi podľa stĺpca „fáza 2“; rozpočty C 10 € / A 7 €.
 7. Po mesiaci behu C spustiť kampaň D (situácie) na 3 €/deň.
 8. Vyhodnocovať podľa **ceny za dopyt** (konverzia „Lead – dopyt (web)" + „Hovor"), nie klikov. Cieľ: pod 60 € za dopyt pri firemných témach (pri hodnote zákazky ~520 € je to únosné).
+
+---
+
+## 31. 8. 2026 — zamietnutá reklama a podané odvolanie
+
+Google 25. 8. večer zamietol jednu reklamu kampane C podľa pravidiel **„Dokumenty
+orgánov verejnej správy a úradné služby"**. To isté pravidlo označilo ďalšie dve
+reklamy ako „Vhodné (s obmedzením)" — spolu 3 reklamy:
+
+| Skupina | Stav |
+|---|---|
+| **7 · Založenie živnosti** | **Zamietnutá** |
+| 1 · Založenie s.r.o. | Vhodné (s obmedzením) |
+| 4 · Likvidácia a zrušenie s.r.o. | Vhodné (s obmedzením) |
+
+Pravidlo je uplatnené **nesprávne**: jeho vlastný text v časti „Služby, ktoré nie sú
+týmito pravidlami obmedzené" výslovne uvádza *právne služby*. Spúšťačom je zrejme
+vyznenie skupiny 7, ktoré znie ako vybavenie úradnej veci namiesto právnej služby —
+najmä „Voľná živnosť bez poplatku" (číta sa ako pomoc s platbou úradného poplatku)
+a „ohlásime živnosť elektronicky a zaregistrujeme vás na dani".
+
+**Odvolanie podané 31. 8. 2026** cez Nástroje → Odstraňovanie problémov → Správca
+pravidiel → *Odvolať sa*. Dôvod **Námietka proti rozhodnutiu**, rozsah **všetky
+ovplyvnené reklamy v kampani C** (nie iba skupina 7 — aby sa uvoľnili aj tie dve
+obmedzené). Stav *Rozpracované*; výsledok sledovať v záložke „História odvolaní".
+⚠️ Reklamy sa počas kontroly **nesmú upravovať** — úprava odvolanie zruší.
+
+**Ak odvolanie neprejde**, vymeniť texty skupiny 7 za znenie, ktoré vedie právnou
+službou a nie úradným úkonom (overené dĺžky: nadpisy ≤ 30, popisy ≤ 90 znakov):
+
+Nadpisy:
+```
+Živnosť s advokátom za 29 €
+Advokát pre živnostníkov
+Voľná či remeselná živnosť?
+Poradíme, čo si zapísať
+Do 3 pracovných dní
+Aj obnovenie živnosti
+Celé Slovensko, online
+Advokátska kancelária
+```
+
+Popisy:
+```
+Advokátska kancelária pre začínajúcich podnikateľov. Odmena 29 €, celé Slovensko.
+Posúdime, či vám stačí živnosť alebo sa viac oplatí s.r.o. — s číslami, nie pocitovo.
+Poradíme, ktoré predmety podnikania si zapísať a čo k nim treba doložiť.
+Keď živnosť prerastie do firmy, zakladateľské dokumenty autorizujeme ako advokáti.
+```
+
+Formulácia „voľná živnosť bez poplatku" by aj tak bola pri remeselníkoch zavádzajúca —
+remeselná živnosť stojí 22 €, elektronicky 11 € (položka 148 zákona č. 145/1995 Z. z.).
+
+**Notifikácie:** e-mail o zamietnutí prišiel na `booking@tatravillas.sk`. Predvoľby
+e-mailov účtu 395-896-5684 prehodiť na `kohut@tkak.sk`, inak policy alerty pre
+kanceláriu chodia do schránky ubytovania.
