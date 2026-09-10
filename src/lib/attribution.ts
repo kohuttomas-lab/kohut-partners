@@ -76,6 +76,15 @@ export function collectAttribution(locale: string): Record<string, string> {
 
   const entryPath = `${entry.origin}${entry.pathname}`;
 
+  // Intl je v každom podporovanom prehliadači, ale v starších WebView môže
+  // hodiť — atribúcia nikdy nesmie zhodiť odoslanie dopytu.
+  let tz = "";
+  try {
+    tz = Intl.DateTimeFormat().resolvedOptions().timeZone ?? "";
+  } catch {
+    tz = "";
+  }
+
   return {
     // Bez query — UTM aj gclid majú vlastný riadok, nech sa adresa neduplikuje.
     "Stránka dopytu": `${url.origin}${url.pathname}`,
@@ -86,5 +95,47 @@ export function collectAttribution(locale: string): Record<string, string> {
     "Kampaň (UTM)": utm,
     "Google Ads (gclid)": q.get("gclid")?.trim() ?? "",
     "Jazyková verzia": locale === "sk" ? "slovenská (/)" : "anglická (/en)",
+    // Krajina dopytu: časové pásmo a jazyk zariadenia. Oboje číta prehliadač
+    // sám zo svojho nastavenia — žiadna geolokácia, žiadna IP adresa, žiadna
+    // tretia strana; CRM si z toho odvodí vlajku (viď cesta/src/lib/krajiny.ts).
+    "Časové pásmo": tz,
+    "Jazyk prehliadača": navigator.language || "",
   };
+}
+
+/**
+ * Beacon pri príchode: pošle gclid/UTM na CRM hneď, nezávisle od formulára.
+ * Bez toho sa gclid stratí vždy, keď návštevník namiesto formulára napíše
+ * priamy e-mail — jediný doterajší prenos (collectAttribution) beží až pri
+ * odoslaní formulára. Beží raz za návštevu (rovnaký strážca ako captureLanding).
+ *
+ * Neposiela nič osobné — len kampaňové parametre a čas. Endpoint na strane
+ * CRM ich ukladá anonymne, bez cookie a bez väzby na konkrétneho človeka;
+ * slúži len na neskoršie časové spárovanie s dopytom, ktorý príde mailom.
+ */
+let beaconOdoslany = false;
+
+export function odoslaniBeacon(znacka: string): void {
+  if (typeof window === "undefined" || beaconOdoslany) return;
+  const q = new URL(window.location.href).searchParams;
+  const gclid = q.get("gclid")?.trim();
+  const utmSource = q.get("utm_source")?.trim();
+  const utmMedium = q.get("utm_medium")?.trim();
+  const utmCampaign = q.get("utm_campaign")?.trim();
+  if (!gclid && !(utmMedium === "cpc" && utmSource)) return; // organika sa neposiela
+  beaconOdoslany = true;
+  const telo = JSON.stringify({
+    znacka, gclid, utm_source: utmSource, utm_medium: utmMedium, utm_campaign: utmCampaign,
+    landing_path: window.location.pathname,
+  });
+  const url = "https://crm.tkak.sk/api/atribucia/navsteva";
+  try {
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(url, new Blob([telo], { type: "application/json" }));
+    } else {
+      fetch(url, { method: "POST", body: telo, headers: { "Content-Type": "application/json" }, keepalive: true });
+    }
+  } catch {
+    // beacon nesmie nikdy zhodiť stránku
+  }
 }

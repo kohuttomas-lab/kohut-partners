@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { captureLanding } from "@/lib/attribution";
+import { captureLanding, odoslaniBeacon } from "@/lib/attribution";
 
 /**
  * Odloží si vstupnú stránku hneď pri prvom načítaní — viac v lib/attribution.
@@ -15,6 +15,7 @@ import { captureLanding } from "@/lib/attribution";
 export function AttributionCapture() {
   useEffect(() => {
     captureLanding();
+    odoslaniBeacon("tkak");
   }, []);
 
   return null;
