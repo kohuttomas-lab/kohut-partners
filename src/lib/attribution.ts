@@ -130,10 +130,15 @@ export function odoslaniBeacon(znacka: string): void {
   });
   const url = "https://crm.tkak.sk/api/atribucia/navsteva";
   try {
+    // text/plain je „CORS-safelisted" — sendBeacon na iný podomén (crm.tkak.sk)
+    // s application/json by vyžadoval preflight, ktorý beacon nevie urobiť, a
+    // prehliadač ho potichu zahodí (overené 10. 9. 2026: sendBeacon vráti true,
+    // no na server nič nepríde). Telo je aj tak platný JSON, req.json() na
+    // strane servera parsuje podľa obsahu, nie podľa hlavičky.
     if (navigator.sendBeacon) {
-      navigator.sendBeacon(url, new Blob([telo], { type: "application/json" }));
+      navigator.sendBeacon(url, new Blob([telo], { type: "text/plain" }));
     } else {
-      fetch(url, { method: "POST", body: telo, headers: { "Content-Type": "application/json" }, keepalive: true });
+      fetch(url, { method: "POST", body: telo, headers: { "Content-Type": "text/plain" }, keepalive: true, mode: "cors" });
     }
   } catch {
     // beacon nesmie nikdy zhodiť stránku
