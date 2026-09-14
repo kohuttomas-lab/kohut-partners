@@ -193,12 +193,13 @@ Platobný rozkaz
 Advokát na pohľadávky
 Celé Slovensko, na diaľku
 Advokátska kancelária
+Expresná výzva do 2 dní
 ```
 
 **Popisy**
 
 ```
-Predžalobná výzva do 2 pracovných dní za 89 €. Vyčíslime istinu, úroky aj paušálnu náhradu.
+Predžalobná výzva za 89 € do 5 prac. dní, expresne za 149 € do 2 dní. Vyčíslime aj úroky.
 Ak dlžník nezaplatí, pripravíme návrh na platobný rozkaz. Cenu každého kroku poznáte vopred.
 Preveríme premlčanie a vymáhateľnosť skôr, než do toho dáte ďalšie peniaze.
 Zastupujeme veriteľov od výzvy po exekúciu. Rozsah aj odmenu dohodneme písomne.
@@ -535,3 +536,15 @@ remeselná živnosť stojí 22 €, elektronicky 11 € (položka 148 zákona č
 **Notifikácie:** e-mail o zamietnutí prišiel na `booking@tatravillas.sk`. Predvoľby
 e-mailov účtu 395-896-5684 prehodiť na `kohut@tkak.sk`, inak policy alerty pre
 kanceláriu chodia do schránky ubytovania.
+
+## 14. 9. 2026 — reklama skupiny 2 zosúladená s novými lehotami výzvy
+
+Web od 14. 9. 2026: výzva Standard 89 € do 5 pracovných dní, Premium 149 € do 2 pracovných dní.
+V reklame skupiny 2 (adId 822156387781) prepísaný pripnutý popis 1 na
+„Predžalobná výzva za 89 € do 5 prac. dní, expresne za 149 € do 2 dní. Vyčíslime aj úroky."
+a pridaný nadpis „Expresná výzva do 2 dní". Uložené cez UI, stav po uložení Vhodné / Nespracované.
+
+**Súčasne zistené:** účet 395-896-5684 bol pozastavený pre nedokončené overenie inzerenta
+(kliky 13. 9. na nule); dokumenty odoslané 14. 9. 16:57, stav *In progress*. Reklama skupiny 7
+stále uvádza živnosť za **29 €** (web od 14. 9. 49 €) — neupravené, lebo skupina 7 je v odvolaní
+z 31. 8. a úprava by odvolanie zrušila.
