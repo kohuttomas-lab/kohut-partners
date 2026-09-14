@@ -1,0 +1,290 @@
+.section {
+  background: var(--color-surface);
+  padding: 72px 0 88px;
+}
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.detailTitle,
+.howTitle {
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-strong);
+  margin: 6px 0 12px;
+}
+.detailDesc,
+.p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin: 0 0 12px;
+}
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 4px 0 6px;
+}
+.price {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--text-strong);
+}
+.vat {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.fees {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+}
+.h3 {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-strong);
+  margin: 22px 0 10px;
+}
+.list,
+.listPlain {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-body);
+}
+.list svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--success);
+}
+.listPlain li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-body);
+}
+.listPlain li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+}
+.more {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.more:hover {
+  text-decoration: underline;
+}
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.steps li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.steps p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-body);
+}
+.num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.noPrepay {
+  margin: 18px 0 0;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.contact a {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--accent);
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+.formCard {
+  position: sticky;
+  top: 96px;
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.priceNote {
+  margin: -6px 0 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.priceNote strong {
+  color: var(--text-strong);
+}
+.submit {
+  white-space: normal;
+}
+.note {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+.error {
+  font-size: 14px;
+  color: var(--danger);
+  margin: 0;
+}
+.success {
+  text-align: center;
+  padding: 32px 8px;
+}
+.successIcon {
+  display: inline-flex;
+  color: var(--success);
+  margin-bottom: 16px;
+}
+.successTitle {
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+.successLead {
+  color: var(--text-muted);
+  margin: 0 auto 16px;
+  max-width: 46ch;
+  line-height: 1.7;
+}
+.handoff {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 18px;
+  text-align: left;
+}
+.copyRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+}
+.copyLabel {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+.copyValue {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  color: var(--text-strong);
+  overflow-wrap: anywhere;
+  user-select: all;
+}
+.mailBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.back {
+  margin: 18px 0 0;
+  font-size: 14px;
+}
+.back a {
+  color: var(--accent);
+}
+@media (max-width: 960px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .formCard {
+    position: static;
+  }
+}
+@media (max-width: 640px) {
+  .section {
+    padding: 48px 0 64px;
+  }
+  .detailTitle,
+  .howTitle {
+    font-size: 26px;
+  }
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}

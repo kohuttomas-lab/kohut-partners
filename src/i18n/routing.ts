@@ -16,6 +16,8 @@ export const routing = defineRouting({
     "/services": { sk: "/sluzby", en: "/services" },
     "/services/[id]": { sk: "/sluzby/[id]", en: "/services/[id]" },
     "/shop": { sk: "/e-shop", en: "/shop" },
+    // Objednávka služby bez platby vopred (formulár, ?balik=<id> predvyplní službu).
+    "/shop/order": { sk: "/e-shop/objednavka", en: "/shop/order" },
     "/about": { sk: "/o-kancelarii", en: "/about" },
     "/blog": { sk: "/blog", en: "/blog" },
     "/blog/[id]": { sk: "/blog/[id]", en: "/blog/[id]" },

@@ -26,13 +26,19 @@
   font-size: 14px;
   color: var(--text-muted);
   line-height: 1.5;
-  margin: 0 0 18px;
-  flex: 1;
+  margin: 0 0 14px;
 }
 .cardBottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 6px;
+}
+.cardBottom > div:first-child {
+  white-space: nowrap;
 }
 .from {
   font-size: 12.5px;
@@ -54,4 +60,65 @@
   .grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* --- rozsah, lehota, odkazy (14. 9. 2026) --- */
+.nameLink {
+  color: inherit;
+  text-decoration: none;
+}
+.nameLink:hover {
+  color: var(--accent);
+}
+.includes {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.includes li {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--text-body);
+}
+.includes svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--success);
+}
+.turnaround {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin: 0 0 10px;
+}
+.more {
+  align-self: flex-start;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+.more:hover {
+  text-decoration: underline;
+}
+.vat {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+.feesMark {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+.fees {
+  margin: 12px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-muted);
 }

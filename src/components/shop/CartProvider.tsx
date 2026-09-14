@@ -10,6 +10,7 @@ import {
   type ReactNode,
 } from "react";
 import { getCartCatalog } from "@/lib/content";
+import { CART_ENABLED } from "@/lib/flags";
 import { startCheckout } from "@/lib/checkout-client";
 import { CartBar } from "./CartBar";
 import { CartDrawer } from "./CartDrawer";
@@ -204,9 +205,15 @@ export function CartProvider({ children }: { children: ReactNode }) {
   return (
     <CartContext.Provider value={value}>
       {children}
-      <CartBar />
-      <CartDrawer />
-      <CheckoutModal />
+      {/* Košík je vypnutý (CART_ENABLED) — lišta ani panel sa nevykreslia,
+          ani keď má návštevník v localStorage starý obsah košíka. */}
+      {CART_ENABLED ? (
+        <>
+          <CartBar />
+          <CartDrawer />
+          <CheckoutModal />
+        </>
+      ) : null}
       {stripeResult ? (
         <CheckoutResult result={stripeResult} onClose={() => setStripeResult(null)} />
       ) : null}

@@ -6,6 +6,7 @@ import { ESHOP_ENABLED, TEMPLATES_FOR_SALE } from "@/lib/flags";
 import { PageHero } from "@/components/layout/PageHero";
 import { Container, SectionHead } from "@/components/layout/Section";
 import { FixedPackages } from "@/components/shop/FixedPackages";
+import { HowOrdering } from "@/components/shop/HowOrdering";
 import { Templates } from "@/components/shop/Templates";
 import { SubscriptionPlans } from "@/components/shop/SubscriptionPlans";
 import { CTABand } from "@/components/layout/CTABand";
@@ -33,6 +34,7 @@ export default async function ShopPage(props: Props) {
     <>
       <PageHero overline={t("overline")} title={t("heroTitle")} lead={t("heroLead")} />
       <FixedPackages />
+      <HowOrdering />
       {TEMPLATES_FOR_SALE ? (
         <Templates />
       ) : (

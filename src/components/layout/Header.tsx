@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { useBooking } from "@/components/booking/BookingProvider";
 import { CartButton } from "@/components/shop/CartButton";
 import { Calendar, Menu, X } from "@/components/icons";
-import { ESHOP_ENABLED } from "@/lib/flags";
+import { CART_ENABLED, ESHOP_ENABLED } from "@/lib/flags";
 import { cx } from "@/lib/cx";
 import styles from "./Header.module.css";
 
@@ -94,14 +94,14 @@ export function Header() {
 
           <div className={cx(styles.actions, styles.desktopActions)}>
             <LanguageSwitch />
-            {ESHOP_ENABLED ? <CartButton /> : null}
+            {ESHOP_ENABLED && CART_ENABLED ? <CartButton /> : null}
             <Button variant="accent" size="sm" leftIcon={<Calendar size={16} />} onClick={book}>
               {tCommon("cta")}
             </Button>
           </div>
 
           <div className={styles.mobileActions}>
-            {ESHOP_ENABLED ? <CartButton /> : null}
+            {ESHOP_ENABLED && CART_ENABLED ? <CartButton /> : null}
             <button
               type="button"
               className={styles.menuBtn}
