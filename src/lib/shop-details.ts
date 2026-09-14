@@ -70,14 +70,17 @@ const DETAILS: Record<string, Detail> = {
         "Elektronické ohlásenie živnosti na jednotnom kontaktnom mieste",
         "Registrácia na daň z príjmov",
         "Krátke usmernenie, kedy vzniká povinnosť voči Sociálnej poisťovni",
+        "Všetky voľné živnosti bez obmedzenia počtu",
       ],
       excludes: [
-        "Správne poplatky za remeselné a viazané živnosti",
+        // Položka 148 písm. a) bod 2 sadzobníka (zák. 145/1995): 22 € za každú remeselnú
+        // alebo viazanú živnosť; § 6 ods. 2 — pri elektronickom podaní 50 %, t. j. 11 €.
+        "Správne poplatky za remeselné a viazané živnosti — 22 € za každú, pri elektronickom ohlásení 11 €",
         "Zodpovedný zástupca, účtovníctvo, daňové poradenstvo",
       ],
       turnaround: "1 – 3 pracovné dni.",
       documents: ["Občiansky preukaz", "Adresa miesta podnikania", "Zoznam činností, ktoré chcete vykonávať"],
-      fees: "Voľné živnosti sú pri elektronickom ohlásení bez poplatku; remeselné a viazané podľa sadzobníka správnych poplatkov.",
+      fees: "Voľné živnosti sú pri elektronickom ohlásení bez poplatku; remeselná alebo viazaná živnosť 22 € za každú (elektronicky 11 €), platí sa v skutočnej výške.",
     },
     en: {
       includes: [
@@ -85,11 +88,12 @@ const DETAILS: Record<string, Detail> = {
         "Electronic filing with the single point of contact",
         "Income-tax registration",
         "Short note on when social-insurance obligations arise",
+        "All free trades, no limit on their number",
       ],
-      excludes: ["Administrative fees for craft and regulated trades", "Responsible representative, bookkeeping, tax advice"],
+      excludes: ["Administrative fees for craft and regulated trades — EUR 22 each, EUR 11 when filed electronically", "Responsible representative, bookkeeping, tax advice"],
       turnaround: "1 – 3 business days.",
       documents: ["ID card", "Place-of-business address", "List of intended activities"],
-      fees: "Free trades filed electronically carry no fee; craft and regulated trades per the fee schedule.",
+      fees: "Free trades filed electronically carry no fee; craft or regulated trade EUR 22 each (EUR 11 electronically), charged at the actual amount.",
     },
   },
 
@@ -135,28 +139,30 @@ const DETAILS: Record<string, Detail> = {
 
   "ob-revizia": {
     sk: {
-      // ⚖ Navrhovaný rozsah: do 10 strán. Dlhšie zmluvy = individuálna ponuka.
+      // Stupne schválené 14. 9. 2026: do 2 normostrán 79 €, 3 – 5 strán 139 €,
+      // 6 – 8 strán 199 €, viac individuálne; doplnky express +100 %, redline +59 €
+      // (shop-variants.ts).
       includes: [
-        "Posúdenie predloženej zmluvy v rozsahu do 10 strán",
+        "Posúdenie predloženej zmluvy v rozsahu zvoleného stupňa (do 2, do 5 alebo do 8 normostrán)",
         "Písomné zhrnutie rizík a nevýhodných ustanovení s odporúčanými úpravami",
         "Telefonická konzultácia k výsledku (20 minút)",
       ],
       excludes: [
-        "Prepracovanie zmluvy alebo príprava novej (balík Zmluva na mieru)",
+        "Zapracovanie zmien do textu zmluvy — doplnok za 59 €; príprava novej zmluvy je balík Zmluva na mieru",
         "Rokovanie s druhou stranou",
-        "Zmluvy nad 10 strán a zmluvy v cudzom jazyku — individuálna ponuka",
+        "Zmluvy nad 8 normostrán a zmluvy v cudzom jazyku — individuálna ponuka do 1 pracovného dňa",
       ],
-      turnaround: "Do 3 pracovných dní od dodania zmluvy.",
+      turnaround: "Do 5 pracovných dní od dodania zmluvy; expresne do 48 hodín za príplatok 100 % ceny.",
       documents: ["Zmluva na posúdenie (PDF alebo Word)", "Pár viet, čo je pre vás v zmluve najdôležitejšie"],
     },
     en: {
       includes: [
-        "Review of the submitted contract of up to 10 pages",
+        "Review of the submitted contract within the chosen tier (up to 2, 5 or 8 standard pages)",
         "Written summary of risks and unfavourable clauses with recommended changes",
         "Phone consultation on the result (20 minutes)",
       ],
-      excludes: ["Redrafting or drafting a new contract (Custom contract package)", "Negotiation with the other party", "Contracts over 10 pages or in a foreign language — individual quote"],
-      turnaround: "Within 3 business days of receiving the contract.",
+      excludes: ["Working changes into the contract text — add-on EUR 59; drafting a new contract is the Custom contract package", "Negotiation with the other party", "Contracts over 8 standard pages or in a foreign language — individual quote within 1 business day"],
+      turnaround: "Within 5 business days of receiving the contract; express within 48 hours for a 100 % surcharge.",
       documents: ["The contract (PDF or Word)", "A few words on what matters most to you in it"],
     },
   },
@@ -250,25 +256,28 @@ const DETAILS: Record<string, Detail> = {
       includes: [
         "Preverenie nároku a premlčania",
         "Výzva na zaplatenie s vyčíslením istiny, úrokov z omeškania a paušálnej náhrady nákladov",
-        "Odoslanie doporučene aj e-mailom",
+        "Odoslanie doporučene aj e-mailom — pri Premium odosiela advokát na hlavičkovom papieri",
         "Jedno kolo komunikácie s dlžníkom",
+        "Telefonická konzultácia 15 minút; pri Premium 30 minút a písomné odporúčanie ďalšieho postupu",
       ],
       excludes: [
-        "Návrh na platobný rozkaz (samostatný balík 290 €)",
+        "Opakovaná výzva, ak dlžník nezareaguje — doplnok 49 €",
+        "Návrh na platobný rozkaz (samostatný balík: 290 € pri pohľadávke do 3 000 €, 490 € nad 3 000 €)",
         "Zastupovanie v súdnom spore a exekúcia",
       ],
-      turnaround: "Výzva odchádza do 2 pracovných dní od zaplatenia a dodania podkladov.",
+      turnaround: "Standard: výzva odchádza do 3 pracovných dní od zaplatenia a dodania podkladov. Premium: do 48 hodín.",
       documents: ["Faktúra, zmluva alebo iný doklad o pohľadávke", "Doklad o doručení a o čiastočných úhradách", "Adresa dlžníka"],
     },
     en: {
       includes: [
         "Check of the claim and limitation",
         "Demand letter quantifying principal, default interest and the flat cost compensation",
-        "Sent by registered mail and e-mail",
+        "Sent by registered mail and e-mail — Premium: sent by the attorney on letterhead",
         "One round of communication with the debtor",
+        "Phone consultation 15 minutes; Premium 30 minutes plus a written recommendation of next steps",
       ],
-      excludes: ["Payment-order application (separate package, EUR 290)", "Court representation and enforcement"],
-      turnaround: "Sent within 2 business days of payment and receipt of documents.",
+      excludes: ["Repeat demand if the debtor does not respond — add-on EUR 49", "Payment-order application (separate package: EUR 290 for claims up to EUR 3,000, EUR 490 above)", "Court representation and enforcement"],
+      turnaround: "Standard: sent within 3 business days of payment and receipt of documents. Premium: within 48 hours.",
       documents: ["Invoice, contract or other proof of the claim", "Proof of delivery and of partial payments", "Debtor's address"],
     },
   },

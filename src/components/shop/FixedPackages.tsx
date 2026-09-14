@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { getShopPackages } from "@/lib/content";
 import { getPackageDetail } from "@/lib/shop-details";
 import { PACKAGE_PAGES } from "@/lib/shop-pages";
+import { getVariants } from "@/lib/shop-variants";
 import { formatEur } from "@/lib/format";
 import { Container, SectionHead } from "@/components/layout/Section";
 import { Card } from "@/components/ui/Card";
@@ -32,6 +33,11 @@ export function FixedPackages() {
           {packages.map((p) => {
             const page = locale === "sk" ? PACKAGE_PAGES[p.id] : undefined;
             const detail = getPackageDetail(p.id, locale);
+            // Balíky so stupňami: cena = prvý stupeň s jeho označením, ostatné
+            // stupne vypísané pod ňou — presné sumy, nikdy „od".
+            const variants = getVariants(p.id);
+            const first = variants?.options[0];
+            const rest = variants?.options.slice(1) ?? [];
             return (
               <Card key={p.id} padding="lg" elevation="sm" interactive className={styles.card}>
                 <Badge tone="brand" variant="soft" size="sm" className={styles.badge}>
@@ -65,11 +71,21 @@ export function FixedPackages() {
                     {t("moreAbout")} →
                   </Link>
                 ) : null}
+                {rest.length ? (
+                  <p className={styles.tiers}>
+                    {rest.map((o) => `${o.short?.[locale] ?? o[locale]} ${formatEur(o.price)}`).join(" · ")}
+                  </p>
+                ) : null}
                 <div className={styles.cardBottom}>
-                  <div>
-                    <span className={styles.priceVal}>{formatEur(p.price)}</span>
-                    <span className={styles.vat}> {common("withVat")}</span>
-                    {detail?.fees ? <span className={styles.feesMark}>*</span> : null}
+                  <div className={styles.priceBlock}>
+                    <span>
+                      <span className={styles.priceVal}>{formatEur(first ? first.price : p.price)}</span>
+                      <span className={styles.vat}> {common("withVat")}</span>
+                      {detail?.fees ? <span className={styles.feesMark}>*</span> : null}
+                    </span>
+                    {first ? (
+                      <span className={styles.tierLabel}>{first.short?.[locale] ?? first[locale]}</span>
+                    ) : null}
                   </div>
                   <LinkButton
                     href={{ pathname: "/shop/order", query: { balik: p.id } }}

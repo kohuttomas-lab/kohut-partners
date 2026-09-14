@@ -13,7 +13,7 @@ export const debtRecovery: CampaignData = {
   meta: {
     title: "Vymáhanie pohľadávok 2026 — od výzvy po exekúciu, pevné ceny | kohút & partners",
     description:
-      "Vymáhanie pohľadávok s pevnými cenami vopred: predžalobná výzva 89 €, platobný rozkaz 290 €, návrh na exekúciu 149 €. Preveríme premlčanie skôr, než miniete ďalšie peniaze. Celá SR.",
+      "Vymáhanie pohľadávok s pevnými cenami vopred: predžalobná výzva 89 €, platobný rozkaz 290 € (pohľadávka nad 3 000 €: 490 €), návrh na exekúciu 149 €. Preveríme premlčanie skôr, než miniete ďalšie peniaze. Celá SR.",
   },
 
   hero: {
@@ -37,7 +37,7 @@ export const debtRecovery: CampaignData = {
         desc: "Výzva s vyčíslením istiny, úrokov a paušálnej náhrady 40 € odchádza do dvoch pracovných dní. Značná časť dlžníkov po nej zaplatí alebo sa dohodne.",
       },
       {
-        title: "2 · Platobný rozkaz — 290 €",
+        title: "2 · Platobný rozkaz — 290 € do 3 000 €, 490 € nad 3 000 €",
         desc: "Upomínacie konanie je elektronické, so súdnym poplatkom polovičným oproti klasickej žalobe. Ak dlžník nepodá odpor, máte exekučný titul spravidla do niekoľkých týždňov.",
       },
       {
@@ -76,7 +76,7 @@ export const debtRecovery: CampaignData = {
     },
     {
       title: "Platobný rozkaz",
-      desc: "Bez reakcie dlžníka podáme návrh v upomínacom konaní za 290 € + polovičný súdny poplatok. O odpore a ďalších krokoch rozhodujete vy — s číslami na stole.",
+      desc: "Bez reakcie dlžníka podáme návrh v upomínacom konaní za 290 € (pohľadávka do 3 000 €) alebo 490 € (nad 3 000 €) + polovičný súdny poplatok. O odpore a ďalších krokoch rozhodujete vy — s číslami na stole.",
     },
     {
       title: "Exekúcia",
@@ -95,8 +95,8 @@ export const debtRecovery: CampaignData = {
     items: [
       {
         label: "Výzva → rozkaz → exekúcia",
-        value: "89 € · 290 € · 149 €",
-        desc: "Tri pevné ceny za tri kroky. Každý ďalší krok začíname až s vaším pokynom a s vyčíslením súdneho poplatku vopred.",
+        value: "89 € · 290 / 490 € · 149 €",
+        desc: "Tri pevné ceny za tri kroky; platobný rozkaz 290 € pri pohľadávke do 3 000 €, 490 € nad 3 000 €. Každý ďalší krok začíname až s vaším pokynom a s vyčíslením súdneho poplatku vopred.",
       },
       {
         label: "Sporové konanie",

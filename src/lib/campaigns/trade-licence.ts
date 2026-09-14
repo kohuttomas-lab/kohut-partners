@@ -1,7 +1,7 @@
 import type { CampaignData } from "./types";
 
 /**
- * Založenie živnosti (katalóg A6). 29 € — vstupný produkt, cieľom je vzťah
+ * Založenie živnosti (katalóg A6). 49 € (29 → 49 € schválené 14. 9. 2026) — vstupný produkt, cieľom je vzťah
  * (upsell s.r.o. o 1–2 roky). Voľná živnosť ohlásená elektronicky je bez
  * správneho poplatku; remeselné/viazané podľa sadzobníka.
  */
@@ -11,15 +11,15 @@ export const tradeLicence: CampaignData = {
   group: "produkt",
 
   meta: {
-    title: "Založenie živnosti online 2026 — za 29 € do 3 pracovných dní | kohút & partners",
+    title: "Založenie živnosti online 2026 — za 49 € do 3 pracovných dní | kohút & partners",
     description:
-      "Založenie aj znovuzaloženie živnosti za 29 €: správne zatriedenie predmetov, elektronické ohlásenie bez poplatku pri voľných živnostiach a registrácia na daňovom úrade. Celá SR.",
+      "Založenie aj znovuzaloženie živnosti za 49 €: správne zatriedenie predmetov, elektronické ohlásenie bez poplatku pri voľných živnostiach a registrácia na daňovom úrade. Celá SR.",
   },
 
   hero: {
     overline: "Založenie živnosti · celá SR",
-    h1: "Založenie živnosti za 29 € — správne zatriedená a bez čakania na úrade",
-    lead: "Živnosť sa dá ohlásiť aj svojpomocne — ale zle zvolené predmety podnikania, chýbajúca remeselná živnosť či prehliadnutá registrácia na dani sa vlečú roky. Za 29 € to urobíme poriadne a do troch pracovných dní.",
+    h1: "Založenie živnosti za 49 € — správne zatriedená a bez čakania na úrade",
+    lead: "Živnosť sa dá ohlásiť aj svojpomocne — ale zle zvolené predmety podnikania, chýbajúca remeselná živnosť či prehliadnutá registrácia na dani sa vlečú roky. Za 49 € to urobíme poriadne a do troch pracovných dní.",
     paragraphs: [
       "Zatriedime činnosti do správnych predmetov — voľných, remeselných alebo viazaných —, ohlásime živnosť elektronicky a zaregistrujeme vás na daň z príjmov. Voľná živnosť ohlásená elektronicky je bez správneho poplatku.",
       "Rovnako vybavíme znovuzaloženie po prerušení alebo ukončení — vrátane kontroly, či medzičasom nepribudli podmienky pre vaše činnosti.",
@@ -54,7 +54,7 @@ export const tradeLicence: CampaignData = {
   scope: {
     overline: "V cene",
     heading: "Čo balík obsahuje",
-    lead: "Jedna cena 29 € s DPH. Správne poplatky za remeselné a viazané živnosti sa platia v skutočnej výške; voľné živnosti sú pri elektronickom ohlásení bez poplatku.",
+    lead: "Jedna cena 49 € s DPH. Správne poplatky za remeselné a viazané živnosti sa platia v skutočnej výške — 22 € za každú, pri elektronickom ohlásení 11 €; voľné živnosti sú pri elektronickom ohlásení bez poplatku.",
     items: [
       "Konzultácia k výberu a zatriedeniu predmetov podnikania",
       "Elektronické ohlásenie živnosti — bez návštevy úradu",
@@ -95,18 +95,18 @@ export const tradeLicence: CampaignData = {
     items: [
       {
         label: "Založenie živnosti",
-        value: "29 € s DPH",
+        value: "49 € s DPH",
         desc: "Ľubovoľný počet voľných živností, elektronické ohlásenie, daňová registrácia a prehľad povinností.",
       },
       {
         label: "Znovuzaloženie / obnovenie",
-        value: "29 € s DPH",
+        value: "49 € s DPH",
         desc: "Rovnaká cena aj pri návrate k podnikaniu po prerušení alebo ukončení živnosti.",
       },
       {
         label: "Správne poplatky",
         value: "0 € pri voľných",
-        desc: "Voľná živnosť ohlásená elektronicky je bez poplatku. Remeselné a viazané živnosti podľa sadzobníka správnych poplatkov — v skutočnej výške.",
+        desc: "Voľná živnosť ohlásená elektronicky je bez poplatku. Remeselná alebo viazaná živnosť 22 € za každú, pri elektronickom ohlásení 11 € (položka 148 sadzobníka správnych poplatkov) — v skutočnej výške.",
       },
     ],
   },

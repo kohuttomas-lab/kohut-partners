@@ -316,7 +316,10 @@
       "cancelTitle": "Payment not completed",
       "cancelLead": "Nothing was charged. If you already sent the description, we have it and will contact you; you can also complete the payment now by filling in the form again.",
       "offlineTitle": "We have received your order",
-      "offlineLead": "Online payment is currently unavailable. Within one business day we send you a confirmation with a payment link."
+      "offlineLead": "Online payment is currently unavailable. Within one business day we send you a confirmation with a payment link.",
+      "addonsLabel": "Add-ons",
+      "totalLabel": "Total",
+      "tiersLabel": "Tiers"
     }
   },
   "footer": {

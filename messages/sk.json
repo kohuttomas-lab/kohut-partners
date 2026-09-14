@@ -316,7 +316,10 @@
       "cancelTitle": "Platba nebola dokončená",
       "cancelLead": "Nič sme vám nestrhli. Ak ste už odoslali opis veci, máme ho a ozveme sa vám; platbu môžete dokončiť aj teraz — vyplňte formulár znova.",
       "offlineTitle": "Objednávku sme prijali",
-      "offlineLead": "Online platba momentálne nie je dostupná. Do jedného pracovného dňa vám pošleme potvrdenie s odkazom na platbu."
+      "offlineLead": "Online platba momentálne nie je dostupná. Do jedného pracovného dňa vám pošleme potvrdenie s odkazom na platbu.",
+      "addonsLabel": "Doplnky",
+      "totalLabel": "Spolu",
+      "tiersLabel": "Stupne"
     }
   },
   "footer": {

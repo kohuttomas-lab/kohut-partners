@@ -8,6 +8,7 @@ import type { ShopPackage } from "@/lib/content";
 import { CONTACT } from "@/lib/content";
 import { getPackageDetail } from "@/lib/shop-details";
 import { PACKAGE_PAGES } from "@/lib/shop-pages";
+import { getVariants, addonItemId, addonPrice } from "@/lib/shop-variants";
 import { formatEur } from "@/lib/format";
 import { submitLead } from "@/lib/lead";
 import { startCheckout } from "@/lib/checkout-client";
@@ -27,11 +28,13 @@ type Status = "idle" | "sending" | "offline" | "error";
 
 /**
  * Objednávka v jednom kroku: vľavo rozsah zvoleného balíka a postup, vpravo
- * formulár. Po odoslaní ide opis veci cez Web3Forms na klienti@tkak.sk a klient
- * pokračuje rovno do Stripe Checkout (platba hneď, garancia vrátenia platby,
- * ak vec nemôžeme prevziať). Návrat zo Stripe (?stripe=success|cancel) rieši
- * táto sekcia sama — modál z CartProvider sa tu neotvára. Balík sa predvyplní
- * z ?balik=<id>. Bez Stripe kľúčov (dev) ostane len e-mailová objednávka.
+ * formulár. Balíky so stupňami (shop-variants.ts) majú druhý výber a doplnky;
+ * cena na tlačidle je vždy presný súčet. Po odoslaní ide opis veci cez
+ * Web3Forms na klienti@tkak.sk a klient pokračuje rovno do Stripe Checkout
+ * (platba hneď, garancia vrátenia platby, ak vec nemôžeme prevziať). Návrat zo
+ * Stripe (?stripe=success|cancel) rieši táto sekcia sama — modál z CartProvider
+ * sa tu neotvára. Balík sa predvyplní z ?balik=<id>. Bez Stripe kľúčov (dev)
+ * ostane len e-mailová objednávka.
  */
 export function OrderSection({
   packages,
@@ -46,13 +49,32 @@ export function OrderSection({
   const common = useTranslations("common");
   const locale = useLocale() as Locale;
   const [selectedId, setSelectedId] = useState(initialId ?? "");
+  const [variantId, setVariantId] = useState(
+    () => (initialId ? getVariants(initialId)?.options[0]?.id : undefined) ?? ""
+  );
+  const [addons, setAddons] = useState<string[]>([]);
   const [status, setStatus] = useState<Status>("idle");
   const [who, setWho] = useState("");
 
   const selected = packages.find((p) => p.id === selectedId);
   const detail = selected ? getPackageDetail(selected.id, locale) : undefined;
   const page = selected && locale === "sk" ? PACKAGE_PAGES[selected.id] : undefined;
+  const variants = selected ? getVariants(selected.id) : undefined;
+  const option = variants
+    ? (variants.options.find((o) => o.id === variantId) ?? variants.options[0])
+    : undefined;
+  const chosenAddons = (variants?.addons ?? []).filter((a) => addons.includes(a.id));
+  const total = selected
+    ? (option ? option.price : selected.price) +
+      (option ? chosenAddons.reduce((sum, a) => sum + addonPrice(a, option), 0) : 0)
+    : 0;
   const steps = t.raw("steps") as string[];
+
+  const choosePackage = (id: string) => {
+    setSelectedId(id);
+    setVariantId(getVariants(id)?.options[0]?.id ?? "");
+    setAddons([]);
+  };
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -65,7 +87,9 @@ export function OrderSection({
 
     const fields: Record<string, string> = {
       Služba: `${selected.name} (${selected.id})`,
-      Cena: `${formatEur(selected.price)} ${common("withVat")}`,
+      ...(option ? { Stupeň: `${option[locale]} (${option.id})` } : {}),
+      ...(chosenAddons.length ? { Doplnky: chosenAddons.map((a) => a[locale]).join("; ") } : {}),
+      Cena: `${formatEur(total)} ${common("withVat")}`,
       Meno: name,
       Telefón: phone,
       "E-mail": email,
@@ -86,12 +110,18 @@ export function OrderSection({
     trackLead("shop-order");
 
     // 2) platba hneď — Stripe Checkout; návrat späť sem s ?stripe=…
+    const items = option
+      ? [
+          { id: option.id, qty: 1 },
+          ...chosenAddons.map((a) => ({ id: addonItemId(a, option), qty: 1 })),
+        ]
+      : [{ id: selected.id, qty: 1 }];
     const returnUrl = `${window.location.origin}${window.location.pathname}?balik=${encodeURIComponent(
       selected.id
     )}`;
     const res = await startCheckout({
       mode: "payment",
-      items: [{ id: selected.id, qty: 1 }],
+      items,
       locale,
       returnUrl,
       customer: { email, name, phone },
@@ -120,9 +150,18 @@ export function OrderSection({
               <h2 className={styles.detailTitle}>{selected.name}</h2>
               <p className={styles.detailDesc}>{selected.desc}</p>
               <div className={styles.priceRow}>
-                <span className={styles.price}>{formatEur(selected.price)}</span>
-                <span className={styles.vat}>{common("withVat")}</span>
+                <span className={styles.price}>{formatEur(option ? option.price : selected.price)}</span>
+                <span className={styles.vat}>
+                  {common("withVat")}
+                  {option ? ` · ${option[locale]}` : ""}
+                </span>
               </div>
+              {variants && variants.options.length > 1 ? (
+                <p className={styles.tiers}>
+                  {t("tiersLabel")}:{" "}
+                  {variants.options.map((o) => `${o[locale]} ${formatEur(o.price)}`).join(" · ")}
+                </p>
+              ) : null}
               {detail.fees ? <p className={styles.fees}>{detail.fees}</p> : null}
 
               <h3 className={styles.h3}>{t("includesTitle")}</h3>
@@ -221,22 +260,58 @@ export function OrderSection({
                   name="package"
                   label={t("pkgLabel")}
                   value={selectedId}
-                  onChange={(e) => setSelectedId(e.target.value)}
+                  onChange={(e) => choosePackage(e.target.value)}
                   required
                 >
                   <option value="" disabled>
                     {t("pkgPlaceholder")}
                   </option>
+                  {/* Balíky so stupňami majú cenu až vo výbere stupňa nižšie. */}
                   {packages.map((p) => (
                     <option key={p.id} value={p.id}>
-                      {p.name} — {formatEur(p.price)}
+                      {getVariants(p.id) ? p.name : `${p.name} — ${formatEur(p.price)}`}
                     </option>
                   ))}
                 </Select>
+                {variants && selected ? (
+                  <>
+                    <Select
+                      name="variant"
+                      label={variants.label[locale]}
+                      value={option?.id ?? ""}
+                      onChange={(e) => setVariantId(e.target.value)}
+                      hint={variants.note?.[locale]}
+                    >
+                      {variants.options.map((o) => (
+                        <option key={o.id} value={o.id}>
+                          {o[locale]} — {formatEur(o.price)}
+                        </option>
+                      ))}
+                    </Select>
+                    {variants.addons?.length && option ? (
+                      <div className={styles.addons}>
+                        <span className={styles.addonsLabel}>{t("addonsLabel")}</span>
+                        {variants.addons.map((a) => (
+                          <Checkbox
+                            key={a.id}
+                            name={`addon-${a.id}`}
+                            label={a[locale]}
+                            checked={addons.includes(a.id)}
+                            onChange={(e) =>
+                              setAddons((prev) =>
+                                e.target.checked ? [...prev, a.id] : prev.filter((x) => x !== a.id)
+                              )
+                            }
+                          />
+                        ))}
+                      </div>
+                    ) : null}
+                  </>
+                ) : null}
                 {selected ? (
                   <p className={styles.priceNote}>
                     <strong>
-                      {t("priceLabel")}: {formatEur(selected.price)} {common("withVat")}
+                      {t("totalLabel")}: {formatEur(total)} {common("withVat")}
                     </strong>
                     {detail?.fees ? ` · ${detail.fees}` : ` · ${t("feesNote")}`}
                   </p>
@@ -272,7 +347,7 @@ export function OrderSection({
                   {status === "sending"
                     ? t("sending")
                     : selected
-                      ? t("submitPay", { price: formatEur(selected.price) })
+                      ? t("submitPay", { price: formatEur(total) })
                       : t("submit")}
                 </Button>
                 <div className={styles.consult}>

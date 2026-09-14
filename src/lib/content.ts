@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/routing";
+import { variantCatalogEntries } from "@/lib/shop-variants";
 import { enArticleSlug } from "@/lib/article-slugs";
 
 /* ============================================================
@@ -185,7 +186,8 @@ const SERVICES: RawService[] = [
     packages: [
       {
         id: "ob-zivnost",
-        price: 29,
+        // 29 → 49 € schválené 14. 9. 2026 (Texty-na-schvalenie.md, bod 2.2)
+        price: 49,
         sk: ["Založenie živnosti", "Zatriedenie predmetov podnikania, elektronické ohlásenie a registrácia na daňovom úrade aj v zdravotnej poisťovni. Voľné živnosti sú pri elektronickom ohlásení bez poplatku, remeselné a viazané podľa sadzobníka správnych poplatkov."],
         en: ["Trade licence (živnosť)", "Classification of the activities, electronic filing and registration with the tax office and health insurer. Free trades carry no fee when filed electronically; craft and regulated trades per the fee schedule."],
       },
@@ -420,7 +422,8 @@ const SERVICES: RawService[] = [
       },
       {
         id: "tr-oznamenie",
-        price: 149,
+        // 149 → 249 € schválené 14. 9. 2026 (Texty-na-schvalenie.md, bod 2.10)
+        price: 249,
         sk: ["Trestné oznámenie", "Spísanie a podanie trestného oznámenia na políciu či prokuratúru."],
         en: ["Criminal complaint", "Drafting and filing a criminal complaint with the police or prosecutor."],
       },
@@ -1370,6 +1373,10 @@ export function getCartCatalog(): Record<string, CartCatalogItem> {
   for (const s of SERVICES) {
     for (const p of s.packages) {
       map[p.id] = { id: p.id, nameSk: p.sk[0], nameEn: p.en[0], price: p.price, type: "pkg" };
+      // Stupne a doplnky balíka (shop-variants.ts) — samostatné položky pre Stripe.
+      for (const v of variantCatalogEntries(p.id, { sk: p.sk[0], en: p.en[0] })) {
+        map[v.id] = { id: v.id, nameSk: v.nameSk, nameEn: v.nameEn, price: v.price, type: "pkg" };
+      }
     }
   }
   for (const t of TEMPLATES) {
