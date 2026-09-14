@@ -36,10 +36,11 @@ export interface PackageVariants {
 export const PACKAGE_VARIANTS: Record<string, PackageVariants> = {
   "ob-revizia": {
     label: { sk: "Rozsah zmluvy", en: "Contract length" },
+    // Verzia 3.1 z Texty-na-schvalenie.md (potvrdená 14. 9. 2026): 79 € do 2 strán,
+    // 3 – 5 strán +79 € (= 158 €), nad 5 strán individuálna ponuka.
     options: [
       { id: "ob-revizia-2", price: 79, sk: "do 2 normostrán", en: "up to 2 standard pages" },
-      { id: "ob-revizia-5", price: 139, sk: "3 – 5 normostrán", en: "3 – 5 standard pages" },
-      { id: "ob-revizia-8", price: 199, sk: "6 – 8 normostrán", en: "6 – 8 standard pages" },
+      { id: "ob-revizia-5", price: 158, sk: "3 – 5 normostrán", en: "3 – 5 standard pages" },
     ],
     addons: [
       {
@@ -56,8 +57,8 @@ export const PACKAGE_VARIANTS: Record<string, PackageVariants> = {
       },
     ],
     note: {
-      sk: "Zmluvy nad 8 normostrán a zmluvy v cudzom jazyku — individuálna ponuka do 1 pracovného dňa.",
-      en: "Contracts over 8 standard pages or in a foreign language — individual quote within 1 business day.",
+      sk: "Zmluvy nad 5 normostrán a zmluvy v cudzom jazyku — individuálna ponuka do 1 pracovného dňa.",
+      en: "Contracts over 5 standard pages or in a foreign language — individual quote within 1 business day.",
     },
   },
 

@@ -139,29 +139,28 @@ const DETAILS: Record<string, Detail> = {
 
   "ob-revizia": {
     sk: {
-      // Stupne schválené 14. 9. 2026: do 2 normostrán 79 €, 3 – 5 strán 139 €,
-      // 6 – 8 strán 199 €, viac individuálne; doplnky express +100 %, redline +59 €
-      // (shop-variants.ts).
+      // Stupne schválené 14. 9. 2026 (verzia 3.1): do 2 normostrán 79 €, 3 – 5 strán
+      // 158 €, viac individuálne; doplnky express +100 %, redline +59 € (shop-variants.ts).
       includes: [
-        "Posúdenie predloženej zmluvy v rozsahu zvoleného stupňa (do 2, do 5 alebo do 8 normostrán)",
+        "Posúdenie predloženej zmluvy v rozsahu zvoleného stupňa (do 2 alebo do 5 normostrán)",
         "Písomné zhrnutie rizík a nevýhodných ustanovení s odporúčanými úpravami",
         "Telefonická konzultácia k výsledku (20 minút)",
       ],
       excludes: [
         "Zapracovanie zmien do textu zmluvy — doplnok za 59 €; príprava novej zmluvy je balík Zmluva na mieru",
         "Rokovanie s druhou stranou",
-        "Zmluvy nad 8 normostrán a zmluvy v cudzom jazyku — individuálna ponuka do 1 pracovného dňa",
+        "Zmluvy nad 5 normostrán a zmluvy v cudzom jazyku — individuálna ponuka do 1 pracovného dňa",
       ],
       turnaround: "Do 5 pracovných dní od dodania zmluvy; expresne do 48 hodín za príplatok 100 % ceny.",
       documents: ["Zmluva na posúdenie (PDF alebo Word)", "Pár viet, čo je pre vás v zmluve najdôležitejšie"],
     },
     en: {
       includes: [
-        "Review of the submitted contract within the chosen tier (up to 2, 5 or 8 standard pages)",
+        "Review of the submitted contract within the chosen tier (up to 2 or 5 standard pages)",
         "Written summary of risks and unfavourable clauses with recommended changes",
         "Phone consultation on the result (20 minutes)",
       ],
-      excludes: ["Working changes into the contract text — add-on EUR 59; drafting a new contract is the Custom contract package", "Negotiation with the other party", "Contracts over 8 standard pages or in a foreign language — individual quote within 1 business day"],
+      excludes: ["Working changes into the contract text — add-on EUR 59; drafting a new contract is the Custom contract package", "Negotiation with the other party", "Contracts over 5 standard pages or in a foreign language — individual quote within 1 business day"],
       turnaround: "Within 5 business days of receiving the contract; express within 48 hours for a 100 % surcharge.",
       documents: ["The contract (PDF or Word)", "A few words on what matters most to you in it"],
     },
