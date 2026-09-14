@@ -274,15 +274,14 @@
     "order": {
       "overline": "Objednávka",
       "title": "Objednávka právnej služby",
-      "lead": "Neplatíte vopred. Opíšte nám, o čo ide — do jedného pracovného dňa vec preveríme a pošleme vám potvrdenie s odkazom na platbu.",
+      "lead": "Opíšte nám vec, zaplaťte kartou a začíname. Každú objednávku preveríme do jedného pracovného dňa — ak ju nemôžeme prevziať, vrátime vám celú platbu.",
       "howOverline": "Ako to prebieha",
-      "howTitle": "Tri kroky k službe",
+      "howTitle": "Ako objednávka prebieha",
       "steps": [
-        "Odošlete objednávku s krátkym opisom veci. V tomto kroku nič neplatíte.",
-        "Do jedného pracovného dňa vec preveríme — konflikt záujmov a či zvolený balík zodpovedá vašej situácii — a pošleme vám potvrdenie objednávky, podmienky a odkaz na platbu kartou alebo prevodom.",
-        "Po úhrade začíname. Napíšeme vám presne, ktoré podklady potrebujeme, a pošlete nám ich e-mailom."
+        "Vyberiete službu, v pár vetách opíšete, o čo ide, a zaplatíte kartou. Potvrdenie a faktúru dostanete e-mailom hneď.",
+        "Do jedného pracovného dňa sa vám ozveme s tým, ktoré podklady potrebujeme, a pustíme sa do práce. Ak vec nemôžeme prevziať — napríklad pre konflikt záujmov — platbu vám vrátime v plnej výške."
       ],
-      "noPrepay": "Ak by balík vašej situácii nezodpovedal, povieme vám to skôr, než čokoľvek zaplatíte.",
+      "noPrepay": "Ak by zvolený balík vašej situácii nezodpovedal, povieme vám to hneď a platbu vrátime alebo ju započítame na to, čo naozaj potrebujete.",
       "pkgLabel": "Služba",
       "pkgPlaceholder": "Vyberte službu",
       "priceLabel": "Cena",
@@ -300,8 +299,8 @@
       "sending": "Odosielam…",
       "note": "Odoslanie objednávky nezakladá poskytnutie právnej služby ani zastúpenie. Zmluvný vzťah vzniká až písomnou dohodou.",
       "error": "Objednávku sa nepodarilo odoslať. Napíšte nám prosím priamo na {email}.",
-      "successTitle": "Objednávku sme prijali",
-      "successLead": "Do jedného pracovného dňa vám pošleme potvrdenie s ďalším postupom a odkazom na platbu.",
+      "successTitle": "Ďakujeme, objednávku a platbu sme prijali",
+      "successLead": "Potvrdenie platby a faktúru vám posiela Stripe e-mailom. Do jedného pracovného dňa sa vám ozveme s tým, ktoré podklady potrebujeme.",
       "successDocs": "Ak máte podklady už teraz, pošlite ich na:",
       "subjectLabel": "Predmet",
       "mailBtn": "Otvoriť poštového klienta",
@@ -311,7 +310,13 @@
       "excludesTitle": "Čo v cene nie je",
       "turnaroundTitle": "Lehota",
       "documentsTitle": "Čo od vás potrebujeme",
-      "moreAbout": "Podrobná stránka služby"
+      "moreAbout": "Podrobná stránka služby",
+      "submitPay": "Objednať a zaplatiť {price}",
+      "consultFirst": "Chcem sa najprv poradiť s advokátom (30 min, 50 €)",
+      "cancelTitle": "Platba nebola dokončená",
+      "cancelLead": "Nič sme vám nestrhli. Ak ste už odoslali opis veci, máme ho a ozveme sa vám; platbu môžete dokončiť aj teraz — vyplňte formulár znova.",
+      "offlineTitle": "Objednávku sme prijali",
+      "offlineLead": "Online platba momentálne nie je dostupná. Do jedného pracovného dňa vám pošleme potvrdenie s odkazom na platbu."
     }
   },
   "footer": {

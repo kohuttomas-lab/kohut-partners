@@ -10,6 +10,7 @@ import { getPackageDetail } from "@/lib/shop-details";
 import { PACKAGE_PAGES } from "@/lib/shop-pages";
 import { formatEur } from "@/lib/format";
 import { submitLead } from "@/lib/lead";
+import { startCheckout } from "@/lib/checkout-client";
 import { collectAttribution } from "@/lib/attribution";
 import { trackLead } from "@/lib/analytics";
 import { Container, Overline } from "@/components/layout/Section";
@@ -18,23 +19,28 @@ import { Input, Textarea } from "@/components/ui/Input";
 import { Select } from "@/components/ui/Select";
 import { Checkbox } from "@/components/ui/Checkbox";
 import { Button } from "@/components/ui/Button";
+import { BookingButton } from "@/components/booking/BookingButton";
 import { ArrowRight, Check, CheckCircle, Mail } from "@/components/icons";
 import styles from "./OrderSection.module.css";
 
-type Status = "idle" | "sending" | "sent" | "error";
+type Status = "idle" | "sending" | "offline" | "error";
 
 /**
- * Objednávka bez platby vopred: vľavo rozsah zvoleného balíka a tri kroky
- * postupu, vpravo formulár. Odoslanie ide cez Web3Forms na klienti@tkak.sk;
- * kancelária vec preverí a pošle odkaz na platbu (Stripe Payment Link alebo
- * zálohová faktúra). Balík sa predvyplní z ?balik=<id>.
+ * Objednávka v jednom kroku: vľavo rozsah zvoleného balíka a postup, vpravo
+ * formulár. Po odoslaní ide opis veci cez Web3Forms na klienti@tkak.sk a klient
+ * pokračuje rovno do Stripe Checkout (platba hneď, garancia vrátenia platby,
+ * ak vec nemôžeme prevziať). Návrat zo Stripe (?stripe=success|cancel) rieši
+ * táto sekcia sama — modál z CartProvider sa tu neotvára. Balík sa predvyplní
+ * z ?balik=<id>. Bez Stripe kľúčov (dev) ostane len e-mailová objednávka.
  */
 export function OrderSection({
   packages,
   initialId,
+  stripeResult,
 }: {
   packages: ShopPackage[];
   initialId?: string;
+  stripeResult?: "success" | "cancel";
 }) {
   const t = useTranslations("shop.order");
   const common = useTranslations("common");
@@ -53,28 +59,54 @@ export function OrderSection({
     if (!selected) return;
     const fd = new FormData(e.currentTarget);
     const name = String(fd.get("name") || "");
+    const email = String(fd.get("email") || "");
+    const phone = String(fd.get("phone") || "");
     setWho(name);
 
     const fields: Record<string, string> = {
       Služba: `${selected.name} (${selected.id})`,
       Cena: `${formatEur(selected.price)} ${common("withVat")}`,
       Meno: name,
-      Telefón: String(fd.get("phone") || ""),
-      "E-mail": String(fd.get("email") || ""),
+      Telefón: phone,
+      "E-mail": email,
       "Firma / IČO": String(fd.get("company") || ""),
       "Opis veci": String(fd.get("message") || ""),
       "Odkaz na podklady": String(fd.get("docs") || ""),
+      Platba: "Stripe Checkout — stav platby overte v Stripe podľa e-mailu klienta",
     };
     Object.assign(fields, collectAttribution(locale));
 
     setStatus("sending");
+    // 1) opis veci do kancelárie — musí odísť skôr, než klient opustí stránku
     const r = await submitLead(fields, `${t("subjectPrefix")} — ${selected.name} — ${name}`);
-    const sent = r.ok || !r.configured;
-    setStatus(sent ? "sent" : "error");
-    if (sent) trackLead("shop-order");
+    if (!r.ok && r.configured) {
+      setStatus("error");
+      return;
+    }
+    trackLead("shop-order");
+
+    // 2) platba hneď — Stripe Checkout; návrat späť sem s ?stripe=…
+    const returnUrl = `${window.location.origin}${window.location.pathname}?balik=${encodeURIComponent(
+      selected.id
+    )}`;
+    const res = await startCheckout({
+      mode: "payment",
+      items: [{ id: selected.id, qty: 1 }],
+      locale,
+      returnUrl,
+      customer: { email, name, phone },
+    });
+    if ("url" in res && res.url) {
+      window.location.assign(res.url);
+      return;
+    }
+    // Bez Stripe kľúčov: objednávka odišla e-mailom, platba príde odkazom.
+    setStatus("offline");
   };
 
-  const subject = selected ? `${t("subjectPrefix")} — ${selected.name} (${who})` : "";
+  const subject = selected
+    ? `${t("subjectPrefix")} — ${selected.name}${who ? ` (${who})` : ""}`
+    : t("subjectPrefix");
   const mailto = `mailto:${CONTACT.email}?subject=${encodeURIComponent(subject)}`;
 
   return (
@@ -143,16 +175,20 @@ export function OrderSection({
           </div>
         </div>
 
-        {/* ---------- Pravý stĺpec: formulár ---------- */}
+        {/* ---------- Pravý stĺpec: formulár / výsledok ---------- */}
         <div className={styles.formCard}>
-          {status === "sent" ? (
+          {stripeResult === "success" || status === "offline" ? (
             <Card padding="lg" elevation="lg" accent>
               <div className={styles.success}>
                 <span className={styles.successIcon}>
                   <CheckCircle size={56} />
                 </span>
-                <h3 className={styles.successTitle}>{t("successTitle")}</h3>
-                <p className={styles.successLead}>{t("successLead")}</p>
+                <h3 className={styles.successTitle}>
+                  {stripeResult === "success" ? t("successTitle") : t("offlineTitle")}
+                </h3>
+                <p className={styles.successLead}>
+                  {stripeResult === "success" ? t("successLead") : t("offlineLead")}
+                </p>
                 <p className={styles.successLead}>{t("successDocs")}</p>
                 <div className={styles.handoff}>
                   <div className={styles.copyRow}>
@@ -176,6 +212,11 @@ export function OrderSection({
           ) : (
             <Card padding="lg" elevation="lg" accent>
               <form className={styles.stack} onSubmit={onSubmit}>
+                {stripeResult === "cancel" ? (
+                  <div className={styles.cancelNote} role="status">
+                    <strong>{t("cancelTitle")}</strong> {t("cancelLead")}
+                  </div>
+                ) : null}
                 <Select
                   name="package"
                   label={t("pkgLabel")}
@@ -228,8 +269,17 @@ export function OrderSection({
                   disabled={status === "sending" || !selected}
                   rightIcon={<ArrowRight size={18} />}
                 >
-                  {status === "sending" ? t("sending") : t("submit")}
+                  {status === "sending"
+                    ? t("sending")
+                    : selected
+                      ? t("submitPay", { price: formatEur(selected.price) })
+                      : t("submit")}
                 </Button>
+                <div className={styles.consult}>
+                  <BookingButton variant="link" size="sm">
+                    {t("consultFirst")}
+                  </BookingButton>
+                </div>
                 <p className={styles.note}>{t("note")}</p>
               </form>
             </Card>

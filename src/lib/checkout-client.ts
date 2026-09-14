@@ -8,6 +8,8 @@ export interface CheckoutPayload {
   id?: string;
   locale: string;
   returnUrl: string;
+  /** Objednávkový formulár: predvyplnenie e-mailu + meno/telefón do metadát. */
+  customer?: { email?: string; name?: string; phone?: string };
 }
 
 export type CheckoutResult =

@@ -274,15 +274,14 @@
     "order": {
       "overline": "Order",
       "title": "Order a legal service",
-      "lead": "No upfront payment. Tell us what the matter is about — within one business day we review it and send you a confirmation with a payment link.",
+      "lead": "Describe the matter, pay by card and we start. We review every order within one business day — if we cannot take it on, we refund the payment in full.",
       "howOverline": "How it works",
-      "howTitle": "Three steps to the service",
+      "howTitle": "How ordering works",
       "steps": [
-        "You send the order with a short description of the matter. Nothing is paid at this step.",
-        "Within one business day we review the matter — conflict of interest and whether the chosen package fits your situation — and send you an order confirmation, the terms and a payment link (card or bank transfer).",
-        "Once paid, we start. We tell you exactly which documents we need and you send them by e-mail."
+        "Choose the service, describe the matter in a few sentences and pay by card. You receive the confirmation and invoice by e-mail right away.",
+        "Within one business day we contact you with the documents we need and start work. If we cannot take the matter on — for example due to a conflict of interest — we refund the payment in full."
       ],
-      "noPrepay": "If the package does not fit your situation, we tell you before you pay anything.",
+      "noPrepay": "If the chosen package does not fit your situation, we tell you right away and refund the payment or credit it towards what you actually need.",
       "pkgLabel": "Service",
       "pkgPlaceholder": "Choose a service",
       "priceLabel": "Price",
@@ -300,8 +299,8 @@
       "sending": "Sending…",
       "note": "Sending the order does not constitute the provision of legal services or representation. A contractual relationship arises only by written agreement.",
       "error": "The order could not be sent. Please e-mail us directly at {email}.",
-      "successTitle": "We have received your order",
-      "successLead": "Within one business day we will send you a confirmation with the next steps and a payment link.",
+      "successTitle": "Thank you — order and payment received",
+      "successLead": "Stripe sends the payment confirmation and invoice by e-mail. Within one business day we contact you with the documents we need.",
       "successDocs": "If you already have documents, send them to:",
       "subjectLabel": "Subject",
       "mailBtn": "Open e-mail client",
@@ -311,7 +310,13 @@
       "excludesTitle": "What is not included",
       "turnaroundTitle": "Turnaround",
       "documentsTitle": "What we need from you",
-      "moreAbout": "Detailed service page"
+      "moreAbout": "Detailed service page",
+      "submitPay": "Order and pay {price}",
+      "consultFirst": "I'd rather talk to a lawyer first (30 min, EUR 50)",
+      "cancelTitle": "Payment not completed",
+      "cancelLead": "Nothing was charged. If you already sent the description, we have it and will contact you; you can also complete the payment now by filling in the form again.",
+      "offlineTitle": "We have received your order",
+      "offlineLead": "Online payment is currently unavailable. Within one business day we send you a confirmation with a payment link."
     }
   },
   "footer": {

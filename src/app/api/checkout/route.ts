@@ -24,6 +24,10 @@ export async function POST(req: Request) {
     id?: string;
     locale?: string;
     returnUrl?: string;
+    /** Objednávka z formulára (/e-shop/objednavka): predvyplní e-mail v Checkoute
+        a pripojí meno + telefón do metadát platby, nech ju kancelária spáruje
+        s opisom veci, ktorý prišiel e-mailom. */
+    customer?: { email?: string; name?: string; phone?: string };
   };
   try {
     body = await req.json();
@@ -31,12 +35,23 @@ export async function POST(req: Request) {
     return Response.json({ error: "Invalid body" }, { status: 400 });
   }
 
-  const { mode = "payment", items, id, locale, returnUrl } = body;
+  const { mode = "payment", items, id, locale, returnUrl, customer } = body;
   const catalog = getCartCatalog();
   const isSk = locale !== "en";
   const origin = new URL(req.url).origin;
   const base =
     typeof returnUrl === "string" && returnUrl.startsWith("http") ? returnUrl : origin;
+  // returnUrl môže niesť vlastný query (?balik=…) — parameter stripe pridáme za neho.
+  const sep = base.includes("?") ? "&" : "?";
+  const email =
+    typeof customer?.email === "string" && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(customer.email)
+      ? customer.email
+      : undefined;
+  const customerMeta: Record<string, string> = {};
+  if (typeof customer?.name === "string" && customer.name.trim())
+    customerMeta.customer_name = customer.name.trim().slice(0, 200);
+  if (typeof customer?.phone === "string" && customer.phone.trim())
+    customerMeta.customer_phone = customer.phone.trim().slice(0, 50);
 
   try {
     let lineItems: Stripe.Checkout.SessionCreateParams.LineItem[];
@@ -100,20 +115,21 @@ export async function POST(req: Request) {
     const session = await stripe.checkout.sessions.create({
       mode: sessionMode,
       line_items: lineItems,
-      success_url: `${base}?stripe=success`,
-      cancel_url: `${base}?stripe=cancel`,
+      success_url: `${base}${sep}stripe=success`,
+      cancel_url: `${base}${sep}stripe=cancel`,
+      ...(email ? { customer_email: email } : {}),
       billing_address_collection: "auto",
       allow_promotion_codes: true,
       locale: isSk ? "sk" : "en",
       phone_number_collection: { enabled: true },
-      metadata: { items: itemsMeta },
+      metadata: { items: itemsMeta, ...customerMeta },
       ...(sessionMode === "payment"
         ? {
             // A numbered VAT invoice for every one-off order (subscriptions
             // invoice automatically). Stripe Invoicing fee ~0.4 % per invoice.
             invoice_creation: { enabled: true },
             payment_intent_data: {
-              metadata: { items: itemsMeta },
+              metadata: { items: itemsMeta, ...customerMeta },
               description: `kohut & partners — ${itemsMeta}`.slice(0, 500),
             },
             custom_text: {

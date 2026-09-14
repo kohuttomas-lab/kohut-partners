@@ -65,7 +65,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
       const qs = params.toString();
       window.history.replaceState({}, "", window.location.pathname + (qs ? `?${qs}` : ""));
     }
-    if (stripeStatus === "success" || stripeStatus === "cancel") {
+    // Stránka objednávky (/e-shop/objednavka) si návrat zo Stripe zobrazuje
+    // sama (OrderSection) — tam modálne okno nevyskakuje.
+    const isOrderPage = /\/(e-shop\/objednavka|shop\/order)(\/|$)/.test(window.location.pathname);
+    if ((stripeStatus === "success" || stripeStatus === "cancel") && !isOrderPage) {
       setStripeResult(stripeStatus);
     }
     if (stripeStatus === "success") {

@@ -288,3 +288,23 @@
     grid-template-columns: 1fr;
   }
 }
+
+.cancelNote {
+  padding: 12px 14px;
+  border: 1px solid var(--danger);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+.cancelNote strong {
+  display: block;
+  color: var(--danger);
+  margin-bottom: 2px;
+}
+.consult {
+  display: flex;
+  justify-content: center;
+  margin-top: -6px;
+}
