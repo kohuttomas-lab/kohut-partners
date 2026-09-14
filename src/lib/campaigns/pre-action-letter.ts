@@ -1,7 +1,9 @@
 import type { CampaignData } from "./types";
 
 /**
- * Predžalobná výzva (katalóg B3, existujúci balík sp-vyzva 89 €).
+ * Predžalobná výzva (katalóg B3, balík sp-vyzva). Stupne schválené 14. 9. 2026
+ * (shop-variants.ts): Standard 89 €, Premium 149 € (do 48 h, odosiela advokát,
+ * 30-min hovor + písomné odporúčanie), doplnok opakovaná výzva 49 €.
  * OZ § 517 (omeškanie), úroky z omeškania podľa nar. vlády, paušálna náhrada
  * nákladov 40 € pri B2B (zák. 21/2013 / ObchZ § 369c). Do 2 pracovných dní.
  */
@@ -80,7 +82,7 @@ export const preActionLetter: CampaignData = {
     },
     {
       title: "Ak nezaplatí",
-      desc: "Navrhneme ďalší krok s pevnou cenou vopred — návrh na platobný rozkaz za 290 € + súdny poplatok. Nič nezačíname bez vášho pokynu.",
+      desc: "Navrhneme ďalší krok s pevnou cenou vopred — návrh na platobný rozkaz za 290 € (pri pohľadávke nad 3 000 € za 490 €) + súdny poplatok. Nič nezačíname bez vášho pokynu.",
     },
   ],
 
@@ -94,14 +96,19 @@ export const preActionLetter: CampaignData = {
     lead: "Pevné ceny s DPH, viditeľné vopred. Súdne poplatky pri ďalších krokoch sa platia v skutočnej výške.",
     items: [
       {
-        label: "Predžalobná výzva",
+        label: "Predžalobná výzva — Standard",
         value: "89 € s DPH",
         desc: "Preverenie nároku, vyčíslenie, odoslanie doporučene aj e-mailom a jedno kolo komunikácie s dlžníkom.",
       },
       {
+        label: "Predžalobná výzva — Premium",
+        value: "149 € s DPH",
+        desc: "Výzva do 48 hodín, odoslaná advokátom na hlavičkovom papieri, 30-minútový hovor a písomné odporúčanie ďalšieho postupu, ak dlžník nezaplatí. Pri oboch variantoch si môžete doplniť opakovanú výzvu za 49 €.",
+      },
+      {
         label: "Návrh na platobný rozkaz",
-        value: "290 € s DPH",
-        desc: "Ak dlžník nezaplatí. V upomínacom konaní je súdny poplatok polovičný oproti klasickej žalobe; platí sa v skutočnej výške.",
+        value: "290 € / 490 € s DPH",
+        desc: "Ak dlžník nezaplatí: 290 € pri pohľadávke do 3 000 €, 490 € nad 3 000 €. V upomínacom konaní je súdny poplatok polovičný oproti klasickej žalobe; platí sa v skutočnej výške.",
       },
       {
         label: "Ďalšie pohľadávky",
@@ -120,6 +127,7 @@ export const preActionLetter: CampaignData = {
       { name: "debtor", label: "Dlžník", placeholder: "napr. Alfa s. r. o., IČO…" },
       { name: "amount", label: "Dlžná suma", placeholder: "napr. 2 400 €" },
       { name: "due", label: "Splatnosť", placeholder: "napr. faktúra splatná 15. 5. 2026" },
+      { name: "variant", label: "Variant", placeholder: "Standard 89 € alebo Premium 149 €" },
     ],
     messageLabel: "Z čoho dlh vznikol",
     subject: "Predžalobná výzva — podklady",
@@ -128,7 +136,7 @@ export const preActionLetter: CampaignData = {
       "doklad o dodaní tovaru alebo služby",
       "doterajšia komunikácia s dlžníkom, ak existuje",
     ],
-    submit: "Chcem poslať výzvu za 89 €",
+    submit: "Chcem poslať výzvu",
   },
 
   faq: [
@@ -146,7 +154,7 @@ export const preActionLetter: CampaignData = {
     },
     {
       q: "Koľko ma bude stáť, ak sa pôjde na súd?",
-      a: "Návrh na platobný rozkaz pripravíme za 290 €; súdny poplatok v upomínacom konaní je polovičný oproti klasickej žalobe a platí sa v skutočnej výške. Pri úspechu súd spravidla prizná náhradu trov proti dlžníkovi. Presné čísla pre vašu sumu dostanete pred rozhodnutím — nie po ňom.",
+      a: "Návrh na platobný rozkaz pripravíme za 290 €, pri pohľadávke nad 3 000 € za 490 €; súdny poplatok v upomínacom konaní je polovičný oproti klasickej žalobe a platí sa v skutočnej výške. Pri úspechu súd spravidla prizná náhradu trov proti dlžníkovi. Presné čísla pre vašu sumu dostanete pred rozhodnutím — nie po ňom.",
     },
     {
       q: "Pohľadávok mám viac — od rôznych dlžníkov.",

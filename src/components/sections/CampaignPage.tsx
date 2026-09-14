@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { cx } from "@/lib/cx";
 import { absoluteUrl, breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { LegalServiceSchema } from "@/components/seo/LegalServiceSchema";
@@ -140,7 +141,12 @@ export function CampaignPage({ campaign }: { campaign: CampaignData }) {
             title={campaign.pricing.heading}
             lead={campaign.pricing.lead}
           />
-          <div className={styles.priceGrid}>
+          <div
+            className={cx(
+              styles.priceGrid,
+              campaign.pricing.items.length === 4 && styles.priceGrid4
+            )}
+          >
             {campaign.pricing.items.map((p) => (
               <Card key={p.label} padding="lg" elevation="sm" className={styles.priceCard}>
                 <div className={styles.priceLabel}>{p.label}</div>

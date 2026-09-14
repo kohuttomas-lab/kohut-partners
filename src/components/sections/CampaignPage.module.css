@@ -276,6 +276,12 @@
   gap: 18px;
 }
 
+/* Štyri cenové karty (napr. výzva Standard + Premium) — mriežka 2 × 2;
+   v jednom rade by boli pri dlhších popisoch príliš úzke. */
+.priceGrid4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .priceCard {
   height: 100%;
 }
