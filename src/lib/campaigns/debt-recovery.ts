@@ -34,7 +34,7 @@ export const debtRecovery: CampaignData = {
     items: [
       {
         title: "1 · Predžalobná výzva — 89 €",
-        desc: "Výzva s vyčíslením istiny, úrokov a paušálnej náhrady 40 € odchádza do dvoch pracovných dní. Značná časť dlžníkov po nej zaplatí alebo sa dohodne.",
+        desc: "Výzva s vyčíslením istiny, úrokov a paušálnej náhrady 40 € odchádza do piatich pracovných dní (Premium za 149 € do dvoch). Značná časť dlžníkov po nej zaplatí alebo sa dohodne.",
       },
       {
         title: "2 · Platobný rozkaz — 290 € do 3 000 €, 490 € nad 3 000 €",
@@ -72,7 +72,7 @@ export const debtRecovery: CampaignData = {
     },
     {
       title: "Výzva",
-      desc: "Predžalobná výzva za 89 € do dvoch pracovných dní. Platba ide priamo na váš účet; splátková dohoda s uznaním dlhu je v cene jedného kola komunikácie.",
+      desc: "Predžalobná výzva za 89 € do piatich pracovných dní, vo variante Premium za 149 € do dvoch. Platba ide priamo na váš účet; splátková dohoda s uznaním dlhu je v cene jedného kola komunikácie.",
     },
     {
       title: "Platobný rozkaz",

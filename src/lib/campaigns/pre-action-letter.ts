@@ -5,7 +5,8 @@ import type { CampaignData } from "./types";
  * (shop-variants.ts): Standard 89 €, Premium 149 € (do 48 h, odosiela advokát,
  * 30-min hovor + písomné odporúčanie), doplnok opakovaná výzva 49 €.
  * OZ § 517 (omeškanie), úroky z omeškania podľa nar. vlády, paušálna náhrada
- * nákladov 40 € pri B2B (zák. 21/2013 / ObchZ § 369c). Do 2 pracovných dní.
+ * nákladov 40 € pri B2B (zák. 21/2013 / ObchZ § 369c). Lehoty (14. 9. 2026): Standard do
+ * 5 pracovných dní, Premium do 2 pracovných dní.
  */
 export const preActionLetter: CampaignData = {
   id: "pre-action-letter",
@@ -13,9 +14,9 @@ export const preActionLetter: CampaignData = {
   group: "produkt",
 
   meta: {
-    title: "Predžalobná výzva od advokáta za 89 € — do 2 pracovných dní | kohút & partners",
+    title: "Predžalobná výzva od advokáta za 89 € — do 5 pracovných dní | kohút & partners",
     description:
-      "Neuhradená faktúra alebo dlh? Predžalobná výzva od advokáta s vyčíslením istiny, úrokov z omeškania a paušálnej náhrady 40 €. Odoslaná do 2 pracovných dní, 89 € s DPH. Celá SR.",
+      "Neuhradená faktúra alebo dlh? Predžalobná výzva od advokáta s vyčíslením istiny, úrokov z omeškania a paušálnej náhrady 40 €. Odoslaná do 5 pracovných dní za 89 €, expresne do 2 pracovných dní za 149 € (s DPH). Celá SR.",
   },
 
   hero: {
@@ -23,7 +24,7 @@ export const preActionLetter: CampaignData = {
     h1: "Predžalobná výzva — hlavička advokáta zaberá tam, kde upomienky zlyhali",
     lead: "Vaše vlastné urgencie dlžník odkladá; výzvu od advokátskej kancelárie už nie. Je to najlacnejší krok vymáhania — a často aj posledný potrebný.",
     paragraphs: [
-      "Preveríme nárok a premlčanie, vyčíslime istinu, úroky z omeškania a pri podnikateľoch aj paušálnu náhradu nákladov 40 € za každú pohľadávku, a výzvu odošleme doporučene aj e-mailom — do dvoch pracovných dní od dodania podkladov.",
+      "Preveríme nárok a premlčanie, vyčíslime istinu, úroky z omeškania a pri podnikateľoch aj paušálnu náhradu nákladov 40 € za každú pohľadávku, a výzvu odošleme doporučene aj e-mailom — do piatich pracovných dní od dodania podkladov, vo variante Premium do dvoch.",
       "Ak dlžník nezaplatí, viete hneď, čo ďalej: výzva je pripravená tak, aby na ňu nadviazal návrh na platobný rozkaz bez ďalšej prípravy.",
     ],
     cta: "Chcem poslať výzvu",
@@ -73,8 +74,8 @@ export const preActionLetter: CampaignData = {
       desc: "Pošlete faktúru či zmluvu a údaje dlžníka. Preveríme nárok, premlčanie a správne vyčíslenie príslušenstva.",
     },
     {
-      title: "Výzva do 2 dní",
-      desc: "Výzvu odošleme doporučene aj e-mailom do dvoch pracovných dní. Kópiu dostanete vy — viete presne, čo dlžník drží v rukách.",
+      title: "Výzva do 5 dní",
+      desc: "Výzvu odošleme doporučene aj e-mailom do piatich pracovných dní, vo variante Premium do dvoch. Kópiu dostanete vy — viete presne, čo dlžník drží v rukách.",
     },
     {
       title: "Reakcia dlžníka",
@@ -103,7 +104,7 @@ export const preActionLetter: CampaignData = {
       {
         label: "Predžalobná výzva — Premium",
         value: "149 € s DPH",
-        desc: "Výzva do 48 hodín, odoslaná advokátom na hlavičkovom papieri, 30-minútový hovor a písomné odporúčanie ďalšieho postupu, ak dlžník nezaplatí. Pri oboch variantoch si môžete doplniť opakovanú výzvu za 49 €.",
+        desc: "Výzva do 2 pracovných dní, odoslaná advokátom na hlavičkovom papieri, 30-minútový hovor a písomné odporúčanie ďalšieho postupu, ak dlžník nezaplatí. Pri oboch variantoch si môžete doplniť opakovanú výzvu za 49 €.",
       },
       {
         label: "Návrh na platobný rozkaz",
@@ -121,7 +122,7 @@ export const preActionLetter: CampaignData = {
   form: {
     title: "Pošlite nám podklady k dlhu",
     leads: [
-      "Do dvoch pracovných dní od úplných podkladov výzva odchádza. Ak je nárok premlčaný alebo slabý, povieme vám to pred odoslaním — nie po ňom.",
+      "Do piatich pracovných dní od úplných podkladov výzva odchádza, vo variante Premium do dvoch. Ak je nárok premlčaný alebo slabý, povieme vám to pred odoslaním — nie po ňom.",
     ],
     fields: [
       { name: "debtor", label: "Dlžník", placeholder: "napr. Alfa s. r. o., IČO…" },

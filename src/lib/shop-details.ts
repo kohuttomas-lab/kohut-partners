@@ -264,7 +264,7 @@ const DETAILS: Record<string, Detail> = {
         "Návrh na platobný rozkaz (samostatný balík: 290 € pri pohľadávke do 3 000 €, 490 € nad 3 000 €)",
         "Zastupovanie v súdnom spore a exekúcia",
       ],
-      turnaround: "Standard: výzva odchádza do 3 pracovných dní od zaplatenia a dodania podkladov. Premium: do 48 hodín.",
+      turnaround: "Standard: výzva odchádza do 5 pracovných dní od zaplatenia a dodania podkladov. Premium: do 2 pracovných dní.",
       documents: ["Faktúra, zmluva alebo iný doklad o pohľadávke", "Doklad o doručení a o čiastočných úhradách", "Adresa dlžníka"],
     },
     en: {
@@ -276,7 +276,7 @@ const DETAILS: Record<string, Detail> = {
         "Phone consultation 15 minutes; Premium 30 minutes plus a written recommendation of next steps",
       ],
       excludes: ["Repeat demand if the debtor does not respond — add-on EUR 49", "Payment-order application (separate package: EUR 290 for claims up to EUR 3,000, EUR 490 above)", "Court representation and enforcement"],
-      turnaround: "Standard: sent within 3 business days of payment and receipt of documents. Premium: within 48 hours.",
+      turnaround: "Standard: sent within 5 business days of payment and receipt of documents. Premium: within 2 business days.",
       documents: ["Invoice, contract or other proof of the claim", "Proof of delivery and of partial payments", "Debtor's address"],
     },
   },

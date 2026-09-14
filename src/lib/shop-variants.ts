@@ -68,16 +68,16 @@ export const PACKAGE_VARIANTS: Record<string, PackageVariants> = {
       {
         id: "sp-vyzva-standard",
         price: 89,
-        sk: "Standard — do 3 pracovných dní, doporučene aj e-mailom, 15-min hovor",
-        en: "Standard — within 3 business days, registered mail and e-mail, 15-min call",
-        short: { sk: "Standard, do 3 pracovných dní", en: "Standard, within 3 business days" },
+        sk: "Standard — do 5 pracovných dní, doporučene aj e-mailom, 15-min hovor",
+        en: "Standard — within 5 business days, registered mail and e-mail, 15-min call",
+        short: { sk: "Standard, do 5 pracovných dní", en: "Standard, within 5 business days" },
       },
       {
         id: "sp-vyzva-premium",
         price: 149,
-        sk: "Premium — do 48 hodín, odosiela advokát na hlavičkovom papieri, 30-min hovor a písomné odporúčanie ďalšieho postupu",
-        en: "Premium — within 48 hours, sent by the attorney on letterhead, 30-min call and written recommendation of next steps",
-        short: { sk: "Premium, do 48 hodín", en: "Premium, within 48 hours" },
+        sk: "Premium — do 2 pracovných dní, odosiela advokát na hlavičkovom papieri, 30-min hovor a písomné odporúčanie ďalšieho postupu",
+        en: "Premium — within 2 business days, sent by the attorney on letterhead, 30-min call and written recommendation of next steps",
+        short: { sk: "Premium, do 2 pracovných dní", en: "Premium, within 2 business days" },
       },
     ],
     addons: [
