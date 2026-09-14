@@ -33,11 +33,10 @@ export function FixedPackages() {
           {packages.map((p) => {
             const page = locale === "sk" ? PACKAGE_PAGES[p.id] : undefined;
             const detail = getPackageDetail(p.id, locale);
-            // Balíky so stupňami: cena = prvý stupeň s jeho označením, ostatné
-            // stupne vypísané pod ňou — presné sumy, nikdy „od".
+            // Balíky so stupňami: tabuľka, v ktorej má každý stupeň rovnakú váhu
+            // (schválené 14. 9. 2026) — presné sumy, nikdy „od" ani zvýraznená
+            // len najnižšia cena. Doplnky ostávajú až v objednávke.
             const variants = getVariants(p.id);
-            const first = variants?.options[0];
-            const rest = variants?.options.slice(1) ?? [];
             return (
               <Card key={p.id} padding="lg" elevation="sm" interactive className={styles.card}>
                 <Badge tone="brand" variant="soft" size="sm" className={styles.badge}>
@@ -71,22 +70,39 @@ export function FixedPackages() {
                     {t("moreAbout")} →
                   </Link>
                 ) : null}
-                {rest.length ? (
-                  <p className={styles.tiers}>
-                    {rest.map((o) => `${o.short?.[locale] ?? o[locale]} ${formatEur(o.price)}`).join(" · ")}
-                  </p>
+                {variants ? (
+                  <table className={styles.tierTable}>
+                    <thead>
+                      <tr>
+                        <th scope="col">{variants.label[locale]}</th>
+                        <th scope="col">
+                          {common("withVat")}
+                          {detail?.fees ? "*" : ""}
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {variants.options.map((o) => (
+                        <tr key={o.id}>
+                          <td>{o.short?.[locale] ?? o[locale]}</td>
+                          <td className={styles.tierPrice}>{formatEur(o.price)}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 ) : null}
-                <div className={styles.cardBottom}>
-                  <div className={styles.priceBlock}>
-                    <span>
-                      <span className={styles.priceVal}>{formatEur(first ? first.price : p.price)}</span>
-                      <span className={styles.vat}> {common("withVat")}</span>
-                      {detail?.fees ? <span className={styles.feesMark}>*</span> : null}
-                    </span>
-                    {first ? (
-                      <span className={styles.tierLabel}>{first.short?.[locale] ?? first[locale]}</span>
-                    ) : null}
-                  </div>
+                <div className={variants ? styles.cardBottomTiers : styles.cardBottom}>
+                  {variants ? (
+                    <span />
+                  ) : (
+                    <div className={styles.priceBlock}>
+                      <span>
+                        <span className={styles.priceVal}>{formatEur(p.price)}</span>
+                        <span className={styles.vat}> {common("withVat")}</span>
+                        {detail?.fees ? <span className={styles.feesMark}>*</span> : null}
+                      </span>
+                    </div>
+                  )}
                   <LinkButton
                     href={{ pathname: "/shop/order", query: { balik: p.id } }}
                     variant="primary"

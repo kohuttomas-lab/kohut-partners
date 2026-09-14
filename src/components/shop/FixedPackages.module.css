@@ -44,15 +44,47 @@
   align-items: flex-start;
   gap: 2px;
 }
-.tierLabel {
-  font-size: 12.5px;
-  color: var(--text-muted);
+/* Tabuľka stupňov — každý stupeň s rovnako veľkou cenou. */
+.tierTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto 0 14px;
+  font-size: 14px;
 }
-.tiers {
-  font-size: 12.5px;
-  line-height: 1.5;
+.tierTable th {
+  text-align: left;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--text-muted);
-  margin: -6px 0 10px;
+  padding: 0 0 6px;
+  border-bottom: 1px solid var(--border);
+}
+.tierTable th:last-child,
+.tierTable td:last-child {
+  text-align: right;
+  white-space: nowrap;
+  padding-left: 12px;
+}
+.tierTable td {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-body);
+  line-height: 1.4;
+  vertical-align: baseline;
+}
+.tierPrice {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-strong) !important;
+}
+.cardBottomTiers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 .from {
   font-size: 12.5px;
