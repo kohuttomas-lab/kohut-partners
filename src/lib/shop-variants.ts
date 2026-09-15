@@ -50,10 +50,12 @@ export const PACKAGE_VARIANTS: Record<string, PackageVariants> = {
         en: "Express within 48 hours (+100 % of the price)",
       },
       {
+        // Obsah doplnku prepracovaný 15. 9. 2026: konkrétne znenie ustanovení je už
+        // v základnej cene; doplnok = celá upravená zmluva + kolo s druhou stranou.
         id: "ob-revizia-redline",
         price: 59,
-        sk: "Zapracovanie zmien priamo do textu zmluvy (+59 €)",
-        en: "Changes worked directly into the contract text (+EUR 59)",
+        sk: "Upravená zmluva so sledovaním zmien a jedno kolo odpovede druhej strany (+59 €)",
+        en: "Full contract with tracked changes and one round of the other party's reply (+EUR 59)",
       },
     ],
     note: {
