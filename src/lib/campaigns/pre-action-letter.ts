@@ -109,7 +109,7 @@ export const preActionLetter: CampaignData = {
       {
         label: "Návrh na platobný rozkaz",
         value: "290 € / 490 € s DPH",
-        desc: "Ak dlžník nezaplatí: 290 € pri pohľadávke do 3 000 €, 490 € nad 3 000 €. V upomínacom konaní je súdny poplatok polovičný oproti klasickej žalobe; platí sa v skutočnej výške.",
+        desc: "Ak dlžník nezaplatí: 290 € pri pohľadávke do 3 000 €, 490 € nad 3 000 €. V upomínacom konaní je súdny poplatok 3 % z istiny (polovica percentnej sadzby klasickej žaloby); platí sa v skutočnej výške.",
       },
       {
         label: "Ďalšie pohľadávky",
@@ -155,7 +155,7 @@ export const preActionLetter: CampaignData = {
     },
     {
       q: "Koľko ma bude stáť, ak sa pôjde na súd?",
-      a: "Návrh na platobný rozkaz pripravíme za 290 €, pri pohľadávke nad 3 000 € za 490 €; súdny poplatok v upomínacom konaní je polovičný oproti klasickej žalobe a platí sa v skutočnej výške. Pri úspechu súd spravidla prizná náhradu trov proti dlžníkovi. Presné čísla pre vašu sumu dostanete pred rozhodnutím — nie po ňom.",
+      a: "Návrh na platobný rozkaz pripravíme za 290 €, pri pohľadávke nad 3 000 € za 490 €; súdny poplatok v upomínacom konaní je 3 % z istiny (polovica percentnej sadzby klasickej žaloby) a platí sa v skutočnej výške. Pri úspechu súd spravidla prizná náhradu trov proti dlžníkovi. Presné čísla pre vašu sumu dostanete pred rozhodnutím — nie po ňom.",
     },
     {
       q: "Pohľadávok mám viac — od rôznych dlžníkov.",

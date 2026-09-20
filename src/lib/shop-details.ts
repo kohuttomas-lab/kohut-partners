@@ -293,7 +293,7 @@ const DETAILS: Record<string, Detail> = {
         "Odovzdanie platobného rozkazu s pokynmi, čo ďalej",
       ],
       excludes: [
-        "Súdny poplatok (v upomínacom konaní polovičná sadzba)",
+        "Súdny poplatok (v upomínacom konaní 3 % z istiny)",
         "Zastupovanie v spore, ak dlžník podá odpor (dohodou)",
         "Návrh na vykonanie exekúcie (samostatne)",
       ],
@@ -308,7 +308,7 @@ const DETAILS: Record<string, Detail> = {
         "Electronic filing with the District Court Banská Bystrica and monitoring",
         "Hand-over of the payment order with next-step instructions",
       ],
-      excludes: ["Court fee (half rate in the fast-track procedure)", "Litigation if the debtor objects (by agreement)", "Enforcement application (separately)"],
+      excludes: ["Court fee (3 % of the principal in the fast-track procedure)", "Litigation if the debtor objects (by agreement)", "Enforcement application (separately)"],
       turnaround: "Filed within 5 business days of receiving the documents.",
       documents: ["Invoices or contract and proof of delivery", "Pre-action letter, if sent", "Debtor identification and amount"],
       fees: "The court fee is paid separately at its actual amount.",

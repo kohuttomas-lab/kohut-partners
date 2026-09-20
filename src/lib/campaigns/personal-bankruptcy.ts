@@ -5,7 +5,7 @@ import type { CampaignData } from "./types";
  * ZKR: § 166k (podanie návrhu len cez CPP / CPP-určeného advokáta — povedané
  * otvorene), § 166 ods. 3 (exekúcia; 1 rok pri konkurze), § 167 ods. 2
  * (obsah návrhu), § 166g poctivý zámer, § 166f zrušenie oddlženia do 6 rokov,
- * § 166d obydlie, § 166c nedotknuté pohľadávky. 149 € príprava · od 290 €
+ * § 166d obydlie, § 166c nedotknuté pohľadávky. 149 € príprava ·
  * zastúpenie počas konkurzu · obrana proti zrušeniu dohodou.
  */
 export const personalBankruptcy: CampaignData = {
@@ -16,13 +16,13 @@ export const personalBankruptcy: CampaignData = {
   meta: {
     title: "Osobný bankrot 2026 — príprava podkladov a ochrana dlžníka za 149 € | kohút & partners",
     description:
-      "Osobný bankrot bez chýb: posúdenie podmienok, konkurz vs. splátkový kalendár, kompletné podklady pre Centrum právnej pomoci a poučenie o poctivom zámere. Zastúpenie počas konkurzu aj obrana proti zrušeniu oddlženia. Od 149 €.",
+      "Osobný bankrot bez chýb: posúdenie podmienok, konkurz vs. splátkový kalendár, kompletné podklady pre Centrum právnej pomoci a poučenie o poctivom zámere. Zastúpenie počas konkurzu aj obrana proti zrušeniu oddlženia. Príprava za 149 €.",
   },
 
   hero: {
     overline: "Osobný bankrot · celá SR",
     h1: "Osobný bankrot — pripravíme vás naň tak, aby oddlženie vydržalo",
-    lead: "Návrh na oddlženie za vás podá Centrum právnej pomoci — tak to určuje zákon. Všetko ostatné je na vás: podmienky, kompletné zoznamy, poctivý zámer a ochrana majetku počas konkurzu aj šesť rokov po ňom. Presne s tým pomáhame my.",
+    lead: "Cesta k súdu vedie pri oddlžení vždy cez Centrum právnej pomoci — pri konkurze návrh podáva Centrum, pri splátkovom kalendári advokát, ktorého Centrum určí. Všetko ostatné je na vás: podmienky, kompletné zoznamy, poctivý zámer a ochrana majetku počas konkurzu aj šesť rokov po ňom. Presne s tým pomáhame my.",
     paragraphs: [
       "Posúdime, či podmienky oddlženia spĺňate, ktorá forma je pre vás správna — konkurz alebo splátkový kalendár — a pripravíme kompletné podklady, ktoré návrh vyžaduje: životopis, zoznamy majetku a veriteľov, spriaznené osoby, doklad o exekúcii. Do Centra právnej pomoci prídete pripravení a bez rizika, že na niečo zabudnete.",
       "Po vyhlásení konkurzu vás zastupujeme voči správcovi: strážime nepostihnuteľnú hodnotu obydlia, kontrolujeme speňažovanie a dbáme, aby vaša súčinnosť bola preukázateľná — lebo oddlženie sa dá do šiestich rokov zrušiť.",
@@ -57,7 +57,7 @@ export const personalBankruptcy: CampaignData = {
   scope: {
     overline: "Rozsah",
     heading: "S čím pomáhame",
-    lead: "Od prvého posúdenia po ochranu v šesťročnej dobe po oddlžení. Samotné podanie návrhu robí Centrum právnej pomoci — na to zákon advokáta mimo Centra nepripúšťa.",
+    lead: "Od prvého posúdenia po ochranu v šesťročnej dobe po oddlžení. Pri podaní návrhu musí dlžníka až do ustanovenia správcu zastupovať Centrum právnej pomoci alebo advokát, ktorého Centrum určí (§ 166k ZKR) — pri konkurze je to Centrum, pri splátkovom kalendári určený advokát.",
     items: [
       "Posúdenie podmienok oddlženia a voľba konkurz / splátkový kalendár",
       "Kompletné podklady pre Centrum právnej pomoci podľa § 167 ods. 2 ZKR",
@@ -80,7 +80,7 @@ export const personalBankruptcy: CampaignData = {
     },
     {
       title: "Centrum právnej pomoci",
-      desc: "S pripravenými podkladmi podáte žiadosť v Centre právnej pomoci, ktoré návrh na súd podá za vás (§ 166k ZKR). Ako postupovať v Centre vám presne vysvetlíme — vrátane toho, čo na stretnutí povedať a doložiť.",
+      desc: "S pripravenými podkladmi podáte žiadosť v Centre právnej pomoci, ktoré návrh na vyhlásenie konkurzu podá za vás; pri splátkovom kalendári určí advokáta, ktorý vás zastúpi (§ 166k ZKR). Ako postupovať v Centre vám presne vysvetlíme — vrátane toho, čo na stretnutí povedať a doložiť.",
     },
     {
       title: "Ochrana počas konkurzu a po ňom",
@@ -95,7 +95,7 @@ export const personalBankruptcy: CampaignData = {
 
   pricing: {
     heading: "Koľko to stojí",
-    lead: "Ceny s DPH, povedané vopred. Preddavok na odmenu správcu skladá Centrum právnej pomoci — nie je naším príjmom.",
+    lead: "Ceny s DPH, povedané vopred. Preddavok na odmenu správcu pri konkurze zloží Centrum právnej pomoci a dlžník mu ho vracia; pri splátkovom kalendári ho skladá dlžník sám. V oboch prípadoch nejde o náš príjem.",
     items: [
       {
         label: "Posúdenie situácie",
@@ -109,8 +109,8 @@ export const personalBankruptcy: CampaignData = {
       },
       {
         label: "Zastúpenie počas konkurzu",
-        value: "od 290 € s DPH",
-        desc: "Komunikácia so správcom, ochrana obydlia a kontrola speňažovania. Obrana proti návrhu na zrušenie oddlženia sa dohodne samostatne podľa rozsahu.",
+        value: "pevná cena vopred",
+        desc: "Komunikácia so správcom, ochrana obydlia a kontrola speňažovania. Cenu dohodneme vopred podľa rozsahu majetku a dozviete sa ju pri posúdení; obrana proti návrhu na zrušenie oddlženia sa dohodne samostatne.",
       },
     ],
   },
@@ -119,7 +119,7 @@ export const personalBankruptcy: CampaignData = {
     title: "Napíšte nám o svojich dlhoch",
     leads: [
       "Do troch pracovných dní dostanete posúdenie zadarmo: či máte na oddlženie nárok, ktorou formou a čo presne vám vyrieši. Píšte otvorene — všetko, čo nám napíšete, kryje advokátska mlčanlivosť.",
-      "Podanie návrhu na súd vybavuje Centrum právnej pomoci bezplatne — naša práca je to, čo Centrum nerobí: príprava, stratégia a ochrana vašich záujmov počas konkurzu aj po ňom.",
+      "Podanie návrhu na súd zabezpečuje Centrum právnej pomoci — za správny poplatok; preddavok na odmenu správcu vám pri konkurze požičia a vraciate mu ho do dvoch rokov. Naša práca je to, čo Centrum nerobí: príprava, stratégia a ochrana vašich záujmov počas konkurzu aj po ňom.",
     ],
     fields: [
       { name: "debts", label: "Približná výška dlhov", placeholder: "napr. 35 000 €" },
@@ -159,7 +159,7 @@ export const personalBankruptcy: CampaignData = {
     },
     {
       q: "Exekútor mi sťahuje zo mzdy. Zastaví to bankrot?",
-      a: "Vyhlásením konkurzu sa exekučné konania na majetok podliehajúci konkurzu zastavujú a nové sa nezačínajú — zrážky a blokácie účtov sa končia. To je hlavný okamžitý efekt oddlženia. Dovtedy exekúcia beží; aj preto sa oplatí pripraviť podklady bez prieťahov.",
+      a: "Vyhlásením konkurzu sa exekučné konania na majetok podliehajúci konkurzu zastavujú a nové sa nezačínajú — zrážky a blokácie účtov sa končia. Netýka sa to pohľadávok, ktoré oddlženie nepokrýva — najmä výživného na dieťa (§ 166c, § 167f ods. 2 ZKR). To je hlavný okamžitý efekt oddlženia. Dovtedy exekúcia beží; aj preto sa oplatí pripraviť podklady bez prieťahov.",
     },
   ],
 
