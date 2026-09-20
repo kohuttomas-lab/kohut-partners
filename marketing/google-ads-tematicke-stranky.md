@@ -378,7 +378,7 @@ Pri viacosobovej s.r.o. a zmene konateľa zabezpečíme notársku zápisnicu, kt
 **Nadpisy**
 
 ```
-Založenie živnosti za 29 €
+Založenie živnosti za 49 €
 Aj znovuzaloženie živnosti
 Do 3 pracovných dní
 Správne predmety podnikania
@@ -512,7 +512,7 @@ službou a nie úradným úkonom (overené dĺžky: nadpisy ≤ 30, popisy ≤ 9
 
 Nadpisy:
 ```
-Živnosť s advokátom za 29 €
+Živnosť s advokátom za 49 €
 Advokát pre živnostníkov
 Voľná či remeselná živnosť?
 Poradíme, čo si zapísať
@@ -524,7 +524,7 @@ Advokátska kancelária
 
 Popisy:
 ```
-Advokátska kancelária pre začínajúcich podnikateľov. Odmena 29 €, celé Slovensko.
+Advokátska kancelária pre začínajúcich podnikateľov. Odmena 49 €, celé Slovensko.
 Posúdime, či vám stačí živnosť alebo sa viac oplatí s.r.o. — s číslami, nie pocitovo.
 Poradíme, ktoré predmety podnikania si zapísať a čo k nim treba doložiť.
 Keď živnosť prerastie do firmy, zakladateľské dokumenty autorizujeme ako advokáti.
@@ -548,3 +548,19 @@ a pridaný nadpis „Expresná výzva do 2 dní". Uložené cez UI, stav po ulo�
 (kliky 13. 9. na nule); dokumenty odoslané 14. 9. 16:57, stav *In progress*. Reklama skupiny 7
 stále uvádza živnosť za **29 €** (web od 14. 9. 49 €) — neupravené, lebo skupina 7 je v odvolaní
 z 31. 8. a úprava by odvolanie zrušila.
+
+## 20. 9. 2026 — odvolanie neúspešné, cena v reklame opravená na 49 €
+
+Odvolanie podané 31. 8. má v Správcovi pravidiel stav **Neúspešné**. Reklama skupiny 7
+(adId 822158921035) ostáva **Zamietnutá** podľa pravidla „Dokumenty orgánov verejnej správy
+a úradné služby" s odôvodnením **„Vyžaduje sa certifikát"** — teda GODOS, ktorý je pre kanceláriu
+nedosiahnuteľný (viď pamäť google-ads-godos-certifikacia).
+
+V reklame bola opravená cena po zmene cenníka (29 → 49 €): nadpis „Založenie živnosti za 49 €"
+a popis „Odmena 49 €. Voľná živnosť ohlásená elektronicky je bez správneho poplatku." Uložené,
+reklama je v stave Nespracované (nová kontrola), zamietnutie tým ale nezanikne.
+
+**Otvorené rozhodnutie:** buď prepísať texty skupiny 7 tak, aby viedli právnou službou a nie
+úradným úkonom (návrh nižšie v tomto dokumente, už s cenou 49 €), alebo skupinu 7 pozastaviť
+a rozpočet presunúť do skupín, ktoré bežia. Nadpis „Voľná živnosť bez poplatku" je
+najpravdepodobnejší spúšťač pravidla.
