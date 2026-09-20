@@ -205,3 +205,25 @@ Slovak URLs have no prefix, English ones are prefixed with `/en`.
 The six situation pages listed under „Konkrétne situácie klientov“ are written in
 Slovak only, for clients in Slovakia. They have no English counterpart and their
 `/en` addresses return 404.
+
+## Polish, Hungarian, German and Russian versions (/pl, /hu, /de, /ru)
+
+The international-client pages are also available in Polish (`/pl`), Hungarian
+(`/hu`), German (`/de`) and Russian (`/ru`). They carry the same content as the
+English branch — advice exclusively on the law of the Slovak Republic — for
+readers who prefer these languages. The firm communicates with clients in
+English or Slovak. The blog, the legal e-shop, the city pages and the legal
+documents exist in Slovak and English only.
+
+| Page | Polski | Magyar | Deutsch | Русский |
+|---|---|---|---|---|
+| Home | https://www.tkak.sk/pl | https://www.tkak.sk/hu | https://www.tkak.sk/de | https://www.tkak.sk/ru |
+| Practice areas | https://www.tkak.sk/pl/uslugi | https://www.tkak.sk/hu/szolgaltatasok | https://www.tkak.sk/de/leistungen | https://www.tkak.sk/ru/uslugi |
+| About the firm | https://www.tkak.sk/pl/o-kancelarii | https://www.tkak.sk/hu/az-irodarol | https://www.tkak.sk/de/ueber-uns | https://www.tkak.sk/ru/o-nas |
+| Contact | https://www.tkak.sk/pl/kontakt | https://www.tkak.sk/hu/kapcsolat | https://www.tkak.sk/de/kontakt | https://www.tkak.sk/ru/kontakty |
+| International clients | https://www.tkak.sk/pl/klienci-zagraniczni | https://www.tkak.sk/hu/kulfoldi-ugyfelek | https://www.tkak.sk/de/internationale-mandanten | https://www.tkak.sk/ru/inostrannym-klientam |
+| Unpaid carriage charges (CMR) | https://www.tkak.sk/pl/windykacja-naleznosci-transportowych | https://www.tkak.sk/hu/fuvardij-kovetelesek-behajtasa | https://www.tkak.sk/de/inkasso-transportforderungen | https://www.tkak.sk/ru/vzyskanie-dolgov-za-perevozku |
+| Company formation and residence | https://www.tkak.sk/pl/zalozenie-spolki-i-pobyt | https://www.tkak.sk/hu/cegalapitas-es-tartozkodas | https://www.tkak.sk/de/firmengruendung-und-aufenthalt | https://www.tkak.sk/ru/registraciya-firmy-i-vnzh |
+
+Practice-area detail pages use the same slugs in every language, e.g.
+https://www.tkak.sk/pl/uslugi/spory, https://www.tkak.sk/de/leistungen/nehnutelnosti.
