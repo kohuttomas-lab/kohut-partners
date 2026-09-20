@@ -1,1 +1,669 @@
-{}
+{
+  "nav": {
+    "home": "Strona główna",
+    "services": "Usługi",
+    "shop": "Sklep",
+    "about": "O kancelarii",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "international": "Klienci zagraniczni"
+  },
+  "common": {
+    "cta": "Umów konsultację",
+    "ctaShort": "Konsultacja",
+    "servDetailCta": "Zobacz szczegóły",
+    "servAll": "Wszystkie usługi",
+    "from": "od",
+    "withVat": "z VAT",
+    "orderBtn": "Zamów",
+    "readMore": "Czytaj artykuł",
+    "readTime": "min czytania",
+    "backToBlog": "Powrót do bloga",
+    "areaOther": "Inne",
+    "langSwitch": "SK",
+    "sending": "Wysyłanie…",
+    "formError": "Coś poszło nie tak. Prosimy spróbować ponownie lub zadzwonić do kancelarii."
+  },
+  "home": {
+    "overline": "Słowacka kancelaria adwokacka · Zvolen, Słowacja",
+    "heroBadge": "Słowacka Izba Adwokacka · Zvolen",
+    "heroTitle": "Państwa adwokat w sprawach prawa słowackiego.",
+    "heroLead": "Doradzamy klientom zagranicznym – po angielsku lub po słowacku – w zakresie prawa słowackiego: zakup nieruchomości, zakładanie spółek, dochodzenie należności, niewypłacalność i spory przed słowackimi sądami. Jasna porada, szybkie działanie i cena znana z góry.",
+    "heroPrimary": "Umów konsultację",
+    "heroSecondary": "Sklep prawny",
+    "heroChips": [
+      "Stała cena",
+      "Odpowiedź w ciągu 24 h",
+      "Komunikujemy się po angielsku i słowacku"
+    ],
+    "trustLabel": "Zaufali nam przedsiębiorcy, spółki i inwestorzy – słowaccy i zagraniczni",
+    "stats": [
+      {
+        "value": "20",
+        "label": "lat praktyki"
+      },
+      {
+        "value": "2400+",
+        "label": "zakończonych spraw"
+      },
+      {
+        "value": "6",
+        "label": "dziedzin prawa"
+      },
+      {
+        "value": "8",
+        "label": "osób w zespole (w tym 4 adwokatów)"
+      }
+    ],
+    "servOverline": "Dziedziny praktyki · prawo słowackie",
+    "servTitle": "Jak pomagamy klientom zagranicznym na Słowacji",
+    "servLead": "Doradzamy wyłącznie w zakresie prawa słowackiego – od zakupu nieruchomości po spory przed słowackimi sądami. Po wybraniu dziedziny widać dokładnie, czym się zajmujemy, za jaką cenę i jak wygląda współpraca.",
+    "whyOverline": "Jak pracujemy",
+    "whyTitle": "Trzy kroki do jasnego rozwiązania",
+    "why": [
+      {
+        "title": "Rezerwacja konsultacji",
+        "desc": "Online przez wideorozmowę – po angielsku lub po słowacku – albo osobiście. Wystarczy wybrać termin i opisać sytuację; pierwsza odpowiedź w ciągu 24 godzin."
+      },
+      {
+        "title": "Uzgadniamy plan i cenę",
+        "desc": "Proponujemy rozwiązanie zgodne z prawem słowackim i z góry ustaloną stałą cenę. Bez niespodzianek w postaci stawek godzinowych."
+      },
+      {
+        "title": "Prowadzimy sprawę",
+        "desc": "Działamy w Państwa imieniu przed słowackimi sądami i urzędami i informujemy o każdym kroku – w większości spraw przyjazd na Słowację nie jest potrzebny."
+      }
+    ],
+    "teamOverline": "Nasz zespół",
+    "teamTitle": "Ludzie, którzy staną po Państwa stronie",
+    "teamLead": "Zgrany zespół adwokatów z rzeczywistym doświadczeniem w sprawach upadłościowych, prawie spółek i sporach sądowych.",
+    "teamCta": "Poznaj cały zespół",
+    "ctaBandTitle": "Sprawa prawna na Słowacji? Zacznijmy już dziś.",
+    "ctaBandLead": "Pierwsza konsultacja jest niezobowiązująca – online po angielsku lub po słowacku albo w naszej kancelarii. Wystarczy wybrać dogodny termin.",
+    "ctaBandBtn": "Umów konsultację"
+  },
+  "team": {
+    "photoSlot": "Miejsce na zdjęcie"
+  },
+  "services": {
+    "heroTitle": "Usługi prawne w zakresie prawa słowackiego",
+    "heroLead": "Od zakupu nieruchomości na Słowacji po ratowanie spółki w kryzysie. Doradzamy wyłącznie w zakresie prawa słowackiego – z przejrzystym procesem i stałą ceną.",
+    "whatWeSolve": "Czym się dla Państwa zajmujemy",
+    "packages": "Pakiety w stałej cenie",
+    "packagesLead": "Wybrane usługi można zamówić online po znanej cenie. Bardziej złożone sprawy prowadzimy po konsultacji.",
+    "faqTitle": "Najczęściej zadawane pytania",
+    "bookForThis": "Konsultacja w tej dziedzinie",
+    "deepTopics": "Tematy specjalistyczne:",
+    "deepCmr": "Dochodzenie przewoźnego z przewozów CMR",
+    "deepCfr": "Założenie spółki i pobyt dla cudzoziemców",
+    "packageCta": "Interesuje mnie to"
+  },
+  "about": {
+    "heroOverline": "O kancelarii",
+    "heroTitle": "Słowacka kancelaria adwokacka, która mówi zrozumiałym językiem.",
+    "heroLead": "Zaczynaliśmy od prostego przekonania: prawo powinno być dla klienta zrozumiałe, przewidywalne i uczciwe. Po 20 latach praktyki to przekonanie pozostaje aktualne – a dziś doradzamy klientom zagranicznym w zakresie prawa słowackiego, po angielsku lub po słowacku.",
+    "valuesOverline": "Nasze wartości",
+    "valuesTitle": "Czym się kierujemy",
+    "values": [
+      {
+        "title": "Jasność",
+        "desc": "Tłumaczymy tak, aby każda decyzja była dla Państwa zrozumiała. Bez pustych paragrafów."
+      },
+      {
+        "title": "Przewidywalność",
+        "desc": "Cenę i plan znają Państwo z góry, dzięki czemu decyzję można podjąć ze spokojem."
+      },
+      {
+        "title": "Rezultat",
+        "desc": "Jesteśmy po to, aby Państwa sprawę rozwiązać – a nie ją przeciągać."
+      }
+    ],
+    "storyTitle": "Nasza historia",
+    "story": [
+      "Kancelarię założyliśmy w 2011 roku z ambicją, by uprawiać prawo inaczej – bliżej przedsiębiorcy i dalej od zbędnych komplikacji.",
+      "Dziś jesteśmy zgranym zespołem, który towarzyszy spółkom od założenia, przez rozwój, aż po sytuacje kryzysowe. Koncentrujemy się na prawie upadłościowym, prawie spółek i prawie IT, nieruchomościach oraz sporach sądowych.",
+      "Uważamy, że najlepszy adwokat to taki, którego klient rozumie. Dlatego każdą sprawę wyjaśniamy prostym językiem i z góry podajemy cenę."
+    ]
+  },
+  "contact": {
+    "overline": "Kontakt",
+    "title": "Zapraszamy do kontaktu",
+    "lead": "Prosimy wypełnić formularz – odpowiemy w ciągu jednego dnia roboczego, po angielsku lub po słowacku. Można też od razu zarezerwować wideokonsultację.",
+    "fName": "Imię i nazwisko",
+    "fEmail": "E-mail",
+    "fPhone": "Telefon",
+    "fArea": "Dziedzina prawa",
+    "fMsg": "W czym możemy pomóc?",
+    "fAreaPlaceholder": "Wybierz dziedzinę…",
+    "fSource": "Skąd Państwo o nas wiedzą?",
+    "fSourcePlaceholder": "Opcjonalnie – to dla nas pomocne",
+    "fSourceSearch": "Wyszukiwarka (Google, Bing…)",
+    "fSourceAi": "Asystent AI (ChatGPT, Perplexity…)",
+    "fSourceReferral": "Polecenie",
+    "fSourceSocial": "Media społecznościowe",
+    "fSourceReturning": "Znam już kancelarię",
+    "fSourceOther": "W inny sposób",
+    "fConsent": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
+    "fSubmit": "Wyślij zapytanie",
+    "sentTitle": "Dziękujemy!",
+    "sentLead": "Odezwiemy się w ciągu jednego dnia roboczego.",
+    "offices": "Biuro kancelarii",
+    "hoursLabel": "Godziny otwarcia",
+    "hours": "pon.–pt. 9:00–16:00",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-mail",
+    "namePlaceholder": "Jan Kowalski",
+    "emailPlaceholder": "jan@firma.pl",
+    "phonePlaceholder": "+48 …"
+  },
+  "booking": {
+    "title": "Umów konsultację",
+    "step": "Krok",
+    "type": "Rodzaj konsultacji",
+    "online": "Online (wideorozmowa)",
+    "inPerson": "Osobiście w kancelarii",
+    "area": "Dziedzina prawa",
+    "date": "Wybierz datę",
+    "timeLabel": "Dostępne godziny",
+    "next": "Dalej",
+    "back": "Wstecz",
+    "contact": "Dane kontaktowe",
+    "payNote": "Konsultacja (30 min) · niezobowiązująca. Odezwiemy się, aby potwierdzić termin.",
+    "confirm": "Wyślij rezerwację",
+    "doneTitle": "Dziękujemy za rezerwację",
+    "doneLead": "Wkrótce odezwiemy się, aby potwierdzić termin konsultacji.",
+    "doneClose": "Gotowe",
+    "weekdays": [
+      "pon.",
+      "wt.",
+      "śr.",
+      "czw.",
+      "pt."
+    ]
+  },
+  "footer": {
+    "tag": "Kancelaria adwokacka zarejestrowana w Słowackiej Izbie Adwokackiej.",
+    "cols": [
+      {
+        "head": "Usługi",
+        "items": [
+          "Niewypłacalność",
+          "Prawo handlowe i cywilne",
+          "Nieruchomości",
+          "Spory sądowe",
+          "Prawo karne",
+          "Prawo IT"
+        ]
+      },
+      {
+        "head": "Kancelaria",
+        "items": [
+          "O kancelarii",
+          "Zespół",
+          "Klienci zagraniczni",
+          "Kontakt"
+        ]
+      },
+      {
+        "head": "Dokumenty prawne",
+        "items": [
+          "Ochrona danych (EN)",
+          "Regulamin (EN)",
+          "Pliki cookie (EN)"
+        ]
+      }
+    ],
+    "fine": "Niniejsza strona ma charakter wyłącznie ogólnoinformacyjny i nie stanowi porady prawnej. Wszystkie informacje i usługi dotyczą wyłącznie prawa Republiki Słowackiej oraz jego stosowania przez słowackie sądy i organy władzy publicznej.",
+    "rights": "© kohút & partners s.r.o. · IČO 47 235 888",
+    "country": "Republika Słowacka"
+  },
+  "intl": {
+    "heroOverline": "Klienci zagraniczni",
+    "heroTitle": "Prawo słowackie – wyjaśnione zrozumiale.",
+    "heroLead": "Jesteśmy słowacką kancelarią adwokacką i doradzamy wyłącznie w zakresie prawa Republiki Słowackiej. Jeżeli Państwa firma, nieruchomość, dłużnik lub spór znajdują się na Słowacji, przeprowadzimy Państwa przez słowacki system prawny – po angielsku lub po słowacku, w większości zdalnie. Ta strona jest dostępna po polsku dla Państwa wygody; z klientami komunikujemy się po angielsku lub po słowacku.",
+    "helpOverline": "Co dla Państwa robimy",
+    "helpTitle": "Typowe sprawy, które prowadzimy dla klientów zagranicznych",
+    "helpLead": "Każda z poniższych spraw podlega prawu słowackiemu i toczy się przed słowackimi sądami, notariuszami, katastrem nieruchomości i innymi słowackimi urzędami.",
+    "help": [
+      {
+        "title": "Zakup nieruchomości na Słowacji",
+        "desc": "Umowy kupna, sprawdzenie stanu prawnego w słowackim katastrze nieruchomości (kataster nehnuteľností), depozyt chroniący Państwa środki oraz wpis prawa własności."
+      },
+      {
+        "title": "Prowadzenie działalności na Słowacji",
+        "desc": "Założenie słowackiej s.r.o. (odpowiednik spółki z o.o.) dla zagranicznych założycieli – w pełni zdalnie, na podstawie pełnomocnictwa – a także umowy handlowe i bieżąca obsługa korporacyjna."
+      },
+      {
+        "title": "Dochodzenie należności od słowackich dłużników",
+        "desc": "Wezwania przedsądowe, słowackie postępowanie upominawcze (nakaz zapłaty), proces i egzekucja – jasny, etapowy tryb działania ze znanymi kosztami."
+      },
+      {
+        "title": "Wierzyciele w słowackich postępowaniach upadłościowych",
+        "desc": "Zgłoszenie wierzytelności słowackiemu syndykowi w ustawowych terminach, reprezentacja w komitecie wierzycieli i monitorowanie postępowania."
+      },
+      {
+        "title": "Spory przed słowackimi sądami",
+        "desc": "Spory cywilne i handlowe, wykonywanie zagranicznych orzeczeń na Słowacji, środki tymczasowe i negocjacje ugodowe."
+      }
+    ],
+    "remoteOverline": "Jak to działa",
+    "remoteTitle": "Współpraca z nami z zagranicy",
+    "remote": [
+      {
+        "title": "Wideokonsultacja po angielsku lub po słowacku",
+        "desc": "Termin rezerwuje się online – omawiamy sprawę, przedstawiamy jej ocenę na gruncie prawa słowackiego i uzgadniamy kolejne kroki."
+      },
+      {
+        "title": "Zlecenie i pełnomocnictwo",
+        "desc": "Umowę o świadczenie usług prawnych i pełnomocnictwo otrzymują Państwo e-mailem. W większości spraw wystarczy zwykły podpisany skan; tam, gdzie wymagają tego słowackie urzędy, przeprowadzimy Państwa przez poświadczenie podpisu lub uzyskanie apostille."
+      },
+      {
+        "title": "Działamy za Państwa na Słowacji",
+        "desc": "W Państwa imieniu kontaktujemy się ze słowackimi sądami, notariuszami, katastrem nieruchomości i organami władzy publicznej. Osobiste stawiennictwo jest wymagane rzadko."
+      },
+      {
+        "title": "Przejrzyste wynagrodzenie",
+        "desc": "W określonych sprawach stałe wynagrodzenie uzgodnione z góry; faktury w EUR płatne przelewem bankowym. Bez niespodzianek w postaci stawek godzinowych."
+      }
+    ],
+    "scopeTitle": "Jedno ważne ograniczenie",
+    "scopeText": "Doradzamy wyłącznie w zakresie prawa Republiki Słowackiej. Nie doradzamy w zakresie prawa Państwa kraju – jeżeli sprawa dotyka innej jurysdykcji, współpracujemy z Państwa miejscowym doradcą prawnym.",
+    "formOverline": "Napisz do nas",
+    "formTitle": "Prosimy opisać sprawę – odpowiemy po angielsku lub po słowacku",
+    "formLead": "Prosimy napisać, czego dotyczy sprawa i jaki ma związek ze Słowacją. Odezwiemy się i przedstawimy kolejne kroki. Wysłanie formularza nie powoduje nawiązania stosunku prawnego między adwokatem a klientem.",
+    "ctaTitle": "Prosimy opowiedzieć nam o swojej sprawie na Słowacji",
+    "ctaLead": "Pierwsza konsultacja jest niezobowiązująca i odbywa się po angielsku lub po słowacku."
+  },
+  "cmr": {
+    "metaTitle": "Dochodzenie należności CMR – niezapłacone przewoźne (fracht)",
+    "metaDescription": "Niezapłacone przewoźne od słowackiego zleceniodawcy: przedawnienie z art. 32 Konwencji CMR, słowackie postępowanie upominawcze (nakaz zapłaty) i egzekucja. Kancelaria adwokacka – Zvolen, Słowacja.",
+    "heroOverline": "Międzynarodowy transport drogowy",
+    "heroTitle": "Dochodzenie niezapłaconego przewoźnego na podstawie Konwencji CMR",
+    "heroLead": "Przewoźne (fracht) niezapłacone przez zleceniodawcę z siedzibą w Republice Słowackiej. Przejmujemy sprawę, sprawdzamy przedawnienie z art. 32 Konwencji CMR i prowadzimy ją od wezwania przedsądowego aż po egzekucję.",
+    "heroPara": [
+      "Działamy na rzecz przewoźników, spedytorów i operatorów logistycznych – zarówno słowackich, jak i zagranicznych – których zleceniodawca nie zapłacił faktury za już wykonany przewóz.",
+      "Pracujemy po angielsku i po słowacku; całą sprawę możemy poprowadzić zdalnie."
+    ],
+    "heroCta": "Prześlij nam dokumenty",
+    "whoOverline": "Dla kogo działamy",
+    "whoTitle": "Co robimy i dla kogo",
+    "whoLead": "Koncentrujemy się na roszczeniach pieniężnych z międzynarodowego drogowego przewozu towarów, gdy dłużnik ma siedzibę w Republice Słowackiej.",
+    "who": [
+      {
+        "title": "Przewoźnicy",
+        "desc": "Niezapłacone przewoźne za już wykonany przewóz – także wtedy, gdy zleceniodawca nigdy nie zakwestionował faktury i po prostu nie płaci."
+      },
+      {
+        "title": "Spedytorzy",
+        "desc": "Roszczenia wobec zleceniodawcy oraz wyjaśnienie Państwa pozycji w łańcuchu zleceniodawca – spedytor – przewoźnik."
+      },
+      {
+        "title": "Zagraniczni wierzyciele",
+        "desc": "Polskie, litewskie, czeskie i inne zagraniczne firmy, których dłużnik ma siedzibę na Słowacji. W Państwa imieniu prowadzimy postępowania przed słowackimi sądami i słowackimi komornikami (exekútor)."
+      },
+      {
+        "title": "Faktury pomniejszone i sporne",
+        "desc": "Potrącenia z tytułu opóźnienia, uszkodzenia towaru lub zarzucanego naruszenia zlecenia transportowego. Oceniamy, które z potrąceń dają się obronić na gruncie Konwencji CMR i umowy."
+      }
+    ],
+    "keyOverline": "Na czym opiera się sprawa",
+    "keyTitle": "Co rozstrzyga się pierwszego dnia",
+    "keyLead": "Zanim wyjdzie pierwsze pismo, trzeba ustalić dwie rzeczy: jak długo można jeszcze dochodzić roszczenia i jakie prawo jest dla niego właściwe. Obie odpowiedzi wynikają z Konwencji CMR, ogłoszonej w Republice Słowackiej jako obwieszczenie (vyhláška) Ministra Spraw Zagranicznych nr 11/1975 Zb. Zgodnie z jej art. 1 ust. 1 Konwencję stosuje się do wszelkiej umowy o zarobkowy przewóz drogowy towarów pojazdami, jeżeli miejsce przyjęcia przesyłki do przewozu i miejsce przewidziane dla jej dostawy, stosownie do ich oznaczenia w umowie, znajdują się w dwóch różnych krajach, z których przynajmniej jeden jest krajem umawiającym się – niezależnie od miejsca zamieszkania i przynależności państwowej stron.",
+    "key": [
+      {
+        "title": "Przedawnienie według art. 32 Konwencji CMR",
+        "desc": "Zgodnie z art. 32 ust. 1 Konwencji roszczenia, które mogą wyniknąć z przewozów podlegających Konwencji, przedawniają się po upływie jednego roku; w przypadku złego zamiaru lub niedbalstwa, które według prawa obowiązującego sąd rozpatrujący sprawę uważane jest za równoznaczne ze złym zamiarem, termin przedawnienia wynosi trzy lata. Roszczenie o zapłatę przewoźnego nie jest roszczeniem z tytułu zaginięcia, uszkodzenia ani opóźnienia dostawy, dlatego w grę wchodzi kategoria pozostałych przypadków z art. 32 ust. 1 lit. c: przedawnienie biegnie od upływu trzymiesięcznego terminu od dnia zawarcia umowy przewozu, przy czym dnia, w którym bieg przedawnienia się rozpoczyna, nie wlicza się do terminu. W praktyce roszczenie może ulec przedawnieniu po upływie około piętnastu miesięcy od zawarcia umowy przewozu – od zawarcia umowy, a nie od terminu płatności faktury. Zgodnie z art. 32 ust. 2 Konwencji reklamacja pisemna zawiesza przedawnienie aż do dnia, w którym przewoźnik na piśmie odrzuci reklamację i zwróci załączone do niej dokumenty; dalsza reklamacja w tym samym przedmiocie nie zawiesza przedawnienia ponownie. Przepis ten jest sformułowany z myślą o reklamacji odrzucanej przez przewoźnika – wezwanie przedsądowe, którym przewoźnik sam dochodzi przewoźnego od zleceniodawcy, nie mieści się w jego brzmieniu i nie zawiesza biegu przedawnienia. Poza przypadkiem z ustępu 2 zawieszenie i przerwanie przedawnienia regulują, zgodnie z art. 32 ust. 3, przepisy prawa obowiązującego sąd rozpatrujący sprawę; przed słowackim sądem oznacza to § 402 słowackiego Kodeksu handlowego (Obchodný zákonník), zgodnie z którym termin przedawnienia przestaje biec dopiero z chwilą dokonania czynności uznawanej za wszczęcie postępowania sądowego albo za dochodzenie prawa w postępowaniu już wszczętym. Monity wysyłane dłużnikowi nie przedłużają terminu.",
+        "note": "To, czy roszczenie przewoźnika o zapłatę przewoźnego podlega rocznemu terminowi z art. 32 Konwencji CMR, czy ogólnemu czteroletniemu terminowi przedawnienia z § 397 słowackiego Kodeksu handlowego, nie jest w praktyce prawniczej oceniane jednolicie. Wobec tej niepewności wskazane jest przyjmowanie krótszego terminu."
+      },
+      {
+        "title": "Prawo właściwe według rozporządzenia Rzym I",
+        "desc": "Jeżeli strony nie dokonały wyboru prawa właściwego, ustala się je zgodnie z art. 5 ust. 1 rozporządzenia (WE) nr 593/2008 (Rzym I): stosuje się prawo państwa, w którym przewoźnik ma miejsce zwykłego pobytu, pod warunkiem że w tym samym państwie znajduje się miejsce przyjęcia towaru do przewozu lub miejsce dostawy, lub miejsce zwykłego pobytu nadawcy. W przypadku niespełnienia tych wymogów stosuje się prawo państwa, w którym znajduje się uzgodnione przez strony miejsce dostawy. Zgodnie z art. 5 ust. 3 stosuje się prawo innego państwa, jeżeli ze wszystkich okoliczności sprawy wyraźnie wynika, że umowa, w przypadku braku wyboru prawa, pozostaje w znacznie ściślejszym związku z tym innym państwem; reguła ta nie wypiera zatem ważnego wyboru prawa dokonanego na podstawie art. 3.",
+        "note": "Konwencja CMR ma pierwszeństwo w zakresie, w jakim reguluje daną kwestię – wynika to z § 756 słowackiego Kodeksu handlowego. Również art. 25 ust. 1 rozporządzenia Rzym I stanowi, że rozporządzenie nie uchybia stosowaniu konwencji międzynarodowych, których stronami są państwa członkowskie i które ustanawiają normy kolizyjne odnoszące się do zobowiązań umownych. Prawo ustalone na podstawie rozporządzenia stosuje się zatem tylko do kwestii, których Konwencja nie reguluje; należy do nich roszczenie przewoźnika o zapłatę przewoźnego."
+      },
+      {
+        "title": "Gdzie można wnieść pozew – art. 31 Konwencji CMR",
+        "desc": "Zgodnie z art. 31 ust. 1 Konwencji powód może wnieść sprawę do sądów umawiającego się kraju określonych przez strony w drodze wspólnego porozumienia, do sądów kraju, w którym pozwany ma stałe miejsce zamieszkania, główną siedzibę albo filię lub agencję, za której pośrednictwem zawarto umowę przewozu, albo do sądów kraju, w którym znajduje się miejsce przyjęcia towaru do przewozu lub miejsce przewidziane dla jego dostawy; do innych sądów sprawy wnosić nie można. Jeżeli dłużnik ma siedzibę w Republice Słowackiej albo towar został tu rozładowany, jurysdykcję mają sądy słowackie.",
+        "note": "Zgodnie z art. 71 ust. 1 rozporządzenia (UE) nr 1215/2012 (Bruksela I bis) rozporządzenie nie narusza konwencji, które w sprawach szczególnych regulują jurysdykcję, uznawanie lub wykonywanie orzeczeń; zgodnie z art. 71 ust. 2 lit. b orzeczenie wydane przez sąd, który oparł swoją jurysdykcję na takiej konwencji, jest uznawane i wykonywane w pozostałych państwach członkowskich zgodnie z tym rozporządzeniem. Jeżeli sama konwencja ustanawia warunki uznawania lub wykonywania – art. 31 ust. 3 Konwencji CMR uzależnia wykonalność w pozostałych umawiających się krajach od dopełnienia wymaganych tam formalności – warunki te mają zastosowanie; w każdym przypadku mogą być stosowane przepisy rozporządzenia dotyczące uznawania i wykonywania orzeczeń, a więc również wykonanie bez stwierdzenia wykonalności."
+      }
+    ],
+    "stepsOverline": "Tryb postępowania",
+    "stepsTitle": "Jak przebiega sprawa",
+    "steps": [
+      {
+        "title": "Przejęcie sprawy i analiza",
+        "desc": "Przejmujemy zlecenie transportowe, list przewozowy CMR i fakturę. Sprawdzamy, czy sprawa podlega Konwencji CMR, jak długo można jeszcze dochodzić roszczenia i co dokładnie składa się na należność główną."
+      },
+      {
+        "title": "Sprawdzenie dłużnika",
+        "desc": "Sprawdzamy rejestr handlowy, opublikowane sprawozdania finansowe, toczące się postępowania egzekucyjne oraz postępowania upadłościowe i restrukturyzacyjne. Na tej podstawie widać, czy prowadzenie postępowania ma sens i w jakiej kolejności działać."
+      },
+      {
+        "title": "Wezwanie przedsądowe",
+        "desc": "Przygotowujemy i wysyłamy wezwanie do zapłaty z wyliczeniem należności głównej, odsetek za opóźnienie i zryczałtowanej rekompensaty za koszty odzyskiwania należności. Wezwanie stanowi zarazem podstawę dalszych kroków."
+      },
+      {
+        "title": "Słowackie postępowanie upominawcze",
+        "desc": "Jeżeli dłużnik nie zapłaci, składamy wniosek o wydanie nakazu zapłaty na podstawie ustawy nr 307/2016 Z. z. Wniosek składa się wyłącznie drogą elektroniczną, a wyłączną właściwość rzeczową ma Sąd Rejonowy Banská Bystrica (Okresný súd Banská Bystrica). Jeżeli nakaz zapłaty musiałby zostać doręczony pozwanemu za granicą, ta droga nie jest dostępna (§ 3 ust. 6 lit. d ustawy) – w grę wchodzi wówczas europejski nakaz zapłaty na podstawie rozporządzenia (WE) nr 1896/2006. Wniosek nie jest dopuszczalny również wtedy, gdy dochodzone umowne odsetki za opóźnienie przekraczają o więcej niż pięć punktów procentowych stopę, która miałaby zastosowanie bez takiej umowy (§ 3 ust. 5 lit. a ustawy)."
+      },
+      {
+        "title": "Nakaz zapłaty albo sprzeciw",
+        "desc": "Sąd wydaje nakaz zapłaty najpóźniej w terminie dziesięciu dni roboczych od spełnienia przesłanek procesowych, w tym uiszczenia opłaty sądowej. Od doręczenia nakazu zapłaty pozwany ma 15 dni na zapłatę albo na wniesienie sprzeciwu, który musi zawierać merytoryczne uzasadnienie. Jeżeli sprzeciw nie zostanie wniesiony, nakaz zapłaty ma skutki prawomocnego wyroku; jeżeli zostanie wniesiony, ustosunkowujemy się do niego i w terminie 15 dni wnosimy o dalsze prowadzenie postępowania przed sądem właściwym według słowackiego Kodeksu postępowania cywilnego spornego (Civilný sporový poriadok)."
+      },
+      {
+        "title": "Egzekucja",
+        "desc": "Gdy orzeczenie jest prawomocne i wykonalne, składamy wniosek o wszczęcie egzekucji. Wyłączną właściwość w postępowaniu egzekucyjnym ma Sąd Rejonowy Banská Bystrica, który przydziela sprawę słowackiemu komornikowi (exekútor) w drodze losowania – wierzyciel nie wybiera komornika. Jeżeli przeciwko temu samemu dłużnikowi toczy się już egzekucja, w której sąd udzielił komornikowi upoważnienia, każda kolejna sprawa przeciwko temu dłużnikowi jest na podstawie § 55 ust. 4 słowackiego Kodeksu egzekucyjnego (Exekučný poriadok) przydzielana temu samemu komornikowi, a losowania się nie stosuje."
+      },
+      {
+        "title": "Eskalacja – upadłość",
+        "desc": "Jeżeli okaże się, że dłużnik nie płaci kilku wierzycielom, w grę wchodzi wniosek o ogłoszenie upadłości oraz dochodzenie od organu statutowego odpowiedzialności za szkodę spowodowaną niezłożeniem wniosku w terminie. Każdy taki krok oceniamy osobno: zgodnie z § 11 ust. 4 ustawy nr 7/2005 Z. z. wierzyciel odpowiada wobec dłużnika i innych osób za szkodę powstałą w związku ze skutkami wszczęcia postępowania upadłościowego, jeżeli sąd umorzy postępowanie wszczęte na wniosek wierzyciela z powodu wykazania wypłacalności dłużnika, chyba że wierzyciel udowodni, że składając wniosek, działał z zachowaniem staranności zawodowej. Wniosek o ogłoszenie upadłości nie jest więc narzędziem nacisku."
+      }
+    ],
+    "docsOverline": "Dokumenty",
+    "docsTitle": "Czego od Państwa potrzebujemy",
+    "docsLead": "W większości spraw wystarczy pięć dokumentów. Prosimy przesłać je jako skany lub zdjęcia; oryginały nie są na tym etapie potrzebne.",
+    "docs": [
+      "Zlecenie transportowe lub umowa przewozu – wraz z korespondencją e-mailową, w której doszło do jej zawarcia.",
+      "List przewozowy CMR, w tym potwierdzenie odbioru towaru przez odbiorcę.",
+      "Faktura za przewoźne i dowód jej wysłania dłużnikowi.",
+      "Dowód dostawy oraz ewentualne dalsze dokumenty przewozowe.",
+      "Korespondencja z dłużnikiem – monity, reklamacje, zgłoszone potrącenia, częściowe płatności."
+    ],
+    "priceOverline": "Wynagrodzenie",
+    "priceTitle": "Ile to kosztuje",
+    "priceLead": "Zakres i wynagrodzenie uzgadniamy z góry i na piśmie. Cenę oceny sprawy i wezwania przedsądowego znają Państwo, zanim rozpoczniemy pracę.",
+    "price": [
+      {
+        "label": "Ocena sprawy",
+        "value": "stałe wynagrodzenie uzgodnione z góry",
+        "desc": "Przeglądamy dokumenty, sprawdzamy przedawnienie i prawo właściwe oraz przedstawiamy proponowany tryb działania. Wynagrodzenie podajemy przed rozpoczęciem jakiejkolwiek pracy; jeżeli zdecydują Państwo nie iść dalej, sprawa na tym się kończy."
+      },
+      {
+        "label": "Wezwanie przedsądowe",
+        "value": "stałe wynagrodzenie za czynność",
+        "desc": "Przygotowanie i wysłanie wezwania do zapłaty, w tym wyliczenie odsetek za opóźnienie i zryczałtowanej rekompensaty za koszty odzyskiwania należności. Uzgadniane jako stała kwota za czynność, a nie według stawki godzinowej."
+      },
+      {
+        "label": "Zastępstwo w postępowaniu",
+        "value": "stałe wynagrodzenie albo wynagrodzenie zależne od wyniku",
+        "desc": "Zgodnie z § 7 ust. 1 rozporządzenia (vyhláška) Ministerstwa Sprawiedliwości Republiki Słowackiej nr 655/2004 Z. z. wynagrodzenie zależne od wyniku sprawy można uzgodnić w formie procentowego udziału w wartości przedmiotu sprawy; zgodnie z § 7 ust. 2 jego maksymalna wysokość nie może przekroczyć 20% tej wartości. Zgodnie z § 8 ust. 1 rozporządzenia staje się ono należne tylko wtedy, gdy klient odniósł w sprawie pełny sukces; przy częściowym sukcesie adwokatowi przysługuje na podstawie § 8 ust. 2 wynagrodzenie taryfowe ustalone stosownie do stopnia sukcesu, a jeżeli klient nie odniósł sukcesu nawet w części, adwokat może na podstawie § 8 ust. 3 żądać jedynie zwrotu poniesionych wydatków."
+      }
+    ],
+    "priceNote": "Obok wynagrodzenia adwokata powstają wydatki, w szczególności opłaty sądowe. W postępowaniu upominawczym opłata sądowa wynosi, zgodnie z § 11c ust. 1 ustawy nr 71/1992 Zb. o opłatach sądowych, 50% stawki procentowej określonej w taryfie opłat; stawka podstawowa według pozycji 1 lit. a taryfy wynosi 6% wartości przedmiotu sporu, a więc w tym postępowaniu 3%, jednak nie mniej niż 25 euro i nie więcej niż 25 000 euro, a w sprawach handlowych nie więcej niż 50 000 euro. Sąd nie wzywa wnioskodawcy do jej uiszczenia, a jeżeli opłata nie zostanie uiszczona w terminie 15 dni od złożenia wniosku, wniosek nie jest brany pod uwagę. Opłata sądowa od wniosku o wszczęcie egzekucji wynosi 25 euro według pozycji 13 lit. a taryfy. Wynik postępowania zależy od okoliczności konkretnej sprawy, w szczególności od sytuacji majątkowej dłużnika.",
+    "formOverline": "Bez zobowiązań",
+    "formTitle": "Prosimy przesłać nam dokumenty dotyczące roszczenia",
+    "formLead": "Prosimy napisać, którego przewozu dotyczy roszczenie i czego zleceniodawca nie zapłacił. Odezwiemy się i przedstawimy kolejne kroki. Wysłanie formularza nie powoduje nawiązania stosunku prawnego między adwokatem a klientem.",
+    "faqOverline": "FAQ",
+    "faqTitle": "Najczęściej zadawane pytania",
+    "faq": [
+      {
+        "q": "Ile mamy czasu na dochodzenie niezapłaconego przewoźnego?",
+        "a": "Zgodnie z art. 32 ust. 1 Konwencji CMR podstawowy termin przedawnienia wynosi jeden rok. Do roszczenia o zapłatę przewoźnego stosuje się lit. c: przedawnienie biegnie od upływu trzymiesięcznego terminu od dnia zawarcia umowy przewozu, a dnia, w którym bieg przedawnienia się rozpoczyna, nie wlicza się do terminu. Roszczenie może więc ulec przedawnieniu po upływie około piętnastu miesięcy od zawarcia umowy przewozu, a nie od terminu płatności faktury. To, czy do przewoźnego stosuje się ten termin, czy ogólny czteroletni termin z § 397 słowackiego Kodeksu handlowego, nie jest w praktyce prawniczej oceniane jednolicie, dlatego wskazane jest przyjmowanie krótszego terminu. Zgodnie z art. 32 ust. 2 Konwencji reklamacja pisemna zawiesza przedawnienie do dnia, w którym przewoźnik odrzuci ją na piśmie i zwróci załączone do niej dokumenty; wezwanie przedsądowe, którym przewoźnik sam dochodzi przewoźnego, nie jest objęte tym przepisem i nie zawiesza biegu przedawnienia – przed słowackim sądem termin przestaje biec, zgodnie z § 402 Kodeksu handlowego, dopiero z chwilą dochodzenia prawa przed sądem. Zgodnie z art. 32 ust. 4 Konwencji roszczenie przedawnione nie może być podnoszone także w drodze powództwa wzajemnego ani zarzutu (w tym zarzutu potrącenia)."
+      },
+      {
+        "q": "Czy możemy pozwać słowackiego zleceniodawcę na Słowacji?",
+        "a": "Zgodnie z art. 31 ust. 1 Konwencji CMR powód może wnieść sprawę między innymi do sądów kraju, w którym pozwany ma główną siedzibę, oraz do sądów kraju, w którym znajduje się miejsce przyjęcia towaru do przewozu lub miejsce przewidziane dla jego dostawy; do innych sądów sprawy wnosić nie można. Jeżeli dłużnik ma siedzibę w Republice Słowackiej albo towar został tu rozładowany, jurysdykcję mają sądy słowackie. Zgodnie z art. 31 ust. 5 Konwencji od obywateli umawiających się krajów, mających miejsce zamieszkania lub przedsiębiorstwo w jednym z tych krajów, nie można żądać kaucji na zabezpieczenie kosztów sądowych."
+      },
+      {
+        "q": "Jakie prawo jest właściwe, jeżeli go nie wybraliśmy?",
+        "a": "Konwencja CMR ma pierwszeństwo w zakresie, w jakim reguluje daną kwestię; wynika to z § 756 słowackiego Kodeksu handlowego, a art. 25 ust. 1 rozporządzenia Rzym I pozostawia stosowanie takich konwencji nienaruszone. Kwestie, których Konwencja nie reguluje – w tym samo roszczenie o zapłatę przewoźnego – podlegają prawu ustalonemu na podstawie art. 5 ust. 1 rozporządzenia Rzym I: prawu państwa, w którym przewoźnik ma miejsce zwykłego pobytu, pod warunkiem że w tym samym państwie znajduje się miejsce przyjęcia towaru do przewozu lub miejsce dostawy, lub miejsce zwykłego pobytu nadawcy; w przeciwnym razie – prawu państwa, w którym znajduje się uzgodnione miejsce dostawy."
+      },
+      {
+        "q": "Czy oprócz należności głównej możemy żądać odsetek i kosztów?",
+        "a": "Zgodnie z § 369 ust. 1 słowackiego Kodeksu handlowego wierzyciel, który wykonał swoje obowiązki ustawowe i umowne, ma prawo do odsetek za opóźnienie bez potrzeby odrębnego wezwania. Jeżeli stopa nie została uzgodniona, § 369 ust. 2 Kodeksu handlowego nakazuje stosować stopę określoną w rozporządzeniu Rządu Republiki Słowackiej nr 21/2013 Z. z.: zgodnie z § 1 ust. 1 jest to podstawowa stopa procentowa Europejskiego Banku Centralnego obowiązująca w pierwszym dniu danego półrocza kalendarzowego opóźnienia, powiększona o osiem punktów procentowych, albo – jeżeli wierzyciel wybierze wariant stały z § 1 ust. 2 – stopa podstawowa obowiązująca w pierwszym dniu opóźnienia, powiększona o dziewięć punktów procentowych. Aktualną stopę podstawową EBC trzeba sprawdzić na właściwy dzień. Obok odsetek § 369c ust. 1 Kodeksu handlowego przyznaje wierzycielowi prawo do zryczałtowanej rekompensaty za koszty odzyskiwania należności; zgodnie z § 2 rozporządzenia Rządu nr 21/2013 Z. z. wynosi ona 40 euro, jednorazowo, niezależnie od długości opóźnienia."
+      },
+      {
+        "q": "Jak szybko sąd rozstrzyga i co się dzieje, gdy dłużnik wniesie sprzeciw?",
+        "a": "W postępowaniu upominawczym na podstawie ustawy nr 307/2016 Z. z. sąd wydaje nakaz zapłaty najpóźniej w terminie dziesięciu dni roboczych od spełnienia przesłanek procesowych, w tym uiszczenia opłaty sądowej. Od doręczenia nakazu zapłaty pozwany ma 15 dni na zapłatę albo na wniesienie sprzeciwu, który musi zawierać merytoryczne uzasadnienie; sprzeciw bez merytorycznego uzasadnienia sąd odrzuca. Jeżeli sprzeciw nie zostanie wniesiony, nakaz zapłaty ma skutki prawomocnego wyroku. Jeżeli sprzeciw zostanie wniesiony, trzeba się do niego ustosunkować w terminie 15 dni i w tym samym terminie złożyć wniosek o dalsze prowadzenie postępowania przed sądem właściwym według Kodeksu postępowania cywilnego spornego – w przeciwnym razie postępowanie zostaje umorzone."
+      },
+      {
+        "q": "Co, jeżeli dłużnik nie ma majątku?",
+        "a": "Egzekucję prowadzi komornik wyznaczony w drodze losowania przez Sąd Rejonowy Banská Bystrica; wierzyciel nie wybiera komornika. Jeżeli dłużnik od ponad 90 dni pozostaje w opóźnieniu z co najmniej dwoma zobowiązaniami pieniężnymi wobec więcej niż jednego wierzyciela i został przez jednego z tych wierzycieli pisemnie wezwany do zapłaty, można, zgodnie z § 11 ust. 3 ustawy nr 7/2005 Z. z., zasadnie przyjąć jego niewypłacalność i złożyć wniosek o ogłoszenie upadłości. Zgodnie z § 11a ust. 1 tej ustawy osoba zobowiązana do złożenia w imieniu dłużnika wniosku o ogłoszenie upadłości odpowiada za szkodę wyrządzoną wierzycielom dłużnika niezłożeniem wniosku w terminie; zgodnie z § 11a ust. 3, o ile nie zostanie wykazana inna kwota, przyjmuje się, że szkoda odpowiada kwocie wierzytelności, która pozostała niezaspokojona po umorzeniu postępowania upadłościowego z powodu braku majątku, po uchyleniu upadłości z powodu braku majątku albo po zakończeniu egzekucji przeciwko dłużnikowi z powodu braku majątku. Zgodnie z § 11a ust. 4 roszczenia wierzyciela z tytułu tej odpowiedzialności przedawniają się nie wcześniej niż po upływie roku od umorzenia postępowania upadłościowego z powodu braku majątku, od uchylenia upadłości z powodu braku majątku albo od zakończenia egzekucji przeciwko dłużnikowi z powodu braku majątku."
+      }
+    ],
+    "relatedTitle": "Powiązane tematy",
+    "sourcesTitle": "Przepisy, na których opiera się ta strona",
+    "sourcesLead": "Pełne teksty aktów są dostępne w serwisach Slov-Lex i EUR-Lex. Powyższe informacje mają charakter ogólny i nie zastępują porady w indywidualnej sprawie.",
+    "sources": [
+      {
+        "label": "Obwieszczenie (vyhláška) Ministra Spraw Zagranicznych nr 11/1975 Zb. – Konwencja CMR",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1975/11/"
+      },
+      {
+        "label": "Ustawa nr 513/1991 Zb. – słowacki Kodeks handlowy (Obchodný zákonník)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "Rozporządzenie Rządu Republiki Słowackiej nr 21/2013 Z. z.",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2013/21/"
+      },
+      {
+        "label": "Ustawa nr 307/2016 Z. z. o postępowaniu upominawczym",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2016/307/"
+      },
+      {
+        "label": "Ustawa nr 71/1992 Zb. o opłatach sądowych",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "Ustawa nr 233/1995 Z. z. – słowacki Kodeks egzekucyjny (Exekučný poriadok)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1995/233/"
+      },
+      {
+        "label": "Ustawa nr 7/2005 Z. z. o upadłości i restrukturyzacji",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/7/"
+      },
+      {
+        "label": "Rozporządzenie (vyhláška) nr 655/2004 Z. z. o wynagrodzeniach adwokatów",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/655/"
+      },
+      {
+        "label": "Rozporządzenie (WE) nr 593/2008 – Rzym I",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008R0593"
+      },
+      {
+        "label": "Rozporządzenie (UE) nr 1215/2012 – Bruksela I bis",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32012R1215"
+      },
+      {
+        "label": "Rozporządzenie (WE) nr 1896/2006 – europejski nakaz zapłaty",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006R1896"
+      }
+    ]
+  },
+  "cfr": {
+    "metaTitle": "Założenie spółki i zezwolenie na pobyt dla zagranicznych przedsiębiorców",
+    "metaDescription": "Założenie słowackiej s.r.o. oraz zezwolenie na pobyt lub Niebieska Karta UE, które pozwalają nią kierować – prowadzone razem, według prawa słowackiego. Kancelaria adwokacka – Zvolen, Słowacja; obsługa zdalna.",
+    "heroOverline": "Dla zagranicznych przedsiębiorców i pracowników",
+    "heroTitle": "Założenie spółki i zezwolenie na pobyt – prowadzone jako jedna sprawa",
+    "heroLead": "Słowacką s.r.o. łatwo założyć zdalnie. Kierowanie nią jako członek zarządu (konateľ) spoza UE lub OECD już takie łatwe nie jest – wymaga odrębnego zezwolenia na pobyt, o które występuje się na podstawie innej części tej samej ustawy. Prowadzimy obie sprawy razem, aby jedna nie czekała na drugą.",
+    "heroPara": [
+      "Działamy na rzecz założycieli słowackich spółek, pracowników o wysokich kwalifikacjach ubiegających się o Niebieską Kartę UE oraz obywateli państw trzecich ubiegających się o zezwolenie na pobyt w związku z pracą.",
+      "Doradzamy wyłącznie w zakresie prawa słowackiego i reprezentujemy Państwa przed słowackim rejestrem handlowym, urzędem skarbowym i policją ds. cudzoziemców (cudzinecká polícia)."
+    ],
+    "heroCta": "Opisz swoją sytuację",
+    "whoOverline": "Dla kogo",
+    "whoTitle": "Trzy punkty wyjścia, jeden cel",
+    "whoLead": "Właściwa procedura zależy od tego, w jakim charakterze mają Państwo przebywać na Słowacji – jako członek zarządu, jako pracownik czy jako specjalista o wysokich kwalifikacjach. Zanim cokolwiek złożymy, ustalamy, która z nich pasuje.",
+    "who": [
+      {
+        "title": "Członkowie zarządu spoza UE, EOG i OECD",
+        "desc": "Obywatel państwa członkowskiego UE, państwa EOG lub państwa OECD jest wpisywany jako członek zarządu bez żadnego dowodu pobytu. W przypadku pozostałych osób sąd rejestrowy sprawdza przed wpisem słowackie zezwolenie na pobyt – a dotyczy to każdej osoby uprawnionej do działania w imieniu spółki lub za spółkę, a więc także prokurenta czy kierownika oddziału. To najczęstsza przeszkoda przy zakładaniu spółki dla założyciela spoza UE."
+      },
+      {
+        "title": "Pracownicy o wysokich kwalifikacjach – Niebieska Karta UE",
+        "desc": "Uznany dyplom ukończenia studiów wyższych – a w wybranych zawodach z branży ICT trzy lata doświadczenia zawodowego zdobytego w ciągu poprzednich siedmiu lat – stosunek pracy uzgodniony na co najmniej sześć miesięcy oraz wynagrodzenie powyżej ustawowego progu pozwalają skorzystać z przyspieszonej procedury Niebieskiej Karty UE."
+      },
+      {
+        "title": "Pobyt w celu zatrudnienia",
+        "desc": "Jeżeli stanowisko nie spełnia warunków Niebieskiej Karty, występujemy o standardowe zezwolenie na pobyt czasowy (prechodný pobyt) w celu zatrudnienia, w tym w ramach przeniesienia wewnątrz przedsiębiorstwa."
+      },
+      {
+        "title": "Istniejące spółki z zablokowanym członkiem zarządu",
+        "desc": "Jeżeli Państwa słowacka s.r.o. jest już założona, ale jej członek zarządu spoza UE nie może uzyskać lub przedłużyć pobytu, sprawdzamy, dlaczego wniosek się nie powiódł, i składamy go ponownie."
+      }
+    ],
+    "keyOverline": "Trzy ścieżki prawne",
+    "keyTitle": "Które zezwolenie dotyczy Państwa",
+    "keyLead": "Wszystkie trzy ścieżki opierają się na tej samej ustawie o pobycie cudzoziemców, ale warunki, wymagane dowody i okres ważności zezwolenia wyraźnie się między nimi różnią.",
+    "key": [
+      {
+        "title": "Pobyt czasowy w celu prowadzenia działalności gospodarczej",
+        "desc": "Zgodnie z § 22 ust. 1 ustawy nr 404/2011 Z. z. o pobycie cudzoziemców zezwolenia tego udziela się obywatelowi państwa trzeciego, który prowadzi lub będzie prowadzić na Słowacji działalność gospodarczą jako osoba fizyczna (lit. a) albo który działa lub będzie działać w imieniu spółki handlowej lub spółdzielni, nie pozostając z nią w stosunku pracy (lit. b) – w praktyce jest to członek zarządu. Od 1 lipca 2025 r. udziela się go na stały okres trzech lat (§ 22 ust. 2), a nie na przewidywany czas prowadzenia działalności. Oprócz tego trzeba wykazać zabezpieczenie finansowe działalności gospodarczej na wydzielonym rachunku firmowym: stukrotność minimum egzystencji (životné minimum) w przypadku członka zarządu, dwudziestokrotność w przypadku osoby fizycznej prowadzącej działalność gospodarczą oraz czterdziestokrotność w przypadku członka zarządu, którego biznesplan został oceniony jako projekt innowacyjny (§ 32 ust. 7). Zabezpieczenie finansowe samego pobytu to dodatkowo dwunastokrotność minimum egzystencji (§ 32 ust. 14).",
+        "note": "Przesłanki przedłużenia zmieniły się 15 lipca 2026 r. (ustawa zmieniająca nr 128/2026 Z. z.). W przypadku członka zarządu nie ocenia się już zysku spółki po opodatkowaniu; liczy się faktycznie zapłacony podatek, co najmniej w wysokości minimalnego podatku od osób prawnych według § 46b ust. 2 ustawy o podatku dochodowym (§ 34 ust. 6). Osoba fizyczna prowadząca działalność gospodarczą wykazuje natomiast dochody podlegające opodatkowaniu powyżej progu z § 32 ust. 1 ustawy o podatku dochodowym (§ 34 ust. 5). Starsze źródła nadal podają dwudziestokrotność lub sześćdziesięciokrotność minimum egzystencji – to stan prawny do 14 lipca 2026 r. Pod kątem nowych przesłanek trzeba zaplanować już pierwsze zeznanie podatkowe spółki, a nie dopiero wniosek o przedłużenie."
+      },
+      {
+        "title": "Niebieska Karta UE",
+        "desc": "Niebieską Kartę regulują § 37–41 ustawy, transponujące dyrektywę (UE) 2021/1883. Zgodnie z § 37 ust. 3 obejmuje ona zatrudnienie wymagające wyższych kwalifikacji zawodowych, z miesięcznym wynagrodzeniem w wysokości co najmniej 1,2-krotności przeciętnego miesięcznego wynagrodzenia pracownika w gospodarce Republiki Słowackiej za rok kalendarzowy poprzedzający rok złożenia wniosku; jeżeli wnioskodawca uzyskał dyplom nie wcześniej niż trzy lata przed złożeniem wniosku, wystarczy samo przeciętne wynagrodzenie. Kwalifikacje wykazuje się decyzją o uznaniu dyplomu ukończenia studiów wyższych – a w zawodach wymienionych w załączniku nr 3 do ustawy (kierownicy i specjaliści ICT) dowodem wyższych umiejętności zawodowych nabytych w okresie co najmniej trzech lat w ciągu siedmiu lat poprzedzających złożenie wniosku (§ 37 ust. 5).",
+        "note": "Organ policji wydaje decyzję w terminie 30 dni od otrzymania kompletnego wniosku (§ 38 ust. 7) – wobec 60 dni przy standardowym pobycie w celu zatrudnienia. Stosunek pracy musi być uzgodniony na co najmniej sześć miesięcy; warunek ten wynika nie z ustawy o pobycie cudzoziemców, lecz z § 21a ust. 4 lit. d ustawy nr 5/2004 Z. z. o służbach zatrudnienia. Niebieska Karta daje też mobilność zawodową w całej UE i krótszą drogę do pobytu stałego – warto ją rozważyć także wtedy, gdy dostępne byłoby również standardowe zezwolenie na pracę."
+      },
+      {
+        "title": "Pobyt czasowy w celu zatrudnienia",
+        "desc": "Ścieżkę standardową reguluje § 23 ustawy: pracodawca najpierw zgłasza wolne miejsce pracy, urząd pracy wydaje potwierdzenie możliwości jego obsadzenia i dopiero wtedy organ policji decyduje o pobycie. Zezwolenia udziela się na przewidywany czas zatrudnienia, najdłużej na pięć lat (§ 23 ust. 3). Przy przeniesieniu wewnątrz przedsiębiorstwa jest to najdłużej trzy lata w przypadku kierownika lub specjalisty i najdłużej rok w przypadku pracownika odbywającego staż (§ 23 ust. 5). Zatrudnienie sezonowe jest ograniczone do 240 dni w ciągu 12 kolejnych miesięcy (§ 23 ust. 4).",
+        "note": "Organ policji wydaje decyzję w terminie 60 dni od otrzymania kompletnego wniosku (§ 33 ust. 8 lit. b); jeżeli chodzi o zawód z uznanym niedoborem pracowników w danym regionie, termin wynosi 30 dni (§ 33 ust. 8 lit. c). Decyzję poprzedza zgłoszenie wolnego miejsca pracy i uzyskanie potwierdzenia urzędu pracy, dlatego cały harmonogram trzeba planować w miesiącach, a nie w tygodniach – a dokumenty uzyskiwać na tyle późno, aby w chwili składania wniosku były jeszcze ważne."
+      }
+    ],
+    "stepsOverline": "Tryb postępowania",
+    "stepsTitle": "Jak obie sprawy przebiegają razem",
+    "steps": [
+      {
+        "title": "Ocena",
+        "desc": "Ustalamy, która z trzech ścieżek odpowiada Państwa sytuacji, jak powinna wyglądać struktura słowackiej spółki i jakich dowodów zażąda każdy z urzędów."
+      },
+      {
+        "title": "Założenie spółki",
+        "desc": "Jeżeli spółka jeszcze nie istnieje, sporządzamy akt założycielski lub umowę spółki i autoryzujemy je jako adwokaci – od 17 sierpnia 2026 r. jest to, obok aktu notarialnego, jedyna dopuszczalna forma (§ 57 słowackiego Kodeksu handlowego – Obchodný zákonník). Do podpisu nie trzeba przyjeżdżać na Słowację: za Państwa podpisuje pełnomocnik na podstawie pełnomocnictwa z urzędowo poświadczonym podpisem (§ 57 ust. 2). Wniosek o wpis składamy elektronicznie; sąd rejestrowy wpisuje spółkę w terminie dwóch dni roboczych od otrzymania kompletnego wniosku (§ 58 ust. 1 ustawy nr 29/2026 Z. z.)."
+      },
+      {
+        "title": "Wniosek o pobyt",
+        "desc": "Przygotowujemy dokumentację wniosku, w tym zaświadczenia od spółki, i składamy ją w policji ds. cudzoziemców. W razie potrzeby przeprowadzimy Państwa przez poświadczanie dokumentów za granicą lub uzyskanie apostille."
+      },
+      {
+        "title": "Decyzja i rejestracja",
+        "desc": "Po udzieleniu pobytu zajmujemy się tym, co następuje po stronie spółki – firmowym rachunkiem bankowym, rejestracją podatkową i, w razie potrzeby, siedzibą."
+      },
+      {
+        "title": "Przedłużenie",
+        "desc": "Pilnujemy terminów przedłużenia i dowodów wymaganych na każdej ścieżce – dochodu podlegającego opodatkowaniu, zapłaconego podatku lub progu wynagrodzenia dla Niebieskiej Karty – aby zezwolenie nie wygasło."
+      }
+    ],
+    "docsOverline": "Dokumenty",
+    "docsTitle": "Czego zwykle potrzebujemy",
+    "docsLead": "Dokładna lista zależy od tego, która ścieżka ma zastosowanie; tych pięć pozycji wystarcza na początek w większości spraw.",
+    "docs": [
+      "Ważny dokument podróży, którego ważność upływa nie wcześniej niż sześć miesięcy po planowanym zakończeniu pobytu.",
+      "Zaświadczenie o niekaralności z kraju pochodzenia (oraz z każdego kraju pobytu w ostatnich trzech latach), w razie potrzeby opatrzone apostille lub w inny sposób zalegalizowane – w dniu złożenia wniosku nie starsze niż 90 dni.",
+      "Dowód zapewnionego zakwaterowania na Słowacji.",
+      "Dla ścieżki biznesowej: odpis ze słowackiego rejestru handlowego (po założeniu spółki) lub projekty dokumentów założycielskich; przy założeniu zdalnym – pełnomocnictwo z urzędowo poświadczonym podpisem, w razie potrzeby opatrzone apostille lub w inny sposób zalegalizowane.",
+      "Dla ścieżek pracowniczych: umowa o pracę lub pisemne przyrzeczenie zatrudnienia od pracodawcy, a w przypadku Niebieskiej Karty – dowód kwalifikacji: decyzja o uznaniu dyplomu ukończenia studiów wyższych albo dowód wyższych umiejętności zawodowych w zawodach ICT wymienionych w załączniku nr 3 do ustawy."
+    ],
+    "priceOverline": "Wynagrodzenie",
+    "priceTitle": "Ile to kosztuje",
+    "priceLead": "Zakres i wynagrodzenie uzgadniamy z góry i na piśmie, osobno dla każdej części sprawy.",
+    "price": [
+      {
+        "label": "Założenie spółki",
+        "value": "299 € – ryczałt",
+        "desc": "Pełne założenie spółki, w tym autoryzacja dokumentów założycielskich przez adwokata, złożenie wniosku do rejestru handlowego i uzyskanie uprawnień do prowadzenia działalności gospodarczej (živnosť) – to samo wynagrodzenie, które podajemy dla każdej słowackiej s.r.o. Opłata sądowa za pierwszy wpis w wysokości 220 € jest płatna osobno."
+      },
+      {
+        "label": "Wniosek o zezwolenie na pobyt",
+        "value": "stałe wynagrodzenie uzgodnione z góry",
+        "desc": "Ocena, która ścieżka ma zastosowanie, przygotowanie wniosku i reprezentowanie Państwa przed policją ds. cudzoziemców. Wynagrodzenie podajemy, gdy tylko wiemy, która z trzech ścieżek odpowiada Państwa sprawie."
+      },
+      {
+        "label": "Koszty osób trzecich",
+        "value": "rozliczane osobno, w rzeczywistej wysokości",
+        "desc": "Opłaty sądowe i administracyjne, w razie potrzeby tłumaczenia przysięgłe oraz adres siedziby, jeżeli Państwo z niego korzystają – zob. poniżej."
+      }
+    ],
+    "priceNote": "Zastępstwo prawne prowadzimy sami; księgowości, adresu siedziby, pośrednictwa pracy ani wyszukiwania zakwaterowania nie świadczymy we własnym zakresie. Jeżeli potrzebują Państwo którejś z tych usług, wskażemy niezależnego dostawcę mającego własną licencję, a jego faktura jest odrębna od naszej – nigdy nie jest wliczana w nasze wynagrodzenie. Dzięki temu każda usługa pozostaje pod licencją, która ją rzeczywiście obejmuje, a nasze doradztwo jest wolne od jakiegokolwiek interesu prowizyjnego.",
+    "formOverline": "Bez zobowiązań",
+    "formTitle": "Prosimy opisać swoją sytuację",
+    "formLead": "Prosimy napisać, czy mają już Państwo słowacką spółkę, jaka jest lub będzie Państwa rola w niej oraz skąd składają Państwo wniosek. Odezwiemy się i wskażemy, która ścieżka ma zastosowanie. Wysłanie formularza nie powoduje nawiązania stosunku prawnego między adwokatem a klientem.",
+    "faqOverline": "FAQ",
+    "faqTitle": "Najczęściej zadawane pytania",
+    "faq": [
+      {
+        "q": "Czy mogę być właścicielem słowackiej spółki, nie mieszkając na Słowacji?",
+        "a": "Tak. Posiadanie udziału nie wiąże się dla nikogo z warunkiem pobytu – u założyciela i wspólnika s.r.o. sąd rejestrowy sprawdza przeszkody podatkowe i egzekucyjne, a nie pobyt. Warunek pobytu dotyczy osoby uprawnionej do działania w imieniu spółki, zazwyczaj członka zarządu: zgodnie z § 51 ust. 4 ustawy nr 29/2026 Z. z. o rejestrze handlowym sąd rejestrowy sprawdza przed wpisem, czy osoba ta ma słowackie zezwolenie na pobyt, chyba że jest obywatelem państwa członkowskiego UE, państwa EOG lub państwa OECD. Samo zezwolenie uzyskuje się następnie jako pobyt czasowy w celu prowadzenia działalności gospodarczej na podstawie § 22 ustawy nr 404/2011 Z. z. Wspólnik, który nie jest członkiem zarządu, nie potrzebuje żadnego zezwolenia. Trzeba pamiętać, że jest to warunek wpisu do rejestru handlowego; w przypadku działalności rzemieślniczych i regulowanych (remeselné a viazané živnosti) odpowiedzialny przedstawiciel (zodpovedný zástupca) musi dodatkowo mieć miejsce zamieszkania na Słowacji lub inne uprawnienie do pobytu na jej terytorium (§ 11 ust. 3 ustawy o działalności gospodarczej – živnostenský zákon) – to odrębny warunek."
+      },
+      {
+        "q": "Czy do założenia spółki muszę iść do notariusza?",
+        "a": "Niekoniecznie. Od 17 sierpnia 2026 r. umowa spółki i akt założycielski muszą być sporządzone albo w formie aktu notarialnego, albo w formie dokumentu autoryzowanego przez adwokata (§ 57 ust. 1 i 3 Kodeksu handlowego w brzmieniu ustawy nr 29/2026 Z. z.). Autoryzacja oznacza, że adwokat sporządza dokument, ustala tożsamość strony i ewentualnego pełnomocnika oraz ocenia zgodność czynności z prawem (§ 1a ust. 2 ustawy nr 586/2003 Z. z. o adwokaturze); dokument jest tego samego dnia składany w rejestrze autoryzacji Słowackiej Izby Adwokackiej. Jeżeli dokument jest autoryzowany przez adwokata, urzędowe poświadczenie podpisów nie jest wymagane (§ 50 ust. 4 ustawy nr 29/2026 Z. z.). Akt notarialny pozostaje obowiązkowy dla późniejszych uchwał zgromadzenia wspólników wieloosobowej s.r.o. dotyczących członków zarządu lub zmian w udziałach (§ 127a ust. 4 Kodeksu handlowego)."
+      },
+      {
+        "q": "Czy najpierw trzeba założyć spółkę, a potem wystąpić o pobyt, czy odwrotnie?",
+        "a": "W praktyce spółka musi istnieć albo przynajmniej być zgłoszona do rejestru, zanim we wniosku o pobyt da się wykazać, czym członek zarządu będzie się zajmował na Słowacji. Układamy obie sprawy tak, aby dokumentacja pobytowa była gotowa do złożenia, gdy tylko spółka zostanie wpisana, a nie dopiero później."
+      },
+      {
+        "q": "Czym różni się Niebieska Karta UE od standardowego zezwolenia na pracę?",
+        "a": "Oba tytuły uprawniają do zatrudnienia, ale Niebieska Karta jest zastrzeżona dla stanowisk spełniających warunki dotyczące kwalifikacji i wynagrodzenia z § 37 i nast. ustawy nr 404/2011 Z. z. (transponujących dyrektywę (UE) 2021/1883): uznany dyplom ukończenia studiów wyższych – a w zawodach ICT wymienionych w załączniku nr 3 do ustawy trzy lata doświadczenia zawodowego zdobytego w ciągu poprzednich siedmiu lat – oraz wynagrodzenie w wysokości co najmniej 1,2-krotności przeciętnego miesięcznego wynagrodzenia pracownika w gospodarce Republiki Słowackiej za poprzedni rok kalendarzowy albo samo przeciętne wynagrodzenie w przypadku absolwenta w ciągu trzech lat od uzyskania dyplomu. Stosunek pracy musi być uzgodniony na co najmniej sześć miesięcy (§ 21a ust. 4 lit. d ustawy nr 5/2004 Z. z.). Jeżeli stanowisko spełnia warunki, decyzja w sprawie Niebieskiej Karty zapada w ciągu 30 dni wobec 60 dni przy standardowym pobycie w celu zatrudnienia, a Karta daje mobilność w całej UE i łatwiejszą drogę do pobytu stałego."
+      },
+      {
+        "q": "Czy moja rodzina może przyjechać ze mną?",
+        "a": "Łączenie rodzin jest możliwe zarówno na ścieżce biznesowej, jak i pracowniczej oraz przy Niebieskiej Karcie, przy czym droga przez Niebieską Kartę jest na ogół najprostsza. Oceniamy je razem z głównym wnioskiem, a nie dopiero na końcu."
+      },
+      {
+        "q": "Czy zajmują się Państwo księgowością, adresem siedziby, zezwoleniem na pracę dla zatrudnianych przeze mnie pracowników albo szukaniem zakwaterowania?",
+        "a": "Nie – nie pod własnym dachem, i to celowo. Każda z tych usług jest odrębnie regulowaną działalnością – księgowość wymaga własnej rejestracji, odpłatne pośrednictwo pracy wymaga zezwolenia wydanego przez urząd pracy na podstawie ustawy nr 5/2004 Z. z., a podmiot udostępniający adres siedziby ma własne obowiązki zgłoszeniowe oraz, od czerwca 2026 r., obowiązek rejestracji w systemie goAML. Wskażemy dostawcę mającego odpowiednią licencję, który wystawia Państwu fakturę osobno – nie doliczamy do niej marży ani nie pobieramy prowizji za polecenie."
+      },
+      {
+        "q": "Ile trwa cały proces?",
+        "a": "Samo założenie spółki trwa od jednego do dwóch tygodni od podpisania dokumentów. Decyzję o pobycie wiążą terminy ustawowe z § 33 ust. 8 ustawy nr 404/2011 Z. z., a w przypadku Niebieskiej Karty z § 38 ust. 7: 30 dni dla Niebieskiej Karty, 60 dni dla pobytu w celu zatrudnienia i 90 dni dla pozostałych celów, w tym działalności gospodarczej. Terminy te zaczynają biec dopiero wtedy, gdy wniosek jest kompletny, a najpierw trzeba uzyskać dokumenty z zagranicy. Dlatego zalecamy rozpoczęcie działań na trzy do czterech miesięcy przed dniem, od którego chcą Państwo prowadzić działalność na Słowacji."
+      }
+    ],
+    "relatedTitle": "Powiązane tematy",
+    "sourcesTitle": "Przepisy, na których opiera się ta strona",
+    "sourcesLead": "Stan prawny na dzień 23 sierpnia 2026 r.; ustawę nr 404/2011 Z. z. przytaczamy w brzmieniu obowiązującym od 15 lipca 2026 r., a obok niej ustawę nr 29/2026 Z. z. o rejestrze handlowym, która 17 sierpnia 2026 r. zastąpiła ustawę nr 530/2003 Z. z. Pełne teksty aktów są dostępne w serwisach Slov-Lex i EUR-Lex. Progi powiązane z minimum egzystencji lub przeciętnym wynagrodzeniem zmieniają się co roku – aktualną wartość trzeba sprawdzić na dzień złożenia wniosku. Powyższe informacje mają charakter ogólny i nie zastępują porady w indywidualnej sprawie.",
+    "sources": [
+      {
+        "label": "Ustawa nr 404/2011 Z. z. o pobycie cudzoziemców",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2011/404/"
+      },
+      {
+        "label": "Dyrektywa (UE) 2021/1883 – Niebieska Karta UE",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021L1883"
+      },
+      {
+        "label": "Ustawa nr 513/1991 Zb. – słowacki Kodeks handlowy (Obchodný zákonník)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "Ustawa nr 29/2026 Z. z. o rejestrze handlowym (obowiązuje od 17 sierpnia 2026 r.)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/29/"
+      },
+      {
+        "label": "Ustawa nr 586/2003 Z. z. o adwokaturze – § 1a–1ac, autoryzacja dokumentów",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2003/586/"
+      },
+      {
+        "label": "Ustawa nr 71/1992 Zb. o opłatach sądowych – pozycja 17 taryfy",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "Rozporządzenie (vyhláška) Ministerstwa Sprawiedliwości nr 203/2026 Z. z. o dokumentach do wpisu",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/203/"
+      },
+      {
+        "label": "Ustawa nr 5/2004 Z. z. o służbach zatrudnienia",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/5/"
+      },
+      {
+        "label": "Ustawa nr 297/2008 Z. z. o ochronie przed praniem pieniędzy",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2008/297/"
+      }
+    ]
+  },
+  "consent": {
+    "text": "Używamy plików cookie – niezbędnych do działania strony oraz, za Państwa zgodą, analitycznych i marketingowych.",
+    "more": "Polityka plików cookie",
+    "acceptAll": "Akceptuję wszystkie",
+    "essential": "Tylko niezbędne",
+    "manage": "Zmień ustawienia plików cookie"
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "text": "Strona, której Państwo szukają, nie istnieje lub została przeniesiona.",
+    "back": "Powrót na stronę główną"
+  }
+}

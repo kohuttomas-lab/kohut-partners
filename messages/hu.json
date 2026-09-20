@@ -1,1 +1,669 @@
-{}
+{
+  "nav": {
+    "home": "Főoldal",
+    "services": "Szolgáltatások",
+    "shop": "Webáruház",
+    "about": "Az irodáról",
+    "blog": "Blog",
+    "contact": "Kapcsolat",
+    "international": "Külföldi ügyfelek"
+  },
+  "common": {
+    "cta": "Konzultáció foglalása",
+    "ctaShort": "Konzultáció",
+    "servDetailCta": "Részletek",
+    "servAll": "Összes szolgáltatás",
+    "from": "induló ár",
+    "withVat": "áfával",
+    "orderBtn": "Megrendelés",
+    "readMore": "Cikk elolvasása",
+    "readTime": "perc olvasás",
+    "backToBlog": "Vissza a bloghoz",
+    "areaOther": "Egyéb",
+    "langSwitch": "SK",
+    "sending": "Küldés…",
+    "formError": "Hiba történt. Kérjük, próbálja meg újra, vagy hívjon fel minket."
+  },
+  "home": {
+    "overline": "Szlovák ügyvédi iroda · Zvolen (Zólyom), Szlovákia",
+    "heroBadge": "Szlovák Ügyvédi Kamara · Zvolen",
+    "heroTitle": "Az Ön ügyvédje a szlovák jogban.",
+    "heroLead": "Külföldi ügyfeleknek adunk tanácsot a szlovák jogról, angolul vagy szlovákul: ingatlanvásárlás, cégalapítás, követelésbehajtás, fizetésképtelenségi ügyek és szlovák bíróságok előtti jogviták – érthető tanácsadás, gyors ügyintézés és előre ismert ár.",
+    "heroPrimary": "Konzultáció foglalása",
+    "heroSecondary": "Jogi webáruház",
+    "heroChips": [
+      "Fix ár",
+      "Válasz 24 órán belül",
+      "Angolul és szlovákul kommunikálunk"
+    ],
+    "trustLabel": "Megbíznak bennünk vállalkozók, cégek és befektetők – szlovákok és külföldiek egyaránt",
+    "stats": [
+      {
+        "value": "20",
+        "label": "év gyakorlat"
+      },
+      {
+        "value": "2400+",
+        "label": "lezárt ügy"
+      },
+      {
+        "value": "6",
+        "label": "jogterület"
+      },
+      {
+        "value": "8",
+        "label": "csapattag (4 ügyvéd)"
+      }
+    ],
+    "servOverline": "Jogterületek · szlovák jog",
+    "servTitle": "Miben segítünk külföldi ügyfeleknek Szlovákiában",
+    "servLead": "Kizárólag a szlovák jogban adunk tanácsot – az ingatlanvásárlástól a szlovák bíróságok előtti jogvitákig. Válasszon területet, és megtudja, pontosan mit intézünk, milyen áron, és hogyan dolgozunk együtt.",
+    "whyOverline": "Így dolgozunk",
+    "whyTitle": "Három lépés az egyértelmű megoldásig",
+    "why": [
+      {
+        "title": "Foglaljon konzultációt",
+        "desc": "Online videohívásban vagy személyesen – angolul vagy szlovákul. Válasszon időpontot, és írja le a helyzetét; az első választ 24 órán belül megkapja."
+      },
+      {
+        "title": "Megállapodunk a tervben és az árban",
+        "desc": "A szlovák jog szerinti megoldást és előre rögzített fix árat javaslunk. Nincsenek óradíjas meglepetések."
+      },
+      {
+        "title": "Elintézzük",
+        "desc": "Eljárunk Ön helyett a szlovák bíróságok és hatóságok előtt, és minden lépésről tájékoztatjuk – az ügyek többségében nem kell Szlovákiába utaznia."
+      }
+    ],
+    "teamOverline": "Csapatunk",
+    "teamTitle": "Akik Ön mellett állnak",
+    "teamLead": "Összeszokott ügyvédi csapat, valós tapasztalattal a fizetésképtelenségi jogban, a társasági jogban és a peres eljárásokban.",
+    "teamCta": "Ismerje meg a teljes csapatot",
+    "ctaBandTitle": "Jogi ügye van Szlovákiában? Kezdjük el még ma.",
+    "ctaBandLead": "Az első konzultáció kötelezettség nélküli – online vagy személyesen az irodánkban, angolul vagy szlovákul. Válasszon Önnek megfelelő időpontot.",
+    "ctaBandBtn": "Konzultáció foglalása"
+  },
+  "team": {
+    "photoSlot": "Fénykép helye"
+  },
+  "services": {
+    "heroTitle": "Jogi szolgáltatások a szlovák jog szerint",
+    "heroLead": "A szlovákiai ingatlanvásárlástól a válságba került cég megmentéséig. Kizárólag a szlovák jogban adunk tanácsot – átlátható folyamattal és fix áron.",
+    "whatWeSolve": "Amit Ön helyett elintézünk",
+    "packages": "Fix árú csomagok",
+    "packagesLead": "Egyes szolgáltatások online, ismert áron rendelhetők meg. Az összetettebb ügyeket konzultációt követően vállaljuk.",
+    "faqTitle": "Gyakran ismételt kérdések",
+    "bookForThis": "Konzultáció erről a területről",
+    "deepTopics": "Speciális témák:",
+    "deepCmr": "CMR szerinti fuvardíj-követelések behajtása",
+    "deepCfr": "Cégalapítás és tartózkodási engedély külföldieknek",
+    "packageCta": "Érdekel"
+  },
+  "about": {
+    "heroOverline": "Az irodáról",
+    "heroTitle": "Szlovák ügyvédi iroda, amely érthetően fogalmaz.",
+    "heroLead": "Egyszerű meggyőződéssel indultunk: a jog legyen az ügyfél számára érthető, kiszámítható és tisztességes. Húsz év gyakorlat után ez ma is érvényes – és ma külföldi ügyfeleknek adunk tanácsot a szlovák jogról, angolul vagy szlovákul.",
+    "valuesOverline": "Értékeink",
+    "valuesTitle": "Amit képviselünk",
+    "values": [
+      {
+        "title": "Érthetőség",
+        "desc": "Úgy magyarázunk, hogy Ön minden döntést értsen. Üres paragrafusok nélkül."
+      },
+      {
+        "title": "Kiszámíthatóság",
+        "desc": "Az árat és a tervet előre ismeri, így nyugodtan dönthet."
+      },
+      {
+        "title": "Eredmény",
+        "desc": "Azért vagyunk, hogy az ügyét megoldjuk – nem azért, hogy elhúzzuk."
+      }
+    ],
+    "storyTitle": "Történetünk",
+    "story": [
+      "Az irodát 2011-ben alapítottuk azzal a céllal, hogy másképp műveljük a jogot – közelebb a vállalkozóhoz, távolabb a fölösleges bonyolultságtól.",
+      "Ma összeszokott csapatként kísérjük a cégeket az alapítástól a növekedésen át a válsághelyzetekig. Fő területeink a fizetésképtelenségi jog, a társasági és az IT-jog, az ingatlanjog és a peres eljárások.",
+      "Meggyőződésünk, hogy az a legjobb ügyvéd, akit az ügyfél megért. Ezért minden ügyet közérthetően magyarázunk el, és az árat előre közöljük."
+    ]
+  },
+  "contact": {
+    "overline": "Kapcsolat",
+    "title": "Lépjen velünk kapcsolatba",
+    "lead": "Töltse ki az űrlapot, és egy munkanapon belül válaszolunk – angolul vagy szlovákul. Vagy foglaljon azonnal videokonzultációt.",
+    "fName": "Teljes név",
+    "fEmail": "E-mail",
+    "fPhone": "Telefon",
+    "fArea": "Jogterület",
+    "fMsg": "Miben segíthetünk?",
+    "fAreaPlaceholder": "Válasszon területet…",
+    "fSource": "Hogyan talált ránk?",
+    "fSourcePlaceholder": "Nem kötelező – nekünk segít",
+    "fSourceSearch": "Kereső (Google, Bing…)",
+    "fSourceAi": "MI-asszisztens (ChatGPT, Perplexity…)",
+    "fSourceReferral": "Ajánlás",
+    "fSourceSocial": "Közösségi média",
+    "fSourceReturning": "Már ismerem Önöket",
+    "fSourceOther": "Egyéb módon",
+    "fConsent": "Hozzájárulok személyes adataim kezeléséhez.",
+    "fSubmit": "Megkeresés elküldése",
+    "sentTitle": "Köszönjük!",
+    "sentLead": "Egy munkanapon belül jelentkezünk.",
+    "offices": "Irodáink",
+    "hoursLabel": "Nyitvatartás",
+    "hours": "H–P 9:00–16:00",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-mail",
+    "namePlaceholder": "Kovács János",
+    "emailPlaceholder": "janos@pelda.hu",
+    "phonePlaceholder": "+36 …"
+  },
+  "booking": {
+    "title": "Konzultáció foglalása",
+    "step": "Lépés",
+    "type": "A konzultáció formája",
+    "online": "Online (videohívás)",
+    "inPerson": "Személyesen az irodában",
+    "area": "Jogterület",
+    "date": "Válasszon napot",
+    "timeLabel": "Szabad időpontok",
+    "next": "Tovább",
+    "back": "Vissza",
+    "contact": "Az Ön adatai",
+    "payNote": "Konzultáció (30 perc) · kötelezettség nélkül. Az időpont megerősítése érdekében jelentkezünk Önnél.",
+    "confirm": "Foglalás elküldése",
+    "doneTitle": "Köszönjük a foglalást",
+    "doneLead": "Hamarosan jelentkezünk, hogy megerősítsük a konzultáció időpontját.",
+    "doneClose": "Kész",
+    "weekdays": [
+      "H",
+      "K",
+      "Sze",
+      "Cs",
+      "P"
+    ]
+  },
+  "footer": {
+    "tag": "A Szlovák Ügyvédi Kamaránál bejegyzett ügyvédi iroda.",
+    "cols": [
+      {
+        "head": "Szolgáltatások",
+        "items": [
+          "Fizetésképtelenségi jog",
+          "Kereskedelmi és polgári jog",
+          "Ingatlanjog",
+          "Peres eljárások",
+          "Büntetőjog",
+          "IT-jog"
+        ]
+      },
+      {
+        "head": "Iroda",
+        "items": [
+          "Az irodáról",
+          "Csapatunk",
+          "Külföldi ügyfelek",
+          "Kapcsolat"
+        ]
+      },
+      {
+        "head": "Jogi dokumentumok",
+        "items": [
+          "Adatvédelem (EN)",
+          "Szerződési feltételek (EN)",
+          "Cookie-k (EN)"
+        ]
+      }
+    ],
+    "fine": "Ez a weboldal kizárólag általános tájékoztatásul szolgál, és nem minősül jogi tanácsadásnak. Valamennyi információ és szolgáltatás kizárólag a Szlovák Köztársaság jogára, valamint annak a szlovák bíróságok és hatóságok általi alkalmazására vonatkozik.",
+    "rights": "© kohút & partners s.r.o. · cégazonosító (IČO) 47 235 888",
+    "country": "Szlovák Köztársaság"
+  },
+  "intl": {
+    "heroOverline": "Külföldi ügyfelek",
+    "heroTitle": "Szlovák jog – érthetően elmagyarázva.",
+    "heroLead": "Szlovák ügyvédi iroda vagyunk, és kizárólag a Szlovák Köztársaság jogában adunk tanácsot. Ha vállalkozása, ingatlana, adósa vagy jogvitája Szlovákiában van, végigvezetjük a szlovák jogrendszeren – angolul vagy szlovákul, többnyire távolról. Ez az oldal az Ön kényelme érdekében magyar nyelvű; ügyfeleinkkel angolul vagy szlovákul kommunikálunk.",
+    "helpOverline": "Amit Önért teszünk",
+    "helpTitle": "Jellemző ügyek, amelyeket külföldi ügyfeleknek intézünk",
+    "helpLead": "Az alábbi ügyek mindegyikére a szlovák jog irányadó, és azokat szlovák bíróságok, közjegyzők, az ingatlan-nyilvántartás és más szlovák hatóságok előtt intézzük.",
+    "help": [
+      {
+        "title": "Ingatlanvásárlás Szlovákiában",
+        "desc": "Adásvételi szerződések, a tulajdonjog ellenőrzése a szlovák ingatlan-nyilvántartásban (kataster), letéti megoldások, hogy a pénze védve legyen, valamint a tulajdonjog bejegyzése."
+      },
+      {
+        "title": "Vállalkozás Szlovákiában",
+        "desc": "Szlovák s.r.o. (a szlovák kft.) alapítása külföldi alapítóknak – teljes egészében távolról, meghatalmazás alapján –, továbbá kereskedelmi szerződések és társasági ügyintézés."
+      },
+      {
+        "title": "Követelések behajtása szlovák adósoktól",
+        "desc": "Fizetési felszólítás, szlovák fizetési meghagyásos eljárás, per és végrehajtás – átlátható, lépcsőzetes folyamat, ismert költségekkel."
+      },
+      {
+        "title": "Hitelezők a szlovák fizetésképtelenségi eljárásokban",
+        "desc": "Követelésének bejelentése a szlovák csődgondnoknál a törvényi határidőn belül, képviselet a hitelezői bizottságban és az eljárás figyelemmel kísérése."
+      },
+      {
+        "title": "Jogviták szlovák bíróságok előtt",
+        "desc": "Polgári és kereskedelmi perek, külföldi ítéletek végrehajtása Szlovákiában, ideiglenes intézkedések és egyezségi tárgyalások."
+      }
+    ],
+    "remoteOverline": "Hogyan működik",
+    "remoteTitle": "Együttműködés velünk külföldről",
+    "remote": [
+      {
+        "title": "Videokonzultáció angolul vagy szlovákul",
+        "desc": "Foglaljon időpontot online – megbeszéljük az ügyét, felvázoljuk a szlovák jog szerinti helyzetet, és megállapodunk a további lépésekben."
+      },
+      {
+        "title": "Megbízás és meghatalmazás",
+        "desc": "A megbízási szerződést és a meghatalmazást e-mailben kapja meg. A legtöbb ügyben elegendő az aláírt példány szkennelt másolata; ahol a szlovák hatóságok megkövetelik, végigvezetjük a hitelesítésen vagy az apostille beszerzésén."
+      },
+      {
+        "title": "Szlovákiában Ön helyett járunk el",
+        "desc": "Az Ön nevében tartjuk a kapcsolatot a szlovák bíróságokkal, közjegyzőkkel, az ingatlan-nyilvántartással és a hatóságokkal. Személyes megjelenésre ritkán van szükség."
+      },
+      {
+        "title": "Átlátható díjak",
+        "desc": "A meghatározott ügyekre előre megállapított fix díj; számlázás euróban, fizetés banki átutalással. Nincsenek óradíjas meglepetések."
+      }
+    ],
+    "scopeTitle": "Egy fontos korlátozás",
+    "scopeText": "Kizárólag a Szlovák Köztársaság jogában adunk tanácsot. Az Ön hazájának jogában nem adunk tanácsot – ha az ügye más jogrendszert is érint, együttműködünk az Ön helyi ügyvédjével.",
+    "formOverline": "Írjon nekünk",
+    "formTitle": "Írja le az ügyét – angolul vagy szlovákul válaszolunk",
+    "formLead": "Írja meg, mire vonatkozik az ügy, és hogyan kapcsolódik Szlovákiához. Jelentkezünk Önnél, és felvázoljuk a további lépéseket. Az űrlap elküldésével nem jön létre ügyvéd–ügyfél jogviszony.",
+    "ctaTitle": "Ismertesse velünk szlovákiai ügyét",
+    "ctaLead": "Az első konzultáció kötelezettség nélküli, és angolul vagy szlovákul zajlik."
+  },
+  "cmr": {
+    "metaTitle": "CMR-követelések behajtása – kifizetetlen fuvardíj",
+    "metaDescription": "Szlovák megbízó által ki nem fizetett fuvardíj: elévülés a CMR-egyezmény 32. cikke szerint, szlovák fizetési meghagyásos eljárás és végrehajtás. Ügyvédi iroda, Zvolen (Zólyom).",
+    "heroOverline": "Nemzetközi közúti árufuvarozás",
+    "heroTitle": "Kifizetetlen fuvardíj behajtása a CMR-egyezmény alapján",
+    "heroLead": "Fuvardíj, amelyet a Szlovák Köztársaságban székhellyel rendelkező megbízó nem fizetett ki. Átvesszük az ügy iratait, ellenőrizzük az elévülést a CMR-egyezmény 32. cikke szerint, és az ügyet a fizetési felszólítástól a végrehajtásig visszük.",
+    "heroPara": [
+      "Fuvarozókat, szállítmányozókat és logisztikai szolgáltatókat képviselünk – szlovákokat és külföldieket egyaránt –, akiknek a megbízója nem fizette ki a már teljesített fuvarról szóló számlát.",
+      "Angolul és szlovákul dolgozunk, és az egész ügyet távolról is el tudjuk intézni."
+    ],
+    "heroCta": "Küldje el az iratokat",
+    "whoOverline": "Kiket képviselünk",
+    "whoTitle": "Mit csinálunk és kinek",
+    "whoLead": "A nemzetközi közúti árufuvarozásból eredő pénzkövetelésekre összpontosítunk, ha az adós székhelye a Szlovák Köztársaságban van.",
+    "who": [
+      {
+        "title": "Fuvarozók",
+        "desc": "Már teljesített fuvar kifizetetlen fuvardíja – azokban az esetekben is, amikor a megbízó a számlát soha nem vitatta, egyszerűen csak nem fizet."
+      },
+      {
+        "title": "Szállítmányozók",
+        "desc": "Követelések a megbízóval szemben, valamint az Ön helyzetének tisztázása a megbízó – szállítmányozó – fuvarozó láncban."
+      },
+      {
+        "title": "Külföldi hitelezők",
+        "desc": "Lengyel, litván, cseh és más külföldi társaságok, amelyek adósának székhelye Szlovákiában van. Az eljárást a szlovák bíróságok és bírósági végrehajtók előtt az Ön nevében visszük."
+      },
+      {
+        "title": "Levonásokkal csökkentett és vitatott számlák",
+        "desc": "Levonások késedelem, árukár vagy a fuvarmegbízás állítólagos megszegése miatt. Megvizsgáljuk, hogy a levonások közül melyek állják meg a helyüket a CMR-egyezmény és a szerződés alapján."
+      }
+    ],
+    "keyOverline": "Amin az ügy áll",
+    "keyTitle": "Ami már az első napon eldől",
+    "keyLead": "Mielőtt az első levél elmegy, két dolgot kell tisztázni: meddig érvényesíthető még a követelés, és melyik jog irányadó rá. Mindkét válasz a CMR-egyezményből következik, amelyet a Szlovák Köztársaságban a külügyminiszter 11/1975 Tt. sz. rendeleteként hirdettek ki. Az egyezmény 1. cikkének (1) bekezdése szerint az egyezményt alkalmazni kell minden olyan szerződésre, amely áruk közúton, járművel, díj ellenében végzett fuvarozására irányul, ha az áru átvételének helye és a kiszolgáltatásra kijelölt hely – a szerződésben foglaltak szerint – két különböző államban van, amelyek közül legalább az egyik szerződő állam; mindez a felek lakóhelyére és állampolgárságára tekintet nélkül érvényes.",
+    "key": [
+      {
+        "title": "Elévülés a CMR-egyezmény 32. cikke szerint",
+        "desc": "Az egyezmény 32. cikkének (1) bekezdése szerint az egyezmény hatálya alá tartozó fuvarozásból eredő igények elévülési ideje egy év; szándékosság, illetve olyan vétkesség esetén, amely az eljáró bíróság joga szerint a szándékossággal egyenértékűnek minősül, az elévülési idő három év. A fuvardíj megfizetése iránti követelés nem az áru elveszéséből, megsérüléséből vagy a késedelemből eredő igény, ezért a 32. cikk (1) bekezdésének c) pontja szerinti maradék kategória érvényesül: az elévülési idő a fuvarozási szerződés megkötésétől számított három hónap elteltével kezdődik, és a kezdőnap nem számít bele a határidőbe. A gyakorlatban tehát a követelés nagyjából tizenöt hónappal a fuvarozási szerződés megkötése után elévülhet – a szerződés megkötésétől, nem pedig a számla esedékességétől számítva. Az egyezmény 32. cikkének (2) bekezdése szerint az írásbeli felszólamlás az elévülést addig a napig felfüggeszti, amíg a fuvarozó a felszólamlást írásban el nem utasítja, és a mellékelt okmányokat vissza nem küldi; az ugyanarra az igényre vonatkozó további felszólamlás az elévülést újból nem függeszti fel. Ez a rendelkezés a fuvarozó által elutasított felszólamlásra épül – az a fizetési felszólítás, amellyel maga a fuvarozó követeli a fuvardíjat a megbízótól, nem tartozik a rendelkezés szövege alá, és az elévülést nem függeszti fel. A (2) bekezdés szerinti eseten kívül a 32. cikk (3) bekezdése úgy rendelkezik, hogy az elévülés felfüggesztésére (nyugvására) és megszakadására az eljáró bíróság joga irányadó; szlovák bíróság előtt ez a Kereskedelmi Törvénykönyv 402. §-át jelenti, amely szerint az elévülési idő folyása csak olyan cselekménnyel áll meg, amely a bírósági eljárás megindításának, illetve a jog már megindított eljárásban való érvényesítésének minősül. Az adósnak küldött fizetési emlékeztetők az elévülési időt nem hosszabbítják meg.",
+        "note": "A szakmai gyakorlat nem egységes abban, hogy a fuvarozó fuvardíj iránti követelésére a CMR-egyezmény 32. cikke szerinti egyéves, vagy a szlovák Kereskedelmi Törvénykönyv 397. §-a szerinti általános négyéves elévülési idő irányadó-e. E bizonytalanság miatt indokolt a rövidebb határidővel számolni."
+      },
+      {
+        "title": "Alkalmazandó jog a Róma I. rendelet szerint",
+        "desc": "Ha a felek nem választottak alkalmazandó jogot, azt az 593/2008/EK rendelet (Róma I.) 5. cikkének (1) bekezdése alapján kell meghatározni: a fuvarozó szokásos tartózkodási helye szerinti ország joga alkalmazandó, feltéve, hogy az átvétel helye, a kiszállítás helye vagy a feladó szokásos tartózkodási helye is ebben az országban található. Ha ezek a követelmények nem teljesülnek, a felek megállapodása szerinti kiszállítás helye szerinti ország jogát kell alkalmazni. Az 5. cikk (3) bekezdése szerint egy másik ország jogát kell alkalmazni, ha az eset valamennyi körülménye alapján egyértelmű, hogy a szerződés – jogválasztás hiányában – nyilvánvalóan szorosabban kapcsolódik ehhez a másik országhoz; ez a szabály tehát nem írja felül a 3. cikk szerinti érvényes jogválasztást.",
+        "note": "A CMR-egyezmény elsőbbséget élvez abban a körben, amelyben a kérdést szabályozza – ez a szlovák Kereskedelmi Törvénykönyv 756. §-ából következik. A Róma I. rendelet 25. cikkének (1) bekezdése emellett kimondja, hogy a rendelet nem érinti azoknak a nemzetközi egyezményeknek az alkalmazását, amelyeknek a tagállamok részesei, és amelyek szerződéses kötelezettségekre vonatkozó kollíziós szabályokat állapítanak meg. A rendelet alapján meghatározott jog ezért csak azokra a kérdésekre alkalmazandó, amelyeket az egyezmény nem szabályoz; a fuvarozó fuvardíj iránti követelése ezek közé tartozik."
+      },
+      {
+        "title": "Hol indítható per – a CMR-egyezmény 31. cikke",
+        "desc": "Az egyezmény 31. cikkének (1) bekezdése szerint a felperes a felek megállapodásával kijelölt szerződő állam bíróságaihoz, annak az államnak a bíróságaihoz, amelynek területén az alperes állandó lakóhelye, székhelye vagy az a fióktelepe vagy ügynöksége található, amelynek közvetítésével a fuvarozási szerződést megkötötték, valamint annak az államnak a bíróságaihoz fordulhat, amelynek területén az áru átvételének helye vagy a kiszolgáltatásra kijelölt hely található; más bíróságokhoz fordulni nem lehet. Ha az adós székhelye a Szlovák Köztársaságban van, vagy az árut itt rakodták ki, a szlovák bíróságok joghatósággal rendelkeznek.",
+        "note": "Az 1215/2012/EU rendelet (Brüsszel Ia.) 71. cikkének (1) bekezdése szerint a rendelet nem érinti azokat az egyezményeket, amelyek egyes különös jogterületeken szabályozzák a joghatóságot, illetve a határozatok elismerését és végrehajtását; a 71. cikk (2) bekezdésének b) pontja szerint az ilyen egyezményben megállapított joghatóság alapján hozott határozatot a többi tagállamban e rendelettel összhangban kell elismerni és végrehajtani. Ha maga az egyezmény állapítja meg az elismerés vagy a végrehajtás feltételeit – a CMR-egyezmény 31. cikkének (3) bekezdése a többi szerződő államban való végrehajthatóságot az ott előírt alaki követelmények teljesítéséhez köti –, ezeket a feltételeket kell alkalmazni; a rendeletnek az elismerésre és a végrehajtásra vonatkozó rendelkezései, és így a végrehajthatóvá nyilvánítás nélküli végrehajtás, mindenesetre alkalmazhatók."
+      }
+    ],
+    "stepsOverline": "Az eljárás menete",
+    "stepsTitle": "Hogyan zajlik",
+    "steps": [
+      {
+        "title": "Az iratok átvétele és elemzése",
+        "desc": "Átvesszük a fuvarmegbízást, a CMR-fuvarlevelet és a számlát. Ellenőrizzük, hogy az ügyre a CMR-egyezmény irányadó-e, meddig érvényesíthető még a követelés, és pontosan miből áll a tőkeösszeg."
+      },
+      {
+        "title": "Az adós ellenőrzése",
+        "desc": "Ellenőrizzük a cégjegyzéket, a közzétett pénzügyi beszámolókat, a folyamatban lévő végrehajtási eljárásokat, valamint a csődeljárásokat (konkurz) és a szerkezetátalakítási eljárásokat. Ebből kiderül, érdemes-e eljárást indítani, és milyen sorrendben célszerű haladni."
+      },
+      {
+        "title": "Fizetési felszólítás",
+        "desc": "Elkészítjük és elküldjük a fizetési felszólítást, amelyben számszerűsítjük a tőkét, a késedelmi kamatot és a behajtási költségátalányt. A felszólítás egyben a további lépések alapja is."
+      },
+      {
+        "title": "Szlovák fizetési meghagyásos eljárás",
+        "desc": "Ha az adós nem fizet, kérelmet nyújtunk be a 307/2016 Tt. sz. törvény alapján. A kérelem kizárólag elektronikus úton nyújtható be, és az eljárásra kizárólagos hatáskörrel a Besztercebányai Járásbíróság (Okresný súd Banská Bystrica) rendelkezik. Ha a fizetési meghagyást az alperesnek külföldön kellene kézbesíteni, ez az út nem járható (a törvény 3. § (6) bekezdésének d) pontja) – ilyenkor az 1896/2006/EK rendelet szerinti európai fizetési meghagyás jön szóba. A kérelem akkor sem megengedett, ha a szerződés alapján követelt késedelmi kamat több mint öt százalékponttal meghaladja azt a mértéket, amely ilyen megállapodás nélkül lenne irányadó (a törvény 3. § (5) bekezdésének a) pontja)."
+      },
+      {
+        "title": "Fizetési meghagyás vagy ellentmondás",
+        "desc": "A bíróság a fizetési meghagyást legkésőbb tíz munkanapon belül bocsátja ki azt követően, hogy az eljárási feltételek – a bírósági illeték megfizetését is beleértve – teljesültek. A fizetési meghagyás kézbesítésétől az alperesnek 15 napja van arra, hogy fizessen, vagy érdemben megindokolt ellentmondást nyújtson be. Ha ellentmondást nem nyújtanak be, a fizetési meghagyás jogerős ítélet hatályával bír; ha benyújtanak, válaszolunk rá, és a 15 napos határidőn belül kérjük az eljárás folytatását a Polgári Peres Rendtartás szerint illetékes bíróság előtt."
+      },
+      {
+        "title": "Végrehajtás",
+        "desc": "Amint a határozat jogerős és végrehajtható, végrehajtási kérelmet nyújtunk be. A végrehajtási eljárásra kizárólagos illetékességgel a Besztercebányai Járásbíróság rendelkezik, amely az ügyet véletlenszerűen osztja ki egy bírósági végrehajtóra – a hitelező a végrehajtót nem választhatja meg. Ha ugyanazon adós ellen már folyik végrehajtás, és a bíróság egy végrehajtó részére már kiadta a felhatalmazást, a Végrehajtási Rendtartás 55. §-ának (4) bekezdése alapján az adós elleni minden további ügy ugyanehhez a végrehajtóhoz kerül, és véletlenszerű kiválasztásra nem kerül sor."
+      },
+      {
+        "title": "Eszkaláció – csődeljárás",
+        "desc": "Ha kiderül, hogy az adós több hitelezőnek sem fizet, szóba jöhet a csődeljárás iránti kérelem, valamint a vezető tisztségviselővel szembeni kártérítési igény a kérelem késedelmes benyújtásával okozott kárért. Minden ilyen lépést külön mérlegelünk: a 7/2005 Tt. sz. törvény 11. §-ának (4) bekezdése szerint a hitelező felel az adósnak és más személyeknek a csődeljárás megindításának joghatásai folytán keletkezett kárért, ha a bíróság a hitelező kérelmére indult eljárást azért szünteti meg, mert megállapítást nyert az adós fizetőképessége, kivéve, ha a hitelező bizonyítja, hogy a kérelem benyújtásakor szakmai gondossággal járt el. A csődeljárás iránti kérelem ezért nem nyomásgyakorlási eszköz."
+      }
+    ],
+    "docsOverline": "Dokumentumok",
+    "docsTitle": "Amire Öntől szükségünk van",
+    "docsLead": "Az ügyek többségében öt dokumentum elegendő. Küldje el őket szkennelve vagy lefényképezve; eredeti példányokra ebben a szakaszban nincs szükség.",
+    "docs": [
+      "A fuvarmegbízás vagy a fuvarozási szerződés – azzal az e-mail-váltással együtt, amelynek során létrejött.",
+      "A CMR-fuvarlevél, a címzett áruátvételi igazolásával együtt.",
+      "A fuvardíjról szóló számla és annak igazolása, hogy elküldték az adósnak.",
+      "A kiszolgáltatás igazolása és az esetleges további fuvarokmányok.",
+      "Levelezés az adóssal – fizetési emlékeztetők, felszólamlások, bejelentett levonások, részfizetések."
+    ],
+    "priceOverline": "Díjak",
+    "priceTitle": "Mennyibe kerül",
+    "priceLead": "A munka terjedelmében és a díjban előre és írásban állapodunk meg. Az ügy értékelésének és a fizetési felszólításnak az árát még a munka megkezdése előtt ismeri.",
+    "price": [
+      {
+        "label": "Az ügy értékelése",
+        "value": "előre megállapított fix díj",
+        "desc": "Átnézzük a dokumentumokat, ellenőrizzük az elévülést és az alkalmazandó jogot, és ismertetjük az általunk javasolt eljárást. A díjat a munka megkezdése előtt közöljük; ha úgy dönt, hogy nem lép tovább, az ügy ezzel lezárul."
+      },
+      {
+        "label": "Fizetési felszólítás",
+        "value": "fix díj lépésenként",
+        "desc": "A fizetési felszólítás elkészítése és elküldése, a késedelmi kamat és a behajtási költségátalány kiszámításával együtt. A díjat az adott lépésre fix összegben állapítjuk meg, nem óradíj alapján."
+      },
+      {
+        "label": "Képviselet az eljárásban",
+        "value": "fix díj vagy sikerdíj",
+        "desc": "A Szlovák Köztársaság Igazságügyi Minisztériuma 655/2004 Tt. sz. rendelete 7. §-ának (1) bekezdése szerint sikerdíj az ügy értékéből való százalékos részesedés formájában köthető ki; a 7. § (2) bekezdése szerint legmagasabb összege nem haladhatja meg ezen érték 20%-át. A rendelet 8. §-ának (1) bekezdése szerint a sikerdíj csak akkor válik esedékessé, ha az ügyfél az ügyben teljes mértékben sikeres volt; részleges siker esetén az ügyvédet a 8. § (2) bekezdése alapján a siker arányában meghatározott tarifális díj illeti meg, és ha az ügyfél részben sem volt sikeres, az ügyvéd a 8. § (3) bekezdése alapján csak készkiadásainak megtérítését követelheti."
+      }
+    ],
+    "priceNote": "Az ügyvédi díj mellett készkiadások is felmerülnek, mindenekelőtt bírósági illetékek. A fizetési meghagyásos eljárásban a bírósági illeték a bírósági illetékekről szóló 71/1992 Tt. sz. törvény 11c. §-ának (1) bekezdése szerint az illetéktáblázatban meghatározott százalékos mérték 50%-a; az illetéktáblázat 1. tételének a) pontja szerinti alapmérték a pertárgy értékének 6%-a, ebben az eljárásban tehát 3%, de legalább 25 euró és legfeljebb 25 000 euró, kereskedelmi ügyekben pedig legfeljebb 50 000 euró. A bíróság a kérelmezőt az illeték megfizetésére nem hívja fel, és ha az illetéket a kérelem benyújtásától számított 15 napon belül nem fizetik meg, a kérelmet figyelmen kívül hagyják. A végrehajtási kérelem bírósági illetéke az illetéktáblázat 13. tételének a) pontja szerint 25 euró. Az eljárás kimenetele az egyedi eset körülményeitől függ, különösen az adós vagyonától.",
+    "formOverline": "Kötelezettség nélkül",
+    "formTitle": "Küldje el nekünk a követelés iratait",
+    "formLead": "Írja meg, melyik fuvarra vonatkozik a követelés, és mit nem fizetett ki a megbízó. Jelentkezünk Önnél, és felvázoljuk a további lépéseket. Az űrlap elküldésével nem jön létre ügyvéd–ügyfél jogviszony.",
+    "faqOverline": "GYIK",
+    "faqTitle": "Gyakran ismételt kérdések",
+    "faq": [
+      {
+        "q": "Mennyi időnk van a kifizetetlen fuvardíj érvényesítésére?",
+        "a": "A CMR-egyezmény 32. cikkének (1) bekezdése szerint az általános elévülési idő egy év. A fuvardíj megfizetése iránti követelésre a c) pont vonatkozik: az elévülési idő a fuvarozási szerződés megkötésétől számított három hónap elteltével kezdődik, és a kezdőnap nem számít bele a határidőbe. A követelés tehát nagyjából tizenöt hónappal a fuvarozási szerződés megkötése után elévülhet, nem pedig a számla esedékességétől számítva. A szakmai gyakorlat nem egységes abban, hogy a fuvardíjra ez a határidő vagy a szlovák Kereskedelmi Törvénykönyv 397. §-a szerinti általános négyéves elévülési idő vonatkozik-e, ezért indokolt a rövidebb határidővel számolni. Az egyezmény 32. cikkének (2) bekezdése szerint az írásbeli felszólamlás az elévülést addig a napig felfüggeszti, amíg a fuvarozó azt írásban el nem utasítja, és a mellékelt okmányokat vissza nem küldi; az a fizetési felszólítás, amellyel maga a fuvarozó követeli a fuvardíjat, nem tartozik e rendelkezés alá, és az elévülést nem függeszti fel – szlovák bíróság előtt az elévülési idő folyása a Kereskedelmi Törvénykönyv 402. §-a szerint csak akkor áll meg, amikor a jogot bíróság előtt érvényesítik. Az egyezmény 32. cikkének (4) bekezdése szerint az elévült igény viszontkeresettel vagy beszámítási kifogással sem érvényesíthető."
+      },
+      {
+        "q": "Perelhetjük a szlovák megbízót Szlovákiában?",
+        "a": "A CMR-egyezmény 31. cikkének (1) bekezdése szerint a felperes – egyéb lehetőségek mellett – annak az államnak a bíróságaihoz fordulhat, amelynek területén az alperes székhelye található, valamint annak az államnak a bíróságaihoz, amelynek területén az áru átvételének helye vagy a kiszolgáltatásra kijelölt hely található; más bíróságokhoz fordulni nem lehet. Ha az adós székhelye a Szlovák Köztársaságban van, vagy az árut itt rakodták ki, a szlovák bíróságok joghatósággal rendelkeznek. Az egyezmény 31. cikkének (5) bekezdése szerint a szerződő államok azon állampolgáraitól, akiknek lakóhelye vagy telephelye ezen államok valamelyikében van, nem követelhető biztosíték a perköltségek fedezésére."
+      },
+      {
+        "q": "Melyik jog irányadó az ügyre, ha nem választottunk jogot?",
+        "a": "A CMR-egyezmény elsőbbséget élvez abban a körben, amelyben a kérdést szabályozza; ez a szlovák Kereskedelmi Törvénykönyv 756. §-ából következik, és a Róma I. rendelet 25. cikkének (1) bekezdése az ilyen egyezmények alkalmazását nem érinti. Azokra a kérdésekre, amelyeket az egyezmény nem szabályoz – ideértve magát a fuvardíj megfizetése iránti követelést is –, a Róma I. rendelet 5. cikkének (1) bekezdése alapján meghatározott jog irányadó: a fuvarozó szokásos tartózkodási helye szerinti ország joga, feltéve, hogy az átvétel helye, a kiszállítás helye vagy a feladó szokásos tartózkodási helye is ebben az országban található; ennek hiányában a megállapodás szerinti kiszállítás helye szerinti ország joga."
+      },
+      {
+        "q": "Követelhetünk a tőkén felül kamatot és költségeket is?",
+        "a": "A szlovák Kereskedelmi Törvénykönyv 369. §-ának (1) bekezdése szerint az a hitelező, aki saját törvényi és szerződéses kötelezettségeit teljesítette, külön felszólítás nélkül jogosult késedelmi kamatra. Ha a kamat mértékében nem állapodtak meg, a Kereskedelmi Törvénykönyv 369. §-ának (2) bekezdése alapján a 21/2013 Tt. sz. kormányrendeletben meghatározott mérték irányadó: az 1. § (1) bekezdése szerint az Európai Központi Banknak a késedelem érintett naptári félévének első napján érvényes alapkamata nyolc százalékponttal növelve, vagy – ha a hitelező az 1. § (2) bekezdése szerinti rögzített változatot választja – a késedelem első napján érvényes alapkamat kilenc százalékponttal növelve. Az EKB aktuális alapkamatát az irányadó időpontra vonatkozóan ellenőrizni kell. A kamat mellett a Kereskedelmi Törvénykönyv 369c. §-ának (1) bekezdése alapján a hitelezőt behajtási költségátalány is megilleti; ennek összege a 21/2013 Tt. sz. kormányrendelet 2. §-a szerint 40 euró, egyszeri alkalommal, függetlenül attól, mennyi ideig tart a késedelem."
+      },
+      {
+        "q": "Milyen gyorsan dönt a bíróság, és mi történik, ha az adós ellentmond?",
+        "a": "A 307/2016 Tt. sz. törvény szerinti fizetési meghagyásos eljárásban a bíróság a fizetési meghagyást legkésőbb tíz munkanapon belül bocsátja ki azt követően, hogy az eljárási feltételek – a bírósági illeték megfizetését is beleértve – teljesültek. A fizetési meghagyás kézbesítésétől az alperesnek 15 napja van arra, hogy fizessen, vagy érdemben megindokolt ellentmondást nyújtson be; az érdemi indokolás nélküli ellentmondást a bíróság elutasítja. Ha ellentmondást nem nyújtanak be, a fizetési meghagyás jogerős ítélet hatályával bír. Ha ellentmondást nyújtanak be, arra 15 napon belül válaszolni kell, és ugyanezen határidőn belül kérni kell az eljárás folytatását a Polgári Peres Rendtartás szerint illetékes bíróság előtt – ellenkező esetben az eljárást megszüntetik."
+      },
+      {
+        "q": "Mi történik, ha az adósnak nincs vagyona?",
+        "a": "A végrehajtást a Besztercebányai Járásbíróság (Okresný súd Banská Bystrica) által véletlenszerűen kijelölt bírósági végrehajtó folytatja le; a hitelező a végrehajtót nem választhatja meg. Ha az adós több mint 90 napja késedelemben van legalább két pénzbeli kötelezettségével egynél több hitelezővel szemben, és e hitelezők egyike írásban felszólította a fizetésre, a 7/2005 Tt. sz. törvény 11. §-ának (3) bekezdése alapján megalapozottan vélelmezhető a fizetésképtelensége, és csődeljárás iránti kérelem nyújtható be. Ugyanezen törvény 11a. §-ának (1) bekezdése szerint az a személy, aki az adós nevében köteles a csődeljárás iránti kérelmet benyújtani, felel azért a kárért, amelyet a kérelem késedelmes benyújtásával az adós hitelezőinek okozott; a 11a. § (3) bekezdése szerint – eltérő összeg bizonyításának hiányában – vélelmezni kell, hogy a kár a hitelező követelésének azzal a részével egyenlő, amely kielégítetlen maradt azt követően, hogy a csődeljárást vagyon hiányában megszüntették, a kihirdetett csődöt vagyon hiányában megszüntették, vagy az adós elleni végrehajtás vagyon hiányában véget ért. A 11a. § (4) bekezdése szerint a hitelezőnek az e felelősségből eredő igényei legkorábban egy évvel azt követően évülnek el, hogy a csődeljárást vagyon hiányában megszüntették, a kihirdetett csődöt vagyon hiányában megszüntették, vagy az adós elleni végrehajtás vagyon hiányában véget ért."
+      }
+    ],
+    "relatedTitle": "Kapcsolódó",
+    "sourcesTitle": "A jogszabályok, amelyekre ez az oldal épül",
+    "sourcesLead": "Az egyes jogszabályok teljes szövege a Slov-Lex és az EUR-Lex portálon érhető el. A „Tt.” rövidítés a Szlovák Köztársaság Törvénytárát (Zbierka zákonov) jelöli. A fenti tájékoztatás általános jellegű, és nem helyettesíti az egyedi ügyben nyújtott tanácsadást.",
+    "sources": [
+      {
+        "label": "A külügyminiszter 11/1975 Tt. sz. rendelete – CMR-egyezmény",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1975/11/"
+      },
+      {
+        "label": "513/1991 Tt. sz. törvény – szlovák Kereskedelmi Törvénykönyv",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "21/2013 Tt. sz. kormányrendelet",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2013/21/"
+      },
+      {
+        "label": "307/2016 Tt. sz. törvény a fizetési meghagyásos eljárásról",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2016/307/"
+      },
+      {
+        "label": "71/1992 Tt. sz. törvény a bírósági illetékekről",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "233/1995 Tt. sz. törvény – szlovák Végrehajtási Rendtartás",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1995/233/"
+      },
+      {
+        "label": "7/2005 Tt. sz. törvény a csődeljárásról és a szerkezetátalakításról",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/7/"
+      },
+      {
+        "label": "655/2004 Tt. sz. rendelet az ügyvédi díjakról",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/655/"
+      },
+      {
+        "label": "593/2008/EK rendelet – Róma I.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008R0593"
+      },
+      {
+        "label": "1215/2012/EU rendelet – Brüsszel Ia.",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32012R1215"
+      },
+      {
+        "label": "1896/2006/EK rendelet – európai fizetési meghagyás",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006R1896"
+      }
+    ]
+  },
+  "cfr": {
+    "metaTitle": "Cégalapítás és tartózkodási engedély külföldi vállalkozóknak",
+    "metaDescription": "Szlovák s.r.o. (kft.) alapítása és a vezetéséhez szükséges tartózkodási engedély vagy EU Kék Kártya megszerzése – egy ügyként, a szlovák jog szerint. Ügyvédi iroda, Zvolen (Zólyom); távolról is intézhető.",
+    "heroOverline": "Külföldi vállalkozóknak és munkavállalóknak",
+    "heroTitle": "Cégalapítás és tartózkodási engedély – egyetlen ügyként kezelve",
+    "heroLead": "Szlovák s.r.o.-t (a szlovák kft.) távolról is könnyű alapítani. Ügyvezetőként vezetni már nem ilyen egyszerű, ha Ön az EU-n vagy az OECD-n kívülről érkezik – ehhez külön tartózkodási engedély kell, amelyet ugyanazon törvény egy másik fejezete alapján kell kérelmezni. A kettőt együtt intézzük, hogy az egyik ne akadjon el a másik miatt.",
+    "heroPara": [
+      "Szlovák társaságot alapító alapítókat, EU Kék Kártyát igénylő magasan képzett munkavállalókat, valamint munkavállalási célú tartózkodási engedélyt kérő harmadik országbeli állampolgárokat képviselünk.",
+      "Kizárólag a szlovák jogban adunk tanácsot, és képviseljük Önt a szlovák cégjegyzéket vezető bíróság, az adóhatóság és az idegenrendészet (cudzinecká polícia) előtt."
+    ],
+    "heroCta": "Írja le a helyzetét",
+    "whoOverline": "Kinek szól",
+    "whoTitle": "Három kiindulópont, egy cél",
+    "whoLead": "A megfelelő eljárás attól függ, miért kell Szlovákiában tartózkodnia – ügyvezetőként, munkavállalóként vagy magasan képzett szakemberként. Mielőtt bármit benyújtanánk, tisztázzuk, melyik illik az Ön helyzetére.",
+    "who": [
+      {
+        "title": "Ügyvezetők az EU-n, az EGT-n és az OECD-n kívülről",
+        "desc": "EU-tagállam, EGT-állam vagy OECD-tagállam állampolgárát a tartózkodás igazolása nélkül jegyzik be ügyvezetőként. Mindenki más esetében a cégbíróság a bejegyzés előtt ellenőrzi a szlovák tartózkodási engedélyt – és ez minden olyan személyre vonatkozik, aki a társaság nevében vagy a társaság helyett eljárni jogosult, tehát a cégvezetőre (prokurista) és a fióktelep vezetőjére is. Ez a leggyakoribb akadály, amikor EU-n kívüli alapító számára alapítunk társaságot."
+      },
+      {
+        "title": "Magasan képzett munkavállalók – EU Kék Kártya",
+        "desc": "Elismert felsőfokú végzettség – vagy egyes IKT-foglalkozások esetében a megelőző hét évben szerzett hároméves szakmai tapasztalat –, legalább hat hónapra létesített munkaviszony és a törvényi küszöböt meghaladó fizetés: ezekkel a feltételekkel vehető igénybe az EU Kék Kártya gyorsított eljárása."
+      },
+      {
+        "title": "Munkavállalási célú tartózkodás",
+        "desc": "Ha az állás nem felel meg a Kék Kártya feltételeinek, általános munkavállalási célú ideiglenes tartózkodási engedélyt kérelmezünk, a vállalaton belüli áthelyezés eseteit is beleértve."
+      },
+      {
+        "title": "Meglévő társaságok elakadt ügyvezetővel",
+        "desc": "Ha az Ön szlovák s.r.o.-ja már megalakult, de EU-n kívüli ügyvezetője nem tudja megszerezni vagy meghosszabbítani a tartózkodási engedélyt, megvizsgáljuk, miért volt sikertelen a kérelem, és újra benyújtjuk."
+      }
+    ],
+    "keyOverline": "Három jogi út",
+    "keyTitle": "Melyik engedély vonatkozik Önre",
+    "keyLead": "Mindhárom út ugyanazon törvény, a külföldiek tartózkodásáról szóló törvény alapján halad, de a feltételek, a szükséges igazolások és az engedély időtartama jelentősen eltérnek egymástól.",
+    "key": [
+      {
+        "title": "Ideiglenes tartózkodás vállalkozási célból",
+        "desc": "A külföldiek tartózkodásáról szóló 404/2011 Tt. sz. törvény 22. §-ának (1) bekezdése szerint ezt az engedélyt az a harmadik országbeli állampolgár kapja meg, aki Szlovákiában egyéni vállalkozóként folytat vagy fog folytatni vállalkozási tevékenységet [a) pont], vagy aki gazdasági társaság vagy szövetkezet nevében jár el vagy fog eljárni anélkül, hogy azzal munkaviszonyban állna [b) pont] – a gyakorlatban ez az ügyvezető. 2025. július 1-jétől az engedélyt fix, hároméves időtartamra adják ki (22. § (2) bekezdés), nem a tevékenység várható időtartamára. Emellett a vállalkozási tevékenység anyagi fedezetét egy erre a célra szolgáló vállalkozói számlán kell igazolni: ügyvezető esetében a létminimum százszorosát, egyéni vállalkozó esetében a hússzorosát, olyan ügyvezető esetében pedig, akinek üzleti tervét innovatív projektként értékelték, a negyvenszeresét (32. § (7) bekezdés). Magának a tartózkodásnak az anyagi fedezete további, a létminimum tizenkétszeresének megfelelő összeg (32. § (14) bekezdés).",
+        "note": "A meghosszabbítás feltételei 2026. július 15-én megváltoztak (a 128/2026 Tt. sz. módosító törvény). Ügyvezető esetében már nem a társaság adózott eredményét vizsgálják; a ténylegesen megfizetett adó számít, legalább a jövedelemadó-törvény 46b. §-ának (2) bekezdése szerinti minimális társasági adó szintjén (34. § (6) bekezdés). Az egyéni vállalkozó kérelmező ehelyett a jövedelemadó-törvény 32. §-ának (1) bekezdésében meghatározott küszöböt meghaladó adóköteles jövedelmet igazol (34. § (5) bekezdés). Régebbi források még a létminimum húsz-, illetve hatvanszorosát említik – ez a 2026. július 14-ig érvényes állapot. A társaság első adóbevallását az új feltétel szerint tervezze meg, ne a meghosszabbítási kérelemhez igazítva."
+      },
+      {
+        "title": "EU Kék Kártya",
+        "desc": "A Kék Kártyát a törvény 37–41. §-a szabályozza, amely az (EU) 2021/1883 irányelvet ülteti át. A 37. § (3) bekezdése szerint a Kék Kártya olyan foglalkoztatásra vonatkozik, amely felsőfokú szakmai képesítést igényel, és amelynek havi bére eléri legalább a szlovák nemzetgazdaságban foglalkoztatott munkavállaló – a kérelem benyújtásának évét megelőző naptári évre számított – havi átlagbérének 1,2-szeresét; ha a kérelmező a kérelem benyújtása előtt legfeljebb három évvel szerezte meg a végzettségét, elegendő maga az átlagbér. A képesítést a felsőfokú végzettség elismeréséről szóló határozat igazolja – vagy a törvény 3. mellékletében felsorolt foglalkozások (IKT-vezetők és -szakemberek) esetében annak igazolása, hogy a kérelmező a kérelmet megelőző hét éven belül legalább három év alatt magas szintű szakmai készségeket szerzett (37. § (5) bekezdés).",
+        "note": "A rendőri szerv a hiánytalan kérelem kézhezvételétől számított 30 napon belül dönt (38. § (7) bekezdés) – szemben az általános munkavállalási célú tartózkodás 60 napos határidejével. A munkaviszonyt legalább hat hónapra kell létesíteni; ezt a feltételt nem a külföldiek tartózkodásáról szóló törvény, hanem a foglalkoztatási szolgálatokról szóló 5/2004 Tt. sz. törvény 21a. § (4) bekezdésének d) pontja tartalmazza. A Kék Kártya emellett az EU egészére kiterjedő munkavállalási mobilitással és az állandó tartózkodáshoz vezető rövidebb úttal jár – ezt akkor is érdemes megvizsgálni, ha általános munkavállalási engedély is elérhető lenne."
+      },
+      {
+        "title": "Ideiglenes tartózkodás munkavállalási célból",
+        "desc": "A törvény 23. §-a az általános utat szabályozza: a munkáltató először bejelenti a betöltetlen álláshelyet, a munkaügyi hivatal igazolást ad ki arról, hogy az álláshely betölthető, és a rendőri szerv csak ezután dönt a tartózkodásról. Az engedélyt a foglalkoztatás várható időtartamára, legfeljebb öt évre adják ki (23. § (3) bekezdés). Vállalaton belüli áthelyezés esetén ez vezető vagy szakember számára legfeljebb három év, gyakornok munkavállaló számára legfeljebb egy év (23. § (5) bekezdés). Az idénymunka bármely 12 egymást követő hónapon belül legfeljebb 240 nap lehet (23. § (4) bekezdés).",
+        "note": "A rendőri szerv a hiánytalan kérelem kézhezvételétől számított 60 napon belül dönt (33. § (8) bekezdésének b) pontja); ha az adott régióban elismerten munkaerőhiánnyal érintett foglalkozásról van szó, a határidő 30 nap (33. § (8) bekezdésének c) pontja). A döntést megelőzi a betöltetlen álláshely bejelentése és a munkaügyi hivatal igazolásának beszerzése, ezért a teljes időtartammal inkább hónapokban, mint hetekben számoljon – az alátámasztó dokumentumokat pedig elég későn szerezze be ahhoz, hogy a kérelem benyújtásakor még érvényesek legyenek."
+      }
+    ],
+    "stepsOverline": "Az eljárás menete",
+    "stepsTitle": "Hogyan halad együtt a két ügy",
+    "steps": [
+      {
+        "title": "Felmérés",
+        "desc": "Megállapítjuk, hogy a három út közül melyik illik az Ön helyzetére, milyennek kell lennie a szlovák társaság felépítésének, és milyen igazolásokat kérnek majd az egyes hatóságok."
+      },
+      {
+        "title": "Cégalapítás",
+        "desc": "Ha a társaság még nem létezik, elkészítjük az alapító okiratot vagy a társasági szerződést, és ügyvédként autorizáljuk (ellenjegyezzük) – 2026. augusztus 17-től a közjegyzői okirat mellett ez az egyetlen megengedett forma (a Kereskedelmi Törvénykönyv 57. §-a). Az aláíráshoz nem kell Szlovákiában tartózkodnia: Ön helyett meghatalmazott ír alá, hatóságilag hitelesített aláírással ellátott meghatalmazás alapján (57. § (2) bekezdés). A bejegyzési kérelmet elektronikusan nyújtjuk be; a cégbíróság a hiánytalan kérelem kézhezvételétől számított két munkanapon belül bejegyzi a társaságot (a 29/2026 Tt. sz. törvény 58. §-ának (1) bekezdése)."
+      },
+      {
+        "title": "Tartózkodási kérelem",
+        "desc": "Összeállítjuk a kérelem anyagát, a társaság igazolásait is beleértve, és benyújtjuk az idegenrendészetnél. Szükség esetén végigvezetjük az okiratok külföldi hitelesítésén vagy az apostille beszerzésén."
+      },
+      {
+        "title": "Döntés és regisztráció",
+        "desc": "Amint a tartózkodási engedélyt megadták, elintézzük, ami a társaság oldalán következik – a vállalkozói bankszámlát, az adóhatósági bejelentkezést és adott esetben a székhelyet."
+      },
+      {
+        "title": "Meghosszabbítás",
+        "desc": "Figyelemmel kísérjük a meghosszabbítási határidőket és az egyes utak által megkövetelt igazolásokat – adóköteles jövedelem, megfizetett adó vagy a Kék Kártya bérküszöbe –, hogy az engedély ne járjon le."
+      }
+    ],
+    "docsOverline": "Dokumentumok",
+    "docsTitle": "Amire jellemzően szükségünk van",
+    "docsLead": "A pontos lista attól függ, melyik út alkalmazandó; ez az öt tétel az ügyek többségét lefedi az induláskor.",
+    "docs": [
+      "Érvényes úti okmány, amely a tervezett tartózkodás végét követően még legalább hat hónapig érvényes.",
+      "Erkölcsi bizonyítvány (kivonat a bűnügyi nyilvántartásból) a származási országából (és minden olyan országból, ahol az elmúlt három évben tartózkodott), szükség esetén apostille-jal ellátva vagy más módon felülhitelesítve – a benyújtáskor 90 napnál nem régebbi.",
+      "A szlovákiai szállás biztosításának igazolása.",
+      "Vállalkozási célú tartózkodásnál: kivonat a szlovák cégjegyzékből (ha a társaság már megalakult) vagy az alapító dokumentumok tervezete; távolról történő alapításnál hatóságilag hitelesített aláírással ellátott meghatalmazás, szükség esetén apostille-jal ellátva vagy más módon felülhitelesítve.",
+      "Munkavállalási célú tartózkodásnál: a munkaszerződés vagy a munkáltató írásbeli ígérete a foglalkoztatásra, valamint – a Kék Kártya esetében – a képesítés igazolása: a felsőfokú végzettség elismeréséről szóló határozat, vagy a törvény 3. mellékletében felsorolt IKT-foglalkozások esetében a magas szintű szakmai készségek igazolása."
+    ],
+    "priceOverline": "Díjak",
+    "priceTitle": "Mennyibe kerül",
+    "priceLead": "A munka terjedelmében és a díjban előre és írásban állapodunk meg, az ügy minden részére külön.",
+    "price": [
+      {
+        "label": "Cégalapítás",
+        "value": "299 € átalánydíj",
+        "desc": "Teljes körű alapítás, amely magában foglalja az alapító dokumentumok ügyvédi autorizációját, a cégjegyzékbe történő bejegyzés iránti kérelem benyújtását és az iparengedélyek (živnosť) intézését – ugyanaz a díj, amelyet bármely szlovák s.r.o. alapításáért kérünk. Az első bejegyzés 220 € összegű bírósági illetékét külön kell megfizetni."
+      },
+      {
+        "label": "Tartózkodási engedély iránti kérelem",
+        "value": "előre megállapított fix díj",
+        "desc": "Annak felmérése, hogy melyik út alkalmazandó, a kérelem elkészítése és az Ön képviselete az idegenrendészet előtt. Az árajánlatot akkor adjuk meg, amikor már tudjuk, hogy a három út közül melyik illik az Ön ügyére."
+      },
+      {
+        "label": "Harmadik felek költségei",
+        "value": "külön számlázva, a tényleges összegben",
+        "desc": "Bírósági és közigazgatási illetékek, szükség esetén hiteles fordítások, valamint a székhelyszolgáltatás, ha igénybe veszi – lásd alább."
+      }
+    ],
+    "priceNote": "A jogi képviseletet magunk látjuk el; könyvelést, székhelyszolgáltatást, munkaközvetítést és szálláskeresést házon belül nem nyújtunk. Ha ezek valamelyikére szüksége van, önálló engedéllyel rendelkező szolgáltatóhoz irányítjuk, akinek a számlája a miénktől elkülönül – soha nem építjük be a díjunkba. Így minden szolgáltatás annak az engedélynek a keretében marad, amely ténylegesen lefedi, az Önnek adott tanácsunk pedig mentes marad mindenfajta közvetítői érdektől.",
+    "formOverline": "Kötelezettség nélkül",
+    "formTitle": "Írja le nekünk a helyzetét",
+    "formLead": "Írja meg, van-e már szlovák társasága, mi a szerepe benne (vagy mi lesz), és honnan nyújtja be a kérelmet. Jelentkezünk Önnél, és ismertetjük, melyik út alkalmazandó. Az űrlap elküldésével nem jön létre ügyvéd–ügyfél jogviszony.",
+    "faqOverline": "GYIK",
+    "faqTitle": "Gyakran ismételt kérdések",
+    "faq": [
+      {
+        "q": "Lehet szlovák társaságom úgy, hogy nem élek Szlovákiában?",
+        "a": "Igen. Az üzletrész birtoklásához senki számára nem kapcsolódik tartózkodási feltétel – az s.r.o. alapítója és tagja esetében a cégbíróság az adóügyi és végrehajtási akadályokat vizsgálja, nem a tartózkodást. A tartózkodási feltétel ahhoz a személyhez kötődik, aki a társaság nevében eljárni jogosult, jellemzően az ügyvezetőhöz: a cégjegyzékről szóló 29/2026 Tt. sz. törvény 51. §-ának (4) bekezdése szerint a cégbíróság a bejegyzés előtt ellenőrzi, hogy e személy rendelkezik-e szlovák tartózkodási engedéllyel, kivéve, ha EU-tagállam, EGT-állam vagy OECD-tagállam állampolgára. Magát az engedélyt ezt követően vállalkozási célú ideiglenes tartózkodásként lehet megszerezni a 404/2011 Tt. sz. törvény 22. §-a alapján. Annak a tagnak, aki nem ügyvezető, semmilyen engedélyre nincs szüksége. Fontos: ez a cégjegyzékbe való bejegyzés feltétele; a kézműves és a képesítéshez kötött iparűzési tevékenységeknél a felelős képviselőnek emellett szlovákiai lakóhellyel kell rendelkeznie, vagy más jogcímen kell jogosultnak lennie az itt-tartózkodásra (az iparűzési törvény 11. §-ának (3) bekezdése) – ez külön feltétel."
+      },
+      {
+        "q": "El kell mennem közjegyzőhöz a cégalapításhoz?",
+        "a": "Nem feltétlenül. 2026. augusztus 17-től a társasági szerződést és az alapító okiratot vagy közjegyzői okiratként, vagy ügyvéd által autorizált (ellenjegyzett) okiratként kell elkészíteni (a Kereskedelmi Törvénykönyv 57. §-ának (1) és (3) bekezdése a 29/2026 Tt. sz. törvénnyel módosított szövegében). Az autorizáció azt jelenti, hogy az ügyvéd elkészíti az okiratot, ellenőrzi a fél és az esetleges képviselő személyazonosságát, és megvizsgálja, hogy a jogügylet összhangban van-e a jogszabályokkal (az ügyvédségről szóló 586/2003 Tt. sz. törvény 1a. §-ának (2) bekezdése); az okiratot még aznap elhelyezik a Szlovák Ügyvédi Kamara autorizációs nyilvántartásában. Ha az okiratot ügyvéd autorizálta, az aláírások hatósági hitelesítésére nincs szükség (a 29/2026 Tt. sz. törvény 50. §-ának (4) bekezdése). Közjegyzői okirat továbbra is kötelező a többtagú s.r.o. taggyűlésének az ügyvezetőkre vagy az üzletrészek változásaira vonatkozó későbbi határozataihoz (a Kereskedelmi Törvénykönyv 127a. §-ának (4) bekezdése)."
+      },
+      {
+        "q": "Előbb a társaságot kell megalapítanom, és utána kérelmeznem a tartózkodást, vagy fordítva?",
+        "a": "A gyakorlatban a társaságnak léteznie kell, vagy legalább be kell nyújtani a bejegyzési kérelmét, mielőtt a tartózkodási kérelemben be lehetne mutatni, mit fog az ügyvezető Szlovákiában csinálni. A két ügyet úgy ütemezzük, hogy a tartózkodási kérelem anyaga a társaság bejegyzésekor azonnal benyújtható legyen, és ne csak azután kezdjünk hozzá."
+      },
+      {
+        "q": "Mi a különbség az EU Kék Kártya és az általános munkavállalási engedély között?",
+        "a": "Mindkettő munkavállalásra jogosít, de a Kék Kártya azoknak az állásoknak van fenntartva, amelyek megfelelnek a 404/2011 Tt. sz. törvény 37. és azt követő §-aiban foglalt – az (EU) 2021/1883 irányelvet átültető – képesítési és bérfeltételeknek: elismert felsőfokú végzettség – vagy a törvény 3. mellékletében felsorolt IKT-foglalkozások esetében a megelőző hét évben szerzett hároméves szakmai tapasztalat –, valamint olyan fizetés, amely eléri legalább a szlovák nemzetgazdaságban foglalkoztatott munkavállaló előző naptári évi havi átlagbérének 1,2-szeresét, illetve a végzettség megszerzését követő három éven belül magát az átlagbért. A munkaviszonyt legalább hat hónapra kell létesíteni (az 5/2004 Tt. sz. törvény 21a. § (4) bekezdésének d) pontja). Ha az állás megfelel a feltételeknek, a Kék Kártyáról 30 napon belül döntenek, szemben az általános munkavállalási célú tartózkodás 60 napjával, és a Kék Kártya az EU egészére kiterjedő mobilitással, valamint az állandó tartózkodáshoz vezető könnyebb úttal jár."
+      },
+      {
+        "q": "Jöhet velem a családom?",
+        "a": "A családegyesítés a vállalkozási és a munkavállalási célú tartózkodás, valamint a Kék Kártya esetében egyaránt lehetséges; a Kék Kártya útja általában a legegyszerűbb. A fő kérelemmel együtt vizsgáljuk meg, nem utólag."
+      },
+      {
+        "q": "Foglalkoznak könyveléssel, székhelyszolgáltatással, az általam felvett munkavállalók munkavállalási engedélyével vagy szálláskereséssel?",
+        "a": "Nem, házon belül nem – és ez tudatos döntés. Ezek mindegyike külön szabályozott tevékenység: a könyveléshez saját nyilvántartásba vétel kell, a díjazás ellenében végzett munkaközvetítéshez a munkaügyi hivatal által az 5/2004 Tt. sz. törvény alapján kiadott engedély szükséges, a székhelyszolgáltatót pedig saját bejelentési kötelezettségek, 2026 júniusától emellett goAML-regisztrációs kötelezettség is terheli. Olyan szolgáltatóhoz irányítjuk, aki rendelkezik a megfelelő engedéllyel, és aki Önnek külön számláz – mi erre nem teszünk felárat, és közvetítői díjat sem fogadunk el."
+      },
+      {
+        "q": "Mennyi ideig tart az egész folyamat?",
+        "a": "Maga a cégalapítás a dokumentumok aláírásától számítva egy-két hetet vesz igénybe. A tartózkodási döntést törvényi határidők kötik a 404/2011 Tt. sz. törvény 33. §-ának (8) bekezdése, a Kék Kártya esetében pedig 38. §-ának (7) bekezdése alapján: 30 nap a Kék Kártyánál, 60 nap a munkavállalási célú tartózkodásnál, és 90 nap a többi célnál, a vállalkozást is beleértve. Ezek a határidők csak akkor indulnak, amikor a kérelem hiánytalan, és előbb a dokumentumokat kell külföldről beszerezni. Ezért azt javasoljuk, hogy három-négy hónappal azelőtt kezdje el, mint amikorra Szlovákiában működnie kell."
+      }
+    ],
+    "relatedTitle": "Kapcsolódó",
+    "sourcesTitle": "A jogszabályok, amelyekre ez az oldal épül",
+    "sourcesLead": "A jogi helyzet 2026. augusztus 23-i állapot szerint; a 404/2011 Tt. sz. törvényt a 2026. július 15-től hatályos szövegében idézzük, továbbá a cégjegyzékről szóló 29/2026 Tt. sz. törvényt, amely 2026. augusztus 17-én az 530/2003 Tt. sz. törvény helyébe lépett. Az egyes jogszabályok teljes szövege a Slov-Lex és az EUR-Lex portálon érhető el. A „Tt.” rövidítés a Szlovák Köztársaság Törvénytárát (Zbierka zákonov) jelöli. A létminimumhoz vagy az átlagbérhez kötött küszöbértékek évente változnak – az aktuális összeget a kérelem benyújtásának napjára vonatkozóan ellenőrizni kell. A fenti tájékoztatás általános jellegű, és nem helyettesíti az egyedi ügyben nyújtott tanácsadást.",
+    "sources": [
+      {
+        "label": "404/2011 Tt. sz. törvény a külföldiek tartózkodásáról",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2011/404/"
+      },
+      {
+        "label": "(EU) 2021/1883 irányelv – EU Kék Kártya",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021L1883"
+      },
+      {
+        "label": "513/1991 Tt. sz. törvény – szlovák Kereskedelmi Törvénykönyv",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "29/2026 Tt. sz. törvény a cégjegyzékről (hatályos 2026. augusztus 17-től)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/29/"
+      },
+      {
+        "label": "586/2003 Tt. sz. törvény az ügyvédségről – 1a–1ac. §, okiratok autorizációja",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2003/586/"
+      },
+      {
+        "label": "71/1992 Tt. sz. törvény a bírósági illetékekről – az illetéktáblázat 17. tétele",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "Az Igazságügyi Minisztérium 203/2026 Tt. sz. rendelete a bejegyzéshez szükséges okiratokról",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/203/"
+      },
+      {
+        "label": "5/2004 Tt. sz. törvény a foglalkoztatási szolgálatokról",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/5/"
+      },
+      {
+        "label": "297/2008 Tt. sz. törvény a pénzmosás elleni védelemről",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2008/297/"
+      }
+    ]
+  },
+  "consent": {
+    "text": "Cookie-kat (sütiket) használunk – az oldal működéséhez elengedhetetleneket, valamint az Ön hozzájárulásával analitikai és marketingcélúakat.",
+    "more": "Cookie-szabályzat",
+    "acceptAll": "Összes elfogadása",
+    "essential": "Csak az elengedhetetlenek",
+    "manage": "Cookie-beállítások módosítása"
+  },
+  "notFound": {
+    "title": "Az oldal nem található",
+    "text": "A keresett oldal nem létezik, vagy áthelyeztük.",
+    "back": "Vissza a főoldalra"
+  }
+}

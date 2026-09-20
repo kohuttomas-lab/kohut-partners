@@ -1,1 +1,669 @@
-{}
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "shop": "Shop",
+    "about": "Über uns",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "international": "Internationale Mandanten"
+  },
+  "common": {
+    "cta": "Beratungstermin buchen",
+    "ctaShort": "Termin buchen",
+    "servDetailCta": "Details ansehen",
+    "servAll": "Alle Leistungen",
+    "from": "ab",
+    "withVat": "inkl. MwSt.",
+    "orderBtn": "Bestellen",
+    "readMore": "Artikel lesen",
+    "readTime": "Min. Lesezeit",
+    "backToBlog": "Zurück zum Blog",
+    "areaOther": "Sonstiges",
+    "langSwitch": "SK",
+    "sending": "Wird gesendet …",
+    "formError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder rufen Sie uns an."
+  },
+  "home": {
+    "overline": "Slowakische Rechtsanwaltskanzlei · Zvolen, Slowakei",
+    "heroBadge": "Slowakische Rechtsanwaltskammer · Zvolen",
+    "heroTitle": "Ihre Kanzlei für slowakisches Recht.",
+    "heroLead": "Wir beraten internationale Mandanten im slowakischen Recht – auf Englisch oder Slowakisch: Immobilienkauf, Gesellschaftsgründung, Forderungseinzug, Insolvenz und Streitigkeiten vor slowakischen Gerichten. Klare Beratung, schnelles Handeln und ein Preis, den Sie im Voraus kennen.",
+    "heroPrimary": "Beratungstermin buchen",
+    "heroSecondary": "Rechts-Shop",
+    "heroChips": [
+      "Festpreis",
+      "Antwort innerhalb von 24 Stunden",
+      "Wir kommunizieren auf Englisch und Slowakisch"
+    ],
+    "trustLabel": "Uns vertrauen Unternehmer, Gesellschaften und Investoren – aus der Slowakei und aus dem Ausland",
+    "stats": [
+      {
+        "value": "20",
+        "label": "Jahre Praxis"
+      },
+      {
+        "value": "2.400+",
+        "label": "erledigte Mandate"
+      },
+      {
+        "value": "6",
+        "label": "Rechtsgebiete"
+      },
+      {
+        "value": "8",
+        "label": "Teammitglieder (4 Rechtsanwälte)"
+      }
+    ],
+    "servOverline": "Rechtsgebiete · slowakisches Recht",
+    "servTitle": "Wie wir internationalen Mandanten in der Slowakei helfen",
+    "servLead": "Wir beraten ausschließlich im slowakischen Recht – vom Immobilienkauf bis zu Streitigkeiten vor slowakischen Gerichten. Wählen Sie ein Rechtsgebiet und sehen Sie genau, was wir übernehmen, zu welchem Preis und wie die Zusammenarbeit abläuft.",
+    "whyOverline": "So arbeiten wir",
+    "whyTitle": "In drei Schritten zu einer klaren Lösung",
+    "why": [
+      {
+        "title": "Beratungstermin buchen",
+        "desc": "Online per Videoanruf, auf Englisch oder Slowakisch – oder persönlich. Wählen Sie einen Termin und schildern Sie Ihre Situation; die erste Antwort erhalten Sie innerhalb von 24 Stunden."
+      },
+      {
+        "title": "Wir vereinbaren Vorgehen und Preis",
+        "desc": "Wir schlagen eine Lösung nach slowakischem Recht vor und nennen vorab einen Festpreis. Keine Überraschungen durch Stundensätze."
+      },
+      {
+        "title": "Wir übernehmen die Sache",
+        "desc": "Wir vertreten Sie vor slowakischen Gerichten und Behörden und halten Sie bei jedem Schritt auf dem Laufenden – in den meisten Angelegenheiten ist keine Reise in die Slowakei nötig."
+      }
+    ],
+    "teamOverline": "Unser Team",
+    "teamTitle": "Die Menschen, die an Ihrer Seite stehen",
+    "teamLead": "Ein eingespieltes Team von Rechtsanwälten mit praktischer Erfahrung im Insolvenzrecht, im Gesellschaftsrecht und in der Prozessführung.",
+    "teamCta": "Das gesamte Team kennenlernen",
+    "ctaBandTitle": "Eine Rechtsangelegenheit in der Slowakei? Fangen wir heute an.",
+    "ctaBandLead": "Die Erstberatung ist unverbindlich – online auf Englisch oder Slowakisch oder persönlich in unserer Kanzlei. Wählen Sie einen Termin, der Ihnen passt.",
+    "ctaBandBtn": "Beratungstermin buchen"
+  },
+  "team": {
+    "photoSlot": "Platz für Foto"
+  },
+  "services": {
+    "heroTitle": "Rechtsdienstleistungen nach slowakischem Recht",
+    "heroLead": "Vom Immobilienkauf in der Slowakei bis zur Rettung eines Unternehmens in der Krise. Wir beraten ausschließlich im slowakischen Recht – mit klarem Ablauf und zum Festpreis.",
+    "whatWeSolve": "Was wir für Sie übernehmen",
+    "packages": "Pakete zum Festpreis",
+    "packagesLead": "Ausgewählte Leistungen können Sie online zu einem vorab bekannten Preis bestellen. Komplexere Angelegenheiten bearbeiten wir nach einer Beratung.",
+    "faqTitle": "Häufig gestellte Fragen",
+    "bookForThis": "Beratung zu diesem Rechtsgebiet",
+    "deepTopics": "Spezialthemen:",
+    "deepCmr": "Einzug von CMR-Frachtlohnforderungen",
+    "deepCfr": "Gesellschaftsgründung und Aufenthalt für Ausländer",
+    "packageCta": "Ich habe Interesse"
+  },
+  "about": {
+    "heroOverline": "Über die Kanzlei",
+    "heroTitle": "Eine slowakische Kanzlei, die Recht verständlich macht.",
+    "heroLead": "Am Anfang stand eine einfache Überzeugung: Recht soll für den Mandanten verständlich, vorhersehbar und fair sein. Nach 20 Jahren Praxis gilt das unverändert – und heute beraten wir internationale Mandanten im slowakischen Recht, auf Englisch oder Slowakisch.",
+    "valuesOverline": "Unsere Werte",
+    "valuesTitle": "Wofür wir stehen",
+    "values": [
+      {
+        "title": "Verständlichkeit",
+        "desc": "Wir erklären so, dass Sie jede Entscheidung nachvollziehen können. Keine leeren Paragrafen."
+      },
+      {
+        "title": "Vorhersehbarkeit",
+        "desc": "Preis und Vorgehen kennen Sie im Voraus – so entscheiden Sie in Ruhe."
+      },
+      {
+        "title": "Ergebnisse",
+        "desc": "Wir sind dazu da, Ihre Angelegenheit zu lösen – nicht, sie in die Länge zu ziehen."
+      }
+    ],
+    "storyTitle": "Unsere Geschichte",
+    "story": [
+      "Wir haben die Kanzlei 2011 mit dem Anspruch gegründet, Recht anders zu machen – näher am Unternehmer und weiter weg von unnötiger Komplexität.",
+      "Heute sind wir ein eingespieltes Team, das Unternehmen von der Gründung über das Wachstum bis hin zu Krisensituationen begleitet. Unsere Schwerpunkte sind Insolvenzrecht, Gesellschafts- und IT-Recht, Immobilien und Prozessführung.",
+      "Wir sind überzeugt: Der beste Rechtsanwalt ist der, den man versteht. Deshalb erklären wir jede Angelegenheit in verständlichen Worten und nennen den Preis im Voraus."
+    ]
+  },
+  "contact": {
+    "overline": "Kontakt",
+    "title": "Schreiben Sie uns",
+    "lead": "Füllen Sie das Formular aus – wir antworten innerhalb eines Werktags, auf Englisch oder Slowakisch. Oder buchen Sie gleich eine Videoberatung.",
+    "fName": "Vor- und Nachname",
+    "fEmail": "E-Mail",
+    "fPhone": "Telefon",
+    "fArea": "Rechtsgebiet",
+    "fMsg": "Wie können wir helfen?",
+    "fAreaPlaceholder": "Rechtsgebiet wählen …",
+    "fSource": "Wie haben Sie uns gefunden?",
+    "fSourcePlaceholder": "Optional – es hilft uns",
+    "fSourceSearch": "Suchmaschine (Google, Bing …)",
+    "fSourceAi": "KI-Assistent (ChatGPT, Perplexity …)",
+    "fSourceReferral": "Empfehlung",
+    "fSourceSocial": "Soziale Medien",
+    "fSourceReturning": "Ich kenne Sie bereits",
+    "fSourceOther": "Auf anderem Weg",
+    "fConsent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten zu.",
+    "fSubmit": "Anfrage senden",
+    "sentTitle": "Vielen Dank!",
+    "sentLead": "Wir melden uns innerhalb eines Werktags bei Ihnen.",
+    "offices": "Unsere Kanzlei",
+    "hoursLabel": "Bürozeiten",
+    "hours": "Mo–Fr 9:00–16:00 Uhr",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "namePlaceholder": "Ján Novák",
+    "emailPlaceholder": "jan@firma.sk",
+    "phonePlaceholder": "+421 …"
+  },
+  "booking": {
+    "title": "Beratungstermin buchen",
+    "step": "Schritt",
+    "type": "Art der Beratung",
+    "online": "Online (Videoanruf)",
+    "inPerson": "Persönlich in der Kanzlei",
+    "area": "Rechtsgebiet",
+    "date": "Datum wählen",
+    "timeLabel": "Freie Termine",
+    "next": "Weiter",
+    "back": "Zurück",
+    "contact": "Ihre Angaben",
+    "payNote": "Beratung (30 Min.) · unverbindlich. Wir melden uns bei Ihnen, um den Termin zu bestätigen.",
+    "confirm": "Buchung absenden",
+    "doneTitle": "Vielen Dank für Ihre Buchung",
+    "doneLead": "Wir melden uns in Kürze bei Ihnen, um Ihren Beratungstermin zu bestätigen.",
+    "doneClose": "Fertig",
+    "weekdays": [
+      "Mo",
+      "Di",
+      "Mi",
+      "Do",
+      "Fr"
+    ]
+  },
+  "footer": {
+    "tag": "Rechtsanwaltskanzlei, eingetragen bei der Slowakischen Rechtsanwaltskammer.",
+    "cols": [
+      {
+        "head": "Leistungen",
+        "items": [
+          "Insolvenzrecht",
+          "Handels- und Zivilrecht",
+          "Immobilien",
+          "Prozessführung",
+          "Strafrecht",
+          "IT-Recht"
+        ]
+      },
+      {
+        "head": "Kanzlei",
+        "items": [
+          "Über die Kanzlei",
+          "Team",
+          "Internationale Mandanten",
+          "Kontakt"
+        ]
+      },
+      {
+        "head": "Rechtliches",
+        "items": [
+          "Datenschutz (EN)",
+          "AGB (EN)",
+          "Cookies (EN)"
+        ]
+      }
+    ],
+    "fine": "Diese Website dient ausschließlich der allgemeinen Information und stellt keine Rechtsberatung dar. Alle Informationen und Leistungen betreffen ausschließlich das Recht der Slowakischen Republik und seine Anwendung durch slowakische Gerichte und Behörden.",
+    "rights": "© kohút & partners s.r.o. · ID-Nr. 47 235 888",
+    "country": "Slowakische Republik"
+  },
+  "intl": {
+    "heroOverline": "Internationale Mandanten",
+    "heroTitle": "Slowakisches Recht – verständlich erklärt.",
+    "heroLead": "Wir sind eine slowakische Rechtsanwaltskanzlei und beraten ausschließlich im Recht der Slowakischen Republik. Wenn sich Ihr Unternehmen, Ihre Immobilie, Ihr Schuldner oder Ihr Rechtsstreit in der Slowakei befindet, führen wir Sie durch das slowakische Rechtssystem – auf Englisch oder Slowakisch, überwiegend aus der Ferne. Diese Seite stellen wir Ihnen zur besseren Verständlichkeit auf Deutsch bereit; mit Mandanten kommunizieren wir auf Englisch oder Slowakisch.",
+    "helpOverline": "Was wir für Sie tun",
+    "helpTitle": "Typische Angelegenheiten, die wir für internationale Mandanten bearbeiten",
+    "helpLead": "Jede der folgenden Angelegenheiten richtet sich nach slowakischem Recht und wird vor slowakischen Gerichten, Notaren, dem Liegenschaftskataster und anderen slowakischen Behörden bearbeitet.",
+    "help": [
+      {
+        "title": "Immobilienkauf in der Slowakei",
+        "desc": "Kaufverträge, Prüfung der Eigentumsverhältnisse im slowakischen Grundbuch bzw. Liegenschaftskataster (kataster), Treuhandabwicklung zum Schutz Ihres Geldes und Eintragung des Eigentums."
+      },
+      {
+        "title": "Geschäftstätigkeit in der Slowakei",
+        "desc": "Gründung einer s.r.o. (slowakische GmbH) für ausländische Gründer – vollständig aus der Ferne per Vollmacht – sowie Handelsverträge und laufende gesellschaftsrechtliche Betreuung."
+      },
+      {
+        "title": "Forderungseinzug bei slowakischen Schuldnern",
+        "desc": "Vorgerichtliche Mahnung, slowakisches Mahnverfahren (Zahlungsbefehl), Klage und Zwangsvollstreckung – ein klares, gestuftes Vorgehen mit bekannten Kosten."
+      },
+      {
+        "title": "Gläubiger in slowakischen Insolvenzverfahren",
+        "desc": "Anmeldung Ihrer Forderung beim slowakischen Insolvenzverwalter innerhalb der gesetzlichen Fristen, Vertretung im Gläubigerausschuss und Überwachung des Verfahrens."
+      },
+      {
+        "title": "Streitigkeiten vor slowakischen Gerichten",
+        "desc": "Zivil- und handelsrechtliche Prozesse, Vollstreckung ausländischer Entscheidungen in der Slowakei, einstweilige Maßnahmen und Vergleichsverhandlungen."
+      }
+    ],
+    "remoteOverline": "So funktioniert es",
+    "remoteTitle": "Zusammenarbeit mit uns aus dem Ausland",
+    "remote": [
+      {
+        "title": "Videoberatung auf Englisch oder Slowakisch",
+        "desc": "Buchen Sie online einen Termin – wir besprechen Ihre Angelegenheit, skizzieren die Rechtslage nach slowakischem Recht und vereinbaren die nächsten Schritte."
+      },
+      {
+        "title": "Mandatsvereinbarung und Vollmacht",
+        "desc": "Sie erhalten die Mandatsvereinbarung und die Vollmacht per E-Mail. In den meisten Angelegenheiten genügt ein unterschriebener Scan; wo slowakische Behörden es verlangen, begleiten wir Sie durch die Beglaubigung oder die Einholung einer Apostille."
+      },
+      {
+        "title": "Wir handeln für Sie in der Slowakei",
+        "desc": "Wir übernehmen für Sie den Verkehr mit slowakischen Gerichten, Notaren, dem Liegenschaftskataster und Behörden. Ihre persönliche Anwesenheit ist nur selten erforderlich."
+      },
+      {
+        "title": "Transparente Honorare",
+        "desc": "Für klar umrissene Angelegenheiten ein vorab vereinbartes Festhonorar; Rechnungen in Euro, Zahlung per Banküberweisung. Keine Überraschungen durch Stundensätze."
+      }
+    ],
+    "scopeTitle": "Eine wichtige Einschränkung",
+    "scopeText": "Wir beraten ausschließlich im Recht der Slowakischen Republik. Zum Recht Ihres Heimatlandes beraten wir nicht – berührt Ihre Angelegenheit eine andere Rechtsordnung, arbeiten wir mit Ihrem dortigen Rechtsanwalt zusammen.",
+    "formOverline": "Schreiben Sie uns",
+    "formTitle": "Schildern Sie Ihre Angelegenheit – wir antworten auf Englisch oder Slowakisch",
+    "formLead": "Teilen Sie uns mit, worum es geht und welchen Bezug die Angelegenheit zur Slowakei hat. Wir melden uns bei Ihnen und erläutern die nächsten Schritte. Durch das Absenden dieses Formulars entsteht kein Mandatsverhältnis.",
+    "ctaTitle": "Erzählen Sie uns von Ihrer Angelegenheit in der Slowakei",
+    "ctaLead": "Die Erstberatung ist unverbindlich und findet auf Englisch oder Slowakisch statt."
+  },
+  "cmr": {
+    "metaTitle": "CMR-Forderungseinzug – unbezahlter Frachtlohn",
+    "metaDescription": "Unbezahlter Frachtlohn eines slowakischen Auftraggebers: Verjährung nach Art. 32 CMR, slowakisches Mahnverfahren (Zahlungsbefehl) und Zwangsvollstreckung. Rechtsanwaltskanzlei in Zvolen.",
+    "heroOverline": "Internationaler Straßengüterverkehr",
+    "heroTitle": "Einzug von unbezahltem Frachtlohn nach dem CMR-Übereinkommen",
+    "heroLead": "Frachtlohn (Fracht), den ein Auftraggeber mit Sitz in der Slowakischen Republik nicht bezahlt hat. Wir übernehmen die Akte, prüfen die Verjährung nach Art. 32 des CMR-Übereinkommens und führen die Sache von der vorgerichtlichen Mahnung bis zur Zwangsvollstreckung.",
+    "heroPara": [
+      "Wir vertreten Frachtführer, Spediteure und Logistikunternehmen – slowakische wie ausländische –, deren Auftraggeber die Rechnung für eine bereits durchgeführte Beförderung nicht bezahlt hat.",
+      "Wir arbeiten auf Englisch und Slowakisch und können die gesamte Angelegenheit aus der Ferne führen."
+    ],
+    "heroCta": "Senden Sie uns die Akte",
+    "whoOverline": "Für wen wir tätig sind",
+    "whoTitle": "Was wir tun und für wen",
+    "whoLead": "Wir konzentrieren uns auf Geldforderungen aus der internationalen Beförderung von Gütern auf der Straße, bei denen der Schuldner seinen Sitz in der Slowakischen Republik hat.",
+    "who": [
+      {
+        "title": "Frachtführer",
+        "desc": "Unbezahlter Frachtlohn für bereits durchgeführte Beförderungen – auch dann, wenn der Auftraggeber die Rechnung nie bestritten hat und schlicht nicht zahlt."
+      },
+      {
+        "title": "Spediteure",
+        "desc": "Forderungen gegen den Auftraggeber und die Klärung Ihrer Stellung in der Kette Auftraggeber – Spediteur – Frachtführer."
+      },
+      {
+        "title": "Ausländische Gläubiger",
+        "desc": "Polnische, litauische, tschechische und andere ausländische Unternehmen, deren Schuldner seinen Sitz in der Slowakei hat. Wir führen das Verfahren vor slowakischen Gerichten und Gerichtsvollziehern (exekútor) für Sie."
+      },
+      {
+        "title": "Gekürzte und bestrittene Rechnungen",
+        "desc": "Abzüge wegen Verspätung, Beschädigung des Gutes oder angeblicher Verletzung des Transportauftrags. Wir prüfen, welche der Abzüge nach dem CMR-Übereinkommen und dem Vertrag Bestand haben."
+      }
+    ],
+    "keyOverline": "Worauf es ankommt",
+    "keyTitle": "Was sich am ersten Tag entscheidet",
+    "keyLead": "Zwei Dinge müssen feststehen, bevor das erste Schreiben hinausgeht: wie lange der Anspruch noch geltend gemacht werden kann und welches Recht auf ihn anwendbar ist. Beide Antworten ergeben sich aus dem CMR-Übereinkommen, in der Slowakischen Republik veröffentlicht als Bekanntmachung des Außenministers Nr. 11/1975 Slg. Nach seinem Art. 1 Abs. 1 gilt das Übereinkommen für jeden Vertrag über die entgeltliche Beförderung von Gütern auf der Straße mittels Fahrzeugen, wenn der Ort der Übernahme des Gutes und der für die Ablieferung vorgesehene Ort, wie sie im Vertrag angegeben sind, in zwei verschiedenen Staaten liegen, von denen mindestens einer ein Vertragsstaat ist – ohne Rücksicht auf den Wohnsitz und die Staatsangehörigkeit der Parteien.",
+    "key": [
+      {
+        "title": "Verjährung nach Art. 32 CMR",
+        "desc": "Nach Art. 32 Abs. 1 des Übereinkommens verjähren Ansprüche aus einer dem Übereinkommen unterliegenden Beförderung in einem Jahr; bei Vorsatz oder bei einem Verschulden, das nach dem Recht des angerufenen Gerichts dem Vorsatz gleichsteht, beträgt die Verjährungsfrist drei Jahre. Der Anspruch auf Zahlung des Frachtlohns ist kein Anspruch wegen Verlusts, Beschädigung oder Überschreitung der Lieferfrist, sodass der Auffangtatbestand des Art. 32 Abs. 1 Buchst. c greift: Die Frist beginnt mit dem Ablauf von drei Monaten nach dem Abschluss des Beförderungsvertrags, und der Tag, an dem die Verjährung beginnt, wird bei der Berechnung der Frist nicht mitgerechnet. In der Praxis kann der Anspruch somit rund fünfzehn Monate nach Abschluss des Beförderungsvertrags verjährt sein – gerechnet ab Vertragsschluss, nicht ab Fälligkeit der Rechnung. Nach Art. 32 Abs. 2 des Übereinkommens hemmt eine schriftliche Reklamation die Verjährung bis zu dem Tag, an dem der Frachtführer die Reklamation schriftlich zurückweist und die beigefügten Belege zurücksendet; eine weitere Reklamation in derselben Sache hemmt die Verjährung nicht erneut. Diese Bestimmung ist auf eine vom Frachtführer zurückgewiesene Reklamation zugeschnitten – eine vorgerichtliche Mahnung, mit der der Frachtführer selbst den Frachtlohn vom Auftraggeber fordert, fällt nicht unter ihren Wortlaut und hemmt die Verjährung nicht. Abgesehen vom Fall des Absatzes 2 gilt für Hemmung und Unterbrechung der Verjährung nach Art. 32 Abs. 3 das Recht des angerufenen Gerichts; vor einem slowakischen Gericht ist das § 402 des slowakischen Handelsgesetzbuchs, wonach die Verjährungsfrist erst mit einer Handlung zu laufen aufhört, die als Einleitung des Gerichtsverfahrens oder als Geltendmachung des Rechts in einem bereits eingeleiteten Verfahren gilt. Mahnungen an den Schuldner verlängern die Frist nicht.",
+        "note": "Ob für den Frachtlohnanspruch des Frachtführers die einjährige Frist nach Art. 32 CMR oder die allgemeine vierjährige Verjährungsfrist nach § 397 des slowakischen Handelsgesetzbuchs gilt, wird in der Fachpraxis nicht einheitlich beurteilt. Angesichts dieser Unsicherheit ist es angebracht, mit der kürzeren Frist zu arbeiten."
+      },
+      {
+        "title": "Anwendbares Recht nach der Rom-I-Verordnung",
+        "desc": "Haben die Parteien keine Rechtswahl getroffen, bestimmt sich das anwendbare Recht nach Art. 5 Abs. 1 der Verordnung (EG) Nr. 593/2008 (Rom I): Anzuwenden ist das Recht des Staates, in dem der Beförderer (Frachtführer) seinen gewöhnlichen Aufenthalt hat, sofern sich in diesem Staat auch der Übernahmeort oder der Ablieferungsort oder der gewöhnliche Aufenthalt des Absenders befindet. Sind diese Voraussetzungen nicht erfüllt, ist das Recht des Staates des von den Parteien vereinbarten Ablieferungsorts anzuwenden. Nach Art. 5 Abs. 3 ist das Recht eines anderen Staates anzuwenden, wenn sich aus der Gesamtheit der Umstände ergibt, dass der Vertrag bei fehlender Rechtswahl eine offensichtlich engere Verbindung zu diesem anderen Staat aufweist; die Regel verdrängt daher eine wirksame Rechtswahl nach Art. 3 nicht.",
+        "note": "Das CMR-Übereinkommen hat Vorrang, soweit es die Frage selbst regelt – das folgt aus § 756 des slowakischen Handelsgesetzbuchs. Auch Art. 25 Abs. 1 der Rom-I-Verordnung bestimmt, dass die Verordnung die Anwendung internationaler Übereinkommen nicht berührt, denen Mitgliedstaaten angehören und die Kollisionsnormen für vertragliche Schuldverhältnisse enthalten. Das nach der Verordnung bestimmte Recht gilt daher nur für Fragen, die das Übereinkommen nicht regelt; der Frachtlohnanspruch des Frachtführers gehört dazu."
+      },
+      {
+        "title": "Wo geklagt werden kann – Art. 31 CMR",
+        "desc": "Nach Art. 31 Abs. 1 des Übereinkommens kann der Kläger die durch Vereinbarung der Parteien bestimmten Gerichte eines Vertragsstaats anrufen, ferner die Gerichte des Staates, in dem der Beklagte seinen gewöhnlichen Aufenthalt, seine Hauptniederlassung oder die Zweigniederlassung oder Geschäftsstelle hat, durch deren Vermittlung der Beförderungsvertrag geschlossen worden ist, oder die Gerichte des Staates, in dem der Ort der Übernahme des Gutes oder der für die Ablieferung vorgesehene Ort liegt; andere Gerichte können nicht angerufen werden. Hat der Schuldner seinen Sitz in der Slowakischen Republik oder wurde das Gut hier entladen, sind die slowakischen Gerichte zuständig.",
+        "note": "Nach Art. 71 Abs. 1 der Verordnung (EU) Nr. 1215/2012 (Brüssel Ia) lässt die Verordnung Übereinkünfte unberührt, die für besondere Rechtsgebiete die gerichtliche Zuständigkeit, die Anerkennung oder die Vollstreckung von Entscheidungen regeln; nach Art. 71 Abs. 2 Buchst. b wird eine Entscheidung, die ein Gericht in Ausübung einer auf eine solche Übereinkunft gestützten Zuständigkeit erlassen hat, in den anderen Mitgliedstaaten nach dieser Verordnung anerkannt und vollstreckt. Regelt die Übereinkunft selbst die Voraussetzungen für die Anerkennung oder Vollstreckung – Art. 31 Abs. 3 des CMR-Übereinkommens knüpft die Vollstreckbarkeit in den anderen Vertragsstaaten an die Erfüllung der dort vorgeschriebenen Formerfordernisse –, so gelten diese Voraussetzungen; in jedem Fall können die Bestimmungen der Verordnung über die Anerkennung und Vollstreckung, und damit die Vollstreckung ohne Vollstreckbarerklärung, angewandt werden."
+      }
+    ],
+    "stepsOverline": "Ablauf",
+    "stepsTitle": "So läuft es ab",
+    "steps": [
+      {
+        "title": "Übernahme und Analyse der Akte",
+        "desc": "Wir übernehmen den Transportauftrag, den CMR-Frachtbrief und die Rechnung. Wir prüfen, ob die Sache dem CMR-Übereinkommen unterliegt, wie lange der Anspruch noch geltend gemacht werden kann und woraus sich die Hauptforderung genau zusammensetzt."
+      },
+      {
+        "title": "Überprüfung des Schuldners",
+        "desc": "Wir prüfen das slowakische Handelsregister (obchodný register), veröffentlichte Jahresabschlüsse, anhängige Zwangsvollstreckungsverfahren sowie Konkurs- und Restrukturierungsverfahren. Daraus ergibt sich, ob sich ein Verfahren lohnt und in welcher Reihenfolge vorzugehen ist."
+      },
+      {
+        "title": "Vorgerichtliche Mahnung",
+        "desc": "Wir erstellen und versenden eine Zahlungsaufforderung, in der die Hauptforderung, die Verzugszinsen und die Pauschalentschädigung für Beitreibungskosten beziffert sind. Die Mahnung bildet zugleich die Grundlage für die folgenden Schritte."
+      },
+      {
+        "title": "Slowakisches Mahnverfahren (Zahlungsbefehl)",
+        "desc": "Zahlt der Schuldner nicht, stellen wir einen Antrag nach dem Gesetz Nr. 307/2016 Slg. Der Antrag kann nur elektronisch eingereicht werden; sachlich ausschließlich zuständig ist das Bezirksgericht Banská Bystrica. Müsste der Zahlungsbefehl dem Beklagten im Ausland zugestellt werden, steht dieser Weg nicht offen (§ 3 Abs. 6 Buchst. d des Gesetzes) – dann kommt der Europäische Zahlungsbefehl nach der Verordnung (EG) Nr. 1896/2006 in Betracht. Unzulässig ist der Antrag auch dann, wenn die aufgrund des Vertrags geltend gemachten Verzugszinsen den Satz, der ohne eine solche Vereinbarung gelten würde, um mehr als fünf Prozentpunkte übersteigen (§ 3 Abs. 5 Buchst. a des Gesetzes)."
+      },
+      {
+        "title": "Zahlungsbefehl oder Einspruch",
+        "desc": "Das Gericht erlässt den Zahlungsbefehl spätestens zehn Arbeitstage, nachdem die Verfahrensvoraussetzungen einschließlich der Zahlung der Gerichtsgebühr erfüllt sind. Ab Zustellung des Zahlungsbefehls hat der Beklagte 15 Tage Zeit, entweder zu zahlen oder Einspruch einzulegen, der in der Sache begründet sein muss. Wird kein Einspruch eingelegt, hat der Zahlungsbefehl die Wirkungen eines rechtskräftigen Urteils; wird Einspruch eingelegt, nehmen wir dazu Stellung und beantragen innerhalb der 15-tägigen Frist die Fortsetzung des Verfahrens vor dem nach der slowakischen Zivilstreitordnung zuständigen Gericht."
+      },
+      {
+        "title": "Zwangsvollstreckung",
+        "desc": "Sobald die Entscheidung rechtskräftig und vollstreckbar ist, stellen wir den Antrag auf Durchführung der Zwangsvollstreckung. Für das Vollstreckungsverfahren ist ausschließlich das Bezirksgericht Banská Bystrica zuständig; es weist die Sache nach dem Zufallsprinzip einem Gerichtsvollzieher zu – der Gläubiger wählt den Gerichtsvollzieher nicht aus. Läuft gegen denselben Schuldner bereits eine Zwangsvollstreckung und hat das Gericht damit bereits einen Gerichtsvollzieher beauftragt, weist § 55 Abs. 4 der slowakischen Exekutionsordnung jede weitere Sache gegen diesen Schuldner demselben Gerichtsvollzieher zu; die Zufallsauswahl findet dann nicht statt."
+      },
+      {
+        "title": "Eskalation – Konkurs",
+        "desc": "Zeigt sich, dass der Schuldner mehrere Gläubiger nicht bezahlt, kommen ein Konkursantrag und ein Anspruch gegen das Vertretungsorgan auf Ersatz des Schadens in Betracht, der durch die verspätete Antragstellung entstanden ist. Jeden solchen Schritt prüfen wir gesondert: Nach § 11 Abs. 4 des Gesetzes Nr. 7/2005 Slg. haftet der Gläubiger dem Schuldner und anderen Personen für den Schaden, der durch die Wirkungen der Einleitung des Konkursverfahrens entsteht, wenn das Gericht das auf Antrag des Gläubigers eingeleitete Verfahren einstellt, weil die Zahlungsfähigkeit des Schuldners festgestellt wurde – es sei denn, der Gläubiger weist nach, dass er bei der Antragstellung mit fachlicher Sorgfalt gehandelt hat. Ein Konkursantrag ist daher kein Druckmittel."
+      }
+    ],
+    "docsOverline": "Unterlagen",
+    "docsTitle": "Was wir von Ihnen benötigen",
+    "docsLead": "In den meisten Angelegenheiten genügen fünf Unterlagen. Senden Sie sie als Scans oder Fotos; Originale sind in dieser Phase nicht erforderlich.",
+    "docs": [
+      "Der Transportauftrag oder Beförderungsvertrag – einschließlich des E-Mail-Verkehrs, mit dem er geschlossen wurde.",
+      "Der CMR-Frachtbrief einschließlich der Bestätigung des Empfängers über den Erhalt des Gutes.",
+      "Die Rechnung über den Frachtlohn und der Nachweis, dass sie dem Schuldner übersandt wurde.",
+      "Der Ablieferungsnachweis und etwaige weitere Transportdokumente.",
+      "Die Korrespondenz mit dem Schuldner – Mahnungen, Reklamationen, angezeigte Abzüge, Teilzahlungen."
+    ],
+    "priceOverline": "Honorar",
+    "priceTitle": "Was es kostet",
+    "priceLead": "Umfang und Honorar werden vorab und schriftlich vereinbart. Den Preis für die Prüfung und für die vorgerichtliche Mahnung kennen Sie, bevor wir mit der Arbeit beginnen.",
+    "price": [
+      {
+        "label": "Prüfung der Angelegenheit",
+        "value": "vorab vereinbartes Festhonorar",
+        "desc": "Wir gehen die Unterlagen durch, prüfen Verjährung und anwendbares Recht und legen das von uns vorgeschlagene Vorgehen dar. Das Honorar nennen wir, bevor die Arbeit beginnt; entscheiden Sie sich gegen eine Fortsetzung, endet die Sache damit."
+      },
+      {
+        "label": "Vorgerichtliche Mahnung",
+        "value": "Festhonorar je Schritt",
+        "desc": "Erstellung und Versand der Zahlungsaufforderung einschließlich der Berechnung der Verzugszinsen und der Pauschalentschädigung für Beitreibungskosten. Vereinbart als fester Betrag für diesen Schritt, nicht nach Stundensatz."
+      },
+      {
+        "label": "Vertretung im Verfahren",
+        "value": "Festhonorar oder Erfolgshonorar",
+        "desc": "Nach § 7 Abs. 1 der Verordnung des Justizministeriums der Slowakischen Republik Nr. 655/2004 Slg. kann ein Erfolgshonorar in Form eines prozentualen Anteils am Wert der Sache vereinbart werden; nach § 7 Abs. 2 darf es höchstens 20 % dieses Werts betragen. Nach § 8 Abs. 1 der Verordnung wird es nur fällig, wenn der Mandant in der Sache vollen Erfolg hatte; bei teilweisem Erfolg hat der Rechtsanwalt nach § 8 Abs. 2 Anspruch auf das Tarifhonorar entsprechend dem Maß des Erfolgs, und hatte der Mandant auch nicht teilweise Erfolg, kann der Rechtsanwalt nach § 8 Abs. 3 nur den Ersatz der Auslagen verlangen."
+      }
+    ],
+    "priceNote": "Neben dem Anwaltshonorar fallen Auslagen an, insbesondere Gerichtsgebühren. Im Mahnverfahren beträgt die Gerichtsgebühr nach § 11c Abs. 1 des Gesetzes Nr. 71/1992 Slg. über Gerichtsgebühren 50 % des im Gebührentarif festgelegten Prozentsatzes; der Basissatz nach Position 1 Buchst. a des Tarifs beträgt 6 % des Streitwerts, in diesem Verfahren also 3 %, mindestens jedoch 25 Euro und höchstens 25.000 Euro, in Handelssachen 50.000 Euro. Das Gericht fordert den Antragsteller nicht zur Zahlung auf; wird die Gebühr nicht binnen 15 Tagen nach Einreichung gezahlt, bleibt der Antrag unberücksichtigt. Die Gerichtsgebühr für den Antrag auf Durchführung der Zwangsvollstreckung beträgt nach Position 13 Buchst. a des Tarifs 25 Euro. Der Ausgang eines Verfahrens hängt von den Umständen des Einzelfalls ab, insbesondere vom Vermögen des Schuldners.",
+    "formOverline": "Unverbindlich",
+    "formTitle": "Senden Sie uns die Unterlagen zu Ihrer Forderung",
+    "formLead": "Teilen Sie uns mit, welche Beförderung die Forderung betrifft und was der Auftraggeber nicht bezahlt hat. Wir melden uns bei Ihnen und erläutern die nächsten Schritte. Durch das Absenden dieses Formulars entsteht kein Mandatsverhältnis.",
+    "faqOverline": "FAQ",
+    "faqTitle": "Häufig gestellte Fragen",
+    "faq": [
+      {
+        "q": "Wie lange können wir unbezahlten Frachtlohn noch einklagen?",
+        "a": "Nach Art. 32 Abs. 1 des CMR-Übereinkommens beträgt die Verjährungsfrist grundsätzlich ein Jahr. Für den Anspruch auf Zahlung des Frachtlohns gilt Buchst. c: Die Frist beginnt mit dem Ablauf von drei Monaten nach dem Abschluss des Beförderungsvertrags, und der Tag, an dem die Verjährung beginnt, wird bei der Berechnung der Frist nicht mitgerechnet. Der Anspruch kann daher rund fünfzehn Monate nach Abschluss des Beförderungsvertrags verjährt sein – gerechnet ab Vertragsschluss, nicht ab Fälligkeit der Rechnung. Ob für den Frachtlohn diese Frist oder die allgemeine vierjährige Frist nach § 397 des slowakischen Handelsgesetzbuchs gilt, wird in der Fachpraxis nicht einheitlich beurteilt; es ist daher angebracht, mit der kürzeren Frist zu arbeiten. Nach Art. 32 Abs. 2 des Übereinkommens hemmt eine schriftliche Reklamation die Verjährung bis zu dem Tag, an dem der Frachtführer sie schriftlich zurückweist und die beigefügten Belege zurücksendet; eine vorgerichtliche Mahnung, mit der der Frachtführer selbst den Frachtlohn fordert, fällt nicht unter diese Bestimmung und hemmt die Verjährung nicht – vor einem slowakischen Gericht hört die Frist nach § 402 des slowakischen Handelsgesetzbuchs erst zu laufen auf, wenn das Recht gerichtlich geltend gemacht wird. Nach Art. 32 Abs. 4 des Übereinkommens können verjährte Ansprüche auch nicht im Wege der Widerklage oder der Einrede geltend gemacht werden."
+      },
+      {
+        "q": "Können wir einen slowakischen Auftraggeber in der Slowakei verklagen?",
+        "a": "Nach Art. 31 Abs. 1 des CMR-Übereinkommens kann der Kläger unter anderem die Gerichte des Staates anrufen, in dem der Beklagte seine Hauptniederlassung hat, sowie die Gerichte des Staates, in dem der Ort der Übernahme des Gutes oder der für die Ablieferung vorgesehene Ort liegt; andere Gerichte können nicht angerufen werden. Hat der Schuldner seinen Sitz in der Slowakischen Republik oder wurde das Gut hier entladen, sind die slowakischen Gerichte zuständig. Nach Art. 31 Abs. 5 des Übereinkommens darf von Angehörigen der Vertragsstaaten, die ihren Wohnsitz oder eine Niederlassung in einem dieser Staaten haben, keine Sicherheit für die Verfahrenskosten verlangt werden."
+      },
+      {
+        "q": "Welches Recht gilt, wenn wir keine Rechtswahl getroffen haben?",
+        "a": "Das CMR-Übereinkommen hat Vorrang, soweit es die Frage selbst regelt; das folgt aus § 756 des slowakischen Handelsgesetzbuchs, und Art. 25 Abs. 1 der Rom-I-Verordnung lässt die Anwendung solcher Übereinkommen unberührt. Fragen, die das Übereinkommen nicht regelt – darunter der Anspruch auf Zahlung des Frachtlohns selbst –, richten sich nach dem gemäß Art. 5 Abs. 1 der Rom-I-Verordnung bestimmten Recht: dem Recht des Staates, in dem der Beförderer (Frachtführer) seinen gewöhnlichen Aufenthalt hat, sofern sich in diesem Staat auch der Übernahmeort oder der Ablieferungsort oder der gewöhnliche Aufenthalt des Absenders befindet; andernfalls dem Recht des Staates des vereinbarten Ablieferungsorts."
+      },
+      {
+        "q": "Können wir neben der Hauptforderung auch Zinsen und Kosten verlangen?",
+        "a": "Nach § 369 Abs. 1 des slowakischen Handelsgesetzbuchs hat ein Gläubiger, der seine eigenen gesetzlichen und vertraglichen Pflichten erfüllt hat, Anspruch auf Verzugszinsen, ohne dass es einer gesonderten Mahnung bedarf. Wurde kein Zinssatz vereinbart, gilt nach § 369 Abs. 2 des Handelsgesetzbuchs der in der Regierungsverordnung Nr. 21/2013 Slg. festgelegte Satz: nach § 1 Abs. 1 der am ersten Tag des jeweiligen Kalenderhalbjahres des Verzugs geltende Basiszinssatz der Europäischen Zentralbank, erhöht um acht Prozentpunkte, oder – wenn sich der Gläubiger für die feste Variante nach § 1 Abs. 2 entscheidet – der am ersten Tag des Verzugs geltende Basiszinssatz, erhöht um neun Prozentpunkte. Der aktuelle Basiszinssatz der EZB ist zum maßgeblichen Stichtag zu prüfen. Neben den Zinsen gibt § 369c Abs. 1 des Handelsgesetzbuchs dem Gläubiger Anspruch auf eine Pauschalentschädigung für die Kosten der Beitreibung der Forderung; nach § 2 der Regierungsverordnung Nr. 21/2013 Slg. beträgt sie 40 Euro, einmalig und unabhängig von der Dauer des Verzugs."
+      },
+      {
+        "q": "Wie schnell entscheidet das Gericht, und was geschieht, wenn der Schuldner Einspruch einlegt?",
+        "a": "Im Mahnverfahren nach dem Gesetz Nr. 307/2016 Slg. erlässt das Gericht den Zahlungsbefehl spätestens zehn Arbeitstage, nachdem die Verfahrensvoraussetzungen einschließlich der Zahlung der Gerichtsgebühr erfüllt sind. Ab Zustellung des Zahlungsbefehls hat der Beklagte 15 Tage Zeit, zu zahlen oder Einspruch einzulegen, der in der Sache begründet sein muss; einen Einspruch ohne Begründung in der Sache weist das Gericht zurück. Wird kein Einspruch eingelegt, hat der Zahlungsbefehl die Wirkungen eines rechtskräftigen Urteils. Wird Einspruch eingelegt, muss binnen 15 Tagen dazu Stellung genommen und innerhalb derselben Frist die Fortsetzung des Verfahrens vor dem nach der slowakischen Zivilstreitordnung zuständigen Gericht beantragt werden – andernfalls wird das Verfahren eingestellt."
+      },
+      {
+        "q": "Was, wenn der Schuldner kein Vermögen hat?",
+        "a": "Die Zwangsvollstreckung führt ein Gerichtsvollzieher durch, den das Bezirksgericht Banská Bystrica nach dem Zufallsprinzip bestimmt; der Gläubiger wählt ihn nicht aus. Ist der Schuldner mit mindestens zwei Geldverbindlichkeiten gegenüber mehr als einem Gläubiger länger als 90 Tage in Verzug und wurde er von einem dieser Gläubiger schriftlich zur Zahlung aufgefordert, kann seine Zahlungsunfähigkeit nach § 11 Abs. 3 des Gesetzes Nr. 7/2005 Slg. begründet vermutet und ein Konkursantrag gestellt werden. Nach § 11a Abs. 1 desselben Gesetzes haftet die Person, die verpflichtet ist, im Namen des Schuldners einen Konkursantrag zu stellen, für den Schaden, der den Gläubigern des Schuldners durch die verspätete Antragstellung entsteht; nach § 11a Abs. 3 wird – sofern keine andere Höhe nachgewiesen wird – vermutet, dass der Schaden der Höhe der Forderung des Gläubigers entspricht, die unbefriedigt blieb, nachdem das Konkursverfahren mangels Masse eingestellt, der Konkurs mangels Masse aufgehoben oder die Zwangsvollstreckung gegen den Schuldner mangels Vermögens beendet wurde. Nach § 11a Abs. 4 verjähren die Ansprüche des Gläubigers aus dieser Haftung frühestens ein Jahr, nachdem das Konkursverfahren mangels Masse eingestellt, der Konkurs mangels Masse aufgehoben oder die Zwangsvollstreckung gegen den Schuldner mangels Vermögens beendet wurde."
+      }
+    ],
+    "relatedTitle": "Verwandte Themen",
+    "sourcesTitle": "Rechtsvorschriften, auf denen diese Seite beruht",
+    "sourcesLead": "Der vollständige Wortlaut der einzelnen Vorschriften ist auf Slov-Lex und EUR-Lex abrufbar. Die vorstehenden Informationen sind allgemeiner Natur und ersetzen keine Beratung im Einzelfall.",
+    "sources": [
+      {
+        "label": "Bekanntmachung des Außenministers Nr. 11/1975 Slg. – CMR-Übereinkommen",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1975/11/"
+      },
+      {
+        "label": "Gesetz Nr. 513/1991 Slg. – slowakisches Handelsgesetzbuch",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "Regierungsverordnung Nr. 21/2013 Slg.",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2013/21/"
+      },
+      {
+        "label": "Gesetz Nr. 307/2016 Slg. über das Mahnverfahren",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2016/307/"
+      },
+      {
+        "label": "Gesetz Nr. 71/1992 Slg. über Gerichtsgebühren",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "Gesetz Nr. 233/1995 Slg. – slowakische Exekutionsordnung",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1995/233/"
+      },
+      {
+        "label": "Gesetz Nr. 7/2005 Slg. über Konkurs und Restrukturierung",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/7/"
+      },
+      {
+        "label": "Verordnung Nr. 655/2004 Slg. über Anwaltshonorare",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/655/"
+      },
+      {
+        "label": "Verordnung (EG) Nr. 593/2008 – Rom I",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008R0593"
+      },
+      {
+        "label": "Verordnung (EU) Nr. 1215/2012 – Brüssel Ia",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32012R1215"
+      },
+      {
+        "label": "Verordnung (EG) Nr. 1896/2006 – Europäischer Zahlungsbefehl",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32006R1896"
+      }
+    ]
+  },
+  "cfr": {
+    "metaTitle": "Gesellschaftsgründung und Aufenthaltstitel für ausländische Unternehmer",
+    "metaDescription": "Gründung einer s.r.o. (slowakische GmbH) und Aufenthaltstitel oder Blaue Karte EU, um sie führen zu können – als eine Angelegenheit bearbeitet, nach slowakischem Recht. Rechtsanwaltskanzlei in Zvolen, Zusammenarbeit aus der Ferne möglich.",
+    "heroOverline": "Für ausländische Unternehmer und Arbeitnehmer",
+    "heroTitle": "Gesellschaftsgründung und Aufenthaltstitel – als eine Angelegenheit bearbeitet",
+    "heroLead": "Eine s.r.o. (slowakische GmbH) lässt sich ohne Weiteres aus der Ferne gründen. Sie als Geschäftsführer aus einem Staat außerhalb der EU oder der OECD zu führen, ist dagegen nicht so einfach – dafür ist ein gesonderter Aufenthaltstitel nötig, der nach einem anderen Teil desselben Gesetzes beantragt wird. Wir bearbeiten beides zusammen, damit das eine nicht auf das andere warten muss.",
+    "heroPara": [
+      "Wir vertreten Gründer, die eine slowakische Gesellschaft errichten, hochqualifizierte Arbeitnehmer, die die Blaue Karte EU beantragen, und Drittstaatsangehörige, die einen Aufenthaltstitel zum Zweck der Beschäftigung anstreben.",
+      "Wir beraten ausschließlich im slowakischen Recht und vertreten Sie vor dem slowakischen Handelsregister (obchodný register), der Steuerbehörde und der Ausländerpolizei (cudzinecká polícia)."
+    ],
+    "heroCta": "Schildern Sie Ihre Situation",
+    "whoOverline": "Für wen diese Seite gedacht ist",
+    "whoTitle": "Drei Ausgangspunkte, ein Ziel",
+    "whoLead": "Das richtige Verfahren hängt davon ab, warum Sie in der Slowakei sein müssen – als Geschäftsführer, als Arbeitnehmer oder als hochqualifizierte Fachkraft. Welches Verfahren passt, klären wir, bevor wir irgendetwas einreichen.",
+    "who": [
+      {
+        "title": "Geschäftsführer aus Staaten außerhalb von EU, EWR und OECD",
+        "desc": "Ein Staatsangehöriger eines EU-Mitgliedstaats, eines EWR-Staats oder eines OECD-Staats wird ohne Aufenthaltsnachweis als Geschäftsführer eingetragen. Bei allen anderen prüft das Registergericht vor der Eintragung, ob ein slowakischer Aufenthaltstitel vorliegt – und das gilt für jede Person, die berechtigt ist, im Namen der Gesellschaft oder für sie zu handeln, also auch für einen Prokuristen oder den Leiter einer Zweigniederlassung. Das ist der häufigste Stolperstein bei der Gründung einer Gesellschaft für Gründer aus Nicht-EU-Staaten."
+      },
+      {
+        "title": "Hochqualifizierte Arbeitnehmer – Blaue Karte EU",
+        "desc": "Ein anerkannter Hochschulabschluss – oder, bei ausgewählten IKT-Berufen, drei Jahre Berufserfahrung, erworben in den vorangegangenen sieben Jahren –, ein für mindestens sechs Monate vereinbartes Arbeitsverhältnis und ein Gehalt über der gesetzlichen Schwelle eröffnen den Zugang zum beschleunigten Verfahren der Blauen Karte EU."
+      },
+      {
+        "title": "Aufenthalt zum Zweck der Beschäftigung",
+        "desc": "Erfüllt die Stelle die Voraussetzungen der Blauen Karte nicht, beantragen wir einen regulären befristeten Aufenthalt (prechodný pobyt) zum Zweck der Beschäftigung, auch bei unternehmensinternen Transfers."
+      },
+      {
+        "title": "Bestehende Gesellschaften, deren Geschäftsführer nicht weiterkommt",
+        "desc": "Ist Ihre slowakische s.r.o. bereits gegründet, kann ihr Geschäftsführer aus einem Nicht-EU-Staat den Aufenthaltstitel aber nicht erhalten oder verlängern, prüfen wir, woran der Antrag gescheitert ist, und stellen ihn erneut."
+      }
+    ],
+    "keyOverline": "Drei rechtliche Wege",
+    "keyTitle": "Welcher Aufenthaltstitel für Sie in Betracht kommt",
+    "keyLead": "Alle drei Wege richten sich nach demselben Gesetz über den Aufenthalt von Ausländern, doch die Voraussetzungen, die verlangten Nachweise und die Dauer des Aufenthaltstitels unterscheiden sich deutlich.",
+    "key": [
+      {
+        "title": "Befristeter Aufenthalt zum Zweck der unternehmerischen Tätigkeit",
+        "desc": "Nach § 22 Abs. 1 des Gesetzes Nr. 404/2011 Slg. über den Aufenthalt von Ausländern wird dieser Aufenthaltstitel einem Drittstaatsangehörigen erteilt, der in der Slowakei als selbständig Erwerbstätiger unternehmerisch tätig ist oder sein wird (Buchst. a) oder der im Namen einer Handelsgesellschaft oder Genossenschaft handelt oder handeln wird, ohne zu ihr in einem Arbeitsverhältnis zu stehen (Buchst. b) – in der Praxis ihr Geschäftsführer. Seit dem 1. Juli 2025 wird er fest für drei Jahre erteilt (§ 22 Abs. 2), nicht mehr für die voraussichtliche Dauer der Tätigkeit. Daneben ist die finanzielle Absicherung der unternehmerischen Tätigkeit auf einem eigens dafür bestimmten Geschäftskonto nachzuweisen: das Hundertfache des Existenzminimums bei einem Geschäftsführer, das Zwanzigfache bei einem selbständig Erwerbstätigen und das Vierzigfache bei einem Geschäftsführer, dessen Geschäftsvorhaben als innovatives Projekt bewertet wurde (§ 32 Abs. 7). Die finanzielle Absicherung des Aufenthalts selbst beträgt ein weiteres Zwölffaches des Existenzminimums (§ 32 Abs. 14).",
+        "note": "Die Voraussetzungen für die Verlängerung haben sich zum 15. Juli 2026 geändert (Änderungsgesetz Nr. 128/2026 Slg.). Bei einem Geschäftsführer wird nicht mehr der Gewinn der Gesellschaft nach Steuern beurteilt; maßgeblich ist die tatsächlich gezahlte Steuer, mindestens in Höhe der Mindestkörperschaftsteuer nach § 46b Abs. 2 des slowakischen Einkommensteuergesetzes (§ 34 Abs. 6). Ein selbständig Erwerbstätiger weist stattdessen ein zu versteuerndes Einkommen oberhalb der Schwelle des § 32 Abs. 1 des Einkommensteuergesetzes nach (§ 34 Abs. 5). Ältere Quellen nennen noch das Zwanzig- oder Sechzigfache des Existenzminimums – das ist die Rechtslage bis zum 14. Juli 2026. Berücksichtigen Sie die neue Regelung bereits bei der ersten Steuererklärung der Gesellschaft, nicht erst beim Verlängerungsantrag."
+      },
+      {
+        "title": "Blaue Karte EU",
+        "desc": "Die Blaue Karte ist in den §§ 37 bis 41 des Gesetzes geregelt, die die Richtlinie (EU) 2021/1883 umsetzen. Nach § 37 Abs. 3 erfasst sie eine Beschäftigung, die eine höhere berufliche Qualifikation erfordert und mit einem Monatsgehalt von mindestens dem 1,2-Fachen des durchschnittlichen Monatslohns eines Arbeitnehmers in der slowakischen Wirtschaft für das Kalenderjahr vor dem Jahr der Antragstellung verbunden ist; hat der Antragsteller seinen Abschluss höchstens drei Jahre vor der Antragstellung erworben, genügt der einfache Durchschnittslohn. Die Qualifikation wird durch die Entscheidung über die Anerkennung des Hochschulabschlusses nachgewiesen – oder, bei den in Anlage 3 des Gesetzes aufgeführten Berufen (Führungskräfte und Fachkräfte im IKT-Bereich), durch den Nachweis höherer beruflicher Fähigkeiten, die über mindestens drei Jahre innerhalb der sieben Jahre vor der Antragstellung erworben wurden (§ 37 Abs. 5).",
+        "note": "Die Polizeibehörde entscheidet binnen 30 Tagen nach Eingang des vollständigen Antrags (§ 38 Abs. 7) – gegenüber 60 Tagen beim regulären Aufenthalt zum Zweck der Beschäftigung. Das Arbeitsverhältnis muss für mindestens sechs Monate vereinbart sein; diese Voraussetzung steht nicht im Gesetz über den Aufenthalt von Ausländern, sondern in § 21a Abs. 4 Buchst. d des Gesetzes Nr. 5/2004 Slg. über Beschäftigungsdienste. Die Blaue Karte bringt zudem EU-weite Arbeitsmobilität und einen kürzeren Weg zum Daueraufenthalt mit sich – eine Prüfung lohnt sich auch dann, wenn ein regulärer Aufenthalt zum Zweck der Beschäftigung ebenfalls in Betracht käme."
+      },
+      {
+        "title": "Befristeter Aufenthalt zum Zweck der Beschäftigung",
+        "desc": "§ 23 des Gesetzes regelt den regulären Weg: Zunächst meldet der Arbeitgeber die freie Stelle, das Arbeitsamt stellt eine Bestätigung über die Möglichkeit ihrer Besetzung aus, und erst dann entscheidet die Polizeibehörde über den Aufenthalt. Der Aufenthaltstitel wird für die voraussichtliche Dauer der Beschäftigung erteilt, höchstens für fünf Jahre (§ 23 Abs. 3). Bei einem unternehmensinternen Transfer sind es bis zu drei Jahre für Führungskräfte und Spezialisten und bis zu ein Jahr für Trainees (§ 23 Abs. 5). Saisonbeschäftigung ist auf 240 Tage innerhalb von 12 aufeinanderfolgenden Monaten begrenzt (§ 23 Abs. 4).",
+        "note": "Die Polizeibehörde entscheidet binnen 60 Tagen nach Eingang des vollständigen Antrags (§ 33 Abs. 8 Buchst. b); handelt es sich um eine Tätigkeit mit anerkanntem Arbeitskräftemangel in der Region, beträgt die Frist 30 Tage (§ 33 Abs. 8 Buchst. c). Dieser Entscheidung gehen die Meldung der freien Stelle und die Bestätigung des Arbeitsamts voraus; planen Sie den Gesamtablauf daher eher in Monaten als in Wochen – und beschaffen Sie die Unterlagen so spät, dass sie bei der Antragstellung noch gültig sind."
+      }
+    ],
+    "stepsOverline": "Ablauf",
+    "stepsTitle": "Wie beide Angelegenheiten gemeinsam vorankommen",
+    "steps": [
+      {
+        "title": "Prüfung",
+        "desc": "Wir klären, welcher der drei Wege zu Ihrer Situation passt, wie die slowakische Gesellschaftsstruktur aussehen muss und welche Nachweise die einzelnen Behörden verlangen werden."
+      },
+      {
+        "title": "Gesellschaftsgründung",
+        "desc": "Besteht noch keine Gesellschaft, entwerfen wir die Gründungsurkunde oder den Gesellschaftsvertrag und autorisieren sie als Rechtsanwälte – seit dem 17. August 2026 ist das neben der notariellen Urkunde die einzige zulässige Form (§ 57 des slowakischen Handelsgesetzbuchs). Zur Unterzeichnung müssen Sie nicht in der Slowakei sein: Ein Vertreter unterzeichnet für Sie aufgrund einer Vollmacht mit amtlich beglaubigter Unterschrift (§ 57 Abs. 2). Den Eintragungsantrag reichen wir elektronisch ein; das Registergericht trägt die Gesellschaft binnen zwei Arbeitstagen nach Eingang des vollständigen Antrags ein (§ 58 Abs. 1 des Gesetzes Nr. 29/2026 Slg.)."
+      },
+      {
+        "title": "Aufenthaltsantrag",
+        "desc": "Wir stellen die Antragsunterlagen einschließlich der Bestätigungen der Gesellschaft zusammen und reichen sie bei der Ausländerpolizei ein. Soweit erforderlich, begleiten wir Sie bei der Beglaubigung von Dokumenten im Ausland oder bei der Einholung einer Apostille."
+      },
+      {
+        "title": "Entscheidung und Registrierung",
+        "desc": "Sobald der Aufenthalt erteilt ist, kümmern wir uns um das, was auf Seiten der Gesellschaft folgt – das Geschäftskonto, die steuerliche Registrierung und gegebenenfalls den Firmensitz."
+      },
+      {
+        "title": "Verlängerung",
+        "desc": "Wir behalten die Verlängerungsfristen und die für den jeweiligen Weg erforderlichen Nachweise im Blick – zu versteuerndes Einkommen, gezahlte Steuer oder die Gehaltsschwelle der Blauen Karte –, damit der Aufenthaltstitel nicht erlischt."
+      }
+    ],
+    "docsOverline": "Unterlagen",
+    "docsTitle": "Was wir in der Regel benötigen",
+    "docsLead": "Die genaue Liste hängt davon ab, welcher Weg einschlägig ist; diese fünf Punkte decken zu Beginn die meisten Angelegenheiten ab.",
+    "docs": [
+      "Gültiges Reisedokument, das noch mindestens sechs Monate über den beabsichtigten Aufenthalt hinaus gültig ist.",
+      "Strafregisterauszug Ihres Heimatstaats (und jedes Staats, in dem Sie sich in den letzten drei Jahren aufgehalten haben), soweit erforderlich mit Apostille versehen oder anderweitig legalisiert – bei Einreichung nicht älter als 90 Tage.",
+      "Nachweis einer gesicherten Unterkunft in der Slowakei.",
+      "Für den unternehmerischen Weg: Auszug aus dem slowakischen Handelsregister (sobald die Gesellschaft gegründet ist) oder die Entwürfe der Gründungsdokumente; bei einer Gründung aus der Ferne eine Vollmacht mit amtlich beglaubigter Unterschrift, soweit erforderlich mit Apostille versehen oder anderweitig legalisiert.",
+      "Für die Beschäftigungswege: der Arbeitsvertrag oder die schriftliche Einstellungszusage des Arbeitgebers und – für die Blaue Karte – der Qualifikationsnachweis: die Entscheidung über die Anerkennung des Hochschulabschlusses oder der Nachweis höherer beruflicher Fähigkeiten für die in Anlage 3 des Gesetzes aufgeführten IKT-Berufe."
+    ],
+    "priceOverline": "Honorar",
+    "priceTitle": "Was es kostet",
+    "priceLead": "Umfang und Honorar werden vorab und schriftlich vereinbart, für jeden Teil der Angelegenheit gesondert.",
+    "price": [
+      {
+        "label": "Gesellschaftsgründung",
+        "value": "299 € pauschal",
+        "desc": "Komplette Gründung einschließlich der anwaltlichen Autorisierung der Gründungsdokumente, der Anmeldung zum Handelsregister und der Besorgung der Gewerbeberechtigungen – dasselbe Honorar, das wir für jede slowakische s.r.o. nennen. Die Gerichtsgebühr von 220 € für die Ersteintragung wird gesondert gezahlt."
+      },
+      {
+        "label": "Antrag auf Aufenthaltstitel",
+        "value": "vorab vereinbartes Festhonorar",
+        "desc": "Prüfung, welcher Weg einschlägig ist, Vorbereitung des Antrags und Ihre Vertretung vor der Ausländerpolizei. Das Honorar nennen wir, sobald feststeht, welcher der drei Wege zu Ihrer Angelegenheit passt."
+      },
+      {
+        "label": "Kosten Dritter",
+        "value": "gesondert abgerechnet, in tatsächlicher Höhe",
+        "desc": "Gerichts- und Verwaltungsgebühren, beglaubigte Übersetzungen, soweit erforderlich, und der Firmensitz, falls Sie einen solchen nutzen – siehe unten."
+      }
+    ],
+    "priceNote": "Die rechtliche Vertretung übernehmen wir selbst; Buchhaltung, Firmensitz, Arbeitsvermittlung oder Unterkunftssuche bieten wir nicht im eigenen Haus an. Benötigen Sie etwas davon, verweisen wir Sie an einen unabhängigen Anbieter mit eigener Zulassung; dessen Rechnung ist von unserer getrennt – sie ist nie Bestandteil unseres Honorars. So bleibt jede Leistung unter der Zulassung, die sie tatsächlich abdeckt, und unsere Beratung bleibt frei von jedem Provisionsinteresse.",
+    "formOverline": "Unverbindlich",
+    "formTitle": "Schildern Sie uns Ihre Situation",
+    "formLead": "Teilen Sie uns mit, ob Sie bereits eine slowakische Gesellschaft haben, welche Funktion Sie darin haben oder haben werden und von wo aus Sie den Antrag stellen. Wir melden uns bei Ihnen und erläutern, welcher Weg einschlägig ist. Durch das Absenden dieses Formulars entsteht kein Mandatsverhältnis.",
+    "faqOverline": "FAQ",
+    "faqTitle": "Häufig gestellte Fragen",
+    "faq": [
+      {
+        "q": "Kann ich eine slowakische Gesellschaft besitzen, ohne in der Slowakei zu leben?",
+        "a": "Ja. Das Halten eines Geschäftsanteils ist für niemanden an eine Aufenthaltsvoraussetzung geknüpft – beim Gründer und Gesellschafter einer s.r.o. prüft das Registergericht steuerliche und vollstreckungsrechtliche Hindernisse, nicht den Aufenthalt. Die Aufenthaltsvoraussetzung betrifft die Person, die berechtigt ist, im Namen der Gesellschaft zu handeln, typischerweise den Geschäftsführer: Nach § 51 Abs. 4 des Gesetzes Nr. 29/2026 Slg. über das Handelsregister prüft das Registergericht vor der Eintragung, ob diese Person einen slowakischen Aufenthaltstitel besitzt, es sei denn, sie ist Staatsangehörige eines EU-Mitgliedstaats, eines EWR-Staats oder eines OECD-Staats. Der Aufenthaltstitel selbst wird dann als befristeter Aufenthalt zum Zweck der unternehmerischen Tätigkeit nach § 22 des Gesetzes Nr. 404/2011 Slg. erlangt. Ein Gesellschafter, der nicht Geschäftsführer ist, benötigt überhaupt keinen Aufenthaltstitel. Beachten Sie: Dies ist eine Voraussetzung für die Eintragung in das Handelsregister; bei handwerklichen und gebundenen Gewerben muss der verantwortliche Vertreter zusätzlich seinen Wohnsitz in der Slowakei haben oder anderweitig zum Aufenthalt hier berechtigt sein (§ 11 Abs. 3 des slowakischen Gewerbegesetzes) – eine gesonderte Voraussetzung."
+      },
+      {
+        "q": "Muss ich zur Gründung der Gesellschaft zum Notar?",
+        "a": "Nicht unbedingt. Seit dem 17. August 2026 müssen der Gesellschaftsvertrag und die Gründungsurkunde entweder als notarielle Urkunde oder als von einem Rechtsanwalt autorisierte Urkunde errichtet werden (§ 57 Abs. 1 und 3 des slowakischen Handelsgesetzbuchs in der Fassung des Gesetzes Nr. 29/2026 Slg.). Autorisierung bedeutet, dass der Rechtsanwalt die Urkunde verfasst, die Identität der Partei und eines etwaigen Vertreters prüft und die Vereinbarkeit des Rechtsgeschäfts mit dem Gesetz beurteilt (§ 1a Abs. 2 des Gesetzes Nr. 586/2003 Slg. über die Rechtsanwaltschaft); die Urkunde wird noch am selben Tag im Autorisierungsregister der Slowakischen Rechtsanwaltskammer hinterlegt. Ist eine Urkunde von einem Rechtsanwalt autorisiert, ist keine amtliche Beglaubigung der Unterschriften erforderlich (§ 50 Abs. 4 des Gesetzes Nr. 29/2026 Slg.). Eine notarielle Urkunde bleibt vorgeschrieben für spätere Beschlüsse der Gesellschafterversammlung einer s.r.o. mit mehreren Gesellschaftern über Geschäftsführer oder über Änderungen bei den Geschäftsanteilen (§ 127a Abs. 4 des Handelsgesetzbuchs)."
+      },
+      {
+        "q": "Muss ich die Gesellschaft gründen, bevor ich den Aufenthalt beantrage, oder umgekehrt?",
+        "a": "In der Praxis muss die Gesellschaft bestehen oder zumindest zur Eintragung angemeldet sein, bevor im Aufenthaltsantrag dargelegt werden kann, was der Geschäftsführer in der Slowakei tun wird. Wir stimmen beides zeitlich so ab, dass die Aufenthaltsunterlagen zur Einreichung bereit sind, sobald die Gesellschaft eingetragen ist – statt erst danach damit zu beginnen."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen der Blauen Karte EU und einer regulären Arbeitserlaubnis?",
+        "a": "Beide berechtigen zur Beschäftigung, die Blaue Karte ist jedoch Stellen vorbehalten, die die Qualifikations- und Gehaltsvoraussetzungen der §§ 37 ff. des Gesetzes Nr. 404/2011 Slg. erfüllen (Umsetzung der Richtlinie (EU) 2021/1883): ein anerkannter Hochschulabschluss – oder, bei den in Anlage 3 des Gesetzes aufgeführten IKT-Berufen, drei Jahre Berufserfahrung, erworben in den vorangegangenen sieben Jahren – und ein Gehalt von mindestens dem 1,2-Fachen des durchschnittlichen Monatslohns eines Arbeitnehmers in der slowakischen Wirtschaft für das vorangegangene Kalenderjahr bzw. in Höhe des einfachen Durchschnittslohns bei Absolventen innerhalb von drei Jahren nach Erwerb des Abschlusses. Das Arbeitsverhältnis muss für mindestens sechs Monate vereinbart sein (§ 21a Abs. 4 Buchst. d des Gesetzes Nr. 5/2004 Slg.). Erfüllt eine Stelle die Voraussetzungen, wird über die Blaue Karte binnen 30 Tagen entschieden – gegenüber 60 Tagen beim regulären Aufenthalt zum Zweck der Beschäftigung –, und sie bringt EU-weite Mobilität und einen leichteren Weg zum Daueraufenthalt mit sich."
+      },
+      {
+        "q": "Kann meine Familie mitkommen?",
+        "a": "Die Familienzusammenführung ist sowohl beim unternehmerischen Weg und beim Beschäftigungsweg als auch bei der Blauen Karte möglich, wobei der Weg über die Blaue Karte in der Regel der unkomplizierteste ist. Wir prüfen sie zusammen mit dem Hauptantrag, nicht erst im Nachhinein."
+      },
+      {
+        "q": "Übernehmen Sie auch die Buchhaltung, den Firmensitz, eine Arbeitserlaubnis für Mitarbeiter, die ich einstelle, oder die Unterkunftssuche?",
+        "a": "Nein, nicht unter unserem eigenen Dach – und das bewusst. Jede dieser Tätigkeiten ist gesondert reguliert: Die Buchhaltung erfordert eine eigene Registrierung, die entgeltliche Arbeitsvermittlung eine vom Arbeitsamt erteilte Erlaubnis nach dem Gesetz Nr. 5/2004 Slg., und ein Anbieter von Firmensitzen hat eigene Meldepflichten und seit Juni 2026 auch Registrierungspflichten im System goAML. Wir verweisen Sie an einen Anbieter mit der entsprechenden Zulassung, der Ihnen gesondert Rechnung stellt – wir schlagen nichts auf und nehmen keine Vermittlungsprovision."
+      },
+      {
+        "q": "Wie lange dauert das gesamte Verfahren?",
+        "a": "Die Gründung der Gesellschaft selbst dauert ein bis zwei Wochen ab Unterzeichnung der Dokumente. Die Entscheidung über den Aufenthalt ist an die gesetzlichen Fristen des § 33 Abs. 8 des Gesetzes Nr. 404/2011 Slg. und – für die Blaue Karte – des § 38 Abs. 7 gebunden: 30 Tage für die Blaue Karte, 60 Tage für den Aufenthalt zum Zweck der Beschäftigung und 90 Tage für die übrigen Zwecke einschließlich der unternehmerischen Tätigkeit. Diese Fristen beginnen erst, wenn der Antrag vollständig ist, und zuvor müssen die Dokumente aus dem Ausland beschafft werden. Wir empfehlen daher, drei bis vier Monate vor dem Termin zu beginnen, zu dem Sie in der Slowakei tätig sein müssen."
+      }
+    ],
+    "relatedTitle": "Verwandte Themen",
+    "sourcesTitle": "Rechtsvorschriften, auf denen diese Seite beruht",
+    "sourcesLead": "Rechtsstand zum 23. August 2026; das Gesetz Nr. 404/2011 Slg. wird in der ab dem 15. Juli 2026 geltenden Fassung zitiert; zitiert wird ferner das Gesetz Nr. 29/2026 Slg. über das Handelsregister, das am 17. August 2026 das Gesetz Nr. 530/2003 Slg. abgelöst hat. Der vollständige Wortlaut der einzelnen Vorschriften ist auf Slov-Lex und EUR-Lex abrufbar. An das Existenzminimum oder den Durchschnittslohn gekoppelte Schwellenwerte ändern sich jährlich – der aktuelle Wert ist zum Tag der Antragstellung zu prüfen. Die vorstehenden Informationen sind allgemeiner Natur und ersetzen keine Beratung im Einzelfall.",
+    "sources": [
+      {
+        "label": "Gesetz Nr. 404/2011 Slg. über den Aufenthalt von Ausländern",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2011/404/"
+      },
+      {
+        "label": "Richtlinie (EU) 2021/1883 – Blaue Karte EU",
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021L1883"
+      },
+      {
+        "label": "Gesetz Nr. 513/1991 Slg. – slowakisches Handelsgesetzbuch",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "Gesetz Nr. 29/2026 Slg. über das Handelsregister (in Kraft seit 17. August 2026)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/29/"
+      },
+      {
+        "label": "Gesetz Nr. 586/2003 Slg. über die Rechtsanwaltschaft – §§ 1a bis 1ac, Autorisierung von Urkunden",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2003/586/"
+      },
+      {
+        "label": "Gesetz Nr. 71/1992 Slg. über Gerichtsgebühren – Position 17 des Tarifs",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "Verordnung des Justizministeriums Nr. 203/2026 Slg. über Eintragungsunterlagen",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/203/"
+      },
+      {
+        "label": "Gesetz Nr. 5/2004 Slg. über Beschäftigungsdienste",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/5/"
+      },
+      {
+        "label": "Gesetz Nr. 297/2008 Slg. über den Schutz vor Geldwäsche",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2008/297/"
+      }
+    ]
+  },
+  "consent": {
+    "text": "Wir verwenden Cookies – notwendige für den Betrieb der Website und, mit Ihrer Einwilligung, solche für Analyse und Marketing.",
+    "more": "Cookie-Richtlinie",
+    "acceptAll": "Alle akzeptieren",
+    "essential": "Nur notwendige",
+    "manage": "Cookie-Einstellungen ändern"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "text": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "back": "Zur Startseite"
+  }
+}
