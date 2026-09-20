@@ -114,7 +114,7 @@ export const tradeLicence: CampaignData = {
   form: {
     title: "Napíšte nám, čomu sa budete venovať",
     leads: [
-      "Ozveme sa do jedného pracovného dňa s návrhom predmetov podnikania. Ak by pre vašu situáciu bola vhodnejšia rovno s.r.o., povieme vám to — aj s číslami, nie pocitovo.",
+      "Ozveme sa do jedného pracovného dňa s návrhom predmetov podnikania. Ak by pre vašu situáciu bola vhodnejšia rovno s.r.o., povieme vám to — z právneho hľadiska: ručenie, zmluvy, riziko činnosti.",
     ],
     fields: [
       { name: "activity", label: "Čo budete robiť", placeholder: "napr. grafika a tvorba webov" },
@@ -142,7 +142,7 @@ export const tradeLicence: CampaignData = {
     },
     {
       q: "Živnosť alebo rovno s.r.o.?",
-      a: "Živnosť je lacnejšia na štart a jednoduchšia na správu; s.r.o. oddeľuje osobný majetok od podnikania a pôsobí inak voči väčším partnerom. Rozhodujú čísla — príjmy, odvody, riziko činnosti. Pri dotazníku sa na to pozrieme a povieme vám to na rovinu; ak s.r.o., založíme ju na kľúč.",
+      a: "Živnosť je lacnejšia na štart a jednoduchšia na správu; s.r.o. oddeľuje osobný majetok od podnikania a pôsobí inak voči väčším partnerom. Rozhoduje ručenie a riziko činnosti, na daňovej strane príjmy a odvody — tie si prepočítajte s účtovníkom. Právnu stránku prejdeme pri dotazníku a povieme vám to na rovinu; ak s.r.o., založíme ju na kľúč.",
     },
     {
       q: "Aké odvody ma čakajú?",
@@ -151,5 +151,5 @@ export const tradeLicence: CampaignData = {
   ],
 
   relatedServiceId: "obchod",
-  relatedServiceLabel: "Obchodné právo a firemná agenda",
+  relatedServiceLabel: "Obchodné a občianske právo",
 };

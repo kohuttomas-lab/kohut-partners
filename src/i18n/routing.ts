@@ -77,6 +77,8 @@ export const routing = defineRouting({
     "/privacy": { sk: "/ochrana-udajov", en: "/privacy" },
     "/terms": { sk: "/obchodne-podmienky", en: "/terms" },
     "/cookies": { sk: "/cookies", en: "/cookies" },
+    // Funkcia na odstúpenie od zmluvy podľa § 20a zák. 108/2024 Z. z.
+    "/withdrawal": { sk: "/odstupenie-od-zmluvy", en: "/withdrawal" },
   },
 });
 

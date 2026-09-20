@@ -119,6 +119,15 @@ export async function POST(req: Request) {
       cancel_url: `${base}${sep}stripe=cancel`,
       ...(email ? { customer_email: email } : {}),
       billing_address_collection: "auto",
+      // Povinný súhlas s obchodnými podmienkami priamo v Stripe Checkoute.
+      // Stripe ho prijme LEN vtedy, keď je v účte vyplnená adresa obchodných
+      // podmienok (Settings → Business → Public details → Terms of service);
+      // inak vráti chybu a objednávka by spadla. Preto je za prepínačom:
+      // po nastavení adresy pridať STRIPE_TERMS_CONSENT=true do Vercel env.
+      // Súhlas s VOP je aj tak povinný už vo formulári objednávky na webe.
+      ...(process.env.STRIPE_TERMS_CONSENT === "true"
+        ? { consent_collection: { terms_of_service: "required" as const } }
+        : {}),
       allow_promotion_codes: true,
       locale: isSk ? "sk" : "en",
       phone_number_collection: { enabled: true },

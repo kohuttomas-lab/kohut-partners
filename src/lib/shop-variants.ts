@@ -7,6 +7,8 @@ import type { Locale } from "@/i18n/routing";
  * Cena balíka na karte = cena prvého stupňa s jeho označením — nikdy „od".
  */
 export interface VariantOption {
+  /** Stupeň s lehotou kratšou než 14 dní — viď VariantAddon.express. */
+  express?: boolean;
   id: string;
   price: number;
   sk: string;
@@ -16,6 +18,12 @@ export interface VariantOption {
 }
 
 export interface VariantAddon {
+  /**
+   * Doplnok alebo stupeň skracuje lehotu pod 14 dní (expres). Pri jeho voľbe
+   * je súhlas so začatím služby pred uplynutím lehoty na odstúpenie povinný
+   * (§ 17 ods. 10 zák. 108/2024 Z. z.), inak sa nedá dodržať sľúbená lehota.
+   */
+  express?: boolean;
   /** Pevná cena, alebo `perOption` = 100 % ceny zvoleného stupňa (id = `${option.id}-${id}`). */
   id: string;
   price?: number;
@@ -45,6 +53,7 @@ export const PACKAGE_VARIANTS: Record<string, PackageVariants> = {
     addons: [
       {
         id: "express",
+        express: true,
         perOption: true,
         sk: "Expresne do 48 hodín (+100 % ceny)",
         en: "Express within 48 hours (+100 % of the price)",
@@ -76,6 +85,7 @@ export const PACKAGE_VARIANTS: Record<string, PackageVariants> = {
       },
       {
         id: "sp-vyzva-premium",
+        express: true,
         price: 149,
         sk: "Premium — do 2 pracovných dní, odosiela advokát na hlavičkovom papieri, 30-min hovor a písomné odporúčanie ďalšieho postupu",
         en: "Premium — within 2 business days, sent by the attorney on letterhead, 30-min call and written recommendation of next steps",
@@ -141,4 +151,17 @@ export function variantCatalogEntries(
     }
   }
   return out;
+}
+
+/**
+ * Vyžaduje zvolená kombinácia súhlas so začatím pred uplynutím lehoty?
+ * Áno pri expresných variantoch a doplnkoch — tam sa sľúbená lehota bez súhlasu
+ * dodržať nedá. Pri ostatných balíkoch je súhlas voliteľný: bez neho začíname
+ * až po uplynutí 14 dní (čl. 7 obchodných podmienok).
+ */
+export function requiresStartConsent(
+  option?: { express?: boolean },
+  addons: { express?: boolean }[] = []
+): boolean {
+  return !!option?.express || addons.some((a) => a.express);
 }
