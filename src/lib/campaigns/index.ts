@@ -18,6 +18,15 @@ import { debtRecovery } from "./debt-recovery";
 import { lastWill } from "./last-will";
 import { propertyTransfer } from "./property-transfer";
 import { personalBankruptcy } from "./personal-bankruptcy";
+import { debtReliefBankruptcy } from "./debt-relief-bankruptcy";
+import { debtReliefRepaymentPlan } from "./debt-relief-repayment-plan";
+import { paymentOrderObjection } from "./payment-order-objection";
+import { criminalDefense } from "./criminal-defense";
+import { drinkDriving } from "./drink-driving";
+import { rejectedWarrantyClaim } from "./rejected-warranty-claim";
+import { tradeLicenceAdvice } from "./trade-licence-advice";
+import { legalConsultation } from "./legal-consultation";
+import { paymentOrder } from "./payment-order";
 
 export type { CampaignData } from "./types";
 
@@ -29,6 +38,15 @@ export const CAMPAIGNS: CampaignData[] = [
   consumerCredit,
   enforcementDefense,
   stateLiability,
+  // Druhá vlna situačných stránok (návrh č. 74 marketingového modulu, 9/2026).
+  debtReliefBankruptcy,
+  debtReliefRepaymentPlan,
+  paymentOrderObjection,
+  criminalDefense,
+  drinkDriving,
+  rejectedWarrantyClaim,
+  tradeLicenceAdvice,
+  legalConsultation,
   // Produktové stránky katalógu (group: "produkt") — poradie = poradie
   // prelinkovania aj priority v kampani C (marketing/google-ads-tematicke-stranky.md).
   companyFormation,
@@ -44,6 +62,7 @@ export const CAMPAIGNS: CampaignData[] = [
   lastWill,
   propertyTransfer,
   personalBankruptcy,
+  paymentOrder,
 ];
 
 export function getCampaign(id: string): CampaignData | undefined {
@@ -71,4 +90,13 @@ export const CAMPAIGN_SHORT_NAMES: Record<string, string> = {
   "last-will": "Závet a vydedenie",
   "property-transfer": "Prevod nehnuteľnosti",
   "personal-bankruptcy": "Osobný bankrot",
+  "debt-relief-bankruptcy": "Oddlženie konkurzom",
+  "debt-relief-repayment-plan": "Oddlženie splátkovým kalendárom",
+  "payment-order-objection": "Odpor proti platobnému rozkazu",
+  "criminal-defense": "Obhajoba v trestnom konaní",
+  "drink-driving": "Alkohol za volantom",
+  "rejected-warranty-claim": "Neuznaná reklamácia",
+  "trade-licence-advice": "Živnosť alebo s.r.o.",
+  "legal-consultation": "Právna konzultácia",
+  "payment-order": "Platobný rozkaz",
 };

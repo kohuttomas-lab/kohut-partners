@@ -46,6 +46,14 @@ Stránky písané na jednu konkrétnu situáciu — s lehotami, ktoré v nej be�
 - https://www.tkak.sk/bezurocny-uver — chyby v zmluve o spotrebiteľskom úvere, pre ktoré sa úver považuje za bezúročný a bez poplatkov (§ 11 zákona č. 129/2010 Z. z.).
 - https://www.tkak.sk/zastavenie-exekucie — obrana proti exekúcii. Návrh na zastavenie podaný do 15 dní od doručenia upovedomenia o začatí exekúcie má odkladný účinok (§ 61k Exekučného poriadku).
 - https://www.tkak.sk/nahrada-skody-od-statu — náhrada škody spôsobenej nezákonným rozhodnutím alebo nesprávnym úradným postupom vrátane prieťahov v konaní (zákon č. 514/2003 Z. z.).
+- https://www.tkak.sk/oddlzenie-konkurzom — ako prebieha konkurz fyzickej osoby krok za krokom: podmienky návrhu, čo sa stane s majetkom a obydlím, úloha správcu, prihlášky veriteľov do 45 dní a šesť rokov, počas ktorých možno oddlženie zrušiť (§ 166 – § 167v ZKR).
+- https://www.tkak.sk/oddlzenie-splatkovym-kalendarom — oddlženie bez speňaženia majetku: ochrana pred veriteľmi, návrh kalendára od správcu, najmenej 30 % nezabezpečených pohľadávok počas piatich rokov (§ 168 – § 168f ZKR); preddavok správcovi skladá dlžník.
+- https://www.tkak.sk/odpor-proti-platobnemu-rozkazu — prišiel vám platobný rozkaz: 15 dní na vecne odôvodnený odpor (§ 265, § 267 CSP; § 11 zákona č. 307/2016 Z. z.), námietka premlčania, čo robiť po zmeškanej lehote.
+- https://www.tkak.sk/obhajoba-v-trestnom-konani — obhajoba v trestnom konaní: predvolanie na výsluch, sťažnosť proti vzneseniu obvinenia do 3 pracovných dní (§ 187 TP), odpor proti trestnému rozkazu do 8 dní (§ 355 TP); obhajoba pri výsluchu 290 €.
+- https://www.tkak.sk/alkohol-za-volantom — alkohol za volantom a zadržaný vodičský preukaz: priestupok vs. trestný čin ohrozenia pod vplyvom návykovej látky (§ 289 TZ), zákaz činnosti a podmienečné upustenie od jeho zvyšku (§ 61, § 69 TZ), vrátenie vodičského preukazu (§ 70, § 91 zákona č. 8/2009 Z. z.).
+- https://www.tkak.sk/neuznana-reklamacia — zamietnutá reklamácia: domnienka vady, práva kupujúceho a lehoty podľa § 619 – § 624 OZ (zmluvy od 1. 7. 2024), alternatívne riešenie sporu a spotrebiteľský spor na súde.
+- https://www.tkak.sk/zivnost-alebo-sro — právne poradenstvo pri voľbe a zmene formy podnikania: ručenie živnostníka vs. spoločníka s.r.o. (§ 106 ObchZ), podmienky živnosti, zodpovedný zástupca, prechod zo živnosti na s.r.o. Bez daňových prepočtov.
+- https://www.tkak.sk/pravna-konzultacia — právna konzultácia s advokátom: 30 minút za 50 € s DPH, videohovor, telefón alebo osobne vo Zvolene; termín sa rezervuje online.
 
 ## Právne služby s pevnou cenou (slovensky)
 
@@ -62,6 +70,7 @@ Stránky písané na jednu konkrétnu situáciu — s lehotami, ktoré v nej be�
 - https://www.tkak.sk/zavet — závet spísaný advokátom za 99 €, s listinou o vydedení 149 €. Neopomenuteľní dedičia podľa § 479 OZ, vydedenie len z dôvodov § 469a OZ; chýbajúci dátum robí závet neplatným (§ 476 ods. 2).
 - https://www.tkak.sk/kupna-zmluva-nehnutelnost — kúpna zmluva na byt/dom + návrh na vklad 249 €, darovacia + vklad 99 €, samostatný vklad 149 €. Zmluva autorizovaná advokátom bez osvedčovania podpisov (§ 42 ods. 3 katastrálneho zákona); advokátska úschova kúpnej ceny.
 - https://www.tkak.sk/osobny-bankrot — osobný bankrot: bezplatné posúdenie, príprava podkladov pre Centrum právnej pomoci za 149 € (§ 167 ods. 2 ZKR), zastúpenie počas konkurzu od 290 €. Návrh na súd podáva Centrum právnej pomoci (§ 166k ZKR); podmienkou je exekúcia, pri konkurze aspoň rok od poverenia exekútora.
+- https://www.tkak.sk/platobny-rozkaz — návrh na platobný rozkaz v upomínacom konaní (zákon č. 307/2016 Z. z., Okresný súd Banská Bystrica): 290 € pri pohľadávke do 3 000 €, 490 € nad 3 000 €, súdny poplatok osobitne; rozkaz bez odporu má účinky právoplatného rozsudku.
 
 ## Medzinárodná agenda
 
