@@ -21,6 +21,7 @@ type StaticPathname =
   | "/privacy"
   | "/terms"
   | "/cookies"
+  | "/withdrawal"
   | "/lawyer-zvolen"
   | "/lawyer-detva"
   | "/lawyer-krupina"
@@ -46,7 +47,7 @@ const colLinks = (locale: string): FooterLink[][] => [
     svc("it"),
   ],
   ["/about", "/about", "/blog", locale === "en" ? "/international" : "/contact"],
-  ["/privacy", "/terms", "/cookies"],
+  ["/privacy", "/terms", "/cookies", "/withdrawal"],
   // "Pôsobíme v regióne" — local-SEO city landing pages.
   [
     "/lawyer-zvolen",

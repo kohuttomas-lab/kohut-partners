@@ -34,6 +34,7 @@ const STATIC: Href[] = [
   "/privacy",
   "/terms",
   "/cookies",
+  "/withdrawal",
 ];
 
 function priorityFor(href: Href): number {

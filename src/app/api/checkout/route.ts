@@ -119,6 +119,10 @@ export async function POST(req: Request) {
       cancel_url: `${base}${sep}stripe=cancel`,
       ...(email ? { customer_email: email } : {}),
       billing_address_collection: "auto",
+      // Povinný súhlas s obchodnými podmienkami priamo v Stripe Checkoute.
+      // Vyžaduje nastavenú adresu obchodných podmienok v Stripe:
+      // Settings → Business → Public details → Terms of service.
+      consent_collection: { terms_of_service: "required" },
       allow_promotion_codes: true,
       locale: isSk ? "sk" : "en",
       phone_number_collection: { enabled: true },

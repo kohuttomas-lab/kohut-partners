@@ -319,7 +319,13 @@
       "offlineLead": "Online payment is currently unavailable. Within one business day we send you a confirmation with a payment link.",
       "addonsLabel": "Add-ons",
       "totalLabel": "Total",
-      "tiersLabel": "Tiers"
+      "tiersLabel": "Tiers",
+      "consentStart": "I ask you to start providing the service before the 14-day withdrawal period expires. I acknowledge that once the service has been fully provided I lose the right of withdrawal, and that if I withdraw after the start I pay for the service already provided.",
+      "consentStartRequired": "This consent is required for the express variant — without it we can only start after the 14-day period expires.",
+      "consentStartOptional": "Without this consent we start providing the service only after the 14-day withdrawal period expires.",
+      "consentTermsBefore": "I have read the ",
+      "consentTermsLink": "terms and conditions",
+      "consentTermsAfter": " and agree to them."
     }
   },
   "footer": {
@@ -350,7 +356,8 @@
         "items": [
           "Privacy",
           "Terms",
-          "Cookies"
+          "Cookies",
+          "Withdrawal"
         ]
       },
       {

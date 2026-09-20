@@ -8,7 +8,7 @@ import type { ShopPackage } from "@/lib/content";
 import { CONTACT } from "@/lib/content";
 import { getPackageDetail } from "@/lib/shop-details";
 import { PACKAGE_PAGES } from "@/lib/shop-pages";
-import { getVariants, addonItemId, addonPrice } from "@/lib/shop-variants";
+import { getVariants, addonItemId, addonPrice, requiresStartConsent } from "@/lib/shop-variants";
 import { formatEur } from "@/lib/format";
 import { submitLead } from "@/lib/lead";
 import { startCheckout } from "@/lib/checkout-client";
@@ -64,6 +64,9 @@ export function OrderSection({
     ? (variants.options.find((o) => o.id === variantId) ?? variants.options[0])
     : undefined;
   const chosenAddons = (variants?.addons ?? []).filter((a) => addons.includes(a.id));
+  // Expresné varianty sa bez súhlasu so začatím pred uplynutím 14-dňovej lehoty
+  // nedajú dodržať (§ 17 ods. 10 zák. 108/2024 Z. z.) — tam je súhlas povinný.
+  const startConsentRequired = requiresStartConsent(option, chosenAddons);
   const total = selected
     ? (option ? option.price : selected.price) +
       (option ? chosenAddons.reduce((sum, a) => sum + addonPrice(a, option), 0) : 0)
@@ -96,6 +99,9 @@ export function OrderSection({
       "Firma / IČO": String(fd.get("company") || ""),
       "Opis veci": String(fd.get("message") || ""),
       "Odkaz na podklady": String(fd.get("docs") || ""),
+      "Súhlas s obchodnými podmienkami": "áno",
+      "Súhlas so začatím pred uplynutím lehoty na odstúpenie":
+        fd.get("consentStart") ? "áno" : "nie — začíname až po uplynutí 14 dní",
       Platba: "Stripe Checkout — stav platby overte v Stripe podľa e-mailu klienta",
     };
     Object.assign(fields, collectAttribution(locale));
@@ -332,6 +338,27 @@ export function OrderSection({
                 <Textarea name="message" label={t("message")} rows={5} hint={t("messageHint")} required />
                 <Input name="docs" label={t("docs")} type="url" placeholder="https://" hint={t("docsHint")} />
                 <Checkbox name="consent" label={t("consent")} required />
+                <Checkbox
+                  name="consentTerms"
+                  required
+                  label={
+                    <>
+                      {t("consentTermsBefore")}
+                      <Link href="/terms" target="_blank" className={styles.termsLink}>
+                        {t("consentTermsLink")}
+                      </Link>
+                      {t("consentTermsAfter")}
+                    </>
+                  }
+                />
+                <Checkbox
+                  name="consentStart"
+                  required={startConsentRequired}
+                  label={t("consentStart")}
+                  description={
+                    startConsentRequired ? t("consentStartRequired") : t("consentStartOptional")
+                  }
+                />
                 {status === "error" ? (
                   <p className={styles.error}>{t("error", { email: CONTACT.email })}</p>
                 ) : null}

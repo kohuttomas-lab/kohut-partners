@@ -319,7 +319,13 @@
       "offlineLead": "Online platba momentálne nie je dostupná. Do jedného pracovného dňa vám pošleme potvrdenie s odkazom na platbu.",
       "addonsLabel": "Doplnky",
       "totalLabel": "Spolu",
-      "tiersLabel": "Stupne"
+      "tiersLabel": "Stupne",
+      "consentStart": "Žiadam, aby ste službu začali poskytovať ešte pred uplynutím 14-dňovej lehoty na odstúpenie od zmluvy. Beriem na vedomie, že po úplnom poskytnutí služby právo na odstúpenie strácam a že pri odstúpení po začatí zaplatím cenu za už poskytnuté plnenie.",
+      "consentStartRequired": "Pri expresnom variante je tento súhlas potrebný — bez neho môžeme začať až po uplynutí 14-dňovej lehoty.",
+      "consentStartOptional": "Bez tohto súhlasu začneme službu poskytovať až po uplynutí 14-dňovej lehoty na odstúpenie od zmluvy.",
+      "consentTermsBefore": "Oboznámil/a som sa s ",
+      "consentTermsLink": "obchodnými podmienkami",
+      "consentTermsAfter": " a súhlasím s nimi."
     }
   },
   "footer": {
@@ -350,7 +356,8 @@
         "items": [
           "Ochrana údajov",
           "Obchodné podmienky",
-          "Cookies"
+          "Cookies",
+          "Odstúpenie od zmluvy"
         ]
       },
       {
