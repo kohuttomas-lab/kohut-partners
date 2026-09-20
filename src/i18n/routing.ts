@@ -118,6 +118,16 @@ export const routing = defineRouting({
     "/last-will": { sk: "/zavet", en: "/last-will", ...same("/last-will") },
     "/property-transfer": { sk: "/kupna-zmluva-nehnutelnost", en: "/property-transfer", ...same("/property-transfer") },
     "/personal-bankruptcy": { sk: "/osobny-bankrot", en: "/personal-bankruptcy", ...same("/personal-bankruptcy") },
+    // Druhá vlna tematických stránok (9/2026) — rovnako len po slovensky.
+    "/debt-relief-bankruptcy": { sk: "/oddlzenie-konkurzom", en: "/debt-relief-bankruptcy", ...same("/debt-relief-bankruptcy") },
+    "/debt-relief-repayment-plan": { sk: "/oddlzenie-splatkovym-kalendarom", en: "/debt-relief-repayment-plan", ...same("/debt-relief-repayment-plan") },
+    "/payment-order-objection": { sk: "/odpor-proti-platobnemu-rozkazu", en: "/payment-order-objection", ...same("/payment-order-objection") },
+    "/criminal-defense": { sk: "/obhajoba-v-trestnom-konani", en: "/criminal-defense", ...same("/criminal-defense") },
+    "/drink-driving": { sk: "/alkohol-za-volantom", en: "/drink-driving", ...same("/drink-driving") },
+    "/rejected-warranty-claim": { sk: "/neuznana-reklamacia", en: "/rejected-warranty-claim", ...same("/rejected-warranty-claim") },
+    "/trade-licence-advice": { sk: "/zivnost-alebo-sro", en: "/trade-licence-advice", ...same("/trade-licence-advice") },
+    "/legal-consultation": { sk: "/pravna-konzultacia", en: "/legal-consultation", ...same("/legal-consultation") },
+    "/payment-order": { sk: "/platobny-rozkaz", en: "/payment-order", ...same("/payment-order") },
     "/privacy": { sk: "/ochrana-udajov", en: "/privacy", ...same("/privacy") },
     "/terms": { sk: "/obchodne-podmienky", en: "/terms", ...same("/terms") },
     "/cookies": { sk: "/cookies", en: "/cookies", ...same("/cookies") },
@@ -182,6 +192,15 @@ export const SK_ONLY_PATHNAMES: AppPathname[] = [
   "/last-will",
   "/property-transfer",
   "/personal-bankruptcy",
+  "/debt-relief-bankruptcy",
+  "/debt-relief-repayment-plan",
+  "/payment-order-objection",
+  "/criminal-defense",
+  "/drink-driving",
+  "/rejected-warranty-claim",
+  "/trade-licence-advice",
+  "/legal-consultation",
+  "/payment-order",
 ];
 
 /**

@@ -19,7 +19,17 @@ export type CampaignPathname =
   | "/debt-recovery"
   | "/last-will"
   | "/property-transfer"
-  | "/personal-bankruptcy";
+  | "/personal-bankruptcy"
+  // Druhá vlna tematických stránok (návrh č. 74 marketingového modulu, 9/2026)
+  | "/debt-relief-bankruptcy"
+  | "/debt-relief-repayment-plan"
+  | "/payment-order"
+  | "/payment-order-objection"
+  | "/criminal-defense"
+  | "/drink-driving"
+  | "/rejected-warranty-claim"
+  | "/trade-licence-advice"
+  | "/legal-consultation";
 
 /* ============================================================
    Kampaňové landing pages (celoslovenské, len po slovensky).
