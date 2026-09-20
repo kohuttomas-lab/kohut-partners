@@ -5,17 +5,24 @@ import { defineRouting } from "next-intl/routing";
  * e-shope, mestských, právnych a kampaňových stránkach). Routing vyžaduje
  * hodnotu pre každý jazyk; stránka sama vráti notFound() — viď isAvailableIn.
  */
-const same = (slug: string) => ({ pl: slug, hu: slug, de: slug, ru: slug });
+const same = (slug: string) => ({ pl: slug, hu: slug, de: slug });
 
 // Slovak is primary (no URL prefix); English is served under /en.
-// Polish, Hungarian, German and Russian (/pl, /hu, /de, /ru) carry the same
+// Polish, Hungarian and German (/pl, /hu, /de) carry the same
 // international-client subset as English minus blog, e-shop, city and legal
 // pages — see INTL_LOCALES / isAvailableIn below.
 // Localized pathnames keep the file-system routes canonical (English-ish)
-// while exposing localized slugs to visitors. Russian slugs are transliterated
-// to Latin so the URLs stay readable when copied.
+// while exposing localized slugs to visitors.
+//
+// RUŠTINA JE ODLOŽENÁ (rozhodnutie 20. 9. 2026): preklad ostáva v repozitári
+// (messages/ru.json, src/lib/content-intl/ru.ts), ale jazyk sa nepublikuje.
+// Zapnutie: pridať "ru" do `locales`, `INTL_LOCALES`, `same()`, `LOCALE_NAMES`
+// (ru: "Русский"), do content-intl/index.ts a vrátiť tieto slugy (latinkou,
+// aby sa dali kopírovať): /uslugi, /uslugi/[id], /o-nas, /kontakty,
+// /inostrannym-klientam, /vzyskanie-dolgov-za-perevozku, /registraciya-firmy-i-vnzh.
+// Pred zapnutím rozhodnúť o zameraní (viď 04-Strategia-jazykovych-verzii.md).
 export const routing = defineRouting({
-  locales: ["sk", "en", "pl", "hu", "de", "ru"],
+  locales: ["sk", "en", "pl", "hu", "de"],
   defaultLocale: "sk",
   localePrefix: "as-needed",
   // Serve Slovak URLs as Slovak and English (/en) as English regardless of the
@@ -30,7 +37,6 @@ export const routing = defineRouting({
       pl: "/uslugi",
       hu: "/szolgaltatasok",
       de: "/leistungen",
-      ru: "/uslugi",
     },
     "/services/[id]": {
       sk: "/sluzby/[id]",
@@ -38,7 +44,6 @@ export const routing = defineRouting({
       pl: "/uslugi/[id]",
       hu: "/szolgaltatasok/[id]",
       de: "/leistungen/[id]",
-      ru: "/uslugi/[id]",
     },
     "/shop": { sk: "/e-shop", en: "/shop", ...same("/shop") },
     // Objednávka služby bez platby vopred (formulár, ?balik=<id> predvyplní službu).
@@ -49,7 +54,6 @@ export const routing = defineRouting({
       pl: "/o-kancelarii",
       hu: "/az-irodarol",
       de: "/ueber-uns",
-      ru: "/o-nas",
     },
     "/blog": { sk: "/blog", en: "/blog", ...same("/blog") },
     "/blog/[id]": { sk: "/blog/[id]", en: "/blog/[id]", ...same("/blog/[id]") },
@@ -59,7 +63,6 @@ export const routing = defineRouting({
       pl: "/kontakt",
       hu: "/kapcsolat",
       de: "/kontakt",
-      ru: "/kontakty",
     },
     "/international": {
       sk: "/zahranicni-klienti",
@@ -67,7 +70,6 @@ export const routing = defineRouting({
       pl: "/klienci-zagraniczni",
       hu: "/kulfoldi-ugyfelek",
       de: "/internationale-mandanten",
-      ru: "/inostrannym-klientam",
     },
     // Dvojjazyčná téma pre dopravcov a špedície — slovenská verzia cieli na
     // slovenských dopravcov, anglická na zahraničných (najmä poľských).
@@ -77,7 +79,6 @@ export const routing = defineRouting({
       pl: "/windykacja-naleznosci-transportowych",
       hu: "/fuvardij-kovetelesek-behajtasa",
       de: "/inkasso-transportforderungen",
-      ru: "/vzyskanie-dolgov-za-perevozku",
     },
     // Zahraniční zakladatelia s.r.o. a žiadatelia o pobyt — dvojjazyčná
     // téma z rovnakého dôvodu ako CMR: cieľová skupina je prevažne mimo SR.
@@ -87,7 +88,6 @@ export const routing = defineRouting({
       pl: "/zalozenie-spolki-i-pobyt",
       hu: "/cegalapitas-es-tartozkodas",
       de: "/firmengruendung-und-aufenthalt",
-      ru: "/registraciya-firmy-i-vnzh",
     },
     // Local-SEO city landing pages (target query: "advokát {mesto}").
     "/lawyer-zvolen": { sk: "/advokat-zvolen", en: "/lawyer-zvolen", ...same("/lawyer-zvolen") },
@@ -147,7 +147,7 @@ export type BaseLocale = "sk" | "en";
 
 /** Jazyky medzinárodnej vetvy: rovnaký výber stránok ako EN, bez blogu, e-shopu,
     mestských a právnych stránok. */
-export const INTL_LOCALES = ["pl", "hu", "de", "ru"] as const satisfies readonly Locale[];
+export const INTL_LOCALES = ["pl", "hu", "de"] as const satisfies readonly Locale[];
 export type IntlLocale = (typeof INTL_LOCALES)[number];
 
 export function isIntlLocale(locale: string): locale is IntlLocale {
@@ -166,7 +166,6 @@ export const LOCALE_NAMES: Record<Locale, string> = {
   pl: "Polski",
   hu: "Magyar",
   de: "Deutsch",
-  ru: "Русский",
 };
 
 /**

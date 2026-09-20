@@ -17,7 +17,7 @@ import { ESHOP_ENABLED } from "@/lib/flags";
 import { localeAlternates } from "@/lib/seo";
 import "../globals.css";
 
-const OG_LOCALES = ["sk_SK", "en_GB", "pl_PL", "hu_HU", "de_DE", "ru_RU"];
+const OG_LOCALES = ["sk_SK", "en_GB", "pl_PL", "hu_HU", "de_DE"];
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

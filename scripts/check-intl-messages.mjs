@@ -53,7 +53,8 @@ function walk(a, b, path, out) {
   }
 }
 
-for (const l of locales.length ? locales : ["pl", "hu", "de", "ru"]) {
+// ru je odložené (nepublikuje sa) — skontroluje sa len na výslovné požiadanie.
+for (const l of locales.length ? locales : ["pl", "hu", "de"]) {
   const tr = load(l);
   const out = { missing: [], extra: [], lengths: [], placeholders: [], same: [] };
   for (const ns of REQUIRED) walk(en[ns], tr[ns], ns, out);
