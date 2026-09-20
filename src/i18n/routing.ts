@@ -89,6 +89,29 @@ export const routing = defineRouting({
       hu: "/cegalapitas-es-tartozkodas",
       de: "/firmengruendung-und-aufenthalt",
     },
+    // Hĺbkové stránky pre zahraničného veriteľa (lib/topics) — len jazyky
+    // medzinárodnej vetvy, v ktorých už text existuje (LOCALE_LIMITED_PATHNAMES).
+    "/creditor-debt-recovery": {
+      sk: "/creditor-debt-recovery",
+      en: "/recovering-debts-from-slovak-companies",
+      pl: "/windykacja-naleznosci-na-slowacji",
+      hu: "/creditor-debt-recovery",
+      de: "/creditor-debt-recovery",
+    },
+    "/creditor-insolvency-claims": {
+      sk: "/creditor-insolvency-claims",
+      en: "/slovak-insolvency-creditor-claims",
+      pl: "/upadlosc-slowackiego-kontrahenta",
+      hu: "/creditor-insolvency-claims",
+      de: "/creditor-insolvency-claims",
+    },
+    "/creditor-enforcement": {
+      sk: "/creditor-enforcement",
+      en: "/enforcing-judgments-in-slovakia",
+      pl: "/egzekucja-na-slowacji",
+      hu: "/creditor-enforcement",
+      de: "/creditor-enforcement",
+    },
     // Local-SEO city landing pages (target query: "advokát {mesto}").
     "/lawyer-zvolen": { sk: "/advokat-zvolen", en: "/lawyer-zvolen", ...same("/lawyer-zvolen") },
     "/lawyer-detva": { sk: "/advokat-detva", en: "/lawyer-detva", ...same("/lawyer-detva") },
@@ -225,8 +248,21 @@ export const BASE_ONLY_PATHNAMES: AppPathname[] = [
   "/withdrawal",
 ];
 
+/**
+ * Cesty, ktoré existujú len vo vymenovaných jazykoch — stránky pre zahraničného
+ * veriteľa nemajú slovenskú verziu a ďalšie jazyky pribúdajú postupne
+ * (po preklade stačí doplniť kód jazyka sem a slug do `pathnames`).
+ */
+export const LOCALE_LIMITED_PATHNAMES: Partial<Record<AppPathname, readonly Locale[]>> = {
+  "/creditor-debt-recovery": ["en", "pl"],
+  "/creditor-insolvency-claims": ["en", "pl"],
+  "/creditor-enforcement": ["en", "pl"],
+};
+
 /** Jazyky, v ktorých daná cesta naozaj existuje (hreflang, sitemap, prepínač). */
 export function localesFor(pathname: AppPathname): readonly Locale[] {
+  const limited = LOCALE_LIMITED_PATHNAMES[pathname];
+  if (limited) return limited;
   if (SK_ONLY_PATHNAMES.includes(pathname)) return ["sk"];
   if (BASE_ONLY_PATHNAMES.includes(pathname)) return ["sk", "en"];
   return routing.locales;

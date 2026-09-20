@@ -30,8 +30,11 @@ export function localeAlternates(locale: string, href: HrefFor): Metadata["alter
   for (const l of localesFor(pathname)) {
     languages[l] = SITE_URL + getPathname({ locale: l, href: hrefFor(l) });
   }
-  languages["x-default"] =
-    SITE_URL + getPathname({ locale: routing.defaultLocale, href: hrefFor(routing.defaultLocale) });
+  // x-default = slovenčina; stránky bez slovenskej verzie (pre zahraničného
+  // veriteľa) mieria na prvý jazyk, v ktorom existujú (angličtina).
+  const available = localesFor(pathname);
+  const xDefault = available.includes(routing.defaultLocale) ? routing.defaultLocale : available[0];
+  languages["x-default"] = SITE_URL + getPathname({ locale: xDefault, href: hrefFor(xDefault) });
 
   return {
     canonical: SITE_URL + getPathname({ locale, href: hrefFor(locale) }),

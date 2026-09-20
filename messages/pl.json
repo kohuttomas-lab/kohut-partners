@@ -27,12 +27,12 @@
   "home": {
     "overline": "Słowacka kancelaria adwokacka · Zvolen, Słowacja",
     "heroBadge": "Słowacka Izba Adwokacka · Zvolen",
-    "heroTitle": "Państwa adwokat w sprawach prawa słowackiego.",
-    "heroLead": "Doradzamy klientom zagranicznym – po angielsku lub po słowacku – w zakresie prawa słowackiego: zakup nieruchomości, zakładanie spółek, dochodzenie należności, niewypłacalność i spory przed słowackimi sądami. Jasna porada, szybkie działanie i cena znana z góry.",
+    "heroTitle": "Dłużnik, spór lub upadłość na Słowacji?",
+    "heroLead": "Reprezentujemy zagraniczne firmy – najczęściej polskie – wobec słowackich odbiorców i partnerów handlowych: dochodzenie należności z niezapłaconych faktur, zgłoszenia wierzytelności w postępowaniu upadłościowym (konkurz), egzekucje i spory przed słowackimi sądami. Doradzamy wyłącznie w zakresie prawa słowackiego, komunikujemy się po angielsku lub po słowacku, a sprawę prowadzimy zdalnie, za wynagrodzeniem uzgodnionym z góry.",
     "heroPrimary": "Umów konsultację",
-    "heroSecondary": "Sklep prawny",
+    "heroSecondary": "Usługi",
     "heroChips": [
-      "Stała cena",
+      "Cena uzgodniona z góry",
       "Odpowiedź w ciągu 24 h",
       "Komunikujemy się po angielsku i słowacku"
     ],
@@ -56,31 +56,57 @@
       }
     ],
     "servOverline": "Dziedziny praktyki · prawo słowackie",
-    "servTitle": "Jak pomagamy klientom zagranicznym na Słowacji",
-    "servLead": "Doradzamy wyłącznie w zakresie prawa słowackiego – od zakupu nieruchomości po spory przed słowackimi sądami. Po wybraniu dziedziny widać dokładnie, czym się zajmujemy, za jaką cenę i jak wygląda współpraca.",
+    "servTitle": "Jak pomagamy zagranicznym firmom na Słowacji",
+    "servLead": "Doradzamy wyłącznie w zakresie prawa słowackiego – od dochodzenia należności i sporów przed słowackimi sądami po upadłości, spółki handlowe i nieruchomości. Przy każdej dziedzinie podajemy, czym dokładnie się zajmujemy i jak przebiega współpraca.",
     "whyOverline": "Jak pracujemy",
     "whyTitle": "Trzy kroki do jasnego rozwiązania",
     "why": [
       {
-        "title": "Rezerwacja konsultacji",
-        "desc": "Online przez wideorozmowę – po angielsku lub po słowacku – albo osobiście. Wystarczy wybrać termin i opisać sytuację; pierwsza odpowiedź w ciągu 24 godzin."
+        "title": "Przesyłają nam Państwo dokumenty",
+        "desc": "Umowę lub zamówienie, faktury i korespondencję z dłużnikiem – e-mailem lub przez formularz. W ciągu 24 godzin potwierdzamy otrzymanie; przed przyjęciem sprawy sprawdzamy, czy nie zachodzi konflikt interesów."
       },
       {
         "title": "Uzgadniamy plan i cenę",
-        "desc": "Proponujemy rozwiązanie zgodne z prawem słowackim i z góry ustaloną stałą cenę. Bez niespodzianek w postaci stawek godzinowych."
+        "desc": "Przedstawiamy na piśmie, jaki tryb działania według prawa słowackiego proponujemy, jakie terminy biegną i ile to będzie kosztować. Cenę znają Państwo, zanim rozpoczniemy pracę."
       },
       {
-        "title": "Prowadzimy sprawę",
-        "desc": "Działamy w Państwa imieniu przed słowackimi sądami i urzędami i informujemy o każdym kroku – w większości spraw przyjazd na Słowację nie jest potrzebny."
+        "title": "Działamy za Państwa na Słowacji",
+        "desc": "Reprezentujemy Państwa przed słowackimi sądami, syndykami i komornikami na podstawie pełnomocnictwa i na bieżąco Państwa informujemy. Przyjazd na Słowację z reguły nie jest potrzebny."
       }
     ],
     "teamOverline": "Nasz zespół",
     "teamTitle": "Ludzie, którzy staną po Państwa stronie",
     "teamLead": "Zgrany zespół adwokatów z rzeczywistym doświadczeniem w sprawach upadłościowych, prawie spółek i sporach sądowych.",
     "teamCta": "Poznaj cały zespół",
-    "ctaBandTitle": "Sprawa prawna na Słowacji? Zacznijmy już dziś.",
-    "ctaBandLead": "Pierwsza konsultacja jest niezobowiązująca – online po angielsku lub po słowacku albo w naszej kancelarii. Wystarczy wybrać dogodny termin.",
-    "ctaBandBtn": "Umów konsultację"
+    "ctaBandTitle": "Mają Państwo należność lub spór na Słowacji? Zacznijmy już dziś.",
+    "ctaBandLead": "Pierwsza konsultacja jest niezobowiązująca – online po angielsku lub po słowacku, ewentualnie osobiście w kancelarii w mieście Zvolen.",
+    "ctaBandBtn": "Umów konsultację",
+    "topicsOverline": "Z czym zgłaszają się polskie firmy",
+    "topicsTitle": "Cztery sytuacje, którymi zajmujemy się najczęściej",
+    "topicsLead": "Każda z nich podlega słowackiemu prawu procesowemu i toczy się przed słowackimi sądami, syndykami (správca) i komornikami (exekútor). Dla każdej mamy osobną stronę z terminami, trybem postępowania i dokumentami, których będziemy potrzebować.",
+    "topicsMore": "Terminy, tryb postępowania i dokumenty",
+    "topics": [
+      {
+        "title": "Słowacki odbiorca nie zapłacił faktury",
+        "desc": "Towary, usługi, podwykonawstwo budowlane i montażowe. Wezwanie przedsądowe, słowacki (platobný rozkaz) lub europejski nakaz zapłaty, proces i egzekucja – ze sprawdzeniem dłużnika, zanim zainwestują Państwo w dochodzenie należności kolejne środki.",
+        "href": "/creditor-debt-recovery"
+      },
+      {
+        "title": "Słowacki odbiorca jest w upadłości lub restrukturyzacji",
+        "desc": "Na zgłoszenie wierzytelności biegnie termin ustawowy, a w restrukturyzacji niezgłoszonej wierzytelności nie można dochodzić od dłużnika. Prawo upadłościowe to główna specjalizacja kancelarii.",
+        "href": "/creditor-insolvency-claims"
+      },
+      {
+        "title": "Mają Państwo wyrok lub nakaz zapłaty, a dłużnik ma majątek na Słowacji",
+        "desc": "Zarówno wyrok sądu państwa członkowskiego UE, jak i europejski nakaz zapłaty są na Słowacji wykonywane bez nowego postępowania sądowego. Bronimy również zagranicznych firm, przeciwko którym wszczęto egzekucję na Słowacji.",
+        "href": "/creditor-enforcement"
+      },
+      {
+        "title": "Niezapłacone przewoźne na podstawie Konwencji CMR",
+        "desc": "Dla przewoźników i spedytorów: przedawnienie z art. 32 Konwencji CMR, jurysdykcja sądów i dochodzenie należności od słowackiego zleceniodawcy przewozu.",
+        "href": "/transport-debt-recovery"
+      }
+    ]
   },
   "team": {
     "photoSlot": "Miejsce na zdjęcie"
@@ -218,32 +244,46 @@
     "country": "Republika Słowacka"
   },
   "intl": {
-    "heroOverline": "Klienci zagraniczni",
-    "heroTitle": "Prawo słowackie – wyjaśnione zrozumiale.",
-    "heroLead": "Jesteśmy słowacką kancelarią adwokacką i doradzamy wyłącznie w zakresie prawa Republiki Słowackiej. Jeżeli Państwa firma, nieruchomość, dłużnik lub spór znajdują się na Słowacji, przeprowadzimy Państwa przez słowacki system prawny – po angielsku lub po słowacku, w większości zdalnie. Ta strona jest dostępna po polsku dla Państwa wygody; z klientami komunikujemy się po angielsku lub po słowacku.",
+    "heroOverline": "Klienci z Polski",
+    "heroTitle": "Prawo słowackie dla polskich firm – zrozumiale.",
+    "heroLead": "Jesteśmy słowacką kancelarią adwokacką i doradzamy wyłącznie w zakresie prawa Republiki Słowackiej. Jeżeli mają Państwo na Słowacji dłużnika, partnera handlowego w upadłości (konkurz), spór lub egzekucję, przeprowadzimy Państwa przez słowackie postępowanie od pierwszego pisma aż po wyegzekwowanie należności – zdalnie, po angielsku lub po słowacku. Ta strona jest dostępna po polsku dla Państwa wygody; z klientami komunikujemy się po angielsku lub po słowacku.",
     "helpOverline": "Co dla Państwa robimy",
-    "helpTitle": "Typowe sprawy, które prowadzimy dla klientów zagranicznych",
-    "helpLead": "Każda z poniższych spraw podlega prawu słowackiemu i toczy się przed słowackimi sądami, notariuszami, katastrem nieruchomości i innymi słowackimi urzędami.",
+    "helpTitle": "Typowe sprawy polskich firm na Słowacji",
+    "helpLead": "Wszystkie toczą się przed słowackimi sądami, syndykami masy upadłości (správca) i komornikami (exekútor). Jeżeli Państwa umowa podlega prawu polskiemu, słowacki sąd je zastosuje – w takim przypadku współpracujemy z Państwa polskim prawnikiem.",
     "help": [
       {
-        "title": "Zakup nieruchomości na Słowacji",
-        "desc": "Umowy kupna, sprawdzenie stanu prawnego w słowackim katastrze nieruchomości (kataster nehnuteľností), depozyt chroniący Państwa środki oraz wpis prawa własności."
+        "title": "Faktura niezapłacona przez słowackiego odbiorcę",
+        "desc": "Sprawdzenie dłużnika, wezwanie przedsądowe, słowacki lub europejski nakaz zapłaty, proces i egzekucja. Dla towarów, usług i podwykonawstwa budowlanego.",
+        "href": "/creditor-debt-recovery",
+        "more": "Jak przebiega dochodzenie należności"
       },
       {
-        "title": "Prowadzenie działalności na Słowacji",
-        "desc": "Założenie słowackiej s.r.o. (odpowiednik spółki z o.o.) dla zagranicznych założycieli – w pełni zdalnie, na podstawie pełnomocnictwa – a także umowy handlowe i bieżąca obsługa korporacyjna."
+        "title": "Odbiorca w upadłości lub restrukturyzacji",
+        "desc": "Zgłoszenie wierzytelności w terminie ustawowym, obrona w razie zakwestionowania wierzytelności (popretie pohľadávky), zastrzeżenie własności dostarczonego towaru i reprezentacja na zgromadzeniu wierzycieli.",
+        "href": "/creditor-insolvency-claims",
+        "more": "Terminy i tryb zgłoszenia"
       },
       {
-        "title": "Dochodzenie należności od słowackich dłużników",
-        "desc": "Wezwania przedsądowe, słowackie postępowanie upominawcze (nakaz zapłaty), proces i egzekucja – jasny, etapowy tryb działania ze znanymi kosztami."
+        "title": "Wykonanie polskiego wyroku na Słowacji",
+        "desc": "Wyrok, europejski nakaz zapłaty lub wyrok sądu polubownego wykonuje słowacki komornik. Przygotowujemy wniosek o wszczęcie egzekucji i monitorujemy jej przebieg.",
+        "href": "/creditor-enforcement",
+        "more": "Czego będą Państwo potrzebować"
       },
       {
-        "title": "Wierzyciele w słowackich postępowaniach upadłościowych",
-        "desc": "Zgłoszenie wierzytelności słowackiemu syndykowi w ustawowych terminach, reprezentacja w komitecie wierzycieli i monitorowanie postępowania."
+        "title": "Przewoźne na podstawie Konwencji CMR",
+        "desc": "Dla przewoźników i spedytorów, którym słowacki zleceniodawca nie zapłacił za wykonany przewóz – łącznie ze sprawdzeniem terminu przedawnienia z art. 32 Konwencji CMR.",
+        "href": "/transport-debt-recovery",
+        "more": "Dochodzenie przewoźnego"
       },
       {
-        "title": "Spory przed słowackimi sądami",
-        "desc": "Spory cywilne i handlowe, wykonywanie zagranicznych orzeczeń na Słowacji, środki tymczasowe i negocjacje ugodowe."
+        "title": "Słowacka firma pozywa Państwa lub prowadzi przeciwko Państwu egzekucję",
+        "desc": "Doręczono Państwu słowacki nakaz zapłaty (platobný rozkaz) lub zawiadomienie o wszczęciu egzekucji (upovedomenie o začatí exekúcie)? Terminy na obronę liczy się w dniach. Oceniamy dokumenty i wnosimy sprzeciw (odpor) albo wniosek o umorzenie egzekucji.",
+        "href": "/creditor-enforcement",
+        "more": "Obrona i terminy"
+      },
+      {
+        "title": "Słowacka s.r.o. (odpowiednik spółki z o.o.) z polskim wspólnikiem",
+        "desc": "Spory między wspólnikami, odwołanie i odpowiedzialność członka zarządu (konateľ), zmiany w rejestrze handlowym, zbycie udziału i likwidacja spółki, której już Państwo nie potrzebują."
       }
     ],
     "remoteOverline": "Jak to działa",
@@ -270,7 +310,7 @@
     "scopeText": "Doradzamy wyłącznie w zakresie prawa Republiki Słowackiej. Nie doradzamy w zakresie prawa Państwa kraju – jeżeli sprawa dotyka innej jurysdykcji, współpracujemy z Państwa miejscowym doradcą prawnym.",
     "formOverline": "Napisz do nas",
     "formTitle": "Prosimy opisać sprawę – odpowiemy po angielsku lub po słowacku",
-    "formLead": "Prosimy napisać, czego dotyczy sprawa i jaki ma związek ze Słowacją. Odezwiemy się i przedstawimy kolejne kroki. Wysłanie formularza nie powoduje nawiązania stosunku prawnego między adwokatem a klientem.",
+    "formLead": "Prosimy napisać, czego dotyczy sprawa, kto jest stroną przeciwną i jakie terminy ewentualnie biegną. Odezwiemy się z propozycją dalszych kroków. Wysłanie formularza nie powoduje nawiązania stosunku prawnego między adwokatem a klientem.",
     "ctaTitle": "Prosimy opowiedzieć nam o swojej sprawie na Słowacji",
     "ctaLead": "Pierwsza konsultacja jest niezobowiązująca i odbywa się po angielsku lub po słowacku."
   },
@@ -665,5 +705,678 @@
     "title": "Nie znaleziono strony",
     "text": "Strona, której Państwo szukają, nie istnieje lub została przeniesiona.",
     "back": "Powrót na stronę główną"
+  },
+  "xdr": {
+    "navLabel": "Należności od słowackiej firmy",
+    "metaTitle": "Dochodzenie należności od słowackiej firmy",
+    "metaDescription": "Słowacki odbiorca nie zapłacił za towar, usługi lub podwykonawstwo? Jurysdykcja sądów, prawo właściwe, słowackie postępowanie upominawcze i egzekucja. Kancelaria adwokacka – Zvolen, Słowacja.",
+    "heroOverline": "Dla zagranicznych wierzycieli",
+    "heroTitle": "Dochodzenie należności od słowackiej firmy",
+    "heroLead": "Odbiorca z siedzibą w Republice Słowackiej nie zapłacił faktury za towar, usługi lub podwykonawstwo. Sprawdzamy, przed którym sądem i według którego prawa można dochodzić roszczenia, weryfikujemy dłużnika w rejestrach publicznych i prowadzimy sprawę od wezwania przedsądowego aż po egzekucję.",
+    "heroPara": [
+      "Działamy na rzecz zagranicznych firm – dostawców towarów, usługodawców, firm budowlanych i montażowych oraz wierzycieli z tytułu pożyczek między firmami – których dłużnik ma siedzibę na Słowacji. Doradzamy wyłącznie w zakresie prawa Republiki Słowackiej; jeżeli Państwa umowa podlega prawu innego państwa, współpracujemy z Państwa tamtejszym doradcą prawnym.",
+      "Pracujemy po angielsku i po słowacku; całą sprawę możemy poprowadzić zdalnie."
+    ],
+    "heroCta": "Prześlij nam dokumenty",
+    "whoOverline": "Dla kogo działamy",
+    "whoTitle": "Komu pomagamy",
+    "whoLead": "Koncentrujemy się na roszczeniach pieniężnych zagranicznych przedsiębiorców wobec dłużników z siedzibą w Republice Słowackiej – niezależnie od branży. Dla przewoźnego na podstawie Konwencji CMR mamy osobną stronę; niniejsza dotyczy towarów, usług, podwykonawstwa budowlanego i montażowego oraz pożyczek między firmami.",
+    "who": [
+      {
+        "title": "Dostawcy towarów",
+        "desc": "Niezapłacone faktury za dostarczony towar – zarówno wtedy, gdy odbiorca nie zakwestionował faktury i po prostu nie płaci, jak i wtedy, gdy wady zaczął zgłaszać dopiero po wezwaniu do zapłaty."
+      },
+      {
+        "title": "Usługodawcy i firmy IT",
+        "desc": "Wynagrodzenie za wykonane usługi, tworzenie i licencjonowanie oprogramowania, serwis lub najem urządzeń. Oceniamy, czym mogą Państwo wykazać spełnienie świadczenia – protokoły akceptacji, zestawienia wykonanych prac, potwierdzenia e-mailowe."
+      },
+      {
+        "title": "Firmy budowlane i montażowe",
+        "desc": "Podwykonawstwo na budowach na Słowacji i montaż urządzeń technologicznych: niezapłacone faktury częściowe, zatrzymane części ceny i niepodpisane protokoły odbioru. Sprawdzamy Państwa bezpośredniego kontrahenta w łańcuchu podwykonawców, ponieważ to wobec niego przysługuje roszczenie."
+      },
+      {
+        "title": "Wierzyciele z tytułu pożyczek między firmami",
+        "desc": "Niespłacone pożyczki i kredyty udzielone słowackiej spółce – partnerowi handlowemu lub spółce z grupy. Oceniamy umowę, dowód przekazania środków i wymagalność oraz sprawdzamy, czy dłużnik nie znalazł się w międzyczasie w upadłości (konkurz) lub restrukturyzacji (reštrukturalizácia)."
+      }
+    ],
+    "keyOverline": "Na czym opiera się sprawa",
+    "keyTitle": "Co trzeba wiedzieć przed pierwszym krokiem",
+    "keyLead": "Przy należności transgranicznej najpierw rozstrzyga się trzy kwestie: który sąd ma jurysdykcję, jakiemu prawu podlega umowa i czy dochodzenie należności od konkretnego dłużnika ma sens ekonomiczny. Jurysdykcję i prawo właściwe określają bezpośrednio stosowane rozporządzenia Unii Europejskiej; postępowanie przed słowackim sądem i egzekucję reguluje prawo słowackie.",
+    "key": [
+      {
+        "title": "Gdzie wnieść pozew – jurysdykcja słowackich sądów",
+        "desc": "Zasady określa rozporządzenie Parlamentu Europejskiego i Rady (UE) nr 1215/2012 (Bruksela I bis). Zgodnie z art. 4 ust. 1 osoby mające miejsce zamieszkania na terytorium państwa członkowskiego mogą być pozywane przed sądy tego państwa członkowskiego; spółka handlowa ma zgodnie z art. 63 ust. 1 miejsce zamieszkania tam, gdzie znajduje się jej statutowa siedziba, główny organ zarządzający lub główne przedsiębiorstwo. Dłużnika z siedzibą w Republice Słowackiej można zatem pozwać przed słowacki sąd, o ile strony nie uzgodniły jurysdykcji innego sądu. Ponadto art. 7 pkt 1 dopuszcza w sprawach dotyczących umowy powództwo przed sądem miejsca wykonania zobowiązania: o ile strony nie uzgodniły inaczej, jest nim w przypadku sprzedaży rzeczy ruchomych miejsce w państwie członkowskim, w którym rzeczy te zgodnie z umową zostały albo miały zostać dostarczone, a w przypadku świadczenia usług – miejsce w państwie członkowskim, w którym usługi zgodnie z umową były świadczone albo miały być świadczone. Wierzyciel może więc niekiedy wybrać między sądem w swoim państwie a sądem słowackim. Orzeczenie słowackiego sądu stanowi bezpośrednio podstawę egzekucji na Słowacji – a więc w państwie, w którym dłużnik ma siedzibę.",
+        "note": "Klauzula jurysdykcyjna w umowie lub w ogólnych warunkach handlowych: zgodnie z art. 25 ust. 1 rozporządzenia jurysdykcję ma sąd państwa członkowskiego, który strony uzgodniły, a jurysdykcja ta jest wyłączna, o ile strony nie uzgodniły inaczej. Umowa jurysdykcyjna musi być zawarta w formie pisemnej lub ustnej potwierdzonej na piśmie, w formie, która odpowiada praktyce przyjętej między stronami, albo – w handlu międzynarodowym – w formie odpowiadającej zwyczajowi handlowemu, który strony znały lub musiały znać; zgodnie z art. 25 ust. 2 przekazy elektroniczne umożliwiające trwały zapis umowy są traktowane na równi z formą pisemną. Jeżeli umowa lub warunki handlowe, które stały się jej częścią, wskazują sąd innego państwa członkowskiego, pozew należy wnieść do tego sądu; zgodnie z art. 26 ust. 1 jurysdykcję uzyskuje jednak również sąd, przed którym pozwany wda się w spór, nie podnosząc zarzutu braku jurysdykcji. Dlatego klauzulę jurysdykcyjną czytamy w pierwszej kolejności."
+      },
+      {
+        "title": "Jakiemu prawu podlega umowa – rozporządzenie Rzym I",
+        "desc": "Jurysdykcja sądu i prawo właściwe to dwie odrębne kwestie: słowacki sąd może orzekać według prawa innego państwa. Zgodnie z art. 3 ust. 1 rozporządzenia Parlamentu Europejskiego i Rady (WE) nr 593/2008 (Rzym I) umowa podlega prawu wybranemu przez strony; wybór prawa musi być dokonany wyraźnie lub w sposób jednoznaczny wynikać z postanowień umowy lub okoliczności sprawy. Jeżeli strony nie dokonały wyboru prawa, to zgodnie z art. 4 ust. 1 umowa sprzedaży towarów podlega prawu państwa, w którym sprzedawca ma miejsce zwykłego pobytu (lit. a), a umowa o świadczenie usług – prawu państwa, w którym usługodawca ma miejsce zwykłego pobytu (lit. b); umowa, która nie jest objęta ust. 1, podlega zgodnie z art. 4 ust. 2 prawu państwa, w którym strona zobowiązana do spełnienia świadczenia charakterystycznego dla umowy ma miejsce zwykłego pobytu. Miejscem zwykłego pobytu spółki jest zgodnie z art. 19 ust. 1 miejsce siedziby jej głównego organu zarządzającego. Dla zagranicznego dostawcy oznacza to z reguły prawo jego własnego państwa, a nie prawo słowackie – chyba że ze wszystkich okoliczności sprawy wyraźnie wynika, że umowa pozostaje w znacznie ściślejszym związku z innym państwem (art. 4 ust. 3). Zgodnie z art. 12 ust. 1 prawo właściwe ma zastosowanie w szczególności do wykonywania zobowiązań wynikających z umowy, skutków ich niewykonania, a także do przedawnienia i utraty praw wynikającej z upływu terminów (lit. d). Długość terminu przedawnienia i roszczenie o odsetki za opóźnienie mogą więc podlegać prawu Państwa kraju, mimo że pozew wnosi się na Słowacji.",
+        "note": "Przy sprzedaży towarów między przedsiębiorcami z różnych państw w grę wchodzi również Konwencja Narodów Zjednoczonych o umowach międzynarodowej sprzedaży towarów, jeżeli spełnione są przesłanki jej stosowania, a strony jej nie wyłączyły. Treść prawa obcego słowacki sąd ustala zgodnie z § 53 ust. 1 ustawy nr 97/1963 Zb. o prawie prywatnym międzynarodowym i procesowym: podejmuje wszelkie niezbędne działania, w tym ustala treść prawa obcego własnymi środkami, z powszechnie dostępnych źródeł, przez nałożenie obowiązku na uczestników postępowania albo przez zwrócenie się o informację do Ministerstwa Sprawiedliwości Republiki Słowackiej; jeżeli treści prawa obcego nie uda się ustalić w rozsądnym terminie, stosuje się prawo słowackie. Nasza kancelaria doradza wyłącznie w zakresie prawa Republiki Słowackiej – kwestie prawa materialnego innego państwa rozwiązujemy we współpracy z Państwa tamtejszym doradcą prawnym."
+      },
+      {
+        "title": "Jeżeli stosunek prawny podlega prawu słowackiemu: przedawnienie i uznanie zobowiązania",
+        "desc": "Umowa podlega prawu słowackiemu przede wszystkim wtedy, gdy strony je wybrały albo gdy wynika to z art. 4 rozporządzenia Rzym I. Stosunki zobowiązaniowe między przedsiębiorcami, które dotyczą ich działalności gospodarczej, reguluje wówczas słowacki Kodeks handlowy (Obchodný zákonník; § 261 ust. 1). Termin przedawnienia wynosi zgodnie z § 397 cztery lata, o ile ustawa nie stanowi inaczej dla poszczególnych praw. Zgodnie z § 402 przestaje on biec dopiero wtedy, gdy wierzyciel dokona czynności prawnej, która według przepisów regulujących postępowanie sądowe jest uznawana za jego wszczęcie albo za dochodzenie prawa w postępowaniu już wszczętym – monity ani wezwania do zapłaty same nie wstrzymują biegu terminu przedawnienia. Jeżeli dłużnik uzna swoje zobowiązanie na piśmie, od tego uznania biegnie zgodnie z § 407 ust. 1 nowy czteroletni termin przedawnienia, i to również wtedy, gdy w chwili uznania prawo było już przedawnione (§ 407 ust. 4). Za uznanie uważa się także płacenie odsetek – w odniesieniu do kwoty, od której odsetki są płacone (§ 407 ust. 2) – oraz częściowe spełnienie świadczenia, jeżeli można z niego wnosić, że dłużnik uznaje w ten sposób także pozostałą część zobowiązania (§ 407 ust. 3). Jeżeli ktoś uzna na piśmie swoje określone zobowiązanie, to zgodnie z § 323 ust. 1 domniemywa się, że zobowiązanie w uznanym zakresie istnieje w chwili uznania. Dlatego przy negocjacjach dotyczących spłaty w ratach pisemne uznanie długu jest pierwszą rzeczą, o którą prosimy dłużnika.",
+        "note": "Zgodnie z § 408 ust. 1 Kodeksu handlowego termin przedawnienia kończy się, bez względu na inne przepisy, najpóźniej z upływem dziesięciu lat od dnia, w którym po raz pierwszy zaczął biec. Jeżeli umowa podlega prawu innego państwa, terminy te nie mają zastosowania – przedawnienie ocenia się według prawa właściwego (art. 12 ust. 1 lit. d rozporządzenia Rzym I). Przy starszej należności pierwszym krokiem jest zatem ustalenie prawa właściwego, a nie liczenie czterech lat."
+      },
+      {
+        "title": "Odsetki za opóźnienie i zryczałtowana rekompensata 40 euro według prawa słowackiego",
+        "desc": "Jeżeli stosunek prawny podlega prawu słowackiemu, dłużnik zobowiązania pieniężnego pozostaje zgodnie z § 365 ust. 2 Kodeksu handlowego w opóźnieniu, jeżeli nie spełni świadczenia należycie i najpóźniej w terminie 30 dni od dnia doręczenia faktury lub innego wezwania do zapłaty albo w terminie 30 dni od dnia spełnienia świadczenia przez wierzyciela, w zależności od tego, który z tych dni nastąpił później – o ile z umowy nie wynika inny termin płatności. Wierzycielowi, który wykonał swoje obowiązki ustawowe i umowne, przysługuje zgodnie z § 369 ust. 1 prawo do odsetek za opóźnienie w wysokości uzgodnionej w umowie, i to bez potrzeby odrębnego wezwania. Jeżeli wysokość nie została uzgodniona, zgodnie z § 369 ust. 2 stosuje się stopę określoną w rozporządzeniu Rządu Republiki Słowackiej nr 21/2013 Z. z.: zgodnie z § 1 ust. 1 jest to podstawowa stopa procentowa Europejskiego Banku Centralnego obowiązująca w pierwszym dniu danego półrocza kalendarzowego opóźnienia, powiększona o osiem punktów procentowych, albo – jeżeli wierzyciel wybierze wariant stały z § 1 ust. 2 – stopa podstawowa obowiązująca w pierwszym dniu opóźnienia, powiększona o dziewięć punktów procentowych, która obowiązuje następnie przez cały okres opóźnienia. Obok odsetek powstaje zgodnie z § 369c ust. 1 Kodeksu handlowego prawo do zryczałtowanej rekompensaty za koszty odzyskiwania należności; zgodnie z § 2 rozporządzenia Rządu wynosi ona 40 euro, jednorazowo, niezależnie od długości opóźnienia.",
+        "note": "Aktualną podstawową stopę procentową Europejskiego Banku Centralnego trzeba sprawdzić na właściwy dzień. W słowackim postępowaniu upominawczym (upomínacie konanie) obowiązuje ograniczenie: wniosek nie jest dopuszczalny, jeżeli dochodzone umowne odsetki za opóźnienie przekraczają o więcej niż pięć punktów procentowych stopę, która miałaby zastosowanie bez takiej umowy (§ 3 ust. 5 lit. a ustawy nr 307/2016 Z. z.). Jeżeli umowa podlega prawu innego państwa, odsetki za opóźnienie i rekompensatę za koszty odzyskiwania należności ocenia się według tego prawa."
+      },
+      {
+        "title": "Słowackie postępowanie upominawcze czy europejski nakaz zapłaty",
+        "desc": "Słowackie postępowanie upominawcze (upomínacie konanie) na podstawie ustawy nr 307/2016 Z. z. to przyspieszone postępowanie elektroniczne w sprawach o roszczenia pieniężne, stanowiące alternatywę dla pozwu wnoszonego na podstawie słowackiego Kodeksu postępowania cywilnego spornego (Civilný sporový poriadok; § 1 ust. 2). Wyłączną właściwość rzeczową ma Sąd Rejonowy Banská Bystrica (Okresný súd Banská Bystrica; § 2). Wniosek składa się wyłącznie drogą elektroniczną za pomocą przeznaczonego do tego formularza (§ 4 ust. 1), a powód – albo, jeżeli jest reprezentowany, jego pełnomocnik – musi mieć aktywowaną skrzynkę elektroniczną (elektronická schránka) utworzoną na podstawie słowackiej ustawy o e-administracji (zákon o e-Governmente; § 3 ust. 6 lit. b); zagraniczny wierzyciel składa zatem wniosek z reguły za pośrednictwem słowackiego adwokata. Zagraniczna osoba prawna wykazuje swoje dane identyfikacyjne odpisem z rejestru, do którego jest wpisana (§ 4 ust. 3). Dochodzić można wyłącznie roszczenia o zapłatę kwoty pieniężnej w euro (§ 3 ust. 2). Wniosek nie jest dopuszczalny, jeżeli nakaz zapłaty (platobný rozkaz) musiałby zostać doręczony pozwanemu za granicą (§ 3 ust. 6 lit. d) – ograniczenie to dotyczy pozwanego, a nie powoda, więc siedziba wierzyciela za granicą nie stanowi przeszkody. Sąd wydaje nakaz zapłaty najpóźniej w terminie dziesięciu dni roboczych od spełnienia przesłanek procesowych, w tym uiszczenia opłaty sądowej (§ 7 ust. 1). Od doręczenia pozwany ma 15 dni na zapłatę albo na wniesienie sprzeciwu (odpor; § 7 ust. 2), który musi zawierać merytoryczne uzasadnienie (§ 11 ust. 1); nakaz zapłaty, od którego nie wniesiono sprzeciwu, ma skutki prawomocnego wyroku (§ 11 ust. 6). Europejski nakaz zapłaty na podstawie rozporządzenia (WE) nr 1896/2006 jest przeznaczony dla spraw transgranicznych – czyli spraw, w których przynajmniej jedna ze stron ma miejsce zamieszkania lub miejsce stałego pobytu w państwie członkowskim innym niż państwo członkowskie sądu rozpoznającego sprawę (art. 3 ust. 1). Zagraniczny wierzyciel, który pozywa słowackiego dłużnika przed słowackim sądem, spełnia ten warunek. Pozew składa się przy użyciu formularza A (art. 7 ust. 1), na Słowacji w języku państwowym (§ 270 Kodeksu postępowania cywilnego spornego). Sąd wydaje nakaz tak szybko, jak to możliwe, zwykle w terminie 30 dni od wniesienia pozwu (art. 12 ust. 1). Pozwany może w terminie 30 dni od doręczenia wnieść sprzeciw i nie musi podawać w nim powodów (art. 16 ust. 2 i 3); dalsze postępowanie toczy się wówczas przed właściwym sądem państwa członkowskiego wydania (art. 17 ust. 1). Nakaz, który stał się wykonalny, jest uznawany i wykonywany w innych państwach członkowskich bez potrzeby stwierdzania wykonalności (art. 19); rozporządzenie nie ma zastosowania do Danii (art. 2 ust. 3).",
+        "note": "Przy należności w euro wobec dłużnika z siedzibą na Słowacji postępowanie upominawcze ma w porównaniu z europejskim nakazem zapłaty krótszy ustawowy termin na wydanie nakazu, opłatę sądową niższą o połowę (§ 11c ust. 1 ustawy nr 71/1992 Zb.) i wymaga sprzeciwu z merytorycznym uzasadnieniem. Europejski nakaz zapłaty wchodzi w grę przede wszystkim tam, gdzie postępowanie upominawcze nie jest dopuszczalne. Dla należności, których wartość, z wyłączeniem odsetek, wydatków i kosztów, nie przekracza 5 000 euro, istnieje ponadto europejskie postępowanie w sprawie drobnych roszczeń na podstawie rozporządzenia (WE) nr 861/2007 (art. 2 ust. 1): jest ono pisemne (art. 5 ust. 1), wszczyna się je formularzem pozwu A (art. 4 ust. 1), formularze składa się w języku, w którym prowadzone jest postępowanie przed sądem (art. 6 ust. 1), a orzeczenie jest uznawane i wykonywane w innym państwie członkowskim bez potrzeby stwierdzania wykonalności (art. 20 ust. 1)."
+      },
+      {
+        "title": "Orzeczenie z innego państwa członkowskiego i egzekucja na Słowacji",
+        "desc": "Jeżeli pozwali Państwo dłużnika w swoim państwie – na przykład na podstawie klauzuli jurysdykcyjnej albo według miejsca wykonania zobowiązania – i mają Państwo wykonalne orzeczenie, na Słowacji nie wnosi się już pozwu ponownie. Zgodnie z art. 39 rozporządzenia (UE) nr 1215/2012 orzeczenie wydane w państwie członkowskim, które jest wykonalne w tym państwie członkowskim, jest wykonalne w innych państwach członkowskich bez potrzeby stwierdzania jego wykonalności. Do celów wykonania przedstawia się zgodnie z art. 42 ust. 1 odpis orzeczenia spełniający warunki niezbędne do stwierdzenia jego autentyczności oraz zaświadczenie, które na wniosek wydaje sąd pochodzenia zgodnie z art. 53. Zaświadczenie to doręcza się zgodnie z art. 43 ust. 1 osobie, wobec której występuje się o wykonanie, przed pierwszym środkiem wykonawczym. Wykonanie podlega zgodnie z art. 41 ust. 1 prawu wezwanego państwa członkowskiego – na Słowacji jest to więc słowacki Kodeks egzekucyjny (Exekučný poriadok), zgodnie z którym tytułem egzekucyjnym jest również zagraniczny tytuł egzekucyjny wykonalny w Republice Słowackiej (§ 45 ust. 2 lit. b).",
+        "note": "Tłumaczenia orzeczenia organ egzekucyjny może zażądać wyłącznie wtedy, gdy nie jest w stanie prowadzić postępowania bez takiego tłumaczenia (art. 42 ust. 4 rozporządzenia Bruksela I bis); tłumaczenia lub transliteracji treści zaświadczenia może zażądać w razie konieczności (art. 42 ust. 3). Wyłączną właściwość rzeczową w postępowaniu egzekucyjnym ma na Słowacji Sąd Rejonowy Banská Bystrica (§ 49 Kodeksu egzekucyjnego). Opłata sądowa od wniosku o wszczęcie egzekucji wynosi 25 euro według pozycji 13 lit. a taryfy opłat ustawy nr 71/1992 Zb."
+      }
+    ],
+    "stepsOverline": "Tryb postępowania",
+    "stepsTitle": "Jak przebiega sprawa",
+    "steps": [
+      {
+        "title": "Przejęcie sprawy i analiza",
+        "desc": "Analizujemy umowę, zamówienia, warunki handlowe, faktury i dowody spełnienia świadczenia. Sprawdzamy, czy umowa zawiera klauzulę jurysdykcyjną lub klauzulę wyboru prawa, który sąd ma jurysdykcję, jakiemu prawu podlega stosunek prawny i do kiedy można dochodzić roszczenia. Wynikiem jest pisemna propozycja trybu działania."
+      },
+      {
+        "title": "Sprawdzenie dłużnika",
+        "desc": "Przed wniesieniem pozwu sprawdzamy dłużnika w rejestrach publicznych. Słowacki rejestr handlowy (Obchodný register) jest publicznym wykazem; wpisane dane i dokumenty złożone w zbiorze dokumentów są publikowane bezpłatnie (§ 3 ust. 1 i § 6 ust. 1 ustawy nr 29/2026 Z. z.). Rejestr sprawozdań finansowych (Register účtovných závierok) udostępnia dokumenty złożone w części publicznej wszystkim osobom bez opłat (§ 23c ust. 1 ustawy nr 431/2002 Z. z.). Rejestr upadłości (insolvenčný register) ewidencjonuje postępowania upadłościowe i restrukturyzacyjne (§ 203b ustawy nr 7/2005 Z. z.), a centralny rejestr egzekucji (centrálny register exekúcií), prowadzony przez Słowacką Izbę Komorniczą (Slovenská komora exekútorov), jest publicznym wykazem egzekucji niezakończonych prawomocnie (§ 211a Kodeksu egzekucyjnego). Ze sprawdzenia wynika, czy dochodzenie należności ma sens ekonomiczny i czy dłużnik nie znajduje się w upadłości lub restrukturyzacji – wówczas należności nie dochodzi się pozwem, lecz zgłoszeniem wierzytelności (prihláška)."
+      },
+      {
+        "title": "Wezwanie przedsądowe, uznanie długu, raty",
+        "desc": "Przygotowujemy i wysyłamy wezwanie do zapłaty z wyliczeniem należności głównej, odsetek za opóźnienie i dalszych roszczeń według prawa właściwego. Jeżeli dłużnik nie kwestionuje długu, ale nie jest w stanie zapłacić go jednorazowo, uzgadniamy pisemne uznanie zobowiązania i harmonogram spłat. Porozumienie można sporządzić także w formie aktu notarialnego (notárska zápisnica): jeżeli zawiera on zobowiązanie prawne, wskazano w nim osobę uprawnioną i osobę zobowiązaną, podstawę prawną, przedmiot i termin świadczenia, a osoba zobowiązana wyraziła w nim zgodę na wykonalność, stanowi on zgodnie z § 45 ust. 2 lit. c Kodeksu egzekucyjnego tytuł egzekucyjny. W razie niewykonania zobowiązania można wówczas złożyć wniosek o wszczęcie egzekucji bez uprzedniego postępowania sądowego."
+      },
+      {
+        "title": "Dochodzenie roszczenia przed sądem",
+        "desc": "Jeżeli dłużnik nie zapłaci, składamy wniosek w postępowaniu upominawczym na podstawie ustawy nr 307/2016 Z. z. – wyłącznie drogą elektroniczną, do Sądu Rejonowego Banská Bystrica, który ma w tym postępowaniu wyłączną właściwość rzeczową. Sąd wydaje nakaz zapłaty najpóźniej w terminie dziesięciu dni roboczych od spełnienia przesłanek procesowych, w tym uiszczenia opłaty sądowej; od doręczenia pozwany ma 15 dni na zapłatę albo na wniesienie sprzeciwu z merytorycznym uzasadnieniem. Jeżeli sprzeciwu nie wniesie, nakaz zapłaty ma skutki prawomocnego wyroku. Jeżeli go wniesie, ustosunkowujemy się do niego i w terminie 15 dni wnosimy o dalsze prowadzenie postępowania przed sądem właściwym według Kodeksu postępowania cywilnego spornego (§ 14 ust. 1 ustawy). Tam, gdzie postępowanie upominawcze nie jest dopuszczalne, wnosimy pozew o wydanie europejskiego nakazu zapłaty albo zwykły pozew."
+      },
+      {
+        "title": "Egzekucja",
+        "desc": "Mając wykonalne orzeczenie, składamy wniosek o wszczęcie egzekucji – drogą elektroniczną, za pomocą przeznaczonego do tego formularza (§ 48 ust. 7 Kodeksu egzekucyjnego). Wyłączną właściwość rzeczową w postępowaniu egzekucyjnym ma Sąd Rejonowy Banská Bystrica (§ 49). Jeżeli nie ma podstaw do oddalenia wniosku, sąd w terminie 15 dni od jego doręczenia wydaje upoważnienie do prowadzenia egzekucji (§ 53 ust. 1; przy akcie notarialnym termin ten nie obowiązuje). Sprawę przydziela słowackiemu komornikowi (exekútor) w drodze losowania (§ 55 ust. 1) – wierzyciel nie wybiera komornika. Jeżeli przeciwko temu samemu dłużnikowi toczy się już egzekucja, w której sąd udzielił komornikowi upoważnienia, każda kolejna sprawa jest zgodnie z § 55 ust. 4 przydzielana temu samemu komornikowi."
+      }
+    ],
+    "docsOverline": "Dokumenty",
+    "docsTitle": "Czego od Państwa potrzebujemy",
+    "docsLead": "Prosimy przesłać nam dokumenty jako skany lub zdjęcia w języku, w którym zostały sporządzone; oryginały ani tłumaczenia nie są na tym etapie potrzebne. Co trzeba będzie przetłumaczyć, ustalimy po ocenie sprawy.",
+    "docs": [
+      "Umowa, zamówienia i ich potwierdzenia, w tym korespondencja e-mailowa, w której doszło do zawarcia umowy, oraz ogólne warunki handlowe, do których się odsyła – szukamy w nich klauzuli jurysdykcyjnej i klauzuli wyboru prawa.",
+      "Faktury oraz dowód ich wysłania lub doręczenia dłużnikowi.",
+      "Dowody spełnienia świadczenia: dowody dostawy i dokumenty przewozowe dotyczące dostawy towaru, protokoły odbioru i akceptacji, zestawienia wykonanych prac, dziennik budowy lub protokoły montażu.",
+      "W przypadku pożyczki lub kredytu: umowa i dowód przekazania środków, na przykład wyciąg z rachunku.",
+      "Korespondencja z dłużnikiem – monity, reklamacje, zgłoszone potrącenia i odliczenia, obietnice zapłaty, uznania długu, częściowe płatności.",
+      "Aktualny odpis z rejestru, do którego wpisana jest Państwa spółka; w postępowaniu upominawczym zagraniczna osoba prawna wykazuje nim swoje dane identyfikacyjne (§ 4 ust. 3 ustawy nr 307/2016 Z. z.).",
+      "Dane rachunku bankowego, na który dłużnik ma dokonać zapłaty; we wniosku o wydanie nakazu zapłaty są one obowiązkowe (§ 4 ust. 4 ustawy nr 307/2016 Z. z.).",
+      "Jeżeli istnieje już orzeczenie sądu z innego państwa członkowskiego: jego odpis i zaświadczenie wydane zgodnie z art. 53 rozporządzenia (UE) nr 1215/2012, ewentualnie europejski nakaz zapłaty, którego wykonalność została stwierdzona."
+    ],
+    "priceOverline": "Wynagrodzenie",
+    "priceTitle": "Ile to kosztuje",
+    "priceLead": "Zakres i wynagrodzenie uzgadniamy z góry i na piśmie. Cenę oceny sprawy i wezwania przedsądowego znają Państwo, zanim rozpoczniemy pracę.",
+    "price": [
+      {
+        "label": "Ocena sprawy",
+        "value": "stałe wynagrodzenie uzgodnione z góry",
+        "desc": "Przeglądamy dokumenty, ustalamy jurysdykcję sądu, prawo właściwe i przedawnienie, sprawdzamy dłużnika w rejestrach publicznych i przedstawiamy na piśmie proponowany tryb działania. Wynagrodzenie podajemy przed rozpoczęciem pracy; jeżeli zdecydują Państwo nie iść dalej, sprawa na tym się kończy."
+      },
+      {
+        "label": "Wezwanie przedsądowe",
+        "value": "stałe wynagrodzenie za czynność",
+        "desc": "Przygotowanie i wysłanie wezwania do zapłaty, w tym wyliczenie należności głównej i należności ubocznych. Uzgadniane jako stała kwota za czynność, a nie według stawki godzinowej."
+      },
+      {
+        "label": "Zastępstwo w postępowaniu",
+        "value": "stałe wynagrodzenie albo wynagrodzenie zależne od wyniku",
+        "desc": "Zgodnie z § 7 ust. 1 rozporządzenia (vyhláška) Ministerstwa Sprawiedliwości Republiki Słowackiej nr 655/2004 Z. z. wynagrodzenie zależne od wyniku sprawy można uzgodnić w formie procentowego udziału w wartości przedmiotu sprawy; zgodnie z § 7 ust. 2 jego maksymalna wysokość nie może przekroczyć 20% tej wartości. Zgodnie z § 8 ust. 1 rozporządzenia staje się ono należne tylko wtedy, gdy klient odniósł w sprawie pełny sukces; przy częściowym sukcesie adwokatowi przysługuje na podstawie § 8 ust. 2 wynagrodzenie taryfowe ustalone stosownie do stopnia sukcesu, a jeżeli klient nie odniósł sukcesu nawet w części, adwokat może na podstawie § 8 ust. 3 żądać jedynie zwrotu poniesionych wydatków."
+      }
+    ],
+    "priceNote": "Obok wynagrodzenia adwokata powstają wydatki, w szczególności opłaty sądowe i koszty tłumaczeń. W postępowaniu upominawczym opłata sądowa wynosi, zgodnie z § 11c ust. 1 ustawy nr 71/1992 Zb. o opłatach sądowych, 50% stawki procentowej określonej w taryfie opłat; stawka podstawowa według pozycji 1 lit. a taryfy wynosi 6% wartości przedmiotu sporu, a więc w postępowaniu upominawczym 3%, jednak nie mniej niż 25 euro i nie więcej niż 25 000 euro, a w sprawach handlowych nie więcej niż 50 000 euro. Sąd nie wzywa wnioskodawcy do jej uiszczenia, a jeżeli opłata nie zostanie uiszczona w terminie 15 dni od złożenia wniosku, wniosek nie jest brany pod uwagę. Od pozwu o wydanie europejskiego nakazu zapłaty uiszcza się, zgodnie z uwagą 5 do pozycji 1 taryfy, opłatę według pozycji 1 lit. a, czyli 6%. Opłata sądowa od wniosku o wszczęcie egzekucji wynosi 25 euro według pozycji 13 lit. a taryfy. Sąd przyznaje stronie zwrot kosztów postępowania proporcjonalnie do stopnia, w jakim wygrała sprawę (§ 255 ust. 1 Kodeksu postępowania cywilnego spornego). Wynik postępowania zależy od okoliczności konkretnej sprawy, w szczególności od sytuacji majątkowej dłużnika.",
+    "formOverline": "Bez zobowiązań",
+    "formTitle": "Prosimy przesłać nam dokumenty dotyczące należności",
+    "formLead": "Prosimy napisać, kto jest dłużnikiem, za co i ile jest Państwu winien oraz od kiedy. Odezwiemy się i przedstawimy kolejne kroki. Wysłanie formularza nie powoduje nawiązania stosunku prawnego między adwokatem a klientem.",
+    "faqOverline": "FAQ",
+    "faqTitle": "Najczęściej zadawane pytania",
+    "faq": [
+      {
+        "q": "Czy w związku z postępowaniem musimy przyjechać na Słowację?",
+        "a": "W większości spraw nie. Wniosek w słowackim postępowaniu upominawczym składa się wyłącznie środkami elektronicznymi, a dochodzone roszczenie ocenia się na podstawie okoliczności wskazanych we wniosku i dołączonych do niego dokumentów (§ 3 ust. 3 i § 4 ust. 1 ustawy nr 307/2016 Z. z.); drogą elektroniczną składa się również wniosek o wszczęcie egzekucji (§ 48 ust. 7 słowackiego Kodeksu egzekucyjnego). Przed sądem strona może być reprezentowana przez wybranego przez siebie pełnomocnika (§ 89 ust. 1 słowackiego Kodeksu postępowania cywilnego spornego) – na rozprawach reprezentujemy Państwa my. Jeżeli po sprzeciwie dłużnika sprawa jest rozpoznawana w zwykłym postępowaniu i sąd zarządzi przesłuchanie strony, strony mają obowiązek stawić się na przesłuchanie (§ 195 ust. 2); sąd może jednak wyjątkowo, ze względów ekonomii procesowej, zobowiązać stronę do udzielenia odpowiedzi na pytania na piśmie (§ 195 ust. 3), a jeżeli zapewnienie rzetelnego procesu nie wymaga fizycznej obecności strony na rozprawie, umożliwia jej udział za pośrednictwem wideokonferencji lub innych środków technologii komunikacyjnej (§ 175 ust. 2)."
+      },
+      {
+        "q": "Faktura jest w złotych, a umowa w języku obcym – czy to przeszkadza?",
+        "a": "Roszczeniu to nie przeszkadza, wpływa jednak na wybór trybu. Słowackie postępowanie upominawcze jest zgodnie z § 3 ust. 2 ustawy nr 307/2016 Z. z. przeznaczone dla roszczeń o zapłatę określonej kwoty pieniężnej w euro. Należności wyrażonej w innej walucie dochodzimy zatem pozwem o wydanie europejskiego nakazu zapłaty albo pozwem na podstawie słowackiego Kodeksu postępowania cywilnego spornego; rozporządzenie (WE) nr 1896/2006 mówi w art. 4 o roszczeniach pieniężnych o oznaczonej wysokości i nie zawiera ograniczenia do euro. Pozew o wydanie europejskiego nakazu zapłaty składa się na Słowacji w języku państwowym, czyli po słowacku (§ 270 Kodeksu postępowania cywilnego spornego); wszystkie pisma procesowe sporządzamy za Państwa w języku słowackim. Przy umowie, zamówieniach i fakturach w języku obcym należy liczyć się z tłumaczeniem na język słowacki – które dokumenty przetłumaczyć, ustalamy przy ocenie sprawy, aby nie tłumaczyć więcej, niż jest to konieczne. Gdyby występowali Państwo przed sądem osobiście, mają Państwo zgodnie z § 155 ust. 1 Kodeksu postępowania cywilnego spornego prawo działać w języku ojczystym lub w języku, który Państwo rozumieją; sąd, uwzględniając charakter i okoliczności sprawy, powołuje tłumacza, a związane z tym koszty ponosi zgodnie z § 155 ust. 2 państwo."
+      },
+      {
+        "q": "W umowie nie ma nic o sądzie ani o prawie właściwym. Gdzie wnieść pozew i według jakiego prawa?",
+        "a": "Dłużnika z siedzibą w Republice Słowackiej można pozwać przed słowacki sąd na podstawie art. 4 ust. 1 w związku z art. 63 ust. 1 rozporządzenia (UE) nr 1215/2012. Ponadto art. 7 pkt 1 dopuszcza powództwo przed sądem miejsca wykonania zobowiązania: w przypadku sprzedaży rzeczy ruchomych jest nim miejsce w państwie członkowskim, w którym rzeczy te zgodnie z umową zostały albo miały zostać dostarczone, w przypadku usług – miejsce, w którym usługi zgodnie z umową były świadczone albo miały być świadczone. W braku wyboru prawa przez strony prawo właściwe ustala się zgodnie z art. 4 rozporządzenia (WE) nr 593/2008 (Rzym I): umowa sprzedaży towarów podlega prawu państwa, w którym sprzedawca ma miejsce zwykłego pobytu, a umowa o świadczenie usług – prawu państwa, w którym usługodawca ma miejsce zwykłego pobytu. Przy pozwie wniesionym na Słowacji słowacki sąd orzeka więc z reguły według prawa Państwa kraju; według tego prawa ocenia się następnie także przedawnienie (art. 12 ust. 1 lit. d). W takiej sprawie postępowanie przed słowackim sądem prowadzimy my, a kwestie Państwa prawa materialnego rozwiązujemy z Państwa tamtejszym doradcą prawnym."
+      },
+      {
+        "q": "Dłużnik twierdzi, że towar miał wady. Co wtedy?",
+        "a": "Zarzut wad ocenia się według prawa, któremu podlega umowa. Jeżeli jest nim prawo słowackie, kupujący ma zgodnie z § 427 ust. 1 słowackiego Kodeksu handlowego obowiązek zbadać towar w miarę możliwości jak najszybciej po przejściu ryzyka szkody na towarze. Zgodnie z § 428 ust. 1 prawo kupującego z tytułu wad towaru nie może zostać przyznane w postępowaniu sądowym, jeżeli kupujący nie zawiadomił sprzedającego o wadach bez zbędnej zwłoki po tym, jak je wykrył albo jak przy zachowaniu staranności zawodowej powinien był je wykryć podczas badania towaru; skutek ten uwzględnia się zgodnie z § 428 ust. 2 tylko wtedy, gdy sprzedający podniesie taki zarzut w postępowaniu sądowym. Rozstrzygające jest zatem, kiedy i w jaki sposób odbiorca po raz pierwszy zgłosił wady – o korespondencję reklamacyjną prosimy wśród pierwszych dokumentów. W słowackim postępowaniu upominawczym sprzeciw musi zawierać merytoryczne uzasadnienie, w przeciwnym razie sąd go odrzuca (§ 11 ust. 1 i § 12 ust. 1 lit. d ustawy nr 307/2016 Z. z.); jeżeli dłużnik uzasadni w sprzeciwie zarzut wad, sprawa zostaje na wniosek powoda rozpoznana w zwykłym postępowaniu, w którym przeprowadza się postępowanie dowodowe."
+      },
+      {
+        "q": "Jak długo to trwa?",
+        "a": "Możemy podać terminy, które określa ustawa. W słowackim postępowaniu upominawczym sąd wydaje nakaz zapłaty najpóźniej w terminie dziesięciu dni roboczych od spełnienia przesłanek procesowych, w tym uiszczenia opłaty sądowej (§ 7 ust. 1 ustawy nr 307/2016 Z. z.); od doręczenia pozwany ma 15 dni na zapłatę albo wniesienie sprzeciwu (§ 7 ust. 2). Jeżeli wniesie sprzeciw, powód powinien w terminie 15 dni ustosunkować się do niego i wnieść o dalsze prowadzenie postępowania, a sąd w terminie pięciu dni roboczych przekazuje następnie sprawę sądowi właściwemu według słowackiego Kodeksu postępowania cywilnego spornego (§ 14 ust. 1 i 3). Europejski nakaz zapłaty sąd wydaje tak szybko, jak to możliwe, zwykle w terminie 30 dni od wniesienia pozwu, a termin na sprzeciw wynosi 30 dni od doręczenia (art. 12 ust. 1 i art. 16 ust. 2 rozporządzenia (WE) nr 1896/2006). W postępowaniu egzekucyjnym sąd wydaje upoważnienie do prowadzenia egzekucji w terminie 15 dni od doręczenia wniosku, jeżeli nie ma podstaw do jego oddalenia (§ 53 ust. 1 słowackiego Kodeksu egzekucyjnego). Dla zwykłego postępowania spornego po wniesieniu sprzeciwu ustawa nie określa łącznego terminu; jego długości zatem nie szacujemy."
+      },
+      {
+        "q": "Co, jeżeli dłużnik w międzyczasie znajdzie się w upadłości?",
+        "a": "Z chwilą ogłoszenia upadłości zawieszeniu ulegają zgodnie z § 47 ust. 1 ustawy nr 7/2005 Z. z. postępowania sądowe dotyczące majątku objętego upadłością, a zgodnie z § 48 w stosunku do tego majątku nie można wszcząć postępowania egzekucyjnego; postępowania egzekucyjne już wszczęte ulegają z chwilą ogłoszenia upadłości umorzeniu. Należności dochodzi się wówczas zgłoszeniem wierzytelności (§ 28 ust. 1). Podstawowy termin na zgłoszenie wynosi 45 dni od ogłoszenia upadłości (§ 28 ust. 2); upadłość jest ogłoszona z chwilą opublikowania postanowienia w słowackim rejestrze upadłości (§ 23 ust. 1). Zgłoszenie doręczone później jest wprawdzie brane pod uwagę, wierzyciel nie może jednak wykonywać prawa głosu ani innych praw związanych ze zgłoszoną wierzytelnością (§ 28 ust. 3). W restrukturyzacji termin jest surowszy: zgłoszenie trzeba złożyć w terminie 30 dni od zezwolenia na restrukturyzację (povolenie reštrukturalizácie), w przeciwnym razie nie jest ono brane pod uwagę (§ 121). Dlatego sprawdzamy dłużnika w rejestrze upadłości przed wniesieniem pozwu i w toku postępowania. Zgłoszenie wierzytelności zagranicznego wierzyciela w słowackim postępowaniu upadłościowym omawiamy osobno."
+      },
+      {
+        "q": "Czy opłaca się dochodzić także niewielkiej kwoty?",
+        "a": "Zależy to od relacji między należnością, kosztami i sytuacją majątkową dłużnika – dlatego sprawa zaczyna się od sprawdzenia dłużnika i wynagrodzenia uzgodnionego z góry. Z ustawy wynika, co następuje: opłata sądowa w słowackim postępowaniu upominawczym wynosi 3% wartości przedmiotu sporu, nie mniej niż 25 euro; sąd przyznaje stronie zwrot kosztów postępowania proporcjonalnie do stopnia, w jakim wygrała sprawę (§ 255 ust. 1 słowackiego Kodeksu postępowania cywilnego spornego); a jeżeli stosunek prawny podlega prawu słowackiemu, wskutek opóźnienia dłużnika obok odsetek za opóźnienie powstaje także prawo do zryczałtowanej rekompensaty za koszty odzyskiwania należności w wysokości 40 euro (§ 369c ust. 1 słowackiego Kodeksu handlowego i § 2 rozporządzenia Rządu nr 21/2013 Z. z.). Dla należności do 5 000 euro istnieje ponadto europejskie postępowanie w sprawie drobnych roszczeń na podstawie rozporządzenia (WE) nr 861/2007: jest ono pisemne, reprezentacja przez adwokata nie jest w nim obowiązkowa (art. 10), a koszty postępowania ponosi strona przegrywająca, przy czym sąd nie zasądza kosztów, które były zbędne lub nieproporcjonalne do wartości przedmiotu sporu (art. 16). To, czy dochodzenie należności w Państwa sprawie się opłaca, napiszemy w ocenie sprawy, zanim powstaną dalsze koszty."
+      },
+      {
+        "q": "Mamy już wyrok albo nakaz zapłaty z naszego państwa. Czy można go wykonać na Słowacji?",
+        "a": "Zgodnie z art. 39 rozporządzenia (UE) nr 1215/2012 orzeczenie wydane w państwie członkowskim, które jest wykonalne w tym państwie członkowskim, jest wykonalne w innych państwach członkowskich bez potrzeby stwierdzania jego wykonalności. Do celów wykonania przedstawia się zgodnie z art. 42 ust. 1 odpis orzeczenia i zaświadczenie wydane przez sąd pochodzenia zgodnie z art. 53; zaświadczenie doręcza się zgodnie z art. 43 ust. 1 dłużnikowi przed pierwszym środkiem wykonawczym. Europejski nakaz zapłaty, który stał się wykonalny w państwie członkowskim wydania, jest zgodnie z art. 19 rozporządzenia (WE) nr 1896/2006 uznawany i wykonywany w innych państwach członkowskich bez potrzeby stwierdzania wykonalności. Na Słowacji zagraniczny tytuł egzekucyjny wykonalny w Republice Słowackiej jest tytułem egzekucyjnym zgodnie z § 45 ust. 2 lit. b słowackiego Kodeksu egzekucyjnego (Exekučný poriadok); egzekucja podlega prawu słowackiemu, a wniosek o jej wszczęcie składamy drogą elektroniczną do Sądu Rejonowego Banská Bystrica."
+      }
+    ],
+    "relatedTitle": "Powiązane tematy",
+    "sourcesTitle": "Przepisy, na których opiera się ta strona",
+    "sourcesLead": "Pełne teksty aktów są dostępne w serwisach Slov-Lex i EUR-Lex. Powyższe informacje mają charakter ogólny i nie zastępują porady w indywidualnej sprawie.",
+    "sources": [
+      {
+        "label": "Rozporządzenie (UE) nr 1215/2012 – Bruksela I bis",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32012R1215"
+      },
+      {
+        "label": "Rozporządzenie (WE) nr 593/2008 – Rzym I",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32008R0593"
+      },
+      {
+        "label": "Rozporządzenie (WE) nr 1896/2006 – europejski nakaz zapłaty",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32006R1896"
+      },
+      {
+        "label": "Rozporządzenie (WE) nr 861/2007 – europejskie postępowanie w sprawie drobnych roszczeń (tekst skonsolidowany)",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:02007R0861-20170714"
+      },
+      {
+        "label": "Ustawa nr 513/1991 Zb. – słowacki Kodeks handlowy (Obchodný zákonník)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "Rozporządzenie Rządu Republiki Słowackiej nr 21/2013 Z. z.",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2013/21/"
+      },
+      {
+        "label": "Ustawa nr 307/2016 Z. z. o postępowaniu upominawczym",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2016/307/"
+      },
+      {
+        "label": "Ustawa nr 160/2015 Z. z. – słowacki Kodeks postępowania cywilnego spornego (Civilný sporový poriadok)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2015/160/"
+      },
+      {
+        "label": "Ustawa nr 71/1992 Zb. o opłatach sądowych",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "Ustawa nr 233/1995 Z. z. – słowacki Kodeks egzekucyjny (Exekučný poriadok)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1995/233/"
+      },
+      {
+        "label": "Ustawa nr 97/1963 Zb. o prawie prywatnym międzynarodowym i procesowym",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1963/97/"
+      },
+      {
+        "label": "Ustawa nr 7/2005 Z. z. o upadłości i restrukturyzacji",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/7/"
+      },
+      {
+        "label": "Ustawa nr 29/2026 Z. z. o rejestrze handlowym",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2026/29/"
+      },
+      {
+        "label": "Ustawa nr 431/2002 Z. z. o rachunkowości",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2002/431/"
+      },
+      {
+        "label": "Rozporządzenie (vyhláška) nr 655/2004 Z. z. o wynagrodzeniach adwokatów",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/655/"
+      }
+    ]
+  },
+  "xin": {
+    "navLabel": "Upadłość słowackiego odbiorcy",
+    "metaTitle": "Zgłoszenie wierzytelności w upadłości na Słowacji – wierzyciel zagraniczny",
+    "metaDescription": "Słowacki odbiorca w upadłości lub restrukturyzacji: termin 45 albo 30 dni, zgłoszenie u syndyka, zaprzeczenie wierzytelności. Kancelaria adwokacka – Zvolen, Słowacja.",
+    "heroOverline": "Niewypłacalność słowackiego dłużnika",
+    "heroTitle": "Państwa słowacki odbiorca jest w upadłości lub restrukturyzacji",
+    "heroLead": "Od publikacji w słowackim rejestrze upadłości (insolvenčný register) biegnie termin na zgłoszenie wierzytelności: 45 dni w upadłości, 30 dni w restrukturyzacji. Sprawdzamy stan postępowania, przygotowujemy i składamy zgłoszenie wierzytelności oraz reprezentujemy Państwa wobec syndyka (správca), przed sądem i na zgromadzeniu wierzycieli.",
+    "heroPara": [
+      "Reprezentujemy zagraniczne firmy, którym słowacki odbiorca nie zapłacił faktur za towar, przewóz lub prace, a wobec tego odbiorcy słowacki sąd ogłosił upadłość, zezwolił na restrukturyzację albo – jeżeli chodzi o osobę fizyczną – orzekł o oddłużeniu. Adwokat kancelarii jest wpisany na listę syndyków (zoznam správcov) prowadzoną przez Ministerstwo Sprawiedliwości Republiki Słowackiej.",
+      "Komunikujemy się po słowacku i po angielsku; całą sprawę możemy poprowadzić zdalnie."
+    ],
+    "heroCta": "Prześlij sprawę do oceny",
+    "whoOverline": "Dla kogo działamy",
+    "whoTitle": "Komu ta strona pomoże",
+    "whoLead": "Reprezentujemy zagranicznych wierzycieli w postępowaniach prowadzonych przez słowacki sąd na podstawie ustawy nr 7/2005 Z. z. o upadłości i restrukturyzacji. Doradzamy wyłącznie w zakresie prawa słowackiego; kwestie podlegające prawu innego państwa – na przykład ważność umowy lub zastrzeżenia własności według prawa obcego – rozwiązujemy we współpracy z prawnikiem klienta w jego kraju.",
+    "who": [
+      {
+        "title": "Dostawcy z niezapłaconymi fakturami",
+        "desc": "Towar, przewóz, podwykonawstwo budowlane lub usługi dostarczone słowackiej firmie, która jest w upadłości lub restrukturyzacji. Wierzytelności powstałej przed ogłoszeniem upadłości dochodzi się przez zgłoszenie u syndyka – spór sądowy o nią ulega zawieszeniu, a egzekucja zostaje umorzona."
+      },
+      {
+        "title": "Dostawcy z zastrzeżeniem własności",
+        "desc": "Towar, który zgodnie z umową ma pozostać Państwa własnością aż do całkowitej zapłaty i znajduje się u dłużnika. Trzeba wybrać między wyłączeniem rzeczy ze spisu majątku (súpis majetku) a zgłoszeniem, które daje Państwu pozycję zbliżoną do pozycji wierzyciela zabezpieczonego."
+      },
+      {
+        "title": "Wierzyciele z zabezpieczeniem",
+        "desc": "Prawo zastawu na majątku dłużnika, poręczenie osoby trzeciej lub inne zabezpieczenie. Prawo zabezpieczające na majątku dłużnika trzeba zgłosić bezpośrednio w zgłoszeniu wierzytelności i w terminie podstawowym, w przeciwnym razie nie jest ono w upadłości brane pod uwagę. Roszczenia wobec poręczycieli pozostają zachowane także po zatwierdzeniu planu restrukturyzacyjnego (§ 155 ust. 4) i po oddłużeniu dłużnika (§ 166e ust. 3)."
+      },
+      {
+        "title": "Wierzyciele jednoosobowego przedsiębiorcy w oddłużeniu",
+        "desc": "Dłużnikiem jest osoba fizyczna – przedsiębiorca (na Słowacji zazwyczaj osoba fizyczna prowadząca jednoosobową działalność gospodarczą, živnostník), która ubiega się o oddłużenie. Oddłużenie obejmuje także wierzytelności, których wierzyciel nie zgłosił: kto nie zgłosi wierzytelności, nie otrzyma z upadłości nic, a niezaspokojonej części wierzytelności nie będzie już można dochodzić od dłużnika."
+      }
+    ],
+    "keyOverline": "Na czym opiera się sprawa",
+    "keyTitle": "Terminy i zasady, które rozstrzygają",
+    "keyLead": "Prawo słowackie zna trzy postępowania zbiorowe, z którymi styka się zagraniczny wierzyciel: upadłość (konkurz; majątek dłużnika zostaje spieniężony, a wierzyciele są zaspokajani proporcjonalnie), restrukturyzację (reštrukturalizácia; przedsiębiorstwo działa dalej, a wierzyciele są zaspokajani według planu, nad którym głosują i który zatwierdza sąd) oraz oddłużenie osoby fizycznej (oddlženie). Wszystkie trzy reguluje ustawa nr 7/2005 Z. z. o upadłości i restrukturyzacji i wszystkie trzy są postępowaniami upadłościowymi w rozumieniu załącznika A do rozporządzenia Parlamentu Europejskiego i Rady (UE) 2015/848 w sprawie postępowania upadłościowego. Zgodnie z art. 7 rozporządzenia dla postępowania i jego skutków właściwe jest prawo państwa, w którym postępowanie zostało wszczęte – zasady zgłaszania, weryfikacji i kolejności zaspokojenia wierzytelności są więc słowackie także wtedy, gdy sama umowa z odbiorcą podlega innemu prawu. W każdym postępowaniu sąd powołuje syndyka: osobę wpisaną na listę syndyków prowadzoną przez ministerstwo sprawiedliwości, która w upadłości zarządza majątkiem dłużnika, w restrukturyzacji sprawuje nadzór nad jego działalnością (§ 129 ust. 1) i sprawdza zgłoszone wierzytelności. Orzeczenia i pisma sądu oraz syndyka doręcza się zgodnie z § 199 ust. 1 ustawy przez ich publikację w rejestrze upadłości, publicznie dostępnym na stronie internetowej ministerstwa. Terminy na zgłoszenie wierzytelności liczy się od tej publikacji, a nie od chwili, w której wierzyciel dowiedział się o postępowaniu: termin podstawowy wynosi 45 dni od ogłoszenia upadłości i 30 dni od zezwolenia na restrukturyzację (povolenie reštrukturalizácie).",
+    "key": [
+      {
+        "title": "Upadłość: 45 dni od publikacji w rejestrze upadłości",
+        "desc": "Zgodnie z § 28 ust. 2 ustawy nr 7/2005 Z. z. zgłoszenie wierzytelności składa się w podstawowym terminie zgłaszania wierzytelności – do 45 dni od ogłoszenia upadłości. Zgodnie z § 23 ust. 1 upadłość zostaje ogłoszona z chwilą opublikowania w rejestrze upadłości postanowienia o ogłoszeniu upadłości; zgodnie z § 199 ust. 7 pismo uważa się za opublikowane w dniu następującym po jego publikacji w rejestrze. Dnia, który wyznacza początek terminu, nie wlicza się do niego, a jeżeli ostatni dzień przypada na sobotę, niedzielę lub święto, ostatnim dniem terminu jest najbliższy następny dzień roboczy (§ 203a ust. 1 i 2). Dla zagranicznego wierzyciela istotna jest reguła z § 203a ust. 3: termin jest zachowany, jeżeli pismo zostanie najpóźniej w ostatnim dniu terminu doręczone temu, do kogo jest skierowane – nie wystarczy wysłać go w tym dniu. Przywrócenia terminu ustawa w § 197 ust. 3 nie dopuszcza. Zgłoszenie doręczone po terminie nie przepada: zgodnie z § 28 ust. 3 jest ono brane pod uwagę, wierzyciel nie może jednak wykonywać prawa głosu ani innych praw związanych ze zgłoszoną wierzytelnością i może zostać zaspokojony tylko ze środków objętych takim planem podziału (rozvrh) masy ogólnej (všeobecná podstata), którego zamiar sporządzenia podano do wiadomości w rejestrze upadłości dopiero po doręczeniu zgłoszenia. W planach podziału zapowiedzianych wcześniej zatem nie uczestniczy.",
+        "note": "Pisma, którym zgłoszono wierzytelność, nie można zgodnie z § 30 ust. 2 ustawy poprawić ani uzupełnić, a zgłoszenie, które nie zostało złożone w przepisany sposób albo nie zawiera podstawowych elementów, nie jest zgodnie z § 29 ust. 1 brane pod uwagę. Nowe zgłoszenie złożone po upływie terminu podstawowego jest już zgłoszeniem spóźnionym, ze skutkami określonymi w § 28 ust. 3. Dlatego nie zalecamy przygotowywania zgłoszenia w ostatnich dniach terminu."
+      },
+      {
+        "title": "Komu, w jakiej formie i w jakim języku",
+        "desc": "Zgłoszenia wierzytelności nie składa się w sądzie, lecz u syndyka. Co do zasady składa się je wyłącznie elektronicznie, na autoryzowanym formularzu, do skrzynki elektronicznej (elektronická schránka) syndyka. Dla wierzyciela zagranicznego w rozumieniu art. 2 pkt 12 rozporządzenia (UE) 2015/848 – wierzyciela, którego miejsce zwykłego pobytu, miejsce zamieszkania lub siedziba statutowa znajduje się w innym państwie członkowskim – § 28 ust. 2 ustawy przewiduje szczególny tryb: zgłoszenie składa się u syndyka, a do doręczeń stosuje się odpowiednio słowacki Kodeks postępowania cywilnego spornego (Civilný sporový poriadok); w ten sam sposób zgłoszenie składa wierzyciel z siedzibą poza państwami członkowskimi. Rozporządzenie dodaje do tego trzy gwarancje. Zgodnie z art. 53 wierzyciel zagraniczny może zgłosić wierzytelność za pomocą dowolnego środka łączności dozwolonego prawem państwa wszczęcia postępowania, a samo zgłoszenie wierzytelności nie wymaga zastępstwa przez adwokata. Zgodnie z art. 55 ust. 1 może skorzystać ze standardowego formularza „Zgłoszenie wierzytelności”, ustanowionego w załączniku II do rozporządzenia wykonawczego Komisji (UE) 2017/1105; jeżeli z niego nie skorzysta, zgłoszenie musi zgodnie z art. 55 ust. 4 zawierać informacje wymienione w art. 55 ust. 2. Z kolei zgodnie z art. 55 ust. 5 wierzytelność można zgłosić w dowolnym języku urzędowym instytucji Unii, sąd lub syndyk mogą jednak żądać tłumaczenia na język słowacki. Podstawowymi elementami zgłoszenia są zgodnie z § 29 ust. 1 ustawy: oznaczenie wierzyciela i upadłego, podstawa prawna powstania wierzytelności, kolejność zaspokojenia z masy ogólnej oraz łączna kwota wierzytelności, którą zgodnie z § 29 ust. 4 dzieli się na należność główną i należności uboczne (príslušenstvo), a należności uboczne dalej – według podstawy prawnej ich powstania. Wierzytelność zgłasza się w euro; jeżeli zostanie zgłoszona w innej walucie, jej kwotę ustala syndyk, przeliczając ją według referencyjnego kursu wymiany ustalonego i ogłoszonego przez Europejski Bank Centralny lub Narodowy Bank Słowacji w dniu ogłoszenia upadłości (§ 29 ust. 5). Do zgłoszenia dołącza się dokumenty potwierdzające podane okoliczności, a wierzyciel będący jednostką prowadzącą księgi rachunkowe (účtovná jednotka) oświadcza w nim, czy i w jakim zakresie ujmuje wierzytelność w swoich księgach rachunkowych (§ 29 ust. 6).",
+        "note": "Wierzyciel, który nie ma na terytorium Republiki Słowackiej miejsca zwykłego pobytu, miejsca zamieszkania ani siedziby, jest zgodnie z § 29 ust. 8 ustawy obowiązany ustanowić pełnomocnika do doręczeń (zástupca na doručovanie) mającego miejsce zamieszkania, miejsce zwykłego pobytu lub siedzibę na Słowacji i zawiadomić o tym syndyka – w przeciwnym razie pisma doręcza mu się przez publikację w rejestrze upadłości. Jeżeli zgłoszenie składa pełnomocnik, a pełnomocnictwo nie jest do niego dołączone, zgłoszenie zgodnie z § 28 ust. 2 nie jest brane pod uwagę. Prawo do zgłoszenia wierzytelności bez adwokata na podstawie art. 53 rozporządzenia dotyczy wyłącznie samego zgłoszenia wierzytelności."
+      },
+      {
+        "title": "Co upadłość zmienia w dochodzeniu należności: spory, egzekucje, potrącenie, zabezpieczenie",
+        "desc": "Z chwilą ogłoszenia upadłości ulegają zgodnie z § 47 ust. 1 ustawy zawieszeniu wszystkie postępowania sądowe i inne postępowania dotyczące majątku objętego upadłością, który należy do upadłego – a więc także spór, w którym zagraniczny dostawca dochodzi zapłaty faktur. Zgodnie z § 48 w czasie upadłości nie można wszcząć postępowania egzekucyjnego do majątku objętego upadłością, a postępowania egzekucyjne już wszczęte zostają z chwilą ogłoszenia upadłości umorzone; jeżeli komornik (exekútor) spieniężył już majątek, ale nie wypłacił jeszcze uzyskanych środków wierzycielowi egzekwującemu, środki te wchodzą do masy upadłości. Od tej chwili wierzytelności dochodzi się przez zgłoszenie (§ 28 ust. 1), a złożenie zgłoszenia ma zgodnie z § 28 ust. 6 dla biegu terminu przedawnienia i dla wygaśnięcia prawa takie same skutki jak dochodzenie prawa przed sądem. Potrącenia upadłość nie wyklucza całkowicie, ale je ogranicza: zgodnie z § 54 ust. 1 wierzytelności, która powstała wobec upadłego przed ogłoszeniem upadłości, nie można potrącić z wierzytelnością upadłego, która powstała dopiero po jej ogłoszeniu, a zgodnie z § 54 ust. 2 z żadną wierzytelnością upadłego nie można potrącić wierzytelności, która nie została zgłoszona. Kto chce dokonać potrącenia, musi więc najpierw zgłosić wierzytelność. Wierzyciel zabezpieczony musi w zgłoszeniu prawidłowo i w terminie – w podstawowym terminie 45 dni – zgłosić także prawo zabezpieczające, w przeciwnym razie nie jest ono w upadłości brane pod uwagę (§ 28 ust. 4); dla każdej zabezpieczonej wierzytelności składa się odrębne zgłoszenie ze wskazaniem zabezpieczonej kwoty oraz rodzaju, pierwszeństwa, przedmiotu i podstawy prawnej powstania prawa zabezpieczającego (§ 29 ust. 2). Zgłoszenia musi dokonać także wierzyciel, którego wierzytelność przysługuje wobec innej osoby, ale jest zabezpieczona na majątku upadłego (§ 28 ust. 7 i 8).",
+        "note": "W drodze zgłoszenia można zgodnie z § 28 ust. 5 dochodzić także wierzytelności przyszłej lub warunkowej – na przykład roszczenia z odstąpienia od umowy na podstawie § 45 ust. 2 ustawy; w zgłoszeniu trzeba wskazać okoliczność lub warunek, od których zależy powstanie wierzytelności (§ 29 ust. 3). Kara umowna oraz wierzytelność wierzyciela, który jest albo kiedykolwiek od powstania wierzytelności był powiązany z upadłym (spriaznená osoba) – na przykład wspólnika z kwalifikowanym udziałem wynoszącym co najmniej 5% w rozumieniu § 9 – są zgodnie z § 95 ust. 3 zaspokajane dopiero jako wierzytelności podporządkowane, a ich zabezpieczenie nie jest w upadłości brane pod uwagę. W odniesieniu do majątku, który w chwili wszczęcia postępowania znajdował się w innym państwie członkowskim, prawa rzeczowe wierzycieli i zastrzeżenie własności chronią art. 8 i art. 10 rozporządzenia (UE) 2015/848."
+      },
+      {
+        "title": "Zaprzeczenie wierzytelności i powództwo o jej ustalenie (incidenčná žaloba)",
+        "desc": "Syndyk sprawdza każdą zgłoszoną wierzytelność i porównuje ją z księgowością i dokumentacją dłużnika (§ 32 ust. 1). Zaprzeczyć jej może syndyk, a także inny wierzyciel, który zgłosił wierzytelność – co do podstawy prawnej, możliwości dochodzenia (vymáhateľnosť), wysokości, kolejności zaspokojenia, zabezpieczenia lub pierwszeństwa prawa zabezpieczającego (§ 32 ust. 2) – w terminie 30 dni od upływu podstawowego terminu zgłaszania wierzytelności, a w przypadku zgłoszenia spóźnionego w terminie 30 dni od jego wpisania na listę wierzytelności (§ 32 ust. 3); syndykowi sąd może ten termin przedłużyć, także wielokrotnie, każdorazowo najwyżej o 30 dni (§ 32 ust. 4). Wierzytelność, której w terminie nie zaprzeczono, uważa się za ustaloną (§ 32 ust. 16). Wierzyciel zaprzeczonej wierzytelności musi dochodzić jej ustalenia w drodze powództwa przed sądem przeciwko wszystkim, którzy jej zaprzeczyli, w terminie 30 dni od opublikowania zaprzeczenia na liście wierzytelności (zoznam pohľadávok), w przeciwnym razie prawo to wygasa (§ 32 ust. 8), a syndyk odnotowuje w zakresie zaprzeczenia wygaśnięcie jego statusu uczestnika postępowania (§ 27 ust. 2 lit. c). Termin jest zachowany także wtedy, gdy pozew został wniesiony w terminie do sądu niewłaściwego. W pozwie można żądać najwyżej tego, co zostało wskazane w zgłoszeniu (§ 32 ust. 13). Termin biegnie od opublikowania zaprzeczenia na liście wierzytelności w rejestrze upadłości, a nie od doręczenia pisma wierzycielowi – dlatego po upływie terminu zgłaszania wierzytelności trzeba śledzić rejestr.",
+        "note": "Jeżeli wierzytelności zaprzeczył wyłącznie inny wierzyciel, warunkiem wniesienia pozwu jest prawidłowe i terminowe wpłacenie zaliczki na koszty postępowania (§ 32 ust. 10): dwa procent kwoty spornej wierzytelności, a przy zaprzeczeniu wyłącznie co do wysokości – dwa procent zaprzeczonej kwoty, nie mniej niż 350 euro i nie więcej niż 10 000 euro (§ 32 ust. 19). Zaliczkę w tej samej wysokości wpłaca także wierzyciel, który zaprzecza cudzej wierzytelności (§ 32 ust. 6 lit. b). Ten, kto zaprzeczył wierzytelności, którą sąd choćby w części potwierdził, odpowiada wobec jej wierzyciela za szkodę wyrządzoną zaprzeczeniem, chyba że wykaże, że działał z zachowaniem staranności zawodowej (§ 32 ust. 5). W przypadku wierzytelności stwierdzonej wykonalnym orzeczeniem albo zabezpieczonej zarejestrowanym prawem zastawu można za pośrednictwem syndyka wystąpić do sądu o przyznanie praw głosu także w czasie sporu (§ 32a)."
+      },
+      {
+        "title": "Restrukturyzacja: 30 dni i brak zgłoszenia spóźnionego",
+        "desc": "W restrukturyzacji zgłoszenie trzeba złożyć w terminie 30 dni od zezwolenia na restrukturyzację, w przeciwnym razie nie jest ono brane pod uwagę (§ 121); zezwolenie na restrukturyzację następuje z chwilą opublikowania postanowienia w rejestrze upadłości (§ 118 ust. 1). Inaczej niż w upadłości, zgłoszenie spóźnione tu nie istnieje. Skutek jest surowy: zgodnie z § 120 ust. 1 i § 155 ust. 2 z chwilą opublikowania postanowienia o zatwierdzeniu planu wygasa prawo wierzyciela, który nie zgłosił wierzytelności prawidłowo i w terminie, do dochodzenia jej od dłużnika; wygasają także prawa zabezpieczające na majątku dłużnika, które nie zostały prawidłowo i w terminie zgłoszone. W drodze zgłoszenia nie dochodzi się jedynie tak zwanych wierzytelności uprzywilejowanych (prednostné pohľadávky), w szczególności tych, które powstały dopiero w toku postępowania restrukturyzacyjnego (§ 120 ust. 2). Sposób złożenia jest taki sam jak w upadłości (§ 121), a do elementów zgłoszenia stosuje się odpowiednio § 29 ust. 1–6 i 8 – a więc także regułę o przeliczeniu waluty obcej i o pełnomocniku do doręczeń (§ 122 ust. 1); niezgłoszenie prawa zabezpieczającego w zgłoszeniu oznacza, że wierzytelność uważa się w restrukturyzacji za niezabezpieczoną. Już samo wszczęcie postępowania restrukturyzacyjnego – a więc jeszcze przed zezwoleniem na restrukturyzację – wywołuje skutki, które dostawca odczuwa natychmiast (§ 114 ust. 1): w odniesieniu do wierzytelności, której dochodzi się przez zgłoszenie, nie można wszcząć egzekucji, a egzekucje wszczęte ulegają zawieszeniu; wierzytelności takiej nie można potrącić wobec dłużnika, a druga strona umowy nie może wypowiedzieć umowy ani od niej odstąpić z powodu opóźnienia dłużnika ze świadczeniem, do którego nabyła prawo przed wszczęciem postępowania; bezskuteczne są także postanowienia umowne, które pozwalałyby zakończyć umowę z powodu postępowania restrukturyzacyjnego lub upadłościowego. Kto zgodnie z umową ma świadczyć z góry, może odmówić świadczenia do czasu, aż świadczenie wzajemne zostanie mu spełnione lub zabezpieczone (§ 114 ust. 3). Z chwilą zezwolenia na restrukturyzację ulegają zawieszeniu postępowania sądowe i arbitrażowe dotyczące wierzytelności podlegających zgłoszeniu (§ 118 ust. 4).",
+        "note": "W restrukturyzacji wierzytelności może zaprzeczyć tylko syndyk, w terminie 30 dni od upływu terminu zgłaszania wierzytelności (§ 124 ust. 2). Wierzyciel zaprzeczonej wierzytelności musi w terminie 30 dni od upływu terminu na zaprzeczenie wnieść pozew przeciwko dłużnikowi (§ 124 ust. 4), w przeciwnym razie wierzytelność w zaprzeczonym zakresie nie jest brana pod uwagę, a po zatwierdzeniu planu nie można jej w tym zakresie dochodzić od dłużnika (§ 124 ust. 5). Nad planem wierzyciele głosują w grupach na zgromadzeniu w sprawie przyjęcia planu (schvaľovacia schôdza); wymagane większości określa § 148. Sąd odrzuca plan między innymi wtedy, gdy którakolwiek wierzytelność niezabezpieczona – z wyjątkiem tych, które w upadłości byłyby zaspokajane jako podporządkowane – ma zostać zaspokojona w mniej niż 50% albo w czasie dłuższym niż pięć lat, chyba że dany wierzyciel wyrazi na to pisemną zgodę (§ 154 ust. 1 lit. g i h). Prawa wobec współdłużników i poręczycieli dłużnika pozostają przez plan nienaruszone (§ 155 ust. 4)."
+      },
+      {
+        "title": "Dłużnikiem jest jednoosobowy przedsiębiorca albo mała firma: oddłużenie i mała upadłość",
+        "desc": "Jeżeli dłużnikiem jest osoba fizyczna – także przedsiębiorca, na Słowacji zazwyczaj osoba fizyczna prowadząca jednoosobową działalność gospodarczą (živnostník) – może ona zgodnie z § 166 ust. 1 ustawy ubiegać się o oddłużenie w drodze upadłości albo harmonogramu spłat (splátkový kalendár), niezależnie od tego, czy jej zobowiązania pochodzą z działalności gospodarczej. Wierzytelności, które powstały przed miesiącem kalendarzowym, w którym ogłoszono upadłość albo udzielono ochrony przed wierzycielami, mogą zostać zaspokojone wyłącznie w upadłości albo w ramach harmonogramu spłat, a w upadłości dochodzi się ich przez zgłoszenie (§ 166a). O oddłużeniu sąd orzeka już w postanowieniu o ogłoszeniu upadłości albo o ustaleniu harmonogramu spłat (§ 166e ust. 1), a zgodnie z § 166e ust. 2 wierzytelności te przestają podlegać dochodzeniu wobec dłużnika (stają się nevymáhateľné) niezależnie od tego, czy zostały zgłoszone, czy nie. Wyjątek dla wierzyciela, którego syndyk nie zawiadomił pisemnie o ogłoszeniu upadłości, dotyczy zgodnie z § 166c ust. 1 lit. a wyłącznie wierzycieli będących osobami fizycznymi; zagraniczna spółka handlowa nie może się na niego powołać. Zgłoszenie składa się w podstawowym terminie 45 dni od ogłoszenia upadłości; później wierzytelność można zgłosić do czasu, aż syndyk opublikuje zawiadomienie o zamiarze sporządzenia planu podziału, wierzyciel nie może jednak wykonywać prawa głosu (§ 167l ust. 1 i 3). Postępowania sądowe dotyczące takich wierzytelności sąd umarza (§ 167e ust. 1), a egzekucji do majątku objętego upadłością nie można wszcząć ani prowadzić (§ 167f ust. 1).",
+        "note": "W oddłużeniu zgodnie z § 166b ust. 1 nie podlegają dochodzeniu wobec dłużnika między innymi należności uboczne przekraczające 5% należności głównej za każdy rok kalendarzowy istnienia wierzytelności oraz kary umowne. Wierzytelność zabezpieczona pozostaje przez oddłużenie nienaruszona w zakresie, w jakim ma pokrycie w wartości przedmiotu prawa zabezpieczającego (§ 166c ust. 1 lit. c), a wobec poręczyciela wierzytelność nadal może być dochodzona (§ 166e ust. 3). Wierzyciel, którego oddłużenie dotyczy, może w terminie sześciu lat od ogłoszenia upadłości albo ustalenia harmonogramu spłat domagać się uchylenia oddłużenia, jeżeli wykaże, że dłużnik nie miał uczciwego zamiaru (§ 166f ust. 1). Mała upadłość (malý konkurz) to uproszczona upadłość osoby prawnej, której zobowiązania ani majątek według pięciu ostatnich sprawozdań finansowych nie przekroczyły 1 000 000 euro (§ 106c ust. 1 lit. f i g); to, że chodzi o małą upadłość, sąd wskazuje w części rozstrzygającej postanowienia (§ 106c ust. 4). Do zgłaszania wierzytelności i zaprzeczania im stosuje się w niej odpowiednio § 167l (§ 106h) – wierzytelności może więc zaprzeczyć tylko inny wierzyciel, który zgłosił wierzytelność (§ 167l ust. 5). Wierzyciel, który zgłosił wierzytelność, może w terminie sześciu miesięcy od ogłoszenia małej upadłości, wpłacając zaliczkę, doprowadzić do tego, by sąd ogłosił upadłość na zasadach ogólnych (§ 106j ust. 1)."
+      }
+    ],
+    "stepsOverline": "Tryb postępowania",
+    "stepsTitle": "Jak przebiega sprawa",
+    "steps": [
+      {
+        "title": "Sprawdzenie stanu postępowania",
+        "desc": "W słowackim rejestrze upadłości sprawdzamy, jakie postępowanie jest prowadzone – upadłość, mała upadłość, restrukturyzacja czy oddłużenie – kiedy opublikowano postanowienie, kto jest syndykiem i kiedy upływa termin na zgłoszenie wierzytelności. Informacje obowiązkowe o postępowaniu, w tym termin zgłaszania wierzytelności, mają być zgodnie z art. 24, 25 i 27 rozporządzenia (UE) 2015/848 bezpłatnie dostępne także za pośrednictwem europejskiego portalu „e-Sprawiedliwość”, z funkcją wyszukiwania we wszystkich językach urzędowych instytucji Unii. Nie zalecamy czekania na indywidualne zawiadomienie od syndyka na podstawie art. 54 rozporządzenia: terminy według ustawy słowackiej biegną od publikacji w rejestrze. Jednocześnie ustalamy, jaki wpływ ma postępowanie na Państwa spór sądowy lub egzekucję przeciwko dłużnikowi."
+      },
+      {
+        "title": "Wyliczenie wierzytelności i zgłoszenie",
+        "desc": "Wyliczamy należność główną i należności uboczne według podstawy prawnej, przeliczamy walutę obcą na euro, określamy kolejność zaspokojenia i – jeżeli mają Państwo zabezpieczenie lub zastrzeżenie własności – uzgadniamy z Państwem sposób jego zgłoszenia. Zgłoszenie z załącznikami i pełnomocnictwem doręczamy syndykowi tak, aby dotarło do niego przed upływem terminu. Jako kancelaria z siedzibą na Słowacji możemy być także Państwa pełnomocnikiem do doręczeń na podstawie § 29 ust. 8 ustawy."
+      },
+      {
+        "title": "Sprawdzenie wierzytelności i obrona w razie zaprzeczenia",
+        "desc": "W czasie biegu terminu na zaprzeczenie śledzimy listę wierzytelności w rejestrze upadłości i pozostajemy w kontakcie z syndykiem. Jeżeli wierzytelności zaprzeczono, wnosimy w terminie 30 dni pozew o jej ustalenie. Jeżeli są ku temu podstawy, proponujemy Państwu zaprzeczenie wierzytelnościom innych wierzycieli, które bezzasadnie zmniejszają Państwa udział; wiąże się to z wpłaceniem zaliczki na koszty postępowania."
+      },
+      {
+        "title": "Zgromadzenie wierzycieli i komitet wierzycieli",
+        "desc": "Pierwsze zgromadzenie wierzycieli syndyk zwołuje w terminie 55 dni od ogłoszenia upadłości tak, aby odbyło się nie wcześniej niż 30 i nie później niż 45 dni po upływie terminu na zaprzeczenie wierzytelności (§ 34 ust. 1). Głosuje wierzyciel, którego wierzytelność jest ustalona co do podstawy prawnej i możliwości dochodzenia – na każde euro ustalonej kwoty przypada jeden głos (§ 35 ust. 4). Zgromadzenie decyduje o zmianie syndyka (§ 36) i wybiera trzy- lub pięcioosobowy komitet wierzycieli (§ 37 ust. 1), który wydaje syndykowi wiążące polecenia dotyczące zarządu majątkiem masy ogólnej i jego spieniężania (§ 82). Na zgromadzeniu reprezentujemy Państwa; ustawa dopuszcza także zgromadzenie w formie wideokonferencji (§ 34 ust. 5). W restrukturyzacji reprezentujemy wierzyciela na zgromadzeniu wierzycieli (§ 126) oraz przy głosowaniu nad planem na zgromadzeniu w sprawie przyjęcia planu (§ 147 i 148)."
+      },
+      {
+        "title": "Plan podziału i wypłata",
+        "desc": "Przed sporządzeniem planu podziału syndyk publikuje zawiadomienie o zamiarze jego sporządzenia (§ 96 ust. 2); na podstawie zatwierdzonego planu podziału wydaje wierzycielom bezsporną część uzyskanych środków (§ 96 ust. 5). Sprawdzamy, czy Państwa wierzytelność została ujęta w planie podziału we właściwej wysokości i kolejności, oraz przekazujemy syndykowi dane potrzebne do wypłaty za granicę. Koszty zaspokojenia wierzytelności ponosi zgodnie z § 96 ust. 7 sam wierzyciel."
+      }
+    ],
+    "docsOverline": "Dokumenty",
+    "docsTitle": "Czego od Państwa potrzebujemy",
+    "docsLead": "Prosimy przesłać to, czym Państwo dysponują, jako skany lub zdjęcia; oryginały nie są na tym etapie potrzebne. Dokumenty mogą być w Państwa języku – wskażemy, które z nich trzeba będzie przetłumaczyć na język słowacki.",
+    "docs": [
+      "Umowa, umowa ramowa lub zamówienia wraz z warunkami handlowymi – w szczególności postanowienia o prawie właściwym, terminie płatności, odsetkach za opóźnienie i zastrzeżeniu własności.",
+      "Niezapłacone faktury i dokumenty potwierdzające dostawę: dowody dostawy, listy przewozowe CMR, protokoły odbioru, zestawienia wykonanych prac.",
+      "Zestawienie wpłat i saldo wierzytelności z Państwa ksiąg rachunkowych – zgłoszenie zawiera oświadczenie, czy i w jakim zakresie ujmują Państwo wierzytelność w księgach rachunkowych.",
+      "Orzeczenia sądowe, nakazy zapłaty i inne tytuły egzekucyjne przeciwko dłużnikowi oraz informacja o toczących się sporach i egzekucjach.",
+      "Dokumenty dotyczące zabezpieczenia: umowa zastawu i potwierdzenie rejestracji prawa zastawu, oświadczenie poręczyciela, a przy zastrzeżeniu własności także dokładne oznaczenie towaru i miejsca, w którym się on znajduje.",
+      "Uznania długu, porozumienia o spłacie w ratach, wzajemne potrącenia oraz korespondencja z dłużnikiem dotycząca wierzytelności.",
+      "Wszystko, co otrzymali Państwo od syndyka lub sądu – w szczególności „Powiadomienie o postępowaniu upadłościowym” na podstawie art. 54 rozporządzenia (UE) 2015/848.",
+      "Odpis z rejestru handlowego lub podobnego rejestru Państwa spółki oraz dane osoby, która podpisze pełnomocnictwo."
+    ],
+    "priceOverline": "Wynagrodzenie",
+    "priceTitle": "Ile to kosztuje",
+    "priceLead": "Zakres i wynagrodzenie uzgadniamy z góry i na piśmie. Cenę sprawdzenia postępowania i zgłoszenia wierzytelności znają Państwo, zanim rozpoczniemy pracę.",
+    "price": [
+      {
+        "label": "Sprawdzenie postępowania i ocena sprawy",
+        "value": "stałe wynagrodzenie uzgodnione z góry",
+        "desc": "Sprawdzamy stan postępowania w rejestrze upadłości, obliczamy termin, przeglądamy dokumenty i przedstawiamy na piśmie proponowany tryb działania. Wynagrodzenie podajemy przed rozpoczęciem pracy; jeżeli zdecydują Państwo nie iść dalej, sprawa na tym się kończy."
+      },
+      {
+        "label": "Zgłoszenie wierzytelności",
+        "value": "stałe wynagrodzenie za czynność",
+        "desc": "Wyliczenie wierzytelności, przygotowanie zgłoszenia z załącznikami i jego doręczenie syndykowi, w tym zgłoszenie prawa zabezpieczającego. Uzgadniane jako stała kwota za czynność, a nie według stawki godzinowej."
+      },
+      {
+        "label": "Spór o ustalenie wierzytelności i dalsze zastępstwo",
+        "value": "stałe wynagrodzenie albo wynagrodzenie zależne od wyniku",
+        "desc": "Zgodnie z § 7 ust. 1 rozporządzenia (vyhláška) Ministerstwa Sprawiedliwości Republiki Słowackiej nr 655/2004 Z. z. wynagrodzenie zależne od wyniku sprawy można uzgodnić w formie procentowego udziału w wartości przedmiotu sprawy; zgodnie z § 7 ust. 2 jego maksymalna wysokość nie może przekroczyć 20% tej wartości. Zgodnie z § 8 ust. 1 rozporządzenia staje się ono należne tylko wtedy, gdy klient odniósł w sprawie pełny sukces; przy częściowym sukcesie adwokatowi przysługuje na podstawie § 8 ust. 2 wynagrodzenie taryfowe ustalone stosownie do stopnia sukcesu, a jeżeli klient nie odniósł sukcesu nawet w części, adwokat może na podstawie § 8 ust. 3 żądać jedynie zwrotu poniesionych wydatków."
+      }
+    ],
+    "priceNote": "Obok wynagrodzenia adwokata powstają wydatki, w szczególności na tłumaczenia na język słowacki, jeżeli zażąda ich syndyk lub sąd (art. 55 ust. 5 rozporządzenia (UE) 2015/848). Powód w postępowaniu o ustalenie zaprzeczonej wierzytelności oraz powód w postępowaniu o wyłączenie majątku ze spisu są zgodnie z § 4 ust. 2 lit. t i q ustawy nr 71/1992 Zb. o opłatach sądowych zwolnieni z opłaty sądowej. Jeżeli jednak wierzytelności zaprzeczył wyłącznie inny wierzyciel, przed wniesieniem pozwu trzeba wpłacić zaliczkę na koszty postępowania w wysokości dwóch procent spornej kwoty, nie mniej niż 350 euro i nie więcej niż 10 000 euro (§ 32 ust. 10 i 19 ustawy nr 7/2005 Z. z.). Wygrywającej stronie reprezentowanej przez pełnomocnika przysługuje w tym postępowaniu zwrot wynagrodzenia taryfowego jak za zastępstwo w egzekucji (§ 32 ust. 11). Wynik postępowania zależy od okoliczności konkretnej sprawy, w szczególności od majątku dłużnika, wysokości pozostałych wierzytelności i kolejności zaspokojenia Państwa wierzytelności.",
+    "formOverline": "Bez zobowiązań",
+    "formTitle": "Prosimy przesłać nam dane o dłużniku i wierzytelności",
+    "formLead": "Prosimy napisać, kto jest dłużnikiem, jaką wierzytelność mają Państwo wobec niego i czego dowiedzieli się Państwo o postępowaniu – a jeżeli ją Państwo znają, także datę publikacji w rejestrze upadłości. Terminy są krótkie, a ustawa nie pozwala przywrócić uchybionego terminu, dlatego zalecamy napisać niezwłocznie. Odezwiemy się i przedstawimy kolejne kroki. Wysłanie formularza nie stanowi świadczenia usługi prawnej ani nie powoduje nawiązania stosunku umownego.",
+    "faqOverline": "FAQ",
+    "faqTitle": "Najczęściej zadawane pytania",
+    "faq": [
+      {
+        "q": "O upadłości dowiedzieliśmy się późno. Czy termin już minął?",
+        "a": "To zależy od rodzaju postępowania. W upadłości osoby prawnej zgłoszenie doręczone po upływie 45-dniowego terminu jest brane pod uwagę, wierzyciel nie może jednak zgodnie z § 28 ust. 3 ustawy nr 7/2005 Z. z. wykonywać prawa głosu ani innych praw związanych z wierzytelnością i uczestniczy tylko w tych planach podziału masy ogólnej, których zamiar sporządzenia podano do wiadomości w rejestrze upadłości po doręczeniu zgłoszenia; prawo zabezpieczające zgłoszone po terminie nie jest brane pod uwagę (§ 28 ust. 4). W upadłości osoby fizycznej i w małej upadłości wierzytelność można zgłosić do czasu, aż syndyk opublikuje zawiadomienie o zamiarze sporządzenia planu podziału (§ 167l ust. 1). W restrukturyzacji zgłoszenie złożone po upływie 30 dni nie jest brane pod uwagę (§ 121), a po zatwierdzeniu planu wierzytelności nie można dochodzić od dłużnika (§ 155 ust. 2). Przywrócenia terminu ustawa nie dopuszcza (§ 197 ust. 3). Rozporządzenie (UE) 2015/848 nakłada na sąd lub syndyka obowiązek niezwłocznego powiadomienia znanych wierzycieli zagranicznych indywidualnym zawiadomieniem, w którym wskazane są także terminy (art. 54), a w art. 55 ust. 6 stanowi, że termin dla wierzyciela zagranicznego nie może być krótszy niż 30 dni od dnia, w którym wszczęcie postępowania ogłoszono w rejestrze upadłości; sam termin pozostawia jednak prawu państwa wszczęcia postępowania. Jakie znaczenie ma w konkretnej sprawie to, że zawiadomienie nie dotarło, trzeba ocenić indywidualnie – dlatego prosimy o kontakt od razu, gdy dowiedzą się Państwo o postępowaniu."
+      },
+      {
+        "q": "Czy możemy złożyć zgłoszenie wierzytelności po polsku albo po angielsku?",
+        "a": "Zgodnie z art. 55 ust. 5 rozporządzenia (UE) 2015/848 wierzytelności można zgłaszać w dowolnym języku urzędowym instytucji Unii; język polski i język angielski należą do nich zgodnie z art. 1 rozporządzenia nr 1 z 1958 r. Sąd lub syndyk mogą jednak żądać od wierzyciela tłumaczenia na język urzędowy państwa wszczęcia postępowania, czyli na język słowacki. Standardowy formularz „Zgłoszenie wierzytelności” stanowi załącznik II do rozporządzenia wykonawczego Komisji (UE) 2017/1105, a skorzystanie z niego jest prawem, a nie obowiązkiem wierzyciela (art. 55 ust. 1 i 4). Zasady te dotyczą wierzycieli z innych państw członkowskich Unii. My przygotowujemy zgłoszenie w języku słowackim, tak aby syndyk nie musiał żądać tłumaczenia i aby zgłoszenie zawierało także dane wymagane przez ustawę słowacką – podstawę prawną powstania wierzytelności, kolejność zaspokojenia, podział na należność główną i należności uboczne oraz oświadczenie o ujęciu wierzytelności w księgach rachunkowych (§ 29 ustawy nr 7/2005 Z. z.)."
+      },
+      {
+        "q": "Nasza wierzytelność jest wyrażona w złotych, koronach czeskich lub dolarach. Jak się ją zgłasza?",
+        "a": "Zgodnie z § 29 ust. 5 ustawy nr 7/2005 Z. z. wierzytelność zgłasza się w euro. Jeżeli wierzyciel zgłosi ją w innej walucie, jej kwotę ustala syndyk, przeliczając ją według referencyjnego kursu wymiany ustalonego i ogłoszonego przez Europejski Bank Centralny lub Narodowy Bank Słowacji w dniu ogłoszenia upadłości; w przypadku waluty, dla której takiego kursu się nie ustala, kwotę określa syndyk z zachowaniem staranności zawodowej. Rozstrzyga zatem kurs z dnia ogłoszenia upadłości, a nie kurs z dnia wystawienia faktury ani z dnia wypłaty. W restrukturyzacji regułę tę stosuje się odpowiednio (§ 122 ust. 1). W planie podziału nie można przyznać wierzycielowi więcej, niż objął zgłoszeniem (§ 96 ust. 1), dlatego przeliczenia dokonujemy i dokumentujemy je już przy przygotowywaniu zgłoszenia."
+      },
+      {
+        "q": "Syndyk zaprzeczył naszej wierzytelności. Co teraz?",
+        "a": "Zaprzeczenie nie oznacza, że wierzytelność wygasła, ale uruchamia krótki termin. Zgodnie z § 32 ust. 8 ustawy nr 7/2005 Z. z. wierzyciel musi dochodzić ustalenia zaprzeczonej wierzytelności w drodze powództwa przed sądem przeciwko wszystkim, którzy jej zaprzeczyli, w terminie 30 dni od opublikowania zaprzeczenia na liście wierzytelności, w przeciwnym razie prawo to wygasa; termin jest zachowany także w przypadku pozwu wniesionego w terminie do sądu niewłaściwego. W pozwie można żądać najwyżej tego, co zostało wskazane w zgłoszeniu (§ 32 ust. 13). Wierzytelność, której zaprzeczył wyłącznie syndyk, syndyk może pisemnie uznać, dopóki o jej ustaleniu nie rozstrzygnął sąd (§ 32 ust. 17) – dlatego równolegle z przygotowywaniem pozwu warto przedłożyć syndykowi brakujące dokumenty. Jeżeli wierzytelności zaprzeczył wyłącznie inny wierzyciel, warunkiem pozwu jest wpłacenie zaliczki na koszty postępowania (§ 32 ust. 10 i 19). Powód w tym postępowaniu jest zwolniony z opłaty sądowej (§ 4 ust. 2 lit. t ustawy nr 71/1992 Zb.). W restrukturyzacji pozew wnosi się przeciwko dłużnikowi w terminie 30 dni od upływu terminu na zaprzeczenie wierzytelności (§ 124 ust. 4)."
+      },
+      {
+        "q": "U dłużnika znajduje się nasz towar z zastrzeżeniem własności. Czy go odzyskamy?",
+        "a": "Ustawa słowacka przewiduje dwie drogi. Pierwszą jest wyłączenie rzeczy ze spisu majątku: kto twierdzi, że rzecz nie należy do spisu, może to zgłosić syndykowi najpóźniej do czasu podziału środków uzyskanych ze spieniężenia tej rzeczy (§ 78 ust. 3 ustawy nr 7/2005 Z. z.); syndyk wzywa go, aby w terminie 30 dni od doręczenia wezwania podał przyczyny i przedstawił dowody, a jeżeli ich nie uzna, sąd na wniosek syndyka nakazuje wniesienie w terminie nie krótszym niż 30 dni powództwa o wyłączenie z masy upadłości (vylučovacia žaloba) przeciwko syndykowi – jeżeli pozew nie zostanie wniesiony w terminie, przyjmuje się, że ujęcie rzeczy w spisie jest bezsporne (§ 78 ust. 2 i 4). Sprzedawca nie może jednak żądać zwrotu rzeczy, jeżeli syndyk bez zbędnej zwłoki po jego wezwaniu wykona obowiązki z umowy (§ 45a ust. 2); jeżeli rzecz nie znajduje się już u upadłego, roszczeń można dochodzić wyłącznie przez zgłoszenie (§ 45a ust. 4). Drugą drogą jest § 29 ust. 9: sprzedawca może dochodzić swoich praw przez zgłoszenie tak samo, jak gdyby zgłaszał prawo zabezpieczające – w ten sposób powierza syndykowi ujęcie rzeczy w spisie i jej spieniężenie oraz ma pozycję zbliżoną do pozycji wierzyciela zabezpieczonego. Jeżeli rzecz została spieniężona, osobie, której przysługuje prawo wyłączające ujęcie rzeczy w spisie, przysługuje prawo do wydania uzyskanych środków (§ 78 ust. 8). To, czy zastrzeżenie własności zostało ważnie ustanowione, zależy od prawa właściwego, którym nie musi być prawo słowackie; jeżeli umowa podlega prawu słowackiemu, zastrzeżenie musi zostać uzgodnione na piśmie (§ 445 słowackiego Kodeksu handlowego, Obchodný zákonník). Jeżeli towar w chwili wszczęcia postępowania znajdował się w innym państwie członkowskim niż Słowacja, wszczęcie postępowania zgodnie z art. 10 ust. 1 rozporządzenia (UE) 2015/848 nie narusza praw sprzedawcy z tytułu zastrzeżenia własności."
+      },
+      {
+        "q": "Dłużnik zapłacił nam tuż przed upadłością. Czy możemy stracić te pieniądze?",
+        "a": "Może się tak zdarzyć, ale nie automatycznie. Syndyk – a jeżeli syndyk w odpowiednim terminie nie uwzględni jego wniosku, także wierzyciel zgłoszonej wierzytelności – może zaskarżyć (odporovať) czynności prawne dłużnika, które uszczuplają zaspokojenie zgłoszonych wierzytelności (§ 57 ust. 1 i 4 ustawy nr 7/2005 Z. z.). W przypadku płatności w grę wchodzi przede wszystkim czynność prawna faworyzująca wierzyciela (zvýhodňujúci právny úkon) w rozumieniu § 59 ust. 1: czynność, którą dłużnik spełnił wierzytelność pieniężną, która w innym razie stałaby się wymagalna dopiero z chwilą ogłoszenia upadłości, zabezpieczył swoje zobowiązanie później, niż ono powstało, albo w inny sposób bezzasadnie uprzywilejował swojego wierzyciela względem innych wierzycieli. Można ją zaskarżyć, jeżeli spowodowała niewypłacalność (úpadok) dłużnika albo została dokonana w czasie jego niewypłacalności, i tylko wtedy, gdy dokonano jej w ciągu roku przed wszczęciem postępowania upadłościowego; w przypadku czynności na rzecz osób powiązanych z dłużnikiem są to trzy lata (§ 59 ust. 3 i 4). Prawo zaskarżenia wygasa, jeżeli nie zostanie wykonane wobec osoby zobowiązanej albo przed sądem w terminie roku od ogłoszenia upadłości (§ 57 ust. 2). Wierzycielowi przysługuje ponadto obrona na podstawie art. 16 rozporządzenia (UE) 2015/848: przepisów państwa wszczęcia postępowania o zaskarżaniu i bezskuteczności czynności prawnych nie stosuje się, jeżeli osoba, która odniosła korzyść z czynności, wykaże, że czynność ta podlega prawu innego państwa członkowskiego i że prawo to nie pozwala w danej sprawie żadnymi środkami zaskarżyć tej czynności. Ocenę prawa obcego zapewniamy we współpracy z prawnikiem klienta w jego kraju."
+      },
+      {
+        "q": "Ile z wierzytelności otrzymamy?",
+        "a": "Szacunku z góry podać nie można – zależy to od majątku dłużnika, od wysokości pozostałych wierzytelności i od kolejności zaspokojenia Państwa wierzytelności. Ustawa określa jedynie kolejność. Z uzyskanych środków w pierwszej kolejności pokrywa się wierzytelności wobec masy upadłości (pohľadávky proti podstate), w szczególności koszty spieniężenia i podziału, wynagrodzenie i wydatki syndyka oraz zobowiązania, które powstały po ogłoszeniu upadłości przy zarządzie majątkiem i prowadzeniu przedsiębiorstwa (§ 87 ustawy nr 7/2005 Z. z.). Wierzyciel zabezpieczony jest zaspokajany ze środków uzyskanych z majątku, który zabezpiecza jego wierzytelność (masa odrębna, oddelená podstata), a w niezaspokojonej części – jako wierzyciel niezabezpieczony (§ 94). Wierzytelności niezabezpieczone zaspokaja się z masy ogólnej, a jeżeli uzyskane środki nie wystarczają – proporcjonalnie do ich wysokości (§ 95 ust. 1). Dopiero po nich następują wierzytelności podporządkowane, do których ustawa zalicza także kary umowne i wierzytelności osób powiązanych z upadłym (§ 95 ust. 2 i 3). Więcej, niż wierzyciel objął zgłoszeniem, plan podziału przyznać mu nie może (§ 96 ust. 1). W restrukturyzacji stopień i czas zaspokojenia określa plan; sąd go odrzuca, jeżeli którakolwiek wierzytelność niezabezpieczona – poza tymi, które w upadłości byłyby podporządkowane – ma zostać zaspokojona w mniej niż 50% albo w czasie dłuższym niż pięć lat bez pisemnej zgody danego wierzyciela (§ 154 ust. 1 lit. g i h)."
+      },
+      {
+        "q": "Nie toczy się upadłość, lecz restrukturyzacja. Czym to się dla nas różni?",
+        "a": "Dłużnik w restrukturyzacji nadal prowadzi działalność gospodarczą, a wierzyciele są zaspokajani według planu, nad którym sami głosują i który zatwierdza sąd. Dla zagranicznego dostawcy wynikają z tego cztery różnice. Termin jest krótszy – 30 dni od zezwolenia na restrukturyzację – a zgłoszenie spóźnione nie istnieje: zgłoszenie złożone po terminie nie jest brane pod uwagę (§ 121 ustawy nr 7/2005 Z. z.), a po zatwierdzeniu planu niezgłoszonej wierzytelności nie można dochodzić od dłużnika (§ 120 ust. 1, § 155 ust. 2). Wierzytelności może zaprzeczyć tylko syndyk, a pozew o jej ustalenie wnosi się przeciwko dłużnikowi w terminie 30 dni od upływu terminu na zaprzeczenie (§ 124 ust. 2 i 4). Już od wszczęcia postępowania restrukturyzacyjnego nie można z powodu starych długów wypowiedzieć umowy ani od niej odstąpić, dokonywać potrąceń ani wszcząć egzekucji (§ 114 ust. 1); kto ma świadczyć z góry, może odmówić świadczenia do czasu, aż świadczenie wzajemne zostanie mu spełnione lub zabezpieczone (§ 114 ust. 3). Natomiast wierzytelności, które powstaną dopiero w toku postępowania restrukturyzacyjnego, są uprzywilejowane: nie zgłasza się ich, a plan bez zgody wierzyciela ich nie narusza; rozstrzyga chwila powstania prawa do świadczenia, a nie termin wymagalności (§ 120 ust. 2). Jeżeli sąd prawomocnie odrzuci plan, ogłasza upadłość dłużnika (§ 154 ust. 3); ustawa nie stanowi, że zgłoszenie z restrukturyzacji uważa się za zgłoszenie w upadłości, dlatego terminu w upadłości pilnujemy osobno."
+      }
+    ],
+    "relatedTitle": "Powiązane tematy",
+    "sourcesTitle": "Przepisy, na których opiera się ta strona",
+    "sourcesLead": "Ustawa nr 7/2005 Z. z. i rozporządzenie (vyhláška) nr 665/2005 Z. z. są przywoływane w brzmieniu obowiązującym od 1 października 2025 r. Pełne teksty aktów są dostępne w serwisach Slov-Lex i EUR-Lex. Powyższe informacje mają charakter ogólny i nie zastępują porady w indywidualnej sprawie.",
+    "sources": [
+      {
+        "label": "Ustawa nr 7/2005 Z. z. o upadłości i restrukturyzacji",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/7/"
+      },
+      {
+        "label": "Rozporządzenie (vyhláška) Ministerstwa Sprawiedliwości Republiki Słowackiej nr 665/2005 Z. z. wykonujące niektóre przepisy ustawy nr 7/2005 Z. z.",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/665/"
+      },
+      {
+        "label": "Rozporządzenie (UE) 2015/848 w sprawie postępowania upadłościowego",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32015R0848"
+      },
+      {
+        "label": "Rozporządzenie wykonawcze Komisji (UE) 2017/1105 – standardowe formularze",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32017R1105"
+      },
+      {
+        "label": "Rozporządzenie nr 1 z 1958 r. w sprawie określenia systemu językowego",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:01958R0001-20130701"
+      },
+      {
+        "label": "Ustawa nr 160/2015 Z. z. – słowacki Kodeks postępowania cywilnego spornego (Civilný sporový poriadok)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2015/160/"
+      },
+      {
+        "label": "Ustawa nr 513/1991 Zb. – słowacki Kodeks handlowy (Obchodný zákonník)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+      },
+      {
+        "label": "Ustawa nr 71/1992 Zb. o opłatach sądowych",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "Rozporządzenie (vyhláška) nr 655/2004 Z. z. o wynagrodzeniach adwokatów",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/655/"
+      }
+    ]
+  },
+  "xen": {
+    "navLabel": "Egzekucja na Słowacji",
+    "metaTitle": "Egzekucja na Słowacji dla zagranicznego wierzyciela",
+    "metaDescription": "Wykonanie na Słowacji orzeczenia z UE, europejskiego nakazu zapłaty i wyroku sądu polubownego. Obrona firmy przed egzekucją. Kancelaria adwokacka – Zvolen.",
+    "heroOverline": "Egzekucja transgraniczna",
+    "heroTitle": "Wykonanie zagranicznego orzeczenia na Słowacji – i obrona zagranicznej firmy przed słowacką egzekucją",
+    "heroLead": "Mają Państwo orzeczenie sądu, europejski nakaz zapłaty albo wyrok sądu polubownego (arbitrażowego), a Państwa dłużnik ma majątek na Słowacji. Przy tytule z państwa członkowskiego Unii Europejskiej nie trzeba na Słowacji ponownie wytaczać powództwa ani występować o stwierdzenie wykonalności – składa się bezpośrednio wniosek o wszczęcie egzekucji (návrh na vykonanie exekúcie). A jeżeli egzekucja jest skierowana przeciwko Państwa firmie, na wniosek o jej umorzenie ze skutkiem zawieszającym jest 15 dni od doręczenia zawiadomienia o wszczęciu egzekucji (upovedomenie o začatí exekúcie).",
+    "heroPara": [
+      "Reprezentujemy zagraniczne firmy w słowackim postępowaniu egzekucyjnym po obu stronach: jako wierzycieli egzekwujących (oprávnený), którzy dochodzą na Słowacji roszczenia przyznanego zagranicznym tytułem, oraz jako dłużników (povinný), przeciwko którym na Słowacji prowadzona jest egzekucja albo został wydany nakaz zapłaty (platobný rozkaz). Doradzamy wyłącznie w zakresie prawa słowackiego; dokumenty, które wydaje sąd państwa pochodzenia tytułu, klient uzyskuje w swoim państwie, z reguły ze swoim miejscowym adwokatem, z którym współpracujemy.",
+      "Pracujemy po angielsku i po słowacku; całą sprawę możemy poprowadzić zdalnie."
+    ],
+    "heroCta": "Prześlij tytuł do oceny",
+    "whoOverline": "Dla kogo działamy",
+    "whoTitle": "Dwie strony tego samego postępowania",
+    "whoLead": "Strona jest przeznaczona dla zagranicznych firm, które nie znają prawa słowackiego: dla wierzycieli, którzy mają już tytuł egzekucyjny i potrzebują go na Słowacji wykonać, oraz dla firm, do których ze Słowacji przyszło pismo z krótkim terminem.",
+    "who": [
+      {
+        "title": "Wierzyciel z orzeczeniem sądu lub europejskim nakazem zapłaty",
+        "desc": "Mają Państwo wykonalne orzeczenie sądu państwa członkowskiego UE, europejski nakaz zapłaty albo europejski tytuł egzekucyjny, a dłużnik ma na Słowacji siedzibę, rachunek bankowy, nieruchomość lub odbiorców. Wykonalności nie stwierdza się na Słowacji odrębnie; składa się bezpośrednio wniosek o wszczęcie egzekucji."
+      },
+      {
+        "title": "Wierzyciel z wyrokiem sądu polubownego",
+        "desc": "Wyrok sądu polubownego (arbitrażowego) wydany poza Słowacją – w państwie członkowskim UE albo poza nią. Jest uznawany bezpośrednio w postępowaniu egzekucyjnym, bez odrębnej decyzji o uznaniu; decydują kompletność dokumentów i to, czy dłużnik wykaże którąś z ustawowych podstaw odmowy."
+      },
+      {
+        "title": "Firma, do której przyszło zawiadomienie o wszczęciu egzekucji albo słowacki nakaz zapłaty",
+        "desc": "Terminy są krótkie – z reguły 15 dni od doręczenia – a w postępowaniu egzekucyjnym uchybionego terminu nie można przywrócić. Musimy znać dzień doręczenia i zobaczyć wszystko, co zostało Państwu doręczone."
+      },
+      {
+        "title": "Firma, której słowacka spółka zależna jest w sporze",
+        "desc": "Słowacka spółka z ograniczoną odpowiedzialnością (s.r.o.) jest odrębną osobą prawną z własną urzędową skrzynką elektroniczną (elektronická schránka), do której doręczają słowackie sądy. Pismo może zostać uznane za doręczone także wtedy, gdy nikt go nie otworzył. Sprawdzimy stan postępowań i egzekucji prowadzonych przeciwko spółce zależnej oraz terminy, które w nich biegną."
+      }
+    ],
+    "keyOverline": "Na czym opiera się sprawa",
+    "keyTitle": "Jaki tytuł Państwo mają – i co z tego wynika na Słowacji",
+    "keyLead": "Przymusowe wykonywanie orzeczeń reguluje na Słowacji ustawa nr 233/1995 Z. z. – słowacki Kodeks egzekucyjny (Exekučný poriadok). Egzekucji nie prowadzi sąd, lecz komornik sądowy (súdny exekútor) – zgodnie z § 2 ust. 1 ustawy osoba wyznaczona i upoważniona przez państwo do przymusowego wykonywania tytułów egzekucyjnych – którego do prowadzenia egzekucji upoważnia sąd. Wyłączną właściwość rzeczową w postępowaniu egzekucyjnym ma dla całego terytorium Słowacji jeden sąd – Sąd Rejonowy Banská Bystrica (Okresný súd Banská Bystrica; § 49). Tytułem egzekucyjnym jest zgodnie z § 45 ust. 2 lit. b również zagraniczny tytuł egzekucyjny wykonalny w Republice Słowackiej. To, co trzeba dołączyć do wniosku i jak może się bronić dłużnik, zależy od tego, skąd tytuł pochodzi.",
+    "key": [
+      {
+        "title": "Orzeczenie sądu państwa członkowskiego UE – bez stwierdzania wykonalności",
+        "desc": "Zgodnie z art. 39 rozporządzenia (UE) nr 1215/2012 (Bruksela I bis) orzeczenie wydane w państwie członkowskim, które jest wykonalne w tym państwie członkowskim, jest wykonalne w innych państwach członkowskich bez potrzeby stwierdzania jego wykonalności. Zgodnie z art. 41 ust. 1 jest ono wykonywane w wezwanym państwie członkowskim na tych samych warunkach co orzeczenie wydane w tym państwie – na Słowacji zatem w postępowaniu egzekucyjnym. Orzeczeniem jest zgodnie z art. 2 lit. a każde orzeczenie wydane przez sąd państwa członkowskiego, niezależnie od tego, jak zostanie określone. Do celów wykonania wnioskodawca przedstawia zgodnie z art. 42 ust. 1 odpis orzeczenia spełniający warunki niezbędne do stwierdzenia jego autentyczności oraz zaświadczenie wydane zgodnie z art. 53, potwierdzające wykonalność orzeczenia i zawierające wyciąg z orzeczenia, a w stosownych przypadkach również odpowiednie informacje o podlegających zwrotowi kosztach postępowania i naliczeniu odsetek. Zaświadczenie wydaje na wniosek zainteresowanej strony sąd pochodzenia na formularzu określonym w załączniku I do rozporządzenia (art. 53) – występuje się więc o nie w państwie, w którym orzeczenie zostało wydane, a nie na Słowacji. Tłumaczenia lub transliteracji treści zaświadczenia organ egzekucyjny może zażądać w razie konieczności (art. 42 ust. 3); tłumaczenia samego orzeczenia może zażądać wyłącznie wtedy, gdy nie jest w stanie prowadzić postępowania bez takiego tłumaczenia (art. 42 ust. 4). Tłumaczenia dokonuje się na język urzędowy wezwanego państwa członkowskiego, a więc na język słowacki (art. 57 ust. 1), a wykonuje je osoba uprawniona do tego w jednym z państw członkowskich (art. 57 ust. 3). Wykonania orzeczenia odmawia się zgodnie z art. 46 tylko na wniosek osoby, przeciwko której wystąpiono o wykonanie, w przypadku stwierdzenia jednej z podstaw, o których mowa w art. 45: oczywista sprzeczność z porządkiem publicznym, orzeczenie wydane bez udziału pozwanego, któremu nie doręczono dokumentu wszczynającego postępowanie w czasie i w sposób umożliwiający mu przygotowanie obrony (chyba że pozwany nie złożył przeciwko orzeczeniu środka zaskarżenia, chociaż miał taką możliwość), niemożność pogodzenia z innym orzeczeniem wydanym między tymi samymi stronami albo sprzeczność z wybranymi przepisami o jurysdykcji.",
+        "note": "Zgodnie z art. 66 ust. 1 rozporządzenie ma zastosowanie do postępowań wszczętych od dnia 10 stycznia 2015 r.; do orzeczeń wydanych w postępowaniach wszczętych wcześniej nadal ma zastosowanie, zgodnie z art. 66 ust. 2, rozporządzenie (WE) nr 44/2001. Zgodnie z art. 43 ust. 1 zaświadczenie doręcza się osobie, wobec której występuje się o wykonanie, przed pierwszym środkiem wykonawczym, i dołącza się do niego orzeczenie, jeżeli nie zostało jej doręczone już wcześniej; Kodeks egzekucyjny nawiązuje do tego w § 61a ust. 2, zgodnie z którym zagraniczny tytuł egzekucyjny dołącza się do zawiadomienia o wszczęciu egzekucji, jeżeli nie został dłużnikowi doręczony już wcześniej. Od wnioskodawcy nie można żądać, aby miał adres dla doręczeń w wezwanym państwie członkowskim (art. 41 ust. 3)."
+      },
+      {
+        "title": "Europejski nakaz zapłaty, europejski tytuł egzekucyjny i postępowanie w sprawie drobnych roszczeń",
+        "desc": "Europejski nakaz zapłaty, który stał się wykonalny w państwie członkowskim wydania, jest zgodnie z art. 19 rozporządzenia (WE) nr 1896/2006 uznawany i wykonywany w innych państwach członkowskich bez potrzeby stwierdzania wykonalności i bez możliwości sprzeciwienia się jego uznaniu. Jego wykonalność stwierdza sąd wydania przy użyciu formularza G, jeżeli w terminie 30 dni od doręczenia nakazu pozwanemu nie wpłynął do niego sprzeciw (art. 18 ust. 1 w związku z art. 16 ust. 2). W celu wykonania w innym państwie członkowskim powód przedstawia zgodnie z art. 21 ust. 2 odpis europejskiego nakazu zapłaty, którego wykonalność została stwierdzona przez sąd wydania i który spełnia wymogi niezbędne do stwierdzenia jego autentyczności, oraz w razie potrzeby jego tłumaczenie na język urzędowy państwa członkowskiego wykonania, poświadczone przez osobę posiadającą wymagane uprawnienia w jednym z państw członkowskich. Nakaz jest wykonywany na takich samych warunkach jak wykonalne orzeczenie wydane w państwie członkowskim wykonania (art. 21 ust. 1). Wykonania można na wniosek pozwanego odmówić tylko z przyczyn określonych w art. 22: z powodu niemożności pogodzenia nakazu z wcześniejszym orzeczeniem lub nakazem wydanym w odniesieniu do tego samego przedmiotu sporu między tymi samymi stronami, której nie można było podnieść w postępowaniu w państwie członkowskim wydania, albo dlatego, że pozwany kwotę orzeczoną w nakazie już zapłacił – w takim zakresie, w jakim to uczynił. W żadnym przypadku europejski nakaz zapłaty nie może być przedmiotem ponownego badania pod względem merytorycznym w państwie członkowskim wykonania (art. 22 ust. 3).",
+        "note": "Tak samo, bez stwierdzania wykonalności i bez możliwości sprzeciwienia się uznaniu, wykonywane jest orzeczenie w sprawie roszczenia bezspornego, któremu w państwie członkowskim wydania nadano zaświadczenie europejskiego tytułu egzekucyjnego (art. 5 rozporządzenia (WE) nr 805/2004; wierzyciel przedstawia odpis orzeczenia i odpis zaświadczenia zgodnie z art. 20 ust. 2), oraz orzeczenie wydane w ramach europejskiego postępowania w sprawie drobnych roszczeń (art. 20 ust. 1 rozporządzenia (WE) nr 861/2007). Również w ich przypadku orzeczenie nie może być przedmiotem badania pod względem merytorycznym w państwie członkowskim wykonania (art. 21 ust. 2 rozporządzenia nr 805/2004, art. 22 ust. 2 rozporządzenia nr 861/2007)."
+      },
+      {
+        "title": "Słowackie postępowanie egzekucyjne: jeden sąd, wniosek elektroniczny, komornik wyznaczany w drodze losowania",
+        "desc": "Wniosek o wszczęcie egzekucji składa się do Sądu Rejonowego Banská Bystrica drogą elektroniczną, do urzędowej skrzynki elektronicznej sądu, za pomocą przeznaczonego do tego formularza elektronicznego; wniosek musi być autoryzowany – z reguły kwalifikowanym podpisem elektronicznym albo kwalifikowaną pieczęcią elektroniczną (§ 23 ust. 1 ustawy nr 305/2013 Z. z. o e-Governmencie) – w przeciwnym razie nie jest brany pod uwagę (§ 48 ust. 7 Kodeksu egzekucyjnego). Tytuł egzekucyjny i dokumenty urzędowe dołącza się jako autoryzowany oryginalny dokument elektroniczny albo jako dokument elektroniczny, który powstał w drodze poświadczonej konwersji (zaručená konverzia) oryginalnego dokumentu w postaci papierowej (§ 48 ust. 6). Poświadczona konwersja to przekształcenie dokumentu do postaci elektronicznej w celu zachowania jego skutków prawnych; uprawniony do jej dokonania jest również adwokat (§ 35 ust. 2 i ust. 3 lit. b ustawy nr 305/2013 Z. z.). Do wniosku dołącza się odpis tytułu egzekucyjnego wraz z potwierdzeniem jego wykonalności (§ 48 ust. 4 lit. a), którym zagraniczny tytuł egzekucyjny opatruje organ państwa, w którym został wydany (§ 46 ust. 1 lit. c), a przy zagranicznym tytule egzekucyjnym także dokumenty wskazane w przepisie szczególnym; jeżeli tytułowi nadano zaświadczenie na podstawie rozporządzeń UE i do jego wykonania nie jest wymagana decyzja o wykonalności, dołącza się zaświadczenie (§ 48 ust. 5) – przy orzeczeniu z państwa członkowskiego UE jego wykonalność potwierdza właśnie zaświadczenie, o którym mowa w art. 53 (art. 42 ust. 1 lit. b rozporządzenia Bruksela I bis). Zagraniczna osoba prawna wykazuje swoje dane identyfikacyjne dołączonym odpisem z rejestru lub innej ewidencji, do której jest wpisana (§ 48 ust. 3 lit. b). Jeżeli chodzi o zagraniczny tytuł egzekucyjny, do którego wykonania rozporządzenia UE wymagają zaświadczenia, sąd postępuje tak samo jak przy tytule słowackim: jeżeli nie ma podstaw do oddalenia wniosku, w terminie 15 dni od jego doręczenia wydaje upoważnienie do prowadzenia egzekucji (poverenie na vykonanie exekúcie; § 53 ust. 1 i ust. 2 lit. c). Sprawy przydziela komornikom w drodze losowania za pomocą środków technicznych i programowych, tak aby wykluczyć możliwość wpływania na przydział spraw (§ 55 ust. 1), i to komornikowi powołanemu dla okręgu sądu krajowego (krajský súd), w którym dłużnik będący osobą prawną ma siedzibę (§ 55 ust. 2 lit. b) – wierzyciel egzekwujący nie wybiera komornika. Egzekucja zostaje wszczęta z chwilą doręczenia upoważnienia komornikowi (§ 57 ust. 1). Roszczenie pieniężne można egzekwować przez potrącenia z wynagrodzenia i z innych dochodów, przez egzekucję z wierzytelności (prikázanie pohľadávky) – w tym z wierzytelności z rachunku bankowego i innych wierzytelności pieniężnych dłużnika – oraz przez sprzedaż rzeczy ruchomych, papierów wartościowych, nieruchomości lub przedsiębiorstwa (§ 63 ust. 1, § 93 ust. 1); egzekucją można objąć także udział dłużnika w spółce handlowej (§ 113b ust. 1).",
+        "note": "Majątek dłużnika ustala komornik. Osoby trzecie są obowiązane na jego żądanie z nim współdziałać, jeżeli wylegitymował się upoważnieniem do prowadzenia egzekucji (§ 42 ust. 1): banki podają mu numery rachunków dłużnika, ich stany i zmiany (§ 42 ust. 6), danych udziela także organ prowadzący ewidencję nieruchomości, organ prowadzący ewidencję pojazdów silnikowych oraz centralny depozyt papierów wartościowych (§ 42 ust. 4). Przy ustalaniu majątku komornik uwzględnia wskazówki wierzyciela egzekwującego (§ 59 ust. 1); pierwsze sprawozdanie ze swoich ustaleń składa wierzycielowi egzekwującemu najpóźniej w terminie trzech miesięcy od wszczęcia egzekucji, a kolejne po 180 dniach (§ 59 ust. 3). Po doręczeniu zawiadomienia o wszczęciu egzekucji nie można bez uprzedniej pisemnej zgody komornika rozporządzać majątkiem podlegającym egzekucji, z wyjątkiem zwykłych czynności prawnych (§ 61d ust. 1)."
+      },
+      {
+        "title": "Zagraniczny wyrok sądu polubownego – uznanie bezpośrednio w postępowaniu egzekucyjnym",
+        "desc": "Zagranicznym wyrokiem sądu polubownego jest zgodnie z § 46 ust. 1 ustawy nr 244/2002 Z. z. o postępowaniu arbitrażowym rozstrzygnięcie arbitrażowe co do istoty sprawy wydane na terytorium innego państwa niż Republika Słowacka – bez względu na to, czy chodzi o państwo członkowskie UE; rozporządzenie Bruksela I bis zgodnie ze swoim art. 1 ust. 2 lit. d nie ma zastosowania do sądownictwa polubownego. O uznaniu zagranicznego wyroku sądu polubownego nie orzeka się odrębną decyzją: wyrok jest uznany przez to, że sąd właściwy w sprawach egzekucji bierze go pod uwagę tak, jakby chodziło o krajowy wyrok sądu polubownego (§ 49 ust. 1), i wykonuje się go jak krajowy wyrok sądu polubownego (§ 49 ust. 2). Do wniosku strona jest zgodnie z § 47 ust. 1 obowiązana dołączyć oryginał zagranicznego wyroku sądu polubownego albo jego poświadczoną kopię oraz oryginał umowy arbitrażowej albo jej poświadczoną kopię; jeżeli nie są sporządzone w języku słowackim, zapewnia ich tłumaczenie urzędowe (§ 47 ust. 2). Ponieważ nie chodzi o tytuł, przy którym wystarcza zaświadczenie na podstawie rozporządzeń UE, sąd zgodnie z § 54 ust. 1 Kodeksu egzekucyjnego przed wydaniem upoważnienia doręcza zagraniczny tytuł egzekucyjny do rąk własnych osobie oznaczonej jako dłużnik i poucza ją o możliwości podniesienia podstaw odmowy uznania. Jeżeli osoba ta nie wskaże ich w terminie 15 dni od doręczenia pouczenia, sąd bada przesłanki uznania i wykonania, które bada także z urzędu, a jeżeli nie stwierdzi przeszkód i nie ma podstaw do oddalenia wniosku, wydaje upoważnienie do prowadzenia egzekucji (§ 54 ust. 2).",
+        "note": "Podstawy odmowy uznania i wykonania reguluje § 50 ustawy. Na wniosek strony, przeciwko której wyrok jest powoływany, sąd może odmówić uznania i wykonania tylko wtedy, gdy strona ta wykaże, że nie miała zdolności do zawarcia umowy arbitrażowej albo że umowa nie została zawarta zgodnie z właściwym porządkiem prawnym; że nie została należycie zawiadomiona o ustanowieniu arbitra albo o postępowaniu arbitrażowym, albo nie umożliwiono jej wzięcia w nim udziału; że rozstrzygnięto spór, dla którego umowa arbitrażowa nie została zawarta albo który nie mieści się w granicach klauzuli arbitrażowej; że sąd polubowny nie został ustanowiony albo postępowanie nie toczyło się w uzgodniony sposób; albo że wyrok nie stał się prawomocny i wiążący, ewentualnie został uchylony albo jego wykonanie wstrzymał sąd państwa pochodzenia (§ 50 ust. 1). Także bez wniosku sąd odmawia uznania i wykonania, jeżeli według prawa słowackiego przedmiot sporu nie może być rozstrzygany w postępowaniu arbitrażowym albo uznanie i wykonanie byłyby sprzeczne z porządkiem publicznym (§ 50 ust. 2). Ustawę stosuje się zgodnie z § 53, jeżeli umowa międzynarodowa, którą Republika Słowacka jest związana, nie stanowi inaczej; jako przykład takiej umowy ustawa podaje Konwencję o uznawaniu i wykonywaniu zagranicznych orzeczeń arbitrażowych – obwieszczenie (vyhláška) Ministra Spraw Zagranicznych nr 74/1959 Zb. – znaną jako Konwencja nowojorska."
+      },
+      {
+        "title": "Orzeczenie z państwa spoza UE – ustawa o prawie prywatnym międzynarodowym i procesowym",
+        "desc": "Do orzeczeń z państw, do których nie mają zastosowania rozporządzenia UE, stosuje się ustawę nr 97/1963 Zb. o prawie prywatnym międzynarodowym i procesowym – zgodnie z jej § 2 jednak tylko wtedy, gdy umowa międzynarodowa, którą Republika Słowacka jest związana, nie stanowi inaczej. Zgodnie z § 63 zagraniczne orzeczenia są w Republice Słowackiej skuteczne, jeżeli zostały uznane przez organy słowackie. Orzeczenie w sprawie majątkowej nie wymaga uznania odrębnym rozstrzygnięciem: zgodnie z § 67 ust. 3 jest uznawane w ten sposób, że słowacki sąd wydaje upoważnienie do prowadzenia egzekucji. Odrębnym rozstrzygnięciem o uznaniu sąd orzeka tylko na wniosek (§ 67 ust. 4); właściwy jest sąd, który jest właściwy do wydania upoważnienia do prowadzenia egzekucji (§ 68a lit. c). Zgodnie z § 64 zagranicznego orzeczenia nie można uznać ani wykonać, jeżeli uznaniu stoi na przeszkodzie wyłączna jurysdykcja organów słowackich albo organ państwa obcego nie miałby jurysdykcji do rozstrzygnięcia sprawy, gdyby do jej oceny zastosować przepisy prawa słowackiego; jeżeli orzeczenie nie jest prawomocne lub wykonalne w państwie, w którym zostało wydane; jeżeli nie jest orzeczeniem co do istoty sprawy; jeżeli strona, wobec której orzeczenie ma zostać uznane, została postępowaniem organu zagranicznego pozbawiona możliwości działania przed tym organem, w szczególności jeżeli nie doręczono jej należycie wezwania lub pisma wszczynającego postępowanie; jeżeli słowacki sąd wydał już w sprawie prawomocne orzeczenie albo istnieje wcześniejsze zagraniczne orzeczenie w tej samej sprawie, które zostało uznane lub spełnia warunki uznania; albo jeżeli uznanie byłoby sprzeczne ze słowackim porządkiem publicznym. Badanie zagranicznego orzeczenia co do istoty sprawy jest niedopuszczalne (§ 68f ust. 2). W postępowaniu egzekucyjnym sąd postępuje zgodnie z § 54 Kodeksu egzekucyjnego: doręcza zagraniczny tytuł egzekucyjny dłużnikowi, który ma 15 dni na to, aby wskazać przyczyny stojące na przeszkodzie uznaniu lub wykonaniu albo złożyć wniosek o odrębne uznanie.",
+        "note": "W przypadku Zjednoczonego Królestwa decyduje dzień wszczęcia postępowania: zgodnie z art. 67 ust. 2 lit. a Umowy o wystąpieniu Zjednoczonego Królestwa z Unii Europejskiej rozporządzenie Bruksela I bis ma zastosowanie do uznawania i wykonywania orzeczeń wydanych w postępowaniach sądowych wszczętych przed zakończeniem okresu przejściowego, który zgodnie z art. 126 Umowy zakończył się w dniu 31 grudnia 2020 r. Ponadto Unia Europejska decyzją Rady (UE) 2022/1206 zatwierdziła swoje przystąpienie do Konwencji o uznawaniu i wykonywaniu zagranicznych orzeczeń w sprawach cywilnych i handlowych, zawartej w dniu 2 lipca 2019 r. pod auspicjami Haskiej Konferencji Prawa Prywatnego Międzynarodowego; zgodnie z oświadczeniem, które Unia składa przy przystąpieniu, jej państwa członkowskie, z wyjątkiem Danii, będą Konwencją związane z racji tego przystąpienia. To, czy i od kiedy Konwencja ma zastosowanie w stosunku do konkretnego państwa pochodzenia orzeczenia, sprawdzamy w każdej sprawie osobno. Kto występuje o uznanie odrębnym rozstrzygnięciem, dołącza zgodnie z § 68c ust. 2 ustawy nr 97/1963 Zb. oryginał albo urzędowo poświadczoną kopię zagranicznego orzeczenia w pełnym brzmieniu, potwierdzenie właściwego organu zagranicznego o jego prawomocności lub wykonalności, dowody z dokumentów na to, że nie zachodzi przeszkoda z § 64 lit. d, oraz urzędowo poświadczone tłumaczenia na język słowacki; opłata sądowa od takiego wniosku wynosi według pozycji 18d taryfy opłat sądowych 100 euro."
+      },
+      {
+        "title": "Obrona dłużnika: 15 dni od doręczenia",
+        "desc": "Jeżeli Państwa firma jest w słowackiej egzekucji dłużnikiem, pierwszym pismem od komornika jest zawiadomienie o wszczęciu egzekucji. Musi ono zawierać między innymi wysokość kosztów w razie spełnienia egzekwowanego obowiązku w terminie 15 dni od doręczenia oraz wysokość kosztów po upływie tego terminu, pouczenie o możliwości złożenia wniosku o umorzenie egzekucji (návrh na zastavenie exekúcie) i o terminie, do upływu którego wniosek ten ma skutek zawieszający, a także – jeżeli chodzi o zagraniczne orzeczenie, przy którym nie jest wymagane stwierdzenie wykonalności – pouczenie o możliwości sprzeciwienia się jego uznaniu lub wykonaniu (§ 61a ust. 1 lit. e–g oraz lit. i Kodeksu egzekucyjnego). Wniosek o umorzenie egzekucji dłużnik może złożyć w terminie 15 dni od doręczenia zawiadomienia; musi on być uzasadniony, muszą być w nim wskazane wszystkie okoliczności, które dłużnik może powołać na dzień złożenia wniosku, i taki wniosek ma skutek zawieszający (§ 61k ust. 2). Składa się go u komornika (§ 61k ust. 5), a sąd rozpoznaje go w pierwszej kolejności (§ 61l ust. 1). Sąd umarza egzekucję z przyczyn określonych w § 61k ust. 1: po powstaniu tytułu egzekucyjnego zaszły okoliczności, które spowodowały wygaśnięcie egzekwowanego roszczenia; tytuł egzekucyjny został uchylony; zachodzi przewidziana w przepisie szczególnym przyczyna, z powodu której uznanie lub wykonanie zagranicznego tytułu egzekucyjnego jest niedopuszczalne, chyba że można ją było podnieść w postępowaniu już wcześniej; albo zachodzą inne okoliczności, które stoją na przeszkodzie egzekwowaniu tytułu egzekucyjnego. W później złożonych wnioskach dłużnik może podnosić tylko okoliczności, które zaszły po upływie 15-dniowego terminu, albo takie, których bez własnej winy nie mógł powołać wcześniej (§ 61k ust. 3); późniejsze wnioski nie mają skutku zawieszającego (§ 61k ust. 4 lit. a). W postępowaniu egzekucyjnym uchybionego terminu nie można przywrócić (§ 201 ust. 1 lit. a).",
+        "note": "Skutek zawieszający nie oznacza, że komornik nie działa: zgodnie z § 61i ust. 1 i 3 zachowuje on uprawnienie do dokonywania czynności zmierzających do ustalenia i zabezpieczenia majątku. Rachunek bankowy może więc zostać zablokowany do wysokości wierzytelności wraz z należnościami ubocznymi (§ 95 ust. 1 lit. a); nakaz egzekucyjny (exekučný príkaz), po którego doręczeniu bank wypłaca wierzytelność komornikowi, komornik wydaje jednak dopiero po bezskutecznym upływie terminu do złożenia wniosku o umorzenie egzekucji ze skutkiem zawieszającym albo po doręczeniu orzeczenia sądu, którym taki wniosek został oddalony (§ 96 ust. 1 i 3). Jeżeli dłużnik, który złożył wniosek o umorzenie egzekucji, złoży na specjalny rachunek komornika zabezpieczenie w wysokości egzekwowanego roszczenia, egzekucja zostaje odroczona, a komornik nie dokonuje czynności zmierzających do zabezpieczenia majątku, a jeżeli już ich dokonał, uchyla je (§ 61h ust. 1 lit. f, § 61i ust. 2). Przy nakazie zapłaty słowackiego sądu termin do wniesienia sprzeciwu (odpor) wynosi 15 dni od doręczenia, a sprzeciw musi zawierać merytoryczne uzasadnienie, w przeciwnym razie sąd go odrzuca (§ 265 ust. 1 oraz § 267 ust. 1 i 2 słowackiego Kodeksu postępowania cywilnego spornego – Civilný sporový poriadok; w postępowaniu upominawczym § 7 ust. 2, § 11 ust. 1 i § 12 ust. 1 ustawy nr 307/2016 Z. z.). W postępowaniu upominawczym (upomínacie konanie) – uproszczonym postępowaniu elektronicznym przed Sądem Rejonowym Banská Bystrica – wniosek nie jest dopuszczalny, jeżeli nakaz zapłaty musiałby zostać doręczony pozwanemu za granicą (§ 3 ust. 6 lit. d). Przy europejskim nakazie zapłaty termin do wniesienia sprzeciwu wynosi 30 dni od doręczenia, a pozwany nie musi wskazywać w nim powodów (art. 16 ust. 2 i 3 rozporządzenia (WE) nr 1896/2006)."
+      }
+    ],
+    "stepsOverline": "Tryb postępowania",
+    "stepsTitle": "Jak przebiega sprawa",
+    "steps": [
+      {
+        "title": "Ocena tytułu",
+        "desc": "Ustalamy, do którego reżimu należy Państwa tytuł – rozporządzenie UE, ustawa o postępowaniu arbitrażowym czy ustawa o prawie prywatnym międzynarodowym i procesowym – czy jest wykonalny w państwie pochodzenia i których dokumentów do niego brakuje. Przy tytułach, od których wykonalności upłynęły więcej niż trzy lata, pilnujemy § 53 ust. 3 lit. g i ust. 4 Kodeksu egzekucyjnego: sąd oddala wniosek w części dotyczącej powtarzających się należności ubocznych (z reguły odsetek za opóźnienie), do których prawo powstało po wykonalności tytułu, jeżeli wniosek został złożony po trzech latach od wykonalności tytułu bez wezwania dłużnika w ostatnich trzech miesiącach przed złożeniem wniosku do zaspokojenia wierzytelności albo bez zawarcia z nim w ciągu trzech lat od wykonalności porozumienia o stopniowym zaspokojeniu wierzytelności. Wezwanie do spełnienia świadczenia wysyłamy dlatego jeszcze przed złożeniem wniosku."
+      },
+      {
+        "title": "Sprawdzenie dłużnika",
+        "desc": "Przed złożeniem wniosku sprawdzamy to, co da się ustalić publicznie: rejestr handlowy, który jest rejestrem publicznym (§ 3 ust. 1 ustawy nr 29/2026 Z. z.), sprawozdania finansowe złożone w publicznej części rejestru sprawozdań finansowych (§ 23c ust. 1 ustawy nr 431/2002 Z. z.), kataster nieruchomości (kataster nehnuteľností), do którego wglądu ma prawo każdy (§ 68 ust. 1 ustawy nr 162/1995 Z. z.), rejestr upoważnień do prowadzenia egzekucji, w którym Ministerstwo Sprawiedliwości publikuje dane z wydanych upoważnień przez czas trwania egzekucji (§ 56 ust. 3 Kodeksu egzekucyjnego), oraz to, czy przeciwko dłużnikowi nie toczy się postępowanie upadłościowe lub restrukturyzacyjne. Dane o rachunkach bankowych banki podają dopiero komornikowi, który wylegitymuje się upoważnieniem (§ 42 ust. 1 i 6 Kodeksu egzekucyjnego)."
+      },
+      {
+        "title": "Dokumenty, tłumaczenia i konwersja",
+        "desc": "Napiszemy Państwu dokładnie, o co wystąpić do sądu pochodzenia – o zaświadczenie, o którym mowa w art. 53 rozporządzenia Bruksela I bis, o europejski nakaz zapłaty, którego wykonalność stwierdzono na formularzu G, albo o zaświadczenie europejskiego tytułu egzekucyjnego. Wydanie tych dokumentów podlega prawu państwa pochodzenia; zajmuje się nim Państwa miejscowy adwokat albo bezpośrednio Państwa firma. Na Słowacji zapewnimy tłumaczenie urzędowe na język słowacki tam, gdzie jest potrzebne, oraz poświadczoną konwersję dokumentów do postaci elektronicznej."
+      },
+      {
+        "title": "Wniosek o wszczęcie egzekucji",
+        "desc": "Wniosek składamy elektronicznie do Sądu Rejonowego Banská Bystrica. Opłata sądowa od wniosku wynosi 25 euro (pozycja 13 lit. a taryfy opłat sądowych); sąd nie wzywa do jej uiszczenia, a jeżeli obowiązek opłaty nie zostanie spełniony w całości w terminie 15 dni od złożenia wniosku, wniosek nie jest brany pod uwagę (§ 11d ust. 2 i 3 ustawy nr 71/1992 Zb.). Sąd wydaje upoważnienie do prowadzenia egzekucji i przydziela sprawę komornikowi w drodze losowania. Komornik zawiadamia wierzyciela egzekwującego i dłużnika o wszczęciu egzekucji oraz wzywa dłużnika do spełnienia egzekwowanego roszczenia (§ 61 ust. 1 Kodeksu egzekucyjnego)."
+      },
+      {
+        "title": "Przebieg egzekucji – i obrona, jeżeli są Państwo po przeciwnej stronie",
+        "desc": "Komunikujemy się z komornikiem, przekazujemy mu to, co Państwo wiedzą o majątku dłużnika, i śledzimy jego sprawozdania. Jeżeli dłużnik wniesie o umorzenie egzekucji, komornik wzywa wierzyciela egzekwującego do ustosunkowania się w terminie nie krótszym niż dziesięć dni (§ 61k ust. 5 Kodeksu egzekucyjnego); stanowisko przygotujemy. Jeżeli w postępowaniu są Państwo dłużnikiem, tryb jest lustrzany: zaraz po doręczeniu zawiadomienia o wszczęciu egzekucji albo nakazu zapłaty ustalamy dzień doręczenia, oceniamy tytuł egzekucyjny, sposób jego doręczenia i egzekwowane roszczenie oraz w terminie składamy wniosek o umorzenie egzekucji albo sprzeciw."
+      }
+    ],
+    "docsOverline": "Dokumenty",
+    "docsTitle": "Czego od Państwa potrzebujemy",
+    "docsLead": "Do pierwszej oceny wystarczą skany. Które dokumenty będą potrzebne w oryginale albo w urzędowo poświadczonej kopii, napiszemy Państwu po ich przeczytaniu.",
+    "docs": [
+      "Tytuł egzekucyjny – orzeczenie sądu, europejski nakaz zapłaty albo wyrok sądu polubownego – w pełnym brzmieniu.",
+      "Zaświadczenie lub potwierdzenie od sądu pochodzenia, jeżeli już je Państwo mają: zaświadczenie, o którym mowa w art. 53 rozporządzenia Bruksela I bis, stwierdzenie wykonalności europejskiego nakazu zapłaty (formularz G), zaświadczenie europejskiego tytułu egzekucyjnego; przy orzeczeniu z państwa spoza UE potwierdzenie prawomocności lub wykonalności.",
+      "Przy wyroku sądu polubownego także umowa arbitrażowa albo umowa, która zawiera klauzulę arbitrażową.",
+      "Odpis z rejestru, do którego wpisana jest Państwa firma – zagraniczna osoba prawna wykazuje nim we wniosku swoje dane identyfikacyjne.",
+      "Dane o dłużniku: nazwa (firma), siedziba, numer identyfikacyjny oraz wszystko, co Państwo wiedzą o jego majątku – rachunki bankowe, odbiorcy, nieruchomości, pojazdy, udziały w spółkach.",
+      "Zestawienie wpłat otrzymanych po wydaniu tytułu i wyliczenie tego, co pozostaje niezapłacone – wniosek musi zawierać oświadczenie, w jakiej części obowiązek nie został spełniony.",
+      "Numer rachunku bankowego, na który komornik ma przekazywać wyegzekwowane świadczenie.",
+      "Jeżeli są Państwo dłużnikiem: zawiadomienie o wszczęciu egzekucji albo nakaz zapłaty ze wszystkimi załącznikami, informacja o dniu i sposobie doręczenia (koperta, potwierdzenie odbioru, zapis z urzędowej skrzynki elektronicznej) oraz dokumenty na poparcie Państwa zarzutów – w szczególności dowody zapłaty."
+    ],
+    "priceOverline": "Wynagrodzenie",
+    "priceTitle": "Ile to kosztuje",
+    "priceLead": "Zakres i wynagrodzenie uzgadniamy z góry i na piśmie. Cenę oceny tytułu i złożenia wniosku znają Państwo, zanim rozpoczniemy pracę.",
+    "price": [
+      {
+        "label": "Ocena tytułu i dokumentów",
+        "value": "stałe wynagrodzenie uzgodnione z góry",
+        "desc": "Przeglądamy tytuł i dokumenty, ustalamy reżim, w którym zostanie wykonany na Słowacji, sprawdzamy dłużnika w rejestrach publicznych i przedstawiamy proponowany tryb działania oraz to, co trzeba jeszcze uzupełnić. Wynagrodzenie podajemy przed rozpoczęciem pracy; jeżeli zdecydują Państwo nie iść dalej, sprawa na tym się kończy."
+      },
+      {
+        "label": "Wniosek o wszczęcie egzekucji albo wniosek o umorzenie egzekucji",
+        "value": "stałe wynagrodzenie za czynność",
+        "desc": "Przygotowanie i złożenie wniosku o wszczęcie egzekucji, w tym poświadczona konwersja dokumentów, albo – jeżeli są Państwo dłużnikiem – przygotowanie i złożenie wniosku o umorzenie egzekucji lub sprzeciwu od nakazu zapłaty. Uzgadniane jako stała kwota za czynność, a nie według stawki godzinowej."
+      },
+      {
+        "label": "Zastępstwo w postępowaniu",
+        "value": "stałe wynagrodzenie albo wynagrodzenie zależne od wyniku",
+        "desc": "Zgodnie z § 7 ust. 1 rozporządzenia (vyhláška) Ministerstwa Sprawiedliwości Republiki Słowackiej nr 655/2004 Z. z. wynagrodzenie zależne od wyniku sprawy można uzgodnić w formie procentowego udziału w wartości przedmiotu sprawy; zgodnie z § 7 ust. 2 jego maksymalna wysokość nie może przekroczyć 20% tej wartości. Zgodnie z § 8 ust. 1 rozporządzenia staje się ono należne tylko wtedy, gdy klient odniósł w sprawie pełny sukces; przy częściowym sukcesie adwokatowi przysługuje na podstawie § 8 ust. 2 wynagrodzenie taryfowe ustalone stosownie do stopnia sukcesu, a jeżeli klient nie odniósł sukcesu nawet w części, adwokat może na podstawie § 8 ust. 3 żądać jedynie zwrotu poniesionych wydatków."
+      }
+    ],
+    "priceNote": "Obok wynagrodzenia adwokata powstają wydatki – w szczególności opłata sądowa, tłumaczenia urzędowe i poświadczona konwersja dokumentów. Opłata sądowa od wniosku o wszczęcie egzekucji wynosi według pozycji 13 lit. a taryfy opłat ustawy nr 71/1992 Zb. 25 euro. Kosztami komornika są jego wynagrodzenie i zwrot wydatków (§ 196 Kodeksu egzekucyjnego); przy egzekwowaniu świadczenia pieniężnego wynagrodzenie ustala się jako procent wyegzekwowanego świadczenia i nie może ono przekroczyć wysokości egzekwowanego roszczenia (§ 197 ust. 1). Koszty komornika ponosi dłużnik (§ 199c ust. 4). Jeżeli jednak egzekucja zostanie umorzona z przyczyny, z powodu której komornik wydaje zawiadomienie o umorzeniu egzekucji – na przykład dlatego, że nie udało się ustalić majątku, do którego można skierować egzekucję – wierzyciel egzekwujący zwraca komornikowi wydatki (§ 199c ust. 1 w związku z § 198 ust. 2). Zaliczki na niezbędne wydatki komornik może żądać od wierzyciela egzekwującego tylko przy egzekucji przez sprzedaż rzeczy ruchomych, nieruchomości lub przedsiębiorstwa oraz przy świadczeniu niepieniężnym (§ 58 ust. 1). Wynik egzekucji zależy od okoliczności konkretnej sprawy, w szczególności od sytuacji majątkowej dłużnika.",
+    "formOverline": "Bez zobowiązań",
+    "formTitle": "Prosimy przesłać nam tytuł albo pismo, które Państwo otrzymali",
+    "formLead": "Prosimy napisać, jaki tytuł Państwo mają i przeciwko komu albo co i kiedy doręczono Państwu ze Słowacji. Jeżeli biegnie Państwu termin, prosimy podać dzień doręczenia już w pierwszej wiadomości. Odezwiemy się i przedstawimy kolejne kroki. Wysłanie formularza nie powoduje nawiązania stosunku prawnego między adwokatem a klientem.",
+    "faqOverline": "FAQ",
+    "faqTitle": "Najczęściej zadawane pytania",
+    "faq": [
+      {
+        "q": "Czy musimy na Słowacji ponownie wytaczać powództwo, skoro mamy już orzeczenie polskiego sądu?",
+        "a": "Nie. Zgodnie z art. 36 ust. 1 rozporządzenia (UE) nr 1215/2012 (Bruksela I bis) orzeczenie wydane w jednym państwie członkowskim jest uznawane w innych państwach członkowskich bez potrzeby przeprowadzania specjalnego postępowania, a zgodnie z art. 39 jest w nich wykonalne bez potrzeby stwierdzania jego wykonalności. Na Słowacji zagraniczny tytuł egzekucyjny wykonalny w Republice Słowackiej jest tytułem egzekucyjnym na podstawie § 45 ust. 2 lit. b Kodeksu egzekucyjnego; składa się bezpośrednio wniosek o wszczęcie egzekucji do Sądu Rejonowego Banská Bystrica. Rozporządzenie ma zastosowanie do postępowań wszczętych od dnia 10 stycznia 2015 r. (art. 66 ust. 1); przy orzeczeniach ze starszych postępowań reżim oceniamy osobno."
+      },
+      {
+        "q": "Jakich dokumentów potrzebujemy od swojego sądu?",
+        "a": "Przy orzeczeniu – odpisu orzeczenia spełniającego warunki niezbędne do stwierdzenia jego autentyczności oraz zaświadczenia, o którym mowa w art. 53 rozporządzenia Bruksela I bis, które na wniosek zainteresowanej strony wydaje sąd pochodzenia na formularzu określonym w załączniku I do rozporządzenia (art. 42 ust. 1). Przy europejskim nakazie zapłaty – jego odpisu, którego wykonalność została stwierdzona przez sąd wydania (art. 21 ust. 2 lit. a rozporządzenia (WE) nr 1896/2006), przy europejskim tytule egzekucyjnym – odpisu orzeczenia i odpisu zaświadczenia (art. 20 ust. 2 rozporządzenia (WE) nr 805/2004). Zgodnie z Kodeksem egzekucyjnym do wniosku dołącza się odpis tytułu egzekucyjnego z potwierdzeniem wykonalności, którym zagraniczny tytuł egzekucyjny opatruje organ państwa, w którym został wydany (§ 46 ust. 1 lit. c, § 48 ust. 4 lit. a) – przy orzeczeniu z państwa członkowskiego UE wykonalność potwierdza właśnie zaświadczenie, o którym mowa w art. 53 (art. 42 ust. 1 lit. b rozporządzenia) – a zagraniczna osoba prawna dołącza odpis z rejestru, do którego jest wpisana (§ 48 ust. 3 lit. b)."
+      },
+      {
+        "q": "Czy potrzebne jest tłumaczenie na język słowacki?",
+        "a": "Przy orzeczeniu z państwa członkowskiego UE – nie automatycznie. Organ egzekucyjny może w razie konieczności zażądać tłumaczenia lub transliteracji treści zaświadczenia (art. 42 ust. 3 rozporządzenia Bruksela I bis); tłumaczenia samego orzeczenia może zażądać wyłącznie wtedy, gdy nie jest w stanie prowadzić postępowania bez takiego tłumaczenia (art. 42 ust. 4). Tłumaczy się na język słowacki jako język urzędowy wezwanego państwa członkowskiego (art. 57 ust. 1), a tłumaczenie może wykonać osoba uprawniona do tego w którymkolwiek państwie członkowskim (art. 57 ust. 3). Przy europejskim nakazie zapłaty tłumaczenie przedstawia się w razie potrzeby (art. 21 ust. 2 lit. b rozporządzenia (WE) nr 1896/2006). Przy zagranicznym wyroku sądu polubownego i umowie arbitrażowej tłumaczenie urzędowe na język słowacki jest obowiązkowe zawsze, gdy nie są w nim sporządzone (§ 47 ust. 2 ustawy nr 244/2002 Z. z.). Trzeba liczyć się również z tym, że dłużnik mający miejsce zamieszkania w innym państwie członkowskim niż państwo pochodzenia może zażądać tłumaczenia orzeczenia na język, który rozumie, albo na język urzędowy państwa swojego miejsca zamieszkania; do chwili doręczenia mu tłumaczenia nie można zastosować żadnych środków wykonawczych innych niż środki zabezpieczające (art. 43 ust. 2)."
+      },
+      {
+        "q": "Czy możemy wybrać komornika?",
+        "a": "Nie. Egzekucję prowadzi komornik, którego upoważni sąd; sprawy przydziela się równomiernie w drodze losowania za pomocą środków technicznych i programowych, tak aby wykluczyć możliwość wpływania na przydział spraw (§ 55 ust. 1 Kodeksu egzekucyjnego). Gdy dłużnikiem jest osoba prawna, sprawę przydziela się komornikowi powołanemu dla okręgu sądu krajowego, w którym ma ona siedzibę; przy zagranicznej osobie prawnej decyduje siedziba jednostki organizacyjnej jej przedsiębiorstwa (organizačná zložka podniku; § 55 ust. 2 lit. b i d). Jeżeli przeciwko temu samemu dłużnikowi toczy się już egzekucja, w której sąd udzielił upoważnienia, każda kolejna sprawa jest przydzielana temu samemu komornikowi, a losowania się nie stosuje (§ 55 ust. 4)."
+      },
+      {
+        "q": "Ile kosztuje egzekucja i kto za nią płaci?",
+        "a": "Opłata sądowa od wniosku o wszczęcie egzekucji wynosi 25 euro (pozycja 13 lit. a taryfy opłat ustawy nr 71/1992 Zb.). Koszty komornika – wynagrodzenie i zwrot wydatków – ponosi dłużnik, i to przez spełnienie egzekwowanego roszczenia albo przez to, że znosi ich zaspokojenie ze swojego majątku (§ 199c ust. 4 Kodeksu egzekucyjnego). Z każdego otrzymanego świadczenia na koszty komornika przeznacza się najwyżej 24%, a resztę na należność główną egzekwowanej wierzytelności (§ 60 ust. 2). Wierzyciel egzekwujący ma wobec dłużnika prawo do zwrotu celowo poniesionych kosztów w zakresie, w jakim sąd wskazał je w upoważnieniu do prowadzenia egzekucji (§ 199d ust. 1); należą do nich wydatki na zastępstwo w związku ze złożeniem wniosku, uiszczona opłata sądowa oraz wydatki związane ze złożeniem wniosku (§ 199a ust. 1). Wynagrodzenie adwokata podlega zwrotowi według przepisów o wynagrodzeniu taryfowym, do wszczęcia egzekucji najwyżej w wysokości wynagrodzenia za dwie czynności usługi prawnej (§ 199e). Ryzyko po stronie wierzyciela egzekwującego: jeżeli komornik umorzy egzekucję, na przykład wobec bezskuteczności egzekucji z powodu braku majątku dłużnika, wierzyciel egzekwujący zwraca komornikowi wydatki (§ 199c ust. 1 w związku z § 198 ust. 2)."
+      },
+      {
+        "q": "Co, jeżeli dłużnik nie ma majątku?",
+        "a": "Komornik wydaje zawiadomienie o umorzeniu egzekucji, jeżeli w egzekucji prowadzonej z majątku osoby prawnej w ciągu 30 miesięcy – a przy osobie fizycznej w ciągu pięciu lat – od wszczęcia egzekucji albo od ostatniego zajęcia majątku w egzekucji nie udało się ustalić majątku ani dochodów, do których można by skierować egzekucję i które wystarczyłyby przynajmniej na pokrycie kosztów komornika (§ 61n ust. 1 lit. c i d Kodeksu egzekucyjnego); terminy te przedłuża się o czas odroczenia egzekucji (§ 61n ust. 7). W zawiadomieniu wzywa wierzyciela egzekwującego do zwrotu wydatków (§ 61n ust. 3); strona postępowania może w terminie 15 dni od doręczenia wnieść u komornika zarzuty (§ 61n ust. 4). W przypadku spółki handlowej takie umorzenie ma dalszy skutek: zawiadomienie zostaje opublikowane w słowackim Dzienniku Handlowym (Obchodný vestník), a z upływem sześciu miesięcy od publikacji spółka ulega rozwiązaniu bez likwidacji, jeżeli nie toczy się wobec niej postępowanie upadłościowe (§ 61n ust. 6). Jeżeli ogłoszono upadłość obejmującą majątek dłużnika, postępowania egzekucyjnego dotyczącego majątku objętego upadłością nie można wszcząć, a już wszczęte zostaje z chwilą ogłoszenia upadłości umorzone (§ 48 ustawy nr 7/2005 Z. z.); wierzytelności dochodzi się wówczas przez zgłoszenie wierzytelności, które zagraniczny wierzyciel składa u syndyka w podstawowym terminie zgłaszania wierzytelności wynoszącym 45 dni od ogłoszenia upadłości (§ 28 ust. 2). Zgłoszenie doręczone później jest brane pod uwagę, wierzyciel nie może jednak wykonywać prawa głosu ani innych praw związanych ze zgłoszoną wierzytelnością (§ 28 ust. 3). Właśnie dlatego sprawdzamy dłużnika jeszcze przed złożeniem wniosku."
+      },
+      {
+        "q": "Przyszło do nas zawiadomienie o wszczęciu egzekucji, a wierzytelności nie uznajemy. Co teraz?",
+        "a": "Decyduje dzień doręczenia. W terminie 15 dni od doręczenia zawiadomienia mogą Państwo złożyć u komornika wniosek o umorzenie egzekucji, który ma skutek zawieszający; musi on być uzasadniony i muszą Państwo wskazać w nim wszystkie okoliczności, które mogą Państwo powołać na dzień jego złożenia (§ 61k ust. 2 i 5 Kodeksu egzekucyjnego). Przyczyny są określone w § 61k ust. 1 – w szczególności wygaśnięcie roszczenia po powstaniu tytułu, uchylenie tytułu, niedopuszczalność uznania lub wykonania zagranicznego tytułu egzekucyjnego oraz inne okoliczności, które stoją na przeszkodzie egzekwowaniu tytułu. Samo kwestionowanie wierzytelności nie jest w tym wyliczeniu wymienione; zarzuty przeciwko roszczeniu jako takiemu należą do postępowania, z którego tytuł pochodzi – przy nakazie zapłaty do sprzeciwu. Jeżeli sąd oddali wniosek tylko dlatego, że został złożony z opóźnieniem, chociaż przyczyna umorzenia egzekucji zachodzi, dłużnikowi pozostaje powództwo o zwrot świadczenia przeciwko wierzycielowi egzekwującemu (§ 61l ust. 3). Jeżeli tytułem jest słowacki nakaz zapłaty, o którym Państwo nie wiedzieli, sprawdzimy jego doręczenie – przy doręczaniu za granicę to, czy zachowano tryb doręczania transgranicznego. Słowackiej osobie prawnej, na przykład Państwa spółce zależnej, doręcza się do urzędowej skrzynki elektronicznej, a pismo doręczane do rąk własnych uznaje się za doręczone także z bezskutecznym upływem 15-dniowego terminu przechowywania (úložná lehota), i to nawet wtedy, gdy adresat się o tym nie dowiedział (§ 32 ust. 2 i ust. 5 lit. b ustawy nr 305/2013 Z. z.); wniosek o stwierdzenie bezskuteczności doręczenia elektronicznego trzeba złożyć w terminie 15 dni od dnia, w którym adresat zapoznał się albo mógł się zapoznać z treścią wiadomości (§ 33 ust. 1 i 2)."
+      },
+      {
+        "q": "Mamy wyrok sądu polubownego z kraju spoza UE. Czy można go wykonać na Słowacji?",
+        "a": "Tak, na warunkach ustawy nr 244/2002 Z. z. o postępowaniu arbitrażowym, która nie rozróżnia, czy wyrok został wydany w państwie członkowskim UE, czy poza nią: zagranicznym wyrokiem sądu polubownego jest każde rozstrzygnięcie arbitrażowe co do istoty sprawy wydane na terytorium innego państwa niż Republika Słowacka (§ 46 ust. 1). Odrębne postępowanie o uznanie nie jest potrzebne – wyrok jest uznany przez to, że sąd egzekucyjny bierze go pod uwagę tak, jakby chodziło o krajowy wyrok sądu polubownego (§ 49 ust. 1). Do wniosku trzeba dołączyć oryginał albo poświadczoną kopię wyroku oraz umowy arbitrażowej i ich tłumaczenie urzędowe na język słowacki (§ 47). Sąd przed wydaniem upoważnienia doręcza wyrok dłużnikowi, który może w terminie 15 dni wskazać przyczyny stojące na przeszkodzie uznaniu lub wykonaniu (§ 54 Kodeksu egzekucyjnego); uznania i wykonania można odmówić tylko z przyczyn określonych w § 50 ustawy. Jeżeli w państwie pochodzenia złożono wniosek o uchylenie wyroku sądu polubownego, słowacki sąd może na wniosek tego, kto wystąpił o uchylenie, odroczyć jego wykonalność (§ 48)."
+      }
+    ],
+    "relatedTitle": "Powiązane tematy",
+    "sourcesTitle": "Przepisy, na których opiera się ta strona",
+    "sourcesLead": "Pełne teksty aktów są dostępne w serwisach Slov-Lex i EUR-Lex. Kancelaria doradza wyłącznie w zakresie prawa Republiki Słowackiej; kwestiami prawa państwa pochodzenia tytułu zajmuje się miejscowy adwokat klienta. Powyższe informacje mają charakter ogólny i nie zastępują porady w indywidualnej sprawie.",
+    "sources": [
+      {
+        "label": "Ustawa nr 233/1995 Z. z. – słowacki Kodeks egzekucyjny (Exekučný poriadok)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1995/233/"
+      },
+      {
+        "label": "Ustawa nr 160/2015 Z. z. – słowacki Kodeks postępowania cywilnego spornego (Civilný sporový poriadok)",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2015/160/"
+      },
+      {
+        "label": "Ustawa nr 307/2016 Z. z. o postępowaniu upominawczym",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2016/307/"
+      },
+      {
+        "label": "Ustawa nr 244/2002 Z. z. o postępowaniu arbitrażowym",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2002/244/"
+      },
+      {
+        "label": "Ustawa nr 97/1963 Zb. o prawie prywatnym międzynarodowym i procesowym",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1963/97/"
+      },
+      {
+        "label": "Obwieszczenie (vyhláška) Ministra Spraw Zagranicznych nr 74/1959 Zb. – Konwencja o uznawaniu i wykonywaniu zagranicznych orzeczeń arbitrażowych",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1959/74/"
+      },
+      {
+        "label": "Ustawa nr 71/1992 Zb. o opłatach sądowych",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+      },
+      {
+        "label": "Ustawa nr 305/2013 Z. z. o e-Governmencie",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2013/305/"
+      },
+      {
+        "label": "Ustawa nr 7/2005 Z. z. o upadłości i restrukturyzacji",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/7/"
+      },
+      {
+        "label": "Rozporządzenie (vyhláška) Ministerstwa Sprawiedliwości Republiki Słowackiej nr 655/2004 Z. z. o wynagrodzeniach adwokatów",
+        "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/655/"
+      },
+      {
+        "label": "Rozporządzenie (UE) nr 1215/2012 – Bruksela I bis",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32012R1215"
+      },
+      {
+        "label": "Rozporządzenie (WE) nr 1896/2006 – europejski nakaz zapłaty",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32006R1896"
+      },
+      {
+        "label": "Rozporządzenie (WE) nr 805/2004 – europejski tytuł egzekucyjny",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32004R0805"
+      },
+      {
+        "label": "Rozporządzenie (WE) nr 861/2007 – europejskie postępowanie w sprawie drobnych roszczeń",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32007R0861"
+      },
+      {
+        "label": "Umowa o wystąpieniu Zjednoczonego Królestwa z Unii Europejskiej – art. 67 i 126",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:12019W/TXT(02)"
+      },
+      {
+        "label": "Decyzja Rady (UE) 2022/1206 – przystąpienie UE do haskiej Konwencji o uznawaniu i wykonywaniu zagranicznych orzeczeń",
+        "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/HTML/?uri=CELEX:32022D1206"
+      }
+    ]
   }
 }

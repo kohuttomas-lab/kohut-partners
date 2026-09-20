@@ -1,0 +1,498 @@
+/* Landing page /vymahanie-prepravnych-pohladavok (EN /transport-debt-recovery).
+   Drží vizuálnu paritu s kampaňovými stránkami: navy hero → svetlé sekcie
+   → tmavý pás s krokmi → formulár → FAQ. */
+
+/* ---------- Hero ---------- */
+
+.hero {
+  background: linear-gradient(135deg, var(--navy-800), var(--navy-900));
+  position: relative;
+  overflow: hidden;
+}
+
+.heroMark {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 300px;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  padding-block: 52px 64px;
+}
+
+.heroCopy {
+  max-width: 780px;
+}
+
+.h1 {
+  font-size: 44px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 4px 0 16px;
+  color: #fff;
+}
+
+.heroLead {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--navy-100);
+  margin: 0 0 20px;
+}
+
+.heroPara {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--navy-200);
+  margin: 0 0 14px;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 22px;
+  margin-top: 14px;
+}
+
+.heroCta {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: var(--radius-md);
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: filter var(--dur-fast) var(--ease-standard);
+}
+
+.heroCta:hover {
+  filter: brightness(0.92);
+  color: #fff;
+}
+
+.heroPhone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.heroPhone:hover {
+  color: var(--accent);
+}
+
+/* ---------- Sekcie ---------- */
+
+.section {
+  background: var(--color-surface);
+  padding: 78px 0;
+}
+
+.sectionAlt {
+  background: var(--color-bg);
+  padding: 78px 0;
+}
+
+/* ---------- Pre koho ---------- */
+
+.whoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--text-strong);
+  margin: 0 0 8px;
+}
+
+.cardDesc {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---------- Premlčanie / rozhodné právo / právomoc ---------- */
+
+.keyStack {
+  display: grid;
+  gap: 22px;
+}
+
+.keyItem {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: var(--color-surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--navy-800);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  padding: 24px 26px;
+}
+
+.keyIcon {
+  color: var(--navy-800);
+  display: inline-flex;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.keyTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-strong);
+  margin: 0 0 8px;
+}
+
+.keyDesc {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin: 0;
+}
+
+.keyNote {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 14px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- Postup ---------- */
+
+.steps {
+  background: linear-gradient(135deg, var(--navy-800), var(--navy-900));
+  position: relative;
+  overflow: hidden;
+  padding: 76px 0;
+}
+
+.stepsMark {
+  position: absolute;
+  left: -60px;
+  bottom: -60px;
+  height: 320px;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.stepsInner {
+  position: relative;
+}
+
+.stepGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px 26px;
+}
+
+.step {
+  min-width: 0;
+}
+
+.stepNum {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.stepTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16.5px;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+.stepDesc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--navy-200);
+  margin: 0;
+}
+
+/* ---------- Podklady ---------- */
+
+.docList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.docItem {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.docCheck {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ---------- Cena ---------- */
+
+.priceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.priceCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceLabel {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-strong);
+  margin: 0 0 6px;
+}
+
+.priceValue {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.priceDesc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.priceNote {
+  margin: 26px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 900px;
+}
+
+/* ---------- Formulár ---------- */
+
+.formSection {
+  background: var(--color-surface);
+  padding: 78px 0;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 90px;
+}
+
+.formInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.formTitle {
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-strong);
+  margin: 6px 0 14px;
+}
+
+.formLead {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin: 0;
+}
+
+.formContact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.formContact a {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.formContact a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Súvisiace + zdroje ---------- */
+
+.related {
+  margin-top: 40px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.relatedHead {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.relatedLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.relatedLinks a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.relatedLinks a:hover {
+  text-decoration: underline;
+}
+
+.sources {
+  margin-top: 34px;
+  padding: 24px 26px;
+  background: var(--color-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.sourcesTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-strong);
+  margin: 0 0 8px;
+}
+
+.sourcesLead {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0 0 14px;
+}
+
+.sourceList {
+  display: grid;
+  gap: 7px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sourceList a {
+  color: var(--text-body);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.sourceList a:hover {
+  color: var(--accent);
+  border-bottom-color: currentColor;
+}
+
+/* ---------- Responzívne ---------- */
+
+@media (max-width: 980px) {
+  .stepGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .priceGrid {
+    grid-template-columns: 1fr;
+  }
+  .formInner {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  .h1 {
+    font-size: 32px;
+  }
+  .heroLead {
+    font-size: 17.5px;
+  }
+  .heroInner {
+    padding-block: 40px 48px;
+  }
+  .section,
+  .sectionAlt,
+  .formSection {
+    padding: 56px 0;
+  }
+  .steps {
+    padding: 60px 0;
+  }
+  .whoGrid,
+  .stepGrid,
+  .docList {
+    grid-template-columns: 1fr;
+  }
+  .keyItem {
+    padding: 20px 20px;
+    gap: 14px;
+  }
+  .formTitle {
+    font-size: 28px;
+  }
+}

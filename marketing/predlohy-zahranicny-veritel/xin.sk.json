@@ -1,0 +1,207 @@
+{
+  "navLabel": "Konkurz slovenského odberateľa",
+  "metaTitle": "Prihláška pohľadávky do konkurzu na Slovensku — zahraničný veriteľ",
+  "metaDescription": "Slovenský odberateľ v konkurze alebo reštrukturalizácii: lehota 45 alebo 30 dní, prihláška u správcu, popretie pohľadávky. Advokátska kancelária Zvolen.",
+  "heroOverline": "Insolvencia slovenského dlžníka",
+  "heroTitle": "Váš slovenský odberateľ je v konkurze alebo reštrukturalizácii",
+  "heroLead": "Od zverejnenia v slovenskom insolvenčnom registri plynie lehota na prihlásenie pohľadávky: 45 dní v konkurze, 30 dní v reštrukturalizácii. Overíme stav konania, pripravíme a podáme prihlášku a zastupujeme vás voči správcovi, pred súdom a na schôdzi veriteľov.",
+  "heroPara": [
+    "Zastupujeme zahraničné firmy, ktorým slovenský odberateľ neuhradil faktúry za tovar, prepravu alebo práce a na ktorého majetok slovenský súd vyhlásil konkurz, povolil reštrukturalizáciu alebo — ak ide o fyzickú osobu — rozhodol o oddlžení. Advokát kancelárie je zapísaný v zozname správcov, ktorý vedie Ministerstvo spravodlivosti Slovenskej republiky.",
+    "Komunikujeme po slovensky a po anglicky a celú vec vieme viesť na diaľku."
+  ],
+  "heroCta": "Poslať vec na posúdenie",
+  "whoOverline": "Pre koho",
+  "whoTitle": "Komu táto stránka pomôže",
+  "whoLead": "Zastupujeme zahraničných veriteľov v konaniach, ktoré vedie slovenský súd podľa zákona č. 7/2005 Z. z. o konkurze a reštrukturalizácii. Radíme výlučne v slovenskom práve; otázky, ktoré sa spravujú právom inej krajiny — napríklad platnosť zmluvy alebo výhrady vlastníctva podľa cudzieho práva —, riešime v spolupráci s advokátom klienta v jeho krajine.",
+  "who": [
+    {
+      "title": "Dodávatelia s neuhradenými faktúrami",
+      "desc": "Tovar, preprava, stavebné subdodávky či služby dodané slovenskej firme, ktorá je v konkurze alebo reštrukturalizácii. Pohľadávka, ktorá vznikla pred vyhlásením konkurzu, sa uplatňuje prihláškou u správcu — súdny spor o ňu sa prerušuje a exekúcia sa zastavuje."
+    },
+    {
+      "title": "Dodávatelia s výhradou vlastníctva",
+      "desc": "Tovar, ktorý má podľa zmluvy zostať vaším vlastníctvom až do úplného zaplatenia a nachádza sa u dlžníka. Treba sa rozhodnúť medzi vylúčením veci zo súpisu majetku a prihláškou, ktorá vám dá postavenie obdobné zabezpečenému veriteľovi."
+    },
+    {
+      "title": "Veritelia so zabezpečením",
+      "desc": "Záložné právo k majetku dlžníka, ručenie tretej osoby alebo iné zabezpečenie. Zabezpečovacie právo k majetku dlžníka treba uplatniť priamo v prihláške a v základnej lehote, inak sa naň v konkurze neprihliada. Nároky voči ručiteľom zostávajú zachované aj po potvrdení reštrukturalizačného plánu (§ 155 ods. 4) a po oddlžení dlžníka (§ 166e ods. 3)."
+    },
+    {
+      "title": "Veritelia živnostníka v oddlžení",
+      "desc": "Dlžníkom je fyzická osoba – podnikateľ (na Slovensku typicky živnostník), ktorá sa domáha oddlženia. Oddlženie sa vzťahuje aj na pohľadávky, ktoré veriteľ neprihlásil: kto sa neprihlási, z konkurzu nedostane nič a neuspokojená časť pohľadávky sa voči dlžníkovi stane nevymáhateľnou."
+    }
+  ],
+  "keyOverline": "Na čom to stojí",
+  "keyTitle": "Lehoty a pravidlá, ktoré rozhodujú",
+  "keyLead": "Slovenské právo pozná tri kolektívne konania, s ktorými sa zahraničný veriteľ stretáva: konkurz (majetok dlžníka sa speňaží a veritelia sa uspokoja pomerne), reštrukturalizáciu (podnik pokračuje a veritelia sa uspokojujú podľa plánu, o ktorom hlasujú a ktorý potvrdzuje súd) a oddlženie fyzickej osoby. Všetky tri upravuje zákon č. 7/2005 Z. z. o konkurze a reštrukturalizácii a všetky tri sú insolvenčnými konaniami podľa prílohy A nariadenia Európskeho parlamentu a Rady (EÚ) 2015/848 o insolvenčnom konaní. Podľa čl. 7 nariadenia sa konanie a jeho účinky spravujú právom štátu, v ktorom sa začalo — pravidlá prihlasovania, overovania a poradia pohľadávok sú teda slovenské aj vtedy, keď sa samotná zmluva s odberateľom spravuje iným právom. V každom konaní súd ustanoví správcu: osobu zapísanú v zozname správcov vedenom ministerstvom spravodlivosti, ktorá v konkurze spravuje majetok dlžníka, v reštrukturalizácii vykonáva dohľad nad jeho podnikaním (§ 129 ods. 1) a preskúmava prihlásené pohľadávky. Rozhodnutia a písomnosti súdu a správcu sa podľa § 199 ods. 1 zákona doručujú zverejnením v insolvenčnom registri, verejne prístupnom na webovom sídle ministerstva. Lehoty na prihlásenie sa počítajú od tohto zverejnenia, nie od okamihu, keď sa veriteľ o konaní dozvedel: základná lehota je 45 dní od vyhlásenia konkurzu a 30 dní od povolenia reštrukturalizácie.",
+  "key": [
+    {
+      "title": "Konkurz: 45 dní od zverejnenia v insolvenčnom registri",
+      "desc": "Podľa § 28 ods. 2 zákona č. 7/2005 Z. z. sa prihláška podáva v základnej prihlasovacej lehote do 45 dní od vyhlásenia konkurzu. Konkurz je podľa § 23 ods. 1 vyhlásený zverejnením uznesenia o vyhlásení konkurzu v insolvenčnom registri; podľa § 199 ods. 7 sa písomnosť považuje za zverejnenú nasledujúci deň po jej zverejnení v registri. Deň, ktorý určuje začiatok lehoty, sa do nej nezapočítava, a ak posledný deň pripadne na sobotu, nedeľu alebo sviatok, je posledným dňom lehoty najbližší nasledujúci pracovný deň (§ 203a ods. 1 a 2). Pre zahraničného veriteľa je podstatné pravidlo § 203a ods. 3: lehota je zachovaná, ak je podanie najneskôr v posledný deň lehoty doručené tomu, komu je určené — nestačí ho v ten deň odoslať. Odpustenie zmeškania lehoty zákon v § 197 ods. 3 nepripúšťa. Prihláška doručená po lehote sa nestráca: podľa § 28 ods. 3 sa na ňu prihliada, veriteľ však nemôže vykonávať hlasovacie právo ani ďalšie práva spojené s prihlásenou pohľadávkou a môže byť uspokojený len z výťažku zaradeného do rozvrhu zo všeobecnej podstaty, ktorého zámer zostaviť bol v insolvenčnom registri oznámený až po doručení prihlášky. Na rozvrhoch oznámených skôr sa teda nepodieľa.",
+      "note": "Podanie, ktorým bola pohľadávka uplatnená, nemožno podľa § 30 ods. 2 zákona opraviť ani doplniť, a na prihlášku, ktorá nebola podaná predpísaným spôsobom alebo neobsahuje základné náležitosti, sa podľa § 29 ods. 1 neprihliada. Nová prihláška podaná po uplynutí základnej lehoty je už oneskorenou prihláškou s následkami podľa § 28 ods. 3. Prihlášku preto neodporúčame pripravovať v posledných dňoch lehoty."
+    },
+    {
+      "title": "Komu, akou formou a v akom jazyku",
+      "desc": "Prihláška sa nepodáva súdu, ale správcovi. Všeobecne sa podáva výlučne elektronicky, autorizovaným formulárom do elektronickej schránky správcu. Pre zahraničného veriteľa v zmysle čl. 2 bodu 12 nariadenia (EÚ) 2015/848 — veriteľa s obvyklým pobytom, bydliskom alebo registrovaným sídlom v inom členskom štáte — ustanovuje § 28 ods. 2 zákona osobitný režim: prihláška sa podáva u správcu a na doručovanie sa primerane použije Civilný sporový poriadok; rovnako podáva prihlášku veriteľ so sídlom mimo členských štátov. Nariadenie k tomu pridáva tri záruky. Podľa čl. 53 môže zahraničný veriteľ prihlásiť pohľadávku akýmikoľvek komunikačnými prostriedkami prípustnými podľa práva štátu, v ktorom sa konanie začalo, a na samotné prihlásenie sa nevyžaduje zastúpenie advokátom. Podľa čl. 55 ods. 1 môže použiť štandardný formulár „Prihláška pohľadávok“, ustanovený v prílohe II vykonávacieho nariadenia Komisie (EÚ) 2017/1105; ak ho nepoužije, prihláška musí podľa čl. 55 ods. 4 obsahovať údaje vymenované v čl. 55 ods. 2. A podľa čl. 55 ods. 5 možno pohľadávku prihlásiť v ktoromkoľvek úradnom jazyku inštitúcií Únie, súd alebo správca však môže požadovať preklad do slovenčiny. Základnými náležitosťami prihlášky sú podľa § 29 ods. 1 zákona označenie veriteľa a úpadcu, právny dôvod vzniku pohľadávky, poradie uspokojovania zo všeobecnej podstaty a celková suma pohľadávky, ktorá sa podľa § 29 ods. 4 rozdelí na istinu a príslušenstvo a príslušenstvo ďalej podľa právneho dôvodu vzniku. Pohľadávka sa uplatňuje v eurách; ak sa uplatní v inej mene, sumu určí správca prepočtom podľa referenčného výmenného kurzu určeného a vyhláseného Európskou centrálnou bankou alebo Národnou bankou Slovenska v deň vyhlásenia konkurzu (§ 29 ods. 5). K prihláške sa pripájajú listiny preukazujúce uvedené skutočnosti a veriteľ, ktorý je účtovnou jednotkou, v nej vyhlási, či a v akom rozsahu o pohľadávke účtuje (§ 29 ods. 6).",
+      "note": "Veriteľ, ktorý nemá na území Slovenskej republiky obvyklý pobyt, bydlisko ani sídlo, je podľa § 29 ods. 8 zákona povinný ustanoviť si zástupcu na doručovanie s bydliskom, obvyklým pobytom alebo sídlom na Slovensku a oznámiť to správcovi — inak sa mu písomnosti doručujú zverejnením v insolvenčnom registri. Ak prihlášku podáva zástupca a plnomocenstvo k nej nie je pripojené, na prihlášku sa podľa § 28 ods. 2 neprihliada. Právo prihlásiť sa bez advokáta podľa čl. 53 nariadenia sa týka len samotného prihlásenia pohľadávky."
+    },
+    {
+      "title": "Čo konkurz mení na vymáhaní: spory, exekúcie, započítanie, zabezpečenie",
+      "desc": "Vyhlásením konkurzu sa podľa § 47 ods. 1 zákona prerušujú všetky súdne a iné konania, ktoré sa týkajú majetku podliehajúceho konkurzu patriaceho úpadcovi — teda aj spor, v ktorom zahraničný dodávateľ žaluje o zaplatenie faktúr. Podľa § 48 nemožno na majetok podliehajúci konkurzu počas konkurzu začať exekučné konanie a už začaté exekučné konania sa vyhlásením konkurzu zastavujú; ak exekútor majetok už speňažil, ale výťažok oprávnenému ešte nevyplatil, výťažok sa stáva súčasťou konkurznej podstaty. Pohľadávka sa odvtedy uplatňuje prihláškou (§ 28 ods. 1) a podanie prihlášky má podľa § 28 ods. 6 pre plynutie premlčacej lehoty a zánik práva rovnaké účinky ako uplatnenie práva na súde. Započítanie konkurz nevylučuje úplne, ale obmedzuje: podľa § 54 ods. 1 nemožno pohľadávku, ktorá vznikla voči úpadcovi pred vyhlásením konkurzu, započítať proti pohľadávke, ktorá úpadcovi vznikla až po ňom, a podľa § 54 ods. 2 nemožno proti žiadnej úpadcovej pohľadávke započítať pohľadávku, ktorá nebola prihlásená. Kto chce započítavať, musí sa teda najprv prihlásiť. Zabezpečený veriteľ musí v prihláške riadne a včas — v základnej lehote 45 dní — uplatniť aj zabezpečovacie právo, inak sa naň v konkurze neprihliada (§ 28 ods. 4); pre každú zabezpečenú pohľadávku sa podáva samostatná prihláška s uvedením zabezpečenej sumy, druhu, poradia, predmetu a právneho dôvodu vzniku zabezpečovacieho práva (§ 29 ods. 2). Prihlásiť sa musí aj veriteľ, ktorého pohľadávka smeruje voči inej osobe, no je zabezpečená majetkom úpadcu (§ 28 ods. 7 a 8).",
+      "note": "Prihláškou možno podľa § 28 ods. 5 uplatniť aj budúcu alebo podmienenú pohľadávku — napríklad nárok z odstúpenia od zmluvy podľa § 45 ods. 2 zákona; v prihláške musí byť uvedená skutočnosť alebo podmienka, od ktorej vznik pohľadávky závisí (§ 29 ods. 3). Zmluvná pokuta a pohľadávka veriteľa, ktorý je alebo kedykoľvek od vzniku pohľadávky bol spriaznený s úpadcom — napríklad spoločníka s kvalifikovanou účasťou aspoň 5 % podľa § 9 —, sa podľa § 95 ods. 3 uspokojujú až ako podriadené pohľadávky a na ich zabezpečenie sa v konkurze neprihliada. Pri majetku, ktorý sa v čase začatia konania nachádzal v inom členskom štáte, chránia vecné práva veriteľov a výhradu vlastníctva čl. 8 a čl. 10 nariadenia (EÚ) 2015/848."
+    },
+    {
+      "title": "Popretie pohľadávky a incidenčná žaloba",
+      "desc": "Správca každú prihlásenú pohľadávku preskúma a porovná s účtovníctvom a dokumentáciou dlžníka (§ 32 ods. 1). Poprieť ju môže správca aj iný prihlásený veriteľ — čo do právneho dôvodu, vymáhateľnosti, výšky, poradia, zabezpečenia alebo poradia zabezpečovacieho práva (§ 32 ods. 2) —, a to do 30 dní od uplynutia základnej prihlasovacej lehoty, pri oneskorenej prihláške do 30 dní od jej zapísania do zoznamu pohľadávok (§ 32 ods. 3); správcovi môže súd lehotu aj opakovane predĺžiť, vždy najviac o 30 dní (§ 32 ods. 4). Pohľadávka, ktorá v lehote popretá nebola, sa považuje za zistenú (§ 32 ods. 16). Veriteľ popretej pohľadávky sa musí jej určenia domáhať žalobou na súde proti všetkým, ktorí ju popreli, do 30 dní od zverejnenia popretia v zozname pohľadávok, inak toto právo zanikne (§ 32 ods. 8) a správca v rozsahu popretia vyznačí zánik jeho postavenia účastníka konania (§ 27 ods. 2 písm. c)). Lehota je zachovaná aj vtedy, ak bola žaloba podaná včas na nepríslušnom súde. V žalobe sa možno domáhať najviac toho, čo bolo uvedené v prihláške (§ 32 ods. 13). Lehota plynie od zverejnenia popretia v zozname pohľadávok v insolvenčnom registri, nie od doručenia listu veriteľovi — register preto treba po uplynutí prihlasovacej lehoty sledovať.",
+      "note": "Ak pohľadávku poprel iba iný veriteľ, je podmienkou podania žaloby riadne a včasné zloženie preddavku na trovy konania (§ 32 ods. 10): dve percentá zo sumy spornej pohľadávky, pri popretí len čo do výšky dve percentá z popretej sumy, najmenej 350 eur a najviac 10 000 eur (§ 32 ods. 19). Preddavok v rovnakej výške skladá aj veriteľ, ktorý popiera cudziu pohľadávku (§ 32 ods. 6 písm. b)). Ten, kto poprel pohľadávku, ktorú súd čo i len čiastočne potvrdil, zodpovedá jej veriteľovi za škodu spôsobenú popretím, ibaže preukáže, že konal s odbornou starostlivosťou (§ 32 ods. 5). Pri pohľadávke priznanej vykonateľným rozhodnutím alebo zabezpečenej registrovaným záložným právom možno prostredníctvom správcu požiadať súd o priznanie hlasovacích práv aj počas sporu (§ 32a)."
+    },
+    {
+      "title": "Reštrukturalizácia: 30 dní a žiadna oneskorená prihláška",
+      "desc": "V reštrukturalizácii sa prihláška musí podať do 30 dní od povolenia reštrukturalizácie, inak sa na ňu neprihliada (§ 121); reštrukturalizácia je povolená zverejnením uznesenia v insolvenčnom registri (§ 118 ods. 1). Na rozdiel od konkurzu tu oneskorené prihlásenie neexistuje. Následok je prísny: podľa § 120 ods. 1 a § 155 ods. 2 zverejnením uznesenia o potvrdení plánu zaniká právo veriteľa, ktorý pohľadávku riadne a včas neprihlásil, vymáhať ju voči dlžníkovi, a zanikajú aj riadne a včas neprihlásené zabezpečovacie práva k majetku dlžníka. Prihláškou sa neuplatňujú len takzvané prednostné pohľadávky, najmä tie, ktoré vznikli až počas reštrukturalizačného konania (§ 120 ods. 2). Spôsob podania je rovnaký ako v konkurze (§ 121) a náležitosti prihlášky sa spravujú primerane § 29 ods. 1 až 6 a 8 — teda aj pravidlom o prepočte cudzej meny a o zástupcovi na doručovanie (§ 122 ods. 1); zabezpečovacie právo neuplatnené v prihláške znamená, že pohľadávka sa v reštrukturalizácii považuje za nezabezpečenú. Už začatie reštrukturalizačného konania — teda ešte pred povolením reštrukturalizácie — má účinky, ktoré dodávateľ pocíti okamžite (§ 114 ods. 1): pre pohľadávku, ktorá sa uplatňuje prihláškou, nemožno začať exekúciu a začaté exekúcie sa prerušujú, takúto pohľadávku nemožno voči dlžníkovi započítať a druhá zmluvná strana nemôže zmluvu vypovedať ani od nej odstúpiť pre omeškanie dlžníka s plnením, na ktoré jej vznikol nárok pred začatím konania; neúčinné sú aj zmluvné dojednania, ktoré by umožňovali ukončiť zmluvu z dôvodu reštrukturalizačného alebo konkurzného konania. Kto má podľa zmluvy plniť vopred, môže plnenie odoprieť, kým sa mu vzájomné plnenie neposkytne alebo nezabezpečí (§ 114 ods. 3). Povolením reštrukturalizácie sa prerušujú súdne a rozhodcovské konania o prihlasovaných pohľadávkach (§ 118 ods. 4).",
+      "note": "Pohľadávku môže v reštrukturalizácii poprieť len správca, do 30 dní od uplynutia lehoty na prihlasovanie (§ 124 ods. 2). Veriteľ popretej pohľadávky musí do 30 dní od uplynutia lehoty na popieranie podať žalobu proti dlžníkovi (§ 124 ods. 4), inak sa na pohľadávku v popretom rozsahu neprihliada a po potvrdení plánu ju v tomto rozsahu nemožno voči dlžníkovi vymáhať (§ 124 ods. 5). O pláne hlasujú veritelia na schvaľovacej schôdzi po skupinách; potrebné väčšiny ustanovuje § 148. Súd plán zamietne okrem iného vtedy, ak má byť niektorá nezabezpečená pohľadávka — s výnimkou tých, ktoré by sa v konkurze uspokojovali ako podriadené — uspokojená na menej ako 50 % alebo v čase dlhšom ako päť rokov, ibaže dotknutý veriteľ písomne súhlasí (§ 154 ods. 1 písm. g) a h)). Práva voči spoludlžníkom a ručiteľom dlžníka zostávajú plánom nedotknuté (§ 155 ods. 4)."
+    },
+    {
+      "title": "Dlžníkom je živnostník alebo malá firma: oddlženie a malý konkurz",
+      "desc": "Ak je dlžníkom fyzická osoba — aj podnikateľ, na Slovensku typicky živnostník —, môže sa podľa § 166 ods. 1 zákona domáhať oddlženia konkurzom alebo splátkovým kalendárom bez ohľadu na to, či jej záväzky pochádzajú z podnikania. Pohľadávky, ktoré vznikli pred kalendárnym mesiacom, v ktorom bol vyhlásený konkurz alebo poskytnutá ochrana pred veriteľmi, môžu byť uspokojené len v konkurze alebo splátkovým kalendárom a v konkurze sa uplatňujú prihláškou (§ 166a). Súd o oddlžení rozhoduje už v uznesení o vyhlásení konkurzu alebo o určení splátkového kalendára (§ 166e ods. 1) a podľa § 166e ods. 2 sa tieto pohľadávky stávajú voči dlžníkovi nevymáhateľnými bez ohľadu na to, či boli alebo neboli prihlásené. Výnimka pre veriteľa, ktorého správca o vyhlásení konkurzu písomne neupovedomil, sa podľa § 166c ods. 1 písm. a) týka len veriteľov – fyzických osôb; zahraničná obchodná spoločnosť sa jej nedovolá. Prihláška sa podáva v základnej lehote 45 dní od vyhlásenia konkurzu; neskôr sa možno prihlásiť až dovtedy, kým správca nezverejní oznámenie, že ide zostaviť rozvrh, veriteľ však nemôže vykonávať hlasovacie právo (§ 167l ods. 1 a 3). Súdne konania o takýchto pohľadávkach súd zastaví (§ 167e ods. 1) a exekúciu na majetok podliehajúci konkurzu nemožno začať ani viesť (§ 167f ods. 1).",
+      "note": "V oddlžení je podľa § 166b ods. 1 voči dlžníkovi nevymáhateľné okrem iného príslušenstvo presahujúce 5 % istiny za každý kalendárny rok existencie pohľadávky a zmluvné pokuty. Zabezpečená pohľadávka zostáva oddlžením nedotknutá v rozsahu, v akom je krytá hodnotou predmetu zabezpečovacieho práva (§ 166c ods. 1 písm. c)), a voči ručiteľovi zostáva pohľadávka vymáhateľná (§ 166e ods. 3). Veriteľ dotknutý oddlžením sa môže do šiestich rokov od vyhlásenia konkurzu alebo určenia splátkového kalendára domáhať zrušenia oddlženia, ak preukáže, že dlžník nemal poctivý zámer (§ 166f ods. 1). Malý konkurz je zjednodušený konkurz právnickej osoby, ktorej záväzky ani majetok podľa posledných piatich účtovných závierok nepresiahli 1 000 000 eur (§ 106c ods. 1 písm. f) a g)); že ide o malý konkurz, uvedie súd vo výroku uznesenia (§ 106c ods. 4). Na prihlasovanie a popieranie pohľadávok sa v ňom primerane použije § 167l (§ 106h) — pohľadávku teda môže poprieť len iný prihlásený veriteľ (§ 167l ods. 5). Prihlásený veriteľ môže do šiestich mesiacov od vyhlásenia malého konkurzu zložením preddavku dosiahnuť, aby súd vyhlásil konkurz podľa všeobecných ustanovení (§ 106j ods. 1)."
+    }
+  ],
+  "stepsOverline": "Postup",
+  "stepsTitle": "Ako to prebieha",
+  "steps": [
+    {
+      "title": "Overenie stavu konania",
+      "desc": "V slovenskom insolvenčnom registri overíme, aké konanie sa vedie — konkurz, malý konkurz, reštrukturalizácia alebo oddlženie —, kedy bolo uznesenie zverejnené, kto je správcom a kedy uplynie lehota na prihlásenie. Povinné údaje o konaní vrátane lehoty na prihlasovanie pohľadávok majú byť podľa čl. 24, 25 a 27 nariadenia (EÚ) 2015/848 bezodplatne dostupné aj cez Európsky portál elektronickej justície, s vyhľadávaním vo všetkých úradných jazykoch inštitúcií Únie. Na individuálny oznam od správcu podľa čl. 54 nariadenia neodporúčame čakať: lehoty podľa slovenského zákona plynú od zverejnenia v registri. Zároveň zistíme, aký vplyv má konanie na váš súdny spor alebo exekúciu proti dlžníkovi."
+    },
+    {
+      "title": "Výpočet pohľadávky a prihláška",
+      "desc": "Vyčíslime istinu a príslušenstvo podľa právneho dôvodu, prepočítame cudziu menu na eurá, určíme poradie a — ak máte zabezpečenie alebo výhradu vlastníctva — dohodneme s vami, ako ho uplatniť. Prihlášku s prílohami a plnomocenstvom doručíme správcovi tak, aby mu došla pred uplynutím lehoty. Ako kancelária so sídlom na Slovensku môžeme byť aj vaším zástupcom na doručovanie podľa § 29 ods. 8 zákona."
+    },
+    {
+      "title": "Preskúmanie pohľadávok a obrana pri popretí",
+      "desc": "Počas lehoty na popieranie sledujeme zoznam pohľadávok v insolvenčnom registri a komunikujeme so správcom. Ak je pohľadávka popretá, podáme v 30-dňovej lehote žalobu o jej určenie. Ak je na to dôvod, navrhneme vám popretie pohľadávok iných veriteľov, ktoré neodôvodnene znižujú váš podiel; je spojené so zložením preddavku na trovy konania."
+    },
+    {
+      "title": "Schôdza veriteľov a veriteľský výbor",
+      "desc": "Prvú schôdzu veriteľov zvoláva správca do 55 dní od vyhlásenia konkurzu tak, aby sa konala najskôr 30 a najneskôr 45 dní po uplynutí lehoty na popieranie pohľadávok (§ 34 ods. 1). Hlasuje veriteľ, ktorého pohľadávka je zistená čo do právneho dôvodu a vymáhateľnosti — na každé euro zistenej sumy jeden hlas (§ 35 ods. 4). Schôdza rozhoduje o výmene správcu (§ 36) a volí troj- alebo päťčlenný veriteľský výbor (§ 37 ods. 1), ktorý správcovi ukladá záväzné pokyny k správe a speňažovaniu majetku všeobecnej podstaty (§ 82). Na schôdzi vás zastúpime; zákon pripúšťa aj schôdzu prostredníctvom videokonferencie (§ 34 ods. 5). V reštrukturalizácii zastupujeme veriteľa na schôdzi veriteľov (§ 126) a pri hlasovaní o pláne na schvaľovacej schôdzi (§ 147 a 148)."
+    },
+    {
+      "title": "Rozvrh a výplata",
+      "desc": "Pred zostavením rozvrhu správca zverejní oznam o zámere zostaviť rozvrh (§ 96 ods. 2); na základe schváleného rozvrhu vydá veriteľom nespornú časť výťažku (§ 96 ods. 5). Skontrolujeme, či je vaša pohľadávka v rozvrhu zaradená v správnej výške a poradí, a odovzdáme správcovi údaje potrebné na výplatu do zahraničia. Náklady uspokojenia pohľadávky znáša podľa § 96 ods. 7 veriteľ sám."
+    }
+  ],
+  "docsOverline": "Podklady",
+  "docsTitle": "Čo od vás potrebujeme",
+  "docsLead": "Pošlite, čo máte k dispozícii, ako skeny alebo fotografie; originály zatiaľ netreba. Dokumenty môžu byť vo vašom jazyku — povieme vám, ktoré z nich bude potrebné preložiť do slovenčiny.",
+  "docs": [
+    "Zmluvu, rámcovú zmluvu alebo objednávky vrátane obchodných podmienok — najmä dojednania o rozhodnom práve, splatnosti, úrokoch z omeškania a výhrade vlastníctva.",
+    "Neuhradené faktúry a doklady o dodaní: dodacie listy, nákladné listy CMR, preberacie protokoly, súpisy vykonaných prác.",
+    "Prehľad úhrad a zostatok pohľadávky z vášho účtovníctva — prihláška obsahuje vyhlásenie, či a v akom rozsahu o pohľadávke účtujete.",
+    "Súdne rozhodnutia, platobné rozkazy a iné exekučné tituly proti dlžníkovi a informáciu o prebiehajúcich sporoch a exekúciách.",
+    "Doklady o zabezpečení: záložnú zmluvu a potvrdenie o registrácii záložného práva, ručiteľské vyhlásenie, pri výhrade vlastníctva aj presnú identifikáciu tovaru a miesta, kde sa nachádza.",
+    "Uznania dlhu, splátkové dohody, vzájomné zápočty a korešpondenciu s dlžníkom o pohľadávke.",
+    "Všetko, čo vám prišlo od správcu alebo súdu — najmä „Oznam o insolvenčnom konaní“ podľa čl. 54 nariadenia (EÚ) 2015/848.",
+    "Výpis z obchodného alebo obdobného registra vašej spoločnosti a údaje o osobe, ktorá podpíše plnomocenstvo."
+  ],
+  "priceOverline": "Cena",
+  "priceTitle": "Koľko to stojí",
+  "priceLead": "Rozsah aj odmenu dohodneme vopred a písomne. Cenu za overenie konania aj za prihlášku poznáte skôr, než začneme pracovať.",
+  "price": [
+    {
+      "label": "Overenie konania a posúdenie veci",
+      "value": "pevná cena dohodnutá vopred",
+      "desc": "Overíme stav konania v insolvenčnom registri, vypočítame lehotu, prejdeme podklady a napíšeme, aký postup navrhujeme. Cenu vám oznámime pred začatím práce; ak sa rozhodnete nepokračovať, vec sa tým končí."
+    },
+    {
+      "label": "Prihláška pohľadávky",
+      "value": "pevná cena za úkon",
+      "desc": "Vyčíslenie pohľadávky, príprava prihlášky s prílohami a jej doručenie správcovi, vrátane uplatnenia zabezpečovacieho práva. Dohodnutá pevnou sumou za úkon, nie hodinovou sadzbou."
+    },
+    {
+      "label": "Incidenčný spor a ďalšie zastupovanie",
+      "value": "pevná cena alebo podielová odmena",
+      "desc": "Podielovú odmenu možno podľa § 7 ods. 1 vyhlášky Ministerstva spravodlivosti SR č. 655/2004 Z. z. dohodnúť vo forme percentuálneho podielu na hodnote veci; podľa § 7 ods. 2 nesmie jej maximálna výška presiahnuť 20 % z hodnoty veci. Nárok na ňu vzniká podľa § 8 ods. 1 vyhlášky len vtedy, ak mal klient plný úspech vo veci; pri čiastočnom úspechu patrí advokátovi podľa § 8 ods. 2 tarifná odmena vo výške určenej podľa miery úspechu vo veci, a ak klient nemal ani čiastočný úspech, advokát môže podľa § 8 ods. 3 požadovať iba náhradu hotových výdavkov."
+    }
+  ],
+  "priceNote": "Popri odmene advokáta vznikajú hotové výdavky, najmä preklady do slovenčiny, ak ich správca alebo súd vyžiada (čl. 55 ods. 5 nariadenia (EÚ) 2015/848). Žalobca v konaní o určení popretej pohľadávky a žalobca v konaní o vylúčení majetku zo súpisu sú podľa § 4 ods. 2 písm. t) a q) zákona č. 71/1992 Zb. o súdnych poplatkoch od súdneho poplatku oslobodení. Ak pohľadávku poprel iba iný veriteľ, treba však pred podaním žaloby zložiť preddavok na trovy konania vo výške dvoch percent zo spornej sumy, najmenej 350 eur a najviac 10 000 eur (§ 32 ods. 10 a 19 zákona č. 7/2005 Z. z.). Úspešnej zastúpenej strane patrí v tomto konaní náhrada tarifnej odmeny ako pri zastupovaní v exekúcii (§ 32 ods. 11). Výsledok konania závisí od okolností konkrétneho prípadu, najmä od majetku dlžníka, výšky ostatných pohľadávok a poradia vašej pohľadávky.",
+  "formOverline": "Bez záväzku",
+  "formTitle": "Pošlite nám údaje o dlžníkovi a pohľadávke",
+  "formLead": "Napíšte nám, kto je dlžník, akú pohľadávku voči nemu máte a čo ste sa o konaní dozvedeli — ak ho poznáte, aj dátum zverejnenia v insolvenčnom registri. Lehoty sú krátke a ich zmeškanie zákon nedovoľuje odpustiť, preto odporúčame napísať bez odkladu. Ozveme sa a navrhneme ďalší postup. Odoslanie formulára nezakladá poskytnutie právnej služby ani vznik zmluvného vzťahu.",
+  "faqOverline": "Otázky a odpovede",
+  "faqTitle": "Časté otázky",
+  "faq": [
+    {
+      "q": "Dozvedeli sme sa o konkurze neskoro. Je po lehote?",
+      "a": "Závisí od druhu konania. V konkurze právnickej osoby sa na prihlášku doručenú po 45-dňovej lehote prihliada, veriteľ však podľa § 28 ods. 3 zákona č. 7/2005 Z. z. nemôže vykonávať hlasovacie právo ani ďalšie práva spojené s pohľadávkou a podieľa sa len na rozvrhoch zo všeobecnej podstaty, ktorých zámer bol v insolvenčnom registri oznámený po doručení prihlášky; na zabezpečovacie právo uplatnené po lehote sa neprihliada (§ 28 ods. 4). V konkurze fyzickej osoby a v malom konkurze sa možno prihlásiť, kým správca nezverejní oznámenie, že ide zostaviť rozvrh (§ 167l ods. 1). V reštrukturalizácii sa na prihlášku podanú po 30 dňoch neprihliada (§ 121) a po potvrdení plánu nemožno pohľadávku voči dlžníkovi vymáhať (§ 155 ods. 2). Odpustenie zmeškania lehoty zákon nepripúšťa (§ 197 ods. 3). Nariadenie (EÚ) 2015/848 ukladá súdu alebo správcovi povinnosť okamžite informovať známych zahraničných veriteľov individuálnym oznamom, v ktorom sú uvedené aj lehoty (čl. 54), a v čl. 55 ods. 6 ustanovuje, že lehota pre zahraničného veriteľa nesmie byť kratšia ako 30 dní od uverejnenia oznamu o začatí konania v insolvenčnom registri; samotnú lehotu však ponecháva na práve štátu, v ktorom sa konanie začalo. Aký význam má v konkrétnej veci to, že oznam neprišiel, treba posúdiť individuálne — ozvite sa preto hneď, ako sa o konaní dozviete."
+    },
+    {
+      "q": "Môžeme prihlášku podať v poľštine alebo v angličtine?",
+      "a": "Podľa čl. 55 ods. 5 nariadenia (EÚ) 2015/848 možno pohľadávky prihlasovať v ktoromkoľvek úradnom jazyku inštitúcií Únie; poľština aj angličtina medzi ne podľa čl. 1 nariadenia č. 1 z roku 1958 patria. Súd alebo správca však môže od veriteľa požadovať preklad do úradného jazyka štátu, v ktorom sa konanie začalo, teda do slovenčiny. Štandardný formulár „Prihláška pohľadávok“ je prílohou II vykonávacieho nariadenia Komisie (EÚ) 2017/1105 a jeho použitie je právom, nie povinnosťou veriteľa (čl. 55 ods. 1 a 4). Tieto pravidlá sa vzťahujú na veriteľov z iných členských štátov Únie. My pripravujeme prihlášku v slovenčine, aby správca preklad žiadať nemusel a aby obsahovala aj údaje, ktoré vyžaduje slovenský zákon — právny dôvod vzniku pohľadávky, poradie, rozdelenie na istinu a príslušenstvo a vyhlásenie o účtovaní pohľadávky (§ 29 zákona č. 7/2005 Z. z.)."
+    },
+    {
+      "q": "Naša pohľadávka je v zlotých, českých korunách alebo dolároch. Ako sa prihlasuje?",
+      "a": "Pohľadávka sa podľa § 29 ods. 5 zákona č. 7/2005 Z. z. uplatňuje v eurách. Ak ju veriteľ uplatní v inej mene, sumu určí správca prepočtom podľa referenčného výmenného kurzu určeného a vyhláseného Európskou centrálnou bankou alebo Národnou bankou Slovenska v deň vyhlásenia konkurzu; pri mene, pre ktorú sa taký kurz neurčuje, určí sumu správca s odbornou starostlivosťou. Rozhoduje teda kurz z dňa vyhlásenia konkurzu, nie kurz z dňa vystavenia faktúry ani z dňa výplaty. V reštrukturalizácii sa toto pravidlo použije primerane (§ 122 ods. 1). V rozvrhu nemožno veriteľovi priznať viac, ako si uplatnil v prihláške (§ 96 ods. 1), preto prepočet robíme a dokladáme už pri príprave prihlášky."
+    },
+    {
+      "q": "Správca našu pohľadávku poprel. Čo teraz?",
+      "a": "Popretie neznamená, že pohľadávka zanikla, ale spúšťa krátku lehotu. Podľa § 32 ods. 8 zákona č. 7/2005 Z. z. sa veriteľ musí určenia popretej pohľadávky domáhať žalobou na súde proti všetkým, ktorí ju popreli, do 30 dní od zverejnenia popretia v zozname pohľadávok, inak toto právo zanikne; lehota je zachovaná aj pri žalobe podanej včas na nepríslušnom súde. V žalobe sa možno domáhať najviac toho, čo bolo uvedené v prihláške (§ 32 ods. 13). Pohľadávku popretú len správcom môže správca písomne uznať, kým o jej určení nerozhodol súd (§ 32 ods. 17) — preto sa popri príprave žaloby oplatí doložiť správcovi chýbajúce doklady. Ak pohľadávku poprel iba iný veriteľ, je podmienkou žaloby zloženie preddavku na trovy konania (§ 32 ods. 10 a 19). Žalobca v tomto konaní je od súdneho poplatku oslobodený (§ 4 ods. 2 písm. t) zákona č. 71/1992 Zb.). V reštrukturalizácii sa žaloba podáva proti dlžníkovi do 30 dní od uplynutia lehoty na popieranie pohľadávok (§ 124 ods. 4)."
+    },
+    {
+      "q": "Máme u dlžníka tovar s výhradou vlastníctva. Dostaneme ho späť?",
+      "a": "Slovenský zákon dáva dve cesty. Prvou je vylúčenie veci zo súpisu majetku: kto tvrdí, že vec do súpisu nepatrí, môže to uplatniť u správcu najneskôr do rozvrhnutia výťažku zo speňaženia tejto veci (§ 78 ods. 3 zákona č. 7/2005 Z. z.); správca ho vyzve, aby do 30 dní od doručenia výzvy uviedol dôvody a predložil dôkazy, a ak ich neuzná, súd na návrh správcu uloží podať v lehote nie kratšej ako 30 dní vylučovaciu žalobu proti správcovi — ak sa žaloba nepodá včas, predpokladá sa, že zahrnutie veci do súpisu je nesporné (§ 78 ods. 2 a 4). Predávajúci však nemôže uplatňovať vrátenie veci, ak správca bez zbytočného odkladu po jeho výzve splní povinnosti zo zmluvy (§ 45a ods. 2); ak sa vec u úpadcu už nenachádza, možno nároky uplatniť len prihláškou (§ 45a ods. 4). Druhou cestou je § 29 ods. 9: predávajúci môže svoje práva uplatniť prihláškou rovnako, ako by uplatňoval zabezpečovacie právo — tým poverí správcu súpisom a speňažením veci a má postavenie obdobné zabezpečenému veriteľovi. Ak bola vec speňažená, má osoba s právom vylučujúcim jej zapísanie do súpisu právo na vydanie výťažku (§ 78 ods. 8). Či výhrada vlastníctva platne vznikla, závisí od rozhodného práva, ktorým nemusí byť právo slovenské; ak sa zmluva spravuje slovenským právom, musí byť výhrada dohodnutá písomne (§ 445 Obchodného zákonníka). Ak sa tovar v čase začatia konania nachádzal v inom členskom štáte než na Slovensku, začatie konania podľa čl. 10 ods. 1 nariadenia (EÚ) 2015/848 nemá na práva predávajúceho z výhrady vlastníctva vplyv."
+    },
+    {
+      "q": "Dlžník nám tesne pred konkurzom zaplatil. Môžeme o tie peniaze prísť?",
+      "a": "Môže sa to stať, ale nie automaticky. Správca — a ak správca jeho podnetu v primeranej lehote nevyhovie, aj veriteľ prihlásenej pohľadávky — môže odporovať právnym úkonom dlžníka, ktoré ukracujú uspokojenie prihlásených pohľadávok (§ 57 ods. 1 a 4 zákona č. 7/2005 Z. z.). Pri platbách prichádza do úvahy najmä zvýhodňujúci právny úkon podľa § 59 ods. 1: úkon, ktorým dlžník splnil peňažnú pohľadávku inak splatnú až vyhlásením konkurzu, zabezpečil svoj záväzok neskôr, ako vznikol, alebo inak neodôvodnene zvýhodnil svojho veriteľa oproti iným veriteľom. Odporovať mu možno, ak spôsobil úpadok dlžníka alebo bol urobený počas úpadku, a len ak bol urobený počas jedného roka pred začatím konkurzného konania; pri úkonoch v prospech osôb spriaznených s dlžníkom sú to tri roky (§ 59 ods. 3 a 4). Právo odporovať zaniká, ak sa neuplatní u povinnej osoby alebo na súde do jedného roka od vyhlásenia konkurzu (§ 57 ods. 2). Veriteľ má navyše obranu podľa čl. 16 nariadenia (EÚ) 2015/848: pravidlá štátu, v ktorom sa konanie začalo, o odporovateľnosti sa neuplatnia, ak ten, kto mal z úkonu úžitok, dokáže, že úkon podlieha právu iného členského štátu a toto právo v danom prípade neposkytuje žiadne prostriedky na jeho odporovanie. Posúdenie cudzieho práva zabezpečujeme v spolupráci s advokátom klienta v jeho krajine."
+    },
+    {
+      "q": "Koľko z pohľadávky dostaneme?",
+      "a": "Odhad vopred dať nemožno — závisí od majetku dlžníka, od výšky ostatných pohľadávok a od poradia tej vašej. Zákon určuje len poradie. Z výťažku sa najprv uhrádzajú pohľadávky proti podstate, najmä náklady speňaženia a rozvrhu, odmena a výdavky správcu a záväzky, ktoré vznikli po vyhlásení konkurzu pri správe majetku a prevádzkovaní podniku (§ 87 zákona č. 7/2005 Z. z.). Zabezpečený veriteľ sa uspokojuje z výťažku majetku, ktorý jeho pohľadávku zabezpečuje (oddelená podstata), a v neuspokojenom zvyšku ako nezabezpečený veriteľ (§ 94). Nezabezpečené pohľadávky sa uspokojujú zo všeobecnej podstaty, a ak výťažok nestačí, pomerne podľa ich vzájomnej výšky (§ 95 ods. 1). Až po nich nasledujú podriadené pohľadávky, medzi ktoré zákon radí aj zmluvné pokuty a pohľadávky osôb spriaznených s úpadcom (§ 95 ods. 2 a 3). Viac, než si veriteľ uplatnil v prihláške, mu rozvrh priznať nemôže (§ 96 ods. 1). V reštrukturalizácii určuje mieru a čas uspokojenia plán; súd ho zamietne, ak má byť niektorá nezabezpečená pohľadávka — okrem tých, ktoré by boli v konkurze podriadené — uspokojená na menej ako 50 % alebo v čase dlhšom ako päť rokov bez písomného súhlasu dotknutého veriteľa (§ 154 ods. 1 písm. g) a h))."
+    },
+    {
+      "q": "Nebeží konkurz, ale reštrukturalizácia. V čom je to pre nás iné?",
+      "a": "Dlžník v reštrukturalizácii pokračuje v podnikaní a veritelia sa uspokojujú podľa plánu, o ktorom sami hlasujú a ktorý potvrdzuje súd. Pre zahraničného dodávateľa z toho plynú štyri rozdiely. Lehota je kratšia — 30 dní od povolenia reštrukturalizácie — a oneskorená prihláška neexistuje: na prihlášku po lehote sa neprihliada (§ 121 zákona č. 7/2005 Z. z.) a po potvrdení plánu nemožno neprihlásenú pohľadávku voči dlžníkovi vymáhať (§ 120 ods. 1, § 155 ods. 2). Pohľadávku môže poprieť len správca a žaloba o jej určenie sa podáva proti dlžníkovi do 30 dní od uplynutia lehoty na popieranie (§ 124 ods. 2 a 4). Už od začatia reštrukturalizačného konania nemožno pre staré dlhy vypovedať zmluvu ani od nej odstúpiť, započítavať ani začať exekúciu (§ 114 ods. 1); kto má plniť vopred, môže plnenie odoprieť, kým sa mu vzájomné plnenie neposkytne alebo nezabezpečí (§ 114 ods. 3). Naopak pohľadávky, ktoré vzniknú až počas reštrukturalizačného konania, sú prednostné: neprihlasujú sa a plán sa ich bez súhlasu veriteľa nedotkne; rozhoduje okamih vzniku práva na plnenie, nie splatnosť (§ 120 ods. 2). Ak súd plán právoplatne zamietne, vyhlási na majetok dlžníka konkurz (§ 154 ods. 3); zákon neustanovuje, že by sa prihláška z reštrukturalizácie považovala za prihlášku v konkurze, preto konkurznú lehotu strážime samostatne."
+    }
+  ],
+  "relatedTitle": "Súvisiace",
+  "sourcesTitle": "Právne predpisy, z ktorých vychádzame",
+  "sourcesLead": "Zákon č. 7/2005 Z. z. a vyhláška č. 665/2005 Z. z. sa uvádzajú v znení účinnom od 1. októbra 2025. Znenie predpisov je dostupné v Slov-Lexe a v EUR-Lexe. Uvedené informácie sú všeobecné a nenahrádzajú posúdenie konkrétnej veci.",
+  "sources": [
+    {
+      "label": "Zákon č. 7/2005 Z. z. o konkurze a reštrukturalizácii",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/7/"
+    },
+    {
+      "label": "Vyhláška MS SR č. 665/2005 Z. z., ktorou sa vykonávajú niektoré ustanovenia zákona č. 7/2005 Z. z.",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2005/665/"
+    },
+    {
+      "label": "Nariadenie (EÚ) 2015/848 o insolvenčnom konaní",
+      "url": "https://eur-lex.europa.eu/legal-content/SK/TXT/HTML/?uri=CELEX:32015R0848"
+    },
+    {
+      "label": "Vykonávacie nariadenie Komisie (EÚ) 2017/1105 — štandardné formuláre",
+      "url": "https://eur-lex.europa.eu/legal-content/SK/TXT/HTML/?uri=CELEX:32017R1105"
+    },
+    {
+      "label": "Nariadenie č. 1 z roku 1958 o používaní jazykov",
+      "url": "https://eur-lex.europa.eu/legal-content/SK/TXT/HTML/?uri=CELEX:01958R0001-20130701"
+    },
+    {
+      "label": "Zákon č. 160/2015 Z. z. — Civilný sporový poriadok",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2015/160/"
+    },
+    {
+      "label": "Zákon č. 513/1991 Zb. — Obchodný zákonník",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1991/513/"
+    },
+    {
+      "label": "Zákon č. 71/1992 Zb. o súdnych poplatkoch",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/1992/71/"
+    },
+    {
+      "label": "Vyhláška MS SR č. 655/2004 Z. z. o odmenách advokátov",
+      "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2004/655/"
+    }
+  ]
+}

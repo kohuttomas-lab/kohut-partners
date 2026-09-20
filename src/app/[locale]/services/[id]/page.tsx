@@ -3,9 +3,10 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeAlternates, absoluteUrl, breadcrumbSchema, faqSchema, ogImageUrl } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
-import type { Locale } from "@/i18n/routing";
+import { isAvailableIn, type Locale } from "@/i18n/routing";
 import { getService, getServiceIds } from "@/lib/content";
 import { CAMPAIGNS, CAMPAIGN_SHORT_NAMES } from "@/lib/campaigns";
+import { TOPICS } from "@/lib/topics";
 import { formatEur } from "@/lib/format";
 import { Link } from "@/i18n/navigation";
 import { Container, SectionHead } from "@/components/layout/Section";
@@ -67,6 +68,15 @@ export default async function ServiceDetailPage(props: Props) {
     ...(id === "obchod"
       ? [{ href: "/company-formation-residence", label: t("deepCfr") }]
       : []),
+    // Stránky pre zahraničného veriteľa — len v jazykoch, kde existujú.
+    ...(await Promise.all(
+      TOPICS.filter((x) => x.relatedServiceId === id && isAvailableIn(x.pathname, locale)).map(
+        async (x) => ({
+          href: x.pathname as string,
+          label: (await getTranslations({ locale, namespace: x.ns }))("navLabel"),
+        })
+      )
+    )),
   ];
 
   return (

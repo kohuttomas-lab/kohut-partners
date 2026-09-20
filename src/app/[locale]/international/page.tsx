@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { isAvailableIn, type AppPathname } from "@/i18n/routing";
 import { localeAlternates } from "@/lib/seo";
 import { LegalServiceSchema } from "@/components/seo/LegalServiceSchema";
 import { PageHero } from "@/components/layout/PageHero";
@@ -8,7 +10,7 @@ import { Card } from "@/components/ui/Card";
 import { CTABand } from "@/components/layout/CTABand";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { CONTACT } from "@/lib/content";
-import { Check, Shield } from "@/components/icons";
+import { ArrowRight, Check, Shield } from "@/components/icons";
 import styles from "./international.module.css";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -33,7 +35,9 @@ export default async function InternationalPage(props: Props) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "intl" });
 
-  const help = t.raw("help") as Item[];
+  // `href` + `more` sú voliteľné: trhy s vlastnou vstupnou vrstvou (PL) nimi
+  // vedú z typických vecí rovno na hĺbkovú stránku. Angličtina ich nemá.
+  const help = t.raw("help") as (Item & { href?: string; more?: string })[];
   const remote = t.raw("remote") as Item[];
 
   return (
@@ -60,6 +64,11 @@ export default async function InternationalPage(props: Props) {
                 </span>
                 <div className={styles.helpTitle}>{item.title}</div>
                 <p className={styles.helpDesc}>{item.desc}</p>
+                {item.href && item.more && isAvailableIn(item.href as AppPathname, locale) ? (
+                  <Link href={item.href as never} className={styles.helpMore}>
+                    {item.more} <ArrowRight size={15} />
+                  </Link>
+                ) : null}
               </Card>
             ))}
           </div>

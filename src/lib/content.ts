@@ -519,7 +519,15 @@ function localizeService(s: RawService, locale: Locale): Service {
 }
 
 export function getServices(locale: Locale): Service[] {
-  return SERVICES.map((s) => localizeService(s, locale));
+  const order = isIntlLocale(locale) ? INTL_CONTENT[locale].serviceOrder : undefined;
+  const rank = (id: string) => {
+    const i = order ? order.indexOf(id) : -1;
+    return i === -1 ? Number.MAX_SAFE_INTEGER : i;
+  };
+  // Stabilné triedenie: bez `serviceOrder` ostáva poradie z content.ts.
+  return [...SERVICES]
+    .sort((a, b) => rank(a.id) - rank(b.id))
+    .map((s) => localizeService(s, locale));
 }
 
 export function getServiceIds(): string[] {

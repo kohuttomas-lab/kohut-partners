@@ -153,6 +153,9 @@ Slovak URLs have no prefix, English ones are prefixed with `/en`.
 - https://www.tkak.sk/en/international-clients — Services for international clients (English-speaking, handled remotely)
 - https://www.tkak.sk/en/transport-debt-recovery — Recovering unpaid carriage charges from Slovak debtors under the CMR Convention; written for foreign hauliers and freight forwarders (the Slovak counterpart is /vymahanie-prepravnych-pohladavok)
 - https://www.tkak.sk/en/company-formation-residence — Setting up a Slovak company together with a residence permit (business, employment, EU Blue Card) for third-country nationals (the Slovak counterpart is /zalozenie-firmy-a-pobyt)
+- https://www.tkak.sk/en/recovering-debts-from-slovak-companies — For foreign companies whose Slovak customer has not paid (goods, services, construction subcontracting): jurisdiction under Brussels I bis, governing law under Rome I, Slovak payment-order procedure, European order for payment, enforcement
+- https://www.tkak.sk/en/slovak-insolvency-creditor-claims — Your Slovak customer is in bankruptcy or restructuring: lodging a foreign creditor's claim (45 days in bankruptcy, 30 days in restructuring), denial of claims, retention of title, Regulation (EU) 2015/848
+- https://www.tkak.sk/en/enforcing-judgments-in-slovakia — Enforcing EU judgments, European orders for payment and arbitral awards in Slovakia; defending a foreign company against Slovak enforcement (15-day time limits)
 
 ### Practice areas (English)
 
@@ -218,9 +221,10 @@ Slovak only, for clients in Slovakia. They have no English counterpart and their
 ## Polish, Hungarian and German versions (/pl, /hu, /de)
 
 The international-client pages are also available in Polish (`/pl`), Hungarian
-(`/hu`) and German (`/de`). They carry the same content as the
-English branch — advice exclusively on the law of the Slovak Republic — for
-readers who prefer these languages. The firm communicates with clients in
+(`/hu`) and German (`/de`). They carry the same core as the
+English branch — advice exclusively on the law of the Slovak Republic. The
+Polish version has its own entry pages written for Polish companies with a
+Slovak debtor or counterparty. The firm communicates with clients in
 English or Slovak. The blog, the legal e-shop, the city pages and the legal
 documents exist in Slovak and English only.
 
@@ -233,6 +237,9 @@ documents exist in Slovak and English only.
 | International clients | https://www.tkak.sk/pl/klienci-zagraniczni | https://www.tkak.sk/hu/kulfoldi-ugyfelek | https://www.tkak.sk/de/internationale-mandanten |
 | Unpaid carriage charges (CMR) | https://www.tkak.sk/pl/windykacja-naleznosci-transportowych | https://www.tkak.sk/hu/fuvardij-kovetelesek-behajtasa | https://www.tkak.sk/de/inkasso-transportforderungen |
 | Company formation and residence | https://www.tkak.sk/pl/zalozenie-spolki-i-pobyt | https://www.tkak.sk/hu/cegalapitas-es-tartozkodas | https://www.tkak.sk/de/firmengruendung-und-aufenthalt |
+| Recovering debts from Slovak companies | https://www.tkak.sk/pl/windykacja-naleznosci-na-slowacji | — | — |
+| Slovak customer in bankruptcy or restructuring | https://www.tkak.sk/pl/upadlosc-slowackiego-kontrahenta | — | — |
+| Enforcing judgments in Slovakia | https://www.tkak.sk/pl/egzekucja-na-slowacji | — | — |
 
 Practice-area detail pages use the same slugs in every language, e.g.
 https://www.tkak.sk/pl/uslugi/spory, https://www.tkak.sk/de/leistungen/nehnutelnosti.

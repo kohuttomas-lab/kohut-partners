@@ -216,6 +216,9 @@ export const pl: IntlContent = {
   teamBio: {
     1: "20 lat praktyki prawniczej (od 2006 roku). Osobiście prowadzi najbardziej wymagające sprawy upadłościowe i korporacyjne oraz nadzoruje każdą większą sprawę. Wpisany na listę adwokatów Słowackiej Izby Adwokackiej pod nr 3901 oraz na listę syndyków (zoznam správcov) prowadzoną przez Ministerstwo Sprawiedliwości Republiki Słowackiej.",
   },
+  // Poľské firmy prichádzajú najmä so spormi, vymáhaním a konkurzom slovenského
+  // odberateľa (CRM, 9/2026) — preto iné poradie než v angličtine.
+  serviceOrder: ["spory", "insolvencie", "obchod", "nehnutelnosti", "trestne", "it"],
   office: { city: "Zvolen", address: "Námestie SNP 74/28, 960 01 Zvolen, Republika Słowacka" },
   meta: {
     title: "kohút & partners – słowacka kancelaria adwokacka | Zvolen",

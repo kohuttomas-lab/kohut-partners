@@ -1,0 +1,109 @@
+{
+  "_poznamka": "Slovenská predloha VLASTNEJ vstupnej vrstvy poľskej verzie (nie preklad angličtiny). Kľúče prepíšu rovnomenné kľúče v messages/pl.json; ostatné kľúče home/intl ostávajú z doterajšieho prekladu. Fakty: z CRM — poľské firmy prichádzajú s nezaplatenými faktúrami, spormi so slovenskou s.r.o. a exekúciou. Jazyk komunikácie: angličtina a slovenčina (nie poľština).",
+  "home": {
+    "overline": "Slovenská advokátska kancelária · Zvolen, Slovensko",
+    "heroTitle": "Dlžník, spor alebo konkurz na Slovensku?",
+    "heroLead": "Zastupujeme zahraničné firmy — najčastejšie poľské — voči slovenským odberateľom a obchodným partnerom: vymáhanie nezaplatených faktúr, prihlášky pohľadávok do konkurzu, exekúcie a spory pred slovenskými súdmi. Radíme výlučne v slovenskom práve, komunikujeme po anglicky alebo po slovensky a vec vedieme na diaľku, s cenou dohodnutou vopred.",
+    "heroPrimary": "Rezervovať konzultáciu",
+    "heroSecondary": "Služby",
+    "heroChips": ["Cena dohodnutá vopred", "Odpoveď do 24 h", "Komunikujeme po anglicky a slovensky"],
+    "topicsOverline": "S čím prichádzajú poľské firmy",
+    "topicsTitle": "Štyri situácie, ktoré riešime najčastejšie",
+    "topicsLead": "Každá z nich sa spravuje slovenským procesným právom a vedie pred slovenskými súdmi, správcami a exekútormi. Na každú máme samostatnú stránku s lehotami, postupom a podkladmi, ktoré budeme potrebovať.",
+    "topicsMore": "Lehoty, postup a podklady",
+    "topics": [
+      {
+        "title": "Slovenský odberateľ nezaplatil faktúru",
+        "desc": "Tovar, služby, stavebné a montážne subdodávky. Predžalobná výzva, slovenský alebo európsky platobný rozkaz, spor a exekúcia — s preverením dlžníka skôr, než do vymáhania vložíte ďalšie peniaze.",
+        "href": "/creditor-debt-recovery"
+      },
+      {
+        "title": "Slovenský odberateľ je v konkurze alebo reštrukturalizácii",
+        "desc": "Na prihlásenie pohľadávky beží zákonná lehota a pri reštrukturalizácii sa neprihlásená pohľadávka nedá voči dlžníkovi vymáhať. Insolvenčné právo je hlavná odbornosť kancelárie.",
+        "href": "/creditor-insolvency-claims"
+      },
+      {
+        "title": "Máte rozsudok alebo platobný rozkaz a dlžník má majetok na Slovensku",
+        "desc": "Rozsudok súdu členského štátu EÚ aj európsky platobný rozkaz sa na Slovensku vykonajú bez nového súdneho konania. Rovnako bránime zahraničné firmy, proti ktorým sa na Slovensku začala exekúcia.",
+        "href": "/creditor-enforcement"
+      },
+      {
+        "title": "Nezaplatené prepravné podľa Dohovoru CMR",
+        "desc": "Pre dopravcov a špedície: premlčanie podľa článku 32 Dohovoru CMR, právomoc súdov a vymáhanie voči slovenskému objednávateľovi prepravy.",
+        "href": "/transport-debt-recovery"
+      }
+    ],
+    "servOverline": "Oblasti práva · slovenské právo",
+    "servTitle": "Ako pomáhame zahraničným firmám na Slovensku",
+    "servLead": "Radíme výlučne v slovenskom práve — od vymáhania pohľadávok a sporov pred slovenskými súdmi po konkurzy, obchodné spoločnosti a nehnuteľnosti. Pri každej oblasti uvádzame, čo presne riešime a ako spolupráca prebieha.",
+    "why": [
+      {
+        "title": "Pošlete nám podklady",
+        "desc": "Zmluvu alebo objednávku, faktúry a korešpondenciu s dlžníkom — e-mailom alebo cez formulár. Do 24 hodín potvrdíme prijatie; pred prevzatím veci preveríme konflikt záujmov."
+      },
+      {
+        "title": "Dohodneme postup a cenu",
+        "desc": "Napíšeme, aký postup podľa slovenského práva navrhujeme, aké lehoty bežia a koľko to bude stáť. Cenu poznáte skôr, než začneme pracovať."
+      },
+      {
+        "title": "Konáme za vás na Slovensku",
+        "desc": "Zastupujeme vás pred slovenskými súdmi, správcami a exekútormi na základe plnomocenstva a priebežne vás informujeme. Cesta na Slovensko spravidla nie je potrebná."
+      }
+    ],
+    "ctaBandTitle": "Máte pohľadávku alebo spor na Slovensku? Začnime dnes.",
+    "ctaBandLead": "Prvá konzultácia je nezáväzná — online po anglicky alebo po slovensky, prípadne osobne vo Zvolene.",
+    "ctaBandBtn": "Rezervovať konzultáciu"
+  },
+  "intl": {
+    "heroOverline": "Klienti z Poľska",
+    "heroTitle": "Slovenské právo pre poľské firmy — zrozumiteľne.",
+    "heroLead": "Sme slovenská advokátska kancelária a radíme výlučne v práve Slovenskej republiky. Ak máte na Slovensku dlžníka, obchodného partnera v konkurze, spor alebo exekúciu, prevedieme vás slovenským konaním od prvého listu po vymoženie — na diaľku, po anglicky alebo po slovensky. Táto stránka je v poľštine pre vaše pohodlie; s klientmi komunikujeme po anglicky alebo po slovensky.",
+    "helpOverline": "Čo pre vás robíme",
+    "helpTitle": "Typické veci poľských firiem na Slovensku",
+    "helpLead": "Všetky sa vedú pred slovenskými súdmi, správcami konkurznej podstaty a exekútormi. Ak sa vaša zmluva spravuje poľským právom, slovenský súd ho použije — v takom prípade spolupracujeme s vaším poľským právnikom.",
+    "help": [
+      {
+        "title": "Nezaplatená faktúra od slovenského odberateľa",
+        "desc": "Preverenie dlžníka, predžalobná výzva, slovenský alebo európsky platobný rozkaz, spor a exekúcia. Pre tovar, služby aj stavebné subdodávky.",
+        "href": "/creditor-debt-recovery",
+        "more": "Ako vymáhanie prebieha"
+      },
+      {
+        "title": "Odberateľ v konkurze alebo reštrukturalizácii",
+        "desc": "Prihláška pohľadávky v zákonnej lehote, obrana pri popretí pohľadávky, výhrada vlastníctva k dodanému tovaru a zastupovanie na schôdzi veriteľov.",
+        "href": "/creditor-insolvency-claims",
+        "more": "Lehoty a postup prihlášky"
+      },
+      {
+        "title": "Výkon poľského rozsudku na Slovensku",
+        "desc": "Rozsudok, európsky platobný rozkaz alebo rozhodcovský rozsudok vykoná slovenský exekútor. Pripravíme návrh na vykonanie exekúcie a sledujeme jej priebeh.",
+        "href": "/creditor-enforcement",
+        "more": "Čo budete potrebovať"
+      },
+      {
+        "title": "Prepravné podľa Dohovoru CMR",
+        "desc": "Pre dopravcov a špedície, ktorým slovenský objednávateľ nezaplatil za vykonanú prepravu — vrátane kontroly premlčacej lehoty podľa článku 32 Dohovoru CMR.",
+        "href": "/transport-debt-recovery",
+        "more": "Vymáhanie prepravného"
+      },
+      {
+        "title": "Slovenská firma žaluje alebo exekuuje vás",
+        "desc": "Doručili vám slovenský platobný rozkaz alebo upovedomenie o začatí exekúcie? Lehoty na obranu sa počítajú v dňoch. Posúdime podklady a podáme odpor alebo návrh na zastavenie exekúcie.",
+        "href": "/creditor-enforcement",
+        "more": "Obrana a lehoty"
+      },
+      {
+        "title": "Slovenská s.r.o. s poľským spoločníkom",
+        "desc": "Spory medzi spoločníkmi, odvolanie a zodpovednosť konateľa, zmeny v obchodnom registri, prevod obchodného podielu a likvidácia spoločnosti, ktorú už nepotrebujete."
+      }
+    ],
+    "formTitle": "Opíšte svoju vec — odpovieme po anglicky alebo po slovensky",
+    "formLead": "Napíšte, o čo ide, kto je protistrana a aké lehoty prípadne bežia. Ozveme sa s návrhom ďalšieho postupu. Odoslaním formulára nevzniká vzťah advokáta a klienta.",
+    "ctaTitle": "Povedzte nám o svojej veci na Slovensku",
+    "ctaLead": "Prvá konzultácia je nezáväzná a prebieha po anglicky alebo po slovensky."
+  },
+  "services": {
+    "_poznamka": "navLabel jednotlivých stránok je v mennom priestore stránky (xdr/xin/xen)."
+  },
+  "serviceOrder": ["spory", "insolvencie", "obchod", "nehnutelnosti", "trestne", "it"]
+}

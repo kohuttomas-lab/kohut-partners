@@ -22,6 +22,15 @@ const SKIP = [
   /^home\.(regions|blog)/, // mestské stránky a blog sú len SK/EN
   /^footer\.cols/, // 3 stĺpce namiesto 4 — kontroluje sa osobitne
 ];
+// Trhy s VLASTNOU vstupnou vrstvou (nie preklad angličtiny): domovská stránka
+// má navyše blok `home.topics*` a stránka „Zahraniční klienti" vlastný zoznam
+// typických vecí s odkazmi — štruktúra sa preto s angličtinou nezhoduje zámerne.
+const OWN_ENTRY = {
+  pl: { skip: [/^intl\.help/], extraOk: [/^home\.topics/] },
+};
+// Hĺbkové stránky pre zahraničného veriteľa (lib/topics) — kontrolujú sa len
+// v jazykoch, kde stránka existuje (LOCALE_LIMITED_PATHNAMES v routing.ts).
+const TOPIC_NS = { pl: ["xdr", "xin", "xen"] };
 
 const load = (l) => JSON.parse(readFileSync(new URL(`../messages/${l}.json`, import.meta.url), "utf8"));
 const en = load("en");
@@ -32,8 +41,10 @@ let failed = false;
 
 const placeholders = (s) => (s.match(/\{[a-zA-Z0-9_]+\}/g) ?? []).sort().join(",");
 
+let own = { skip: [], extraOk: [] };
+
 function walk(a, b, path, out) {
-  if (SKIP.some((re) => re.test(path))) return;
+  if (SKIP.some((re) => re.test(path)) || own.skip.some((re) => re.test(path))) return;
   if (typeof a === "string") {
     if (typeof b !== "string") return out.missing.push(path);
     if (placeholders(a) !== placeholders(b)) out.placeholders.push(path);
@@ -49,7 +60,10 @@ function walk(a, b, path, out) {
   if (a && typeof a === "object") {
     if (!b || typeof b !== "object") return out.missing.push(path);
     for (const k of Object.keys(a)) walk(a[k], b[k], path ? `${path}.${k}` : k, out);
-    for (const k of Object.keys(b)) if (!(k in a)) out.extra.push(`${path}.${k}`);
+    for (const k of Object.keys(b)) {
+      const kp = `${path}.${k}`;
+      if (!(k in a) && !own.extraOk.some((re) => re.test(kp))) out.extra.push(kp);
+    }
   }
 }
 
@@ -57,7 +71,8 @@ function walk(a, b, path, out) {
 for (const l of locales.length ? locales : ["pl", "hu", "de"]) {
   const tr = load(l);
   const out = { missing: [], extra: [], lengths: [], placeholders: [], same: [] };
-  for (const ns of REQUIRED) walk(en[ns], tr[ns], ns, out);
+  own = OWN_ENTRY[l] ?? { skip: [], extraOk: [] };
+  for (const ns of [...REQUIRED, ...(TOPIC_NS[l] ?? [])]) walk(en[ns], tr[ns], ns, out);
   const cols = tr.footer?.cols;
   if (!Array.isArray(cols) || cols.length !== 3 || cols[0].items.length !== 6 || cols[1].items.length !== 4 || cols[2].items.length !== 3) {
     out.lengths.push("footer.cols musí mať 3 stĺpce s 6 / 4 / 3 položkami (viď Footer.tsx INTL_COL_LINKS)");

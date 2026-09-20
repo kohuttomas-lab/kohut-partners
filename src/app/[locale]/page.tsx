@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { isIntlLocale } from "@/i18n/routing";
 import { HomeHero } from "@/components/sections/HomeHero";
 import { Stats } from "@/components/sections/Stats";
+import { HomeTopics } from "@/components/sections/HomeTopics";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { Process } from "@/components/sections/Process";
 import { TeamSection } from "@/components/sections/TeamSection";
@@ -19,6 +20,8 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
       <LegalServiceSchema locale={locale} />
       <HomeHero />
       <Stats />
+      {/* Vlastná vstupná vrstva trhu (zatiaľ PL) — inde sa nevykreslí. */}
+      <HomeTopics />
       <ServicesGrid />
       <Process />
       <TeamSection withButton />

@@ -31,6 +31,20 @@
   line-height: 1.55;
   margin: 0;
 }
+.helpMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+}
+.helpMore:hover {
+  text-decoration: underline;
+}
 
 .remoteSection {
   background: var(--color-bg);

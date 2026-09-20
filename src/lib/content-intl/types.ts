@@ -18,6 +18,12 @@ export interface IntlContent {
   team: Record<number, [string, string, string?]>;
   /** id člena tímu → bio (len tí, ktorí bio majú). */
   teamBio: Record<number, string>;
+  /**
+   * Poradie služieb pre daný trh (id z content.ts). Čo tu chýba, ide na koniec
+   * v pôvodnom poradí. Poľsko napr. začína spormi a vymáhaním — podľa toho,
+   * s čím poľské firmy naozaj prichádzajú (CRM, 9/2026).
+   */
+  serviceOrder?: string[];
   office: Office;
   /**
    * <title>, meta description a og:locale domovskej stránky (layout.tsx, JSON-LD)
