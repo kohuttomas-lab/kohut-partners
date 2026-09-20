@@ -22,8 +22,6 @@ import type { CampaignData } from "./types";
  *   z § 2 ŽZ / § 2 ods. 1 ObchZ a § 147 OZ (nie je doslovným textom zákona).
  * ⚖ KONTROLA: prekážka podľa § 8 ods. 1 ŽZ („zrušený konkurz“) — zjednodušené na „spravidla
  *   tri roky“; overiť, či sa v praxi úradov vzťahuje aj na oddlženie konkurzom fyzickej osoby.
- * ⚖ KONTROLA: relatedServiceLabel — služba „obchod“ sa v content.ts volá „Obchodné a občianske
- *   právo“; staršie kampane používajú „Obchodné právo a firemná agenda“. Zjednotiť.
  */
 export const tradeLicenceAdvice: CampaignData = {
   id: "trade-licence-advice",
