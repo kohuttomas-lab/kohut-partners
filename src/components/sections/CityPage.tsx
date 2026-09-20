@@ -23,7 +23,7 @@ export async function CityPage({
 }) {
   const tNav = await getTranslations({ locale, namespace: "nav" });
   const others = Object.values(CITY_PAGES).filter((c) => c.id !== page.id);
-  const sk = locale !== "en";
+  const sk = locale === "sk";
 
   return (
     <>

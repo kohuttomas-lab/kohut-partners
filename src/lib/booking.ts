@@ -11,5 +11,7 @@ export const CALCOM_NAMESPACE = "konzultacia";
 export const CALCOM_ENABLED = CALCOM_LINK.length > 0;
 
 export function calLinkForLocale(locale: string): string {
-  return locale === "en" ? CALCOM_LINK_EN : CALCOM_LINK;
+  // PL/HU/DE/RU rezervujú anglickú udalosť — konzultácia prebieha po anglicky
+  // alebo slovensky, vlastné udalosti v Cal.com pre tieto jazyky neexistujú.
+  return locale === "sk" ? CALCOM_LINK : CALCOM_LINK_EN;
 }

@@ -1,4 +1,6 @@
 import { ImageResponse } from "next/og";
+import { isIntlLocale } from "@/i18n/routing";
+import { INTL_CONTENT } from "@/lib/content-intl";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -6,11 +8,12 @@ export const alt = "kohút & partners — advokátska kancelária Zvolen";
 
 export default async function Image({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const sk = locale !== "en";
-  const tagline = sk ? "Advokátska kancelária · Zvolen" : "Law firm · Zvolen";
-  const headline = sk
-    ? "Právne istoty pre podnikanie aj život."
-    : "Legal certainty for business and life.";
+  const sk = locale === "sk";
+  const intl = isIntlLocale(locale) ? INTL_CONTENT[locale].meta : undefined;
+  const tagline = intl?.ogTagline ?? (sk ? "Advokátska kancelária · Zvolen" : "Law firm · Zvolen");
+  const headline =
+    intl?.ogHeadline ??
+    (sk ? "Právne istoty pre podnikanie aj život." : "Legal certainty for business and life.");
 
   return new ImageResponse(
     (

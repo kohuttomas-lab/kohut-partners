@@ -1,4 +1,5 @@
-import type { Locale } from "@/i18n/routing";
+import { baseLocale, isIntlLocale, type Locale } from "@/i18n/routing";
+import { INTL_CONTENT } from "@/lib/content-intl";
 import { variantCatalogEntries } from "@/lib/shop-variants";
 import { enArticleSlug } from "@/lib/article-slugs";
 
@@ -46,7 +47,7 @@ export interface Service {
   packages: ServicePackage[];
 }
 
-interface RawServiceCopy {
+export interface RawServiceCopy {
   name: string;
   tagline: string;
   summary: string;
@@ -496,7 +497,10 @@ const SERVICES: RawService[] = [
 ];
 
 function localizeService(s: RawService, locale: Locale): Service {
-  const c = s[locale];
+  // PL/HU/DE/RU čítajú preklad z content-intl; čo v ňom chýba, padá na angličtinu.
+  const intl = isIntlLocale(locale) ? INTL_CONTENT[locale] : undefined;
+  const c = intl?.services[s.id] ?? s[baseLocale(locale)];
+  const pkg = (p: RawServicePackage) => intl?.packages[p.id] ?? p[baseLocale(locale)];
   return {
     id: s.id,
     icon: s.icon,
@@ -508,8 +512,8 @@ function localizeService(s: RawService, locale: Locale): Service {
     packages: s.packages.map((p) => ({
       id: p.id,
       price: p.price,
-      name: p[locale][0],
-      desc: p[locale][1],
+      name: pkg(p)[0],
+      desc: pkg(p)[1],
     })),
   };
 }
@@ -609,16 +613,22 @@ const TEAM: RawTeamMember[] = [
 ];
 
 export function getTeam(locale: Locale): TeamMember[] {
-  return TEAM.map((m) => ({
-    id: m.id,
-    partner: !!m.partner,
-    tone: m.tone,
-    photo: m.photo,
-    name: m[locale][0],
-    role: m[locale][1] as string,
-    specialty: m[locale][2],
-    bio: m.bio?.[locale],
-  }));
+  const intl = isIntlLocale(locale) ? INTL_CONTENT[locale] : undefined;
+  const base = baseLocale(locale);
+  return TEAM.map((m) => {
+    // Meno sa neprekladá; rola a špecializácia áno (ruština ich má v azbuke).
+    const [name, role, specialty] = intl?.team[m.id] ?? m[base];
+    return {
+      id: m.id,
+      partner: !!m.partner,
+      tone: m.tone,
+      photo: m.photo,
+      name,
+      role: role as string,
+      specialty,
+      bio: m.bio ? intl?.teamBio[m.id] ?? m.bio[base] : undefined,
+    };
+  });
 }
 
 /* ---------------- Blog ---------------- */
@@ -1112,7 +1122,7 @@ const BLOG: RawArticle[] = [
 
 /** Slug článku pre daný jazyk. Slovenčina vždy `id`, angličtina podľa mapy v lib/article-slugs.ts. */
 function articleSlug(a: RawArticle, locale: Locale): string {
-  return locale === "en" ? enArticleSlug(a.id) : a.id;
+  return baseLocale(locale) === "en" ? enArticleSlug(a.id) : a.id;
 }
 
 /* Vyhľadanie článku podľa slugu v danom jazyku. Zámerne prísne — v angličtine
@@ -1122,11 +1132,13 @@ function findArticle(locale: Locale, slug: string): RawArticle | undefined {
   return BLOG.find((a) => articleSlug(a, locale) === slug);
 }
 
-function localizeArticle(a: RawArticle, locale: Locale): Article {
+function localizeArticle(a: RawArticle, anyLocale: Locale): Article {
+  // Blog je len SK/EN; ostatné jazyky ho nezobrazujú (čítali by angličtinu).
+  const locale = baseLocale(anyLocale);
   return {
     // `id` je slug v aktuálnom jazyku — odkazy v komponentoch tak vedú
     // na správnu jazykovú adresu bez ďalšieho zásahu.
-    id: articleSlug(a, locale),
+    id: articleSlug(a, anyLocale),
     category: a.cat[locale],
     tone: a.tone,
     read: a.read,
@@ -1285,7 +1297,8 @@ const SUBSCRIPTIONS: RawSubscription[] = [
   },
 ];
 
-export function getSubscriptions(locale: Locale): Subscription[] {
+export function getSubscriptions(anyLocale: Locale): Subscription[] {
+  const locale = baseLocale(anyLocale);
   return SUBSCRIPTIONS.map((s) => ({
     id: s.id,
     hours: s.hours,
@@ -1323,7 +1336,8 @@ const TEMPLATES: RawTemplate[] = [
   { id: "tpl-gdpr", icon: "Shield", price: 49, sk: "GDPR balík dokumentov", en: "GDPR document pack" },
 ];
 
-export function getTemplates(locale: Locale): Template[] {
+export function getTemplates(anyLocale: Locale): Template[] {
+  const locale = baseLocale(anyLocale);
   return TEMPLATES.map((t) => ({ id: t.id, icon: t.icon, price: t.price, name: t[locale] }));
 }
 
@@ -1342,7 +1356,8 @@ const OFFICES: LangPair<Office>[] = [
 ];
 
 export function getOffices(locale: Locale): Office[] {
-  return OFFICES.map((o) => o[locale]);
+  if (isIntlLocale(locale)) return [INTL_CONTENT[locale].office];
+  return OFFICES.map((o) => o[baseLocale(locale)]);
 }
 
 export const CONTACT = {

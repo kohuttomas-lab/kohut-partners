@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
-import type { Locale } from "@/i18n/routing";
+import { isAvailableIn, type BaseLocale as Locale } from "@/i18n/routing";
 import { localeAlternates, ogImageUrl } from "@/lib/seo";
 import { getCityPage } from "@/lib/city-pages";
 import { CityPage } from "@/components/sections/CityPage";
@@ -12,6 +12,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale } = await props.params;
+  // Stránka existuje len po slovensky a anglicky (viď BASE_ONLY_PATHNAMES).
+  if (!isAvailableIn("/lawyer-detva", locale)) return {};
   const page = getCityPage(locale as Locale, CITY_ID);
   if (!page) return {};
   return {
@@ -29,6 +31,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
 export default async function Page(props: Props) {
   const { locale } = await props.params;
+  if (!isAvailableIn("/lawyer-detva", locale)) notFound();
   setRequestLocale(locale);
   const page = getCityPage(locale as Locale, CITY_ID);
   if (!page) notFound();

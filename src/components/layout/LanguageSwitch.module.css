@@ -1,3 +1,8 @@
+.root {
+  position: relative;
+  display: inline-block;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -10,8 +15,67 @@
   font-size: 13px;
   color: var(--text-muted);
   padding: 6px;
+  list-style: none;
+  user-select: none;
   transition: color var(--dur-fast) var(--ease-standard);
 }
-.btn:hover {
+.btn::-webkit-details-marker {
+  display: none;
+}
+.btn:hover,
+.root[open] .btn {
   color: var(--brand);
+}
+
+.chevron {
+  transition: transform var(--dur-fast) var(--ease-standard);
+}
+.root[open] .chevron {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 60;
+  min-width: 172px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--color-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+.menuUp {
+  top: auto;
+  bottom: calc(100% + 6px);
+  right: auto;
+  left: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-body);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.item:hover {
+  background: var(--color-surface-sunken);
+  color: var(--brand);
+}
+
+.code {
+  width: 24px;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--text-muted);
 }

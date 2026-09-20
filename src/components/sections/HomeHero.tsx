@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
-import type { Locale } from "@/i18n/routing";
+import { isAvailableIn, type Locale } from "@/i18n/routing";
 import { getTeam } from "@/lib/content";
 import { Container, Overline } from "@/components/layout/Section";
 import { Badge } from "@/components/ui/Badge";
@@ -34,7 +34,8 @@ export function HomeHero() {
             <BookingButton variant="accent" size="lg" leftIcon={<Calendar size={20} />}>
               {t("heroPrimary")}
             </BookingButton>
-            {ESHOP_ENABLED ? (
+            {/* E-shop je len SK/EN — ostatné jazyky vedú na služby. */}
+            {ESHOP_ENABLED && isAvailableIn("/shop", locale) ? (
               <LinkButton href="/shop" variant="secondary" size="lg">
                 {t("heroSecondary")}
               </LinkButton>

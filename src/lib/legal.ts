@@ -1,4 +1,5 @@
-import type { Locale } from "@/i18n/routing";
+// Dvojjazyčný obsah (SK/EN) — v PL/HU/DE/RU sa tieto stránky nezobrazujú.
+import type { BaseLocale as Locale } from "@/i18n/routing";
 import { CONTACT } from "./content";
 
 /* ============================================================

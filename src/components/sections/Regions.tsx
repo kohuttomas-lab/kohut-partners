@@ -13,7 +13,7 @@ import styles from "./Regions.module.css";
 export function Regions() {
   const t = useTranslations("home");
   const locale = useLocale() as Locale;
-  const sk = locale !== "en";
+  const sk = locale === "sk";
   const cities = Object.values(CITY_PAGES);
 
   return (

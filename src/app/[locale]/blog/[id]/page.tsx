@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeAlternates, absoluteUrl, articleSchema, breadcrumbSchema, ogImageUrl } from "@/lib/seo";
 import { JsonLd } from "@/components/seo/JsonLd";
-import type { Locale } from "@/i18n/routing";
+import { isAvailableIn, type BaseLocale as Locale } from "@/i18n/routing";
 import { getArticle, getArticleIds, getArticleSlugs, BLOG_AUTHOR } from "@/lib/content";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/Section";
@@ -24,6 +24,8 @@ export function generateStaticParams({ params }: { params: { locale: string } })
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale, id } = await props.params;
+  // Stránka existuje len po slovensky a anglicky (viď BASE_ONLY_PATHNAMES).
+  if (!isAvailableIn("/blog/[id]", locale)) return {};
   const article = getArticle(locale as Locale, id);
   const slugs = getArticleSlugs(locale as Locale, id);
   if (!article || !slugs) return {};
@@ -47,6 +49,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
 export default async function ArticlePage(props: Props) {
   const { locale, id } = await props.params;
+  if (!isAvailableIn("/blog/[id]", locale)) notFound();
   setRequestLocale(locale);
 
   const article = getArticle(locale as Locale, id);

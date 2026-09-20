@@ -1,5 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { isIntlLocale } from "@/i18n/routing";
 import { Container } from "./Section";
 import { Mail, MapPin, Phone } from "@/components/icons";
 import { CONTACT } from "@/lib/content";
@@ -36,15 +37,29 @@ const svc = (id: string): ServiceLink => ({ pathname: "/services/[id]", params: 
 // Order matches the footer column items in messages.json. The middle column
 // differs per locale: SK ends with "Kariéra" (→ contact), EN with
 // "International clients" (→ the dedicated page).
-const colLinks = (locale: string): FooterLink[][] => [
-  [
-    svc("insolvencie"),
-    svc("obchod"),
-    svc("nehnutelnosti"),
-    svc("spory"),
-    svc("trestne"),
-    svc("it"),
-  ],
+const colLinks = (locale: string): FooterLink[][] =>
+  isIntlLocale(locale) ? INTL_COL_LINKS : baseColLinks(locale);
+
+const SERVICE_LINKS: FooterLink[] = [
+  svc("insolvencie"),
+  svc("obchod"),
+  svc("nehnutelnosti"),
+  svc("spory"),
+  svc("trestne"),
+  svc("it"),
+];
+
+// PL/HU/DE/RU: bez blogu a bez stĺpca miest (tie stránky v nich neexistujú).
+// Právne dokumenty sú len SK/EN — stĺpec vedie na anglické znenie (viď nižšie).
+const INTL_COL_LINKS: FooterLink[][] = [
+  SERVICE_LINKS,
+  ["/about", "/about", "/international", "/contact"],
+  ["/privacy", "/terms", "/cookies"],
+];
+const LEGAL_COL = 2;
+
+const baseColLinks = (locale: string): FooterLink[][] => [
+  SERVICE_LINKS,
   ["/about", "/about", "/blog", locale === "en" ? "/international" : "/contact"],
   ["/privacy", "/terms", "/cookies"],
   // "Pôsobíme v regióne" — local-SEO city landing pages.
@@ -89,7 +104,8 @@ export function Footer() {
                   className={styles.contactLink}
                 >
                   {CONTACT.address}
-                  {locale === "en" ? ", Slovak Republic" : ", Slovenská republika"}
+                  {", "}
+                  {t("country")}
                 </a>
               </span>
               <span className={styles.contact}>
@@ -123,6 +139,11 @@ export function Footer() {
                     <Link
                       key={j}
                       href={href}
+                      // Právne dokumenty existujú len SK/EN; z ostatných
+                      // jazykov vedie odkaz na anglické znenie.
+                      {...(isIntlLocale(locale) && i === LEGAL_COL
+                        ? { locale: "en" as const, hrefLang: "en" }
+                        : {})}
                       className={cx(styles.colItem, styles.colItemLink)}
                     >
                       {item}

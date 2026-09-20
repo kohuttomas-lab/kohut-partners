@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { isAvailableIn } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeAlternates } from "@/lib/seo";
@@ -16,6 +17,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale } = await props.params;
+  // Stránka existuje len po slovensky a anglicky (viď BASE_ONLY_PATHNAMES).
+  if (!isAvailableIn("/shop", locale)) return {};
   const t = await getTranslations({ locale, namespace: "shop" });
   return {
     title: t("heroTitle"),
@@ -27,6 +30,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 export default async function ShopPage(props: Props) {
   if (!ESHOP_ENABLED) notFound();
   const { locale } = await props.params;
+  if (!isAvailableIn("/shop", locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "shop" });
 

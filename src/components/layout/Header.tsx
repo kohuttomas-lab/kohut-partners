@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
+import { isAvailableIn } from "@/i18n/routing";
 import { Container } from "./Section";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { Button } from "@/components/ui/Button";
@@ -24,12 +25,14 @@ const NAV = [
 ] as const;
 
 // E-shop link is hidden until the shop is enabled; the international-clients
-// page is surfaced in the EN navigation only (SK reaches it via the footer).
+// page is surfaced in every navigation except the Slovak one (SK reaches it via
+// the footer). Blog and e-shop exist in SK/EN only, so PL/HU/DE/RU drop them.
 function navItems(locale: string) {
   return NAV.filter(
     (item) =>
+      isAvailableIn(item.href, locale) &&
       (item.key !== "shop" || ESHOP_ENABLED) &&
-      (item.key !== "international" || locale === "en")
+      (item.key !== "international" || locale !== "sk")
   );
 }
 
@@ -131,7 +134,7 @@ export function Header() {
             ))}
           </nav>
           <div className={styles.mobileFooter}>
-            <LanguageSwitch />
+            <LanguageSwitch dropUp />
             <Button variant="accent" size="sm" leftIcon={<Calendar size={16} />} onClick={book}>
               {tCommon("cta")}
             </Button>

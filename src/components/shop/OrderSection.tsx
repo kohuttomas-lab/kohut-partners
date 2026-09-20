@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import type { Locale } from "@/i18n/routing";
+import { baseLocale } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import type { ShopPackage } from "@/lib/content";
 import { CONTACT } from "@/lib/content";
@@ -47,7 +47,7 @@ export function OrderSection({
 }) {
   const t = useTranslations("shop.order");
   const common = useTranslations("common");
-  const locale = useLocale() as Locale;
+  const locale = baseLocale(useLocale());
   const [selectedId, setSelectedId] = useState(initialId ?? "");
   const [variantId, setVariantId] = useState(
     () => (initialId ? getVariants(initialId)?.options[0]?.id : undefined) ?? ""

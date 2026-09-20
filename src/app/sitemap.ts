@@ -3,13 +3,19 @@ import { getPathname } from "@/i18n/navigation";
 import { getArticleSlugPairs, getServiceIds, getArticle } from "@/lib/content";
 import { CAMPAIGNS } from "@/lib/campaigns";
 import { ESHOP_ENABLED } from "@/lib/flags";
+import { localesFor, type AppPathname, type Locale } from "@/i18n/routing";
 
 const BASE = "https://www.tkak.sk";
 
 type Href = Parameters<typeof getPathname>[0]["href"];
 
-/** Cesta v oboch jazykoch. Pri článkoch sa slug medzi SK a EN líši. */
+/**
+ * Cesta po slovensky a „v ostatných jazykoch". Pri článkoch sa slug medzi SK
+ * a EN líši; PL/HU/DE/RU používajú rovnaký href ako EN (slugy služieb sú
+ * spoločné, články v nich neexistujú).
+ */
 type HrefPair = { sk: Href; en: Href };
+const hrefIn = (pair: HrefPair, locale: Locale): Href => (locale === "sk" ? pair.sk : pair.en);
 
 /** Cesta, ktorá je v oboch jazykoch rovnaká (routing si prefix doplní sám). */
 const bothLocales = (href: Href): HrefPair => ({ sk: href, en: href });
@@ -63,15 +69,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  // Každá dvojjazyčná cesta dostane dve položky — slovenskú aj anglickú —
-  // s rovnakým blokom alternatív. Bez vlastného <loc> pre /en Google anglickú
-  // URL nikdy nedostal ako samostatnú stránku na indexáciu; hreflang alternatíva
+  // Každá viacjazyčná cesta dostane položku za každý jazyk, v ktorom existuje
+  // (localesFor: blog, e-shop, mestá a právne dokumenty SK/EN, zvyšok 6 jazykov),
+  // s rovnakým blokom alternatív. Bez vlastného <loc> Google jazykovú URL nikdy
+  // nedostal ako samostatnú stránku na indexáciu; hreflang alternatíva
   // v slovenskej položke na to nestačí. `x-default` mieri na slovenčinu, rovnako
   // ako canonical/hreflang v <head> (lib/seo.ts).
   const localized = [...STATIC.map(bothLocales), ...services, ...articles].flatMap((pair) => {
-    const sk = BASE + getPathname({ locale: "sk", href: pair.sk });
-    const en = BASE + getPathname({ locale: "en", href: pair.en });
-    const languages = { sk, en, "x-default": sk };
+    const pathname = (typeof pair.sk === "string" ? pair.sk : pair.sk.pathname) as AppPathname;
+    const urls = localesFor(pathname).map(
+      (l) => [l, BASE + getPathname({ locale: l, href: hrefIn(pair, l) })] as const
+    );
+    const languages = { ...Object.fromEntries(urls), "x-default": urls[0][1] };
     // Articles carry a real publish date → expose it as lastModified.
     let lastModified: Date | undefined;
     if (typeof pair.sk === "object" && pair.sk.pathname === "/blog/[id]") {
@@ -84,10 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: priorityFor(pair.sk),
       ...(lastModified ? { lastModified } : {}),
     };
-    return [
-      { url: sk, ...common },
-      { url: en, ...common },
-    ];
+    return urls.map(([, url]) => ({ url, ...common }));
   });
 
   return [...localized, ...skOnly];

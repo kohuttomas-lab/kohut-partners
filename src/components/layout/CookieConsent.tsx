@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { isIntlLocale } from "@/i18n/routing";
 import { Button } from "@/components/ui/Button";
 import { getConsent, setConsent } from "@/lib/consent";
 import styles from "./CookieConsent.module.css";
@@ -11,6 +12,7 @@ import styles from "./CookieConsent.module.css";
 // future analytics can gate on it. Shown once until a choice is made.
 export function CookieConsent() {
   const t = useTranslations("consent");
+  const locale = useLocale();
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -28,7 +30,12 @@ export function CookieConsent() {
     <div className={styles.bar} role="dialog" aria-label="Cookies">
       <p className={styles.text}>
         {t("text")}{" "}
-        <Link href="/cookies" className={styles.link}>
+        {/* Zásady cookies sú len SK/EN; z ostatných jazykov vedú na anglické znenie. */}
+        <Link
+          href="/cookies"
+          {...(isIntlLocale(locale) ? { locale: "en" as const, hrefLang: "en" } : {})}
+          className={styles.link}
+        >
           {t("more")}
         </Link>
       </p>

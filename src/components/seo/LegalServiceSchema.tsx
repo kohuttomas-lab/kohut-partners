@@ -1,4 +1,6 @@
 import { CONTACT } from "@/lib/content";
+import { isIntlLocale } from "@/i18n/routing";
+import { INTL_CONTENT } from "@/lib/content-intl";
 
 const BASE = "https://www.tkak.sk";
 
@@ -25,15 +27,18 @@ export function LegalServiceSchema({
   areaServedCity?: string;
   nationwide?: boolean;
 }) {
-  const sk = locale !== "en";
+  const sk = locale === "sk";
+  const intl = isIntlLocale(locale) ? INTL_CONTENT[locale].meta : undefined;
   const data = {
     "@context": "https://schema.org",
     "@type": "LegalService",
     name: "kohút & partners s.r.o.",
-    description: sk
-      ? "Advokátska kancelária vo Zvolene — insolvencie, obchodné a IT právo, nehnuteľnosti a súdne spory."
-      : "Slovak law firm in Zvolen advising international clients in English — real estate, company formation, debt recovery, insolvency and litigation under Slovak law.",
-    url: sk ? BASE : `${BASE}/en`,
+    description:
+      intl?.description ??
+      (sk
+        ? "Advokátska kancelária vo Zvolene — insolvencie, obchodné a IT právo, nehnuteľnosti a súdne spory."
+        : "Slovak law firm in Zvolen advising international clients in English — real estate, company formation, debt recovery, insolvency and litigation under Slovak law."),
+    url: sk ? BASE : `${BASE}/${locale}`,
     telephone: CONTACT.phone.replace(/\s/g, ""),
     email: CONTACT.email,
     address: {

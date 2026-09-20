@@ -72,7 +72,7 @@ export function ContactForm({ source = "Kontakt" }: { source?: string }) {
     };
 
     // Predmet nesie stránku aj jazykovú vetvu: "Dopyt z webu (CMR, EN) — Ján Novák".
-    const tag = locale === "sk" ? source : `${source}, EN`;
+    const tag = locale === "sk" ? source : `${source}, ${locale.toUpperCase()}`;
 
     setStatus("sending");
     const r = await submitLead(fields, `Dopyt z webu (${tag}) — ${meno}`);

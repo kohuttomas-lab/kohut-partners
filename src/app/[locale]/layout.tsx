@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { routing } from "@/i18n/routing";
+import { isIntlLocale, routing } from "@/i18n/routing";
+import { INTL_CONTENT } from "@/lib/content-intl";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BookingProvider } from "@/components/booking/BookingProvider";
@@ -16,6 +17,8 @@ import { ESHOP_ENABLED } from "@/lib/flags";
 import { localeAlternates } from "@/lib/seo";
 import "../globals.css";
 
+const OG_LOCALES = ["sk_SK", "en_GB", "pl_PL", "hu_HU", "de_DE", "ru_RU"];
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -23,12 +26,19 @@ export function generateStaticParams() {
 export async function generateMetadata(props: PageProps<"/[locale]">): Promise<Metadata> {
   const { locale } = await props.params;
   const sk = locale === "sk";
-  const title = sk
-    ? "kohút & partners — advokátska kancelária Zvolen"
-    : "kohút & partners — Slovak law firm | Zvolen, Slovakia";
-  const description = sk
-    ? "Insolvencie, obchodné a IT právo, nehnuteľnosti a súdne spory. Poradíme zrozumiteľne, konáme rýchlo a s vopred známou cenou. Zvolen."
-    : "Slovak law firm advising international clients in English: real estate, company formation, debt recovery, insolvency and litigation — exclusively under Slovak law.";
+  // PL/HU/DE/RU nesú vlastný titulok a popis v content-intl (meta).
+  const intl = isIntlLocale(locale) ? INTL_CONTENT[locale].meta : undefined;
+  const title =
+    intl?.title ??
+    (sk
+      ? "kohút & partners — advokátska kancelária Zvolen"
+      : "kohút & partners — Slovak law firm | Zvolen, Slovakia");
+  const description =
+    intl?.description ??
+    (sk
+      ? "Insolvencie, obchodné a IT právo, nehnuteľnosti a súdne spory. Poradíme zrozumiteľne, konáme rýchlo a s vopred známou cenou. Zvolen."
+      : "Slovak law firm advising international clients in English: real estate, company formation, debt recovery, insolvency and litigation — exclusively under Slovak law.");
+  const ogLocale = intl?.ogLocale ?? (sk ? "sk_SK" : "en_GB");
 
   return {
     metadataBase: new URL("https://www.tkak.sk"),
@@ -39,8 +49,8 @@ export async function generateMetadata(props: PageProps<"/[locale]">): Promise<M
       title,
       description,
       siteName: "kohút & partners",
-      locale: sk ? "sk_SK" : "en_GB",
-      alternateLocale: sk ? "en_GB" : "sk_SK",
+      locale: ogLocale,
+      alternateLocale: OG_LOCALES.filter((l) => l !== ogLocale),
       type: "website",
     },
     twitter: {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getPathname } from "@/i18n/navigation";
-import { routing } from "@/i18n/routing";
+import { localesFor, routing, type AppPathname } from "@/i18n/routing";
 
 export const SITE_URL = "https://www.tkak.sk";
 
@@ -13,16 +13,21 @@ type Href = Parameters<typeof getPathname>[0]["href"];
 type HrefFor = Href | ((locale: string) => Href);
 
 /**
- * Build canonical + hreflang alternates for a page so Google knows the SK and
- * EN versions are the same content in different languages. Uses the localized
+ * Build canonical + hreflang alternates for a page so Google knows the language
+ * versions are the same content in different languages. Uses the localized
  * pathnames from routing (e.g. /sluzby ↔ /en/services), so each language gets
  * its real URL. `x-default` points at the Slovak (primary) version.
  */
 export function localeAlternates(locale: string, href: HrefFor): Metadata["alternates"] {
   const hrefFor: (l: string) => Href = typeof href === "function" ? href : () => href;
 
+  // Len jazyky, v ktorých stránka naozaj existuje — hreflang nesmie sľubovať
+  // preklad, ktorý vracia 404 (blog a e-shop sú SK/EN, zvyšok v 6 jazykoch).
+  const sample = hrefFor(routing.defaultLocale);
+  const pathname = (typeof sample === "string" ? sample : sample.pathname) as AppPathname;
+
   const languages: Record<string, string> = {};
-  for (const l of routing.locales) {
+  for (const l of localesFor(pathname)) {
     languages[l] = SITE_URL + getPathname({ locale: l, href: hrefFor(l) });
   }
   languages["x-default"] =

@@ -1,5 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
-import type { Locale } from "@/i18n/routing";
+import { baseLocale } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { getShopPackages } from "@/lib/content";
 import { getPackageDetail } from "@/lib/shop-details";
@@ -22,7 +22,7 @@ import styles from "./FixedPackages.module.css";
 export function FixedPackages() {
   const t = useTranslations("shop");
   const common = useTranslations("common");
-  const locale = useLocale() as Locale;
+  const locale = baseLocale(useLocale());
   const packages = getShopPackages(locale);
 
   return (

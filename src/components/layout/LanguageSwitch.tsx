@@ -1,23 +1,55 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { useParams } from "next/navigation";
 import { useLocale } from "next-intl";
 import { usePathname, getPathname } from "@/i18n/navigation";
-import { SK_ONLY_PATHNAMES, type AppPathname } from "@/i18n/routing";
+import {
+  LOCALE_NAMES,
+  isAvailableIn,
+  routing,
+  type AppPathname,
+  type Locale,
+} from "@/i18n/routing";
 import { articleSlugIn } from "@/lib/article-slugs";
-import { Globe } from "@/components/icons";
+import { ChevronDown, Globe } from "@/components/icons";
 import { cx } from "@/lib/cx";
 import styles from "./LanguageSwitch.module.css";
 
-export function LanguageSwitch({ className }: { className?: string }) {
+export function LanguageSwitch({
+  className,
+  dropUp = false,
+}: {
+  className?: string;
+  /** Ponuka sa otvára nahor (mobilné menu, kde je prepínač pri spodnom okraji). */
+  dropUp?: boolean;
+}) {
   const pathname = usePathname();
   const params = useParams();
   const locale = useLocale();
-  const other = locale === "sk" ? "en" : "sk";
+  const root = useRef<HTMLDetailsElement>(null);
 
-  // Prepínač musí byť skutočný <a href>, nie tlačidlo — inak zo slovenskej
-  // vetvy webu nevedie na anglickú ani jeden prehľadateľný odkaz a /en zostáva
-  // pre crawlera ostrovom.
+  // Zavrieť ponuku pri kliku mimo nej a po Esc — <details> to samo nerobí.
+  useEffect(() => {
+    const close = (e: Event) => {
+      const el = root.current;
+      if (!el?.open) return;
+      if (e instanceof KeyboardEvent ? e.key === "Escape" : !el.contains(e.target as Node)) {
+        el.open = false;
+      }
+    };
+    document.addEventListener("click", close);
+    document.addEventListener("keydown", close);
+    return () => {
+      document.removeEventListener("click", close);
+      document.removeEventListener("keydown", close);
+    };
+  }, []);
+
+  // Položky musia byť skutočné <a href>, nie tlačidlá — inak zo slovenskej
+  // vetvy webu nevedie na ostatné jazyky ani jeden prehľadateľný odkaz a /en,
+  // /pl… zostávajú pre crawlera ostrovom. <details> drží odkazy v HTML aj
+  // v zatvorenom stave a nepotrebuje na otvorenie JavaScript.
   //
   // `usePathname()` vracia interný template (napr. "/services/[id]"), preto
   // doňho treba doplniť `params`. `getPathname` je čistá funkcia — v klientskom
@@ -28,33 +60,46 @@ export function LanguageSwitch({ className }: { className?: string }) {
   // /sk/kontakt → redirect na /kontakt. Takto vyjde presne tá istá URL, akú
   // uvádza canonical/hreflang (lib/seo.ts) aj sitemap.
   //
-  // Slovenské-only cesty nemajú anglický náprotivok, tak vedú na domovskú
-  // stránku v druhom jazyku namiesto do 404.
+  // Stránka, ktorá v cieľovom jazyku neexistuje (kampaňové len SK; blog,
+  // e-shop, mestá a právne dokumenty len SK/EN), vedie na domovskú stránku
+  // v tom jazyku namiesto do 404.
   //
-  // Články majú v každom jazyku iný slug (mapa v lib/article-slugs.ts), takže
-  // samotný `params` z aktuálnej adresy nestačí — `id` treba preložiť. Bez toho
-  // vedie prepínač z anglického článku na /blog/{anglický-slug}, čo je 404;
-  // zo slovenského zas na /en/blog/{slovenský-slug}, čo je zbytočná 301.
-  // Zámerne sa mapuje len pathname článku, ostatné dynamické cesty (služby)
-  // majú slug v oboch jazykoch rovnaký.
-  const skOnly = SK_ONLY_PATHNAMES.includes(pathname as AppPathname);
-  const otherParams =
-    pathname === "/blog/[id]" && typeof params.id === "string"
-      ? { ...params, id: articleSlugIn(params.id, locale, other) }
-      : params;
-  const href = skOnly
-    ? getPathname({ locale: other, href: "/" })
-    : getPathname({ locale: other, href: { pathname, params: otherParams } as never });
+  // Články majú v slovenčine a angličtine iný slug (mapa v lib/article-slugs.ts),
+  // takže samotný `params` z aktuálnej adresy nestačí — `id` treba preložiť.
+  // Ostatné dynamické cesty (služby) majú slug vo všetkých jazykoch rovnaký.
+  const hrefFor = (target: Locale): string => {
+    if (!isAvailableIn(pathname as AppPathname, target)) {
+      return getPathname({ locale: target, href: "/" });
+    }
+    const targetParams =
+      pathname === "/blog/[id]" && typeof params.id === "string"
+        ? { ...params, id: articleSlugIn(params.id, locale, target) }
+        : params;
+    return getPathname({
+      locale: target,
+      href: { pathname, params: targetParams } as never,
+    });
+  };
 
   return (
-    <a
-      href={href}
-      hrefLang={other}
-      className={cx(styles.btn, className)}
-      aria-label={`Switch language to ${other.toUpperCase()}`}
-    >
-      <Globe size={16} />
-      {other.toUpperCase()}
-    </a>
+    <details ref={root} className={cx(styles.root, className)}>
+      <summary className={styles.btn} aria-label="Language / Jazyk">
+        <Globe size={16} />
+        {locale.toUpperCase()}
+        <ChevronDown size={14} className={styles.chevron} />
+      </summary>
+      <ul className={cx(styles.menu, dropUp && styles.menuUp)}>
+        {routing.locales
+          .filter((l) => l !== locale)
+          .map((l) => (
+            <li key={l}>
+              <a href={hrefFor(l)} hrefLang={l} lang={l} className={styles.item}>
+                <span className={styles.code}>{l.toUpperCase()}</span>
+                {LOCALE_NAMES[l]}
+              </a>
+            </li>
+          ))}
+      </ul>
+    </details>
   );
 }

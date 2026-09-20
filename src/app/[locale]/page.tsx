@@ -1,4 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
+import { isIntlLocale } from "@/i18n/routing";
 import { HomeHero } from "@/components/sections/HomeHero";
 import { Stats } from "@/components/sections/Stats";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
@@ -21,8 +22,13 @@ export default async function HomePage(props: PageProps<"/[locale]">) {
       <ServicesGrid />
       <Process />
       <TeamSection withButton />
-      <Regions />
-      <BlogPreview />
+      {/* Mestské stránky a blog existujú len po slovensky a anglicky. */}
+      {isIntlLocale(locale) ? null : (
+        <>
+          <Regions />
+          <BlogPreview />
+        </>
+      )}
       {/* <References /> stays out until REFERENCES holds real, approved client
           names — the placeholder list is fictitious and must never render. */}
       <CTABand />

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { localeAlternates } from "@/lib/seo";
-import type { Locale } from "@/i18n/routing";
+import { isAvailableIn, type BaseLocale as Locale } from "@/i18n/routing";
 import { getBlog } from "@/lib/content";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/Section";
@@ -17,6 +18,8 @@ type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const { locale } = await props.params;
+  // Stránka existuje len po slovensky a anglicky (viď BASE_ONLY_PATHNAMES).
+  if (!isAvailableIn("/blog", locale)) return {};
   const t = await getTranslations({ locale, namespace: "home" });
   return {
     title: t("blogTitle"),
@@ -27,6 +30,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
 export default async function BlogPage(props: Props) {
   const { locale } = await props.params;
+  if (!isAvailableIn("/blog", locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "home" });
   const common = await getTranslations({ locale, namespace: "common" });

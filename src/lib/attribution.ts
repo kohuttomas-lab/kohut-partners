@@ -43,6 +43,15 @@ const UTM_KEYS = [
  * Prázdne hodnoty nechávame prázdne — submitLead ich odfiltruje, takže pri
  * priamej návšteve e-mail nezaťaží ani jeden zbytočný riadok.
  */
+const LANGUAGE_VERSION: Record<string, string> = {
+  sk: "slovenská (/)",
+  en: "anglická (/en)",
+  pl: "poľská (/pl)",
+  hu: "maďarská (/hu)",
+  de: "nemecká (/de)",
+  ru: "ruská (/ru)",
+};
+
 export function collectAttribution(locale: string): Record<string, string> {
   if (typeof window === "undefined") return {};
 
@@ -94,7 +103,7 @@ export function collectAttribution(locale: string): Record<string, string> {
     "Odkiaľ prišiel": refLabel,
     "Kampaň (UTM)": utm,
     "Google Ads (gclid)": q.get("gclid")?.trim() ?? "",
-    "Jazyková verzia": locale === "sk" ? "slovenská (/)" : "anglická (/en)",
+    "Jazyková verzia": LANGUAGE_VERSION[locale] ?? locale,
     // Krajina dopytu: časové pásmo a jazyk zariadenia. Oboje číta prehliadač
     // sám zo svojho nastavenia — žiadna geolokácia, žiadna IP adresa, žiadna
     // tretia strana; CRM si z toho odvodí vlajku (viď cesta/src/lib/krajiny.ts).
