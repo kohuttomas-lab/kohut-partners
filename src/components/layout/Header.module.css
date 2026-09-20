@@ -44,6 +44,9 @@
   font-weight: 600;
   font-size: 15px;
   color: var(--text-body);
+  /* Dlhšie položky (PL „Klienci zagraniczni", RU «Иностранным клиентам») sa
+     nesmú zalamovať na dva riadky. */
+  white-space: nowrap;
   transition: color var(--dur-fast) var(--ease-standard);
 }
 .link:hover {
@@ -111,6 +114,19 @@
   margin-top: 18px;
 }
 
+/* Stredné šírky: menu sa ešte zmestí, ale len s menšími rozstupmi. */
+@media (min-width: 901px) and (max-width: 1180px) {
+  .nav {
+    gap: 18px;
+  }
+  .link {
+    font-size: 14px;
+  }
+  .actions {
+    gap: 8px;
+  }
+}
+
 @media (max-width: 900px) {
   .inner {
     height: 84px;
@@ -126,6 +142,30 @@
     display: inline-flex;
   }
   .mobilePanelOpen {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    border-top: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+    padding: 14px 20px 24px;
+  }
+}
+
+/* PL/HU/DE/RU majú dlhšie položky menu aj tlačidlo — na stredných šírkach by
+   hlavička pretiekla, preto prechádzajú na mobilné menu už pod 1100 px.
+   Slovenčina a angličtina ostávajú pri 900 px. */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .longLabels .nav,
+  .longLabels .desktopActions {
+    display: none;
+  }
+  .longLabels .mobileActions {
+    display: inline-flex;
+  }
+  .longLabels .mobilePanelOpen {
     display: block;
     position: absolute;
     top: 100%;

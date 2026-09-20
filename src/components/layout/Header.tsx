@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
-import { isAvailableIn } from "@/i18n/routing";
+import { isAvailableIn, isIntlLocale } from "@/i18n/routing";
 import { Container } from "./Section";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { Button } from "@/components/ui/Button";
@@ -69,7 +69,13 @@ export function Header() {
   };
 
   return (
-    <header className={cx(styles.header, scrolled && styles.scrolled)}>
+    <header
+      className={cx(
+        styles.header,
+        scrolled && styles.scrolled,
+        isIntlLocale(locale) && styles.longLabels
+      )}
+    >
       <Container>
         <div className={styles.inner}>
           <Link href="/" className={styles.logo} aria-label="kohút & partners">
