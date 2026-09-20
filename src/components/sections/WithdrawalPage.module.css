@@ -1,0 +1,83 @@
+.section {
+  background: var(--color-surface);
+  padding: 72px 0 88px;
+}
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.heading {
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--text-strong);
+  margin: 0 0 14px;
+}
+.heading + .heading,
+.formBox + .heading {
+  margin-top: 34px;
+}
+.para {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--text-body);
+  margin: 0 0 14px;
+}
+.para a {
+  color: var(--accent);
+}
+.note {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0 0 12px;
+}
+.formBox {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  padding: 18px 20px;
+}
+.formLine {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin: 0 0 8px;
+}
+.formLine:last-child {
+  margin-bottom: 0;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin: 18px 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.contact a {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--accent);
+  text-decoration: none;
+}
+.formCard {
+  position: sticky;
+  top: 96px;
+}
+@media (max-width: 960px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .formCard {
+    position: static;
+  }
+}
+@media (max-width: 640px) {
+  .section {
+    padding: 48px 0 64px;
+  }
+}

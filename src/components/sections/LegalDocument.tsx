@@ -11,12 +11,14 @@ export function LegalDocument({ doc, action }: { doc: LegalDoc; action?: ReactNo
       <PageHero overline={doc.overline} title={doc.title} />
       <section className={styles.section}>
         <Container style={{ maxWidth: 820 }}>
-          <div className={styles.notice}>
-            <span className={styles.noticeIcon}>
-              <Shield size={18} />
-            </span>
-            <span className={styles.noticeText}>{doc.notice}</span>
-          </div>
+          {doc.notice ? (
+            <div className={styles.notice}>
+              <span className={styles.noticeIcon}>
+                <Shield size={18} />
+              </span>
+              <span className={styles.noticeText}>{doc.notice}</span>
+            </div>
+          ) : null}
           <p className={styles.updated}>{doc.updated}</p>
 
           {doc.sections.map((s, i) => (

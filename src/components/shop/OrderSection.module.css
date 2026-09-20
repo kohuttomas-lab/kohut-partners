@@ -330,3 +330,8 @@
   text-transform: uppercase;
   color: var(--text-muted);
 }
+
+.termsLink {
+  color: var(--accent);
+  text-decoration: underline;
+}

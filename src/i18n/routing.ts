@@ -131,6 +131,8 @@ export const routing = defineRouting({
     "/privacy": { sk: "/ochrana-udajov", en: "/privacy", ...same("/privacy") },
     "/terms": { sk: "/obchodne-podmienky", en: "/terms", ...same("/terms") },
     "/cookies": { sk: "/cookies", en: "/cookies", ...same("/cookies") },
+    // Funkcia na odstúpenie od zmluvy podľa § 20a zák. 108/2024 Z. z. (e-shop, len SK/EN).
+    "/withdrawal": { sk: "/odstupenie-od-zmluvy", en: "/withdrawal", ...same("/withdrawal") },
   },
 });
 
@@ -221,6 +223,7 @@ export const BASE_ONLY_PATHNAMES: AppPathname[] = [
   "/privacy",
   "/terms",
   "/cookies",
+  "/withdrawal",
 ];
 
 /** Jazyky, v ktorých daná cesta naozaj existuje (hreflang, sitemap, prepínač). */

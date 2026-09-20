@@ -136,7 +136,7 @@
     "story": [
       "We founded the firm in 2011 with an ambition to do law differently — closer to the entrepreneur and further from needless complexity.",
       "Today we’re a coordinated team guiding companies from formation through growth to crisis situations. We focus on insolvency, corporate and IT law, real estate and litigation.",
-      "We believe the best lawyer is the one you understand. So we explain every matter in human terms and state the price up front."
+      "We believe a good lawyer is one you understand. So we explain every matter in human terms and state the price up front."
     ]
   },
   "contact": {
@@ -319,7 +319,13 @@
       "offlineLead": "Online payment is currently unavailable. Within one business day we send you a confirmation with a payment link.",
       "addonsLabel": "Add-ons",
       "totalLabel": "Total",
-      "tiersLabel": "Tiers"
+      "tiersLabel": "Tiers",
+      "consentStart": "I ask you to start providing the service before the 14-day withdrawal period expires. I acknowledge that once the service has been fully provided I lose the right of withdrawal, and that if I withdraw after the start I pay for the service already provided.",
+      "consentStartRequired": "This consent is required for the express variant — without it we can only start after the 14-day period expires.",
+      "consentStartOptional": "Without this consent we start providing the service only after the 14-day withdrawal period expires.",
+      "consentTermsBefore": "I have read the ",
+      "consentTermsLink": "terms and conditions",
+      "consentTermsAfter": " and agree to them."
     }
   },
   "footer": {
@@ -350,7 +356,8 @@
         "items": [
           "Privacy",
           "Terms",
-          "Cookies"
+          "Cookies",
+          "Withdrawal"
         ]
       },
       {
@@ -629,7 +636,7 @@
     "metaDescription": "Form a Slovak s.r.o. and secure the residence permit or EU Blue Card that lets you run it — handled together, under Slovak law. Law firm in Zvolen, remote-friendly.",
     "heroOverline": "For foreign entrepreneurs and employees",
     "heroTitle": "Company formation and residence permits — handled as one matter",
-    "heroLead": "A Slovak s.r.o. is easy to form remotely. Running it as its director from outside the EU or OECD is not — that needs a separate residence permit, applied for under a different chapter of the same Act. We handle both together, so one doesn't stall on the other.",
+    "heroLead": "A Slovak s.r.o. is easy to form remotely. Running it as its director from outside the EU or OECD is not — that needs a separate residence permit, applied for under the Slovak Act on the Residence of Aliens. We handle both together, so one doesn't stall on the other.",
     "heroPara": [
       "We act for founders forming a Slovak company, for highly qualified employees applying for the EU Blue Card, and for third-country nationals seeking a work-based residence permit.",
       "We advise exclusively on Slovak law and represent you before the Slovak commercial register, the tax authority and the foreign police (cudzinecká polícia)."
@@ -768,7 +775,7 @@
     ],
     "relatedTitle": "Related",
     "sourcesTitle": "The legislation this page is based on",
-    "sourcesLead": "Legal position as at 23 August 2026; Act No. 404/2011 Coll. is cited as in force from 15 July 2026, and Act No. 29/2026 Coll. on the Commercial Register, which replaced Act No. 530/2003 Coll. on 17 August 2026. The full text of each instrument is available on Slov-Lex and EUR-Lex. Thresholds tied to the subsistence minimum or the average wage change each year — the current figure must be checked as at the date of filing. The information above is general and does not replace advice on an individual matter.",
+    "sourcesLead": "Legal position as at 23 August 2026. Cited are Act No. 404/2011 Coll. as in force from 15 July 2026 and Act No. 29/2026 Coll. on the Commercial Register, which replaced Act No. 530/2003 Coll. on 17 August 2026. The full text of each instrument is available on Slov-Lex and EUR-Lex. Thresholds tied to the subsistence minimum or the average wage change each year — the current figure must be checked as at the date of filing. The information above is general and does not replace advice on an individual matter.",
     "sources": [
       {
         "label": "Act No. 404/2011 Coll. on the Residence of Aliens",

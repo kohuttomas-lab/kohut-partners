@@ -66,10 +66,10 @@ Stránky písané na jednu konkrétnu situáciu — s lehotami, ktoré v nej be�
 - https://www.tkak.sk/gdpr-dokumentacia — GDPR dokumentácia na mieru za 199 €: záznamy o spracovateľských činnostiach, informačné povinnosti, smernica, poverenia, sprostredkovateľské zmluvy. Do 7 pracovných dní, ročná aktualizácia 79 €.
 - https://www.tkak.sk/obchodne-podmienky-eshop — dokumenty pre e-shop za 169 €: obchodné podmienky, reklamačný poriadok, odstúpenie s formulárom, kontrola povinných údajov. Podľa zákona 108/2024 Z. z. vrátane zmien účinných od 27. 9. 2026 (§ 20a online funkcia odstúpenia). S GDPR spolu 299 €.
 - https://www.tkak.sk/predzalobna-vyzva — predžalobná výzva od advokáta za 89 €, odoslaná do 2 pracovných dní; vyčíslenie istiny, úrokov a paušálnej náhrady 40 € pri B2B pohľadávkach.
-- https://www.tkak.sk/vymahanie-pohladavok — vymáhanie pohľadávok po krokoch s pevnými cenami: výzva 89 €, platobný rozkaz 290 € (upomínacie konanie s polovičným súdnym poplatkom), návrh na exekúciu 149 €; sporové konanie dohodou (podielová odmena max. 20 %).
+- https://www.tkak.sk/vymahanie-pohladavok — vymáhanie pohľadávok po krokoch s pevnými cenami: výzva 89 €, platobný rozkaz 290 € (upomínacie konanie, súdny poplatok 3 % z istiny), návrh na exekúciu 149 €; sporové konanie dohodou (podielová odmena max. 20 %).
 - https://www.tkak.sk/zavet — závet spísaný advokátom za 99 €, s listinou o vydedení 149 €. Neopomenuteľní dedičia podľa § 479 OZ, vydedenie len z dôvodov § 469a OZ; chýbajúci dátum robí závet neplatným (§ 476 ods. 2).
 - https://www.tkak.sk/kupna-zmluva-nehnutelnost — kúpna zmluva na byt/dom + návrh na vklad 249 €, darovacia + vklad 99 €, samostatný vklad 149 €. Zmluva autorizovaná advokátom bez osvedčovania podpisov (§ 42 ods. 3 katastrálneho zákona); advokátska úschova kúpnej ceny.
-- https://www.tkak.sk/osobny-bankrot — osobný bankrot: bezplatné posúdenie, príprava podkladov pre Centrum právnej pomoci za 149 € (§ 167 ods. 2 ZKR), zastúpenie počas konkurzu od 290 €. Návrh na súd podáva Centrum právnej pomoci (§ 166k ZKR); podmienkou je exekúcia, pri konkurze aspoň rok od poverenia exekútora.
+- https://www.tkak.sk/osobny-bankrot — osobný bankrot: bezplatné posúdenie, príprava podkladov pre Centrum právnej pomoci za 149 € (§ 167 ods. 2 ZKR), zastúpenie počas konkurzu za pevnú cenu dohodnutú vopred. Pri konkurze návrh podáva Centrum právnej pomoci, pri splátkovom kalendári advokát určený Centrom (§ 166k ZKR); podmienkou je exekúcia, pri konkurze aspoň rok od poverenia exekútora.
 - https://www.tkak.sk/platobny-rozkaz — návrh na platobný rozkaz v upomínacom konaní (zákon č. 307/2016 Z. z., Okresný súd Banská Bystrica): 290 € pri pohľadávke do 3 000 €, 490 € nad 3 000 €, súdny poplatok osobitne; rozkaz bez odporu má účinky právoplatného rozsudku.
 
 ## Medzinárodná agenda
@@ -127,7 +127,7 @@ Témy pre klientov mimo Slovenska. Existujú v slovenčine aj v angličtine.
 - Telefón: +421 907 823 239
 - E-mail: klienti@tkak.sk
 - Adresa: Námestie SNP 74/28, 960 01 Zvolen
-- Otváracie hodiny: Po–Pia 09:00–18:00
+- Otváracie hodiny: Po–Pia 09:00–16:00
 - Jazyky: slovenčina, angličtina
 
 ## English version (/en)
@@ -207,7 +207,7 @@ Slovak URLs have no prefix, English ones are prefixed with `/en`.
 - Phone: +421 907 823 239
 - E-mail: klienti@tkak.sk
 - Address: Námestie SNP 74/28, 960 01 Zvolen, Slovakia
-- Office hours: Mon–Fri 09:00–18:00 (CET/CEST)
+- Office hours: Mon–Fri 09:00–16:00 (CET/CEST)
 
 ### Note on the situation pages
 

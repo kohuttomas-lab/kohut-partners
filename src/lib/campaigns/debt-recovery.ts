@@ -2,7 +2,7 @@ import type { CampaignData } from "./types";
 
 /**
  * Vymáhanie pohľadávok — lievik (katalóg B4): výzva 89 € → platobný rozkaz
- * 290 € (upomínacie konanie, zák. 307/2016 — vždy OS BB, polovičný poplatok)
+ * 290 € (upomínacie konanie, zák. 307/2016 — vždy OS BB, poplatok 3 % z istiny)
  * → spor dohodou (max 20 % podľa § 7/§ 8 vyhl. 655/2004) → exekúcia 149 €.
  */
 export const debtRecovery: CampaignData = {
@@ -38,7 +38,7 @@ export const debtRecovery: CampaignData = {
       },
       {
         title: "2 · Platobný rozkaz — 290 € do 3 000 €, 490 € nad 3 000 €",
-        desc: "Upomínacie konanie je elektronické, so súdnym poplatkom polovičným oproti klasickej žalobe. Ak dlžník nepodá odpor, máte exekučný titul spravidla do niekoľkých týždňov.",
+        desc: "Upomínacie konanie je elektronické, so súdnym poplatkom 3 % z istiny — polovicou percentnej sadzby klasickej žaloby. Ak dlžník nepodá odpor, máte exekučný titul spravidla do niekoľkých týždňov.",
       },
       {
         title: "3 · Sporové konanie — dohodou",
@@ -76,7 +76,7 @@ export const debtRecovery: CampaignData = {
     },
     {
       title: "Platobný rozkaz",
-      desc: "Bez reakcie dlžníka podáme návrh v upomínacom konaní za 290 € (pohľadávka do 3 000 €) alebo 490 € (nad 3 000 €) + polovičný súdny poplatok. O odpore a ďalších krokoch rozhodujete vy — s číslami na stole.",
+      desc: "Bez reakcie dlžníka podáme návrh v upomínacom konaní za 290 € (pohľadávka do 3 000 €) alebo 490 € (nad 3 000 €) + súdny poplatok 3 % z istiny. O odpore a ďalších krokoch rozhodujete vy — s číslami na stole.",
     },
     {
       title: "Exekúcia",
@@ -138,7 +138,7 @@ export const debtRecovery: CampaignData = {
     },
     {
       q: "Čo je upomínacie konanie a prečo ním začíname?",
-      a: "Elektronické konanie o platobnom rozkaze so súdnym poplatkom polovičným oproti klasickej žalobe. Návrhy vybavuje jediný súd pre celé Slovensko a pri nesporných faktúrach je to najrýchlejšia cesta k exekučnému titulu. Ak dlžník podá odpor, vec pokračuje ako bežný spor — o tom, či doň ísť, rozhodnete s našimi číslami na stole.",
+      a: "Elektronické konanie o platobnom rozkaze so súdnym poplatkom 3 % z istiny (polovica percentnej sadzby klasickej žaloby). Návrhy vybavuje jediný súd pre celé Slovensko a pri nesporných faktúrach je to najrýchlejšia cesta k exekučnému titulu. Ak dlžník podá odpor, vec pokračuje ako bežný spor — o tom, či doň ísť, rozhodnete s našimi číslami na stole.",
     },
     {
       q: "Dlžník skončil v konkurze. Je koniec?",

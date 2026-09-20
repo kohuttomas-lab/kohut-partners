@@ -160,5 +160,5 @@ export const companyLiquidation: CampaignData = {
   ],
 
   relatedServiceId: "obchod",
-  relatedServiceLabel: "Obchodné právo a firemná agenda",
+  relatedServiceLabel: "Obchodné a občianske právo",
 };
