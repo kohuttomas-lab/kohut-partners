@@ -19,7 +19,7 @@ Kategória musí sedieť s existujúcimi (Insolvencie, Obchodné právo, IT prá
 - [x] Ako sa brániť neoprávnenej exekúcii | kategória: Súdne spory
 - [x] Trestné oznámenie vs. podanie na políciu: čo, kedy a ako | kategória: Trestné právo
 - [x] Reštrukturalizácia firmy v roku 2026: podmienky a priebeh | kategória: Insolvencie
-- [ ] Prihláška pohľadávky do konkurzu: lehoty a najčastejšie chyby | kategória: Insolvencie
+- [x] Prihláška pohľadávky do konkurzu: lehoty a najčastejšie chyby | kategória: Insolvencie
 - [ ] Osobný bankrot: aký majetok dlžníkovi zostane | kategória: Insolvencie
 - [ ] Zmluva o dielo: ustanovenia, ktoré chránia objednávateľa | kategória: Obchodné právo
 - [ ] Splatnosť faktúr a úroky z omeškania: čo môžete žiadať | kategória: Obchodné právo
