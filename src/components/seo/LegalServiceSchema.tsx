@@ -1,4 +1,5 @@
 import { CONTACT } from "@/lib/content";
+import { MEMBER_OF_SCHEMA } from "@/lib/memberships";
 
 const BASE = "https://www.tkak.sk";
 
@@ -53,6 +54,7 @@ export function LegalServiceSchema({
         : SERVED_CITIES.map(city),
     priceRange: "€€",
     knowsLanguage: ["sk", "en"],
+    ...(MEMBER_OF_SCHEMA.length ? { memberOf: MEMBER_OF_SCHEMA } : {}),
     founder: {
       "@type": "Person",
       name: "Tomáš Kohút",

@@ -9,6 +9,7 @@ import { CTABand } from "@/components/layout/CTABand";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { CONTACT } from "@/lib/content";
 import { Check, Shield } from "@/components/icons";
+import { InternationalMemberships } from "@/components/sections/Memberships";
 import styles from "./international.module.css";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -90,6 +91,8 @@ export default async function InternationalPage(props: Props) {
               <p className={styles.scopeText}>{t("scopeText")}</p>
             </div>
           </div>
+
+          <InternationalMemberships />
         </Container>
       </section>
 

@@ -6,6 +6,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Card } from "@/components/ui/Card";
 import { TeamSection } from "@/components/sections/TeamSection";
 import { CTABand } from "@/components/layout/CTABand";
+import { AboutMemberships } from "@/components/sections/Memberships";
 import styles from "./about.module.css";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -67,6 +68,7 @@ export default async function AboutPage(props: Props) {
                 {p}
               </p>
             ))}
+            <AboutMemberships />
           </div>
           <div className={styles.statPanel}>
             {/* eslint-disable-next-line @next/next/no-img-element */}

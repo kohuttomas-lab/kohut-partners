@@ -15,6 +15,7 @@ import { FaqItem } from "@/components/sections/FaqItem";
 import { BookingButton } from "@/components/booking/BookingButton";
 import { CTABand } from "@/components/layout/CTABand";
 import { ArrowLeft, Calendar, Check } from "@/components/icons";
+import { InsolvencyMemberships } from "@/components/sections/Memberships";
 import styles from "./service.module.css";
 
 type Props = { params: Promise<{ locale: string; id: string }> };
@@ -130,6 +131,7 @@ export default async function ServiceDetailPage(props: Props) {
               ))}
             </p>
           ) : null}
+          {id === "insolvencie" ? <InsolvencyMemberships /> : null}
         </Container>
       </section>
 
