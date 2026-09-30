@@ -4,6 +4,7 @@ import { Container } from "./Section";
 import { Mail, MapPin, Phone } from "@/components/icons";
 import { CONTACT } from "@/lib/content";
 import { cx } from "@/lib/cx";
+import { FooterMemberships } from "@/components/sections/Memberships";
 import styles from "./Footer.module.css";
 
 interface FooterCol {
@@ -138,6 +139,8 @@ export function Footer() {
             </div>
           ))}
         </div>
+
+        <FooterMemberships />
 
         <div className={styles.bottom}>
           <span className={styles.rights}>{t("rights")}</span>
