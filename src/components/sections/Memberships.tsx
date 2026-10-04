@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { ACTIVE_MEMBERSHIPS, type Membership } from "@/lib/memberships";
+import { ACTIVE_MEMBERSHIPS, TEXT_KEY, type Membership } from "@/lib/memberships";
 import { cx } from "@/lib/cx";
 import styles from "./Memberships.module.css";
 
@@ -65,7 +65,7 @@ export function AboutMemberships() {
             <Logo m={m} className={styles.aboutLogo} />
           </span>
           <span className={styles.aboutText}>
-            <b>{m.name}</b>: {t(`${m.id}.short`)}
+            <b>{m.name}</b>: {t(`${m.id}.about`)}
           </span>
         </a>
       ))}
@@ -82,7 +82,7 @@ export function InsolvencyMemberships() {
       <div>
         <div className={styles.kicker}>{t("insolvency.kicker")}</div>
         <h3 className={styles.cardTitle}>{t("insolvency.title")}</h3>
-        <p className={styles.cardText}>{t("insolvency.text")}</p>
+        <p className={styles.cardText}>{t(`insolvency.${TEXT_KEY}`)}</p>
       </div>
       <div className={styles.cardLogos}>
         {ACTIVE_MEMBERSHIPS.map((m) => (
@@ -110,7 +110,7 @@ export function InternationalMemberships() {
       </div>
       <div>
         <h3 className={styles.bandTitle}>{t("international.title")}</h3>
-        <p className={styles.bandText}>{t("international.text")}</p>
+        <p className={styles.bandText}>{t(`international.${TEXT_KEY}`)}</p>
       </div>
     </div>
   );

@@ -830,16 +830,23 @@
     "footerLabel": "International networks",
     "aboutLabel": "Memberships",
     "irglobal": {
-      "short": "exclusive member for insolvency & restructuring in Slovakia"
+      "short": "exclusive member for insolvency & restructuring in Slovakia",
+      "about": "exclusive member for insolvency & restructuring in Slovakia"
     },
     "insolvency": {
       "kicker": "Cross-border insolvency",
       "title": "Debtor or assets abroad? We have a partner there.",
-      "text": "We are the exclusive IR Global member for insolvency in Slovakia. When proceedings cross borders, we work with vetted colleagues in a network with members in more than 155 jurisdictions and coordinate everything for the client."
+      "text": "We are the exclusive IR Global member for insolvency in Slovakia. When proceedings cross borders, we work with vetted colleagues in a network with members in more than 155 jurisdictions and coordinate everything for the client.",
+      "textInsol": "We are the exclusive IR Global member for insolvency in Slovakia, and Tomáš Kohút is a member of INSOL Europe. When proceedings cross borders, we work with vetted colleagues in a network with members in more than 155 jurisdictions and coordinate everything for the client."
     },
     "international": {
       "title": "Part of an international network",
-      "text": "We are the exclusive IR Global member for insolvency and restructuring in Slovakia. If your matter reaches beyond Slovakia, we work with vetted colleagues in other jurisdictions and stay your single point of contact."
+      "text": "We are the exclusive IR Global member for insolvency and restructuring in Slovakia. If your matter reaches beyond Slovakia, we work with vetted colleagues in other jurisdictions and stay your single point of contact.",
+      "textInsol": "We are the exclusive IR Global member for insolvency and restructuring in Slovakia, and Tomáš Kohút is a member of INSOL Europe. If your matter reaches beyond Slovakia, we work with vetted colleagues in other jurisdictions and stay your single point of contact."
+    },
+    "insol": {
+      "short": "Tomáš Kohút is a member of the European association of insolvency professionals",
+      "about": "Tomáš Kohút, member"
     }
   }
 }

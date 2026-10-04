@@ -830,16 +830,23 @@
     "footerLabel": "Medzinárodné siete",
     "aboutLabel": "Členstvá",
     "irglobal": {
-      "short": "exkluzívny člen pre insolvencie a reštrukturalizácie na Slovensku"
+      "short": "exkluzívny člen pre insolvencie a reštrukturalizácie na Slovensku",
+      "about": "exkluzívny člen pre insolvencie a reštrukturalizácie na Slovensku"
     },
     "insolvency": {
       "kicker": "Cezhraničné insolvencie",
       "title": "Dlžník alebo majetok v zahraničí? Partnera tam máme.",
-      "text": "Sme exkluzívnym členom IR Global pre insolvencie na Slovensku. Ak konanie presahuje hranice, spolupracujeme s preverenými kolegami v sieti s členmi vo viac ako 155 jurisdikciách a za klienta všetko koordinujeme my."
+      "text": "Sme exkluzívnym členom IR Global pre insolvencie na Slovensku. Ak konanie presahuje hranice, spolupracujeme s preverenými kolegami v sieti s členmi vo viac ako 155 jurisdikciách a za klienta všetko koordinujeme my.",
+      "textInsol": "Sme exkluzívnym členom IR Global pre insolvencie na Slovensku. Tomáš Kohút je zároveň členom INSOL Europe. Ak konanie presahuje hranice, spolupracujeme s preverenými kolegami v sieti s členmi vo viac ako 155 jurisdikciách a za klienta všetko koordinujeme my."
     },
     "international": {
       "title": "Súčasť medzinárodnej siete",
-      "text": "Sme exkluzívnym členom IR Global pre insolvencie a reštrukturalizácie na Slovensku. Ak vaša vec presahuje Slovensko, spolupracujeme s preverenými kolegami v iných krajinách a ostávame vaším jediným kontaktom."
+      "text": "Sme exkluzívnym členom IR Global pre insolvencie a reštrukturalizácie na Slovensku. Ak vaša vec presahuje Slovensko, spolupracujeme s preverenými kolegami v iných krajinách a ostávame vaším jediným kontaktom.",
+      "textInsol": "Sme exkluzívnym členom IR Global pre insolvencie a reštrukturalizácie na Slovensku a Tomáš Kohút je členom INSOL Europe. Ak vaša vec presahuje Slovensko, spolupracujeme s preverenými kolegami v iných krajinách a ostávame vaším jediným kontaktom."
+    },
+    "insol": {
+      "short": "Tomáš Kohút je členom európskej asociácie insolvenčných odborníkov",
+      "about": "Tomáš Kohút, člen"
     }
   }
 }

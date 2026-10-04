@@ -7,12 +7,9 @@
    do menného priestoru `memberships` v messages/*.json. Kým `enabled`
    nie je true, na webe sa nezobrazí.
 
-   INSOL Europe (pripravené, zatiaľ vypnuté): členom je fyzická osoba,
-   nie kancelária — texty preto hovoria o Tomášovi Kohútovi. Pred zapnutím
-   treba súhlas INSOL Europe s použitím loga a jeho vektorovú verziu.
-     { id: "insol", name: "INSOL Europe", href: "https://www.insol-europe.org/",
-       logoLight: "/logo/partners/insol-navy.svg", logoDark: "/logo/partners/insol-white.svg",
-       width: 548, height: 206, enabled: false } */
+   INSOL Europe: členom je fyzická osoba, nie kancelária — texty preto
+   hovoria o Tomášovi Kohútovi. Logo je zatiaľ PNG z insol-europe.org;
+   po prijatí si vyžiadať vektorovú verziu. */
 
 export type MembershipId = "irglobal" | "insol";
 
@@ -42,12 +39,28 @@ export const MEMBERSHIPS: Membership[] = [
     height: 386,
     enabled: true,
   },
+  {
+    id: "insol",
+    name: "INSOL Europe",
+    href: "https://www.insol-europe.org/",
+    logoLight: "/logo/partners/insol-navy.png",
+    logoDark: "/logo/partners/insol-white.png",
+    width: 548,
+    height: 206,
+    enabled: true,
+  },
 ];
 
 export const ACTIVE_MEMBERSHIPS = MEMBERSHIPS.filter((m) => m.enabled);
 
+/** Súvislé texty (Insolvencie, Zahraniční klienti) majú verziu s INSOL Europe aj bez neho. */
+export const TEXT_KEY = ACTIVE_MEMBERSHIPS.some((m) => m.id === "insol") ? "textInsol" : "text";
+
+/** Členstvá kancelárie (nie osobné) — do JSON-LD organizácie patria len tie. */
+const FIRM_MEMBERSHIPS = ACTIVE_MEMBERSHIPS.filter((m) => m.id !== "insol");
+
 /** Pre JSON-LD (memberOf) — aby členstvo videli aj vyhľadávače. */
-export const MEMBER_OF_SCHEMA = ACTIVE_MEMBERSHIPS.map((m) => ({
+export const MEMBER_OF_SCHEMA = FIRM_MEMBERSHIPS.map((m) => ({
   "@type": "Organization",
   name: m.name,
   url: m.href,
