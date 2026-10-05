@@ -21,7 +21,7 @@ Kategória musí sedieť s existujúcimi (Insolvencie, Obchodné právo, IT prá
 - [x] Reštrukturalizácia firmy v roku 2026: podmienky a priebeh | kategória: Insolvencie
 - [x] Prihláška pohľadávky do konkurzu: lehoty a najčastejšie chyby | kategória: Insolvencie
 - [x] Osobný bankrot: aký majetok dlžníkovi zostane | kategória: Insolvencie
-- [ ] Zmluva o dielo: ustanovenia, ktoré chránia objednávateľa | kategória: Obchodné právo
+- [x] Zmluva o dielo: ustanovenia, ktoré chránia objednávateľa | kategória: Obchodné právo
 - [ ] Splatnosť faktúr a úroky z omeškania: čo môžete žiadať | kategória: Obchodné právo
 - [ ] Prevod obchodného podielu v s.r.o.: postup a daňové súvislosti | kategória: Obchodné právo
 - [ ] Konkurenčná doložka: čo je v zmluve reálne vymáhateľné | kategória: Obchodné právo
